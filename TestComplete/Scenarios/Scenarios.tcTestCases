@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenarios>
+	<Folder Name="Application Explorer">
+		<Feature Path="128 Replace Template.feature" />
+		<Feature Path="ApplicationExplorer.feature" />
+		<Feature Path="129 Import the instances which is exported in above step.feature" />
+		<Feature Path="130 Modify Instance.feature" />
+		<Feature Path="182 Delete Section.feature" />
+	</Folder>
+	<Folder Name="Engineering Client">
+		<Feature Path="EnginneringClient.feature" />
+	</Folder>
+	<Folder Name="System Server">
+		<Feature Path="SystemServer.feature" />
+	</Folder>
+	<Folder Name="Project Explorer">
+		<Feature Path="199 copy instances and paste in other container.feature" />
+		<Feature Path="183 Unlink facets.feature" />
+		<Feature Path="184 Relink facets.feature" />
+		<Feature Path="180 Assign instances to containers.feature" />
+		<Feature Path="181 Move instances from Section to other section.feature" />
+		<Feature Path="145 Check existing Excutable Status(if it is in build state, open refine).feature" />
+		<Feature Path="146 Build_Build all the existing executable(if any errors found, clear and build).feature" />
+		<Feature Path="190 Remove links in instance workspace.feature" />
+		<Feature Path="148 Add instances to container and generate the section.feature" />
+		<Feature Path="189 add links in instance workspaces.feature" />
+		<Feature Path="204 create 10 Sections with each Section having 10 assets in Containers.feature" />
+	</Folder>
+</Scenarios>
