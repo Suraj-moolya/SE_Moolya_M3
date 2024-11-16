@@ -9,8 +9,8 @@ And I Select context menu item EC project browser in project explorer as '<proje
 And I click modal dialog window project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|
-|1|ControlExecutable_1|Build All|OK|
+  | SlNo. | project browser1    | project browser2 | project browser3 |
+  | 1     | ControlExecutable_1 | Build All        | OK               |
 
 
 
@@ -22,8 +22,8 @@ And I Select context menu item EC project browser in project explorer as '<proje
 And I click modal dialog window project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|
-|1|ControlExecutable_1|Generate and Build|OK|
+  | SlNo. | project browser1    | project browser2   | project browser3 |
+  | 1     | ControlExecutable_1 | Generate and Build | OK               |
 
 
 
@@ -35,8 +35,8 @@ And I Select context menu item EC project browser in project explorer as '<proje
 And I click modal dialog window project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|
-|1|ControlExecutable_1|Build|OK|
+  | SlNo. | project browser1    | project browser2 | project browser3 |
+  | 1     | ControlExecutable_1 | Build            | OK               |
 
 
 
@@ -47,5 +47,17 @@ When I RClick control project browser project browser in project explorer as '<p
 Then verify context menu item project browser in project explorer as '<menu_item>'
 
 Examples:
-|SlNo.|project browser1|menu_item|
-|1|ControlExecutable_1|Build All$$False|
+  | SlNo. | project browser1    | menu_item    |
+  | 1     | ControlExecutable_1 | Build$$False |
+
+  
+@TC_Generate_and_Build
+@test004
+Scenario Outline: Generate and Build from  executeable r-click
+When I RClick control project browser project browser in project explorer as '<project browser1>'
+And I Select context menu item EC project browser in project explorer as '<project browser2>'
+And I click modal dialog window project browser in project explorer as '<project browser3>'
+
+Examples:
+  | SlNo. | project browser1 | project browser2   | project browser3 |
+  | 1     | Executable_1     | Generate and Build | OK               |

@@ -65,7 +65,7 @@ import Engineeringclientutility
 #        CommonUtil.write_text_file("End Time:"+end_time+"\n")
 #    except Exception as ex:
 #        print(ex)
-
+#
 def on_log_message(sender, logparams):#pylint: disable = unused-argument
     """on_log_message"""
     if "--" not in logparams.MessageText.upper() and "FILEPATH:" not in logparams.MessageText.upper():

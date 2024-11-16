@@ -133,4 +133,20 @@ def step_impl():
     Applicationutility.take_screenshot("Full Screenshot")
     
 
+@when("I Right click on variable Manage Network Variables in message box as {arg}")
+def step_impl(manageNetworkVariables1):
+    """I Right click on variable Manage Network Variables in message box as '<Manage Network Variables1>'"""
+    CommonUtil.write_text_file("\nWhen I Right click on variable Manage Network Variables in message box as \""+manageNetworkVariables1+"\"")
+    obj.textboxmanagenetworkvariablesrightclickonvariable(manageNetworkVariables1) 
+    
+@when("I Add new text modal dialog window Modal dialog window in message box as {arg}")
+def step_impl(modalDialogWindow1):
+    """I Add new text modal dialog window Modal dialog window in message box as '<Modal dialog window1>'"""
+    CommonUtil.write_text_file("\nWhen I Add new text modal dialog window Modal dialog window in message box as \""+modalDialogWindow1+"\"")
+    obj.textboxmodaldialogwindowaddnewtextmodaldialogwindow(modalDialogWindow1)
   
+@when("I click modal dialog window Modal dialog window in message box as {arg}")
+def step_impl(modalDialogWindow2):
+    """I click modal dialog window Modal dialog window in message box as '<Modal dialog window2>'"""
+    CommonUtil.write_text_file("\nWhen I click modal dialog window Modal dialog window in message box as \""+modalDialogWindow2+"\"")
+    obj.textboxmodaldialogwindowclickmodaldialogwindow(modalDialogWindow2)

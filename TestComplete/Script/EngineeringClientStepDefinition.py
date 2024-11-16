@@ -5,7 +5,9 @@ import Applicationutility
 import Systemserverutility
 import Engineeringclientutility
 
+
 obj=EngineeringClientWorkFlow()
+
 
        
 @when("I launch Engineering Client Engineering client in engineering client")
@@ -179,3 +181,19 @@ def step_impl(compacthwgp1):
     CommonUtil.write_text_file("\nWhen I Close tab items EC main screen in engineering client as 'CompactHWGP_1'")
     obj.buttonmainscreenclosetabitemsec(compacthwgp1)    
 
+    
+@when("I Close the Tab by Clicking on Close as {arg}")
+def step_impl(tabname):
+    """I Close the Tab by Clicking on Close as '<tabname>''"""
+    CommonUtil.write_text_file("\nWhen I Close the Tab by Clicking on Close as \""+tabname+"\"")
+    obj.closetabitemec(tabname)
+    
+@when("I Perform action on the Folder by Clicking on {arg} in Topology Explorer")
+def step_impl(button):
+    """I Close the Folder by Clicking on '<button>' in Topology Explorer"""
+    obj.OpenClosefolderTE(button)
+    
+@then("I Verify Folder Renamed as {arg} in Topology Explorer is Expanded")
+def step_impl(FolderName):
+    """I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded"""
+    obj.VerifyFolderExpansionstatusTE(FolderName)

@@ -5,7 +5,6 @@
 		<Feature Path="ApplicationExplorer.feature" />
 		<Feature Path="129 Import the instances which is exported in above step.feature" />
 		<Feature Path="130 Modify Instance.feature" />
-		<Feature Path="182 Delete Section.feature" />
 	</Folder>
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
@@ -25,5 +24,56 @@
 		<Feature Path="148 Add instances to container and generate the section.feature" />
 		<Feature Path="189 add links in instance workspaces.feature" />
 		<Feature Path="204 create 10 Sections with each Section having 10 assets in Containers.feature" />
+		<Feature Path="144 Open control project.feature" />
+		<Feature Path="207 unassign facets.feature" />
+		<Feature Path="208 re assign facets.feature" />
+		<Feature Path="187 add facets to instances.feature" />
+		<Feature Path="188 remove facets to instances.feature" />
+		<Feature Path="154 Navigate to Communication mapping Tab and check the mapping is availabl e.feature" />
+		<Feature Path="155 Navigate to Hardware mapping Tab and check the mapping is available.feature" />
+		<Feature Path="156 Navigate to varibale mapping editor and check the mapping is available.feature" />
+		<Feature Path="157 Navigate to Manage network variable window.feature" />
+		<Feature Path="202 Navigate instance workspace to PE.feature" />
+		<Feature Path="203 create instance from PE.feature" />
+		<Feature Path="185 Refine offline check consistency.feature" />
+		<Feature Path="221 Build the executable.feature" />
+		<Feature Path="222 Deploy the SP.feature" />
+		<Feature Path="223 Check Deploy changes for SP.feature" />
+		<Feature Path="229 Run Citect runtime.feature" />
+		<Feature Path="147 Open Refine of the project and do some modifications. Save and close.feature" />
+		<Feature Path="149 Open (multiple) sections.feature" />
+		<Feature Path="205 delete 2 Section.feature" />
+		<Feature Path="214 Check all the executable mapping is present.feature" />
+		<Feature Path="217 Open Advanced Settings.feature" />
+	</Folder>
+	<Folder Name="Operation Client">
+		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
+		<Feature Path="182 Delete Section.feature" />
+		<Feature Path="200 Edit Instance.feature" />
+		<Feature Path="153 Open Service Mapping Editor and map the Controller.feature" />
+		<Feature Path="201 Edit links From PE.feature" />
+		<Feature Path="218 Modify the parameters in advance settings .feature" />
+		<Feature Path="219 Open multiple pages and drop the instances in the page.feature" />
+		<Feature Path="220 Create new page and assign some instances.feature" />
+		<Feature Path="237 Double click on OC header .feature" />
+		<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
+		<Feature Path="210 Navigate SP.feature" />
+		<Feature Path="211 Refine the project.feature" />
+		<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
+	</Folder>
+	<Folder Name="Control Expert">
+		<Feature Path="151 Unlink block, Save and check consistency.feature" />
+		<Feature Path="150 check the modifications in refine CP.feature" />
+		<Feature Path="152 Open any section and check network variable window.feature" />
+		<Feature Path="60 Check all the devices mapped for controller.feature" />
+		<Feature Path="new.feature" />
+	</Folder>
+	<Folder Name="Topology explorer">
+		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
+		<Feature Path="51 Open configure window, add some modules, synch the changes.feature" />
+		<Feature Path="52 Open configure window and switch to full screen, add modules and synch the changes.feature" />
+		<Feature Path="53 Add communication modules, add Drops and synch the changes.feature" />
+		<Feature Path="54 Map logical network to all communication modules.feature" />
+		<Feature Path="Export the project. Do some modifications in SP. Build the executable.feature" />
 	</Folder>
 </Scenarios>

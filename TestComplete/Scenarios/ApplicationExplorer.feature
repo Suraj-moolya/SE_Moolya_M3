@@ -326,12 +326,25 @@ Then Verify the template is present in Application browser
 
 Examples:
   | SlNo. | Templates browser1 | Templates browser2     |
-  | 1     | MotorGP            | MotorGP$$1.0.123       |
-  | 2     | ValveGP            | ValveGP$$1.0.100       |
-  | 3     | Analog             | AnalogOutputGP$$1.0.93 |
-  | 4     | Analog             | AnalogInputGP$$1.0.138 |
-  | 5     | INTERLOCK8OFFGP    | INTERLOCK8OFFGP$$1.0.5 |
-  | 6     | PWMOutputGP        | PWMOutputGP$$1.0.74    |
+  | 1     | INTERLOCK8OFFGP    | INTERLOCK8OFFGP$$1.0.5 |
+  | 2     | Analog             | AnalogOutputGP$$1.0.93 |
+  | 3     | Analog             | AnalogInputGP$$1.0.138 |
+  | 4     | MotorGP            | MotorGP$$1.0.123       |
+  | 5     | ValveGP            | ValveGP$$1.0.100       |
+  
+  
+@TC_EPE_AE_0018
+@test0018
+@TC_EPE_AE_0018
+Scenario Outline: Search Valve_Gp in Template browser and Drag and drop from template browser to application browser
+When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
+And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
+Then Verify the template is present in Application browser
+
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2     |
+  | 1     | ValveGP            | ValveGP$$1.0.100       |
+
   
   
 @TC_EPE_AE_0019
@@ -481,7 +494,7 @@ Examples:
 
 
 
-@TC_EPE_AE_0029sss
+@TC_EPE_AE_0029
 @test029
 Scenario Outline: Export instance - Click Export, Save and Open CSV
 And I Select context menu item EC Application browser in application explorer as '<Application browser5>'
@@ -676,6 +689,7 @@ When I drag template in application browser drop Asset Workspace Editor AE Asser
 Then Verify Template AE Assert Workspace Editor in application explorer as '<Assert Workspace Editor11>'
 When I Link from range node to range node AE Node Instance in application explorer as 'RSPRanged$$PVRanged'
 Then Verify Link Status Node Instance in application explorer
+When I Close instance editor tab Instance editor close in application explorer as '<Asset workspace6>'
 
 Examples:
   | SlNo. | Asset workspace4 | Asset workspace5 | Asset workspace6 | Asset workspace7 | Assert Workspace Editor8 | Assert Workspace Editor9 | Assert Workspace Editor10 | Assert Workspace Editor11 |

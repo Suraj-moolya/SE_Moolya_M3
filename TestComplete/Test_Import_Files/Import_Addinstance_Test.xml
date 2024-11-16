@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Export Version="4.1.something">
+  <ApplicationFolder Type="SchneiderElectric.ProcessExpert.Application.Transient.ApplicationFolderRecord" Identifier="Folder_4" Action="Create">
+    <Alias />
+    <Description />
+    <Area />
+    <Location>Root</Location>
+    <GraphicalLocation>0</GraphicalLocation>
+    <Parameters />
+    <ApplicationInstances>
+      <ApplicationInstance Type="SchneiderElectric.ProcessExpert.Application.Transient.ApplicationInstanceRecord" Identifier="ValveGP_1" TemplateIdentifier="$ValveGP" Version="1.0.100" IsValid="True" Action="Create" IsHierarchical="True">
+        <!--Please do not modify 'Identifier' as these are system generated.
+If your intention is to change name of the instance Do it by changing Parameter $Name value below-->
+        <Location>Root\Folder_4</Location>
+        <Parameters>
+          <Parameter Identifier="$Name" Value="ValveGP_1" />
+          <Parameter Identifier="$Description" />
+          <Parameter Identifier="$Area" />
+        </Parameters>
+        <ElementSelections>
+          <ElementSelection Name="Supervision" Value="True" />
+        </ElementSelections>
+        <Elements>
+          <Element Name="Control" TemplateIdentifier="$ValveGP_UC" Version="1.0.91">
+            <Parameters />
+            <ElementSelections>
+              <ElementSelection Name="Interlocks" Value="True" />
+              <ElementSelection Name="OP" Value="True" />
+              <ElementSelection Name="OpenPosition" Value="True" />
+              <ElementSelection Name="ClosePosition" Value="True" />
+            </ElementSelections>
+            <Elements>
+              <Element Name="Valve" TemplateIdentifier="$VALVECTRLGP_UC" Version="1.0.51">
+                <Parameters />
+                <ElementSelections />
+                <Elements>
+                  <Element Name="Logic" TemplateIdentifier="$VALVEGP_UL" Version="1.0.50" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="ValveGP_1_ValveGP" IsAssigned="True" FullPath="Control|Valve|Logic">
+                    <Parameters>
+                      <Category Name="Failure">
+                        <Parameter Identifier="Control.Valve.Logic.TimeOut" Value="00:00:03" />
+                        <Parameter Identifier="Control.Valve.Logic.ScanTime" Value="00:00:05" />
+                      </Category>
+                      <Category Name="Rearm">
+                        <Parameter Identifier="Control.Valve.Logic.FailRearmEn" Value="True" />
+                        <Parameter Identifier="Control.Valve.Logic.ConfRearmEn" Value="False" />
+                        <Parameter Identifier="Control.Valve.Logic.RearmResetEn" Value="False" />
+                      </Category>
+                      <Category Name="Setpoint">
+                        <Parameter Identifier="Control.Valve.Logic.TrackSPInterlock" Value="False" />
+                        <Parameter Identifier="Control.Valve.Logic.ForceRemote" Value="False" />
+                      </Category>
+                    </Parameters>
+                    <ElementSelections />
+                    <Elements />
+                  </Element>
+                </Elements>
+              </Element>
+              <Element Name="Interlocks" TemplateIdentifier="$INTERLOCK1ONGP_UC" Version="1.0.19">
+                <Parameters />
+                <ElementSelections />
+                <Elements>
+                  <Element Name="Group1" TemplateIdentifier="$INTERLOCKONGP_UL" Version="1.0.18" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="ValveGP_1_ILockOn" IsAssigned="True" FullPath="Control|Interlocks|Group1">
+                    <Parameters>
+                      <Category Name="Description">
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition01Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition02Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition03Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition04Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition05Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition06Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition07Description" />
+                        <Parameter Identifier="Control.Interlocks.Group1.GroupDescription" Value="@(Interlocks)" />
+                      </Category>
+                      <Category Name="Disable Bypass">
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition01DisableBypass" Value="True" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition02DisableBypass" Value="True" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition03DisableBypass" Value="True" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition04DisableBypass" Value="True" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition05DisableBypass" Value="True" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition06DisableBypass" Value="True" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition07DisableBypass" Value="True" />
+                      </Category>
+                      <Category Name="Reset Required">
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition01ResetReq" Value="False" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition02ResetReq" Value="False" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition03ResetReq" Value="False" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition04ResetReq" Value="False" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition05ResetReq" Value="False" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition06ResetReq" Value="False" />
+                        <Parameter Identifier="Control.Interlocks.Group1.Condition07ResetReq" Value="False" />
+                      </Category>
+                    </Parameters>
+                    <ElementSelections />
+                    <Elements />
+                  </Element>
+                </Elements>
+              </Element>
+              <Element Name="OP" TemplateIdentifier="$DOSignal_UL" Version="5.5.6" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="ValveGP_1_OP" IsAssigned="True" FullPath="Control|OP">
+                <Parameters>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Control.OP.Negate" Value="False" />
+                    <Parameter Identifier="Control.OP.DOSignalName" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+              <Element Name="OpenPosition" TemplateIdentifier="$DISignal_UL" Version="6.3.7" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="ValveGP_1_OpenPos" IsAssigned="True" FullPath="Control|OpenPosition">
+                <Parameters>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Control.OpenPosition.Negate" Value="False" />
+                    <Parameter Identifier="Control.OpenPosition.DISignalName" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+              <Element Name="ClosePosition" TemplateIdentifier="$DISignal_UL" Version="6.3.7" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="ValveGP_1_ClosePos" IsAssigned="True" FullPath="Control|ClosePosition">
+                <Parameters>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Control.ClosePosition.Negate" Value="False" />
+                    <Parameter Identifier="Control.ClosePosition.DISignalName" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+            </Elements>
+          </Element>
+          <Element Name="Supervision" TemplateIdentifier="$ValveGP_CS" Version="1.0.76">
+            <Parameters />
+            <ElementSelections />
+            <Elements>
+              <Element Name="Data" TemplateIdentifier="$ValveDataGP_CD" Version="1.0.53">
+                <Parameters />
+                <ElementSelections />
+                <Elements>
+                  <Element Name="Valve" TemplateIdentifier="$VALVEGP_CD" Version="1.0.34" FacetType="SchneiderElectric.ProcessExpert.Vjc.Templatization.VjcFacet.Data" FacetName="ValveGP_1_ValveGP" IsAssigned="False" FullPath="Supervision|Data|Valve">
+                    <Parameters>
+                      <Category Name="Alarm">
+                        <Parameter Identifier="Supervision.Data.Valve.ConfirmationFailureDesc" Value="@(Confirmation Failure)" />
+                        <Parameter Identifier="Supervision.Data.Valve.ConfirmationFailureSeverity" Value="Low" />
+                        <Parameter Identifier="Supervision.Data.Valve.ConfirmationFailureAlarmGroup" Value="Failure" />
+                        <Parameter Identifier="Supervision.Data.Valve.DeviceFailureDesc" Value="@(Device Failure)" />
+                        <Parameter Identifier="Supervision.Data.Valve.DeviceFailureSeverity" Value="Low" />
+                        <Parameter Identifier="Supervision.Data.Valve.DeviceFailureAlarmGroup" Value="Failure" />
+                        <Parameter Identifier="Supervision.Data.Valve.InterlockTripDesc" Value="@(Interlock Trip)" />
+                        <Parameter Identifier="Supervision.Data.Valve.InterlockTripSeverity" Value="Low" />
+                        <Parameter Identifier="Supervision.Data.Valve.InterlockTripAlarmGroup" Value="Failure" />
+                        <Parameter Identifier="Supervision.Data.Valve.OpenConfirmationFailureDesc" Value="@(Open Confirmation Failure)" />
+                        <Parameter Identifier="Supervision.Data.Valve.OpenConfirmationFailureSeverity" Value="Low" />
+                        <Parameter Identifier="Supervision.Data.Valve.OpenConfirmationFailureGroup" Value="Failure" />
+                        <Parameter Identifier="Supervision.Data.Valve.CloseConfirmationFailureDesc" Value="@(Close Confirmation Failure)" />
+                        <Parameter Identifier="Supervision.Data.Valve.CloseConfirmationFailureSeverity" Value="Low" />
+                        <Parameter Identifier="Supervision.Data.Valve.CloseConfirmationFailureGroup" Value="Failure" />
+                      </Category>
+                      <Category Name="Configuration">
+                        <Parameter Identifier="Supervision.Data.Valve.EnableSeparateAlarms" Value="False" />
+                      </Category>
+                      <Category Name="Events">
+                        <Parameter Identifier="Supervision.Data.Valve.EventsLog" Value="False" />
+                      </Category>
+                      <Category Name="Historize">
+                        <Parameter Identifier="Supervision.Data.Valve.HistorizeOwner" Value="False" />
+                      </Category>
+                    </Parameters>
+                    <ElementSelections />
+                    <Elements />
+                  </Element>
+                  <Element Name="Interlocks" TemplateIdentifier="$INTERLOCK1ONGP_CD" Version="1.0.45">
+                    <Parameters>
+                      <Category Name="Template">
+                        <Parameter Identifier="Supervision.Data.Interlocks.GroupCount" Value="1" />
+                        <Parameter Identifier="Supervision.Data.Interlocks.GroupCustom" Value="1" />
+                      </Category>
+                    </Parameters>
+                    <ElementSelections />
+                    <Elements>
+                      <Element Name="Group1" TemplateIdentifier="$INTERLOCKGP_CD" Version="1.0.28" FacetType="SchneiderElectric.ProcessExpert.Vjc.Templatization.VjcFacet.Data" FacetName="ValveGP_1_ILOCKONGP" IsAssigned="False" FullPath="Supervision|Data|Interlocks|Group1">
+                        <Parameters>
+                          <Category Name="Historize">
+                            <Parameter Identifier="Supervision.Data.Interlocks.Group1.HistorizeConditions" Value="False" />
+                          </Category>
+                        </Parameters>
+                        <ElementSelections />
+                        <Elements />
+                      </Element>
+                    </Elements>
+                  </Element>
+                </Elements>
+              </Element>
+              <Element Name="Settings" TemplateIdentifier="$ProcessParameterGP_CD" Version="1.0.37" FacetType="SchneiderElectric.ProcessExpert.Vjc.Templatization.VjcFacet.Data" FacetName="ValveGP_1" IsAssigned="False" FullPath="Supervision|Settings">
+                <Parameters>
+                  <Category Name="Asset">
+                    <Parameter Identifier="Supervision.Settings.AlarmPriority" Value="Normal" />
+                    <Parameter Identifier="Supervision.Settings.Location" />
+                    <Parameter Identifier="Supervision.Settings.Custom1" />
+                    <Parameter Identifier="Supervision.Settings.Custom2" />
+                    <Parameter Identifier="Supervision.Settings.Custom3" />
+                    <Parameter Identifier="Supervision.Settings.Custom4" />
+                    <Parameter Identifier="Supervision.Settings.Custom5" />
+                    <Parameter Identifier="Supervision.Settings.Custom6" />
+                  </Category>
+                  <Category Name="Display">
+                    <Parameter Identifier="Supervision.Settings.GraphicProcess" />
+                    <Parameter Identifier="Supervision.Settings.GraphicOverview" />
+                  </Category>
+                  <Category Name="Operation">
+                    <Parameter Identifier="Supervision.Settings.OwnerNormal" Value="Program &amp; Cascade" />
+                  </Category>
+                  <Category Name="Security">
+                    <Parameter Identifier="Supervision.Settings.SecurityOwner" Value="Operator" />
+                    <Parameter Identifier="Supervision.Settings.SecuritySetpoint" Value="Operator" />
+                    <Parameter Identifier="Supervision.Settings.SecurityModeOverride" Value="Supervisor" />
+                    <Parameter Identifier="Supervision.Settings.SecurityModeSimulation" Value="Engineer" />
+                    <Parameter Identifier="Supervision.Settings.SecurityModeMaintenance" Value="Maintenance" />
+                    <Parameter Identifier="Supervision.Settings.SecurityModeOutService" Value="Supervisor" />
+                    <Parameter Identifier="Supervision.Settings.SecurityRearm" Value="Operator (Confirmed)" />
+                    <Parameter Identifier="Supervision.Settings.SecurityAcknowledge" Value="Operator" />
+                    <Parameter Identifier="Supervision.Settings.SecurityBypass" Value="Supervisor" />
+                    <Parameter Identifier="Supervision.Settings.SecurityBypassAll" Value="Supervisor" />
+                    <Parameter Identifier="Supervision.Settings.SecurityMaintenance" Value="Operator" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+            </Elements>
+          </Element>
+        </Elements>
+        <Interfaces>
+          <Interface Identifier="GroupData" />
+          <Interface Identifier="NullInterfaceRoleA" />
+          <Interface Identifier="NullInterfaceRoleB" />
+          <Interface Identifier="ILCK" Path="Control" />
+          <Interface Identifier="ValveOP" Path="Control" />
+          <Interface Identifier="RSP" Path="Control\Valve\Logic" />
+          <Interface Identifier="Name" Path="Control\Valve\Logic" />
+          <Interface Identifier="OpenPOS" Path="Control\Valve\Logic" />
+          <Interface Identifier="ClosePOS" Path="Control\Valve\Logic" />
+          <Interface Alias="OpenPosSwitch" Identifier="BoolVar" Path="Control\OpenPosition" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\OpenPosition" />
+          <Interface Alias="ClosePosSwitch" Identifier="BoolVar" Path="Control\ClosePosition" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\ClosePosition" />
+          <Interface Alias="ExternallyControlled" Identifier="BoolVar" Path="Control\ExternalControl" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\ExternalControl" />
+          <Interface Alias="OutputDOSignal" Identifier="BoolVar" Path="Control\OP" />
+          <Interface Identifier="DOUTPUTSignalExt" Path="Control\OP" />
+          <Interface Identifier="PBLightSignalToVar" Path="Control\LocalPanel\Logic" />
+          <Interface Identifier="DisSPSelection" Path="Control\LocalPanel\Logic" />
+          <Interface Identifier="Name" Path="Control\LocalPanel\Logic" />
+          <Interface Identifier="VALVELPST" Path="Control\LocalPanel\Logic" />
+          <Interface Alias="LocalMode" Identifier="BoolVar" Path="Control\LocalPanel\LPMode" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\LocalPanel\LPMode" />
+          <Interface Alias="ZeroMode" Identifier="BoolVar" Path="Control\LocalPanel\ZeroMode" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\LocalPanel\ZeroMode" />
+          <Interface Alias="ControlSystemMode" Identifier="BoolVar" Path="Control\LocalPanel\CSMode" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\LocalPanel\CSMode" />
+          <Interface Alias="OffPB" Identifier="BoolVar" Path="Control\LocalPanel\OffPB" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\LocalPanel\OffPB" />
+          <Interface Alias="OnPB" Identifier="BoolVar" Path="Control\LocalPanel\OnPB" />
+          <Interface Identifier="DINPUTSignalExt" Path="Control\LocalPanel\OnPB" />
+          <Interface Alias="PanelLight" Identifier="BoolVar" Path="Control\LocalPanel\PBLight" />
+          <Interface Identifier="DOUTPUTSignalExt" Path="Control\LocalPanel\PBLight" />
+          <Interface Identifier="Name" Path="Control\Maintenance\Logic" />
+        </Interfaces>
+      </ApplicationInstance>
+      <ApplicationInstance Type="SchneiderElectric.ProcessExpert.Application.Transient.ApplicationInstanceRecord" Identifier="SPBoolGP_1" TemplateIdentifier="$SPBoolGP" Version="1.0.21" IsValid="True" Action="Create" IsHierarchical="True">
+        <!--Please do not modify 'Identifier' as these are system generated.
+If your intention is to change name of the instance Do it by changing Parameter $Name value below-->
+        <Location>Root\Folder_4</Location>
+        <Parameters>
+          <Parameter Identifier="$Name" Value="SPBoolGP_2" />
+          <Parameter Identifier="$Description" />
+          <Parameter Identifier="$Area" />
+        </Parameters>
+        <ElementSelections>
+          <ElementSelection Name="Supervision" Value="True" />
+        </ElementSelections>
+        <Elements>
+          <Element Name="Supervision" TemplateIdentifier="$SPBoolGP_CS" Version="1.0.21">
+            <Parameters />
+            <ElementSelections />
+            <Elements>
+              <Element Name="Settings" TemplateIdentifier="$SPBoolGP_CD" Version="1.0.18" FacetType="SchneiderElectric.ProcessExpert.Vjc.Templatization.VjcFacet.Data" FacetName="SPBoolGP_2" IsAssigned="False" FullPath="Supervision|Settings">
+                <Parameters>
+                  <Category Name="Asset">
+                    <Parameter Identifier="Supervision.Settings.Location" />
+                    <Parameter Identifier="Supervision.Settings.Custom1" />
+                    <Parameter Identifier="Supervision.Settings.Custom2" />
+                    <Parameter Identifier="Supervision.Settings.Custom3" />
+                    <Parameter Identifier="Supervision.Settings.Custom4" />
+                    <Parameter Identifier="Supervision.Settings.Custom5" />
+                    <Parameter Identifier="Supervision.Settings.Custom6" />
+                  </Category>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Supervision.Settings.Bool Type" Value="Pulse" />
+                    <Parameter Identifier="Supervision.Settings.PulseTime" Value="5" />
+                  </Category>
+                  <Category Name="Display">
+                    <Parameter Identifier="Supervision.Settings.GraphicProcess" />
+                    <Parameter Identifier="Supervision.Settings.GraphicOverview" />
+                  </Category>
+                  <Category Name="Security">
+                    <Parameter Identifier="Supervision.Settings.SecurityOperate" Value="Operator" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+            </Elements>
+          </Element>
+          <Element Name="Control" TemplateIdentifier="$SPBoolGP_UC" Version="1.0.12">
+            <Parameters />
+            <ElementSelections />
+            <Elements>
+              <Element Name="Logic" TemplateIdentifier="$Bool_UL" Version="1.0.13" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="SPBoolGP_2" IsAssigned="True" FullPath="Control|Logic">
+                <Parameters>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Control.Logic.InitValue" Value="False" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+            </Elements>
+          </Element>
+        </Elements>
+        <Interfaces>
+          <Interface Identifier="NullInterfaceRoleA" />
+          <Interface Identifier="NullInterfaceRoleB" />
+          <Interface Identifier="Bool" Path="Control\Logic" />
+        </Interfaces>
+      </ApplicationInstance>
+	  <ApplicationInstance Type="SchneiderElectric.ProcessExpert.Application.Transient.ApplicationInstanceRecord" Identifier="SPBoolGP_1" TemplateIdentifier="$SPBoolGP" Version="1.0.21" IsValid="True" Action="Create" IsHierarchical="True">
+	<Location>Root\Folder_4</Location>
+        <Parameters>
+          <Parameter Identifier="$Name" Value="SPBoolGP_2" />
+          <Parameter Identifier="$Description" />
+          <Parameter Identifier="$Area" />
+        </Parameters>
+        <ElementSelections>
+          <ElementSelection Name="Supervision" Value="True" />
+        </ElementSelections>
+        <Elements>
+          <Element Name="Supervision" TemplateIdentifier="$SPBoolGP_CS" Version="1.0.21">
+            <Parameters />
+            <ElementSelections />
+            <Elements>
+              <Element Name="Settings" TemplateIdentifier="$SPBoolGP_CD" Version="1.0.18" FacetType="SchneiderElectric.ProcessExpert.Vjc.Templatization.VjcFacet.Data" FacetName="SPBoolGP_2" IsAssigned="False" FullPath="Supervision|Settings">
+                <Parameters>
+                  <Category Name="Asset">
+                    <Parameter Identifier="Supervision.Settings.Location" />
+                    <Parameter Identifier="Supervision.Settings.Custom1" />
+                    <Parameter Identifier="Supervision.Settings.Custom2" />
+                    <Parameter Identifier="Supervision.Settings.Custom3" />
+                    <Parameter Identifier="Supervision.Settings.Custom4" />
+                    <Parameter Identifier="Supervision.Settings.Custom5" />
+                    <Parameter Identifier="Supervision.Settings.Custom6" />
+                  </Category>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Supervision.Settings.Bool Type" Value="Pulse" />
+                    <Parameter Identifier="Supervision.Settings.PulseTime" Value="5" />
+                  </Category>
+                  <Category Name="Display">
+                    <Parameter Identifier="Supervision.Settings.GraphicProcess" />
+                    <Parameter Identifier="Supervision.Settings.GraphicOverview" />
+                  </Category>
+                  <Category Name="Security">
+                    <Parameter Identifier="Supervision.Settings.SecurityOperate" Value="Operator" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+            </Elements>
+          </Element>
+          <Element Name="Control" TemplateIdentifier="$SPBoolGP_UC" Version="1.0.12">
+            <Parameters />
+            <ElementSelections />
+            <Elements>
+              <Element Name="Logic" TemplateIdentifier="$Bool_UL" Version="1.0.13" FacetType="SchneiderElectric.ProcessExpert.Unity.Templatization.UnityFacet.Logic" FacetName="SPBoolGP_2" IsAssigned="True" FullPath="Control|Logic">
+                <Parameters>
+                  <Category Name="Configuration">
+                    <Parameter Identifier="Control.Logic.InitValue" Value="False" />
+                  </Category>
+                </Parameters>
+                <ElementSelections />
+                <Elements />
+              </Element>
+            </Elements>
+          </Element>
+        </Elements>
+        <Interfaces>
+          <Interface Identifier="NullInterfaceRoleA" />
+          <Interface Identifier="NullInterfaceRoleB" />
+          <Interface Identifier="Bool" Path="Control\Logic" />
+        </Interfaces>
+      </ApplicationInstance>
+    </ApplicationInstances>
+    <ApplicationFolders />
+  </ApplicationFolder>
+  <InterfaceLinks Type="SchneiderElectric.ProcessExpert.Application.Source.Model.InterfaceLink" />
+</Export>

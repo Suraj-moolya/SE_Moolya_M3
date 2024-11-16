@@ -250,3 +250,9 @@ def step_impl(systemExplorer):
     """I Create system and context menu System Explorer Node in system explorer as 'System Explorer'"""
     CommonUtil.write_text_file("\nWhen I Create system and context menu System Explorer Node in system explorer as 'System Explorer'")
     obj.buttonsystemexplorernodecreatesystemandcontextmenu(systemExplorer)
+    
+@when("I Rename Network as per requirement in system explorer as {arg}")
+def step_impl(asPerRequirement1):
+    """I Rename Folder as per requirement in system explorer as '<as per requirement1>'"""
+    CommonUtil.write_text_file("\nWhen I Rename Folder as per requirement in system explorer as \""+asPerRequirement1+"\"")
+    obj.textboxasperrequirementrenamefolder(asPerRequirement1)

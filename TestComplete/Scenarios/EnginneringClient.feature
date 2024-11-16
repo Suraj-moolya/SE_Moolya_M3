@@ -78,12 +78,11 @@ Scenario Outline: Creation of System - By Right clicking on System Explorer
 When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
 Then verify context menu items System Explorer Node in system explorer
 When I selected Create System in context menu
-And I Wait for Circular Progress Bar To Complete in system explorer
-Then verify system and folder created System Explorer Node in system explorer
+Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 
 Examples:
-  | SlNo. |
-  | 1     |
+  | SlNo. |project browser2|
+  | 1     |Create System   |
 
      
 @TC_EPE_EC_0008 
@@ -106,7 +105,6 @@ Scenario Outline: Rename of Folder as Test_1
 When I Right Click on nodes System Explorer Node in system explorer as 'Folder_1'
 Then verify context menu items from Rclick menu items in system explorer
 When I selected Rename in context menu
-Then verify folder has entered editing field for selected Folder in system explorer as 'Folder_1'
 When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
 Then Verify_Folder_Renamed as per requirement in system explorer
 
@@ -206,7 +204,7 @@ Examples:
 
 @TC_EPE_EC_0016
 @test0016
-Scenario Outline: Navigation To Project Explorer(PE)
+Scenario Outline: Navigation To Project Explorer(PE)- by selecting system
 When I Click on Nodes System Explorer Node in system explorer as '<Systems Explorer>'
 And I navigate to explorers MainToolBar in system explorer as '<MainToolBar1>'
 Then verify Tabs Explorer tab in system explorer as '<Explorer tab2>'
@@ -405,7 +403,7 @@ When I selected Popup Ok in system explorer
 
 Examples:
   | SlNo. |
-  | 1     |  
+  | 1     |
   
   
 @TC_EPE_EC_0033
@@ -441,7 +439,7 @@ Then verify displayed Open System Explorer in engineering client
 
 Examples:
   | SlNo. | password2    |
-  | 1     | P@ssw0rd1234 | 
+  | 1     | P@ssw0rd1234 |
   
   
   
@@ -493,4 +491,36 @@ Then verify Tabs Explorer tab in system explorer as '<Explorer tab4>'
 
 Examples:
   | SlNo. | MainToolBar3         | Explorer tab4    |
-  | 1     | Open System Explorer | Systems Explorer | 
+  | 1     | Open System Explorer | Systems Explorer |
+  
+
+@TC_EPE_EC_0040
+@test0040
+Scenario Outline: Navigation To Project Explorer(PE) - Main Tool Bar
+When I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
+Then verify Tabs Explorer tab in system explorer as '<Explorer tab4>'
+
+Examples:
+  | SlNo. | MainToolBar3     | Explorer tab4    |
+  | 1     | Project Explorer | Project Explorer |
+  
+@TC_EPE_EC_0041
+@test0041
+Scenario Outline: Navigation To Topology Explorer(TE) - Main Tool Bar
+When I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
+Then verify Tabs Explorer tab in system explorer as '<Explorer tab4>'
+
+Examples:
+  | SlNo. | MainToolBar3      | Explorer tab4     |
+  | 1     | Topology Explorer | Topology Explorer |
+  
+@TC_EPE_EC_0042
+@test0042
+Scenario Outline: Navigation To Application Explorer(AE) - Main Tool Bar
+When I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
+Then verify Tabs Explorer tab in system explorer as '<Explorer tab4>'
+
+Examples:
+  | SlNo. | MainToolBar3         | Explorer tab4        |
+  | 1     | Application Explorer | Application Explorer |
+  

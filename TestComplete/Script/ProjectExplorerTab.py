@@ -45,6 +45,193 @@ class ProjectExplorerTab(MapBase):
         return self.get_element("Close_ProjectExplorerTab")
     
     @property
-    def assignmentstextbox(self):
-      return self.get_element("assignments_ProjectExplorerTab")
+    def instanceeditortextbox(self):
+      """instanceeditortextbox"""
+      return self.get_element("instanceeditor_ProjectExplorerTab")   
               
+    @property
+    def controlexecutablesproperty(self):
+      """controlexecutablesproperty"""
+      return self.get_element("ControlExecutablesProperty_ProjectExplorerTab") 
+      
+    @property
+    def servercommunicationcounterpartsdeviceio(self):
+      """controlexecutablesproperty"""
+      return self.get_element("ServerCommunicationCounterpartsDeviceIO_ProjectExplorerTab")
+      
+    @property
+    def communicationchanneltab(self):
+      """communicationchanneltab"""
+      return self.get_element("CommunicationChannelTab_ProjectExplorerTab")
+      
+    @property
+    def networkvariabletab(self):
+      """networkvariabletab"""
+      return self.get_element("NetworkVariableTab_ProjectExplorerTab")
+    
+    @property
+    def hardwareinstancetab(self):
+      """hardwareinstancetab"""
+      return self.get_element("HardwareInstanceTab_ProjectExplorerTab")  
+      
+    @property
+    def managenetworkvariablestab(self):
+      """managenetworkvariablestab"""
+      return self.get_element("ManageNetworkVariablesTab_ProjectExplorerTab")
+      
+    @property
+    def createinstancetab(self):
+      """createinstancetab"""
+      return self.get_element("CreateInstancesTab_ProjectExplorerTab")  
+      
+    @property
+    def createtemplatetab(self):
+      """createtemplatetab"""
+      return self.get_element("CreateTemplateTab_ProjectExplorerTab")  
+      
+    @property
+    def appfacetstab(self):
+      """appfacetstab"""
+      return self.get_element("AppFacetsTab_ProjectExplorerTab")  
+      
+    @property
+    def deploymentfilesectiontab(self):
+      """deploymentfilesectiontab"""
+      return self.get_element("DeploymentFileSection_ProjectExplorerTab")  
+      
+    @property
+    def containerseditpagetab(self):
+      """containerseditpagetab"""
+      return self.get_element("ContainersEditPage_ProjectExplorerTab")  
+      
+    @property
+    def instanceeditpagetab(self):
+      """instanceeditpagetab"""
+      return self.get_element("InstanceEditPage_ProjectExplorerTab")  
+      
+    @property
+    def instancelistitemtab(self):
+      """instancelistitemtab"""
+      return self.get_element("InstanceListItmes_ProjectExplorerTab")  
+      
+    @property
+    def supervisioneditpagepropertiestab(self):
+      """supervisioneditpagepropertiestab"""
+      return self.get_element("SupervisionEdidPageProperties_ProjectExplorerTab")  
+      
+    @property
+    def plantscadapropertiestab(self):
+      """plantscadapropertiestab"""
+      return self.get_element("PlantScadaHomeProperties_PropertiesTab")  
+      
+    @property
+    def menuitemtab(self):
+      """menuitemtab"""
+      return self.get_element("MenuItem_PropertiesTab")  
+      
+    @property
+    def restoreprojecttab(self):
+      """restoreprojecttab"""
+      return self.get_element("RestoreProject_PropertiesTab")  
+      
+    @property
+    def backuprestoretab(self):
+      """backuprestoretab"""
+      return self.get_element("BackupRestore_PropertiesTab")  
+      
+    @property
+    def restorepopuptab(self):
+      """restorepopuptab"""
+      return self.get_element("RestorePopup_PlantScadaTab")  
+      
+    @property
+    def sidebartab(self):
+      """sidebartab"""
+      return self.get_element("Sidebar_PlantScadaTab")  
+      
+    @property
+    def loginpageplantscada(self):
+      """loginpageplantscada"""
+      return self.get_element("LoginPage_PlantScadaTab")  
+      
+    @property
+    def errorpopupplantscada(self):
+      """errorpopupplantscada"""
+      return self.get_element("ErrorPopup_PlantScadaTab")  
+      
+    @property
+    def masterpagemainwindowplantscada(self):
+      """masterpagemainwindowplantscada"""
+      return self.get_element("MasterPageMainWindow_PlantScadaTab")
+               
+              
+    @property
+    def communicationchannelspanneltextbox(self):
+        """communicationchannelspanneltextbox"""
+        return self.get_element("CommunicationChannelsPannel_ProjectExplorerTab")
+              
+    @property
+    def communicationdeviceiopanneltextbox(self):
+        """communicationdeviceiopanneltextbox"""
+        return self.get_element("CommunicationDeviceIOPannel_ProjectExplorerTab")
+              
+    @property
+    def communicationpeertopeerpanneltextbox(self):
+        """communicationpeertopeerpanneltextbox"""
+        return self.get_element("CommunicationPeertoPeerPannel_ProjectExplorerTab")
+        
+    @property
+    def servicemapdropdownbox(self):
+        """servicemapdropdownbox"""
+        return self.get_element("ServiceMap_ProjectExplorerTab")
+        
+    @property
+    def mdiclientwindowtextbox(self):
+        """mdiclientwindowtextbox"""
+        return self.get_element("MDIClientWindow_ProjectExplorerTab")
+        
+    @property
+    def listviewtextbox(self):
+        """listviewtextbox"""
+        return self.get_element("ListView_ProjectExplorerTab") 
+        
+    @property
+    def containerpagedocktextbox(self):
+        """listviewtextbox"""
+        return self.get_element("containerpagedock_ProjectExplorerTab") 
+
+    @property
+    def controllerpropertytab(self):
+        """controllerpropertytab"""
+        return self.get_element("ControllerPropertytab_TopologyExporerTab")	
+        
+    @property
+    def hardwareinstancetab(self):
+        """hardwareinstancetab"""
+        return self.get_element("HardwareInstanceTab_ProjectExplorerTab")
+        
+        
+    @property
+    def projectcontrollersettingtab(self):
+        """projectcontrollersettingtab"""
+        return self.get_element("ProjectControllerSetting_ProjectExplorerTab")
+        
+    @property
+    def wpfcomboboxtextbox(self):
+        """wpfcomboboxtextbox"""
+        return self.get_element("wpfcombobox_ProjectExplorer")
+        
+    @property
+    def settingspropertytab(self):
+        """settingspropertytab"""
+        return self.get_element("Settings_ProjectExplorerTab")
+        
+    @property
+    def settingsdropdownpropertytab(self):
+        """settingsdropdownpropertytab"""
+        return self.get_element("SettingsDropDown_ProjectExplorerTab")
+        
+    @property
+    def messageboxyesbutton(self):
+        """messageboxyesbutton"""
+        return self.get_element("MessageBoxYes_ProjectExplorerTab")

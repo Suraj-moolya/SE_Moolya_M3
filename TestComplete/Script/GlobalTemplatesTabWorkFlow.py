@@ -46,7 +46,7 @@ class GlobalTemplatesTabWorkFlow:
     def textboxglobaltemplatecorewaitforcircularprogressbar(self):
         """textboxglobaltemplatecorewaitforcircularprogressbar"""
         try:
-            Engineeringclientutility.circularprogressbar_Wait(self)
+            Engineeringclientutility.circularprogressbar_Wait()
         except Exception as ex:
             raise Exception(ex) from ex
         
@@ -97,3 +97,11 @@ class GlobalTemplatesTabWorkFlow:
             Log.Message('The Duplicate window is open')
        except:
           Log.Checkpoint('The duplicate window is closed')
+        
+        
+    def verifytittlebar(self, tabname):
+        """verifytittlebar"""
+        try:
+            Globaltemplatesutility.verify_title_bar(tabname)
+        except Exception as ex:
+            raise Exception(ex) from ex

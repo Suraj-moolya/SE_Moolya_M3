@@ -181,4 +181,26 @@ class EngineeringClientWorkFlow:
         try:
             Actionutility.close_tab_items_EC(identifier)
         except Exception as ex:
-            raise Exception(ex) from e
+            raise Exception(ex) from ex
+            
+    def closetabitemec(self,tabname):
+        """closetabitemec"""
+        try:
+            Engineeringclientutility.close_tab_EC(tabname)
+        except Exception as ex:
+            raise Exception(ex) from ex   
+            
+    def OpenClosefolderTE(self,button):
+        """OpenClosefolderTE"""
+        try:
+            Engineeringclientutility.Open_Close_folder_TE(button)
+        except Exception as ex:
+            raise Exception(ex) from ex     
+            
+    def VerifyFolderExpansionstatusTE(self,foldername):
+        """VerifyFolderExpansionstatusTE"""
+        try:
+            Engineeringclientutility.Verify_folder_Content_Status_TE(foldername)
+        except Exception as ex:
+            raise Exception(ex) from ex       
+            

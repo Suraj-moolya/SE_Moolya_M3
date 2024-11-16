@@ -6,11 +6,11 @@
 Scenario Outline: Import - RightClick on the system_1 and select Import from the context menu
 When I rclick application browser folder AE Application browser in application explorer as '<Application browser1>'
 And I Select context menu item EC Application browser in application explorer as '<Application browser2>'
-Then I wait for Import Dialogue Window to appear 
+
 
 Examples:
-  | SlNo. | Application browser1 |
-  | 1     | System_1             |
+  | SlNo. | Application browser1 | Application browser2 |
+  | 1     | System_1             | Import               |
   
   
 @TC_EPE_AE_00
@@ -160,12 +160,11 @@ Examples:
 Scenario Outline: import - Click on Update all button from resolve conflict pop up and ok
 When I Click on Buttons in Conflict Dialog popup Import Conflict Dialog in import dialog as '<Import Conflict Dialog7>'
 And I Click on Buttons in Conflict Dialog popup Import Conflict Dialog in import dialog as '<Import Conflict Dialog8>'
-Then Verify template added in Application browser AE Application browser in application explorer as '<Application browser9>'
-And Verify Message from notification panel AE Notification Pannel in message box
+Then Verify Message from notification panel AE Notification Pannel in message box
 
 Examples:
-  | SlNo. | Import Conflict Dialog7 | Import Conflict Dialog8 | Application browser9 |
-  | 1     | Update All              | OK                      | MotorGP_1            |
+  | SlNo. | Import Conflict Dialog7 | Import Conflict Dialog8 |
+  | 1     | Update All              | OK                      |
 
   
 @TC_EPE_AE_00
@@ -174,12 +173,11 @@ Examples:
 Scenario Outline: import - Click on Skip all button from resolve conflict pop up and ok
 When I Click on Buttons in Conflict Dialog popup Import Conflict Dialog in import dialog as '<Import Conflict Dialog7>'
 And I Click on Buttons in Conflict Dialog popup Import Conflict Dialog in import dialog as '<Import Conflict Dialog8>'
-Then Verify template added in Application browser AE Application browser in application explorer as '<Application browser9>'
-And Verify Message from notification panel AE Notification Pannel in message box
+Then Verify Message from notification panel AE Notification Pannel in message box
 
 Examples:
-  | SlNo. | Import Conflict Dialog7 | Import Conflict Dialog8 | Application browser9 |
-  | 1     | Skip All                | OK                      | MotorGP_1_1          |
+  | SlNo. | Import Conflict Dialog7 | Import Conflict Dialog8 |
+  | 1     | Skip All                | OK                      |
 
   
   

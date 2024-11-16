@@ -1,20 +1,24 @@
 ﻿"""ProjectExplorerTabWorkFlow"""  
 
+from GlobalTemplatesTab import GlobalTemplatesTab
 from ProjectExplorerTab import ProjectExplorerTab
 import Applicationutility
 import Projectexplorertabutility
 import Engineeringclientutility
 import Actionutility
 import Applicationexplorertabutility
+import Controlexpertutility
+
 class ProjectExplorerTabWorkFlow:
     """ProjectExplorerTabWorkFlow"""
     projectexplorertab_obj = ProjectExplorerTab()
+    globaltemplatestab_obj = GlobalTemplatesTab()
 
         
     def textboxprojectbrowserrclickcontrolprojectbrowser(self,identifier):
         """textboxprojectbrowserrclickcontrolprojectbrowser"""
         try:
-            Projectexplorertabutility.right_click_control_project_browser_PE(identifier)
+            Projectexplorertabutility.right_click_control_project_browser_PE2(identifier)
         except Exception as ex:
             raise Exception(ex) from ex
         
@@ -24,6 +28,20 @@ class ProjectExplorerTabWorkFlow:
             Engineeringclientutility.select_ContextMenu_Items_EC(menu_item)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxprojectbrowserselectcontextsubmenuitemec(self,menu_item):
+            """textboxprojectbrowserselectcontextsubmenuitemec"""
+            try:
+                Engineeringclientutility.select_Context_SubMenu_Items_EC(menu_item)
+            except Exception as ex:
+                raise Exception(ex) from ex 
+                
+    def textboxprojectbrowserrename(self,controller):
+                """textboxprojectbrowserrename"""
+                try:
+                    Projectexplorertabutility.rename(controller)
+                except Exception as ex:
+                    raise Exception(ex) from ex            
         
     def textboxprojectbrowserwaitforexecution(self):
         """textboxprojectbrowserwaitforexecution"""
@@ -88,10 +106,10 @@ class ProjectExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
             
-    def assignmentsrightclickunlinkfacets(self, facet_name):
+    def assignmentsrightclickunlinkfacets(self, facet_name,action):
         """assignmentsrightclickunlinkfacets"""
         try:
-            Projectexplorertabutility.right_click_instance_in_assignments(facet_name)
+            Projectexplorertabutility.right_click_instance_select_action_in_assignments(facet_name,action)
         except Exception as ex:
             raise Exception(ex) from ex
             
@@ -135,6 +153,7 @@ class ProjectExplorerTabWorkFlow:
         """textboxcontainerdockclickmodaldialogwindow"""
         try:
             Actionutility.modal_dialog_window_button(button_name)
+            Applicationutility.wait_for_execution()
         except Exception as ex:
             raise Exception(ex) from ex
         
@@ -168,10 +187,10 @@ class ProjectExplorerTabWorkFlow:
         
     def textboxassignmentsdockrightclickcontainerdockcontextmenuitempe(self,param):
         """textboxassignmentsdockrightclickcontainerdockcontextmenuitempe"""
-        try:
-            Projectexplorertabutility.right_click_container_dock_context_menu_item_PE(param)
-        except Exception as ex:
-            raise Exception(ex) from ex
+        #try:
+        Projectexplorertabutility.right_click_container_dock_context_menu_item_PE(param)
+        #except Exception as ex:
+            #raise Exception(ex) from ex
         
     def textboxassignmentsdockwaitforexecution(self):
         """textboxassignmentsdockwaitforexecution"""
@@ -270,6 +289,7 @@ class ProjectExplorerTabWorkFlow:
     
     def buttoncloseselected(self):
         """newfeature_obj.closebutton"""
+        Applicationutility.wait_in_seconds(2000,'wait')
         ProjectExplorerTabWorkFlow.projectexplorertab_obj.closebutton.click()
     
     def textboxrefineonlinewindowentered(self):
@@ -283,10 +303,10 @@ class ProjectExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
 
-    def rightclickinstanceselectactioninassignments(self,facet_name, action):
+    def rightclickinstanceselectactioninassignments(self,param, action):
             """rightclickinstanceselectactioninassignments"""
             try:
-                Projectexplorertabutility.right_click_instance_select_action_in_assignments(facet_name, action)
+                Projectexplorertabutility.right_click_instance_select_action_in_assignments(param, action)
             except Exception as ex:
                 raise Exception(ex) from ex
                 
@@ -299,7 +319,7 @@ class ProjectExplorerTabWorkFlow:
                     raise Exception(ex) from ex
                     
     def projectexplorertabutilityverifyallfacetgenerationstatusassignmentdock(self):
-            """textboxassignmentsdockverifygenerationstatusoffacetfromassignmentspe"""
+            """projectexplorertabutilityverifyallfacetgenerationstatusassignmentdock"""
             try:
                 Projectexplorertabutility.verify_all_facet_generation_status_assignmentdock()
             except Exception as ex:
@@ -327,12 +347,6 @@ class ProjectExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
         
-    def textboxprojectbrowserdclickcontrolprojectbroswer(self,identifier):
-        """textboxprojectbrowserdclickcontrolprojectbroswer"""
-        try:
-            Projectexplorertabutility.double_click_control_project_browser_PE(identifier)
-        except Exception as ex:
-            raise Exception(ex) from ex
         
     def textboxprojectbrowsercontrolexecutabledropdownpe(self,param):
         """textboxprojectbrowsercontrolexecutabledropdownpe"""
@@ -361,4 +375,406 @@ class ProjectExplorerTabWorkFlow:
             Projectexplorertabutility.Verify_Facets_Added_or_Removed_context_menu_PE(facet_name)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def projectexplorertabutility_Create_Multiple_section_Containers_Dock_verify(self,param):
+      """projectexplorertabutilityverifysectioncontainersdock"""
+      try:
+        Projectexplorertabutility.Create_Multiple_section_Containers_Dock_verify(param)
+      except Exception as ex:
+        raise Exception(ex) from ex
+        
+    def projectexplorertabutility_Drag_instance_drop_container_section(self,param):
+      """projectexplorertabutilityverifysectioncontainersdock"""
+      try:
+        Projectexplorertabutility.Drag_instance_drop_container_section(param)
+      except Exception as ex:
+        raise Exception(ex) from ex
 
+    def createfbdsections(self,num_sections):
+                """createfbdsections"""
+                try:
+                    Projectexplorertabutility.create_fbd_section(num_sections)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def draganddropfromcontainertosection(self, controller, section):
+      """draganddropfromcontainertosection"""
+      try:
+          Projectexplorertabutility.multidraganddrop(controller, section)
+      except Exception as ex:
+          raise Exception(ex) from ex
+          
+    def rightclickinstanceandperformaction(self, facet_name, action):
+      """rightclickinstanceandperformaction"""
+      try:
+          Projectexplorertabutility.right_click_instance_select_action_in_assignments(facet_name, action)
+      except Exception as ex:
+          Log.Error(f"Error while performing right click and action: {ex}")
+          raise Exception(ex) from ex
+          
+    def verifyassignmentsstate(self,facet_names, generation_state):
+                    """verifyassignmentsstate"""
+                    try:
+                        Projectexplorertabutility.verify_facet_assignment_state1(facet_names, generation_state)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+                        
+    def doubleclickinstanceinassignments(self,facet_name):
+                """doubleclickinstanceinassignments"""
+                try:
+                    Projectexplorertabutility.double_click_instance_in_assignments(facet_name)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def clickcheckboxininstanceedittor(self,instance_name):
+                    """clickcheckboxininstanceedittor"""
+                    try:
+                        Projectexplorertabutility.click_checkbox_in_instance_editor(instance_name)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+                        
+    def savebuttoninstanceeditor(self,button_name):
+            """savebuttoninstanceeditor"""
+            try:
+                Projectexplorertabutility.saveinstanceeditor(button_name)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+                
+    def rightclickandgeneratecontainerssection(self,container):
+                """rightclickandgeneratecontainerssection"""
+                try:
+                    Projectexplorertabutility.rightclickandgeneratecontainers(container)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def verifyfacetbeforegenerate(self,facet_name):
+                    """verifyfacetbeforegenerate"""
+                    try:
+                        Projectexplorertabutility.verify_facet_assignment_before_generate(facet_name)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+    
+    def verifydeviceavailbe(self, variables):
+                """verifydeviceavailbe"""
+                try:
+                    Projectexplorertabutility.verify_device_available(variables)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def verifyhardwareinstanceavailableformapping(self, variables):
+                    """verifyhardwareinstanceavailableformapping"""
+                    try:
+                        Projectexplorertabutility.verify_hardware_instance_available_for_mapping(variables)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+                        
+    def verifynetworkvariablemapping(self, identifiers):
+                    """verifynetworkvariablemapping"""
+                    try:
+                        Projectexplorertabutility.verify_network_variable_mapping(identifiers)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+                    
+    def verifynetworkvariable(self, variables):
+                    """verifynetworkvariable"""
+                    try:
+                        Projectexplorertabutility.verify_network_variable(variables)
+                    except Exception as ex:
+                        raise Exception(ex) from ex                                                    
+                    
+    def draganddropdevicetochannel(self, server):
+                    """draganddropdevicetochannel"""
+                    try:
+                        Projectexplorertabutility.drag_and_drop_device_to_channel(server)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+                        
+    def clickonmappingtab(self, tabname):
+                        """clickonmappingtab"""
+                        try:
+                            Projectexplorertabutility.click_on_mapping_tab(tabname)
+                        except Exception as ex:
+                            raise Exception(ex) from ex
+                            
+    def draganddropprojecttoserver(self, appfacet):
+                        """draganddropprojecttoserver"""
+                        try:
+                            Projectexplorertabutility.project_to_hardware(appfacet)
+                        except Exception as ex:
+                            raise Exception(ex) from ex
+                            
+    def rightclickcommunicationchannel(self, server):
+                        """rightclickcommunicationchannel"""
+                        try:
+                            Projectexplorertabutility.right_click_communication_channel(server)
+                        except Exception as ex:
+                            raise Exception(ex) from ex
+                            
+    def draganddropnetworktoserver(self, identifiers):
+      try:
+        Projectexplorertabutility.drag_and_drop_network_to_server(identifiers)
+      except Exception as ex:
+        raise Exception(ex) from ex    
+        
+    def buttonokselected(self):
+        """buttonokselected"""
+        try:
+          ProjectExplorerTabWorkFlow.globaltemplatestab_obj.okduuplicatebutton.click()
+        except Exception as ex:
+          raise Exception(ex) from ex
+          
+    def createinstance(self, value):
+            """createinstance"""
+            try:
+              Projectexplorertabutility.create_instance(value)
+            except Exception as ex:
+              raise Exception(ex) from ex 
+              
+    def verifyinstance(self, value):
+            """verifyinstance"""
+            try:
+              Projectexplorertabutility.verify_instance(value)
+            except Exception as ex:
+              raise Exception(ex) from ex 
+              
+    def verifyfacetsinhardwaremappingeditor(self, appfacet):
+            """verifyfacetsinhardwaremappingeditor"""
+            try:
+              Projectexplorertabutility.verify_facets_in_hardware_mapping_editor(appfacet)
+            except Exception as ex:
+              raise Exception(ex) from ex  
+              
+    def verifyservervariables(self, identifiers):
+            """verifyservervariables"""
+            try:
+              Projectexplorertabutility.verify_server_variables(identifiers)
+            except Exception as ex:
+              raise Exception(ex) from ex  
+              
+    def doubleclickincontainer(self, identifiers):
+            """doubleclickincontainer"""
+            try:
+              Projectexplorertabutility.double_click_in_container(identifiers)
+            except Exception as ex:
+              raise Exception(ex) from ex  
+              
+    def draganddropinstancetoeditpage(self, facetnames, option):
+            """draganddropinstancetoeditpage"""
+            try:
+              Projectexplorertabutility.drag_and_drop_instance_to_editpage(facetnames, option)
+            except Exception as ex:
+              raise Exception(ex) from ex  
+              
+    def clickbuttononspeditpage(self, button):
+            """clickbuttononspeditpage"""
+            try:
+              Projectexplorertabutility.click_button_on_sp_editpage(button)
+            except Exception as ex:
+              raise Exception(ex) from ex   
+              
+    def clickpropertiesonplantscada(self, button, drop_button):
+            """clickpropertiesonplantscada"""
+            try:
+              Projectexplorertabutility.click_properties_on_plant_scada(button, drop_button)
+            except Exception as ex:
+              raise Exception(ex) from ex   
+              
+    def clickbuttonplantscada(self, caption):
+            """clickbuttonplantscada"""
+            try:
+              Projectexplorertabutility.click_button(caption)
+            except Exception as ex:
+              raise Exception(ex) from ex    
+              
+    def verifyandselectfileplantscada(self, file_name):
+            """verifyandselectfileplantscada"""
+            try:
+              Projectexplorertabutility.verify_and_select_file(file_name)
+            except Exception as ex:
+              raise Exception(ex) from ex      
+              
+    def clickyesinplantscada(self):
+            """clickyesinplantscada"""
+            try:
+              Projectexplorertabutility.click_yes_button()
+            except Exception as ex:
+              raise Exception(ex) from ex       
+              
+    def checkboxclickindeploymentfilesection(self, filenames):
+            """checkboxclickindeploymentfilesection"""
+            try:
+              Projectexplorertabutility.checkbox_click_in_deployment_file_section(filenames)
+            except Exception as ex:
+              raise Exception(ex) from ex       
+              
+    def clicksidebarbuttoninplantscada(self, sidebar):
+            """clicksidebarbuttoninplantscada"""
+            try:
+              Projectexplorertabutility.click_sidebar_button_in_plant_scada(sidebar)
+            except Exception as ex:
+              raise Exception(ex) from ex        
+              
+    def logintoplantscada(self, username, password):
+            """logintoplantscada"""
+            try:
+              Projectexplorertabutility.login_to_plant_scada(username, password)
+            except Exception as ex:
+              raise Exception(ex) from ex        
+              
+    def clickbuttontologinscadapage(self, button):
+            """clickbuttontologinscadapage"""
+            try:
+              Projectexplorertabutility.click_button_to_login_scada_page(button)
+            except Exception as ex:
+              raise Exception(ex) from ex        
+              
+    def clickbuttononscadapopup(self, button):
+            """clickbuttononscadapopup"""
+            try:
+              Projectexplorertabutility.click_button_on_scada_popup(button)
+            except Exception as ex:
+              raise Exception(ex) from ex         
+              
+    def verifymasterpagemainwindow(self):
+            """verifymasterpagemainwindow"""
+            try:
+              Projectexplorertabutility.verify_master_page_main_window()
+            except Exception as ex:
+              raise Exception(ex) from ex          
+              
+    def verifycontrolproject(self, identifier):
+            """verifycontrolproject"""
+            try:
+              Projectexplorertabutility.verify_control_project(identifier)
+            except Exception as ex:
+              raise Exception(ex) from ex     
+
+    def projectexplorertabutility_After_Generation_dialog_window_Message(self):
+          """draganddropfromcontainertosection"""
+          try:
+              Projectexplorertabutility.After_Generation_dialog_window_Message()
+          except Exception as ex:
+              raise Exception(ex) from ex
+       
+                     
+    def textboxprojectbrowserrclickonblockrefineoffline(self,identifier):
+            """textboxprojectbrowserrclickonblockrefineoffline"""
+            try:
+                Controlexpertutility.RClick_on_Block_Refine_Offline(identifier)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+    def textboxcommunicationpeertopeerpanneldraganddropp2ptochannel(self,val):
+        """textboxcommunicationpeertopeerpanneldraganddropp2ptochannel"""
+        try:
+            Projectexplorertabutility.drag_and_drop_P2P_to_channel(val)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxcommunicationchannelspanneleditp2pproperties(self,param):
+        """textboxcommunicationchannelspanneleditp2pproperties"""
+        try:
+            Projectexplorertabutility.edit_P2P_Properties(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+
+    def textboxinstancedockdraginstancedropcontainerpagesp(self,template):
+        """textboxinstancedockdraginstancedropcontainerpagesp"""
+        try:
+            Controlexpertutility.drag_instance_drop_container_page_SP(template)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxinstancedockselectvaluelistviewsvp(self,val):
+        """textboxinstancedockselectvaluelistviewsvp"""
+        try:
+            Controlexpertutility.select_value_listview_SVP(val)
+        except Exception as ex:
+            raise Exception(ex) from ex
+
+    def Navigate_to_supervision_controlproject_tab(self,val):
+            """Navigatetosupervisioncontrolproject"""
+            try:
+                Projectexplorertabutility.Navigate_CP_SP_Tab_PE(val)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+    def Verify_supervision_controlproject_tab(self):
+                """Navigatetosupervisioncontrolproject"""
+                try:
+                    Projectexplorertabutility.Verify_CP_SP_Tab_PE()
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def Map_Workstation_Supervision_project(self,Service_Engine):
+                """Navigatetosupervisioncontrolproject"""
+                try:
+                    Projectexplorertabutility.map_workstation(Service_Engine)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def textboxprojectbrowserrclickcontrolprojectbrowser(self,identifier):
+        """textboxprojectbrowserrclickcontrolprojectbrowser"""
+#        try:
+        Projectexplorertabutility.right_click_control_project_browser_PE(identifier)
+#        except Exception as ex:
+#            raise Exception(ex) from ex
+        
+    def textboxprojectbrowserselectcontextmenuitemec(self,menu_item):
+        """textboxprojectbrowserselectcontextmenuitemec"""
+        try:
+            Engineeringclientutility.select_ContextMenu_Items_EC(menu_item)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxcontainerdockdoubleclickcontainerpe(self,identifier):
+        """textboxcontainerdockdoubleclickcontainerpe"""
+        try:
+            Projectexplorertabutility.double_click_container_dock_context_menu_item_PE(identifier)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxcontainerdockrightclickcontainerdockcontextmenuitempe(self,param):
+        """textboxcontainerdockrightclickcontainerdockcontextmenuitempe"""
+        try:
+            Projectexplorertabutility.right_click_container_dock_context_menu_item_PE(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxprojectbrowserdclickcontrolprojectbroswer(self,identifier):
+        """textboxprojectbrowserdclickcontrolprojectbroswer"""
+        try:
+            Projectexplorertabutility.double_click_control_project_browser_PE(identifier)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxservicemapingeditorverifysupervisionmappingpe(self):
+        """textboxservicemapingeditorverifysupervisionmappingpe"""
+        try:
+            Projectexplorertabutility.verify_supervision_service_maping_PE()
+        except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def draganddropfrominstancetocontainer(self,Instance):
+        """draganddropfrominstancetocontainer"""
+        try:
+            Projectexplorertabutility.select_instance_drag_drop_container_dock_PE(Instance)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def changesettingsoption(self,option):
+        """draganddropfrominstancetocontainer"""
+        try:
+            Projectexplorertabutility.Change_SettingsOption(option)
+        except Exception as ex:
+            raise Exception(ex) from ex
+
+## scam method ##
+    def yesbuttoninsettings(self):
+        """draganddropfrominstancetocontainer"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.messageboxyesbutton.click()
+        except Exception as ex:
+            raise Exception(ex) from ex           
+            

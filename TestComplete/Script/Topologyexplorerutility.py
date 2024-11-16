@@ -1,10 +1,12 @@
 ﻿from TopologyExplorerTab import TopologyExplorerTab
 import Applicationutility
 from MessageBox import MessageBox
+from EngineeringClient import EngineeringClient 
 
 
 topo_obj = TopologyExplorerTab()
 msg_obj = MessageBox()
+eng_obj = EngineeringClient()
 
 
 def select_tool_drag_drop_default_physical_view_TE(param):
@@ -97,6 +99,11 @@ def select_cpu_reference_TE(param):
   ok =  topo_obj.okbuttonbutton.object
   ok.Click()     
       
+  
+  
+def dsjf():
+  ok =  topo_obj.okbuttonbutton.object
+  ok.Click()   
       
 
 
@@ -263,6 +270,8 @@ def confirm_pop(button_value):
   #Sys.Process("ControlExpert.Topology").WPFObject("HwndSource: Window", "Create Logical Network")
   OCR.Recognize(popup).BlockByText(button_value).Click()
   
+def skdgj():
+  confirm_pop("OK")
   
 def select_ContextMenu_Items_TE(menu_item):
   menu = topo_obj.rclickmenutetextbox.object
@@ -587,3 +596,181 @@ def edit_Subnet_Address(IP_add):
       Log.Checkpoint("Subnet Address is updated as "+IP_add)
     else:  
       Log.Error("Subnet Address is updated as "+Subnet_Address[0].Address)
+     
+     
+def Controller_property():
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  for control in controller_row:
+    if getattr(getattr(control, "DataContext", None), "DisplayName", None) == "Controller":
+      control.Click()
+      aqUtils.Delay(500)
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "ComboBoxItem", 10):
+        if item.WPFControlText == "False":
+          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          return
+  Log.Error("Could not find the specific 'Controller' element.")
+
+############################################################
+
+
+  
+from CurrentScreen import CurrentScreen
+CS_obj = CurrentScreen()
+import Applicationexplorertabutility
+import MessageBox
+
+def Enter_Controller_Password_TE(param):
+  field,password = param.split("$$")
+  
+  if  "Password" == field:
+      topo_obj.newpasswordboxtextbox.object.Click()
+      Sys.Keys("^a")
+      Sys.Keys("[BS]")
+      topo_obj.newpasswordboxtextbox.object.PasswordText = password
+      Log.Message(str(topo_obj.newpasswordboxtextbox.object.PasswordText) + " entered in Password")
+  elif  "Confirm Password" == field:
+      topo_obj.ConfirmPasswordboxtextbox.object.Click()
+      Sys.Keys("^a")
+      Sys.Keys("[BS]")
+      topo_obj.ConfirmPasswordboxtextbox.object.PasswordText = password
+      Log.Message(str(topo_obj.ConfirmPasswordboxtextbox.object.PasswordText) + " entered in Confirm Password")
+  elif  "Current Password" == field:
+      topo_obj.oldpasswordboxboxtextbox.object.Click()
+      Sys.Keys("^a")
+      Sys.Keys("[BS]")
+      topo_obj.oldpasswordboxboxtextbox.object.PasswordText = password
+      Log.Message(str(topo_obj.oldpasswordboxboxtextbox.object.PasswordText) + " entered in Current Password")
+ 
+  
+def Click_btn_MessageWindow (button):
+  obj =   CS_obj.modificationpopupbutton.object.FindAllChildren("ClrClassName", "Button", 10)
+  for item in obj:
+    if item.WPFControlText == button:
+      item.Click()
+      Log.Message(item.WPFControlText + " button clicked")
+      break
+      
+      
+def Verify_entered_Controller_Password_valid_invalid_TE(param):
+  if  "Password" == param:
+      if topo_obj.newpasswordboxtextbox.object.ToolTip == None:
+        Log.Message("Password entered is Valid")
+      else:
+        Log.Message("Password entered is Invalid : " + topo_obj.newpasswordboxtextbox.object.ToolTip.OleValue)
+        
+  elif  "Confirm Password" == param:
+      if topo_obj.ConfirmPasswordboxtextbox.object.ToolTip == None:
+        Log.Message("Confirm Password entered is Valid")
+      else:
+        Log.Message("Confirm Password entered is Invalid : " +topo_obj.ConfirmPasswordboxtextbox.object.ToolTip.OleValue)
+
+  elif  "Current Password" == param:
+      if topo_obj.oldpasswordboxboxtextbox.object.ToolTip == None:
+        Log.Message("Current Password entered is Valid")
+      else:
+        Log.Message("Current Password entered is Invalid : " +topo_obj.oldpasswordboxboxtextbox.object.ToolTip.OleValue)
+
+
+ 
+def enter_username_password():
+#  Enter_Controller_Password_TE("Password$$Mooly@1")
+#  Enter_Controller_Password_TE("Confirm Password$$Mooly@1")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Delay(5000)
+#  Verify_entered_Controller_Password_valid_invalid_TE("Password")
+#  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
+  
+  
+#  Enter_Controller_Password_TE("Password$$Mooly@wayoftesting1")
+#  Enter_Controller_Password_TE("Confirm Password$$Mooly@wayoftesting1")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+##  Click_btn_MessageWindow("OK")
+#  Delay(5000)
+#  Verify_entered_Controller_Password_valid_invalid_TE("Password")
+#  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
+#  
+#  
+#  Enter_Controller_Password_TE("Password$$Moolyaway")
+#  Enter_Controller_Password_TE("Confirm Password$$Moolyaway")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Delay(5000)
+#  Verify_entered_Controller_Password_valid_invalid_TE("Password")
+#  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
+#  
+#  
+#  Enter_Controller_Password_TE("Password$$Moolya@123")
+#  Enter_Controller_Password_TE("Confirm Password$$Moolya@45")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Delay(5000)
+#  Verify_entered_Controller_Password_valid_invalid_TE("Password")
+#  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
+
+  
+  Enter_Controller_Password_TE("Password$$Moolya@123")
+  Enter_Controller_Password_TE("Confirm Password$$Moolya@123")
+  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+  Click_btn_MessageWindow("OK")
+  Delay(5000)
+  Verify_entered_Controller_Password_valid_invalid_TE("Password")
+  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
+  
+import Actionutility
+def pw():
+  Enter_Controller_Password_TE("Current Password$$Moolya")
+  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+  Click_btn_MessageWindow("OK")
+  Actionutility.wait_for_execution()
+  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
+  
+  
+  Enter_Controller_Password_TE("Current Password$$Moolya@123")
+  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+  Click_btn_MessageWindow("OK")
+  Actionutility.wait_for_execution()
+  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
+  
+  
+  
+  
+def get_clipboard_text():
+    return Sys.Clipboard
+    
+def Get_Authentication_Code_by_clicking_copy_icon():
+  try:
+    buttons_list = msg_obj.exportpopupbutton.object.Find(('ClrClassName','ToolTip'),( 'Button','Copy To Clipboard'), 1000)
+    buttons_list.click()
+    copied_info = get_clipboard_text()
+    Log.Message(copied_info)
+    return copied_info
+    
+  except Exception as exe:
+    Log.Message(str(exe)) 
+    
+def Get_Authentication_Code_form_textbox():
+  try:
+    obj = msg_obj.exportpopupbutton.object.Find("Name", "WPFObject('AuthenticationText')", 1000)
+    Log.Message(obj.wText)
+    return obj.wText
+    
+  except Exception as exe:
+    Log.Message(str(exe)) 
+    
+def Verify_forgot_password_Authentication_Code():
+  try:
+    obj = msg_obj.exportpopupbutton.object.Find("Name", "WPFObject('TextBlock', '*Schneider Electric Support*', *)", 10)
+    Log.Message(obj.Text)
+    
+    ACode_copyicon = Get_Authentication_Code_by_clicking_copy_icon()
+    ACode_textbox = Get_Authentication_Code_form_textbox()
+  
+    if ACode_copyicon == ACode_textbox:
+      Log.Checkpoint("Authentication Code from copy icon and text box is matching ")
+    else:
+      Log.Message("Authentication Code from copy icon and text box is not matching ")
+  
+  except Exception as exe:
+    Log.Message(str(exe))
+  

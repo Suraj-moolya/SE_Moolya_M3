@@ -61,7 +61,7 @@ class ApplicationExplorerTabWorkFlow:
         try:
             Applicationexplorertabutility.search_template_browser_AE(search_text)
         except Exception as ex:
-            raise Exception(ex) from ex
+           raise Exception(ex) from ex
         
     def textboxtemplatesbrowserdragcompositetemplatedropapplicationbrowsersystem1ae(self,param):
         """textboxtemplatesbrowserdragcompositetemplatedropapplicationbrowsersystem1ae"""
@@ -502,11 +502,6 @@ class ApplicationExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
 
-    def replacetemplatecomb(self):
-        try:
-            Applicationexplorertabutility.replace_template_combo_AE(ReplaceTemplate)
-        except Exception as ex:
-            raise Exception(ex) from ex
 
     def textboxidentifierdoubleclickontemplate(self,identifier):
         """textboxidentifierdoubleclickontemplate"""
@@ -583,4 +578,17 @@ class ApplicationExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
 
+    def textboxassertworkspaceeditorremovepvrangedlinkae(self):
+        """textboxassertworkspaceeditorremovepvrangedlinkae"""
+        try:
+            Applicationexplorertabutility.remove_PV_ranged_link_AE()
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxassertworkspaceeditorverifylinktwoinstancesassetworkspace(self):
+        """textboxassertworkspaceeditorverifylinktwoinstancesassetworkspace"""
+        try:
+            Applicationexplorertabutility.Verify_node_link_line_asset_work_AE(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
 

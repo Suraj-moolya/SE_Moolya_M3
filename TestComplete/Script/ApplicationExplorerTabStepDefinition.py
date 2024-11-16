@@ -638,8 +638,8 @@ def step_impl(Window):
     obj.verifyobject(Window)
 
 @when("I select the template to replace in replace template as {arg}")
-def step_impl(ReplaceTemplate):    
-    obj.replacetemplatecomb(ReplaceTemplate)
+def step_impl(Replace_Template):    
+    obj.replacetemplatecomb(Replace_Template)
     
 @then("I wait for Import Dialogue Window to appear")
 def step_impl():    
@@ -681,4 +681,15 @@ def step_impl(assertWorkspaceEditor8):
     CommonUtil.write_text_file("\nWhen I drag template in application browser Link Editor as \""+assertWorkspaceEditor8+"\"")
     obj.dragtemplatefromapplicationbrowsertolinkeditor(assertWorkspaceEditor8)
 
-
+@when("I Remove PVRanged link AE Assert Workspace Editor in application explorer")
+def step_impl():
+    """I Remove PVRanged link AE Assert Workspace Editor in application explorer"""
+    CommonUtil.write_text_file("\nWhen I Remove PVRanged link AE Assert Workspace Editor in application explorer")
+    obj.textboxassertworkspaceeditorremovepvrangedlinkae()
+  
+@then("Verify link two instances asset workspace Assert Workspace Editor in application explorer")
+def step_impl():
+    """Verify link two instances asset workspace Assert Workspace Editor in application explorer"""
+    CommonUtil.write_text_file("\nThen Verify link two instances asset workspace Assert Workspace Editor in application explorer")
+    obj.textboxassertworkspaceeditorverifylinktwoinstancesassetworkspace()
+    Applicationutility.take_screenshot("Full Screenshot")

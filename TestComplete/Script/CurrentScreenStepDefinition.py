@@ -1,7 +1,8 @@
-"""CurrentScreenWorkFlow"""
+﻿"""CurrentScreenWorkFlow"""
 from CurrentScreenWorkFlow import CurrentScreenWorkFlow
 import CommonUtil
 import Applicationutility
+import Topologyexplorerutility
 
 obj=CurrentScreenWorkFlow()
 
@@ -35,3 +36,20 @@ def step_impl():
     """I Close all tab Deletes system AE Post Condition in conditions"""
     CommonUtil.write_text_file("\nWhen I Close all tab Deletes system AE Post Condition in conditions")
     obj.buttonaepostconditionclosealltabdeletessystem()
+    
+    
+##################################################################################################################
+@when("I Enter pssword in {arg} field in Controller password grid popup")
+def step_impl(password):
+    """I Enter pssword in '<password>' field in Controller password grid popup"""
+    Topologyexplorerutility.Enter_Controller_Password_TE(password)
+    
+@when("I close Logical window in controller configuration window")
+def step_impl():
+    """I Enter pssword in '<password>' field in Controller password grid popup"""
+    obj.closebuttontm()
+    
+@when("I change the controller protection to disable")
+def step_impl():
+    """I change the controller protection to disable"""
+    Topologyexplorerutility.Controller_property()

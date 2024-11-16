@@ -12,6 +12,7 @@ import os
 import csv
 import xml.etree.ElementTree as ET
 import datetime
+import Actionutility
 
 
 eng_obj = EngineeringClient()
@@ -73,16 +74,18 @@ def check_temp_browser_list():
 def search_template_browser_AE(search_text):
   App_browser = aet_obj.applicationbrowsertextbox.object
   temp_browser = aet_obj.templatesbrowsertextbox.object
-  
-  search = temp_browser.FindAllChildren('ClrClassName', 'Expander', 10)
-  temp_browser.Click((temp_browser.width/2), search[0].ScreenTop - (temp_browser.ScreenTop + 20))
-  
+  search = temp_browser.FindAllChildren('ClrClassName', 'SearchComboBoxControl', 50)
+  search[0].Click()
   #search.Click()
   #temp_browser.Click((temp_browser.width/2), 50)
   Applicationutility.wait_in_seconds(1000, 'wait')
   Sys.Keys(search_text)
   Applicationutility.wait_in_seconds(2500, 'wait')
   aet_obj.workspacebutton.object.Click()
+  
+def sgsgs():
+  search_template_browser_AE("Motor")
+  
   
    
 def drag_composite_template_drop_app_browser_system1_AE(param):
@@ -98,7 +101,6 @@ def drag_composite_template_drop_app_browser_system1_AE(param):
             Log.Message('The object selected to drag is : ' + str(template_list[i].Item.Identifier.OleValue))
             break
   App_list = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
-  system_1 = Project.Variables.system_1
   for j in range(len(App_list)):
     if App_list[j].Visible:
       if "System" in str(App_list[j].Item.Identifier.OleValue):
@@ -107,8 +109,9 @@ def drag_composite_template_drop_app_browser_system1_AE(param):
         Log.Message('The object selected to drop to is : ' + str(App_list[j].Item.Identifier.OleValue))
         break
   main_screen = eng_obj.mainscreenbutton    
-  main_screen.drag((fromx+15), (fromy+15), (fromx+tox), -(fromy-toy))
+  main_screen.drag((fromx+15), (fromy+15), (fromx+tox+115), -(fromy-toy))
   Applicationutility.wait_in_seconds(1000, 'wait')
+  
   
   
 def drag_composite_template_drop_app_browser_folder_AE(param):
@@ -207,7 +210,7 @@ def drag_app_browser_drop_asset_workspace_editor_AE(template):
   else:
     tox = Workspace_editor.ScreenLeft
     main_screen = eng_obj.mainscreenbutton   
-    main_screen.drag((fromx+15), (fromy+15), tox, 0)
+    main_screen.drag((fromx+100), (fromy+15), tox, 0)
 
 def verify_Template_node_Asset_Workstation_editor_AE(template):
   template_grid = aet_obj.nodeinstancebutton.object
@@ -410,12 +413,17 @@ def export_System1_Export_Popup_AE(message):
     
 def export_System1_Export_Popup_AE_buttons(button_name):
   buttons_list = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'Button', 1000)
-  for button in buttons_list:
+#  Log.Warning(len(buttons_list))
+  for button in buttons_list  :
+#    Log.Message(button.WPFControlText)
     if button_name in str(button.WPFControlText) :
       button.click()
+      Log.Message(button.WPFControlText)
       break
   else:
     Log.Warning("Button name mentioned doesnt exists")
+    
+
                    
 def extract_template_xmldata_AE():
     # Combines system name and file format
@@ -818,8 +826,12 @@ def Verify_node_link_line_asset_work_AE(param):
       tox = node_element.Width
       toy = node_element.Height
       node_element.ClickR(tox-5, toy/2)
-      Log.Message('verified two instances linked between elements')
-      
+      try:
+        if eng_obj.rclickmenutextbox.exists:  
+          Log.Checkpoint('verified two instances linked between elements')
+      except:
+        Log.Message('Instances are unlinked')
+        
 def Right_click_Assestworkspace_editor_AE():
   template_list = aet_obj.nodeinstancebutton.object.FindAllChildren('ClrClassName', 'InstanceNode', 1000)
   for node in template_list:
@@ -846,11 +858,13 @@ def replace_template_combo_AE(param):
         if version in comb.Items.Item[i].TemplateName.OleValue:
           comb.SelectedIndex = i
           Log.Message('The Selected template is ' + str(comb.Items.Item[i].TemplateName.OleValue))
-          comb.Keys('[Enter]')
+          Applicationutility.wait_in_seconds(1500, 'wait')
+          aet_obj.replacetemplatetextbox.click()
           break
     else:
       Log.Warning('No template with ' + str(identifier) + ' and ' + str(version))
-        
+      
+
   
 def capture_template_application_browser_AE(identifier):
   App_browser = aet_obj.applicationbrowsertextbox
@@ -918,6 +932,9 @@ def Verify_Notification_pannel_Message(Message):
         break
       else:
         Log.Warning(f'{i.DataContext.Message.OleValue} in Notification Pannel')
+        
+def jsjsjs():
+  Verify_Notification_pannel_Message("Update")
 
 ## this method can be used for drag and drop intances in assetworkspace or linkeditor based on position 
 ## only 3 position can be defined based on the screen width
@@ -965,3 +982,18 @@ def verify_application_explorer_instance_editor_tab1(identifier):
   else:
     Log.Warning('The instance editor tab was not found : ' + str(identifier))
 
+def remove_PV_ranged_link_AE():
+  node_element_parent = aet_obj.nodeinstancebutton.object
+  node_element_list = node_element_parent.FindAllChildren('ClrClassName', 'TreeViewItem', 1000) 
+  
+  for node_element in node_element_list:
+    if 'PVRanged' == str(node_element.DataContext.Identifier):
+      tox = node_element.Width
+      toy = node_element.Height
+      node_element.ClickR(tox-5, toy/2)
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      Engineeringclientutility.select_ContextMenu_Items_EC('Delete')
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      break
+  else:
+    Log.Warning('PVRanged not found.')

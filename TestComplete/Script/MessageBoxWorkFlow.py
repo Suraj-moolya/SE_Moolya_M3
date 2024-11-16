@@ -4,6 +4,8 @@ from MessageBox import MessageBox
 import Applicationutility
 import Engineeringclientutility
 import Applicationexplorertabutility
+import Actionutility
+
 class MessageBoxWorkFlow:
     """MessageBoxWorkFlow"""
     messagebox_obj = MessageBox()
@@ -146,3 +148,25 @@ class MessageBoxWorkFlow:
                 Applicationexplorertabutility.Verify_Notification_Message(message_to_verify)
             except Exception as ex:
                 raise Exception(ex) from ex
+                
+    def textboxmanagenetworkvariablesrightclickonvariable(self,var_name):
+            """textboxmanagenetworkvariablesrightclickonvariable"""
+            try:
+                Projectexplorertabutility.Right_click_on_variable(var_name)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+    def textboxmodaldialogwindowaddnewtextmodaldialogwindow(self,param):
+        """textboxmodaldialogwindowaddnewtextmodaldialogwindow"""
+        try:
+            Actionutility.modal_dialog_window_textbox(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxmodaldialogwindowclickmodaldialogwindow(self,button_name):
+        """textboxmodaldialogwindowclickmodaldialogwindow"""
+        try:
+            Actionutility.modal_dialog_window_button(button_name)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        

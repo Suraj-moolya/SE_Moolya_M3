@@ -8,11 +8,11 @@ Scenario Outline: Replace template - Select template to replace template from Ap
 When I rclick application browser template AE Application browser in application explorer as '<Application browser>'
 And I Select context menu item EC Application browser in application explorer as '<Application browser1>' 
 Then verify window open as '<Window>'
-When I select the template to replace in replace template as '<Replace Template>'
+When I select the template to replace in replace template as '<Replace_Template>'
 And I take evidence Instance Editor in application explorer
 
 Examples:
-  | SlNo. | Application browser    | Application browser1 | Window           | Replace Template          |
+  | SlNo. | Application browser    | Application browser1 | Window           | Replace_Template          |
   | 1     | INTERLOCK8OFFGP$$1.0.5 | Replace Template     | Replace Template | INTERLOCK4ONGP_UC$$1.0.14 |
 
 

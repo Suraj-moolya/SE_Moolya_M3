@@ -1,4 +1,4 @@
-"""Global templates Explorer Tab Utility"""
+﻿"""Global templates Explorer Tab Utility"""
 
 import Engineeringclientutility
 import Applicationutility
@@ -81,3 +81,11 @@ def verify_search_box_message_GTE(search_text):
     Log.Warning('Result was found for the text')
     
   Applicationutility.take_screenshot()
+  
+  
+def verify_title_bar(tabname):
+  titlebar = gte_obj.titlebartab.object
+  if titlebar.DataContext.HeaderText == tabname:
+    Log.Checkpoint(f"Successfully navigated to '{tabname}'.")
+  else:
+    Log.Warning(f"Navigation error: Expected '{tabname}', but currently on '{titlebar.DataContext.HeaderText}'.")

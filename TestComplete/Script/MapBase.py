@@ -1,4 +1,4 @@
-""" mapbase"""
+﻿""" mapbase"""
 import os
 from ControlRepository import ControlRepository
 from UIElement import UIElement
@@ -64,6 +64,12 @@ class MapBase:
                 if "FullName" in props["names"]:
                     # element identification with fullname
                     return UIElement(eval(props["values"][0]))
+#                
+                elif props["parent"][0] == 'ControlExpert':
+                    element = UIElement(
+                    self.__find__element__by_process__index(props["parent"][0], props)
+                    )
+#                
                 elif not props["parent"]:
                     element = UIElement(
                         self.__find__element__(process_identifier, props)
@@ -151,3 +157,33 @@ class MapBase:
             return process.Find(props["names"], props["values"], 50, True)
         except Exception as ex:
             Log.Message("Process was not available")
+
+            
+    def __find__element__by_process__index(self, processname, props):
+        """find element"""
+        obj = None
+        count = Sys.FindAllChildren('ProcessName', processname)
+        #Log.Message(len(count))
+        for i in range(1, len(count)+1):
+          #Log.Message(f'{i} i')
+          try:
+            if i == 1:
+              process = Sys.Process(processname)
+            else:
+
+              process = Sys.Process(processname, i)
+
+            if process.Exists:
+              obj = process.Find(props["names"], props["values"], 50, True)
+              #Log.Message(f'{processname} : {i}')
+              if obj.Exists:
+                if obj.Visible:
+                  #Log.Message(f'{processname} : {i}')
+                  break
+            else:
+              Log.Message(f'{processname} : {i} was not available')
+          except Exception as ex:
+            Log.Message(f"{processname} : {i} Process was not available")
+        return obj            
+            
+    

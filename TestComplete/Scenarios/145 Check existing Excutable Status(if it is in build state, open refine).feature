@@ -1,14 +1,15 @@
 ﻿Feature: Eco Struxure Process Expert1
 
 @TC_EPE_PE_CP_0001_1_1
+@repeatedtestcase
 @test001
 Scenario Outline: Check existing Executable Status - right click control project and generate
 When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
 Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
 
 Examples:
-|SlNo.|container dock1|container dock3|
-|1|FBDSection_1$$Generate|Generate|
+  | SlNo. | container dock1            | container dock3 |
+  | 1     | ControlProject_1$$Generate | Generate        |
 
 
 
@@ -22,8 +23,8 @@ And I selected Close in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|
-|1|ControlProject_1|Refine|Close Control Project Editor (Completed)|
+  | SlNo. | project browser1 | project browser2 | project browser3                         |
+  | 1     | ControlProject_1 | Refine           | Close Control Project Editor (Completed) |
 
 
 
@@ -36,8 +37,8 @@ And I Click popup button object project browser in project explorer as '<project
 Then Verify header control project browser PE project browser in project explorer as '<project browser5>'
 
 Examples:
-|SlNo.|project browser2|project browser3|project browser4|project browser5|
-|1|Customize|State$$1|EngineeringClient$$rclickmenutextbox$$Apply|State|
+  | SlNo. | project browser2 | project browser3 | project browser4                            | project browser5 |
+  | 1     | Customize        | State$$1         | EngineeringClient$$rclickmenutextbox$$Apply | State            |
 
 
 
@@ -49,8 +50,8 @@ And I Expand control project browser PE project browser in project explorer as '
 Then Verify build state of control executable PE project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|content|
-|1|ControlProject_1|Executables|ControlProject_1$$ControlExecutable_1$$NotBuilt|NA|
+  | SlNo. | project browser1 | project browser2 | project browser3                                | content |
+  | 1     | ControlProject_1 | Executables      | ControlProject_1$$ControlExecutable_1$$NotBuilt | NA      |
 
 
 
@@ -62,8 +63,8 @@ And I Expand control project browser PE project browser in project explorer as '
 Then Verify build state of control executable PE project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|content|
-|1|ControlProject_1|Executables|ControlProject_1$$ControlExecutable_1$$Built|NA|
+  | SlNo. | project browser1 | project browser2 | project browser3                             | content |
+  | 1     | ControlProject_1 | Executables      | ControlProject_1$$ControlExecutable_1$$Built | NA      |
 
 
 
@@ -75,8 +76,8 @@ And I Expand control project browser PE project browser in project explorer as '
 Then Verify build state of control executable PE project browser in project explorer as '<project browser3>'
 
 Examples:
-|SlNo.|project browser1|project browser2|project browser3|content|
-|1|ControlProject_1|Executables|ControlProject_1$$ControlExecutable_1$$OutOfDate|NA|
+  | SlNo. | project browser1 | project browser2 | project browser3                                 | content |
+  | 1     | ControlProject_1 | Executables      | ControlProject_1$$ControlExecutable_1$$OutOfDate | NA      |
 
 
 

@@ -13,7 +13,6 @@ Examples:
 
 
 @TC_EPE_AE_00
-# can change the data according to the template and podition
 Scenario Outline: Drag and Drop Template from Application Browser to Link Editor wrt Position
 When I drag template in application browser Link Editor as '<Assert Workspace Editor8>'
 Then Verify Template AE Assert Workspace Editor in application explorer as '<Assert Workspace Editor9>'

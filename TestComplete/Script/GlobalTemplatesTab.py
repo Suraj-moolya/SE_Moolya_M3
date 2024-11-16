@@ -1,4 +1,4 @@
-"""GlobalTemplatesTab"""
+﻿"""GlobalTemplatesTab"""
 from MapBase import MapBase
 
 class GlobalTemplatesTab(MapBase):
@@ -73,6 +73,11 @@ class GlobalTemplatesTab(MapBase):
     def compositeeditorworkspacebutton(self):
         """compositeeditorworkspacebutton"""
         return self.get_element("compositeeditorworkspace_GlobalTemplatesTab")
+              
+    @property
+    def titlebartab(self):
+        """titlebartab"""
+        return self.get_element("TitleBar_GlobalTemplatesTab")
     
     
     

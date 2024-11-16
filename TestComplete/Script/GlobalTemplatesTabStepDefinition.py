@@ -107,3 +107,11 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen Verify Duplicate window close")
     obj.verify_dup_win()
     Applicationutility.take_screenshot('Full screenshot')
+        
+@then("I verify that I have navigated to the {arg}")
+def step_impl(tabname):
+    """I verify that I have navigated to the '<tabname>'"""
+    CommonUtil.write_text_file("\nWhen Verify Duplicate window close")
+    obj.verifytittlebar(tabname)
+    Applicationutility.take_screenshot('Full screenshot')    
+    

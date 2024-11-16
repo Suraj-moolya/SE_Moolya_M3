@@ -194,9 +194,13 @@ def clickR_Folder():
       break     
 
 def circularprogressbar_Wait():
-  ses_obj.circularprogressbarbutton.wait_for_element_property('Exists', None, 20000)  
-
+  try:
+    ses_obj.circularprogressbarbutton.wait_for_element_property('Exists', None, 20000)  
+  except:
+    Log.Message('No Circular progress bar')
+    
 def Rename_Folder(Foldername):
+  Applicationutility.wait_in_seconds(1000, 'wait')
   if not Project.Variables.VariableExists('Rename_Folder_HF'):
         Project.Variables.AddVariable('Rename_Folder_HF', "String")
   Project.Variables.Rename_Folder_HF = str(Foldername)
@@ -267,9 +271,9 @@ def select_ContextMenu_Items_EC(menu_item):
   menu_items = menu.FindAllChildren("ClrClassName", "*MenuItem", 50)
   for item in menu_items:
     if item.Visible and item.Enabled:
-      if str(item.Header.OleValue) == str(menu_item):
+      if item.Header != None and str(item.Header.OleValue) == str(menu_item):
         item.Click()
-        Log.Message('The Context Menu Item clicked is : ' + str(menu_item))
+        Log.Checkpoint('The Context Menu Item clicked is : ' + str(menu_item))
         break
   else:
     Log.Warning(f'The Context menu item {menu_item} not found !')
@@ -434,17 +438,18 @@ def select_Context_SubMenu_Items_EC(menu_item):
     if item.Visible and item.Enabled:
       if str(item.Header.OleValue) == str(menu_item):
         item.Click()
-        Log.Message('The Context Menu Item clicked is : ' + str(menu_item))
+        Log.Checkpoint('The Context Menu Item clicked is : ' + str(menu_item))
         break
   Applicationutility.wait_in_seconds(3000, 'wait')
-  
+
+   
 
 def open_EC_ok_on_trial_pop_up():
   Log.Enabled = False
   Engineering_client = Sys.Process("EngineeringClient")
   if Engineering_client.Exists:
     Log.Enabled = True
-    Log.Message('Engineering Client Application already running !')
+    Log.Checkpoint('Engineering Client Application already running !')
   else:
     Log.Enabled = True
     TestedApps.EngineeringClient.Run()
@@ -549,4 +554,47 @@ def Verify_ContextMenu_Item(param):
           Log.Checkpoint(str(item.Header)+" Enabled status:"+str(item.Enabled))
         else:
           Log.Warning(str(item.Header)+" Visible status:"+str(item.Visible))
-          Log.Warning(str(item.Header)+" Enabled status:"+str(item.Enabled))    
+          Log.Warning(str(item.Header)+" Enabled status:"+str(item.Enabled))
+          
+def Open_Close_folder_TE(param):
+  FolderName,ButtonName = param.split("$$")
+  SE_node = ses_obj.systemexplorernodebutton.object
+  SE_node_list = SE_node.FindAllChildren("ClrClassName", "ExplorerNode", 50)
+  
+  for i in range(len(SE_node_list)): 
+    if SE_node_list[i].DataContext.Identifier.OleValue == FolderName:
+      for i in SE_node_list[i].FindAllChildren("ClrClassName", "Button", 50):
+        if i.ToolTip.OleValue == ButtonName and i.Visible:
+          i.Click()
+          clicked = True
+          break
+
+def Verify_folder_Content_Status_TE(FolderName):
+  SE_node = ses_obj.systemexplorernodebutton.object
+  SE_node_list = SE_node.FindAllChildren("ClrClassName", "ExplorerNode", 50)
+  
+  for i in range(len(SE_node_list)): 
+    if SE_node_list[i].DataContext.Identifier.OleValue == FolderName and SE_node_list[i].IsInnerContentExpanded:
+       Log.Message(f'{SE_node_list[i].DataContext.Identifier.OleValue} folder is expanded')
+       break
+  else:
+    Log.Message(f'{SE_node_list[i].DataContext.Identifier.OleValue} folder is not expanded')
+          
+
+def no_password_system(btn):
+  buttons = lm_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName','Button', 10)
+  checkbox = lm_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName','CheckBox', 10)
+  if checkbox[0].wState == 0:
+    checkbox[0].wState = 1
+  Applicationutility.wait_in_seconds(2000, 'Wait')
+  for button in buttons:
+    if btn in button.WPFControlText:
+      button.Click()
+  Applicationutility.wait_in_seconds(2000, 'Wait')
+
+        
+        
+
+      
+
+

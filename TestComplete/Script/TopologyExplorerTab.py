@@ -48,4 +48,34 @@ class TopologyExplorerTab(MapBase):
     def propertysecuritytabbutton(self):
         """propertysecuritytabbutton"""
         return self.get_element("PropertySecurityTab_TopologyExporerTab")
-              
+        
+    @property
+    def passwordgridbutton(self):
+        """passwordgridbutton"""
+        return self.get_element("Passwordgrid_TopologyExporerTab")
+        
+    @property
+    def newpasswordboxtextbox(self):
+        """newpasswordboxtextbox"""
+        return self.get_element("NewPasswordbox_TopologyExporerTab")
+        
+    @property
+    def ConfirmPasswordboxtextbox(self):
+        """ConfirmPasswordboxtextbox"""
+        return self.get_element("ConfirmPasswordbox_TopologyExporerTab")
+        
+    @property
+    def Closetmbutton(self):
+        """Closetmbutton"""
+        return self.get_element("ClosebuttonTM_TopologyExporerTab")
+        
+    @property
+    def controllerpropertytab(self):
+        """controllerpropertytab"""
+        return self.get_element("ControllerPropertytab_TopologyExporerTab")
+        
+    @property
+    def oldpasswordboxboxtextbox(self):
+        """oldpasswordboxboxtextbox"""
+        return self.get_element("OldPasswordBox_TopologyExporerTab")
+

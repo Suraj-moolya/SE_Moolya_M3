@@ -87,10 +87,11 @@ def wait_for_execution():
   for item in Abort_list:
     if item.Panel_ZIndex == 0:
       for _ in range(100):
-        if item.DataContext.Status.OleValue != "Executing":
-          break
-        else:
-          Applicationutility.wait_in_seconds(1000, 'Loading !!!')
+        if item.Visible:
+          if  item.DataContext.Status.OleValue != "Executing":
+            break
+          else:
+            Applicationutility.wait_in_seconds(1000, 'Loading !!!')
 
 def modal_dialog_window_button(button_name):
   wait_in_seconds(1000, 'wait')
@@ -99,7 +100,7 @@ def modal_dialog_window_button(button_name):
   for button in buttons_list:
     if button_name in str(button.WPFControlText) :
       button.click()
-      Log.Message('Clicked ' + str(button.WPFControlText) + ' button.')
+      Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
       break
   else:
     Log.Warning("Button name mentioned doesnt exists")
@@ -158,3 +159,17 @@ def launch_system_server():
 def modal_dialog_window_close():
   wait_in_seconds(1000, 'wait')
   msg_obj.modaldialogwindowtextbox.object.Close()
+  
+def modal_dialog_window_textbox(param):
+  param = default_text, new_text
+  wait_in_seconds(1000, 'wait')
+  buttons_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'TextBlock', 1000)
+  take_screenshot('Taking Screenshot of the Message Window.')
+  for text in buttons_list:
+    if default_text in str(button.WPFControlText) :
+      text.Text = new_text
+      Log.Checkpoint('New text : ' + str(button.WPFControlText) + ' is added.')
+      take_screenshot('Taking Screenshot of the Message Window.')
+      break
+  else:
+    Log.Warning("Text name mentioned doesnt exists")

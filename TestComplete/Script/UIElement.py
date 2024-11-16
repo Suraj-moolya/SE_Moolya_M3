@@ -1567,7 +1567,7 @@ class UIElement:
 #find_all_children:- this function return's all children for the current item         
 ###################################################################
     def find_children_for_grid_view_row(self):
-        """find_all_children for grid view row"""
+        """find_all_children_for_grid_view_row"""
         listboxitems = self.element.FindAllChildren("ClrClassName", 'GridViewRow', 1500, True)        
         return listboxitems       
                 

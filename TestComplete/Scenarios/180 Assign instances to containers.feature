@@ -3,21 +3,66 @@
 @TC_EPE_SWF_0001
 @test0001
 Scenario Outline: Assign Instance to Containers in PE
-When I Double Click on Containers as '<identifier>'
-And I Drag and Drop the Instance in Container Section Under System as '<instance>'
-And I click button on the Assignment Viewer window as '<button_name>'
+When I drag and Drop the Each instance to Each Sections as '<controller>' '<section>'
+And I click modal dialog window project browser in project explorer as '<Button>'
+Then I Verify the facet generation status of all facets in Assignments Dock
+
 Examples:
-  | SlNo. | identifier | instance  | button_name |
-  | 1     | Containers | ValveGP_1 | OK          |
+  | SlNo. | controller      | section         | Button |
+  | 1     | ValveGP_1       | M580_Standalone | OK     |
+  | 2     | MotorGP_1       | M580_Standalone | OK     |
+  | 3     | AnalogInputGP_1 | M580_Standalone | OK     |
+#  | 4     | INTERLOCK8OFFGP_UC_1 | M580_Redundant | OK     |
   
+
+@TC_EPE_SWF_0001
+@test0001
+Scenario Outline: Assign ValveGP_2 to Containers in PE
+When I drag and Drop the Each instance to Each Sections as '<controller>' '<section>'
+Then I Verify the facet generation status of all facets in Assignments Dock
+
+Examples:
+  | SlNo. | controller | section         |
+  | 1     | ValveGP_2  | M580_Standalone |
+
   
 @TC_EPE_SWF_0002
 @test0002
-Scenario Outline: Creating Multiple folders and Sections
-When I Double Click on Containers as '<identifier>'
-And I Right click on the ControlProject_1 in Containers window and create FBDSections as '<num_sections>'
-And I Drag and Drop the Instance in controlproject_1 under Container Section  as '<controller>' '<section>'
-And I drag and Drop the Each instance to Each Sections as '<controllers>' '<sections>'
+Scenario Outline: Assign Multiple Instance to different Containers in PE
+When I Assign Instances from instance dock to sections in containers dock as '<param>'
+Then I Verify the facet generation status of all facets in Assignments Dock
+
 Examples:
-  | SlNo. | identifier | num_sections | controller      | section          | controllers          | sections                   |
-  | 1     | Containers | 5            | AnalogInputGP_1 | ControlProject_1 | MotorGP_1$$ValveGP_1 | FBDSection_2$$FBDSection_3 |
+  | SlNo. | param                         |
+  | 1     | AnalogInputGP_1$$FBDSection_1 |
+  | 2     | MotorGP_1$$FBDSection_2       |
+
+  
+@TC_EPE_SWF_000
+@test0001
+Scenario Outline: Assign Instance to Containers FBDSection_1 in PE
+When I drag and Drop the Each instance to Each Sections as '<controller>' '<section>'
+Then I Verify the facet generation status of all facets in Assignments Dock
+
+Examples:
+  | SlNo. | controller           | section      |
+  | 1     | ValveGP_1            | FBDSection_1 |
+  | 2     | MotorGP_1            | FBDSection_1 |
+  | 3     | AnalogInputGP_1      | FBDSection_1 |
+  | 4     | INTERLOCK8OFFGP_UC_1 | FBDSection_1 |
+
+  
+@TC_EPE_SWF_0001
+@test0001
+Scenario Outline: Assign Instance to Containers in Supervision in PE
+When I drag and Drop the Each instance to Each Sections as '<Instance>' '<section>'
+And I click modal dialog window project browser in project explorer as '<Button>'
+Then I Verify the facet generation status of all facets in Assignments Dock
+
+Examples:
+  | SlNo. | Instance  | Button | section          |
+  | 1     | ValveGP_1 | OK     | Supervision_Test |
+  | 2     | MotorGP_1 | OK     | Supervision_Test |
+#  | 3     | AnalogInputGP_1  | OK     | Supervision_Test |
+#  | 4     | AnalogOutputGP_1 | OK     | Supervision_Test |
+

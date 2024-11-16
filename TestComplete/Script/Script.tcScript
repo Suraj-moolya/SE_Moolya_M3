@@ -21,7 +21,11 @@
 				<child name="ApplicationExplorerTabWorkFlow" key="{001ABD02-E107-4837-B290-55898E939DEF}" path="ApplicationExplorerTabWorkFlow.py" />
 				<child name="GlobalTemplatesTabWorkFlow" key="{001ABD02-E108-4837-B290-55898E939DEF}" path="GlobalTemplatesTabWorkFlow.py" />
 				<child name="ProjectExplorerTabWorkFlow" key="{BE72DCD6-8FDD-4215-8625-F20FCB9B691D}" path="ProjectExplorerTabWorkFlow.py" />
-
+				<child name="OperationClientWorkFlow" key="{EE1EDF64-CDBF-42A6-B646-836644AEEDC9}" path="OperationClientWorkFlow.py" />
+				<child name="RefineOfflineWorkFlow" key="{CC88AE1E-A09A-42B8-BED1-FC22B3373CD1}" path="RefineOfflineWorkFlow.py" />
+				<child name="ControlExpertWorkFlow" key="{9E51EBD2-3AB8-4F24-BEE0-18F5A85EC5AE}" path="ControlExpertWorkFlow.py" />
+				<child name="DialogCEWorkFlow" key="{935B7F1D-AC4C-4CC6-BE9C-D9423E5FF7C8}" path="DialogCEWorkFlow.py" />
+				<child name="SupervisionProjectWorkFlow" key="{70EF14AC-D40C-4439-A462-EBC916491FFB}" path="SupervisionProjectWorkFlow.py" />
 			</folder>
 			<folder name="StepDefinitions">
 				<child name="CurrentScreenStepDefinition" key="{001ABD02-E109-4837-B290-55898E939DEF}" path="CurrentScreenStepDefinition.py" />
@@ -34,6 +38,11 @@
 				<child name="ApplicationExplorerTabStepDefinition" key="{001ABD02-E116-4837-B290-55898E939DEF}" path="ApplicationExplorerTabStepDefinition.py" />
 				<child name="GlobalTemplatesTabStepDefinition" key="{001ABD02-E117-4837-B290-55898E939DEF}" path="GlobalTemplatesTabStepDefinition.py" />
 				<child name="ProjectExplorerTabStepDefinition" key="{C6D86E65-CA75-4DEA-BD4C-72F8C604AEEA}" path="ProjectExplorerTabStepDefinition.py" />
+				<child name="RefineOfflineStepDefinition" key="{E5715D84-9654-4FE8-B4F7-1E55FBACA033}" path="RefineOfflineStepDefinition.py" />
+				<child name="OperationclientStepDefinition" key="{B7893BBA-95BE-4514-9080-17AB3E82FE55}" path="OperationclientStepDefinition.py" />
+				<child name="ControlExpertStepDefinition" key="{BC6A6288-D571-4361-966C-45368280CD66}" path="ControlExpertStepDefinition.py" />
+				<child name="DialogCEStepDefinition" key="{DA19AF80-1B07-40DF-9D64-38C9D4BA2AED}" path="DialogCEStepDefinition.py" />
+				<child name="SupervisionProjectStepDefinition" key="{78CA9E56-AB11-4F34-A0DA-EFDA0D461362}" path="SupervisionProjectStepDefinition.py" />
 			</folder>
 			<folder name="WindowsDialogs">
 				<child name="SystemServer" key="{001ABD02-E118-4837-B290-55898E939DEF}" path="SystemServer.py" />
@@ -48,6 +57,12 @@
 				<child name="LicenseManagement" key="{001ABD02-E127-4837-B290-55898E939DEF}" path="LicenseManagement.py" />
 				<child name="MessageBox" key="{001ABD02-E128-4837-B290-55898E939DEF}" path="MessageBox.py" />
 				<child name="ProjectExplorerTab" key="{C9B5ED4C-69FD-4347-92FF-698EDBA29C9A}" path="ProjectExplorerTab.py" />
+				<child name="OperationClient" key="{053E4C8A-CB65-4635-8977-474A3D54A927}" path="OperationClient.py" />
+				<child name="RefineOffline" key="{5F58CF38-0AB2-4EEC-8C4F-F8C638B9DA60}" path="RefineOffline.py" />
+				<child name="AvevaScreen" key="{F7215BA1-8D32-4F65-A781-756E7594C84A}" path="AvevaScreen.py" />
+				<child name="ControlExpert" key="{B6525A57-DC2E-418C-87E2-D1D29FE9F54B}" path="ControlExpert.py" />
+				<child name="DialogCE" key="{C4F056D8-8313-45EC-82AF-1A460C9E0457}" path="DialogCE.py" />
+				<child name="SupervisionProject" key="{E08E20AB-2175-4591-9FD4-8E999C9C0052}" path="SupervisionProject.py" />
 			</folder>
 			<folder name="Utilities">
 				<child name="Applicationutility" key="{001ABD02-E129-4837-B290-55898E939DEF}" path="Applicationutility.py" />
@@ -61,6 +76,7 @@
 				<child name="Teststepsutility" key="{08E7C912-58CE-469D-A30D-9AC6B6A51C90}" path="Teststepsutility.py" />
 				<child name="Topologyexplorerutility" key="{A68BBC9B-B2B4-4E2A-9D30-D1DE8ACC51CD}" path="Topologyexplorerutility.py" />
 				<child name="Controlexpertutility" key="{A3E073AE-3E58-4340-99C7-B951D449CCC9}" path="Controlexpertutility.py" />
+				<child name="Operationclientutility" key="{93A2AD89-4459-4CBD-AA57-ECAE52D23AFA}" path="Operationclientutility.py" />
 			</folder>
 		</folder>
 	</children>

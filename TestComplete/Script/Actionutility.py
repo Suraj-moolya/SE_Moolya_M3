@@ -12,18 +12,18 @@ from SystemExplorerScreen import SystemExplorerScreen
 from TopologyExplorerTab import TopologyExplorerTab
 
 
-EngineeringClient = EngineeringClient()    
-ApplicationExplorerTab = ApplicationExplorerTab()
-ECWarningPopup = ECWarningPopup()
-GlobalTemplatesTab = GlobalTemplatesTab()
-LicenseManagement = LicenseManagement()
+EngineeringClient1 = EngineeringClient()    
+ApplicationExplorerTab1 = ApplicationExplorerTab()
+ECWarningPopup1 = ECWarningPopup()
+GlobalTemplatesTab1 = GlobalTemplatesTab()
+LicenseManagement1 = LicenseManagement()
 MessageBox1 = MessageBox()
-ProjectExplorerTab = ProjectExplorerTab()
-SystemExplorerScreen = SystemExplorerScreen()
+ProjectExplorerTab1 = ProjectExplorerTab()
+SystemExplorerScreen1 = SystemExplorerScreen()
 SystemServer1 = SystemServer()
-TopologyExplorerTab = TopologyExplorerTab()
+TopologyExplorerTab1 = TopologyExplorerTab()
 WindowsExplorer1 = WindowsExplorer()
-Screen_List = [EngineeringClient, ApplicationExplorerTab, ECWarningPopup, GlobalTemplatesTab, LicenseManagement, MessageBox1, ProjectExplorerTab, SystemExplorerScreen, SystemServer1, TopologyExplorerTab, WindowsExplorer1]
+Screen_List = [EngineeringClient1, ApplicationExplorerTab1, ECWarningPopup1, GlobalTemplatesTab1, LicenseManagement1, MessageBox1, ProjectExplorerTab1, SystemExplorerScreen1, SystemServer1, TopologyExplorerTab1, WindowsExplorer1]
 msg_obj = MessageBox()
 win_obj = WindowsExplorer()
 server_obj = SystemServer()
@@ -126,11 +126,11 @@ def modal_dialog_window_button(button_name):
   for button in buttons_list:
     if button_name in str(button.WPFControlText) :
       button.click()
-      Log.Message('Clicked ' + str(button.WPFControlText) + ' button.')
+      Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
       break
   else:
     Log.Warning("Button name mentioned doesnt exists")
-
+    
 def get_obj(param):
   Screen, property = param.split('$$')
   for Screen_item in Screen_List:
@@ -147,6 +147,7 @@ def Click_popup_button(param):
   buttons_list = obj.object.FindAllChildren('ClrClassName', 'Button', 1000)
   take_screenshot('Taking Screenshot of the Popup Window.')
   for button in buttons_list:
+    Applicationutility.wait_in_seconds(1000, 'Wait')
     if button_name in str(button.WPFControlText) :
       button.click()
       Log.Message('Clicked ' + str(button.WPFControlText) + ' button.')
@@ -160,5 +161,19 @@ def close_tab_items_EC(identifier):
   for i in range(len(template_list)):
     if template_list[i].Visible: 
       if identifier in str(template_list[i].Header.OleValue):
-        template_list[i].Click((template_list[i].Width-15), (template_list[i].Height/2))  
-
+        template_list[i].Click((template_list[i].Width-15), (template_list[i].Height/2)) 
+  else:
+     Log.Warning("Tab Item mentioned is not Valid")
+     
+     
+def ProjectSample():
+    # Obtains the path to the folder that stores the project configuration files
+    ConfigPath = Project.ConfigPath
+    # Searches for the .tcLS files in the folder
+    ConfigFiles = aqFileSystem.FindFiles(ConfigPath, "*.tcLS")
+    if ConfigFiles.Count > 0:
+      while ConfigFiles.HasNext():
+        aFile = ConfigFiles.Next();
+        Log.Message(aFile.Name + " file is located in " + ConfigPath)
+    else:
+      Log.Message("No .tcLS files were found")

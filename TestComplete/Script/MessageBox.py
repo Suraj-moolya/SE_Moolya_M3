@@ -133,4 +133,24 @@ class MessageBox(MapBase):
     def MessageWindowbutton(self):
         """modeldialogfeedbacktextbox"""
         return self.get_element("modeldialogfeedback_MessageBox")
+        
+    @property
+    def modeldialogfeedbacktextbox(self):
+        """modeldialogfeedbacktextbox"""
+        return self.get_element("modeldialogfeedback_MessageBox")
+              
+    @property
+    def channelpropertiesdialogtextbox(self):
+        """channelpropertiesdialogtextbox"""
+        return self.get_element("ChannelPropertiesDialog_MessageBox")
+              
+    @property
+    def managenetworkvariablestextbox(self):
+        """managenetworkvariablestextbox"""
+        return self.get_element("ManageNetworkVariables_MessageBox")
+   
+    @property
+    def modaldialogwindow1textbox(self):
+        """modaldialogwindow1textbox"""
+        return self.get_element("Modaldialogwindow1_MessageBox")
                         

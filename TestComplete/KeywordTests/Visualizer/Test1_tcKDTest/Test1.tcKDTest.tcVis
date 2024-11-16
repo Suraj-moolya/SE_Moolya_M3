@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{95290358-DB89-4C12-AA60-1FA85857153A}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="1" kind="0" dateTime="45571.0587731481" objectName="Aliases.EngineeringClient.HwndSource_Main.Main.FrameHostControl.radDocking.RadSplitContainer.RadPaneGroup.FrameHostControl.radDocking.RadSplitContainer.RadPaneGroup.GridviewcellMotorgp" objectLeft="1167" objectTop="808" objectRight="1318" objectBottom="836" clickPointX="-1" clickPointY="-1" imageFileName="tcvi244550359230405.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="3" kind="0" dateTime="45571.0587847222" objectName="Aliases.EngineeringClient.HwndSource_Main.Main.FrameHostControl.radDocking.RadSplitContainer.RadPaneGroup.FrameHostControl.radDocking.RadSplitContainer.RadPaneGroup.GridviewcellMotorgp" objectLeft="1167" objectTop="808" objectRight="1318" objectBottom="836" clickPointX="-1" clickPointY="-1" imageFileName="tcvi2445514372304010.png" storageFileName="" needUpdate="False" rectColor="255" />
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="5" kind="0" dateTime="45571.0587962963" objectName="Aliases.EngineeringClient.HwndSource_Main.Main.FrameHostControl.radDocking.RadSplitContainer.RadPaneGroup.FrameHostControl.radDocking.RadSplitContainer.RadPaneGroup.GridviewcellMotorgp" objectLeft="1167" objectTop="808" objectRight="1318" objectBottom="836" clickPointX="-1" clickPointY="-1" imageFileName="tcvi2445521252304013.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>
