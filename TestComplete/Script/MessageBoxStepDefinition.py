@@ -1,0 +1,136 @@
+﻿"""MessageBoxWorkFlow"""
+from MessageBoxWorkFlow import MessageBoxWorkFlow
+import CommonUtil
+import Applicationutility
+
+obj=MessageBoxWorkFlow()
+
+        
+@when("I Check for license management window in License Management pop up in message box")
+def step_impl():
+    """I Check for license management window in License Management pop up in message box"""
+    CommonUtil.write_text_file("\nWhen I Check for license management window in License Management pop up in message box")
+    obj.buttonlicensemanagementpopupcheckforlicensemanagementwindowin()
+  
+@when("I Click on OK button from License Management OK in message box")
+def step_impl():
+    """I Click on OK button from License Management OK in message box"""
+    CommonUtil.write_text_file("\nWhen I Click on OK button from License Management OK in message box")
+    obj.buttonlicensemanagementokclickonokbuttonfrom()
+  
+@when("I Check Eco Struxure Control Expert in trail license popup in message box")
+def step_impl():
+    """I Check Eco Struxure Control Expert in trail license popup in message box"""
+    CommonUtil.write_text_file("\nWhen I Check Eco Struxure Control Expert in trail license popup in message box")
+    obj.buttontraillicensepopupcheckecostruxurecontrolexpertin()
+  
+@when("I Click on Enter License Management pop up in message box")
+def step_impl():
+    """I Click on Enter License Management pop up in message box"""
+    CommonUtil.write_text_file("\nWhen I Click on Enter License Management pop up in message box")
+    obj.buttonlicensemanagementpopupclickonenter()
+  
+@then("Verify Rename Warning Message Rename Pop up in message box as {arg}")
+def step_impl(renamePopUp2):
+    """Verify Rename Warning Message Rename Pop up in message box as '<Rename Pop up2>'"""
+    CommonUtil.write_text_file("\nThen Verify Rename Warning Message Rename Pop up in message box as \""+renamePopUp2+"\"")
+    obj.textboxrenamepopupverifyrenamewarningmessage(renamePopUp2)
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I selected Rename Pop up Ok in message box")
+def step_impl():
+    """I selected Rename Pop up Ok in message box"""
+    CommonUtil.write_text_file("\nWhen I selected Rename Pop up Ok in message box")
+    obj.buttonrenamepopupokselected()
+  
+@then("Verify Rename Warning Pop up Rename Pop up in message box as {arg}")
+def step_impl(renamePopUp):
+    """Verify Rename Warning Pop up Rename Pop up in message box as '<Rename Pop up>'"""
+    CommonUtil.write_text_file("\nThen Verify Rename Warning Pop up Rename Pop up in message box as \""+renamePopUp+"\"")
+    obj.textboxrenamepopupverifyrenamewarningpopup(renamePopUp)
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I Click on Ok from Rename Warning Pop up Rename Pop up in message box as {arg}")
+def step_impl(renamePopUp2):
+    """I Click on Ok from Rename Warning Pop up Rename Pop up in message box as '<Rename Pop up2>'"""
+    CommonUtil.write_text_file("\nWhen I Click on Ok from Rename Warning Pop up Rename Pop up in message box as \""+renamePopUp2+"\"")
+    obj.textboxrenamepopupclickonokfromrenamewarningpopup(renamePopUp2)
+  
+@when("I close ec popup Rename Pop up in message box as {arg}")
+def step_impl(renamePopUp2):
+    """I close ec popup Rename Pop up in message box as '<Rename Pop up2>'"""
+    CommonUtil.write_text_file("\nWhen I close ec popup Rename Pop up in message box as \""+renamePopUp2+"\"")
+    obj.textboxrenamepopupcloseecpopup(renamePopUp2)
+  
+@then("verify delete Popup AE Delete popup in message box as {arg}")
+def step_impl(areYouSureYouWantToDelete):
+    """verify delete Popup AE Delete popup in message box as 'Are you sure you want to delete'"""
+    CommonUtil.write_text_file("\nThen verify delete Popup AE Delete popup in message box as 'Are you sure you want to delete'")
+    obj.buttondeletepopupverifydeletepopupae(areYouSureYouWantToDelete)
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I Click on buttons in popup window Delete popup in message box as {arg}")
+def step_impl(yes):
+    """I Click on buttons in popup window Delete popup in message box as 'Yes'"""
+    CommonUtil.write_text_file("\nWhen I Click on buttons in popup window Delete popup in message box as 'Yes'")
+    obj.buttondeletepopupclickonbuttonsinpopupwindow(yes)
+  
+@then("Verify Action message in notification pannel Delete popup in message box as {arg}")
+def step_impl(deleteInstance):
+    """Verify Action message in notification pannel Delete popup in message box as 'Delete Instance'"""
+    CommonUtil.write_text_file("\nThen Verify Action message in notification pannel Delete popup in message box as 'Delete Instance'")
+    obj.buttondeletepopupverifyactionmessageinnotificationpannel(deleteInstance)
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I Enter File Name and File Location in Export Window AE Export in ec windows explorer as {arg}")
+def step_impl(csv):
+    """I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'"""
+    CommonUtil.write_text_file("\nWhen I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'")
+    obj.buttonexportenterfilenameandfilelocationinexportwindowae(csv)
+  
+@when("I Click on Button in AE Explorer Window Export in ec windows explorer as {arg}")
+def step_impl(save):
+    """I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'"""
+    CommonUtil.write_text_file("\nWhen I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'")
+    obj.buttonexportclickonbuttoninaeexplorerwindow(save)
+  
+@then("Verify export_System1_Export_Popup_AE Export in ec windows explorer as {arg}")
+def step_impl(areYouSureYouWantToContinue):
+    """Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'"""
+    CommonUtil.write_text_file("\nThen Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'")
+    obj.buttonexportverifyexportsystem1exportpopupae(areYouSureYouWantToContinue)
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I Click on export System1 Export Popup AE buttons Export in ec windows explorer as {arg}")
+def step_impl(ok):
+    """I Click on export System1 Export Popup AE buttons Export in ec windows explorer as 'OK'"""
+    CommonUtil.write_text_file("\nWhen I Click on export System1 Export Popup AE buttons Export in ec windows explorer as 'OK'")
+    obj.buttonexportclickonexportsystem1exportpopupaebuttons(ok)
+  
+@then("Verify Extracted Template CSV Data and Template Details Export in ec windows explorer")
+def step_impl():
+    """Verify Extracted Template CSV Data and Template Details Export in ec windows explorer"""
+    CommonUtil.write_text_file("\nThen Verify Extracted Template CSV Data and Template Details Export in ec windows explorer")
+    obj.buttonexportverifyextractedtemplatecsvdataandtemplatedetails()
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+#@when("I Enter File Name and File Location in Export Window AE Export in ec windows explorer as {arg}")
+#def step_impl(xml):
+#    """I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.xml'"""
+#    CommonUtil.write_text_file("\nWhen I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.xml'")
+#    obj.buttonexportenterfilenameandfilelocationinexportwindowae(xml)
+  
+@then("Verify Extracted Template XML Data and Template Details Export in ec windows explorer")
+def step_impl():
+    """Verify Extracted Template XML Data and Template Details Export in ec windows explorer"""
+    CommonUtil.write_text_file("\nThen Verify Extracted Template XML Data and Template Details Export in ec windows explorer")
+    obj.buttonexportverifyextractedtemplatexmldataandtemplatedetails()
+    Applicationutility.take_screenshot("Full Screenshot")
+  
+@then("Verify Message from notification panel AE Notification Pannel in message box")
+def step_impl():
+    obj.textboxnotificationpannelverifymessagefromnotificationpanelae()
+    Applicationutility.take_screenshot("Full Screenshot")
+    
+
+  
