@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="logs">
+				<Prp name="key" type="S" value="{D199C01F-062E-44B0-BA9F-E9C9ABAD6948}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav4">
+					<Node name="var0">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="43003A005C00550073006500720073005C0053004500530049003000310033003500340037005C004400650073006B0074006F0070005C00530045005F004D006F006F006C00790061005F0043006F006400650062006100730065005F004D0032005C00530045005F004D006F006F006C00790061005F0043006F006400650062006100730065005F004D0032005C00540065007300740043006F006D0070006C006500740065005C0032003000320034002D00310030002D00300037005F00310036005F00300030005F00310036005F003800390032003700300035005F007200650070006F00720074002E00740078007400"/>
+						</Node>
+						<Prp name="name" type="S" value="textfile_path"/>
+					</Node>
+					<Node name="var1">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value=" "/>
+						</Node>
+						<Prp name="name" type="S" value="screen"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="10"/>
+						</Node>
+						<Prp name="name" type="S" value="retry_count"/>
+					</Node>
+					<Node name="var3">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="1000"/>
+						</Node>
+						<Prp name="name" type="S" value="time_interval"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="4"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>
