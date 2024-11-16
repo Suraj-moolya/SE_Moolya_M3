@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  <UIControlRepository>
+        <Component name="System Server">
+             <UIControl Element="LogIn_SystemServer" Name="WPFObject('Button', 'Log In', 1)" Parent="SystemServer_" />
+             <UIControl Element="Username_SystemServer" Name="WPFObject('UserName')" Parent="SystemServer_" />
+             <UIControl Element="Password_SystemServer" Name="WPFObject('PasswordBox')" Parent="SystemServer_" />
+             <UIControl Element="LogOnDialogue_SystemServer" Name="WPFObject('TextBlock', '', 1)" Parent="SystemServer_" />
+             <UIControl Element="Console_SystemServer" Name="WPFObject('Console')" Parent="SystemServer_" />
+             <UIControl Element="Passwordbox_SystemServer" Name="WPFObject('PasswordBox')" Parent="SystemServer_" />
+             <UIControl Element="Inputwindow_SystemServer" Name="WPFObject('InputWindow')" Parent="SystemServer_" />
+             <UIControl Element="Startserver_SystemServer" Name="WPFObject('MenuItem', 'Start', 1)" Parent="SystemServer_" />
+             <UIControl Element="Stopserver_SystemServer" Name="WPFObject('MenuItem', 'Stop', 2)" Parent="SystemServer_" />
+             <UIControl Element="ActionMenu_SystemServer" Name="WPFObject('ActionMenu')" Parent="SystemServer_" />
+             <UIControl Element="DatabaseMenu_SystemServer" Name="WPFObject('ToolsMenu')" Parent="SystemServer_" />
+             <UIControl Element="Backupdatabase_SystemServer" Name="WPFObject('MenuItem', 'Back Up Database', 1)" Parent="SystemServer_" />
+             <UIControl Element="Restoredatabase_SystemServer" Name="WPFObject('MenuItem', 'Restore Database', 2)" Parent="SystemServer_" />
+             <UIControl Element="Deletedatabase_SystemServer" Name="WPFObject('DeleteDatabaseMenuItem')" Parent="SystemServer_" />
+             <UIControl Element="CreateBlankdatabase_SystemServer" Name="WPFObject('CreateEmptyDatabaseMenuItem')" Parent="SystemServer_" />
+             <UIControl Element="Migratedatabase_SystemServer" Name="WPFObject('PreMigration')" Parent="SystemServer_" />
+             <UIControl Element="SettingsMenu_SystemServer" Name="WPFObject('SettingsMenu')" Parent="SystemServer_" />
+             <UIControl Element="Basicsettings_SystemServer" Name="WPFObject('MenuItem', 'Basic Settings', 1)" Parent="SystemServer_" />
+             <UIControl Element="Advancesettings_SystemServer" Name="WPFObject('AdvanceConfigure')" Parent="SystemServer_" />
+             <UIControl Element="Systembackupscheduler_SystemServer" Name="WPFObject('SystemBackupConfigure')" Parent="SystemServer_" />
+             <UIControl Element="Menudropdown_SystemServer" Name="WPFObject('MenuItem', '', 1)" Parent="SystemServer_" />
+             <UIControl Element="Lock_SystemServer" Name="WPFObject('MenuItem', 'Lock', 2)" Parent="SystemServer_" />
+             <UIControl Element="Logout_SystemServer" Name="WPFObject('MenuItem', 'Log Out', 4)" Parent="SystemServer_" />
+             <UIControl Element="Flowdocument_SystemServer" Name="WPFObject('FlowDocument', '', 1)" Parent="SystemServer_" />
+             <UIControl Element="ContextMenu_SystemServer" Name="WPFObject('ContextMenu', '', 1)" Parent="SystemServer_" />
+             <UIControl Element="next_SystemServer" Name="WPFObject('Button', 'Next >', 2)" Parent="ServerConfiguration_" />
+             <UIControl Element="ControlParticipantMaxInstance_SystemServer" Name="WPFObject('TextBox', '', 4)" Parent="ServerConfiguration_" />
+             <UIControl Element="saveandclose_SystemServer" Name="WPFObject('Button', 'Save and Close', 2)" Parent="ServerConfiguration_" />
+             <UIControl Element="hosting_SystemServer" Name="WPFObject('ScrollViewer', '', 1)" Parent="ServerConfiguration_" />
+             <UIControl Element="cancel_SystemServer" Name="WPFObject('Button', 'Cancel', 3)" Parent="ServerConfiguration_" />
+        </Component>
+        <Component name="Current Screen">
+             <UIControl Element="CollapseAll_CurrentScreen" Name="WPFObject('MenuItem', 'Collapse All', *)" Parent="EngineeringClient_" />
+             <UIControl Element="ReportDialog_CurrentScreen" Name="WPFObject('ReportDialog', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="ControlExpert_CurrentScreen" Name="Window('ControlExpert', 'EcoStruxure Control Expert " Parent="EngineeringClient_" />
+             <UIControl Element="ProjectBrowser_CurrentScreen" Name="Window('SysTreeView32', 'Tree1', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Close_CurrentScreen" Name="WPFObject('ApplicationExit')" Parent="SystemServer_" />
+             <UIControl Element="Engineeringclienttwo_CurrentScreen" Parent="EngineeringClient_" />
+             <UIControl Element="ContextMenuItems_CurrentScreen" Name="WPFObject('ContextMenu', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ExportCancel_CurrentScreen" Name="Window('Button', 'Cancel', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="ExportSave_CurrentScreen" Id="1317758" Parent="EngineeringClient_" />
+             <UIControl Element="Exportfilename_CurrentScreen" Name="Window('Edit', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Modificationpopup_CurrentScreen" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="ImportFailure_CurrentScreen" Name="PFObject('ImportFailureTextInfo')" Parent="EngineeringClient_" />
+        </Component>
+        <Component name="Windows Explorer">
+             <UIControl Element="showhiddenicon_WindowsExplorer" Name="Window('Button', '', 1)" Parent="explorer_" />
+             <UIControl Element="notificationarea_WindowsExplorer" Name="Window('ToolbarWindow32', 'Overflow Notification Area', 1)" Parent="explorer_" />
+             <UIControl Element="commandbar_WindowsExplorer" Name="UIAObject('Command_Bar')" Parent="Taskmgr_" />
+             <UIControl Element="Windows_WindowsExplorer" Parent="explorer_" />
+             <UIControl Element="tabs_WindowsExplorer" Name="Window('SysTabControl32', '', 1)" Parent="Taskmgr_" />
+             <UIControl Element="detaillist_WindowsExplorer" Name="Window('SysListView32', '', 1)" Parent="Taskmgr_" />
+        </Component>
+        <Component name="Engineering Client">
+             <UIControl Element="OpenSystemExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="GenerateReport_EngineeringClient" Name="WPFObject('ContentPresenter', '', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenTopologyExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 3)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenApplicationExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 4)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenProjectExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 5)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenContentRepository_EngineeringClient" Name="WPFObject('ContentPresenter', '', 6)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenGlobalTemplatesExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 7)" Parent="EngineeringClient_" />
+             <UIControl Element="Userdropdown_EngineeringClient" Name="WPFObject('MenuItem', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Userlock_EngineeringClient" Name="WPFObject('MenuItem', 'Lock', 2)" Visible="True" Parent="EngineeringClient_" />
+             <UIControl Element="Userlogout_EngineeringClient" Name="WPFObject('MenuItem', 'Log Out', 4)" Visible="True" Parent="EngineeringClient_" />
+             <UIControl Element="Userlogin_EngineeringClient" Name="WPFObject('MenuItem', 'Log In', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Notificationpanel_EngineeringClient" Name="WPFObject('ListView')" Parent="EngineeringClient_" />
+             <UIControl Element="Systemexplorerwindow_EngineeringClient" Name="WPFObject('WorkFrameTitle', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ECwarningpopup_EngineeringClient" Name="Window('Static', '*', 2)" Parent="EngineeringClient, 3_" />
+             <UIControl Element="ECwarningpopupOk_EngineeringClient" Name="Window('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ECpopupOk_EngineeringClient" Name="Window('Button', 'OK', 1)" Parent="EngineeringClient, 2_" />
+             <UIControl Element="Engineeringclient_EngineeringClient" Parent="EngineeringClient_" />
+             <UIControl Element="LaunchEngineeringClient_EngineeringClient" Name="WPFObject('brdLoginSplashScreen')" Parent="EngineeringClient_" />
+             <UIControl Element="EngineeringClientDialogueBox_EngineeringClient" Name="WPFObject('brdLoginSplashScreen')" Parent="EngineeringClient_" />
+             <UIControl Element="CloseEC_EngineeringClient" Name="WPFObject('ApplicationExit')" Parent="EngineeringClient_" />
+             <UIControl Element="Username_EngineeringClient" Name="WPFObject('UserName')" Parent="EngineeringClient_" />
+             <UIControl Element="password_EngineeringClient" Name="WPFObject('PasswordBox')" Parent="EngineeringClient_" />
+             <UIControl Element="Login_EngineeringClient" Name="WPFObject('Button', 'Log In', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="dialoguebox_EngineeringClient" Name="WPFObject('TextBlock', '', 1)" Parent="EClogindialogue_" />
+             <UIControl Element="EClogindialogue_EngineeringClient" Name="WPFObject('Grid', '', 3)" Parent="EngineeringClient_" />
+             <UIControl Element="mainscreen_EngineeringClient" Name="WPFObject('Main')" Parent="EngineeringClient_" />
+             <UIControl Element="Workspace_EngineeringClient" Name="WPFObject('WorkspaceControl')" Parent="EngineeringClient_" />
+             <UIControl Element="rclickmenu_EngineeringClient" Name="WPFObject('HwndSource* PopupRoot', '')" Parent="EngineeringClient_" />
+             <UIControl Element="rclicksubmenu_EngineeringClient" Name="WPFObject('HwndSource* PopupRoot', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="userdropdownMenuItem_EngineeringClient" Name="WPFObject('NonLogicalAdornerDecorator', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="userlogoutscreen_EngineeringClient" Name="WPFObject('TxtMessage')" Parent="EngineeringClient_" />
+			 
+        </Component>
+        <Component name="System Explorer Screen">
+             <UIControl Element="SystemExplorerNode_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Collapse_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Collapse', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Expand_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Expand', *)" Parent="EngineeringClient_" />
+             <UIControl Element="ExpandAll_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Expand All', *)" Parent="EngineeringClient_" />
+             <UIControl Element="CreateFolder_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Create Folder', *)" Parent="EngineeringClient_" />
+             <UIControl Element="CreateSystem_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Create System', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Rename_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Rename', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Delete_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Delete', *)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenApplication_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Open Application', *)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenTopology_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Open Topology', *)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenProjectExplorer_SystemExplorerScreen" Name="WPFObject('ContentPresenter', '*', 5)" Parent="EngineeringClient_" />
+             <UIControl Element="GenerateReport_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Generate Report', *)" Parent="EngineeringClient_" />
+             <UIControl Element="System_1folder_SystemExplorerScreen" Name="WPFObject('ExplorerNode', '', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="projectexplorertab_SystemExplorerScreen" Name="WPFObject('ProjectBrowserPaneGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="Restore_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Restore', *)" Parent="EngineeringClient_" />
+             <UIControl Element="SystemExplorerCanvas_SystemExplorerScreen" Name="WPFObject('Canvas', '*', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Warningpopup_SystemExplorerScreen" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="PopupOk_SystemExplorerScreen" Name="WPFObject('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="PopupClose_SystemExplorerScreen" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="System_1_SystemExplorerScreen" Name="WPFObject('ExplorerNode', '', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenProject_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Open Project', 3)" Parent="EngineeringClient_" />
+             <UIControl Element="CollapseAll_SystemExplorerScreen" Name="WPFObject('MenuItem', 'Collapse All', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Explorertab_SystemExplorerScreen" Name="WPFObject('CloseableTabItem', '*', *)" Parent="EngineeringClient_" />
+             <UIControl Element="MainToolBar_SystemExplorerScreen" Name="WPFObject('MainToolBar')" Parent="EngineeringClient_" />
+             <UIControl Element="ProgressBar_SystemExplorerScreen" Name="WPFObject('progressBar')" Parent="EngineeringClient_" />
+             <UIControl Element="Systemexplorermenu_SystemExplorerScreen" Name="WPFObject('ExplorerNode', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Rclickmenuitems_SystemExplorerScreen" Name="WPFObject('ContextMenu', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="CircularProgressBar_SystemExplorerScreen" Name="WPFObject('CircularProgressBar', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="fromRclickmenuitems_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="whichiscreatedlatest_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ToComplete_SystemExplorerScreen" Name="WPFObject('CircularProgressBar', '', 1))" Parent="EngineeringClient_" />
+             <UIControl Element="forselectedFolder_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="asperrequirement_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+        </Component>
+        <Component name="Topology Exporer Tab">
+             <UIControl Element="CloseableTab_TopologyExporerTab" Name="WPFObject('CloseableTabItem', '*', *)" Parent="EngineeringClient_" />
+             <UIControl Element="SystemProject_TopologyExporerTab" Name="WPFObject('TreeListView', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ToolboxCatalog_TopologyExporerTab" Name="WPFObject('CatalogView')" Parent="EngineeringClient_" />
+             <UIControl Element="PropertiesGrid_TopologyExporerTab" Name="WPFObject('PropertyGridControl', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="PropertyDescriptionTab_TopologyExporerTab" Name="WPFObject('TabItem', 'DESCRIPTION', *)" Parent="EngineeringClient_" />
+             <UIControl Element="PropertyConfigurationTab_TopologyExporerTab" Name="WPFObject('TabItem', 'CONFIGURATION', *)" Parent="EngineeringClient_" />
+             <UIControl Element="PropertyServicesTab_TopologyExporerTab" Name="WPFObject('TabItem', 'SERVICES', *)" Parent="EngineeringClient_" />
+             <UIControl Element="PropertyIOProfileTab_TopologyExporerTab" Name="WPFObject('TabItem', 'I/O PROFILE', *)" Parent="EngineeringClient_" />
+             <UIControl Element="PartDiagramControl_TopologyExporerTab" Name="WPFObject('PartDiagramControl')" Parent="EngineeringClient_" />
+             <UIControl Element="NodeControl_TopologyExporerTab" Name="WPFObject('NodeControl', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="ToolBar_TopologyExporerTab" Name="WPFObject('ToolBar', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="NodeMenuItem_TopologyExporerTab" Name="WPFObject('MenuItem', '', *)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="PropertySecurityTab_TopologyExporerTab" Name="WPFObject('TabItem', 'SECURITY', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Manager_TopologyExporerTab" Name="WPFObject('manager')" Parent="EngineeringClient_" />
+             <UIControl Element="CatalogView_TopologyExporerTab" Name="WPFObject('CatalogView')" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Okbutton_TopologyExporerTab" Name="WPFObject('Button', 'OK', 2)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Cancelbutton_TopologyExporerTab" Name="WPFObject('Button', 'Cancel', 1)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="LayoutPanelControl_TopologyExporerTab" Name="WPFObject('LayoutPanelControl', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Root_TopologyExporerTab" Name="WPFObject('root')" Parent="EngineeringClient_" />
+             <UIControl Element="Popuproot_TopologyExporerTab" Name="WPFObject('NonLogicalAdornerDecorator', '', *)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="PropertyInspectorView_TopologyExporerTab" Name="WPFObject('PropertyInspectorView', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Securityoptionenabled_TopologyExporerTab" Name="WPFObject('EnumListBoxItem', 'Enabled', *)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Securityoptiondisabled_TopologyExporerTab" Name="WPFObject('EnumListBoxItem', 'Disabled', *)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Detailmessagedialogbox_TopologyExporerTab" Name="WPFObject('DetailMessageDialog', '*', *)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Createlogicalnetwork_TopologyExporerTab" Name="WPFObject('Window', 'Create Logical Network', *)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Removecontrolservices_TopologyExporerTab" Parent="ControlExpert.Topology_" />
+             <UIControl Element="RemoveOFS_TopologyExporerTab" Parent="ControlExpert.Topology_" />
+             <UIControl Element="Removesupervisionservice_TopologyExporerTab" Parent="ControlExpert.Topology_" />
+             <UIControl Element="rclickmenute_TopologyExporerTab" Name="WPFObject('HwndSource* PopupRoot', '')" Parent="ControlExpert.Topology_" />
+             <UIControl Element="rclicksubmenute_TopologyExporerTab" Name="WPFObject('HwndSource* PopupRoot', '', 1)" Parent="ControlExpert.Topology_" />
+        </Component>
+        <Component name="Global Templates Tab">
+             <UIControl Element="globaltemplatecore_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="globaltemplatessearchbox_GlobalTemplatesTab" Name="WPFObject('PartSearch')" Parent="EngineeringClient_" />
+             <UIControl Element="globaltemplatesearch_GlobalTemplatesTab" Name="WPFObject('PartSearch')" Parent="EngineeringClient_" />
+             <UIControl Element="Duplicatewindow_GlobalTemplatesTab" Name="WPFObject('DuplicateTemplateDialog', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Okduuplicate_GlobalTemplatesTab" Name="WPFObject('BtnOk')" Parent="EngineeringClient_" />
+             <UIControl Element="busyloading_GlobalTemplatesTab" Name="WPFObject('BusyCursor')" Parent="EngineeringClient_" />
+             <UIControl Element="toolbox_GlobalTemplatesTab" Name="WPFObject('RadPane', 'Toolbox', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="toolbooxtable_GlobalTemplatesTab" Name="WPFObject('PART_table')" Parent="EngineeringClient_" />
+             <UIControl Element="saveascompositeeditor_GlobalTemplatesTab" Name="WPFObject('MenuItem', 'Save As', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Description_GlobalTemplatesTab" Name="WPFObject('ChangeDescriptionInput')" Parent="EngineeringClient_" />
+             <UIControl Element="Partidentifier_GlobalTemplatesTab" Name="WPFObject('PartIdentifier')" Parent="EngineeringClient_" />
+             <UIControl Element="Save_GlobalTemplatesTab" Name="WPFObject('SaveButton')" Parent="EngineeringClient_" />
+             <UIControl Element="Cancel_GlobalTemplatesTab" Name="WPFObject('CancelButton')" Parent="EnginneringClient_" />
+             <UIControl Element="compositeeditorworkspace_GlobalTemplatesTab" Name="WPFObject('CompositeEditorControl', '', 1)" Parent="EngineeringClient_" />
+        </Component>
+        <Component name="Application Explorer Tab">
+             <UIControl Element="Templatesbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="Applicationbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationBrowser')" Parent="EngineeringClient_" />
+             <UIControl Element="Assetworkspace_ApplicationExplorerTab" Name="WPFObject('AssetLinkGGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="TemplatesbrowserApplicationControlModulesSTAHL_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="TemplatesbrowserFoundationLibrary_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="TimeStamping_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="GeneralPurposeLibrary_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="Owner_ConsumerTemplates_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="UnityPeertoPeer_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="Quantum_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="FoundationLibrary_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="M580_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="Advantys_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="TemplatesbrowserSTAHL_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="UnityArrayVariables_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="UnityElementaryTimeStampedVariables_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="M340_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="STAHL_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="TemplatesbrowserApplication_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="Inspectinstancewindow_ApplicationExplorerTab" Name="WPFObject('InspectorDialog', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Folder_1_ApplicationExplorerTab" Name="WPFObject('TextBlock', 'Folder_1 ', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Folder_2_ApplicationExplorerTab" Name="WPFObject('TextBlock', 'Folder_2 ', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="MotorGPtemplate_ApplicationExplorerTab" Name="WPFObject('TextBlock', 'MotorGP_3', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ValveGPtemplate_ApplicationExplorerTab" Name="WPFObject('TextBlock', 'ValveGP_3', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="AssertWorkspaceEditor_ApplicationExplorerTab" Name="WPFObject('Rectangle', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="NodeInstance_ApplicationExplorerTab" Name="WPFObject('LinkEditorGraph')" Parent="EngineeringClient_" />
+             <UIControl Element="Inspectinstancetree_ApplicationExplorerTab" Name="WPFObject('Tree')" Parent="EngineeringClient_" />
+             <UIControl Element="Inspectinstanceparameter_ApplicationExplorerTab" Name="WPFObject('ParameterGrid')" Parent="EngineeringClient_" />
+             <UIControl Element="Inspectinstanceok_ApplicationExplorerTab" Name="WPFObject('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Dockpannel_ApplicationExplorerTab" Name="WPFObject('DockPanel', '', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="Workspace_ApplicationExplorerTab" Name="WPFObject('WorkspaceControl', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="CreateMultipleinstance_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="InstanceEditor_ApplicationExplorerTab" Name="WPFObject('WorkspaceControl', '', 1)"  Parent="EngineeringClient_" />
+             <UIControl Element="Instancedescription_ApplicationExplorerTab" Name="WPFObject('ParameterGrid')" Parent="EngineeringClient_" />
+             <UIControl Element="Instanceeditorsave_ApplicationExplorerTab" Name="WPFObject('Button', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Instanceeditorclose_ApplicationExplorerTab" Name="WPFObject('abc')" Parent="EngineeringClient_" />
+             <UIControl Element="Savechangesdialogbox_ApplicationExplorerTab" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="Savechangesdialogboxyes_ApplicationExplorerTab" Name="WPFObject('Button', 'Yes', 3)" Parent="EngineeringClient_" />
+             <UIControl Element="Savechangesdialogboxno_ApplicationExplorerTab" Name="WPFObject('Button', 'No', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="Savechangesdialogboxcancel_ApplicationExplorerTab" Name="WPFObject('Button', 'Cancel', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Identifier_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="IdentifierMotorGP_1_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="IdentifierValveGP_1_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="ContextMenu_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="Applicationbrowsertemplate_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="Instanceeditorchecklist_ApplicationExplorerTab" Name="WPFObject('elementTreeView')" Parent="EngineeringClient_" />
+             <UIControl Element="Warningpopupwindow_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="AEwarningpopupok_ApplicationExplorerTab" Name="WPFObject('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Import_ApplicationExplorerTab" Name="Window('#32770', 'Import',*)" Parent="EngineeringClient_" />
+             <UIControl Element="AddressBand_ApplicationExplorerTab" Name="Window('Address Band Root', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ComboBox_ApplicationExplorerTab" Name="Window('Edit', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ImportDialog_ApplicationExplorerTab" Name="WPFObject('ImportDialog', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="AbsoluteRadio_ApplicationExplorerTab" Name="WPFObject('RadioButton', 'Absolute Path', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="RelativeRadio_ApplicationExplorerTab" Name="WPFObject('RadioButton', 'Relative Path', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="ImportConflictDialog_ApplicationExplorerTab" Name="WPFObject('ImportConflictDialog', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="AssetWorkspaceelement_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="Specifictemplate_ApplicationExplorerTab" Parent="EngineeringClient_" />
+             <UIControl Element="Replacetemplate_ApplicationExplorerTab" Name=".WPFObject('ReplaceTemplateControl', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Replacetemplatecombo_ApplicationExplorerTab" Name="WPFObject('EditableComboBox', '', 1)" Parent="EngineeringClient_Replacetemplate" />
+        </Component>
+        <Component name="Project Explorer Tab">
+             <UIControl Element="projectbrowser_ProjectExplorerTab" Name="WPFObject('ProjectBrowserPaneGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="projectbrowser_ProjectExplorerTab" Name="WPFObject('ProjectBrowserPaneGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="servicemapingeditor_ProjectExplorerTab" Name="WPFObject('ServiceMappingGrid')" Parent="EngineeringClient_" />
+             <UIControl Element="instancedock_ProjectExplorerTab" Name="WPFObject('InstancePaneControl')" Parent="EngineeringClient_" />
+             <UIControl Element="containerdock_ProjectExplorerTab" Name="WPFObject('UcBrowser')" Parent="EngineeringClient_" />
+			 <UIControl Element="assignmentsdock_ProjectExplorerTab" Name="WPFObject('BaseDataGridControl', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="Refineonlinewindow_ProjectExplorerTab" Name="WPFObject('RefineOffline', '', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="Close_ProjectExplorerTab" Name="WPFObject('CloseToolBar')" Parent="EngineeringClient_" />
+        </Component>
+        <Component name="EC Warning Popup">
+             <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="ECwarningpopupOk_ECWarningPopup" Name="Window('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ECwarningpopupClose_ECWarningPopup" Name="Window('#32770', 'EcoStruxure Process Expert', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="WarningpopupEC_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient, 2_" />
+             <UIControl Element="ECpopupOk_ECWarningPopup" Name="Window('Button', 'OK', 1)" Parent="EngineeringClient, 2_" />
+        </Component>
+        <Component name="License Management">
+             <UIControl Element="Traillicensepopup_LicenseManagement" Name="WPFObject('Window', 'EcoStruxure Control Expert', 1)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="LicenseManagementpopup_LicenseManagement" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="LicenseManagementOK_LicenseManagement" Name="WPFObject('Button', 'OK', 1)" Parent="EngineeringClient_" />
+        </Component>
+        <Component name="Message Box">
+             <UIControl Element="LicenseManagementpopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="LicenseManagementOK_MessageBox" Name="WPFObject('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="traillicensepopup_MessageBox" Name="WPFObject('Window', 'EcoStruxure Control Expert', 1)" Parent="ControlExpert.Topology_" />
+             <UIControl Element="RenameMessage_MessageBox" Name="WPFObject('TextBlock', 'Special characters except*', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="RenamePopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="Value_MessageBox" Name="WPFObject('TextBlock','Special characters except*', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="RenamePopupOk_MessageBox" Name="WPFObject('Button', 'OK', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Existance_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="RenameMessage2_MessageBox" Name="WPFObject('TextBlock', 'Identifier must start with a letter.', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Renamepopupmessage_MessageBox" Name="WPFObject('TextBlock', '*', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Renamepopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="Export_MessageBox" Name="Window('#32770', 'Save',*)" Parent="EngineeringClient_" />
+             <UIControl Element="Exportfilelocation_MessageBox" Name="Window('Address Band Root', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Exportwpopup_MessageBox" Name="Window('#32770', 'Export', *)" Parent="EngineeringClient_" />
+             <UIControl Element="Deletepopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+             <UIControl Element="Exportpopup_MessageBox" Name="WPFObject('ModalDialogWindow', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="NotificationPannel_MessageBox" Name="WPFObject('NotificationPanel', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Exportfilename_MessageBox" Name="Window('ComboBox', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Modaldialogwindow_MessageBox" Name="WPFObject('* ModalDialogWindow', '')" Parent="EngineeringClient_" />
+             <UIControl Element="DetailMessageDialog_MessageBox" Name="WPFObject('* DetailMessageDialog', '*')" Parent="ControlExpert.Topology_" />
+             <UIControl Element="createlogicalnetwork_MessageBox" Name="WPFObject('* Window', 'Create Logical Network')" Parent="ControlExpert.Topology_" />
+             <UIControl Element="FilenameTextboxEmpty_MessageBox" Parent="EnginneringClient_" />
+             <UIControl Element="Filenotsaved_MessageBox" Parent="EnginneringClient_" />
+             <UIControl Element="Parttree_MessageBox" Name="WPFObject('PartTree')" Parent="EngineeringClient_" />
+             <UIControl Element="modeldialogfeedback_MessageBox" Name="WPFObject('ModalDialogWithFeedback', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="MessageWindow_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+			 <UIControl Element="RenameInstancePopup_MessageBox" Name="WPFObject('MessageBoxButtonsPanel')" Parent="EngineeringClient_" />
+        </Component>
+</UIControlRepository>

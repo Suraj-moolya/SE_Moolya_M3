@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{20C24837-D556-4747-9203-173A0E6233BF}">
+			<Child Name="Sys" Key="{AB18EE29-B0E0-44A9-BE63-F773EA5CF9C2}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}" />
+				<Children>
+					<Child Name="EngineeringClient" Key="{EFBFF60A-FC40-4C45-9165-1ECAD1FB8237}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="EngineeringClient" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="HwndSource_Main" Key="{A624A841-EA88-41BF-B797-8E0F50D4EA81}">
+								<Image FileName="-1980127081" Left="-9" Top="-9" Right="1929" Bottom="1039" />
+								<Properties>
+									<Property Name="RootVisual.Name">
+										<Value Value="Main" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="Main" Key="{582723A6-2356-403C-AC97-DB60BF2CCC49}">
+										<Image FileName="-1980127081" Left="-9" Top="-9" Right="1930" Bottom="1040" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="SchneiderElectric.ProcessExpert.EngineeringClient.MainWindow" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="WorkspaceControl" Key="{F58E9E43-E248-461F-A2DA-ADE5AF5BD462}" ExtendedFind="True">
+												<Image FileName="-1980127081" Left="1" Top="63" Right="1920" Bottom="930" />
+												<Properties>
+													<Property Name="WPFControlName">
+														<Value Value="WorkspaceControl" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="FrameHostControl" Key="{2B57845C-9BC4-4AC2-9151-8A5CB79BAEA3}" ExtendedFind="True">
+														<Image FileName="-1980127081" Left="1" Top="63" Right="1920" Bottom="930" />
+														<Properties>
+															<Property Name="ClrFullClassName">
+																<Value Value="SchneiderElectric.ProcessExpert.Controls.FrameHostControl" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="radDocking" Key="{DAF758CE-7D4C-4239-B743-BDB9AC2BD91A}" ExtendedFind="True">
+																<Image FileName="-1980127081" Left="1" Top="132" Right="1920" Bottom="930" />
+																<Properties>
+																	<Property Name="WPFControlName">
+																		<Value Value="radDocking" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="RadSplitContainer" Key="{BFD936AE-02BD-41A1-BF3C-47F231EAEE55}" ExtendedFind="True">
+																		<Image FileName="-1980127081" Left="301" Top="132" Right="1920" Bottom="930" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="Telerik.Windows.Controls.RadSplitContainer" />
+																			</Property>
+																			<Property Name="WPFControlOrdinalNo">
+																				<Value Value="2" Type="0" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="RadPaneGroup" Key="{F4F3F8D8-8982-4854-A0EB-07A898FC15D4}" ExtendedFind="True">
+																				<Image FileName="-1980127081" Left="301" Top="132" Right="1920" Bottom="930" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="Telerik.Windows.Controls.RadPaneGroup" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="FrameHostControl" Key="{16981183-B009-4A22-86AD-F9AE9283852B}" ExtendedFind="True">
+																						<Image FileName="-1980127081" Left="301" Top="132" Right="1920" Bottom="928" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="SchneiderElectric.ProcessExpert.Controls.FrameHostControl" />
+																							</Property>
+																						</Properties>
+																						<Children>
+																							<Child Name="radDocking" Key="{FBCBB38E-747F-4A3C-80F1-BCBBE0A1156F}" ExtendedFind="True">
+																								<Image FileName="-1980127081" Left="301" Top="201" Right="1920" Bottom="928" />
+																								<Properties>
+																									<Property Name="WPFControlName">
+																										<Value Value="radDocking" />
+																									</Property>
+																								</Properties>
+																								<Children>
+																									<Child Name="RadSplitContainer" Key="{05C0224C-15E2-4184-B0FD-D71181229E05}" ExtendedFind="True">
+																										<Image FileName="-1980127081" Left="301" Top="201" Right="864" Bottom="928" />
+																										<Properties>
+																											<Property Name="ClrFullClassName">
+																												<Value Value="Telerik.Windows.Controls.RadSplitContainer" />
+																											</Property>
+																											<Property Name="WPFControlOrdinalNo">
+																												<Value Value="1" Type="0" />
+																											</Property>
+																										</Properties>
+																										<Children>
+																											<Child Name="RadPaneGroup" Key="{8B95E82B-2C50-445D-8C5E-1B1A6B7241FF}" ExtendedFind="True">
+																												<Image FileName="-1980127081" Left="301" Top="201" Right="859" Bottom="565" />
+																												<Properties>
+																													<Property Name="ClrFullClassName">
+																														<Value Value="Telerik.Windows.Controls.RadPaneGroup" />
+																													</Property>
+																													<Property Name="WPFControlOrdinalNo">
+																														<Value Value="1" Type="0" />
+																													</Property>
+																												</Properties>
+																												<Children>
+																													<Child Name="GridviewcellAalarmgpUc" Key="{59239044-FA09-4AE5-8A44-84EB2E31D86A}" ExtendedFind="True">
+																														<Image FileName="-1980127081" Left="598" Top="318" Right="724" Bottom="345" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="$AAlarmGP_UC" />
+																															</Property>
+																														</Properties>
+																													</Child>
+																													<Child Name="GridviewcellAnaloginputgp" Key="{42E5609E-D65D-4A02-9425-6B0F7A7A7D14}" ExtendedFind="True">
+																														<Image FileName="-1845160040" Left="598" Top="344" Right="724" Bottom="372" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="$AnalogInputGP" />
+																															</Property>
+																														</Properties>
+																													</Child>
+																													<Child Name="GridviewcellValvegp" Key="{FA79E0D4-C03F-46E6-A918-338647648AE2}" ExtendedFind="True">
+																														<Image FileName="-1722062980" Left="598" Top="371" Right="724" Bottom="398" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="$ValveGP" />
+																															</Property>
+																														</Properties>
+																													</Child>
+																													<Child Name="TreeListViewRow" Key="{998C71BF-506B-45B0-A9F3-E18CA03594EE}" ExtendedFind="True">
+																														<Image FileName="-1271826449" Left="286" Top="397" Right="855" Bottom="424" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.TreeListView.TreeListViewRow" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="" />
+																															</Property>
+																															<Property Name="WPFControlOrdinalNo">
+																																<Value Value="5" Type="0" />
+																															</Property>
+																														</Properties>
+																														<Children>
+																															<Child Name="GridViewCell" Key="{2F10F9A7-D508-4243-BC2B-003FF7E390DD}" ExtendedFind="True">
+																																<Image FileName="-1271826449" Left="323" Top="397" Right="599" Bottom="424" />
+																																<Properties>
+																																	<Property Name="ClrFullClassName">
+																																		<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																																	</Property>
+																																	<Property Name="WPFControlText">
+																																		<Value Value="" />
+																																	</Property>
+																																</Properties>
+																															</Child>
+																														</Children>
+																													</Child>
+																													<Child Name="TreeListViewRow2" Key="{FC76565A-7928-44DD-9017-4E64BC7FEB3C}" ExtendedFind="True">
+																														<Image FileName="1133660423" Left="304" Top="371" Right="874" Bottom="398" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.TreeListView.TreeListViewRow" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="" />
+																															</Property>
+																															<Property Name="WPFControlOrdinalNo">
+																																<Value Value="4" Type="0" />
+																															</Property>
+																														</Properties>
+																														<Children>
+																															<Child Name="GridViewCell" Key="{CD85D2FE-BFC0-4DFF-9843-0A8E1F74AE89}" ExtendedFind="True">
+																																<Image FileName="1133660423" Left="342" Top="371" Right="618" Bottom="398" />
+																																<Properties>
+																																	<Property Name="ClrFullClassName">
+																																		<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																																	</Property>
+																																	<Property Name="WPFControlText">
+																																		<Value Value="" />
+																																	</Property>
+																																</Properties>
+																															</Child>
+																															<Child Name="GridviewcellMotorgp" Key="{167DF2AD-E857-41A3-95DD-0907C2578E33}" ExtendedFind="True">
+																																<Image FileName="1402171155" Left="617" Top="371" Right="743" Bottom="398" />
+																																<Properties>
+																																	<Property Name="ClrFullClassName">
+																																		<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																																	</Property>
+																																	<Property Name="WPFControlText">
+																																		<Value Value="$MotorGP" />
+																																	</Property>
+																																</Properties>
+																															</Child>
+																														</Children>
+																													</Child>
+																												</Children>
+																											</Child>
+																											<Child Name="RadPaneGroup2" Key="{B78D1689-2CF7-4E23-B095-2353EFBFFC34}" ExtendedFind="True">
+																												<Image FileName="-1007661332" Left="301" Top="564" Right="859" Bottom="928" />
+																												<Properties>
+																													<Property Name="ClrFullClassName">
+																														<Value Value="Telerik.Windows.Controls.RadPaneGroup" />
+																													</Property>
+																													<Property Name="WPFControlOrdinalNo">
+																														<Value Value="2" Type="0" />
+																													</Property>
+																												</Properties>
+																												<Children>
+																													<Child Name="UcBrowser" Key="{C3985448-05F0-4E11-A01C-A673F65E4A54}" ExtendedFind="True">
+																														<Image FileName="-1007661332" Left="303" Top="616" Right="857" Bottom="926" />
+																														<TypeInfo Item0="{4556E179-2D72-48D1-8B69-4FB15AB20853}" />
+																														<Properties>
+																															<Property Name="WPFControlName">
+																																<Value Value="UcBrowser" />
+																															</Property>
+																														</Properties>
+																													</Child>
+																												</Children>
+																											</Child>
+																										</Children>
+																									</Child>
+																									<Child Name="RadSplitContainer2" Key="{B53F8408-CE0E-4A3E-8C37-37E38DB761D9}" ExtendedFind="True">
+																										<Image FileName="1153752175" Left="863" Top="201" Right="1920" Bottom="928" />
+																										<Properties>
+																											<Property Name="ClrFullClassName">
+																												<Value Value="Telerik.Windows.Controls.RadSplitContainer" />
+																											</Property>
+																											<Property Name="WPFControlOrdinalNo">
+																												<Value Value="2" Type="0" />
+																											</Property>
+																										</Properties>
+																										<Children>
+																											<Child Name="RadPaneGroup" Key="{9ADE9DCD-6E9C-44AC-A0B8-9630376B1E2B}" ExtendedFind="True">
+																												<Image FileName="1153752175" Left="863" Top="201" Right="1920" Bottom="928" />
+																												<Properties>
+																													<Property Name="ClrFullClassName">
+																														<Value Value="Telerik.Windows.Controls.RadPaneGroup" />
+																													</Property>
+																												</Properties>
+																												<Children>
+																													<Child Name="GridViewRow" Key="{495952EE-17B6-400C-A874-4526715E94CA}" ExtendedFind="True">
+																														<Image FileName="1153752175" Left="866" Top="625" Right="1912" Bottom="652" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.GridView.GridViewRow" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="" />
+																															</Property>
+																															<Property Name="WPFControlOrdinalNo">
+																																<Value Value="13" Type="0" />
+																															</Property>
+																														</Properties>
+																														<Children>
+																															<Child Name="TextblockMotorgp" Key="{182793F7-952D-4A85-8835-64B7C6721FA2}" ExtendedFind="True">
+																																<Image FileName="1153752175" Left="1129" Top="629" Right="1274" Bottom="646" />
+																																<TypeInfo Item0="{4556E179-2D72-48D1-8B69-4FB15AB20853}" />
+																																<Properties>
+																																	<Property Name="ClrFullClassName">
+																																		<Value Value="System.Windows.Controls.TextBlock" />
+																																	</Property>
+																																	<Property Name="WPFControlText">
+																																		<Value Value="$MotorGP" />
+																																	</Property>
+																																</Properties>
+																															</Child>
+																														</Children>
+																													</Child>
+																													<Child Name="GridViewRow2" Key="{D06C989A-5275-4CFD-A795-A8F9321598EA}" ExtendedFind="True">
+																														<Image FileName="1337756703" Left="866" Top="677" Right="1912" Bottom="704" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.GridView.GridViewRow" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="" />
+																															</Property>
+																															<Property Name="WPFControlOrdinalNo">
+																																<Value Value="12" Type="0" />
+																															</Property>
+																														</Properties>
+																														<Children>
+																															<Child Name="TextblockMotorgp" Key="{18C5B227-7ACD-419D-B9AD-614182513EEA}" ExtendedFind="True">
+																																<Image FileName="1337756703" Left="1129" Top="682" Right="1274" Bottom="698" />
+																																<TypeInfo Item0="{4556E179-2D72-48D1-8B69-4FB15AB20853}" />
+																																<Properties>
+																																	<Property Name="ClrFullClassName">
+																																		<Value Value="System.Windows.Controls.TextBlock" />
+																																	</Property>
+																																	<Property Name="WPFControlText">
+																																		<Value Value="$MotorGP" />
+																																	</Property>
+																																</Properties>
+																															</Child>
+																														</Children>
+																													</Child>
+																													<Child Name="GridViewRow3" Key="{95E4FCBF-1360-4C56-8451-7011ECAE1007}" ExtendedFind="True">
+																														<Image FileName="1603492988" Left="866" Top="730" Right="1912" Bottom="757" />
+																														<Properties>
+																															<Property Name="ClrFullClassName">
+																																<Value Value="Telerik.Windows.Controls.GridView.GridViewRow" />
+																															</Property>
+																															<Property Name="WPFControlText">
+																																<Value Value="" />
+																															</Property>
+																															<Property Name="WPFControlOrdinalNo">
+																																<Value Value="15" Type="0" />
+																															</Property>
+																														</Properties>
+																														<Children>
+																															<Child Name="GridviewcellValvegp" Key="{AF50C4D0-20A8-44D5-988B-6277636C866A}" ExtendedFind="True">
+																																<Image FileName="1603492988" Left="1127" Top="730" Right="1278" Bottom="757" />
+																																<Properties>
+																																	<Property Name="ClrFullClassName">
+																																		<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
+																																	</Property>
+																																	<Property Name="WPFControlText">
+																																		<Value Value="$ValveGP" />
+																																	</Property>
+																																</Properties>
+																															</Child>
+																														</Children>
+																													</Child>
+																												</Children>
+																											</Child>
+																										</Children>
+																									</Child>
+																								</Children>
+																							</Child>
+																						</Children>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="HwndSource_ModalDialogWindow" Key="{AC331AAA-0BD9-4981-839E-8225584E1DB2}">
+								<Image FileName="656966377" Left="0" Top="0" Right="862" Bottom="675" />
+								<Properties>
+									<Property Name="RootVisual.ClrClassName">
+										<Value Value="ModalDialogWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="ModalDialogWindow" Key="{106D5FB1-117E-4882-A762-55FDB2C6C453}">
+										<Image FileName="656966377" Left="0" Top="0" Right="862" Bottom="676" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="SchneiderElectric.ProcessExpert.Controls.ModalDialogWindow" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="ButtonOk" Key="{B384B587-CF97-4E0F-8264-865C9B71A0C7}" ExtendedFind="True">
+												<Image FileName="656966377" Left="632" Top="622" Right="733" Bottom="653" />
+												<TypeInfo Item0="{137CF07A-3D7B-4646-B0CD-632B7FCBE4B1}" />
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Controls.Button" />
+													</Property>
+													<Property Name="WPFControlText">
+														<Value Value="OK" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="ControlExpert_Topology" Key="{CC4675B9-F030-4CF8-8014-9D912F1F58F9}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="ControlExpert.Topology" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="HwndSource_MessageDialogWindow" Key="{02A07A70-27DF-479F-8C26-20233C4899E2}">
+								<Image FileName="1263995881" Left="0" Top="0" Right="800" Bottom="321" />
+								<Properties>
+									<Property Name="RootVisual.ClrClassName">
+										<Value Value="MessageDialogWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="TSF.Framework.Localization.LocalizedData" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="MessageDialogWindow" Key="{0DFE7EBE-F6C6-45FC-B809-5B57230C10FB}">
+										<Image FileName="1263995881" Left="0" Top="0" Right="801" Bottom="321" />
+										<TypeInfo Item0="{4556E179-2D72-48D1-8B69-4FB15AB20853}" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="TSF.Framework.Presentation.Dialogs.MessageDialogWindow" />
+											</Property>
+										</Properties>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+					<Child Name="ApplicationFrameHost" Key="{3B03266B-9C87-46EA-A1EC-0D6D96F0A6EE}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="ApplicationFrameHost" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="wndSettings" Key="{A5B8E8C3-69AE-46F4-8C59-329B6A61E4A0}">
+								<Image FileName="128908375" Left="0" Top="0" Right="1298" Bottom="1010" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="ApplicationFrameWindow" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Settings" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="EngineeringClient" Owner="{EFBFF60A-FC40-4C45-9165-1ECAD1FB8237}">
+			<Child Name="HwndSource_Main" Owner="{A624A841-EA88-41BF-B797-8E0F50D4EA81}">
+				<Child Name="Main" Owner="{582723A6-2356-403C-AC97-DB60BF2CCC49}">
+					<Child Name="FrameHostControl" Owner="{2B57845C-9BC4-4AC2-9151-8A5CB79BAEA3}">
+						<Child Name="radDocking" Owner="{DAF758CE-7D4C-4239-B743-BDB9AC2BD91A}">
+							<Child Name="RadSplitContainer" Owner="{BFD936AE-02BD-41A1-BF3C-47F231EAEE55}">
+								<Child Name="RadPaneGroup" Owner="{F4F3F8D8-8982-4854-A0EB-07A898FC15D4}">
+									<Child Name="FrameHostControl" Owner="{16981183-B009-4A22-86AD-F9AE9283852B}">
+										<Child Name="radDocking" Owner="{FBCBB38E-747F-4A3C-80F1-BCBBE0A1156F}">
+											<Child Name="RadSplitContainer" Owner="{05C0224C-15E2-4184-B0FD-D71181229E05}">
+												<Child Name="RadPaneGroup" Owner="{8B95E82B-2C50-445D-8C5E-1B1A6B7241FF}">
+													<Child Name="GridviewcellAalarmgpUc" Owner="{59239044-FA09-4AE5-8A44-84EB2E31D86A}" />
+													<Child Name="GridviewcellAnaloginputgp" Owner="{42E5609E-D65D-4A02-9425-6B0F7A7A7D14}" />
+													<Child Name="GridviewcellValvegp" Owner="{FA79E0D4-C03F-46E6-A918-338647648AE2}" />
+													<Child Name="GridViewCell" Owner="{2F10F9A7-D508-4243-BC2B-003FF7E390DD}" />
+													<Child Name="GridViewCell2" Owner="{CD85D2FE-BFC0-4DFF-9843-0A8E1F74AE89}" />
+													<Child Name="GridviewcellMotorgp" Owner="{167DF2AD-E857-41A3-95DD-0907C2578E33}" />
+												</Child>
+												<Child Name="RadPaneGroup2" Owner="{B78D1689-2CF7-4E23-B095-2353EFBFFC34}">
+													<Child Name="UcBrowser" Owner="{C3985448-05F0-4E11-A01C-A673F65E4A54}" />
+												</Child>
+											</Child>
+											<Child Name="RadSplitContainer2" Owner="{B53F8408-CE0E-4A3E-8C37-37E38DB761D9}">
+												<Child Name="RadPaneGroup" Owner="{9ADE9DCD-6E9C-44AC-A0B8-9630376B1E2B}">
+													<Child Name="TextblockMotorgp" Owner="{182793F7-952D-4A85-8835-64B7C6721FA2}" />
+													<Child Name="TextblockMotorgp2" Owner="{18C5B227-7ACD-419D-B9AD-614182513EEA}" />
+													<Child Name="GridviewcellValvegp" Owner="{AF50C4D0-20A8-44D5-988B-6277636C866A}" />
+												</Child>
+											</Child>
+										</Child>
+									</Child>
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+			</Child>
+			<Child Name="HwndSource_ModalDialogWindow" Owner="{AC331AAA-0BD9-4981-839E-8225584E1DB2}">
+				<Child Name="ModalDialogWindow" Owner="{106D5FB1-117E-4882-A762-55FDB2C6C453}">
+					<Child Name="ButtonOk" Owner="{B384B587-CF97-4E0F-8264-865C9B71A0C7}" />
+				</Child>
+			</Child>
+		</Child>
+		<Child Name="ControlExpert_Topology" Owner="{CC4675B9-F030-4CF8-8014-9D912F1F58F9}">
+			<Child Name="HwndSource_MessageDialogWindow" Owner="{02A07A70-27DF-479F-8C26-20233C4899E2}">
+				<Child Name="MessageDialogWindow" Owner="{0DFE7EBE-F6C6-45FC-B809-5B57230C10FB}" />
+			</Child>
+		</Child>
+		<Child Name="ApplicationFrameHost" Owner="{3B03266B-9C87-46EA-A1EC-0D6D96F0A6EE}">
+			<Child Name="wndSettings" Owner="{A5B8E8C3-69AE-46F4-8C59-329B6A61E4A0}" />
+		</Child>
+	</LogicalNodes>
+</Root>

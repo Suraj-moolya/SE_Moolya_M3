@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45572.6608859028"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{DE367892-A101-4B67-ABDB-A57492FBF335}"/>
+				<Prp name="nameofroot" type="S" value="System Server"/>
+				<Prp name="relpath" type="S" value="07-10-2024_15_51_40_542\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45572.6631374306"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{E16A5C33-7804-4FBE-9696-415EE312AC24}"/>
+				<Prp name="nameofroot" type="S" value="Execution oder 1"/>
+				<Prp name="relpath" type="S" value="07-10-2024_15_54_55_74\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45572.663939294"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{26F56A7C-D5D3-49D1-8735-41CD16FF8F3C}"/>
+				<Prp name="nameofroot" type="S" value="TC_EPE_SS_0001_1"/>
+				<Prp name="relpath" type="S" value="07-10-2024_15_56_04_355\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45572.664580787"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{572A5C33-0E30-4783-8AAE-A8CBCE45AA63}"/>
+				<Prp name="nameofroot" type="S" value="System Server Execution order"/>
+				<Prp name="relpath" type="S" value="07-10-2024_15_56_59_780\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45572.6648979745"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4BD26A0A-6B26-4B07-833B-AD20155F4857}"/>
+				<Prp name="nameofroot" type="S" value="Execution order 3"/>
+				<Prp name="relpath" type="S" value="07-10-2024_15_57_27_185\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45572.6665653704"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2583EE87-0346-4C61-9891-4F5F387DAD68}"/>
+				<Prp name="nameofroot" type="S" value="Execution oder 1"/>
+				<Prp name="relpath" type="S" value="07-10-2024_15_59_51_248\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>
