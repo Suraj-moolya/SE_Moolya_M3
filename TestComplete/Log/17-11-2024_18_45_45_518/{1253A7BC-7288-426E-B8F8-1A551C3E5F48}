@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="779"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="254"/>
+					<Prp name="click point y" type="I" value="103"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: ModalDialogWindow&quot;, &quot;&quot;).WPFObject(&quot;ModalDialogWindow&quot;, &quot;&quot;, 1).WPFObject(&quot;ConfirmationPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Engine Information&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;BaseDataGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;GridViewRow&quot;, &quot;&quot;, 2).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;grid&quot;).WPFObject(&quot;PART_DataCellsPresenter&quot;).WPFObject(&quot;GridViewCell&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PART_ContentGrid&quot;).WPFObject(&quot;PART_ContentPresenter&quot;).WPFObject(&quot;PrimaryAddressList&quot;)"/>
+					<Prp name="object bottom" type="I" value="116"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45613.5526190162"/>
+					<Prp name="object right" type="I" value="344"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="164"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="91"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45613.7817872106"/>
+			<Prp name="line no" type="I" value="779"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (90, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: ModalDialogWindow&quot;, &quot;&quot;).WPFObject(&quot;ModalDialogWindow&quot;, &quot;&quot;, 1).WPFObject(&quot;ConfirmationPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Engine Information&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;BaseDataGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;GridViewRow&quot;, &quot;&quot;, 2).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;grid&quot;).WPFObject(&quot;PART_DataCellsPresenter&quot;).WPFObject(&quot;GridViewCell&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PART_ContentGrid&quot;).WPFObject(&quot;PART_ContentPresenter&quot;).WPFObject(&quot;PrimaryAddressList&quot;)"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45613.7817912847"/>
+			<Prp name="line no" type="I" value="785"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="Slot 0:BMEP586040 {192.168.33.21} was selected from Dropdown option"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="784"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="click point x" type="I" value="127"/>
+					<Prp name="click point y" type="I" value="35"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;RadComboBoxItem&quot;, &quot;&quot;, 2)"/>
+					<Prp name="object bottom" type="I" value="48"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="datetime" type="D" value="45613.5526224074"/>
+					<Prp name="object right" type="I" value="254"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object left" type="I" value="1"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="23"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45613.7817897801"/>
+			<Prp name="line no" type="I" value="784"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="A click at point (126, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;RadComboBoxItem&quot;, &quot;&quot;, 2)"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{A68BBC9B-B2B4-4E2A-9D30-D1DE8ACC51CD}"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

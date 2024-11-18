@@ -37,7 +37,7 @@ Examples:
 
 @TC_EPE_TE_0020a
 @test001
-Scenario Outline: Map the logical network to all communication modules - edit IP Address (192.168.33.4)
+Scenario Outline: Map the logical network to all communication modules - edit IP Address (192.168.33.21)
 When I edit IP Address in configure MDI Window in refine offline as '<MDI Window1>'
 And I edit IP Address in configure MDI Window in refine offline as '<MDI Window2>'
 And I edit IP Address in configure MDI Window in refine offline as '<MDI Window3>'

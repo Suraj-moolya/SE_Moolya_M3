@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object left" type="I" value="572"/>
+					<Prp name="line #" type="I" value="444"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="167"/>
+					<Prp name="datetime" type="D" value="45612.2587522106"/>
+					<Prp name="image file name" type="S" value="visImage93.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="862"/>
+					<Prp name="object top" type="I" value="143"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: Main&quot;).WinFormsObject(&quot;WinFormsAdapter&quot;, &quot;&quot;, 1).WinFormsObject(&quot;Panel&quot;, &quot;&quot;, 2).WinFormsObject(&quot;ToolConnectorPanel&quot;).Window(&quot;ControlExpert&quot;, &quot;EcoStruxure Control Expert Classic {No User Authentication} : project* - [PLC bus]&quot;, 1).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).MDIWindow(&quot;PLC bus&quot;).Panel(&quot;Configuration -- Bus Editor&quot;).Window(&quot;#32770&quot;, &quot;Configuration -- Bus Editor&quot;, 1).Window(&quot;ComboBox&quot;, &quot;&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="date" type="D" value="45612.4879212616"/>
+			<Prp name="line no" type="I" value="444"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="The combo box item 'BME P58 4040   03.20' was selected."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: Main&quot;).WinFormsObject(&quot;WinFormsAdapter&quot;, &quot;&quot;, 1).WinFormsObject(&quot;Panel&quot;, &quot;&quot;, 2).WinFormsObject(&quot;ToolConnectorPanel&quot;).Window(&quot;ControlExpert&quot;, &quot;EcoStruxure Control Expert Classic {No User Authentication} : project* - [PLC bus]&quot;, 1).Window(&quot;MDIClient&quot;, &quot;&quot;, 1).MDIWindow(&quot;PLC bus&quot;).Panel(&quot;Configuration -- Bus Editor&quot;).Window(&quot;#32770&quot;, &quot;Configuration -- Bus Editor&quot;, 1).Window(&quot;ComboBox&quot;, &quot;&quot;, 1)"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="date" type="D" value="45612.4879340394"/>
+			<Prp name="line no" type="I" value="446"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="BME P58 4040   03.20 is selected."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 2" type="S" value="{5605F8FD-886F-419D-991E-8BA735DC548E}"/>
+			<Prp name="unit 0" type="S" value="TestComplete\Scenarios\50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature"/>
+			<Prp name="unit 3" type="S" value="{9077EA1D-1638-49BF-8BAF-23377C5CE857}"/>
+			<Prp name="unit 1" type="S" value="{A3E073AE-3E58-4340-99C7-B951D449CCC9}"/>
+		</Node>
+		<Node name="message 9">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="249"/>
+					<Prp name="click point x" type="I" value="323"/>
+					<Prp name="object left" type="I" value="273"/>
+					<Prp name="line #" type="I" value="666"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="266"/>
+					<Prp name="datetime" type="D" value="45612.2588486458"/>
+					<Prp name="image file name" type="S" value="visImage95.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="373"/>
+					<Prp name="object top" type="I" value="233"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;ControlExpert&quot;).Window(&quot;#32770&quot;, &quot;Replace Processor&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="date" type="D" value="45612.4880163657"/>
+			<Prp name="line no" type="I" value="666"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="A click at point (50, 16) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;ControlExpert&quot;).Window(&quot;#32770&quot;, &quot;Replace Processor&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 7">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="click point y" type="I" value="211"/>
+					<Prp name="click point x" type="I" value="327"/>
+					<Prp name="object left" type="I" value="277"/>
+					<Prp name="line #" type="I" value="666"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="228"/>
+					<Prp name="datetime" type="D" value="45612.2588209606"/>
+					<Prp name="image file name" type="S" value="visImage94.png"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object right" type="I" value="377"/>
+					<Prp name="object top" type="I" value="195"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;ControlExpert&quot;).Window(&quot;#32770&quot;, &quot;Control Expert&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+				</Node>
+			</Node>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="date" type="D" value="45612.4879884838"/>
+			<Prp name="line no" type="I" value="666"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="A click at point (50, 16) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;ControlExpert&quot;).Window(&quot;#32770&quot;, &quot;Control Expert&quot;, 1).Window(&quot;Button&quot;, &quot;&amp;Yes&quot;, 1)"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="date" type="D" value="45612.4877832523"/>
+			<Prp name="line no" type="I" value="264"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Change CPU Version of controller (BME P58 4040   03.20) [SlNo.: 1, Cpu_version: BME P58 4040   03.20]"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="0"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="date" type="D" value="45612.4877871991"/>
+			<Prp name="line no" type="I" value="265"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="When I selected select PLC bus combobox item CE in refine offline as 'BME P58 4040   03.20'"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="date" type="D" value="45612.4878284491"/>
+			<Prp name="line no" type="I" value="440"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="message" type="S" value="182"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="date" type="D" value="45612.4879874884"/>
+			<Prp name="line no" type="I" value="95"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="message" type="S" value="--Element is visible"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 8">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="date" type="D" value="45612.4880151852"/>
+			<Prp name="line no" type="I" value="95"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="message" type="S" value="--Element is visible"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="date" type="D" value="45612.487783044"/>
+			<Prp name="line no" type="I" value="264"/>
+			<Prp name="type" type="I" value="8"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="message" type="S" value="Change CPU Version of controller (BME P58 4040   03.20)"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

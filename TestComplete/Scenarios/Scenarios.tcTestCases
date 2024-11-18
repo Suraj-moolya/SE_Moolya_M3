@@ -75,5 +75,6 @@
 		<Feature Path="53 Add communication modules, add Drops and synch the changes.feature" />
 		<Feature Path="54 Map logical network to all communication modules.feature" />
 		<Feature Path="Export the project. Do some modifications in SP. Build the executable.feature" />
+		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
 	</Folder>
 </Scenarios>
