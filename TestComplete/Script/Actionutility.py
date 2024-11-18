@@ -10,8 +10,9 @@ from LicenseManagement import LicenseManagement
 from ProjectExplorerTab import ProjectExplorerTab
 from SystemExplorerScreen import SystemExplorerScreen
 from TopologyExplorerTab import TopologyExplorerTab
+from Topology import Topology
 
-
+Topology1 = Topology()
 EngineeringClient1 = EngineeringClient()    
 ApplicationExplorerTab1 = ApplicationExplorerTab()
 ECWarningPopup1 = ECWarningPopup()
@@ -23,7 +24,7 @@ SystemExplorerScreen1 = SystemExplorerScreen()
 SystemServer1 = SystemServer()
 TopologyExplorerTab1 = TopologyExplorerTab()
 WindowsExplorer1 = WindowsExplorer()
-Screen_List = [EngineeringClient1, ApplicationExplorerTab1, ECWarningPopup1, GlobalTemplatesTab1, LicenseManagement1, MessageBox1, ProjectExplorerTab1, SystemExplorerScreen1, SystemServer1, TopologyExplorerTab1, WindowsExplorer1]
+Screen_List = [Topology1, EngineeringClient1, ApplicationExplorerTab1, ECWarningPopup1, GlobalTemplatesTab1, LicenseManagement1, MessageBox1, ProjectExplorerTab1, SystemExplorerScreen1, SystemServer1, TopologyExplorerTab1, WindowsExplorer1]
 msg_obj = MessageBox()
 win_obj = WindowsExplorer()
 server_obj = SystemServer()
@@ -148,7 +149,7 @@ def Click_popup_button(param):
   take_screenshot('Taking Screenshot of the Popup Window.')
   for button in buttons_list:
     Applicationutility.wait_in_seconds(1000, 'Wait')
-    if button_name in str(button.WPFControlText) :
+    if button_name in str(button.WPFControlText) and button.Enabled == True:
       button.click()
       Log.Message('Clicked ' + str(button.WPFControlText) + ' button.')
       break
@@ -177,3 +178,15 @@ def ProjectSample():
         Log.Message(aFile.Name + " file is located in " + ConfigPath)
     else:
       Log.Message("No .tcLS files were found")
+
+def modal_dialog_window_dialog(param):
+  obj = get_obj(param)
+  headder_list = obj.object.FindAllChildren('WPFControlName', 'HeaderGrid', 1000)
+  dialog = headder_list[0].FindAllChildren('ClrClassName', 'TextBlock', 10)
+  for text in dialog:
+    if str(text.WPFControlText) != '':
+      Log.Checkpoint('Dialog box message : ' + str(text.WPFControlText))
+      take_screenshot('Taking Screenshot of the Message Window.')
+      break
+      
+

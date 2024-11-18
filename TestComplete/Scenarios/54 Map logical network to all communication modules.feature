@@ -44,4 +44,4 @@ And I edit IP Address in configure MDI Window in refine offline as '<MDI Window3
 And I edit IP Address in configure MDI Window in refine offline as '<MDI Window4>'
 Examples:
   | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4                   |
-  | 1     | Main IP address$$192.168.33.4 | Subnetwork mask$$255.255.0.0 | IP address A$$192.168.33.4 | Gateway address$$192.168.33.4 |
+  | 1     | Main IP address$$192.168.33.4 | Subnetwork mask$$255.255.0.0 | IP address A$$192.168.33.5 | Gateway address$$192.168.33.4 |

@@ -150,3 +150,36 @@ def step_impl(modalDialogWindow2):
     """I click modal dialog window Modal dialog window in message box as '<Modal dialog window2>'"""
     CommonUtil.write_text_file("\nWhen I click modal dialog window Modal dialog window in message box as \""+modalDialogWindow2+"\"")
     obj.textboxmodaldialogwindowclickmodaldialogwindow(modalDialogWindow2)
+    
+@when("I select ip adress from deploy project build TE Modal dialog window in message box as {arg}")
+def step_impl(modalDialogWindow5):
+    """I select ip adress from deploy project build TE Modal dialog window in message box as '<Modal dialog window5>'"""
+    CommonUtil.write_text_file("\nWhen I select ip adress from deploy project build TE Modal dialog window in message box as \""+modalDialogWindow5+"\"")
+    obj.textboxmodaldialogwindowselectipadressfromdeployprojectbuildte(modalDialogWindow5)
+  
+@when("I click modal dialog window Modal Dialog Window 1 in message box as {arg}")
+def step_impl(modalDialogWindow16):
+    """I click modal dialog window Modal Dialog Window 1 in message box as '<Modal Dialog Window 16>'"""
+    CommonUtil.write_text_file("\nWhen I click modal dialog window Modal Dialog Window 1 in message box as \""+modalDialogWindow16+"\"")
+    obj.textboxmodaldialogwindowclickmodaldialogwindow(modalDialogWindow16)
+
+@when("I Click popup button object Modal Dialog Window 1 in message box as {arg}")
+def step_impl(modalDialogWindow16):
+    """I Click popup button object Modal Dialog Window 1 in message box as '<Modal Dialog Window 16>'"""
+    CommonUtil.write_text_file("\nWhen I Click popup button object Modal Dialog Window 1 in message box as \""+modalDialogWindow16+"\"")
+    obj.textboxmodaldialogwindow1clickpopupbuttonobject(modalDialogWindow16)
+    
+@then("Verify modal dialog window text Modal Dialog Window 1 in message box as {arg}")
+def step_impl(modalDialogWindow15):
+    """Verify modal dialog window text Modal Dialog Window 1 in message box as '<Modal Dialog Window 15>'"""
+    CommonUtil.write_text_file("\nThen Verify modal dialog window text Modal Dialog Window 1 in message box as \""+modalDialogWindow15+"\"")
+    obj.textboxmodaldialogwindow1verifymodaldialogwindowtext(modalDialogWindow15)
+    Applicationutility.take_screenshot("Full Screenshot")
+    
+@then("Verify notification panel message Notification Pannel in message box as {arg}")
+def step_impl(notificationPannel7):
+    """Verify notification panel message Notification Pannel in message box as '<Notification Pannel7>'"""
+    CommonUtil.write_text_file("\nThen Verify notification panel message Notification Pannel in message box as \""+notificationPannel7+"\"")
+    obj.textboxnotificationpannelverifynotificationpanelmessage(notificationPannel7)
+    Applicationutility.take_screenshot("Full Screenshot")
+    

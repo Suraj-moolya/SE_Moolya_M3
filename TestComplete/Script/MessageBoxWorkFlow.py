@@ -5,6 +5,8 @@ import Applicationutility
 import Engineeringclientutility
 import Applicationexplorertabutility
 import Actionutility
+import Topologyutility
+
 
 class MessageBoxWorkFlow:
     """MessageBoxWorkFlow"""
@@ -169,4 +171,34 @@ class MessageBoxWorkFlow:
             Actionutility.modal_dialog_window_button(button_name)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxmodaldialogwindowselectipadressfromdeployprojectbuildte(self,IP_address):
+        """textboxmodaldialogwindowselectipadressfromdeployprojectbuildte"""
+        try:
+            Topologyutility.Select_IP_from_ControlProjectDeployment(IP_address)
+        except Exception as ex:
+            raise Exception(ex) from ex
         
+    def textboxmodaldialogwindow1clickpopupbuttonobject(self,param):
+        """textboxmodaldialogwindow1clickpopupbuttonobject"""
+        try:
+            Actionutility.Click_popup_button(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxnotificationpannelverifynotificationpanelmessage(self,Message):
+        """textboxnotificationpannelverifynotificationpanelmessage"""
+        try:
+            Applicationexplorertabutility.Verify_Notification_pannel_Message(Message)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxmodaldialogwindow1verifymodaldialogwindowtext(self,param):
+        """textboxmodaldialogwindow1verifymodaldialogwindowtext"""
+        try:
+            Actionutility.modal_dialog_window_dialog(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    
+      
