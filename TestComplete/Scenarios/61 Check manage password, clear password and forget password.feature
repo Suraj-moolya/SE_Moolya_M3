@@ -13,8 +13,12 @@ And Verify entered Controller Password valid invalid TE Confirm Password box in 
 
 
 Examples:
-|SlNo.|New Password box1|Confirm Password box2|Modification popup3|New Password box4|Confirm Password box5|
-|1|Password$$Mooly@1|Confirm Password$$Mooly@1|OK|Password|Confirm Password|
+  | SlNo. | New Password box1            | Confirm Password box2                | Modification popup3 | New Password box4 | Confirm Password box5 |
+  | 1     | Password$$Mooly@1            | Confirm Password$$Mooly@1            | OK                  | Password          | Confirm Password      |
+  | 2     | Password$$Mooly@wayoftesting | Confirm Password$$Mooly@wayoftesting | OK                  | Password          | Confirm Password      |
+  | 3     | Password$$Moolyawa           | Confirm Password$$Moolyawa           | OK                  | Password          | Confirm Password      |
+  | 4     | Password$$Moolya@123         | Confirm Password$$Moolya@45          | OK                  | Password          | Confirm Password      |
+  | 5     | Password$$Moolya@123         | Confirm Password$$Moolya@123         | OK                  | Password          | Confirm Password      |
 
 
 #Total No. of Test Cases : 1
@@ -27,8 +31,8 @@ And I Click on export System1 Export Popup AE buttons Export in ec windows explo
 
 
 Examples:
-|SlNo.|
-|1|
+  | SlNo. |
+  | 1     |
 
 #Total No. of Test Cases : 2
 
@@ -43,9 +47,9 @@ Then Verify entered Controller Password valid invalid TE New Password box in top
 
 
 Examples:
-|SlNo.|Confirm Password box1|Modification popup2|New Password box3|
-|1|Current Password$$Moolya|OK|Password|
-|1|Current Password$$Moolya@123|OK|Password|
+  | SlNo. | Confirm Password box1        | Modification popup2 | New Password box3 |
+  | 1     | Current Password$$Moolya     | OK                  | Password          |
+  | 2     | Current Password$$Moolya@123 | OK                  | Password          |
 
 
 #Total No. of Test Cases : 3
