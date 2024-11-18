@@ -53,3 +53,8 @@ def step_impl():
 def step_impl():
     """I change the controller protection to disable"""
     Topologyexplorerutility.Controller_property()
+    
+@when("I Select {arg} From deploy Project window and Click on Start Engine Checkbox")
+def step_impl(IP_address):
+    """I Select '<IP_address>' From deploy Project window and Click on Start Engine Checkbox"""
+    Topologyexplorerutility.Select_IP_from_ControlProjectDeployment(IP_address)

@@ -150,3 +150,10 @@ def step_impl(modalDialogWindow2):
     """I click modal dialog window Modal dialog window in message box as '<Modal dialog window2>'"""
     CommonUtil.write_text_file("\nWhen I click modal dialog window Modal dialog window in message box as \""+modalDialogWindow2+"\"")
     obj.textboxmodaldialogwindowclickmodaldialogwindow(modalDialogWindow2)
+    
+    
+@when("I Click on OK button from Reconfirm Deploy Built Project Popup window")
+def step_impl():
+    """I Click on OK button from Reconfirm Deploy Built Project Popup window"""
+    CommonUtil.write_text_file("\nWhen I Click on OK button from Reconfirm Deploy Built Project Popup window")
+    obj.clickokfromdbppopupwindow()

@@ -154,3 +154,14 @@ class MessageBox(MapBase):
         """modaldialogwindow1textbox"""
         return self.get_element("Modaldialogwindow1_MessageBox")
                         
+        
+    @property
+    def reconfirmokbutton(self):
+        """reconfirmokbutton"""
+        return self.get_element("ReConfirmDBPOK_MessageBox")    
+        
+        
+        
+        
+        
+        

@@ -169,4 +169,8 @@ class MessageBoxWorkFlow:
             Actionutility.modal_dialog_window_button(button_name)
         except Exception as ex:
             raise Exception(ex) from ex
-        
+
+    def clickokfromdbppopupwindow(self):
+        """messagebox_obj.reconfirmokbutton"""
+        MessageBoxWorkFlow.messagebox_obj.reconfirmokbutton.click()
+                

@@ -160,6 +160,8 @@
 			 <UIControl Element="OldPasswordBox_TopologyExporerTab" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="ClosebuttonTM_TopologyExporerTab" Name="Button('Close')" Parent="EngineeringClient_" />
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="PrimaryAddressList_TopologyExporerTab" Name="WPFObject('PrimaryAddressList')" Parent="EngineeringClient_" />
+			 <UIControl Element="StartEngineCheckbox_TopologyExporerTab" Name="WPFObject('Box')" Parent="EngineeringClient_" />
 			 
 			 
         </Component>
@@ -308,7 +310,9 @@
 			 <UIControl Element="RenameInstancePopup_MessageBox" Name="WPFObject('MessageBoxButtonsPanel')" Parent="EngineeringClient_" />
 			 <UIControl Element="ChannelPropertiesDialog_MessageBox" Name="WPFObject('ChannelPropertiesDialogForController', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="ManageNetworkVariables_MessageBox" Name="WPFObject('ManageNetworkVariables', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('* ModalDialogWindow', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('* ModalDialogWindow', '', 1)" Enabled="True" VisibleOnScreen="True" Parent="EngineeringClient_" />
+			 <UIControl Element="ReConfirmDBPOK_MessageBox" Name="WPFObject('Button', 'OK', 2)" Parent="EngineeringClient_" />
+			 
         </Component>	
 		<Component name="Refine Offline">
              <UIControl Element="CloseRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Close" Parent="EngineeringClient_" />

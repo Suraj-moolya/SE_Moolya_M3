@@ -78,4 +78,13 @@ class TopologyExplorerTab(MapBase):
     def oldpasswordboxboxtextbox(self):
         """oldpasswordboxboxtextbox"""
         return self.get_element("OldPasswordBox_TopologyExporerTab")
-
+        
+    @property
+    def primaryaddresslistdropdown(self):
+        """primaryaddresslistdropdown"""
+        return self.get_element("PrimaryAddressList_TopologyExporerTab")
+        
+    @property
+    def startenginecheckbox(self):
+        """startenginecheckbox"""
+        return self.get_element("StartEngineCheckbox_TopologyExporerTab")

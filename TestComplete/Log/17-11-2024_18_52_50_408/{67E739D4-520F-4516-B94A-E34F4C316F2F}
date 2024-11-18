@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="child data"/>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{A68BBC9B-B2B4-4E2A-9D30-D1DE8ACC51CD}"/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="786"/>
+					<Prp name="click point y" type="I" value="35"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object top" type="I" value="23"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object bottom" type="I" value="48"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="click point x" type="I" value="128"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object left" type="I" value="1"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45613.5575401505"/>
+					<Prp name="object right" type="I" value="256"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;RadComboBoxItem&quot;, &quot;&quot;, 2)"/>
+				</Node>
+			</Node>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="786"/>
+			<Prp name="remarks" type="S" value="A click at point (127, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: PopupRoot&quot;, &quot;&quot;).WPFObject(&quot;PopupRoot&quot;, &quot;&quot;, 1).WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;RadComboBoxItem&quot;, &quot;&quot;, 2)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45613.7867077083"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="item 2">
+			<Prp name="line no" type="I" value="787"/>
+			<Prp name="stacktext" type="S" value=""/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="line #" type="I" value="779"/>
+					<Prp name="click point y" type="I" value="103"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object top" type="I" value="91"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="object bottom" type="I" value="116"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="click point x" type="I" value="293"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object left" type="I" value="164"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="datetime" type="D" value="45613.5575365509"/>
+					<Prp name="object right" type="I" value="423"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: ModalDialogWindow&quot;, &quot;&quot;).WPFObject(&quot;ModalDialogWindow&quot;, &quot;&quot;, 1).WPFObject(&quot;ConfirmationPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Engine Information&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;BaseDataGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;GridViewRow&quot;, &quot;&quot;, 2).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;grid&quot;).WPFObject(&quot;PART_DataCellsPresenter&quot;).WPFObject(&quot;GridViewCell&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PART_ContentGrid&quot;).WPFObject(&quot;PART_ContentPresenter&quot;).WPFObject(&quot;PrimaryAddressList&quot;)"/>
+				</Node>
+			</Node>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="779"/>
+			<Prp name="remarks" type="S" value="A click at point (129, 12) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: ModalDialogWindow&quot;, &quot;&quot;).WPFObject(&quot;ModalDialogWindow&quot;, &quot;&quot;, 1).WPFObject(&quot;ConfirmationPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Engine Information&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;BaseDataGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;GridViewRow&quot;, &quot;&quot;, 2).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;grid&quot;).WPFObject(&quot;PART_DataCellsPresenter&quot;).WPFObject(&quot;GridViewCell&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;PART_ContentGrid&quot;).WPFObject(&quot;PART_ContentPresenter&quot;).WPFObject(&quot;PrimaryAddressList&quot;)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45613.7867047917"/>
+			<Prp name="pictype" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="message" type="S" value="AttributeError: The object does not support this property or method."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="787"/>
+			<Prp name="remarks" type="S" value="Python runtime error.&#xA;&#xA;AttributeError: The object does not support this property or method.&#xA;&#xA;Error location:&#xA;Unit: &quot;TestComplete\TestComplete\Script\Topologyexplorerutility&quot;&#xA;Line: 788 Column: 1."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="45613.7867679977"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="2"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="line no" type="I" value="797"/>
+			<Prp name="stacktext" type="S" value="asdafasf"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="stack beginning" type="I" value="2"/>
+			<Prp name="message" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="line no" type="I" value="787"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;p&gt;The test run has stopped because --&lt;/p&gt;&lt;ul&gt;&lt;li&gt;An error message was posted to the log and&lt;/li&gt;&lt;li&gt;The &lt;a href=&quot;aqa-help://6090&quot;&gt;On error&lt;/a&gt; project property is set to &quot;Stop project&quot; or &quot;Stop current item&quot;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;If you don't want the test to stop on errors, set this property (&lt;b&gt;Project Editor &amp;rArr; Properties &amp;rArr; Playback&lt;/b&gt;), to &quot;Continue running&quot; or change your test commands so that they do not post errors to the log automatically. For example, if a window or process was not found, use WaitWindow, WaitProcess or similar methods to get the needed object.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;aqa-help://2207&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="date" type="D" value="45613.7867694907"/>
+			<Prp name="stack end" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="2"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="787"/>
+			<Prp name="stacktext" type="S" value="Select_IP_from_ControlProjectDeployment"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+	</Node>
+</Nodes>
