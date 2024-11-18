@@ -717,22 +717,22 @@ def enter_username_password():
   Verify_entered_Controller_Password_valid_invalid_TE("Password")
   Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
   
-import Actionutility
-def pw():
-  Enter_Controller_Password_TE("Current Password$$Moolya")
-  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
-  Click_btn_MessageWindow("OK")
-  Actionutility.wait_for_execution()
-  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
-  
-  
-  Enter_Controller_Password_TE("Current Password$$Moolya@123")
-  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
-  Click_btn_MessageWindow("OK")
-  Actionutility.wait_for_execution()
-  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
-  
-  
+#import Actionutility
+#def pw():
+#  Enter_Controller_Password_TE("Current Password$$Moolya")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Actionutility.wait_for_execution()
+#  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
+#  
+#  
+#  Enter_Controller_Password_TE("Current Password$$Moolya@123")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Actionutility.wait_for_execution()
+#  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
+#  
+#  
   
   
 def get_clipboard_text():

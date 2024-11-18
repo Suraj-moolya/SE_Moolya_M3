@@ -5,6 +5,7 @@ import Applicationutility
 import Engineeringclientutility
 import Applicationexplorertabutility
 import Actionutility
+import Topologyexplorerutility
 
 class MessageBoxWorkFlow:
     """MessageBoxWorkFlow"""
@@ -173,4 +174,19 @@ class MessageBoxWorkFlow:
     def clickokfromdbppopupwindow(self):
         """messagebox_obj.reconfirmokbutton"""
         MessageBoxWorkFlow.messagebox_obj.reconfirmokbutton.click()
+        
+    def textboxmodificationpopupclickbuttonmessagewindow(self,button):
+        """textboxmodificationpopupclickbuttonmessagewindow"""
+        try:
+            Topologyexplorerutility.Click_btn_MessageWindow (button)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def buttonexportpopupverifyforgotpasswordauthenticationcode(self):
+        """buttonexportpopupverifyforgotpasswordauthenticationcode"""
+        try:
+            Topologyexplorerutility.Verify_forgot_password_Authentication_Code()
+        except Exception as ex:
+            raise Exception(ex) from ex
+
                 
