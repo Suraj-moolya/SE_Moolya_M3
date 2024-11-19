@@ -466,3 +466,13 @@ def create_logical_network():
           return
   Log.Error("Could not find the specific 'Controller' element.")
   
+def Click_tab_item_EIO_config_window(identifier):
+#  identifier = "IPConfig"
+  Window = proj_obj.mdiclientwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
+  for Window_Text in Window:
+    if identifier in Window_Text.Text:
+      Window_Text.Click()
+      Log.Checkpoint(Window_Text.Text + " is Clicked")
+      break
+  else: 
+    Log.Warning(identifier + " is not available")

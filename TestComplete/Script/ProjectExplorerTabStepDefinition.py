@@ -666,4 +666,8 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen I click on Yes button in Message Box")
     obj.yesbuttoninsettings()
     
-    
+@when("I Click tabitem in EIO configaration window in control expert as {arg}")
+def step_impl(identifiers):
+    """I Click tabitem in EIO configaration window in control expert as '<identifiers>'"""
+    CommonUtil.write_text_file("\nWhen I Click tabitem in EIO configaration window in control expert as \""+identifiers+"\"")
+    obj.ClicktabitemEIOconfigwindow(identifiers)    
