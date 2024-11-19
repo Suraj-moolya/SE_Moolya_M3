@@ -50,3 +50,34 @@ Examples:
 
 
 
+@TC_EPE_TE_CN_0027a
+@test001
+Scenario Outline: Select Manage password 
+When I Right Click on nodes System Explorer Node in system explorer as '<Controller>'
+And I Select context menu item EC Topology Explorer Tree in topology as '<Topology Explorer Tree1>'
+
+Examples:
+  | SlNo. | Controller      | Topology Explorer Tree1 |
+  | 1     | M580_Standalone | Manage Password         |
+  
+  
+@TC_EPE_TE_CN_0028a
+@test001
+Scenario Outline: Select Forgot password 
+When I Right Click on nodes System Explorer Node in system explorer as '<Controller>'
+And I Select context menu item EC Topology Explorer Tree in topology as '<Topology Explorer Tree1>'
+
+Examples:
+  | SlNo. | Controller      | Topology Explorer Tree1 |
+  | 1     | M580_Standalone | Forgot Password        |
+  
+  
+@TC_EPE_TE_CN_0029a
+@test001
+Scenario Outline: Select Clear Password 
+When I Right Click on nodes System Explorer Node in system explorer as '<Controller>'
+And I Select context menu item EC Topology Explorer Tree in topology as '<Topology Explorer Tree1>'
+
+Examples:
+  | SlNo. | Controller      | Topology Explorer Tree1 |
+  | 1     | M580_Standalone | Clear Password         |
