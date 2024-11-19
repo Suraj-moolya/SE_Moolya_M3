@@ -148,5 +148,8 @@ class RefineOffline(MapBase):
         """facettextbox"""
         return self.get_element("FacetTextbox_RefineOffline")
 
-              
+    @property
+    def builddeploychangesbutton(self):
+        """builddeploychangesbutton"""
+        return self.get_element("BuildDeployChanges_RefineOnline")            
               

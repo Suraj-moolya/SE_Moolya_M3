@@ -286,3 +286,12 @@ When I Navigate through project browser CE Project Browser RO in refine offline 
 Examples:
   | SlNo. | Project Browser RO1        |
   | 1     | Configuration$$0 : PLC bus |
+  
+  
+@TC_EPE_TE_CS_000
+@test000
+Scenario Outline: Change CPU Version of controller (BME P58 2040   03.20)
+When I selected select PLC bus combobox item CE in refine offline as '<Cpu_version>'
+Examples:
+  | SlNo. | Cpu_version          |
+  | 1     | BME P58 6040   03.20 |

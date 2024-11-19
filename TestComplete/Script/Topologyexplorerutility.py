@@ -790,6 +790,7 @@ def Select_IP_from_ControlProjectDeployment(IP_address):
   else:
     Log.Message(f'{IP_address} did not exist in Dropdown option')
   Checkbox.Click() 
+  
     
     
     
@@ -811,6 +812,21 @@ def select_dropdown_value_popup_TE(): #param
       Log.Checkpoint(f'The selected value is {obj.Items.Item[i].Identifier.OleValue}')
       break
   else:
-    Log.Warning(f'The value {} is not available in the dropdown')
+    Log.Warning(f'The value {obj.Items.Item[i].Identifier.OleValue} is not available in the dropdown')
   
   
+def Validate_TE_Window_Keyboard_Action():
+  Sys.Keys('^W')
+  
+def Enter_password_controller_popup():
+  Sys.Keys('Schneider0!')
+  
+def shshshs():
+  rack_number = int(rack_num)
+  topo_obj.plcbuswindow.object.Click()
+  Sys.Keys("[Down]")
+  Sys.Keys("[Up]")
+  for _ in range(rack_number + 1):
+    Sys.Keys("[Right]")
+  Sys.Keys("[Enter]")
+  Log.Checkpoint(f"Selected rack number {rack_number} in PLC.")

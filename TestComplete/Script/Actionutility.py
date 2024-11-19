@@ -131,6 +131,9 @@ def modal_dialog_window_button(button_name):
   else:
     Log.Warning("Button name mentioned doesnt exists")
     
+def ffdfdfdfd():
+  modal_dialog_window_button("OK")  
+  
 def get_obj(param):
   Screen, property = param.split('$$')
   for Screen_item in Screen_List:

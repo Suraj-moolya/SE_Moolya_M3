@@ -21,8 +21,8 @@ When I selected Edit button in menu bar
 And I selected Validate in menu bar
 
 Examples:
-  | SlNo. | content |
-  | 1     | NA      |
+  | SlNo. |
+  | 1     | 
 
 #Total No. of Test Cases : 2
 

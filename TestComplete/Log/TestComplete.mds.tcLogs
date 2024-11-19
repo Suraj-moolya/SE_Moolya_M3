@@ -23,165 +23,84 @@
 		<Node name="logs">
 			<Node name="log idx=0000">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45612.4783404745"/>
+				<Prp name="datetime" type="D" value="45614.6585796991"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{15E9051A-1E83-40B7-BC11-D24D4AC6AFD7}"/>
-				<Prp name="nameofroot" type="S" value="Generate and build M580 Standalone 3.2 6040"/>
-				<Prp name="relpath" type="S" value="16-11-2024_11_28_48_617\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
+				<Prp name="key" type="S" value="{59127FCB-A538-4647-91E0-08B93FA8C2CB}"/>
+				<Prp name="nameofroot" type="S" value="I selected Rename Pop up Ok in message box"/>
+				<Prp name="relpath" type="S" value="18-11-2024_15_48_21_286\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0001">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7702545718"/>
+				<Prp name="datetime" type="D" value="45614.659041875"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{3ED5CF78-142F-435F-B956-90BAECF975BA}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\Select_IP_from_ControlProjectDeployment]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_29_09_995\Description.tcLog"/>
+				<Prp name="key" type="S" value="{ECA60259-8CE1-48E1-B02D-798223AC4AAE}"/>
+				<Prp name="nameofroot" type="S" value="Deploy Changes for Controller M580 Standalone"/>
+				<Prp name="relpath" type="S" value="18-11-2024_15_49_01_218\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0002">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7743926042"/>
+				<Prp name="datetime" type="D" value="45614.6672881134"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4BCB0167-25F7-4151-8746-92C85D7435D9}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\Select_IP_from_ControlProjectDeployment]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_35_07_521\Description.tcLog"/>
+				<Prp name="key" type="S" value="{89C454F6-8F30-4BF6-B519-125C28881080}"/>
+				<Prp name="nameofroot" type="S" value="Refine Online M580 Standalone"/>
+				<Prp name="relpath" type="S" value="18-11-2024_16_00_53_693\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0003">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7817768287"/>
+				<Prp name="datetime" type="D" value="45614.6683610648"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{78F853EE-B6E9-42FC-9DB1-8C15C7A3A343}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_45_45_518\Description.tcLog"/>
+				<Prp name="key" type="S" value="{990CCE1F-5AF8-4A9D-B512-8579A47588E8}"/>
+				<Prp name="nameofroot" type="S" value="Refine Online M580 Standalone"/>
+				<Prp name="relpath" type="S" value="18-11-2024_16_02_26_396\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0004">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7863342245"/>
+				<Prp name="datetime" type="D" value="45615.4419893866"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{40AC35FD-078C-4F68-BC4F-803D3E883020}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_52_19_277\Description.tcLog"/>
+				<Prp name="key" type="S" value="{41FE32EC-3D5E-4360-B95D-79D890A127C2}"/>
+				<Prp name="nameofroot" type="S" value="Add Communication Modules to PLC Bus in 6th Slot"/>
+				<Prp name="relpath" type="S" value="19-11-2024_10_36_27_883\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0005">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.786694537"/>
+				<Prp name="datetime" type="D" value="45615.4441710185"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{C0BB5218-79B1-48BE-A285-A906E6E599F6}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_52_50_408\Description.tcLog"/>
+				<Prp name="key" type="S" value="{8860ABE9-F9B2-4837-82BA-7AA84670642C}"/>
+				<Prp name="nameofroot" type="S" value="I selected Properties of device OK CE in control expert"/>
+				<Prp name="relpath" type="S" value="19-11-2024_10_39_36_376\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0006">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7876151736"/>
+				<Prp name="datetime" type="D" value="45615.4530207986"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{C8959483-EDE8-457E-B617-AFD0062A9CD8}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_54_09_951\Description.tcLog"/>
+				<Prp name="key" type="S" value="{9042927A-96BE-4BB8-91F3-3F7A2BDCC917}"/>
+				<Prp name="nameofroot" type="S" value="I Click on Build and Deploy changes Button in refine online window"/>
+				<Prp name="relpath" type="S" value="19-11-2024_10_52_20_997\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
 			</Node>
 			<Node name="log idx=0007">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7882181829"/>
+				<Prp name="datetime" type="D" value="45615.4535110069"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4D7E3BE3-1021-4E6E-B6BA-B4693608D7CA}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_55_02_51\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
+				<Prp name="key" type="S" value="{306FEFBC-BA6C-48FF-8BF9-7656BACA734E}"/>
+				<Prp name="nameofroot" type="S" value="I Click on Build and Deploy changes Button in refine online window"/>
+				<Prp name="relpath" type="S" value="19-11-2024_10_53_03_351\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
 			</Node>
 			<Node name="log idx=0008">
 				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.7890409838"/>
+				<Prp name="datetime" type="D" value="45615.4587960764"/>
 				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{0AB130F0-75D3-4BE2-B15F-6C25B588BFA7}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_18_56_13_141\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0009">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8245309722"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{183DBC4D-D05E-4AA9-8B34-BBF338C71A15}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\asdafasf]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_19_47_19_476\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0010">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8368624884"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{2D962650-AC47-43EF-8821-A538959697F8}"/>
-				<Prp name="nameofroot" type="S" value="I Select '192.168.33.21' From deploy Project window and Click on Start Engine Checkbox"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_05_04_919\Description.tcLog"/>
+				<Prp name="key" type="S" value="{3C66F9A5-15BF-4CC7-A1F4-7F9845681EFD}"/>
+				<Prp name="nameofroot" type="S" value="I Click on start engine checkobox in deploy changes refine online window"/>
+				<Prp name="relpath" type="S" value="19-11-2024_11_00_39_981\Description.tcLog"/>
 				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0011">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.837486493"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{28EAD761-21D2-457F-A1DB-B6363D3A8FEC}"/>
-				<Prp name="nameofroot" type="S" value="Deploy M580_Controller"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_05_58_833\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0012">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.840240162"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{4094BA99-995C-4FCF-A086-9A00A4318C62}"/>
-				<Prp name="nameofroot" type="S" value="I click modal dialog window Instance editor save in application explorer as 'OK'"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_09_56_750\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0013">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8488766898"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{9A0E05BD-1DE3-40BC-87EF-4E142B0AFCF5}"/>
-				<Prp name="nameofroot" type="S" value="I Click on OK button from Reconfirm Deploy Built Project Popup window"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_22_22_946\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0014">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8491303819"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{E13E54A7-7E21-4E2A-B05E-7411BDFD8DC5}"/>
-				<Prp name="nameofroot" type="S" value="I Click on OK button from Reconfirm Deploy Built Project Popup window"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_22_44_865\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0015">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8494951042"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{F95D0172-30A5-4376-BC0D-870684FE2234}"/>
-				<Prp name="nameofroot" type="S" value="I Click on OK button from Reconfirm Deploy Built Project Popup window"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_23_16_377\Description.tcLog"/>
-				<Prp name="status" type="I" value="2"/>
-			</Node>
-			<Node name="log idx=0016">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8500956366"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{7AE15F9C-3A04-48CB-862D-B8B327B72064}"/>
-				<Prp name="nameofroot" type="S" value="I Click on OK button from Reconfirm Deploy Built Project Popup window"/>
-				<Prp name="relpath" type="S" value="17-11-2024_20_24_08_263\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
-			</Node>
-			<Node name="log idx=0017">
-				<Prp name="caption" type="S" value=""/>
-				<Prp name="datetime" type="D" value="45613.8834343056"/>
-				<Prp name="description" type="S" value=""/>
-				<Prp name="key" type="S" value="{41B726E6-C1BB-46A6-8F29-EBF16175936F}"/>
-				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\abckdad]"/>
-				<Prp name="relpath" type="S" value="17-11-2024_21_12_08_724\Description.tcLog"/>
-				<Prp name="status" type="I" value="0"/>
 			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>

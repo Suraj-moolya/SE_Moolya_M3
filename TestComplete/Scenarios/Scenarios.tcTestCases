@@ -76,5 +76,6 @@
 		<Feature Path="54 Map logical network to all communication modules.feature" />
 		<Feature Path="Export the project. Do some modifications in SP. Build the executable.feature" />
 		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
+		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
 	</Folder>
 </Scenarios>

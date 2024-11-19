@@ -301,16 +301,16 @@ class RefineOfflineWorkFlow:
             
             
     def buttonselectPLCbuscomboboxitemCE(self,param):
-            """buttonselectPLCbuscomboboxitemCE"""
-            try:
-                Controlexpertutility.select_PLC_bus_combobox_item_CE(param)
-            except Exception as ex:
-                raise Exception(ex) from ex  
+      """buttonselectPLCbuscomboboxitemCE"""
+      try:
+        Controlexpertutility.select_PLC_bus_combobox_item_CE(param)
+      except Exception as ex:
+        raise Exception(ex) from ex  
                 
                 
-    def buttoncreatelogicalnetwork(self):
-                """buttoncreatelogicalnetwork"""
-                try:
-                    Controlexpertutility.create_logical_network()
-                except Exception as ex:
-                    raise Exception(ex) from ex
+    def clickbuilddeploychangesbutton(self):
+      """clickbuilddeploychanges"""
+      try:
+        RefineOfflineWorkFlow.refineoffline_obj.builddeploychangesbutton.click()
+      except Exception as ex:
+        raise Exception(ex) from ex

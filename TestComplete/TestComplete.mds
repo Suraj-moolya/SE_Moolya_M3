@@ -3019,7 +3019,7 @@
 		</data>
 	</variables>
 	<settings key="{33D5EEAA-97F3-4751-966A-5060DE87D415}">
-		<settingsVersion value="15.55" />
+		<settingsVersion value="15.64" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>
@@ -3302,7 +3302,7 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_MethodInvokeTimeout" type="2" value="3000" />
-		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="8" colIndex="1">
+		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="19" colIndex="0">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3327,6 +3327,7 @@
 				<row val0="False" val1="TextObject*" />
 				<row val0="True" val1="#32768" />
 				<row val0="True" val1="SysIPAddress32" />
+				<row val0="True" val1="ControlExpert" />
 			</data>
 		</setting>
 		<setting name="OpenApps_MSAA_TreeModel" type="1" value="False" />

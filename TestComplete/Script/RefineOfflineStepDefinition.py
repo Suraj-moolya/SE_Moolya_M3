@@ -285,3 +285,10 @@ def step_impl():
     obj.buttoncreatelogicalnetwork()   
     Applicationutility.wait_in_seconds(1000,"Wait")
     
+@when("I Click on Build and Deploy changes Button in refine online window")
+def step_impl():
+    """I Click on Build and Deploy changes Button in refine online window"""
+    CommonUtil.write_text_file("\nWhen I Click on Build and Deploy changes Button in refine online window")
+    obj.clickbuilddeploychangesbutton()   
+    Applicationutility.wait_in_seconds(1000,"Wait")
+    

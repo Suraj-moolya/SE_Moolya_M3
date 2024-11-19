@@ -88,3 +88,18 @@ class TopologyExplorerTab(MapBase):
     def startenginecheckbox(self):
         """startenginecheckbox"""
         return self.get_element("StartEngineCheckbox_TopologyExporerTab")
+   
+    @property
+    def passwordokbutton(self):
+        """startenginecheckbox"""
+        return self.get_element("passwordOKButton_TopologyExporerTab")     
+    
+    @property
+    def deployokbutton(self):
+        """deployokbutton"""
+        return self.get_element("DeployOK_TopologyExporerTab")  
+        
+    @property
+    def deploycheckbox(self):
+        """deploycheckbox"""
+        return self.get_element("DeployCheckbox_TopologyExporerTab") 

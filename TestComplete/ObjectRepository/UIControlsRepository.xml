@@ -162,6 +162,10 @@
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="PrimaryAddressList_TopologyExporerTab" Name="WPFObject('PrimaryAddressList')" Parent="EngineeringClient_" />
 			 <UIControl Element="StartEngineCheckbox_TopologyExporerTab" Name="WPFObject('Box')" Parent="EngineeringClient_" />
+			 <UIControl Element="passwordOKButton_TopologyExporerTab" Name="WPFObject('ButtonOK')" Visible="True" Parent="EngineeringClient_" />
+			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('Button', 'Deploy', 1)" Visible="True" Parent="EngineeringClient_" />
+			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />
+			 
 			 
 			 
         </Component>
@@ -387,6 +391,7 @@
              <UIControl Element="Refineonlinewindow_RefineOffline" Name="WPFObject('RefineOffline', '', *)" Parent="EngineeringClient_" />
              <UIControl Element="SaveRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Save" Parent="EngineeringClient_" />
              <UIControl Element="ConsistencyCheck_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Consistency Check" Parent="EngineeringClient_" />
+			 <UIControl Element="BuildDeployChanges_RefineOnline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Build and deploy the changes" Parent="EngineeringClient_" />
              <UIControl Element="ProjectBrowserRO_RefineOffline" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="EngineeringClient_" />
              <UIControl Element="MDIWindow_RefineOffline" Name="MDIWindow('*')" Parent="EngineeringClient_" />
              <UIControl Element="FBDSectionWindow_RefineOffline" Name="Window('AfxFrameOrView140u', '', 1)" Parent="EngineeringClient_" />
