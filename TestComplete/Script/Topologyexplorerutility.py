@@ -810,7 +810,7 @@ def select_dropdown_value_popup_TE(): #param
       obj.SelectedIndex = i
       Log.Checkpoint(f'The selected value is {obj.Items.Item[i].Identifier.OleValue}')
       break
-  else:
-    Log.Warning(f'The value {} is not available in the dropdown')
+#  else:
+#    Log.Warning(f'The value {} is not available in the dropdown')
   
   

@@ -1,7 +1,8 @@
-"""ControlExpertWorkFlow"""  
+﻿"""ControlExpertWorkFlow"""  
 
 from ControlExpert import ControlExpert
 import Applicationutility
+import Controlexpertutility
 class ControlExpertWorkFlow:
     """ControlExpertWorkFlow"""
     controlexpert_obj = ControlExpert()
@@ -25,5 +26,12 @@ class ControlExpertWorkFlow:
     def buttonunlocksafetyprotectionceselected(self):
         """controlexpert_obj.unlocksafetyprotectioncebutton"""
         ControlExpertWorkFlow.controlexpert_obj.unlocksafetyprotectioncebutton.click()
+        
+    def ClicktabitemEIOconfigwindow(self,identifiers):
+            """ClicktabitemEIOconfigwindow"""
+            try:
+                Controlexpertutility.Click_tab_item_EIO_config_window(identifiers)
+            except Exception as ex:
+                raise Exception(ex) from ex    
         
         

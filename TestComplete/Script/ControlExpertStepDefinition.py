@@ -1,4 +1,4 @@
-"""ControlExpertWorkFlow"""
+﻿"""ControlExpertWorkFlow"""
 from ControlExpertWorkFlow import ControlExpertWorkFlow
 import CommonUtil
 import Applicationutility
@@ -29,4 +29,11 @@ def step_impl():
     """I selected Unlock Safety Protection CE in control expert"""
     CommonUtil.write_text_file("\nWhen I selected Unlock Safety Protection CE in control expert")
     obj.buttonunlocksafetyprotectionceselected()
+    
+@when("I Click tabitem in EIO configaration window in control expert as {arg}")
+def step_impl(identifiers):
+    """I Click tabitem in EIO configaration window in control expert as '<identifiers>'"""
+    CommonUtil.write_text_file("\nWhen I Click tabitem in EIO configaration window in control expert as \""+identifiers+"\"")
+    obj.ClicktabitemEIOconfigwindow(identifiers)
+        
   
