@@ -397,14 +397,14 @@ def Click_dialog_panel_item_CE(param):
   new_device_panel = diace_obj.dialogpanelcetextbox.object
   panel_child = new_device_panel.FindAllChildren('Text', '*', 100)
   for item in panel_child:
-    #Log.Message(item.Text)
     if param == item.Text:
-      item.Click()
+      item.DblClick()
       Log.Checkpoint(item.Text + ' is Selected.')
       Applicationutility.wait_in_seconds(1000, 'Wait')
       break
   else:
-    Log.Warning(param + ' not found.')    
+    Log.Warning(param + ' not found.')  
+
     
 def Select_bottom_listitem_dialog_panel_item_CE(param):
   io_device = diace_obj.dialoglistboxcetextbox.object 
