@@ -6,6 +6,7 @@ import Topologyexplorerutility
 class TopologyWorkFlow:
     """TopologyWorkFlow"""
     topology_obj = Topology()
+    topology_obj1 = TopologyExplorerTab()
 
         
     def textboxnewpasswordboxentercontrollerpasswordte(self,param):
@@ -19,6 +20,20 @@ class TopologyWorkFlow:
         """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
         try:
             Topologyexplorerutility.Verify_entered_Controller_Password_valid_invalid_TE(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def startenginecheckboxclickafterrefineonline(self,param):
+        """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
+        try:
+            TopologyWorkFlow.topology_obj1.deploycheckbox.click()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def okbuttonclickafterrefineonline(self,param):
+        """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
+        try:
+            TopologyWorkFlow.topology_obj1.deployokbutton.click()
         except Exception as ex:
             raise Exception(ex) from ex
         
