@@ -25,6 +25,11 @@ class ControlExpert(MapBase):
         return self.get_element("PropertiesofdeviceCE_ControlExpert")
               
     @property
+    def okmodaldialoguewindowce(self):
+        """okmodaldialoguewindowce"""
+        return self.get_element("ModaldialogwindowNewDevice_ControlExpert")
+              
+    @property
     def unlocksafetyprotectioncebutton(self):
         """unlocksafetyprotectioncebutton"""
         return self.get_element("UnlockSafetyProtectionCE_ControlExpert")
@@ -38,3 +43,38 @@ class ControlExpert(MapBase):
     def yescebuttonbutton(self):
         """YesCEbutton_ControlExpert"""
         return self.get_element("YesCEbutton_ControlExpert")
+
+    @property
+    def modaldialogewindowce(self):
+        """modaldialogewindowce"""
+        return self.get_element("Modaldialogwindow_ControlExpert")
+
+    @property
+    def modaldialogewindowoptionsce(self):
+        """modaldialogewindowoptionsce"""
+        return self.get_element("ModalDialogWindowoptions_ControlExpert")
+
+    @property
+    def dropdownbtnce(self):
+        """dropdownbtnce"""
+        return self.get_element("dropdownbutton_ControlExpert")
+
+    @property
+    def dropdownbtnoptionce(self):
+        """dropdownbtnce"""
+        return self.get_element("dropdownLbutton_ControlExpert")
+
+    @property
+    def addwindowce(self):
+        """addwindowce"""
+        return self.get_element("AddWindow_ControlExpert")
+
+    @property
+    def devicepropertywindowce(self):
+        """devicepropertywindowce"""
+        return self.get_element("DevicePropertyWindow_ControlExpert")
+
+    @property
+    def toolbarpopwindowce(self):
+        """toolbarpopwindowce"""
+        return self.get_element("ToolPopUP_ControlExpert")

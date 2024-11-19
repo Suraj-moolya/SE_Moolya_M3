@@ -158,7 +158,12 @@ class MessageBox(MapBase):
     @property
     def reconfirmokbutton(self):
         """reconfirmokbutton"""
-        return self.get_element("ReConfirmDBPOK_MessageBox")    
+        return self.get_element("ReConfirmDBPOK_MessageBox")  
+        
+    @property
+    def modificationpopuptextbox(self):
+        """modificationpopuptextbox"""
+        return self.get_element("Modificationpopup_MessageBox")  
         
         
         

@@ -397,14 +397,14 @@ def Click_dialog_panel_item_CE(param):
   new_device_panel = diace_obj.dialogpanelcetextbox.object
   panel_child = new_device_panel.FindAllChildren('Text', '*', 100)
   for item in panel_child:
-    #Log.Message(item.Text)
     if param == item.Text:
-      item.Click()
+      item.DblClick()
       Log.Checkpoint(item.Text + ' is Selected.')
       Applicationutility.wait_in_seconds(1000, 'Wait')
       break
   else:
-    Log.Warning(param + ' not found.')    
+    Log.Warning(param + ' not found.')  
+
     
 def Select_bottom_listitem_dialog_panel_item_CE(param):
   io_device = diace_obj.dialoglistboxcetextbox.object 
@@ -467,4 +467,17 @@ def create_logical_network():
           item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
           return
   Log.Error("Could not find the specific 'Controller' element.")
+  
+
+def Click_tab_item_EIO_config_window(identifier):
+#  identifier = "IPConfig"
+  Window = proj_obj.mdiclientwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
+  for Window_Text in Window:
+    if identifier in Window_Text.Text:
+      Window_Text.Click()
+      Log.Checkpoint(Window_Text.Text + " is Clicked")
+      break
+  else: 
+    Log.Warning(identifier + " is not available")
+
   

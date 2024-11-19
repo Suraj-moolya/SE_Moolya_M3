@@ -75,7 +75,11 @@
 		<Feature Path="53 Add communication modules, add Drops and synch the changes.feature" />
 		<Feature Path="54 Map logical network to all communication modules.feature" />
 		<Feature Path="Export the project. Do some modifications in SP. Build the executable.feature" />
+		<Feature Path="57 Configure STB Island and map it to control project.feature" />
+		<Feature Path="58 Configure PRM and map it to control project.feature" />
+		<Feature Path="56 Configure HART modules and map the communication(Distributed IO&apos;s).feature" />
 		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
 		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
+		<Feature Path="61 Check manage password, clear password and forget password.feature" />
 	</Folder>
 </Scenarios>

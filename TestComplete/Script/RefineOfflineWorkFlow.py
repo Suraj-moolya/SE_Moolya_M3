@@ -31,9 +31,11 @@ class RefineOfflineWorkFlow:
         
     def buttonsaverefineofflineselected(self):
         """refineoffline_obj.saverefineofflinebutton"""
-        RefineOfflineWorkFlow.refineoffline_obj.saverefineofflinebutton.click()
-        Applicationutility.wait_in_seconds("1000","Wait")
-        
+        try:
+          RefineOfflineWorkFlow.refineoffline_obj.saverefineofflinebutton.click()
+          Applicationutility.wait_in_seconds("1000","Wait")
+        except Exception as e:
+           raise Exception(ex) from ex
         
     def buttonconsistencycheckselected(self):
         """refineoffline_obj.consistencycheckbutton"""

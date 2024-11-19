@@ -82,7 +82,7 @@ def wait_in_seconds(count,reson_for_delay):
     
 
 def wait_for_execution():
-  Applicationutility.wait_in_seconds(500, 'Wait')
+  Applicationutility.wait_in_seconds(1000, 'Wait')
   Abort_list = msg_obj.notificationpanneltextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
   for item in Abort_list:
     if item.Panel_ZIndex == 0:
@@ -91,7 +91,7 @@ def wait_for_execution():
           if  item.DataContext.Status.OleValue != "Executing":
             break
           else:
-            Applicationutility.wait_in_seconds(1000, 'Loading !!!')
+            Applicationutility.wait_in_seconds(2000, 'Loading !!!')
 
 def modal_dialog_window_button(button_name):
   wait_in_seconds(1000, 'wait')
