@@ -2900,6 +2900,7 @@
 						<children />
 					</testItem>
 					<testItem name="ProjectTestItem28_1_2" key="{A34CD768-C360-4C11-896F-0DE89B2D6862}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change CPU Version of controller (BME P58 4040&#32;&#32;&#32;03.20)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="ProjectTestItem28_1_2" key="{A34CD768-C360-4C11-896F-0DE89B2D6862}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change CPU Version of controller (BME P58 6040&#32;&#32;&#32;03.20)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2961,6 +2962,32 @@
 					</testItem>
 					<testItem name="ProjectTestItem1_24_6_1_1_1_2_1_1" key="{89E3311E-77F4-4F34-BAC3-D5731F373DED}" group="False" parallel="False" enabled="True" load="False" testMoniker="145 Check existing Excutable Status(if it is in build state, open refine)|To verify built state" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
+			<testItem name="Deploy Project" key="{9FA5255B-A654-4842-81B3-F377F27C5749}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children>
+					<testItem name="ProjectTestItem36" key="{7AA3B106-3B20-4E73-ABDE-045ADDE3A1E4}" group="False" parallel="False" enabled="True" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}clickR_node_SE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters>
+							<param0 name="node_name" type="3" localVarName="" varType="8" value="M580_Standalone" />
+						</testParameters>
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem37" key="{7DA81CD5-18C1-4447-86F0-45704D4ADEC9}" group="False" parallel="False" enabled="True" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}select_ContextMenu_Items_EC" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters>
+							<param0 name="menu_item" type="3" localVarName="" varType="8" value="Deploy Built Project" />
+						</testParameters>
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem36_2" key="{61721AD4-5222-4B29-90D8-0D6084F7B570}" group="False" parallel="False" enabled="True" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}clickR_node_SE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters>
+							<param0 name="node_name" type="3" localVarName="" varType="8" value="M580_HSBY" />
+						</testParameters>
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>

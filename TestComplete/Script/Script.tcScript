@@ -27,6 +27,7 @@
 				<child name="DialogCEWorkFlow" key="{935B7F1D-AC4C-4CC6-BE9C-D9423E5FF7C8}" path="DialogCEWorkFlow.py" />
 				<child name="SupervisionProjectWorkFlow" key="{70EF14AC-D40C-4439-A462-EBC916491FFB}" path="SupervisionProjectWorkFlow.py" />
 				<child name="TopologyExplorerWorkflow" key="{C0B56684-7D53-419E-9AB6-EE7219395525}" path="..\..\..\SE_Moolya_Codebase_M2\TestComplete\Script\TopologyExplorerWorkflow.py" />
+				<child name="TopologyWorkFlow" key="{918C42E4-2848-4057-B0E1-7E7721134D3D}" path="TopologyWorkFlow.py" />
 			</folder>
 			<folder name="StepDefinitions">
 				<child name="CurrentScreenStepDefinition" key="{001ABD02-E109-4837-B290-55898E939DEF}" path="CurrentScreenStepDefinition.py" />
@@ -45,6 +46,7 @@
 				<child name="DialogCEStepDefinition" key="{DA19AF80-1B07-40DF-9D64-38C9D4BA2AED}" path="DialogCEStepDefinition.py" />
 				<child name="SupervisionProjectStepDefinition" key="{78CA9E56-AB11-4F34-A0DA-EFDA0D461362}" path="SupervisionProjectStepDefinition.py" />
 				<child name="TopologyExplorerStepDefinition" key="{02055ECE-E8B8-4505-B323-3762CCD1E9FD}" path="..\..\..\SE_Moolya_Codebase_M2\TestComplete\Script\TopologyExplorerStepDefinition.py" />
+				<child name="TopologyStepDefinition" key="{1674176C-0788-4EE7-B9C4-D6931F891BAF}" path="TopologyStepDefinition.py" />
 			</folder>
 			<folder name="WindowsDialogs">
 				<child name="SystemServer" key="{001ABD02-E118-4837-B290-55898E939DEF}" path="SystemServer.py" />
@@ -65,6 +67,7 @@
 				<child name="ControlExpert" key="{B6525A57-DC2E-418C-87E2-D1D29FE9F54B}" path="ControlExpert.py" />
 				<child name="DialogCE" key="{C4F056D8-8313-45EC-82AF-1A460C9E0457}" path="DialogCE.py" />
 				<child name="SupervisionProject" key="{E08E20AB-2175-4591-9FD4-8E999C9C0052}" path="SupervisionProject.py" />
+				<child name="Topology" key="{54B1BB01-52A6-4DA1-A688-8A24446B4936}" path="Topology.py" />
 			</folder>
 			<folder name="Utilities">
 				<child name="Applicationutility" key="{001ABD02-E129-4837-B290-55898E939DEF}" path="Applicationutility.py" />

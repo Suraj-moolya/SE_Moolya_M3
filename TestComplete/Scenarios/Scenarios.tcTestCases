@@ -78,5 +78,7 @@
 		<Feature Path="57 Configure STB Island and map it to control project.feature" />
 		<Feature Path="58 Configure PRM and map it to control project.feature" />
 		<Feature Path="56 Configure HART modules and map the communication(Distributed IO&apos;s).feature" />
+		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
+		<Feature Path="61 Check manage password, clear password and forget password.feature" />
 	</Folder>
 </Scenarios>

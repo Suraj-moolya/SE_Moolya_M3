@@ -176,7 +176,8 @@
 			 <UIControl Element="BMEHart_TopologyExporerTab" Name="MDIWindow('0.2 : BME AHI 0812')" Parent="EngineeringClient_" />
 			 <UIControl Element="DTMBrowserprop_TopologyExporerTab" Name="ToolWindow('DTM Browser')" Parent="EngineeringClient_" />
 			 <UIControl Element="PanelEditButton_TopologyExporerTab" Name="Panel('Edit')" Parent="EngineeringClient_" />
-			 
+			 <UIControl Element="PrimaryAddressList_TopologyExporerTab" Name="WPFObject('PrimaryAddressList')" Parent="EngineeringClient_" />
+			 <UIControl Element="StartEngineCheckbox_TopologyExporerTab" Name="WPFObject('Box')" Parent="EngineeringClient_" />
 			 
         </Component>
         <Component name="Global Templates Tab">
@@ -324,7 +325,10 @@
 			 <UIControl Element="RenameInstancePopup_MessageBox" Name="WPFObject('MessageBoxButtonsPanel')" Parent="EngineeringClient_" />
 			 <UIControl Element="ChannelPropertiesDialog_MessageBox" Name="WPFObject('ChannelPropertiesDialogForController', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="ManageNetworkVariables_MessageBox" Name="WPFObject('ManageNetworkVariables', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('* ModalDialogWindow', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('* ModalDialogWindow', '', 1)" Enabled="True" VisibleOnScreen="True" Parent="EngineeringClient_" />
+			 <UIControl Element="ReConfirmDBPOK_MessageBox" Name="WPFObject('Button', 'OK', 2)" Parent="EngineeringClient_" />
+			<UIControl Element="Modificationpopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
+			 
         </Component>	
 		<Component name="Refine Offline">
              <UIControl Element="CloseRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Close" Parent="EngineeringClient_" />
@@ -433,5 +437,14 @@
 		<Component name="Operation client">
              <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />       
 		</Component>
+		<Component name="Topology">
+             <UIControl Element="TopologyExplorerTree_Topology" Name="WPFObject('TopologicalExplorerTree')" Parent="EngineeringClient_" />
+             <UIControl Element="Topologydeviceediter_Topology" Name="WPFObject('PART_InnerPresenter')" Parent="EngineeringClient_TopologyExplorerTree" />
+             <UIControl Element="projectdropdown_Topology" Name="WPFObject('Projects')" Parent="EngineeringClient_" />
+             <UIControl Element="Executablesdropdown_Topology" Name="WPFObject('Executables')" Parent="EngineeringClient_" />
+             <UIControl Element="NewPasswordbox_Topology" Name="WPFObject('NewPasswordBox')" Parent="EngineeringClient_" />
+             <UIControl Element="ConfirmPasswordbox_Topology" Name="WPFObject('ConfirmPasswordBox')" Parent="EngineeringClient_" />
+             <UIControl Element="OldPasswordBox_Topology" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
+        </Component>
         
 </UIControlRepository>

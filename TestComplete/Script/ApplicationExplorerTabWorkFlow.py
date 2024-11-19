@@ -539,14 +539,6 @@ class ApplicationExplorerTabWorkFlow:
     def labelmessagedisplayed(self,content):
         """applicationexplorertab_obj.messagelabel"""
         Applicationutility.screen_displayed()
-
-        
-    def buttoninstanceeditorsaveclickmodaldialogwindow(self,button_name):
-        """buttoninstanceeditorsaveclickmodaldialogwindow"""
-        try:
-            Actionutility.modal_dialog_window_button(button_name)
-        except Exception as ex:
-            raise Exception(ex) from ex
             
             
     def dragtemplatefromapplicationbrowsertolinkeditor(self,template):

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 0">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="8"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="291"/>
+			<Prp name="date" type="D" value="45612.48234875"/>
+			<Prp name="message" type="S" value="Navigation To Application Explorer(AE)"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 1" type="S" value="{001ABD02-E134-4837-B290-55898E939DEF}"/>
+			<Prp name="unit 0" type="S" value="TestComplete\Scenarios\EnginneringClient.feature"/>
+			<Prp name="unit 2" type="S" value="{001ABD02-E136-4837-B290-55898E939DEF}"/>
+			<Prp name="unit 3" type="S" value="{001ABD02-E129-4837-B290-55898E939DEF}"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="292"/>
+			<Prp name="date" type="D" value="45612.4823527662"/>
+			<Prp name="message" type="S" value="When I Click on Nodes System Explorer Node in system explorer as 'System_1'"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="293"/>
+			<Prp name="date" type="D" value="45612.4823583796"/>
+			<Prp name="message" type="S" value="And I navigate to explorers MainToolBar in system explorer as 'Open Application Explorer (Alt+A)'"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 3">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="click point y" type="I" value="202"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="218"/>
+					<Prp name="object left" type="I" value="38"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: Main&quot;).WPFObject(&quot;Main&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;WorkspaceControl&quot;).WPFObject(&quot;FrameHostContainer&quot;, &quot;&quot;, 1).WPFObject(&quot;FrameHostControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPanel&quot;).WPFObject(&quot;PART_SelectedContentHost&quot;).WPFObject(&quot;UserControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SystemsExplorer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;SystemsTree&quot;).WPFObject(&quot;CoreGraph&quot;, &quot;&quot;, 1).WPFObject(&quot;ExplorerNode&quot;, &quot;&quot;, 2)"/>
+					<Prp name="image file name" type="S" value="visImage16.png"/>
+					<Prp name="object right" type="I" value="277"/>
+					<Prp name="object top" type="I" value="187"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="datetime" type="D" value="45612.253189213"/>
+					<Prp name="line #" type="I" value="72"/>
+					<Prp name="click point x" type="I" value="157"/>
+				</Node>
+			</Node>
+			<Prp name="remarks" type="S" value="A click at point (119, 15) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: Main&quot;).WPFObject(&quot;Main&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;WorkspaceControl&quot;).WPFObject(&quot;FrameHostContainer&quot;, &quot;&quot;, 1).WPFObject(&quot;FrameHostControl&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPanel&quot;).WPFObject(&quot;PART_SelectedContentHost&quot;).WPFObject(&quot;UserControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;SystemsExplorer&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;SystemsTree&quot;).WPFObject(&quot;CoreGraph&quot;, &quot;&quot;, 1).WPFObject(&quot;ExplorerNode&quot;, &quot;&quot;, 2)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="2"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="72"/>
+			<Prp name="date" type="D" value="45612.4823573264"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="291"/>
+			<Prp name="date" type="D" value="45612.4823489005"/>
+			<Prp name="message" type="S" value="Navigation To Application Explorer(AE) [SlNo.: 1, Systems Explorer: System_1, MainToolBar1: Open Application Explorer (Alt+A), Explorer tab2: Application]"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 7">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="6"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="141"/>
+			<Prp name="date" type="D" value="45612.4825102546"/>
+			<Prp name="message" type="S" value="Tab is sucesfully verified"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="6"/>
+			<Prp name="type" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="3"/>
+			<Prp name="line no" type="I" value="54"/>
+			<Prp name="date" type="D" value="45612.4825122106"/>
+			<Prp name="message" type="S" value="Full Screenshot"/>
+			<Prp name="picture" type="S" value="Picture8.png"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="294"/>
+			<Prp name="date" type="D" value="45612.482435544"/>
+			<Prp name="message" type="S" value="Then verify Tabs Explorer tab in system explorer as 'Application'"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="click point y" type="I" value="46"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object bottom" type="I" value="60"/>
+					<Prp name="object left" type="I" value="300"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object name" type="S" value="Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: Main&quot;).WPFObject(&quot;Main&quot;).WPFObject(&quot;MainBarGrid&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;PartContent&quot;).WPFObject(&quot;PartMainBar&quot;).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;MainToolBar&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 4)"/>
+					<Prp name="image file name" type="S" value="visImage17.png"/>
+					<Prp name="object right" type="I" value="333"/>
+					<Prp name="object top" type="I" value="32"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="datetime" type="D" value="45612.2532547222"/>
+					<Prp name="line #" type="I" value="133"/>
+					<Prp name="click point x" type="I" value="316"/>
+				</Node>
+			</Node>
+			<Prp name="remarks" type="S" value="A click at point (16, 14) with no key pressed.&#xA;&#xA;Tested object:&#xA;Sys.Process(&quot;EngineeringClient&quot;).WPFObject(&quot;HwndSource: Main&quot;).WPFObject(&quot;Main&quot;).WPFObject(&quot;MainBarGrid&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 2).WPFObject(&quot;PartContent&quot;).WPFObject(&quot;PartMainBar&quot;).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;MainToolBar&quot;).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 4)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="owner id" type="I" value="4"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="133"/>
+			<Prp name="date" type="D" value="45612.4824227546"/>
+			<Prp name="message" type="S" value="The window was clicked with the left mouse button."/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+	</Node>
+</Nodes>

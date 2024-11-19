@@ -715,22 +715,22 @@ def enter_username_password():
   Verify_entered_Controller_Password_valid_invalid_TE("Password")
   Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
   
-import Actionutility
-def pw():
-  Enter_Controller_Password_TE("Current Password$$Moolya")
-  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
-  Click_btn_MessageWindow("OK")
-  Actionutility.wait_for_execution()
-  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
-  
-  
-  Enter_Controller_Password_TE("Current Password$$Moolya@123")
-  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
-  Click_btn_MessageWindow("OK")
-  Actionutility.wait_for_execution()
-  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
-  
-  
+#import Actionutility
+#def pw():
+#  Enter_Controller_Password_TE("Current Password$$Moolya")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Actionutility.wait_for_execution()
+#  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
+#  
+#  
+#  Enter_Controller_Password_TE("Current Password$$Moolya@123")
+#  Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
+#  Click_btn_MessageWindow("OK")
+#  Actionutility.wait_for_execution()
+#  Verify_entered_Controller_Password_valid_invalid_TE("Current Password")
+#  
+#  
   
   
 def get_clipboard_text():
@@ -771,7 +771,6 @@ def Verify_forgot_password_Authentication_Code():
   
   except Exception as exe:
     Log.Message(str(exe))
-
     
 def set_ip_and_subnet(ip_address, subnet_mask):
   field_values = {
@@ -1076,3 +1075,44 @@ def wait_for_dtm_update():
     Log.Checkpoint("DTM catalog update completed.")
   else:
     Log.Error("DTM catalog update window did not close within the expected time.")
+=======
+  
+    
+def Select_IP_from_ControlProjectDeployment(IP_address):
+  name = topo_obj.primaryaddresslistdropdown.object
+  name.Click()
+  Checkbox = topo_obj.startenginecheckbox.object
+  
+  Dropdown_options = eng_obj.userdropdownmenuitemtextbox.object
+  Dropdown_IPList = Dropdown_options.FindAllChildren("ClrClassName","RadComboBoxItem",10)
+  for IP in Dropdown_IPList:
+    if IP_address in IP.DataContext.FormattedAddress.OleValue:
+      IP.Click()
+      Log.Message(f'{IP.DataContext.FormattedAddress.OleValue} was selected from Dropdown option')
+      break
+  else:
+    Log.Message(f'{IP_address} did not exist in Dropdown option')
+  Checkbox.Click() 
+    
+    
+    
+def asdafasf():
+  
+  Select_IP_from_ControlProjectDeployment("192.168.33.21")
+  
+###############################################
+import Actionutility
+
+
+def select_dropdown_value_popup_TE(): #param
+#  object, dropdown_value = param.split('$$')
+#  Actionutility.get_obj()   # Screen, property
+  obj = Sys.Process("EngineeringClient").WPFObject("HwndSource: ModalDialogWindow", "").WPFObject("ModalDialogWindow", "", 1).WPFObject("ExecutableSelection", "", 1).WPFObject("Grid", "", 1).WPFObject("GroupBox", "Select Project and Executable", 1).WPFObject("Grid", "", 1).WPFObject("Projects") 
+  for i in range(obj.Items.Count):
+    if 'M580_Standalone' in obj.Items.Item[i].Identifier.OleValue:
+      obj.SelectedIndex = i
+      Log.Checkpoint(f'The selected value is {obj.Items.Item[i].Identifier.OleValue}')
+      break
+  else:
+    Log.Warning(f'The value {} is not available in the dropdown')
+  

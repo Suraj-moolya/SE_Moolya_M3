@@ -159,3 +159,11 @@ class TopologyExplorerTab(MapBase):
         """paneleditbutton"""
         return self.get_element("PanelEditButton_TopologyExporerTab")
 
+    def primaryaddresslistdropdown(self):
+        """primaryaddresslistdropdown"""
+        return self.get_element("PrimaryAddressList_TopologyExporerTab")
+        
+    @property
+    def startenginecheckbox(self):
+        """startenginecheckbox"""
+        return self.get_element("StartEngineCheckbox_TopologyExporerTab")
