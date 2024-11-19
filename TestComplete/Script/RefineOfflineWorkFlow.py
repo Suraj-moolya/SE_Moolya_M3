@@ -31,9 +31,11 @@ class RefineOfflineWorkFlow:
         
     def buttonsaverefineofflineselected(self):
         """refineoffline_obj.saverefineofflinebutton"""
-        RefineOfflineWorkFlow.refineoffline_obj.saverefineofflinebutton.click()
-        Applicationutility.wait_in_seconds("1000","Wait")
-        
+        try:
+          RefineOfflineWorkFlow.refineoffline_obj.saverefineofflinebutton.click()
+          Applicationutility.wait_in_seconds("1000","Wait")
+        except Exception as e:
+           raise Exception(ex) from ex
         
     def buttonconsistencycheckselected(self):
         """refineoffline_obj.consistencycheckbutton"""
@@ -301,16 +303,16 @@ class RefineOfflineWorkFlow:
             
             
     def buttonselectPLCbuscomboboxitemCE(self,param):
-            """buttonselectPLCbuscomboboxitemCE"""
-            try:
-                Controlexpertutility.select_PLC_bus_combobox_item_CE(param)
-            except Exception as ex:
-                raise Exception(ex) from ex  
+      """buttonselectPLCbuscomboboxitemCE"""
+      try:
+        Controlexpertutility.select_PLC_bus_combobox_item_CE(param)
+      except Exception as ex:
+        raise Exception(ex) from ex  
                 
                 
-    def buttoncreatelogicalnetwork(self):
-                """buttoncreatelogicalnetwork"""
-                try:
-                    Controlexpertutility.create_logical_network()
-                except Exception as ex:
-                    raise Exception(ex) from ex
+    def clickbuilddeploychangesbutton(self):
+      """clickbuilddeploychanges"""
+      try:
+        RefineOfflineWorkFlow.refineoffline_obj.builddeploychangesbutton.click()
+      except Exception as ex:
+        raise Exception(ex) from ex

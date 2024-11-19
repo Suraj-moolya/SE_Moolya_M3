@@ -78,5 +78,11 @@
 		<Feature Path="62 Deploy the controller .feature" />
 		<Feature Path="63 Check Back Up Data.feature" />
 		<Feature Path="64 Check Deploy Data.feature" />
+		<Feature Path="57 Configure STB Island and map it to control project.feature" />
+		<Feature Path="58 Configure PRM and map it to control project.feature" />
+		<Feature Path="56 Configure HART modules and map the communication(Distributed IO&apos;s).feature" />
+		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
+		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
+		<Feature Path="61 Check manage password, clear password and forget password.feature" />
 	</Folder>
 </Scenarios>

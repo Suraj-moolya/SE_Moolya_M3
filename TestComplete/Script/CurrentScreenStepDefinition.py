@@ -53,3 +53,28 @@ def step_impl():
 def step_impl():
     """I change the controller protection to disable"""
     Topologyexplorerutility.Controller_property()
+    
+@when("I Select {arg} From deploy Project window and Click on Start Engine Checkbox")
+def step_impl(IP_address):
+    """I Select '<IP_address>' From deploy Project window and Click on Start Engine Checkbox"""
+    Topologyexplorerutility.Select_IP_from_ControlProjectDeployment(IP_address)
+    
+@when("I Validate in TE Window using shortcut Keys")
+def step_impl():
+    """I change the controller protection to disable"""
+    Topologyexplorerutility.Validate_TE_Window_Keyboard_Action()
+    
+@when("I Enter Password as Schneider0! in Password PopUp available for Controller")
+def step_impl():
+    """I change the controller protection to disable"""
+    Topologyexplorerutility.Enter_password_controller_popup()
+
+@when("I Click on OK in Password popup window")
+def step_impl():
+    """I change the controller protection to disable"""
+    obj.clickokfromdbppopupwindow() 
+    
+@when("I Click on start engine checkobox in deploy changes refine online window")
+def step_impl():
+    """I change the controller protection to disable"""
+    obj.clickstartenginecheckbox()

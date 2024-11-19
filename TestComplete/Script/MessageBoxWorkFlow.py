@@ -6,6 +6,7 @@ import Engineeringclientutility
 import Applicationexplorertabutility
 import Actionutility
 import Topologyutility
+import Topologyexplorerutility
 
 
 class MessageBoxWorkFlow:
@@ -171,6 +172,7 @@ class MessageBoxWorkFlow:
             Actionutility.modal_dialog_window_button(button_name)
         except Exception as ex:
             raise Exception(ex) from ex
+
             
     def textboxmodaldialogwindowselectipadressfromdeployprojectbuildte(self,IP_address):
         """textboxmodaldialogwindowselectipadressfromdeployprojectbuildte"""
@@ -202,3 +204,25 @@ class MessageBoxWorkFlow:
             
     
       
+
+
+    def clickokfromdbppopupwindow(self):
+        """messagebox_obj.reconfirmokbutton"""
+        MessageBoxWorkFlow.messagebox_obj.reconfirmokbutton.click()
+        
+    def textboxmodificationpopupclickbuttonmessagewindow(self,button):
+        """textboxmodificationpopupclickbuttonmessagewindow"""
+        try:
+            Topologyexplorerutility.Click_btn_MessageWindow (button)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def buttonexportpopupverifyforgotpasswordauthenticationcode(self):
+        """buttonexportpopupverifyforgotpasswordauthenticationcode"""
+        try:
+            Topologyexplorerutility.Verify_forgot_password_Authentication_Code()
+        except Exception as ex:
+            raise Exception(ex) from ex
+
+                
+

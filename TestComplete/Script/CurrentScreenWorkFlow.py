@@ -5,10 +5,11 @@ from TopologyExplorerTab import TopologyExplorerTab
 import Applicationutility
 import Actionutility
 import Conditionsutility
+
 class CurrentScreenWorkFlow:
     """CurrentScreenWorkFlow"""
     currentscreen_obj = CurrentScreen()
-    TopologyExplorerTab_obj = TopologyExplorerTab
+    TopologyExplorerTab_obj = TopologyExplorerTab()
 
         
     def windowloginpageaccesstoapplication(self):
@@ -46,3 +47,11 @@ class CurrentScreenWorkFlow:
             Conditionsutility.Post_Conditions_AE()
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def clickokfromdbppopupwindow(self):
+        """messagebox_obj.reconfirmokbutton"""
+        CurrentScreenWorkFlow.TopologyExplorerTab_obj.passwordokbutton.click()
+        
+    def clickstartenginecheckbox(self):
+        """clickstartenginecheckbox"""
+        CurrentScreenWorkFlow.TopologyExplorerTab_obj.startenginecheckbox.click()

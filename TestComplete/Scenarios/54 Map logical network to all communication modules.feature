@@ -22,8 +22,8 @@ When I selected Edit button in menu bar
 And I selected Validate in menu bar
 
 Examples:
-  | SlNo. | content |
-  | 1     | NA      |
+  | SlNo. |
+  | 1     | 
 
 
 @TC_EPE_TE_0020b
@@ -35,16 +35,15 @@ Examples:
   | SlNo. |
   | 1     |
 
+
  
 @TC_EPE_TE_CS_0020c
-Scenario Outline: click on IPConfig 
+Scenario Outline: Open configure window and click on IPConfig
 When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
 And I Click tabitem in EIO configaration window in control expert as '<identifiers>'
- 
-@click_on_IPConfig_BME_P58_6040_03.20
+
+
 Examples:
   | SlNo. | Project Browser RO1                                                     | identifiers |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME P58 6040$$EIO | IPConfig    |
- 
- 
- 
+

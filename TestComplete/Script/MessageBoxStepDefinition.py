@@ -183,3 +183,23 @@ def step_impl(notificationPannel7):
     obj.textboxnotificationpannelverifynotificationpanelmessage(notificationPannel7)
     Applicationutility.take_screenshot("Full Screenshot")
     
+    
+@when("I Click on OK button from Reconfirm Deploy Built Project Popup window")
+def step_impl():
+    """I Click on OK button from Reconfirm Deploy Built Project Popup window"""
+    CommonUtil.write_text_file("\nWhen I Click on OK button from Reconfirm Deploy Built Project Popup window")
+    obj.clickokfromdbppopupwindow()
+    
+@when("I Click button Message Window Modification popup in message box as {arg}")
+def step_impl(modificationPopup3):
+    """I Click button Message Window Modification popup in message box as '<Modification popup3>'"""
+    CommonUtil.write_text_file("\nWhen I Click button Message Window Modification popup in message box as \""+modificationPopup3+"\"")
+    obj.textboxmodificationpopupclickbuttonmessagewindow(modificationPopup3)
+  
+@then("Verify forgot password Authentication Code Export popup in message box")
+def step_impl():
+    """Verify forgot password Authentication Code Export popup in message box"""
+    CommonUtil.write_text_file("\nThen Verify forgot password Authentication Code Export popup in message box")
+    obj.buttonexportpopupverifyforgotpasswordauthenticationcode()
+    Applicationutility.take_screenshot("Full Screenshot")
+

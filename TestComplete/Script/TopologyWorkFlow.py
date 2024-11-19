@@ -35,6 +35,17 @@ class TopologyWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex  
             
-    def checkboxstartenginecheckbox(self):
-        """checkboxstartenginecheckbox"""
-        TopologyWorkFlow.topology_obj.startenginecheckbox.click()
+    def startenginecheckboxclickafterrefineonline(self,param):
+        """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
+        try:
+            TopologyWorkFlow.topology_obj1.deploycheckbox.click()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def okbuttonclickafterrefineonline(self,param):
+        """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
+        try:
+            TopologyWorkFlow.topology_obj1.deployokbutton.click()
+        except Exception as ex:
+            raise Exception(ex) from ex
+

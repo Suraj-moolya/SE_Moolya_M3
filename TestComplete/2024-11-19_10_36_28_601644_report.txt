@@ -1,0 +1,6 @@
+
+When I Navigate through project browser CE Project Browser RO in refine offline as "Configuration$$0 : PLC bus$$0 : BME XBP 0800$$6"When I enterkey Project Browser RO in refine offline
+When I Dblclick dialog panel item CE Dialog Panel CE in dialog ce as "Communication"|| Log Message:9|| Log Message:Communication is Double Clicked.
+When I Click dialog panel item CE Dialog Panel CE in dialog ce as "BME NOC 0301.4"|| Log Message:BME NOC 0301.4 is Selected.
+When I selected Dialog OK CE in dialog ce
+When I selected Properties of device OK CE in control expert|| Log Error:AttributeError: 'NoneType' object has no attribute 'click'

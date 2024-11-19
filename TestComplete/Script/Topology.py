@@ -1,4 +1,4 @@
-﻿"""Topology"""
+"""Topology"""
 from MapBase import MapBase
 
 class Topology(MapBase):
@@ -43,3 +43,21 @@ class Topology(MapBase):
     def deploydataselectiongridtextbox(self):
         """deploydataselectiongridtextbox"""
         return self.get_element("deploydataselectiongrid_Topology")
+
+              
+    @property
+    def newpasswordboxtextbox(self):
+        """newpasswordboxtextbox"""
+        return self.get_element("NewPasswordbox_Topology")
+              
+    @property
+    def confirmpasswordboxtextbox(self):
+        """confirmpasswordboxtextbox"""
+        return self.get_element("ConfirmPasswordbox_Topology")
+              
+    @property
+    def oldpasswordboxtextbox(self):
+        """oldpasswordboxtextbox"""
+        return self.get_element("OldPasswordBox_Topology")
+              
+
