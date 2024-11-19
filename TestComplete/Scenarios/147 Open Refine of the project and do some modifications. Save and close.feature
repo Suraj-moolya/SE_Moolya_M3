@@ -70,7 +70,8 @@ When I wait in seconds Refine online window in refine offline
 And I selected Save Refine Offline in refine offline
 And I wait in seconds Refine online window in refine offline
 And I selected Close Refine Offline in refine offline
+Then Verify notification panel message Notification Pannel in message box as '<content>'
 
 Examples:
-  | SlNo. | content |
-  | 1     | NA      |
+  | SlNo. | content                            |
+  | 1     | Close Configure Editor (Completed) |

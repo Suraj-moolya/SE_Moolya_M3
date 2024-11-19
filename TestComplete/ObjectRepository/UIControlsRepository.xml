@@ -350,6 +350,7 @@
              <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
 			 <UIControl Element="newdevicece_ControlExpert" Name="MenuItem('New Device...')" Parent="ControlExpert_" />
 			 <UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ipconfigmdiwin_ControlExpert" Name="TextObject('IPConfig')" Parent="EngineeringClient_" />
         </Component>
         <Component name="Dialog CE">
              <UIControl Element="DialogPanelCE_DialogCE" Name ="Panel('[0..0]')" Parent="ControlExpert_"/>

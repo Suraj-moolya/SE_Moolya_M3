@@ -38,3 +38,8 @@ class ControlExpert(MapBase):
     def yescebuttonbutton(self):
         """YesCEbutton_ControlExpert"""
         return self.get_element("YesCEbutton_ControlExpert")
+        
+    @property
+    def ipconfigbutton(self):
+        """ipconfigbutton"""
+        return self.get_element("ipconfigmdiwin_ControlExpert")   

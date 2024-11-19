@@ -453,8 +453,6 @@ def select_PLC_bus_combobox_item_CE(param):
   Applicationutility.wait_in_seconds(1000, 'Wait')
   ce_obj.yescebuttonbutton.click()
     
-def ysysysys():
-  select_PLC_bus_combobox_item_CE('BME P58 4040   03.20')
   
 def create_logical_network():
   controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)

@@ -98,7 +98,8 @@ class RefineOffline(MapBase):
     def toolbarbuttonrefineOffline(self):
         """ToolbarButtonRefineOffline"""
         return self.get_element("ToolbarButtonRefineOffline_RefineOffline")
-
+    
+    @property
     def editbuttonbutton(self):
         """editbuttonbutton"""
         return self.get_element("Editbutton_RefineOffline")

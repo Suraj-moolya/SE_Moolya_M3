@@ -2791,25 +2791,25 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Generate and build M580 Standalone 3.2 6040" key="{759FFAC2-8D09-4275-ACB3-601C95EA1AEF}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+			<testItem name="Generate and build M580 Standalone 3.2 6040 and Deploy (192.168.33.4)" key="{759FFAC2-8D09-4275-ACB3-601C95EA1AEF}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_1" key="{711DDDC1-BEB9-4460-A7E1-B3E82D3E8665}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_1" key="{711DDDC1-BEB9-4460-A7E1-B3E82D3E8665}" group="False" parallel="False" enabled="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_1" key="{9C79C6E1-D6CB-4CFC-9808-329881F3694F}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_1" key="{9C79C6E1-D6CB-4CFC-9808-329881F3694F}" group="False" parallel="False" enabled="False" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_1" key="{13374250-E0BD-44D2-A6C7-FD4DEDC9500E}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_1" key="{13374250-E0BD-44D2-A6C7-FD4DEDC9500E}" group="False" parallel="False" enabled="False" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_1" key="{BF66CA0B-7331-4DA1-949D-F1B59DE9BB96}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_1" key="{BF66CA0B-7331-4DA1-949D-F1B59DE9BB96}" group="False" parallel="False" enabled="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2844,17 +2844,17 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem23_2_1" key="{3ED2E420-459F-4BBC-98C7-E48E1FB7B145}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Station Node in Workstation folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem23_2_1" key="{3ED2E420-459F-4BBC-98C7-E48E1FB7B145}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Station Node in Workstation folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem24_2_1" key="{C850ED2B-CA85-4FCB-A497-3C7861D6DF06}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create OFS,Control Service,Supervision in Workstation folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem24_2_1" key="{C850ED2B-CA85-4FCB-A497-3C7861D6DF06}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create OFS,Control Service,Supervision in Workstation folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem25_2_1" key="{2367C6A9-DF54-4FBC-8839-0200877B2468}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create NIC in Workstation folder" count="3" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem25_2_1" key="{2367C6A9-DF54-4FBC-8839-0200877B2468}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create NIC in Workstation folder" count="3" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2864,17 +2864,17 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem15_2_1" key="{B83B24B8-BF3D-49ED-9474-73F2F0A46E9F}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M580_Safety" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem15_2_1" key="{B83B24B8-BF3D-49ED-9474-73F2F0A46E9F}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M580_Safety" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem16_2_1" key="{54D064C5-678B-40D2-89E8-23DE882270AD}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M340_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem16_2_1" key="{54D064C5-678B-40D2-89E8-23DE882270AD}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M340_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem17_2_1" key="{E75D9708-CE52-4603-8D02-E1070E1934DC}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for Quantum" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem17_2_1" key="{E75D9708-CE52-4603-8D02-E1070E1934DC}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for Quantum" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2899,27 +2899,37 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem28_1_2" key="{A34CD768-C360-4C11-896F-0DE89B2D6862}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change CPU Version of controller (BME P58 4040&#32;&#32;&#32;03.20)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem21_1_2_1" key="{9E74E484-7A34-425F-A1BF-290268E7EA66}" group="False" parallel="False" enabled="True" testMoniker="51 Open configure window, add some modules, synch the changes|Open configure window, add Analog modules" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem22_1_2_1" key="{8AD5A7E1-2317-4B50-84B7-3BE6EC581EF3}" group="False" parallel="False" enabled="True" testMoniker="51 Open configure window, add some modules, synch the changes|Open configure window, add Discrete modules" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem30_1_2" key="{3F3C5C7A-D51C-4CF3-A27B-77158D2BEF62}" group="False" parallel="False" enabled="True" testMoniker="51 Open configure window, add some modules, synch the changes|Open configure window, add Communication modules" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem28_1_2" key="{A34CD768-C360-4C11-896F-0DE89B2D6862}" group="False" parallel="False" enabled="True" testMoniker="*|@BME_P58_6040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
 					<testItem name="ProjectTestItem27_1_2" key="{6EE6189D-68D9-47BA-9EC1-1F3080C60906}" group="False" parallel="False" enabled="True" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem19_2_3_1_1" key="{2A28EE5E-694F-460B-B865-5A2DD17926D3}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Open Configuration window of Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem36" key="{A5EEDF91-BDEF-441E-B819-DB353D069886}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Double click on Eio under PLC Bus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem37" key="{BB13ADB3-7435-4E36-BBF2-5F14EE646B9F}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Map the logical network to all communication modules - edit IP Address (192.168.33.4)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem42" key="{6127FDBF-3D54-4DD6-83B1-F9E406918EC1}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Map the logical network to all communication modules - click Edit, Validate" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem27_1_2_1" key="{B66BC7C2-7879-494B-A4B6-A65E755F709B}" group="False" parallel="False" enabled="True" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2944,12 +2954,12 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem29_1_2" key="{123D3E19-ECA3-4EAC-9CA8-2FCEF40F4BDC}" group="False" parallel="False" enabled="True" testMoniker="153 Open Service Mapping Editor and map the Controller|Open Service Mapping Editor of M580_Standalone and map to Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem29_1_2" key="{123D3E19-ECA3-4EAC-9CA8-2FCEF40F4BDC}" group="False" parallel="False" enabled="False" testMoniker="153 Open Service Mapping Editor and map the Controller|Open Service Mapping Editor of M580_Standalone and map to Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem31_1_2" key="{1451D2BD-CA42-4CDB-8261-AC42C81CED76}" group="False" parallel="False" enabled="True" testMoniker="155 Navigate to Hardware mapping Tab and check the mapping is available|Navigate to Hardware mapping Tab, check the mapping is available and map" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem31_1_2" key="{1451D2BD-CA42-4CDB-8261-AC42C81CED76}" group="False" parallel="False" enabled="False" testMoniker="155 Navigate to Hardware mapping Tab and check the mapping is available|Navigate to Hardware mapping Tab, check the mapping is available and map" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2960,6 +2970,31 @@
 						<children />
 					</testItem>
 					<testItem name="ProjectTestItem1_24_6_1_1_1_2_1_1" key="{89E3311E-77F4-4F34-BAC3-D5731F373DED}" group="False" parallel="False" enabled="True" testMoniker="145 Check existing Excutable Status(if it is in build state, open refine)|To verify built state" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem12_2_1_1" key="{127D5F89-C45E-4948-A626-AA4880755C09}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem26_1_3" key="{037EB465-1079-46FD-9740-FEABAD7FF463}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change safety settings of controller to Disable" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem39" key="{5920E0F0-CC2A-40C2-A0EC-C9F2E87ED785}" group="False" parallel="False" enabled="True" testMoniker="62 Deploy the controller |Deploy the controller after disabling the password ( 192.168.33.4 )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem40" key="{11F3407C-255D-4AFA-B474-E98B15D1C67B}" group="False" parallel="False" enabled="True" testMoniker="63 Check Back Up Data|Check Backup Data" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem41" key="{49AC5259-3B13-41BA-9F76-A2648E084244}" group="False" parallel="False" enabled="True" testMoniker="64 Check Deploy Data|Check Deploy Data" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -3276,7 +3311,7 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_MethodInvokeTimeout" type="2" value="3000" />
-		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="8" colIndex="1">
+		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="19" colIndex="0">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3301,6 +3336,7 @@
 				<row val0="False" val1="TextObject*" />
 				<row val0="True" val1="#32768" />
 				<row val0="True" val1="SysIPAddress32" />
+				<row val0="True" val1="ControlExpert" />
 			</data>
 		</setting>
 		<setting name="OpenApps_MSAA_TreeModel" type="1" value="False" />
