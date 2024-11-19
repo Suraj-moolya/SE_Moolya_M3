@@ -15,3 +15,8 @@ Then Verify notification panel message Notification Pannel in message box as '<N
 Examples:
   | SlNo. | Controller      | Topology Explorer Tree1 | Modal dialog window2 | backup data description3 | Modal dialog window4 | Modal Dialog Window 15                | Modal Dialog Window 16                    | Notification Pannel7     |
   | 1     | M580_Standalone | Back Up Data            | 192.168.33.4         | M580_Standalone          | OK                   | MessageBox$$modaldialogwindow1textbox | MessageBox$$modaldialogwindow1textbox$$OK | Back Up Data (Completed) |
+
+@Check_Backup_Data__182.179.243.21__M580_Standalone
+Examples:
+  | SlNo. | Controller      | Topology Explorer Tree1 | Modal dialog window2 | backup data description3 | Modal dialog window4 | Modal Dialog Window 15                | Modal Dialog Window 16                    | Notification Pannel7     |
+  | 1     | M580_Standalone | Back Up Data            | 182.179.243.21       | M580_Standalone          | OK                   | MessageBox$$modaldialogwindow1textbox | MessageBox$$modaldialogwindow1textbox$$OK | Back Up Data (Completed) |

@@ -1,2 +1,0 @@
-
-When I Click on Build and Deploy changes Button in refine online window

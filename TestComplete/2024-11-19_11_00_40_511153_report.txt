@@ -1,1 +1,0 @@
-|| Log Error:AttributeError: 'NoneType' object has no attribute 'click'

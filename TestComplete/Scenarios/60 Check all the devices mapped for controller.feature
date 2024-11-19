@@ -1,4 +1,4 @@
-﻿Feature: 60 Scenario 
+﻿Feature: 60 Check all the devices mapped for controller
 
 @TC_EPE_
 @test0011

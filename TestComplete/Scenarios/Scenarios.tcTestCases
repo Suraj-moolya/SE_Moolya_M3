@@ -45,6 +45,7 @@
 		<Feature Path="205 delete 2 Section.feature" />
 		<Feature Path="214 Check all the executable mapping is present.feature" />
 		<Feature Path="217 Open Advanced Settings.feature" />
+		<Feature Path="224 Export the project. Do some modifications in SP. Build the executable.feature" />
 	</Folder>
 	<Folder Name="Operation Client">
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
@@ -65,8 +66,6 @@
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
 		<Feature Path="150 check the modifications in refine CP.feature" />
 		<Feature Path="152 Open any section and check network variable window.feature" />
-		<Feature Path="60 Check all the devices mapped for controller.feature" />
-		<Feature Path="new.feature" />
 	</Folder>
 	<Folder Name="Topology explorer">
 		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
@@ -74,7 +73,6 @@
 		<Feature Path="52 Open configure window and switch to full screen, add modules and synch the changes.feature" />
 		<Feature Path="53 Add communication modules, add Drops and synch the changes.feature" />
 		<Feature Path="54 Map logical network to all communication modules.feature" />
-		<Feature Path="Export the project. Do some modifications in SP. Build the executable.feature" />
 		<Feature Path="62 Deploy the controller .feature" />
 		<Feature Path="63 Check Back Up Data.feature" />
 		<Feature Path="64 Check Deploy Data.feature" />
@@ -84,5 +82,6 @@
 		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
 		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
 		<Feature Path="61 Check manage password, clear password and forget password.feature" />
+		<Feature Path="60 Check all the devices mapped for controller.feature" />
 	</Folder>
 </Scenarios>

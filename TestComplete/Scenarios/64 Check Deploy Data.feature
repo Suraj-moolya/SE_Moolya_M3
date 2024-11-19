@@ -17,3 +17,8 @@ Examples:
   | SlNo. | Controller      | Topology Explorer Tree1 | Modal dialog window2 | Modal dialog window3 | Modal Dialog Window 14                | Modal Dialog Window 15                    | Notification Pannel6    |
   | 1     | M580_Standalone | Deploy Data             | 192.168.33.4         | OK                   | MessageBox$$modaldialogwindow1textbox | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Data (Completed) |
 
+@Check_Deploy_Data__182.179.243.21__M580_Standalone
+Examples:
+  | SlNo. | Controller      | Topology Explorer Tree1 | Modal dialog window2 | Modal dialog window3 | Modal Dialog Window 14                | Modal Dialog Window 15                    | Notification Pannel6    |
+  | 1     | M580_Standalone | Deploy Data             | 182.179.243.21       | OK                   | MessageBox$$modaldialogwindow1textbox | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Data (Completed) |
+

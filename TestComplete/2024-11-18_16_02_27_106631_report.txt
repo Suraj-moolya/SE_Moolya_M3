@@ -1,5 +1,0 @@
-
-When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
-When I Select context menu item EC project browser in project explorer as "Refine Online"|| Log Message:The Context Menu Item clicked is : Refine Online
-When I click modal dialog window Instance editor save in application explorer as 'Yes'|| Log Message:Clicked OK button.
-When I Click on OK button from Reconfirm Deploy Built Project Popup window

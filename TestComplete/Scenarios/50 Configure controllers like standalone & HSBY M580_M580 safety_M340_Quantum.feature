@@ -174,13 +174,13 @@ Examples:
 @TC_EPE_TE_CS_0006
 @test0001
 Scenario Outline: Open Configuration window of Controller
-When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone'
+When I Right Click on nodes System Explorer Node in system explorer as '<Controller>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 Then Verify Action message in notification pannel project browser in project explorer as '<Notification>'
 
 Examples:
-  | SlNo. | context menu | Notification          |
-  | 1     | Configure    | Open Configure Editor |
+  | SlNo. | Controller      | context menu | Notification          |
+  | 1     | M580_Standalone | Configure    | Open Configure Editor |
   
   
 @TC_EPE_TE_CS_000
@@ -289,12 +289,5 @@ Examples:
   | SlNo. | Project Browser RO1        |
   | 1     | Configuration$$0 : PLC bus |
   
-  
-@TC_EPE_TE_CS_000
-@test000
-Scenario Outline: Change CPU Version of controller (BME P58 2040   03.20)
-When I selected select PLC bus combobox item CE in refine offline as '<Cpu_version>'
-Examples:
-  | SlNo. | Cpu_version          |
-  | 1     | BME P58 6040   03.20 |
+
 

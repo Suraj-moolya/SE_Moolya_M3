@@ -1,4 +1,4 @@
-﻿Feature: Do Some modification in configure side in refine online and update the project and check configure(add/delete communication/DIO/AIO modules)
+﻿Feature: 67 Do Some modification in configure side in refine online and update the project and check configure(add/delete communication/DIO/AIO modules)
 
 @TC_EPE_EC_000
 @test000

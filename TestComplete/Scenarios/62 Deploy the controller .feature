@@ -19,3 +19,8 @@ Examples:
   | SlNo. | Controller      | Topology Explorer Tree1 | project dropdown2                                 | Executables dropdown3                                     | Modal dialog window4 | Modal dialog window5 | Modal Dialog Window 16                    | project browser2                 |
   | 1     | M580_Standalone | Deploy Built Project    | Topology$$projectdropdowntextbox$$M580_Standalone | Topology$$executablesdropdowntextbox$$ControlExecutable_1 | OK                   | 192.168.33.4         | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) |
 
+@Deploy_the_controller_after_disabling_the_password__182.179.243.21__M580_Standalone
+Examples:
+  | SlNo. | Controller      | Topology Explorer Tree1 | project dropdown2                                 | Executables dropdown3                                     | Modal dialog window4 | Modal dialog window5 | Modal Dialog Window 16                    | project browser2                 |
+  | 1     | M580_Standalone | Deploy Built Project    | Topology$$projectdropdowntextbox$$M580_Standalone | Topology$$executablesdropdowntextbox$$ControlExecutable_1 | OK                   | 182.179.243.21       | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) |
+

@@ -94,7 +94,7 @@ And I Click on OK button from Reconfirm Deploy Built Project Popup window
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser3>'
 Examples:
   | SlNo. | context menu                        | project browser2                                                            | project browser3                                 |
-  | 1     | Deploy Changes/ Undo Online changes | Obtaining Candidates for 'Deploy Changes / Undo Online Changes' (Completed) | Deploy Changes / Undo Online Changes (Completed) |
+  | 1     | Deploy Changes/ Undo Online changes | Obtaining Candidates for *Deploy Changes / Undo Online Changes* (Completed) | Deploy Changes / Undo Online Changes (Completed) |
 
   
    
