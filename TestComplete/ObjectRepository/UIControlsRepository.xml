@@ -160,9 +160,24 @@
 			 <UIControl Element="OldPasswordBox_TopologyExporerTab" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="ClosebuttonTM_TopologyExporerTab" Name="Button('Close')" Parent="EngineeringClient_" />
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="TopologyConfigurationWindow_TopologyExporerTab" Name="MenuBar('Application')" Parent="EngineeringClient_" />
+			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="MDIWindow('Hardware Catalog')" Parent="EngineeringClient_" />
+			 <UIControl Element="Catalog_TopologyExporerTab" Name="VBObject('treCatalog')" Parent="EngineeringClient_" />
+             <UIControl Element="STBProperties_TopologyExporerTab" Name="WPFObject('BasePropertyGrid', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="STBPropertiesClosebutton_TopologyExporerTab" Name="WPFObject('PART_CloseInnerContent')" Parent="EngineeringClient_" />
+             <UIControl Element="ControllerPhysicalconnectiontab_TopologyExporerTab" Name="WPFObject('NetworkSelection', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="DevicesHardwareCatalog_TopologyExporerTab" Name="Window('AfxFrameOrView140u', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="UpdateButton_TopologyExporerTab" Name="Window('Button', 'Update', 4)" Parent="EngineeringClient_" />
+			 <UIControl Element="PRMgensettings_TopologyExporerTab" Name="Window('#32770', '', 2)" Parent="EngineeringClient_" />
+			 <UIControl Element="DTMBrowserHost_TopologyExporerTab" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="PRMconfigwindow_TopologyExporerTab" Name="MDIWindow('PRM_Master_0001 - fdtOfflineParameterize')" Parent="EngineeringClient_" />
+			 <UIControl Element="PLCBuswindow_TopologyExporerTab" Name="MDIWindow('PLC bus')" Parent="EngineeringClient_" />
+			 <UIControl Element="Hartmodulecheck_TopologyExporerTab" Name="Window('GXWND', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="BMEHart_TopologyExporerTab" Name="MDIWindow('0.2 : BME AHI 0812')" Parent="EngineeringClient_" />
+			 <UIControl Element="DTMBrowserprop_TopologyExporerTab" Name="ToolWindow('DTM Browser')" Parent="EngineeringClient_" />
+			 <UIControl Element="PanelEditButton_TopologyExporerTab" Name="Panel('Edit')" Parent="EngineeringClient_" />
 			 <UIControl Element="PrimaryAddressList_TopologyExporerTab" Name="WPFObject('PrimaryAddressList')" Parent="EngineeringClient_" />
 			 <UIControl Element="StartEngineCheckbox_TopologyExporerTab" Name="WPFObject('Box')" Parent="EngineeringClient_" />
-			 
 			 
         </Component>
         <Component name="Global Templates Tab">
@@ -360,6 +375,14 @@
              <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
 			 <UIControl Element="newdevicece_ControlExpert" Name="MenuItem('New Device...')" Parent="ControlExpert_" />
 			 <UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
+			 <UIControl Element="ToolPopUP_ControlExpert" Name="Popup('*')" Parent="ControlExpert_" />
+			 <UIControl Element="dropdownbutton_ControlExpert" Name="Window('ComboBox', '', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
         </Component>
         <Component name="Dialog CE">
              <UIControl Element="DialogPanelCE_DialogCE" Name ="Panel('[0..0]')" Parent="ControlExpert_"/>

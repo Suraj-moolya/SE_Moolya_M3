@@ -2899,126 +2899,12 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem28_1_2" key="{A34CD768-C360-4C11-896F-0DE89B2D6862}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change CPU Version of controller (BME P58 6040&#32;&#32;&#32;03.20)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem21_1_2_1" key="{9E74E484-7A34-425F-A1BF-290268E7EA66}" group="False" parallel="False" enabled="True" load="False" testMoniker="51 Open configure window, add some modules, synch the changes|Open configure window, add Analog modules" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem22_1_2_1" key="{8AD5A7E1-2317-4B50-84B7-3BE6EC581EF3}" group="False" parallel="False" enabled="True" load="False" testMoniker="51 Open configure window, add some modules, synch the changes|Open configure window, add Discrete modules" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem30_1_2" key="{3F3C5C7A-D51C-4CF3-A27B-77158D2BEF62}" group="False" parallel="False" enabled="True" load="False" testMoniker="51 Open configure window, add some modules, synch the changes|Open configure window, add Communication modules" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem27_1_2" key="{6EE6189D-68D9-47BA-9EC1-1F3080C60906}" group="False" parallel="False" enabled="True" load="False" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0040_1_2_2_1" key="{321209D8-7BC5-4E8F-9B83-59BC36859312}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_4_1_1_2_1_1" key="{3746FEC7-F9D6-47C2-8849-1C3FB872F298}" group="False" parallel="False" enabled="True" load="False" testMoniker="144 Open control project|Create a Control Project for M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_5_1_1_2_1_2" key="{40B94C93-6C96-464E-9F1F-BA3F116C1034}" group="False" parallel="False" enabled="True" load="False" testMoniker="148 Add instances to container and generate the section|Double Click on Container sections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_11_1_1_2_1_1" key="{A10C7F17-2979-4319-B2A7-23FB0C1F6DE2}" group="False" parallel="False" enabled="True" load="False" testMoniker="180 Assign instances to containers|Assign Instance to Containers in PE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem29_1_2" key="{123D3E19-ECA3-4EAC-9CA8-2FCEF40F4BDC}" group="False" parallel="False" enabled="True" load="False" testMoniker="153 Open Service Mapping Editor and map the Controller|Open Service Mapping Editor of M580_Standalone and map to Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem31_1_2" key="{1451D2BD-CA42-4CDB-8261-AC42C81CED76}" group="False" parallel="False" enabled="True" load="False" testMoniker="155 Navigate to Hardware mapping Tab and check the mapping is available|Navigate to Hardware mapping Tab, check the mapping is available and map" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_6_1_1_1_2_1" key="{799F5EC3-329A-47DA-83B3-73DEDA75FE8E}" group="False" parallel="False" enabled="True" load="False" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from control executeable r-click" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_6_1_1_1_2_1_1" key="{89E3311E-77F4-4F34-BAC3-D5731F373DED}" group="False" parallel="False" enabled="True" load="False" testMoniker="145 Check existing Excutable Status(if it is in build state, open refine)|To verify built state" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Deploy Project" key="{9FA5255B-A654-4842-81B3-F377F27C5749}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<children>
-					<testItem name="ProjectTestItem36" key="{7AA3B106-3B20-4E73-ABDE-045ADDE3A1E4}" group="False" parallel="False" enabled="True" load="False" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}clickR_node_SE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters>
-							<param0 name="node_name" type="3" localVarName="" varType="8" value="M580_Standalone" />
-						</testParameters>
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem37" key="{7DA81CD5-18C1-4447-86F0-45704D4ADEC9}" group="False" parallel="False" enabled="True" load="False" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}select_ContextMenu_Items_EC" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters>
-							<param0 name="menu_item" type="3" localVarName="" varType="8" value="Deploy Built Project" />
-						</testParameters>
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem36_2" key="{61721AD4-5222-4B29-90D8-0D6084F7B570}" group="False" parallel="False" enabled="True" load="False" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}clickR_node_SE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters>
-							<param0 name="node_name" type="3" localVarName="" varType="8" value="M580_HSBY" />
-						</testParameters>
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
 				</children>
 			</testItem>
 		</children>
 	</testItems>
-	<variables key="{5015831C-DE8B-4FA3-B476-D28DF924644F}">
-		<data Version="4">
-			<Items>
-				<Variable Name="textfile_path" Type="String" Local="True">
-					<DefValue />
-				</Variable>
-				<Variable Name="screen" Type="String" Local="True">
-					<DefValue />
-				</Variable>
-				<Variable Name="retry_count" Type="Integer" Local="True">
-					<DefValue IntValue="0" />
-				</Variable>
-				<Variable Name="time_interval" Type="Integer" Local="True">
-					<DefValue IntValue="0" />
-				</Variable>
-				<Variable Name="system_1" Type="String" Local="True">
-					<DefValue />
-				</Variable>
-				<Variable Name="Rename_Folder_HF" Type="String" Local="True">
-					<DefValue />
-				</Variable>
-			</Items>
-		</data>
-	</variables>
-	<settings key="{33D5EEAA-97F3-4751-966A-5060DE87D415}">
+	<variables key="{00B55B0A-F697-429F-AC9F-AE74135591ED}" />
+	<settings key="{BD89207E-1EE8-4F9B-9DB6-9CEBB644634F}">
 		<settingsVersion value="15.68" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
@@ -3048,12 +2934,9 @@
 		<setting name="AzureDevOps_URL" type="5" value="" />
 		<setting name="BitBar_APIKey" type="5" value="" />
 		<setting name="BitBar_APIURL" type="5" value="https://cloud.bitbar.com/api/" />
-		<setting name="BitBar_FindAndroidDevice" type="5" value="( Device Group As in Selected Device )" />
-		<setting name="BitBar_FindIOSDevice" type="5" value="( Device Group As in Selected Device )" />
 		<setting name="BitBar_FRAMEWORKID_Android" type="2" value="0" />
 		<setting name="BitBar_FRAMEWORKID_IOS" type="2" value="0" />
 		<setting name="BitBar_HUBURL" type="5" value="https://appium.bitbar.com/wd/hub/" />
-		<setting name="BitBar_NewCommandTimeout" type="2" value="300" />
 		<setting name="CBT_AppsAvailability" type="6" rowIndex="0" colIndex="0">
 			<columns>
 				<column type="5" enabled="True" />
@@ -3117,7 +3000,7 @@
 		</setting>
 		<setting name="DbgServices_UseExtendedDebugger" type="1" value="True" />
 		<setting name="DraggingDelay" type="2" value="5" />
-		<setting name="General_CurrentImageFormat" type="5" value="126_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_66_0_65_0_55_0_52_0_53_0_49_0_54_0_57_0_45_0_70_0_51_0_52_0_68_0_45_0_52_0_55_0_49_0_48_0_45_0_66_0_51_0_55_0_70_0_45_0_68_0_53_0_69_0_70_0_69_0_56_0_65_0_53_0_49_0_51_0_51_0_57_0_125_0_1_0_0_0_16_0_0_0_112_0_110_0_103_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_2_0_0_0_16_0_0_0_99_0_111_0_109_0_112_0_114_0_101_0_115_0_115_0_105_0_111_0_110_0_108_0_101_0_118_0_101_0_108_0_0_0_0_0_4_0_0_0_10_0_0_0_105_0_110_0_116_0_101_0_114_0_108_0_97_0_99_0_101_0_100_0_5_0_0_0_0_0_0_0_0_39_" />
+		<setting name="General_CurrentImageFormat" type="5" value="126_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_66_0_65_0_55_0_52_0_53_0_49_0_54_0_57_0_45_0_70_0_51_0_52_0_68_0_45_0_52_0_55_0_49_0_48_0_45_0_66_0_51_0_55_0_70_0_45_0_68_0_53_0_69_0_70_0_69_0_56_0_65_0_53_0_49_0_51_0_51_0_57_0_125_0_1_0_0_0_16_0_0_0_112_0_110_0_103_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_2_0_0_0_16_0_0_0_99_0_111_0_109_0_112_0_114_0_101_0_115_0_115_0_105_0_111_0_110_0_108_0_101_0_118_0_101_0_108_0_0_0_0_0_4_0_0_0_10_0_0_0_105_0_110_0_116_0_101_0_114_0_108_0_97_0_99_0_101_0_100_0_5_0_0_0_0_0_0_0_0_249_" />
 		<setting name="General_DisableDWMBeforeCapturingImage" type="1" value="False" />
 		<setting name="General_ImageFormat" type="5" value="Format: PNG; Compression level: 4" />
 		<setting name="General_ObjectTreeModel" type="6" rowIndex="0" colIndex="0">
@@ -3177,7 +3060,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="JavaFXOpenApp_NodeByClassNameFilters" type="6" rowIndex="0" colIndex="0">
+		<setting name="JavaFXOpenApp_NodeByClassNameFilters" type="6" rowIndex="8" colIndex="2">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3201,15 +3084,6 @@
 		<setting name="LoadTestAPIKeyLogin" type="5" value="&lt;A&gt;Login to LoadNinja&lt;/A&gt; to get your API key." />
 		<setting name="LoadTestAPIKeySales" type="5" value="Want to know more &lt;A&gt;Contact Sales&lt;/A&gt;." />
 		<setting name="LoadTestAPIKeySignup" type="5" value="&lt;A&gt;Sign up for LN trial&lt;/A&gt;." />
-		<setting name="MobileSupportType" type="6" rowIndex="0" colIndex="0">
-			<columns>
-				<column type="5" enabled="True" />
-			</columns>
-			<data>
-				<row val0="Mobile device cloud (BitBar and local Appium)" />
-				<row val0="Legacy mobile support" />
-			</data>
-		</setting>
 		<setting name="MouseMovementDelay" type="2" value="0" />
 		<setting name="ObjectMapping_Objects" type="6" rowIndex="-1" colIndex="3">
 			<columns>
@@ -3237,72 +3111,8 @@
 				<row val0="True" val1="%PRODUCT_LOCATION%\Open Apps\Flex\FlashInjector.swf" />
 			</data>
 		</setting>
-		<setting name="OpenApps_HybridMobile_AccessPolicy" type="1" value="False" />
-		<setting name="OpenApps_HybridMobile_DynamicIdentifiers" type="6" rowIndex="37" colIndex="4">
-			<columns>
-				<column type="2" enabled="True" />
-				<column type="2" enabled="True" />
-				<column type="1" enabled="True" />
-				<column type="1" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="2" enabled="True" />
-			</columns>
-			<data>
-				<row val0="-1" val1="0" val2="True" val3="True" val4="ASP.NET" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="True" val4="Do not use IDs ending with a string like &quot;ctl00&quot;" val5="RegExp" val6="^(.*[-_$])?(ctl[0-9]+)$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="True" val4="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs" val5="RegExp" val6="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="True" val4="For IDs containing a string like &quot;ctl00_&quot;, leave only symbols after this string" val5="RegExp" val6=".*(ctl[0-9]+[-_$]+){.*}" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Dojo toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="4" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;dijit_&quot;" val5="Wildcard" val6="dijit_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Google Web Toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="6" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;" val5="RegExp" val6="^(gwt-uid-[0-9]+)(_{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="6" val1="0" val2="False" val3="True" val4="Remove dynamic parts of Sencha GXT IDs" val5="RegExp" val6="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="JavaServer Faces" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;_t14&quot;" val5="RegExp" val6="^{_t}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;" val5="RegExp" val6="^{j_idt?}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;" val5="RegExp" val6="(.+):{[^0-9]+}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;frm:menuLinks:3:link&quot;" val5="RegExp" val6="(.+):(.*)" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="jQuery UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="14" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;ui-id-&quot;" val5="Wildcard" val6="ui-id-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Microsoft Dynamics" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="16" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;id-33&quot; or &quot;id__14&quot;" val5="RegExp" val6="^id[_0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Salesforce" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="18" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;checkbox-1&quot; or &quot;checkbox-123-3&quot;" val5="RegExp" val6="^checkbox-[0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="18" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;input-1&quot; or &quot;input-123-3&quot;" val5="RegExp" val6="^input-[0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Sencha ExtJS" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-gen&quot;" val5="RegExp" val6="^(.*-)?ext-gen" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-comp&quot;" val5="RegExp" val6="^(.*-)?ext-comp" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;extdd-&quot;" val5="Wildcard" val6="extdd-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;" val5="RegExp" val6="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$" val7="$1$3" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Sencha Touch" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="26" val1="0" val2="False" val3="True" val4="Remove dynamic parts of Sencha Touch IDs" val5="RegExp" val6="^ext-{.*}-\d+$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Yahoo! UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="28" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;yui-gen&quot;" val5="Wildcard" val6="yui-gen*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="28" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;yui_3_&quot;" val5="Wildcard" val6="*yui_3_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Other" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Do not use IDs containing GUID" val5="RegExp" val6="\h+-\h+-\h+-\h+-\h+" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove leading characters from IDs like &quot;c1114509959-searchform&quot;" val5="RegExp" val6="^[A-Za-z](\d\d\d\d\d+){[A-Za-z-]*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove trailing digits from IDs like &quot;unique-123456&quot;" val5="RegExp" val6="^{[A-Za-z-]+}(\d\d\d\d\d+)$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique_123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}_(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Custom" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-			</data>
-		</setting>
-		<setting name="OpenApps_HybridMobile_IdentificationAttribute" type="6" rowIndex="0" colIndex="0">
-			<columns>
-				<column type="5" enabled="True" />
-			</columns>
-			<data>
-				<row val0="ID" />
-				<row val0="Name" />
-			</data>
-		</setting>
 		<setting name="OpenApps_MethodInvokeTimeout" type="2" value="3000" />
-		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="19" colIndex="1">
+		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="11" colIndex="1">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3314,20 +3124,12 @@
 				<row val0="True" val1="OpusApp" />
 				<row val0="True" val1="Vfp*" />
 				<row val0="True" val1="bosa_sdm_Microsoft Word *" />
-				<row val0="True" val1="Internet Explorer_Server" />
+				<row val0="False" val1="Internet Explorer_Server" />
 				<row val0="True" val1="XTPToolBar" />
 				<row val0="True" val1="XTPDockingPaneTabbedContainer" />
 				<row val0="True" val1="XTPTaskPanel" />
 				<row val0="True" val1="XTPReport" />
 				<row val0="True" val1="XTPPopupBar" />
-				<row val0="True" val1="AfxFrameOrView140u" />
-				<row val0="True" val1="AfxWnd140u" />
-				<row val0="True" val1="ListBox" />
-				<row val0="True" val1="Afx*" />
-				<row val0="False" val1="TextObject*" />
-				<row val0="True" val1="#32768" />
-				<row val0="True" val1="SysIPAddress32" />
-				<row val0="True" val1="ControlExpert" />
 			</data>
 		</setting>
 		<setting name="OpenApps_MSAA_TreeModel" type="1" value="False" />
@@ -3371,7 +3173,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="OpenApps_UIA_ListOfAcceptedWindows" type="6" rowIndex="0" colIndex="0">
+		<setting name="OpenApps_UIA_ListOfAcceptedWindows" type="6" rowIndex="2" colIndex="1">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3395,7 +3197,7 @@
 				<row val0="True" val1="data-testid" />
 			</data>
 		</setting>
-		<setting name="OpenApps_Web_EnableSupportForWebComponents" type="1" value="False" />
+		<setting name="OpenApps_Web_EnableSupportForWebComponents" type="1" value="True" />
 		<setting name="OpenApps_Web_ObjIdentification_DynamicIdentifiers" type="6" rowIndex="37" colIndex="9">
 			<columns>
 				<column type="2" enabled="True" />
@@ -3410,44 +3212,44 @@
 				<column type="2" enabled="True" />
 			</columns>
 			<data>
-				<row val0="-1" val1="0" val2="True" val3="False" val4="ASP.NET" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="False" val4="Do not use IDs ending with a string like &quot;ctl00&quot;" val5="RegExp" val6="^(.*[-_$])?(ctl[0-9]+)$" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="False" val4="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs" val5="RegExp" val6="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="False" val4="Remove all but the last part of IDs like &quot;ctl00_MainContent_username&quot;" val5="RegExp" val6=".*(ctl[0-9]+)(.*)[-_$]+{[^_0-9]+}{[_0-9]*}$" val7="$1$2" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Dojo toolkit" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="4" val1="0" val2="False" val3="False" val4="Do not use IDs starting with &quot;dijit_&quot;" val5="Wildcard" val6="dijit_*" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Google Web Toolkit" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="6" val1="0" val2="False" val3="False" val4="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;" val5="RegExp" val6="^(gwt-uid-[0-9]+)(_{.*})?$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="6" val1="0" val2="False" val3="False" val4="Remove dynamic parts of Sencha GXT IDs" val5="RegExp" val6="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="JavaServer Faces" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="False" val4="Do not use IDs like &quot;_t14&quot;" val5="RegExp" val6="^{_t}{[0-9]+}$" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="False" val4="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;" val5="RegExp" val6="^{j_idt?}{[0-9]+}$" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="False" val4="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;" val5="RegExp" val6="(.+):{[^0-9]+}$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="False" val4="Do not use IDs like &quot;frm:menuLinks:3:link&quot;" val5="RegExp" val6="(.+):(.*)" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="jQuery UI library" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="14" val1="0" val2="False" val3="False" val4="Do not use IDs starting with &quot;ui-id-&quot;" val5="Wildcard" val6="ui-id-*" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Microsoft Dynamics" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="16" val1="0" val2="False" val3="False" val4="Do not use IDs like &quot;id-33&quot; or &quot;id__14&quot;" val5="RegExp" val6="^id[_0-9\-]+$" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Salesforce" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="18" val1="0" val2="False" val3="False" val4="Do not use IDs like &quot;checkbox-1&quot; or &quot;checkbox-123-3&quot;" val5="RegExp" val6="^checkbox-[0-9\-]+$" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="18" val1="0" val2="False" val3="False" val4="Do not use IDs like &quot;input-1&quot; or &quot;input-123-3&quot;" val5="RegExp" val6="^input-[0-9\-]+$" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Sencha ExtJS" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="False" val4="Do not use IDs containing &quot;ext-gen&quot;" val5="RegExp" val6="^(.*-)?ext-gen" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="False" val4="Do not use IDs containing &quot;ext-comp&quot;" val5="RegExp" val6="^(.*-)?ext-comp" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="False" val4="Do not use IDs starting with &quot;extdd-&quot;" val5="Wildcard" val6="extdd-*" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="False" val4="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;" val5="RegExp" val6="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$" val7="$1$3" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Sencha Touch" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="26" val1="0" val2="False" val3="False" val4="Remove dynamic parts of Sencha Touch IDs" val5="RegExp" val6="^ext-{.*}-\d+$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Yahoo! UI library" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="28" val1="0" val2="False" val3="False" val4="Do not use IDs starting with &quot;yui-gen&quot;" val5="Wildcard" val6="yui-gen*" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="28" val1="0" val2="False" val3="False" val4="Do not use IDs containing &quot;yui_3_&quot;" val5="Wildcard" val6="*yui_3_*" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Other" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="False" val4="Do not use IDs containing GUID" val5="RegExp" val6="\h+-\h+-\h+-\h+-\h+" val7="" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="False" val4="Remove leading characters from IDs like &quot;c1114509959-searchform&quot;" val5="RegExp" val6="^[A-Za-z](\d\d\d\d\d+){[A-Za-z-]*}$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="False" val4="Remove trailing digits from IDs like &quot;unique-123456&quot;" val5="RegExp" val6="^{[A-Za-z-]+}(\d\d\d\d\d+)$" val7="$1" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="False" val4="Remove digits from IDs like &quot;some_unique_123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}_(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="False" val4="Remove digits from IDs like &quot;some_unique123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="False" val4="Custom" val5="" val6="" val7="" val8="Wildcard&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="ASP.NET" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="0" val2="False" val3="True" val4="Do not use IDs ending with a string like &quot;ctl00&quot;" val5="RegExp" val6="^(.*[-_$])?(ctl[0-9]+)$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="0" val2="False" val3="True" val4="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs" val5="RegExp" val6="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="0" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;ctl00_MainContent_username&quot;" val5="RegExp" val6=".*(ctl[0-9]+)(.*)[-_$]+{[^_0-9]+}{[_0-9]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Dojo toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="4" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;dijit_&quot;" val5="Wildcard" val6="dijit_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Google Web Toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="6" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;" val5="RegExp" val6="^(gwt-uid-[0-9]+)(_{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="6" val1="0" val2="False" val3="True" val4="Remove dynamic parts of Sencha GXT IDs" val5="RegExp" val6="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="JavaServer Faces" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;_t14&quot;" val5="RegExp" val6="^{_t}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;" val5="RegExp" val6="^{j_idt?}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="9" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;" val5="RegExp" val6="(.+):{[^0-9]+}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;frm:menuLinks:3:link&quot;" val5="RegExp" val6="(.+):(.*)" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="jQuery UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="14" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;ui-id-&quot;" val5="Wildcard" val6="ui-id-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Microsoft Dynamics" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="16" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;id-33&quot; or &quot;id__14&quot;" val5="RegExp" val6="^id[_0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Salesforce" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="18" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;checkbox-1&quot; or &quot;checkbox-123-3&quot;" val5="RegExp" val6="^checkbox-[0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="18" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;input-1&quot; or &quot;input-123-3&quot;" val5="RegExp" val6="^input-[0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Sencha ExtJS" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-gen&quot;" val5="RegExp" val6="^(.*-)?ext-gen" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-comp&quot;" val5="RegExp" val6="^(.*-)?ext-comp" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;extdd-&quot;" val5="Wildcard" val6="extdd-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="21" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;" val5="RegExp" val6="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$" val7="$1$3" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Sencha Touch" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="26" val1="0" val2="False" val3="True" val4="Remove dynamic parts of Sencha Touch IDs" val5="RegExp" val6="^ext-{.*}-\d+$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Yahoo! UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="28" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;yui-gen&quot;" val5="Wildcard" val6="yui-gen*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="28" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;yui_3_&quot;" val5="Wildcard" val6="*yui_3_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Other" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="31" val1="0" val2="False" val3="True" val4="Do not use IDs containing GUID" val5="RegExp" val6="\h+-\h+-\h+-\h+-\h+" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="31" val1="0" val2="False" val3="True" val4="Remove leading characters from IDs like &quot;c1114509959-searchform&quot;" val5="RegExp" val6="^[A-Za-z](\d\d\d\d\d+){[A-Za-z-]*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="31" val1="0" val2="False" val3="True" val4="Remove trailing digits from IDs like &quot;unique-123456&quot;" val5="RegExp" val6="^{[A-Za-z-]+}(\d\d\d\d\d+)$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="31" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique_123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}_(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="31" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
+				<row val0="-1" val1="0" val2="True" val3="True" val4="Custom" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
 			</data>
 		</setting>
 		<setting name="OpenApps_Web_ObjIdentification_IdentificationAttribute" type="6" rowIndex="0" colIndex="0">
@@ -3459,7 +3261,7 @@
 				<row val0="Name" />
 			</data>
 		</setting>
-		<setting name="OpenApps_Web_RecordScalableTests" type="1" value="False" />
+		<setting name="OpenApps_Web_RecordScalableTests" type="1" value="True" />
 		<setting name="OpenApps_Web_RecordTestedHost" type="5" value="" />
 		<setting name="OpenApps_Web_TestedHost" type="5" value="" />
 		<setting name="OpenApps_Web_TreeModel" type="6" rowIndex="3" colIndex="0">
@@ -3484,7 +3286,7 @@
 		<setting name="OpenApps_Web_URLProcessing_IgnoreDynamicURLParameters" type="1" value="True" />
 		<setting name="OpenApps_Web_UseCSSPixels" type="1" value="True" />
 		<setting name="OpenApps_Web_UseLegacyWebTestingFeatures" type="1" value="False" />
-		<setting name="OpenApps_Web_VirtBrowsers_AdvancedMode" type="1" value="False" />
+		<setting name="OpenApps_Web_VirtBrowsers_AdvancedMode" type="1" value="True" />
 		<setting name="OpenApps_Web_VirtBrowsers_AutoLaunchWhenRecording" type="6" rowIndex="0" colIndex="0">
 			<columns>
 				<column type="5" enabled="True" />
@@ -3526,65 +3328,13 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_Web_WebPageLoadingTimeout" type="2" value="60000" />
-		<setting name="OpenApps_WPF_CompositeControls" type="6" rowIndex="50" colIndex="1">
+		<setting name="OpenApps_WPF_CompositeControls" type="6" rowIndex="-1" colIndex="2">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
 				<column type="5" enabled="True" />
 			</columns>
-			<data>
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.FrameHostControl" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.RadTreeViewItem" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.InstanceEditor.Views.InstanceEditorRadGridView" val2="" />
-				<row val0="True" val1="InstanceEditorRadGridView" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ClientEssentials.UIFramework.Explorer.Controls.ExplorerNode" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ClientEssentials.UIFramework.Explorer.Controls.ExplorerNodeControl" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.CloseableTabItem" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.Docking.PaneHeader" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.RadPaneGroup" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.MoveSummary" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.ReplaceTemplateSummary" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Source.Dock.MvvmRadPaneGroup" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.ModalDialog.ModalDialogWindow" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ComboBox" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.InstanceEditor.Views.Editor" val2="" />
-				<row val0="True" val1="System.Windows.Controls.Primitives.ToggleButton" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Explorer.ExplorerNode" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Resizing.Resizer" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Explorer.ExplorerNodeControl" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridField" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.ImportDialog " val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.TreeListView.TreeListViewRow" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.UpdateTemplateControl" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ListBox" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.DomainNavigator.ApplicationToProject.AssignmentViewerDialog" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ListBoxItem" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.GridViewHeaderCell" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.ValidatedElement" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.MoveSummary" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.TemplatizationWorkArea.Controls.SearchControl" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.InstantiationWorkArea.InstanceInspector.InspectorDialog" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.GridViewRow" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Unity.Project.Client.ManageNetworkVariables" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.UcBrowser" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.FilteringControl" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ContentControl" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.EditableComboBox" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Wrap.Controls.WrapContainerView" val2="" />
-				<row val0="True" val1="System.Windows.Controls.Image" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.InstantiationWorkArea.UpdateReplaceTemplate.Views.UpdateTemplateControl" val2="" />
-				<row val0="True" val1="System.Windows.Controls.TreeViewItem" val2="" />
-				<row val0="True" val1="System.Windows.Controls.Expander" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.GridViewCell" val2="" />
-				<row val0="True" val1="ActiproSoftware.Windows.Controls.Ribbon.Controls.SplitButton" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.TemplatizationWorkArea.Controls.NormalPortControl" val2="" />
-				<row val0="True" val1="ActiproSoftware.Windows.Controls.Grids.TreeListViewItemCell" val2="" />
-				<row val0="True" val1="Xceed.Wpf.AvalonDock.Controls.LayoutAnchorableControl" val2="" />
-				<row val0="True" val1="Xceed.Wpf.AvalonDock.Controls.AnchorablePaneTitle" val2="" />
-				<row val0="True" val1="Xceed.Wpf.AvalonDock.Controls.LayoutDocumentTabItem" val2="" />
-				<row val0="True" val1="SchneiderElectric.Automation.Client.Presentation.Windows.Dialogs.DetailMessageDialog" val2="" />
-				<row val0="True" val1="SchneiderElectric.Automation.Client.Topology.Unity.Screens.ProjectEditor.ProjectEditorView" val2="" />
-			</data>
+			<data />
 		</setting>
 		<setting name="OpenApps_WPF_ItemsTemplates" type="6" rowIndex="-1" colIndex="2">
 			<columns>
@@ -3654,18 +3404,18 @@
 				<row val0="Breadth-first" />
 			</data>
 		</setting>
-		<setting name="Playback_OverlappingWindow_IgnoreOverlappingWindow" type="1" value="True" />
+		<setting name="Playback_OverlappingWindow_IgnoreOverlappingWindow" type="1" value="False" />
 		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="10000" />
 		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="50" />
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
-		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
 		<setting name="Playback_StopOnError" type="1" value="True" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
 		<setting name="Playback_StopOnWarning" type="1" value="False" />
 		<setting name="Playback_TestItemMaxReRunCount" type="2" value="1" />
 		<setting name="Playback_UnexpectedWndHandling_ClickOnFocusedControl" type="1" value="True" />
-		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="True" />
+		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="False" />
 		<setting name="Playback_UnexpectedWndHandling_PressEnter" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_PressEsc" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_SendCloseCommand" type="1" value="True" />
@@ -3682,33 +3432,12 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="19" colIndex="0">
+		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="-1" colIndex="1">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
 			</columns>
-			<data>
-				<row val0="True" val1="AfxWnd140u" />
-				<row val0="True" val1="VSFlexGrid8N" />
-				<row val0="True" val1="Afx:00400000:8" />
-				<row val0="True" val1="msctls_statusbar32" />
-				<row val0="True" val1="AfxWnd90u" />
-				<row val0="True" val1="AfxFrameOrView90u" />
-				<row val0="True" val1="Afx:00D80000:8" />
-				<row val0="True" val1="CCFIOFWTabControl" />
-				<row val0="True" val1="AfxFrameOrView140u" />
-				<row val0="True" val1="Afx:00D80000:b" />
-				<row val0="True" val1="Afx:00D60000:8" />
-				<row val0="True" val1="Afx:00650000:8" />
-				<row val0="True" val1="Afx:00220000:8" />
-				<row val0="True" val1="GXWND" />
-				<row val0="True" val1="Afx:00410000:8" />
-				<row val0="True" val1="ThunderRT6PictureBoxDC" />
-				<row val0="True" val1="MDIClient" />
-				<row val0="True" val1="TreeView20WndClass" />
-				<row val0="True" val1="Thunder*" />
-				<row val0="True" val1="Afx*" />
-			</data>
+			<data />
 		</setting>
 		<setting name="Visualizer_AutoUpdate" type="1" value="False" />
 		<setting name="Visualizer_AutoUpdateMode" type="6" rowIndex="0" colIndex="0">
@@ -3787,16 +3516,16 @@
 		<setting name="ZFJ_ZephyrAccessKey" type="5" value="" />
 		<setting name="ZFJ_ZephyrSecretKey" type="5" value="" />
 	</settings>
-	<analysis key="{BFC14EBA-0D07-4E18-9D03-1B461C647E8B}" />
+	<analysis key="{1AC3DD9D-06FD-4117-A302-E5D92DFED2AD}" />
 	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
 		<data />
 	</scc>
-	<issueTracking key="{BE31926E-8119-44CE-BD43-D58E1FF5D4F9}">
+	<issueTracking key="{8C54453B-8876-406E-99E4-82848F408EFD}">
 		<Templates>
-			<Template Id="{1EB17ADF-E4EB-404D-97DC-AD758A1E8C1D}" ConnectionId="{00000000-0000-0000-0000-000000000000}" Description="This template is used by TestCompleteTestComplete&apos;s Log subsystem to post test results to an issue-tracking system. You can also use it at your desire." Name="CreateWorkItem" IsSystem="True" ItemTypeName="" ProjectName="" IsEditing="False" ItemId="">
+			<Template Id="{1EB17ADF-E4EB-404D-97DC-AD758A1E8C1D}" ConnectionId="{00000000-0000-0000-0000-000000000000}" Description="This template is used by TestComplete&apos;s Log subsystem to post test results to an issue-tracking system. You can also use it at your desire." Name="CreateWorkItem" IsSystem="True" ItemTypeName="" ProjectName="" IsEditing="False" ItemId="">
 				<Fields>
-					<Field ItemId="{2E58FAC8-874B-442B-A4CF-42D8EC6C2485}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Subject" />
-					<Field ItemId="{BCA0DF7D-4819-4A39-97E9-4668FD16B454}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Description" />
+					<Field ItemId="{945F0997-D1D2-4996-9F21-2F1B53922410}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Subject" />
+					<Field ItemId="{EFAE1331-9A84-4111-995C-A925E41CBC0C}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Description" />
 				</Fields>
 			</Template>
 		</Templates>
