@@ -778,3 +778,9 @@ class ProjectExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex           
             
+    def ClicktabitemEIOconfigwindow(self,identifiers):
+        """ClicktabitemEIOconfigwindow"""
+        try:
+            Controlexpertutility.Click_tab_item_EIO_config_window(identifiers)
+        except Exception as ex:
+            raise Exception(ex) from ex

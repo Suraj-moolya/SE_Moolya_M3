@@ -353,9 +353,6 @@ def Verify_variable_is_removed_Refine_Offline(var_name):
   else:
     Log.Checkpoint(var_name+" is removed")
     
-
-
-
     
 def edit_IP_Address(param):
   Identifier, value = param.split('$$')
@@ -453,8 +450,6 @@ def select_PLC_bus_combobox_item_CE(param):
   Applicationutility.wait_in_seconds(1000, 'Wait')
   ce_obj.yescebuttonbutton.click()
     
-def ysysysys():
-  select_PLC_bus_combobox_item_CE('BME P58 4040   03.20')
   
 def create_logical_network():
   controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
@@ -480,4 +475,3 @@ def Click_tab_item_EIO_config_window(identifier):
   else: 
     Log.Warning(identifier + " is not available")
 
-  

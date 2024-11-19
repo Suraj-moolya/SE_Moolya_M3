@@ -23,6 +23,27 @@ class Topology(MapBase):
     def executablesdropdowntextbox(self):
         """executablesdropdowntextbox"""
         return self.get_element("Executablesdropdown_Topology")
+             
+    @property
+    def primaryaddresslistdropdown(self):
+        """primaryaddresslistdropdowntextbox"""
+        return self.get_element("primaryaddresslistdropdown_Topology")
+        
+    @property
+    def startenginecheckbox(self):
+        """startenginecheckboxtextbox"""
+        return self.get_element("startenginecheckbox_Topology")
+        
+    @property
+    def backupdatadescriptiontextbox(self):
+        """backupdatadescriptiontextbox"""
+        return self.get_element("backupdatadescription_Topology")
+              
+    @property
+    def deploydataselectiongridtextbox(self):
+        """deploydataselectiongridtextbox"""
+        return self.get_element("deploydataselectiongrid_Topology")
+
               
     @property
     def newpasswordboxtextbox(self):
@@ -39,3 +60,4 @@ class Topology(MapBase):
         """oldpasswordboxtextbox"""
         return self.get_element("OldPasswordBox_Topology")
               
+

@@ -85,8 +85,7 @@
              <UIControl Element="rclickmenu_EngineeringClient" Name="WPFObject('HwndSource* PopupRoot', '')" Parent="EngineeringClient_" />
              <UIControl Element="rclicksubmenu_EngineeringClient" Name="WPFObject('HwndSource* PopupRoot', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="userdropdownMenuItem_EngineeringClient" Name="WPFObject('NonLogicalAdornerDecorator', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="userlogoutscreen_EngineeringClient" Name="WPFObject('TxtMessage')" Parent="EngineeringClient_" />
-			 
+			 <UIControl Element="userlogoutscreen_EngineeringClient" Name="WPFObject('TxtMessage')" Parent="EngineeringClient_" />			 
         </Component>
         <Component name="System Explorer Screen">
              <UIControl Element="SystemExplorerNode_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
@@ -159,6 +158,7 @@
 			 <UIControl Element="ConfirmPasswordbox_TopologyExporerTab" Name="WPFObject('ConfirmPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="OldPasswordBox_TopologyExporerTab" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="ClosebuttonTM_TopologyExporerTab" Name="Button('Close')" Parent="EngineeringClient_" />
+			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />	 
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="TopologyConfigurationWindow_TopologyExporerTab" Name="MenuBar('Application')" Parent="EngineeringClient_" />
 			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="MDIWindow('Hardware Catalog')" Parent="EngineeringClient_" />
@@ -282,10 +282,7 @@
 			 <UIControl Element="ProjectControllerSetting_ProjectExplorerTab" Name="WPFObject('ProjectContainerSettingsDialog', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="SettingsDropDown_ProjectExplorerTab" Name="WPFObject('DropDownScrollViewer')" Parent="EngineeringClient_" />
 			 <UIControl Element="Settings_ProjectExplorerTab" Name="WPFObject('ProjectContainerSettingsDialog', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="MessageBoxYes_ProjectExplorerTab" Name="WPFObject('Button', 'Yes', *)" Visible = "True" Parent="EngineeringClient_" />
-			 
-			 
-			 
+			 <UIControl Element="MessageBoxYes_ProjectExplorerTab" Name="WPFObject('Button', 'Yes', *)" Visible = "True" Parent="EngineeringClient_" />			 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />
@@ -329,6 +326,7 @@
 			 <UIControl Element="RenameInstancePopup_MessageBox" Name="WPFObject('MessageBoxButtonsPanel')" Parent="EngineeringClient_" />
 			 <UIControl Element="ChannelPropertiesDialog_MessageBox" Name="WPFObject('ChannelPropertiesDialogForController', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="ManageNetworkVariables_MessageBox" Name="WPFObject('ManageNetworkVariables', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('HwndSource* ModalDialogWindow', '', 1)" Enabled="True" VisibleOnScreen="True" Parent="EngineeringClient_" />
 			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('* ModalDialogWindow', '', 1)" Enabled="True" VisibleOnScreen="True" Parent="EngineeringClient_" />
 			 <UIControl Element="ReConfirmDBPOK_MessageBox" Name="WPFObject('Button', 'OK', 2)" Parent="EngineeringClient_" />
 			<UIControl Element="Modificationpopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
@@ -363,6 +361,7 @@
              <UIControl Element="DTMBrowser_RefineOffline" Name="MenuItem('DTM Browser\tAlt+Shift+1')" Parent="ControlExpert_" />  
 			 <UIControl Element="PanelCE_RefineOffline" Name="Panel('[0..0]')" Parent="ControlExpert_ParentDialogWindowCE" />
 			 <UIControl Element="SaveRefineOffline1_RefineOffline" Name="WPFObject('Button', '', *)" DataContext.ToolTip.OleValue="Save" Parent="EngineeringClient_" />
+			 <UIControl Element="FacetTextbox_RefineOffline" Name="TextObject('CondSumGP_ST', 2)" Visible="True" Parent="EngineeringClient_" />
 		</Component>
         <Component name="Operation client">
              <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />
@@ -379,6 +378,7 @@
              <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
 			 <UIControl Element="newdevicece_ControlExpert" Name="MenuItem('New Device...')" Parent="ControlExpert_" />
 			 <UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ipconfigmdiwin_ControlExpert" Name="TextObject('IPConfig')" Parent="EngineeringClient_" />
 			 <UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
 			 <UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
@@ -387,6 +387,7 @@
 			 <UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
+
         </Component>
         <Component name="Dialog CE">
              <UIControl Element="DialogPanelCE_DialogCE" Name ="Panel('[0..0]')" Parent="ControlExpert_"/>
@@ -405,10 +406,19 @@
         </Component>
         <Component name="Menu Bar">
              <UIControl Element="ApplicationMenuBar_MenuBar" Name="MenuBar('Application')" Parent="EngineeringClient_" />
-
         </Component>
         <Component name="Save As window">
              <UIControl Element="Filesavedlocation_SaveAswindow" Parent="EnginneringClient_" />
+        </Component>
+		<Component name="Topology">
+             <UIControl Element="TopologyExplorerTree_Topology" Name="WPFObject('TopologicalExplorerTree')" Parent="EngineeringClient_" />
+             <UIControl Element="Topologydeviceediter_Topology" Name="WPFObject('PART_InnerPresenter')" Parent="EngineeringClient_TopologyExplorerTree" />
+             <UIControl Element="projectdropdown_Topology" Name="WPFObject('Projects')" Parent="EngineeringClient_" />
+             <UIControl Element="Executablesdropdown_Topology" Name="WPFObject('Executables')" Parent="EngineeringClient_" />
+             <UIControl Element="primaryaddresslistdropdown_Topology" Name="WPFObject('PrimaryAddressList')" Parent="EngineeringClient_" />
+             <UIControl Element="startenginecheckbox_Topology" Name="WPFObject('Box')" Parent="EngineeringClient_" />
+			 <UIControl Element="backupdatadescription_Topology" Name="WPFObject('TextBox', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="deploydataselectiongrid_Topology" Name="WPFObject('SelectionGrid')" Parent="EngineeringClient_" />
         </Component>
         <Component name="Refine Offline">
              <UIControl Element="CloseRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Close" Parent="EngineeringClient_" />
@@ -432,12 +442,6 @@
 			 <UIControl Element="WindowCombobox_RefineOffline" Name="Window('ComboBox', '', 1)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="FacetTextbox_RefineOffline" Name="TextObject('CondSumGP_ST', 2)" Visible="True" Parent="EngineeringClient_" />
 			 
-		
-
-        </Component>
-        <Component name="Aveva Screen">
-			 <UIControl Element="MainParent_AvevaScreen" Parent="ComputerSetupEditor, *_" />
-			 <UIControl Element="SysTreeView_AvevaScreen" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="ComputerSetupEditor, *_" />
 		</Component>
 		<Component name="Operation client">
              <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />       

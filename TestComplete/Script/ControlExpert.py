@@ -43,6 +43,7 @@ class ControlExpert(MapBase):
     def yescebuttonbutton(self):
         """YesCEbutton_ControlExpert"""
         return self.get_element("YesCEbutton_ControlExpert")
+           
 
     @property
     def modaldialogewindowce(self):
@@ -78,3 +79,4 @@ class ControlExpert(MapBase):
     def toolbarpopwindowce(self):
         """toolbarpopwindowce"""
         return self.get_element("ToolPopUP_ControlExpert")
+

@@ -771,6 +771,7 @@ def Verify_forgot_password_Authentication_Code():
   
   except Exception as exe:
     Log.Message(str(exe))
+
     
 def set_ip_and_subnet(ip_address, subnet_mask):
   field_values = {
@@ -807,7 +808,7 @@ def configure_ethernet_network(network):
         item.Click()
         Log.Checkpoint(f"'{network}' selected for this '{controller_name}'.")
         
-def kfj():
+def kgf():
   controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
   for control in controller_row:
     if getattr(getattr(control, "DataContext", None), "DisplayName", None) == "Controller":
@@ -847,7 +848,7 @@ def doubleclick_catalog_browser_item_TE(val):
     project_browser = get_project_browser()
     count = project_browser.wItems.Count
     for i in range(count):
-        if project_browser.wItem[i] == val:
+        if val in project_browser.wItem[i]:
             project_browser.DblClickItem(val)
             break
 
@@ -1132,4 +1133,3 @@ def shshshs():
     Sys.Keys("[Right]")
   Sys.Keys("[Enter]")
   Log.Checkpoint(f"Selected rack number {rack_number} in PLC.")
-

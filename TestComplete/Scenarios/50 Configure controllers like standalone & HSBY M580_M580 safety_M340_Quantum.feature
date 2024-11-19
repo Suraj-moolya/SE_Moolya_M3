@@ -197,6 +197,7 @@ Examples:
 @test000
 Scenario Outline: Controller protection to Disable 
 When I change the controller protection to disable
+
 Examples:
   | SlNo. |
   | 1     |
@@ -205,6 +206,8 @@ Examples:
 Scenario Outline: Close Controllers  in Topology Explorer
 When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
+
+@Close_Controllers_in_Topology_Explorer__M580_Standalone
 Examples:
   | SlNo. | button                 | FolderName  |
   | 1     | M580_Standalone$$Close | Controllers |
@@ -262,17 +265,16 @@ Examples:
   
 @TC_EPE_TE_CS_000
 @test000
-Scenario Outline: Change CPU Version of controller (BME P58 4040   03.20)
+Scenario Outline: Change CPU Version of controller 
 When I selected select PLC bus combobox item CE in refine offline as '<Cpu_version>'
+
+@Change_CPU_Version_of_controller__BME_P58_4040_03.20
 Examples:
   | SlNo. | Cpu_version          |
   | 1     | BME P58 4040   03.20 |
   
 
-@TC_EPE_TE_CS_000
-@test000
-Scenario Outline: Change CPU Version of controller (BME P58 6040   03.20)
-When I selected select PLC bus combobox item CE in refine offline as '<Cpu_version>'
+@Change_CPU_Version_of_controller__BME_P58_6040_03.20
 Examples:
   | SlNo. | Cpu_version          |
   | 1     | BME P58 6040   03.20 |
@@ -295,3 +297,4 @@ When I selected select PLC bus combobox item CE in refine offline as '<Cpu_versi
 Examples:
   | SlNo. | Cpu_version          |
   | 1     | BME P58 6040   03.20 |
+

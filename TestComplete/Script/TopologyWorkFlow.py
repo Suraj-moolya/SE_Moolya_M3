@@ -2,26 +2,38 @@
 
 from Topology import Topology
 import Applicationutility
-import Topologyexplorerutility
+import Engineeringclientutility
+import Topologyutility
+
 class TopologyWorkFlow:
     """TopologyWorkFlow"""
     topology_obj = Topology()
-    topology_obj1 = TopologyExplorerTab()
 
         
-    def textboxnewpasswordboxentercontrollerpasswordte(self,param):
-        """textboxnewpasswordboxentercontrollerpasswordte"""
+    def textboxtopologyexplorertreeselectcontextmenuitemec(self,menu_item):
+        """textboxtopologyexplorertreeselectcontextmenuitemec"""
         try:
-            Topologyexplorerutility.Enter_Controller_Password_TE(param)
+            Engineeringclientutility.select_ContextMenu_Items_EC(menu_item)
         except Exception as ex:
             raise Exception(ex) from ex
         
-    def textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte(self,param):
-        """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
+    def textboxprojectdropdownselectdeploypopupdropdownvaluete(self,param):
+        """textboxprojectdropdownselectdeploypopupdropdownvaluete"""
         try:
-            Topologyexplorerutility.Verify_entered_Controller_Password_valid_invalid_TE(param)
+            Topologyutility.select_dropdown_value_popup_TE(param)
         except Exception as ex:
             raise Exception(ex) from ex
+      
+    def textboxbackupdatadescriptionentered(self,backupDataDescription3):
+        """topology_obj.backupdatadescriptiontextbox"""
+        TopologyWorkFlow.topology_obj.backupdatadescriptiontextbox.enter_text(backupDataDescription3)
+        
+    def textboxdeploydataselectiongridselectdeploydatafromselectiongridte(self):
+        """textboxdeploydataselectiongridselectdeploydatafromselectiongridte"""
+        try:
+            Topologyutility.select_latest_backup_data_TE()
+        except Exception as ex:
+            raise Exception(ex) from ex  
             
     def startenginecheckboxclickafterrefineonline(self,param):
         """textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte"""
@@ -36,4 +48,4 @@ class TopologyWorkFlow:
             TopologyWorkFlow.topology_obj1.deployokbutton.click()
         except Exception as ex:
             raise Exception(ex) from ex
-        
+
