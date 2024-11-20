@@ -278,6 +278,11 @@ Examples:
 Examples:
   | SlNo. | Cpu_version          |
   | 1     | BME P58 6040   03.20 |
+  
+@Change_CPU_Version_of_controller__BME_P58_5040_03.20
+Examples:
+  | SlNo. | Cpu_version          |
+  | 1     | BME P58 5040   03.20 |
 
 
 @TC_EPE_TE_CS_000
