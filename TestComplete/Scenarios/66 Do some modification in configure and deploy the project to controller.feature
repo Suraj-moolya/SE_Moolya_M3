@@ -125,13 +125,7 @@ Examples:
 
   
   
-@TC_EPE_TE_00
-@test00
-Scenario Outline: Validate using shortcut keys
-When I Validate in TE Window using shortcut Keys
-Examples:
-  | SlNo. |
-  | 1     |
+
   
   
 @TC_EPE_TE_00

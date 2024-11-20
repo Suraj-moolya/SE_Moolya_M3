@@ -1,4 +1,0 @@
-
-When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
-When I Select context menu item EC project browser in project explorer as "Configure"|| Log Message:The Context Menu Item clicked is : Configure
-Then Verify Action message in notification pannel project browser in project explorer as "Open Configure Editor"|| Log Message:Open Configure Editor (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture40.png

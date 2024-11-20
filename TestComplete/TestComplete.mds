@@ -2889,22 +2889,37 @@
 			<testItem name="Group1" key="{8CA77F35-5CFB-4C5F-A4FC-B444EB07A810}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="ProjectTestItem36" key="{3AB49394-6416-459A-A1EC-2487CEF34F8F}" group="False" parallel="False" enabled="True" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem36" key="{3AB49394-6416-459A-A1EC-2487CEF34F8F}" group="False" parallel="False" enabled="False" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem37" key="{7F5B3430-3CAE-48D0-AE5F-849C76AC38C0}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDI_1602_slot2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem37" key="{7F5B3430-3CAE-48D0-AE5F-849C76AC38C0}" group="False" parallel="False" enabled="False" testMoniker="*|@Add_Discrete_Module__BMX_DDI_1602_slot2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem38" key="{14732466-5AF8-47A0-989E-59C732AC5131}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDO_1602_slot3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem38" key="{14732466-5AF8-47A0-989E-59C732AC5131}" group="False" parallel="False" enabled="False" testMoniker="*|@Add_Discrete_Module__BMX_DDO_1602_slot3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem39" key="{4A524FCC-7C08-4C04-8BDA-D97471D6B3A8}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Analog_Module__BMX_AMI_0810_Slot4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem39" key="{4A524FCC-7C08-4C04-8BDA-D97471D6B3A8}" group="False" parallel="False" enabled="False" testMoniker="*|@Add_Analog_Module__BMX_AMI_0810_Slot4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem43" key="{775FFA2C-E5EB-4DC4-A047-19AF4528DA31}" group="False" parallel="False" enabled="True" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_5040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem44" key="{BF16BBDE-DE89-4C9C-9740-0451534C7492}" group="False" parallel="False" enabled="True" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.179.243.21" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem45" key="{A15BEA29-3C52-4708-8B56-7115E171DBE2}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Validate using shortcut keys" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />

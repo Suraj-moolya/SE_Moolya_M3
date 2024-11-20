@@ -1,4 +1,0 @@
-
-When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
-When I Select context menu item EC project browser in project explorer as "Create NIC"|| Log Message:The Context Menu Item clicked is : Create NIC
-Then Verify Action message in notification pannel project browser in project explorer as "Create Service Handler"|| Log Message:Create Service Handler (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture29.png
