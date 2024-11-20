@@ -2909,12 +2909,12 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem43" key="{775FFA2C-E5EB-4DC4-A047-19AF4528DA31}" group="False" parallel="False" enabled="True" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_5040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem43" key="{775FFA2C-E5EB-4DC4-A047-19AF4528DA31}" group="False" parallel="False" enabled="False" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_5040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem44" key="{BF16BBDE-DE89-4C9C-9740-0451534C7492}" group="False" parallel="False" enabled="True" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.179.243.21" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem44" key="{BF16BBDE-DE89-4C9C-9740-0451534C7492}" group="False" parallel="False" enabled="False" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.179.243.21" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2924,17 +2924,17 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem40" key="{9B456232-8DCC-4478-AE0A-4768398C4AA2}" group="False" parallel="False" enabled="True" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem40" key="{9B456232-8DCC-4478-AE0A-4768398C4AA2}" group="False" parallel="False" enabled="False" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem41" key="{85B1124D-6E42-4F37-81E5-97A3DDCDF2B0}" group="False" parallel="False" enabled="True" testMoniker="66 Do some modification in configure and deploy the project to controller|Deploy Controller M580 Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem41" key="{85B1124D-6E42-4F37-81E5-97A3DDCDF2B0}" group="False" parallel="False" enabled="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Deploy Controller M580 Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem42" key="{D8901108-6FCB-4F1A-9BD8-47071B04AD3F}" group="False" parallel="False" enabled="True" testMoniker="66 Do some modification in configure and deploy the project to controller|Select IP and Click on Start Engine" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem42" key="{D8901108-6FCB-4F1A-9BD8-47071B04AD3F}" group="False" parallel="False" enabled="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Select IP and Click on Start Engine" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -3550,7 +3550,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="19" colIndex="0">
+		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="2" colIndex="0">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3558,24 +3558,25 @@
 			<data>
 				<row val0="True" val1="AfxWnd140u" />
 				<row val0="True" val1="VSFlexGrid8N" />
-				<row val0="True" val1="Afx:00400000:8" />
+				<row val0="False" val1="Afx:00400000:8" />
 				<row val0="True" val1="msctls_statusbar32" />
-				<row val0="True" val1="AfxWnd90u" />
+				<row val0="False" val1="AfxWnd90u" />
 				<row val0="True" val1="AfxFrameOrView90u" />
-				<row val0="True" val1="Afx:00D80000:8" />
+				<row val0="False" val1="Afx:00D80000:8" />
 				<row val0="True" val1="CCFIOFWTabControl" />
 				<row val0="True" val1="AfxFrameOrView140u" />
-				<row val0="True" val1="Afx:00D80000:b" />
-				<row val0="True" val1="Afx:00D60000:8" />
-				<row val0="True" val1="Afx:00650000:8" />
-				<row val0="True" val1="Afx:00220000:8" />
+				<row val0="False" val1="Afx:00D80000:b" />
+				<row val0="False" val1="Afx:00D60000:8" />
+				<row val0="False" val1="Afx:00650000:8" />
+				<row val0="False" val1="Afx:00220000:8" />
 				<row val0="True" val1="GXWND" />
-				<row val0="True" val1="Afx:00410000:8" />
+				<row val0="False" val1="Afx:00410000:8" />
 				<row val0="True" val1="ThunderRT6PictureBoxDC" />
 				<row val0="True" val1="MDIClient" />
 				<row val0="True" val1="TreeView20WndClass" />
 				<row val0="True" val1="Thunder*" />
 				<row val0="True" val1="Afx*" />
+				<row val0="False" val1="Afx:00520000:8" />
 			</data>
 		</setting>
 		<setting name="Visualizer_AutoUpdate" type="1" value="False" />

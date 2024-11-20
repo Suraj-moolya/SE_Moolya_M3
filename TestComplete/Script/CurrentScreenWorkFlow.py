@@ -2,6 +2,7 @@
 
 from CurrentScreen import CurrentScreen
 from TopologyExplorerTab import TopologyExplorerTab
+from ControlExpert import ControlExpert
 import Applicationutility
 import Actionutility
 import Conditionsutility
@@ -10,6 +11,7 @@ class CurrentScreenWorkFlow:
     """CurrentScreenWorkFlow"""
     currentscreen_obj = CurrentScreen()
     TopologyExplorerTab_obj = TopologyExplorerTab()
+    ce_obj = ControlExpert()
 
         
     def windowloginpageaccesstoapplication(self):
@@ -27,6 +29,8 @@ class CurrentScreenWorkFlow:
     def closebuttontm(self):
         """TopologyExplorerTab_obj.Closetmbutton"""
         CurrentScreenWorkFlow.TopologyExplorerTab_obj.Closetmbutton.object.ClickButton()
+        Applicationutility.wait_in_seconds(1000,"Wait")
+        CurrentScreenWorkFlow.ce_obj.yescebuttonbutton.click()
         
         
     def buttonengineeringclienttwolaunchengineeringclientsecondtime(self):

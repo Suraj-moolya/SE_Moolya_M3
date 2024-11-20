@@ -49,6 +49,7 @@ def step_impl():
     """I Enter pssword in '<password>' field in Controller password grid popup"""
     obj.closebuttontm()
     
+    
 @when("I change the controller protection to disable")
 def step_impl():
     """I change the controller protection to disable"""
