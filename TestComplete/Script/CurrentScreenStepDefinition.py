@@ -79,3 +79,9 @@ def step_impl():
 def step_impl():
     """I change the controller protection to disable"""
     obj.clickstartenginecheckbox()
+    
+    
+@when("I close PLC Bus window in controller configuration window")
+def step_impl():
+    """I close PLC Bus window in controller configuration window"""
+    obj.closebuttonplcbus()

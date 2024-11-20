@@ -75,6 +75,60 @@
 				<Prp name="relpath" type="S" value="20-11-2024_11_53_46_741\Description.tcLog"/>
 				<Prp name="status" type="I" value="0"/>
 			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45616.5003616319"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6AA758E9-8578-46CB-ABCA-638722D2FB60}"/>
+				<Prp name="nameofroot" type="S" value="Nov 21 Execution order (Milestone 3)"/>
+				<Prp name="relpath" type="S" value="20-11-2024_12_00_31_245\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45616.5095059259"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{EB06F64D-91C5-4B80-B053-344FE0B1DDBB}"/>
+				<Prp name="nameofroot" type="S" value="Group1"/>
+				<Prp name="relpath" type="S" value="20-11-2024_12_13_41_312\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45616.5119008565"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{55746F55-7249-4969-91AE-7C7739EBDEA1}"/>
+				<Prp name="nameofroot" type="S" value="Group1"/>
+				<Prp name="relpath" type="S" value="20-11-2024_12_17_08_234\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45616.5153910532"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6BA16C4F-7FBA-40AC-9E80-A240F4B3FB41}"/>
+				<Prp name="nameofroot" type="S" value="Group1"/>
+				<Prp name="relpath" type="S" value="20-11-2024_12_22_09_787\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45616.5207484838"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{679630B4-B16D-4B33-8CC8-88102C563315}"/>
+				<Prp name="nameofroot" type="S" value="Close PLC Bus Window in TM"/>
+				<Prp name="relpath" type="S" value="20-11-2024_12_29_52_669\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45616.52103375"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{41BBF395-F5D1-48DC-BD0E-0B57B7416648}"/>
+				<Prp name="nameofroot" type="S" value="Close PLC Bus Window in TM"/>
+				<Prp name="relpath" type="S" value="20-11-2024_12_30_17_316\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
 		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>

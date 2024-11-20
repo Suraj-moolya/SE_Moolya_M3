@@ -295,4 +295,11 @@ Examples:
   | 1     | Configuration$$0 : PLC bus |
   
 
+@TC_EPE_TE_CS_000
+@test000
+Scenario Outline: Close PLC Bus Window in TM 
+When I close PLC Bus window in controller configuration window
 
+Examples:
+  | SlNo. |
+  | 1     |

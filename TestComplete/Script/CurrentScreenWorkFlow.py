@@ -59,3 +59,8 @@ class CurrentScreenWorkFlow:
     def clickstartenginecheckbox(self):
         """clickstartenginecheckbox"""
         CurrentScreenWorkFlow.TopologyExplorerTab_obj.startenginecheckbox.click()
+        
+    def closebuttonplcbus(self):
+        """TopologyExplorerTab_obj.Closetmbutton"""
+        CurrentScreenWorkFlow.TopologyExplorerTab_obj.Closetmbutton.object.ClickButton()
+        
