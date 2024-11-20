@@ -36,11 +36,11 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen I Select deploy data from selection grid TE deploy data selection grid in topology")
     obj.textboxdeploydataselectiongridselectdeploydatafromselectiongridte()  
     
-@when("I select start engine checkbox in in topology")
-def step_impl():
-    """I select start engine checkbox in in topology"""
-    CommonUtil.write_text_file("\nWhen I select start engine checkbox in in topology")
-    obj.checkboxstartenginecheckbox()
+#@when("I select start engine checkbox in in topology")
+#def step_impl():
+#    """I select start engine checkbox in in topology"""
+#    CommonUtil.write_text_file("\nWhen I select start engine checkbox in in topology")
+#    obj.clickstartenginecheckbox()
 
 @when("I Enter Controller Password TE New Password box in topology as {arg}")
 def step_impl(newPasswordBox1):

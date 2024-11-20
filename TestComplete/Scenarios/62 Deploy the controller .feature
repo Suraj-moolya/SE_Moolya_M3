@@ -9,7 +9,7 @@ And I select deploy popup dropdown value TE project dropdown in topology as '<pr
 And I select deploy popup dropdown value TE Executables dropdown in topology as '<Executables dropdown3>'
 And I click modal dialog window Modal dialog window in message box as '<Modal dialog window4>'
 And I select ip adress from deploy project build TE Modal dialog window in message box as '<Modal dialog window5>'
-And I select start engine checkbox in in topology
+And I Click on start engine checkobox in deploy changes refine online window
 And I click modal dialog window Modal dialog window in message box as '<Modal dialog window4>'
 And I Click popup button object Modal Dialog Window 1 in message box as '<Modal Dialog Window 16>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'

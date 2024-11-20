@@ -14,7 +14,7 @@ Examples:
   
 @TC_EPE_EC_000
 @test000
-Scenario Outline: Refine Online M580 Standalone
+Scenario Outline: Refine Online M580 Standalone and click on Build and Deploy changes
 When I Click on Build and Deploy changes Button in refine online window
 And I Click on start engine checkobox in deploy changes refine online window
 

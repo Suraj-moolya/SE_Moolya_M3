@@ -7,10 +7,10 @@ Scenario Outline: Build All from control executeable r-click
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<project browser2>'
 And I click modal dialog window project browser in project explorer as '<project browser3>'
-
 Examples:
   | SlNo. | project browser1    | project browser2 | project browser3 |
   | 1     | ControlExecutable_1 | Build All        | OK               |
+
 
 
 
@@ -61,3 +61,16 @@ And I click modal dialog window project browser in project explorer as '<project
 Examples:
   | SlNo. | project browser1 | project browser2   | project browser3 |
   | 1     | Executable_1     | Generate and Build | OK               |
+  
+@TC_Build_All11
+@test003
+Scenario Outline: Build All from control executeable r-click click on yes and OK
+When I RClick control project browser project browser in project explorer as '<project browser1>'
+And I Select context menu item EC project browser in project explorer as '<project browser2>'
+And I click modal dialog window project browser in project explorer as '<project browser3>'
+Then Verify Action message in notification pannel project browser in project explorer as '<message1>'
+And I click modal dialog window project browser in project explorer as '<project browser4>'
+
+Examples:
+  | SlNo. | project browser1    | project browser2 | project browser3 | project browser4 | message1                                |
+  | 1     | ControlExecutable_1 | Build All        | Yes              | OK               | BuildAll Control Executable (Completed) |
