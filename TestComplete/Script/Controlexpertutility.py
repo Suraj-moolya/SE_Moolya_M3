@@ -395,7 +395,7 @@ def Click_dialog_panel_item_CE(param):
   panel_child = new_device_panel.FindAllChildren('Text', '*', 100)
   for item in panel_child:
     if param == item.Text:
-      item.DblClick()
+      item.Click()
       Log.Checkpoint(item.Text + ' is Selected.')
       Applicationutility.wait_in_seconds(1000, 'Wait')
       break

@@ -1,0 +1,16 @@
+
+When I search text template browser AE Templates browser in application explorer as "INTERLOCK8OFFGP"
+When I drag composite template drop application browser system1 AE Templates browser in application explorer as "INTERLOCK8OFFGP$$1.0.5"|| Log Message:The object selected to drag is : $INTERLOCK8OFFGP_UC|| Log Message:The object selected to drop to is : System_1
+Then Verify the template is present in Application browser|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture5.png
+When I search text template browser AE Templates browser in application explorer as "Analog"
+When I drag composite template drop application browser system1 AE Templates browser in application explorer as "AnalogOutputGP$$1.0.93"|| Log Message:The object selected to drag is : $AnalogOutputGP|| Log Message:The object selected to drop to is : System_1
+Then Verify the template is present in Application browser|| Log Message:AnalogOutputGP_1 is  present in the Application browser|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture6.png
+When I search text template browser AE Templates browser in application explorer as "Analog"
+When I drag composite template drop application browser system1 AE Templates browser in application explorer as "AnalogInputGP$$1.0.138"|| Log Message:The object selected to drag is : $AnalogInputGP|| Log Message:The object selected to drop to is : System_1
+Then Verify the template is present in Application browser|| Log Message:AnalogInputGP_1 is  present in the Application browser|| Log Message:AnalogOutputGP_1 is  present in the Application browser|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture7.png
+When I search text template browser AE Templates browser in application explorer as "MotorGP"
+When I drag composite template drop application browser system1 AE Templates browser in application explorer as "MotorGP$$1.0.123"|| Log Message:The object selected to drag is : $MotorGP|| Log Message:The object selected to drop to is : System_1
+Then Verify the template is present in Application browser|| Log Message:AnalogInputGP_1 is  present in the Application browser|| Log Message:AnalogOutputGP_1 is  present in the Application browser|| Log Message:MotorGP_1 is  present in the Application browser|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture8.png
+When I search text template browser AE Templates browser in application explorer as "ValveGP"
+When I drag composite template drop application browser system1 AE Templates browser in application explorer as "ValveGP$$1.0.100"|| Log Message:The object selected to drag is : $ValveGP|| Log Message:The object selected to drop to is : System_1
+Then Verify the template is present in Application browser|| Log Message:AnalogInputGP_1 is  present in the Application browser|| Log Message:AnalogOutputGP_1 is  present in the Application browser|| Log Message:MotorGP_1 is  present in the Application browser|| Log Message:ValveGP_1 is  present in the Application browser|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture9.png

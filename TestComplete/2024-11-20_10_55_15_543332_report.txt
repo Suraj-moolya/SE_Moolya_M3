@@ -1,0 +1,6 @@
+
+When I Navigate through project browser CE Project Browser RO in refine offline as "Configuration$$0 : PLC bus$$0 : BME XBP 0800$$2"|| Log Message:The tree node '[0]' is already selected.When I enterkey Project Browser RO in refine offline
+When I Dblclick dialog panel item CE Dialog Panel CE in dialog ce as "Discrete"|| Log Message:9|| Log Message:Discrete is Double Clicked.
+When I Click dialog panel item CE Dialog Panel CE in dialog ce as "BMX DDI 1602"|| Log Message:BMX DDI 1602 is Selected.
+When I Select bottom listitem dialog panel item CE Dialog List box CE in dialog ce as "<Dialog List box CE5>"|| Log Message:<Dialog List box CE5> not found.
+When I selected Dialog OK CE in dialog ce|| Log Error:The tested window (or control) has been deleted.

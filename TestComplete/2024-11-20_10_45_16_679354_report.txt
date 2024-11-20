@@ -1,0 +1,5 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+Then verify context menu items System Explorer Node in system explorer|| Log Message:Restore Visible status:True|| Log Message:Restore Enabled status:True|| Log Message:Create System Visible status:True|| Log Message:Create System Enabled status:True|| Log Message:Create Folder Visible status:True|| Log Message:Create Folder Enabled status:True|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture2.png
+When I selected Create System in context menu
+Then Verify Action message in notification pannel project browser in project explorer as "Create System"|| Log Message:Create System (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture3.png

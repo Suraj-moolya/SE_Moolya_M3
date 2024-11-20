@@ -1,0 +1,4 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Properties"|| Log Message:The Context Menu Item clicked is : Properties
+When I change controller properties with drop down options as '<options>'|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture38.png|| Log Message:Clicked Yes button.

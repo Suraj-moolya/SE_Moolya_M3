@@ -1,0 +1,11 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Create Ethernet Network"|| Log Message:The Context Menu Item clicked is : Create Ethernet Network
+Then Verify Action message in notification pannel project browser in project explorer as "Create Ethernet Network"|| Log Message:Create Ethernet Network (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture19.png
+When I Rename Folder as per requirement in system explorer as "SE_Network"
+Then Verify Action message in notification pannel project browser in project explorer as "Update Ethernet Network"|| Log Message:Update Ethernet Network (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture20.png|| Log Message:Workstation folder is not expanded
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Create Ethernet Network"|| Log Message:The Context Menu Item clicked is : Create Ethernet Network
+Then Verify Action message in notification pannel project browser in project explorer as "Create Ethernet Network"|| Log Message:Create Ethernet Network (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture21.png
+When I Rename Folder as per requirement in system explorer as "Lab_Network"
+Then Verify Action message in notification pannel project browser in project explorer as "Update Ethernet Network"|| Log Message:Update Ethernet Network (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture22.png|| Log Message:Workstation folder is not expanded

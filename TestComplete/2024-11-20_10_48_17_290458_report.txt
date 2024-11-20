@@ -1,0 +1,10 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Create OFS"|| Log Message:The Context Menu Item clicked is : Create OFS
+Then Verify Action message in notification pannel project browser in project explorer as "Create Service Handler"|| Log Message:Create Service Handler (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture24.png
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Create Control Service"|| Log Message:The Context Menu Item clicked is : Create Control Service
+Then Verify Action message in notification pannel project browser in project explorer as "Create Service Handler"|| Log Message:Create Service Handler (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture25.png
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Create Supervision"|| Log Message:The Context Menu Item clicked is : Create Supervision
+Then Verify Action message in notification pannel project browser in project explorer as "Create Service Handler"|| Log Message:Create Service Handler (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\20-11-2024_10_44_25_337\Picture26.png
