@@ -68,6 +68,51 @@ def step_impl(confirmPasswordBox5):
     Delay(5000,"Wait")
     obj.textboxnewpasswordboxverifyenteredcontrollerpasswordvalidinvalidte(confirmPasswordBox5)
     Applicationutility.take_screenshot("Full Screenshot")
-  
 
-
+@when("I search template browser EC Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree1):
+    """I search template browser EC Topology Explorer Tree in topology as '<Topology Explorer Tree1>'"""
+    CommonUtil.write_text_file("\nWhen I search template browser EC Topology Explorer Tree in topology as \""+topologyExplorerTree1+"\"")
+    obj.textboxtopologyexplorertreesearchtemplatebrowserec(topologyExplorerTree1)
+    
+@when("I Select template EC Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree2):
+    """I Select template EC Topology Explorer Tree in topology as '<Topology Explorer Tree2>'"""
+    CommonUtil.write_text_file("\nWhen I Select template EC Topology Explorer Tree in topology as \""+topologyExplorerTree2+"\"")
+    obj.textboxtopologyexplorertreeselecttemplateec(topologyExplorerTree2)
+    
+@when("I DblClick template TE Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree1):
+    """I DblClick template TE Topology Explorer Tree in topology as '<Topology Explorer Tree1>'"""
+    CommonUtil.write_text_file("\nWhen I DblClick template TE Topology Explorer Tree in topology as \""+topologyExplorerTree1+"\"")
+    obj.textboxtopologyexplorertreedblclicktemplatete(topologyExplorerTree1)
+    
+@when("I Expand communication tab TE Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree2):
+    """I Expand communication tab TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'"""
+    CommonUtil.write_text_file("\nWhen I Expand communication tab TE Topology Explorer Tree in topology as \""+topologyExplorerTree2+"\"")
+    obj.textboxtopologyexplorertreeexpandcommunicationtabte(topologyExplorerTree2)
+    
+@when("I edit IP Address Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree3):
+    """I edit IP Address Topology Explorer Tree in topology as '<Topology Explorer Tree3>'"""
+    CommonUtil.write_text_file("\nWhen I edit IP Address Topology Explorer Tree in topology as \""+topologyExplorerTree3+"\"")
+    obj.textboxtopologyexplorertreeeditipaddress(topologyExplorerTree3)
+    
+@when("I RClick template TE Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree1):
+    """I RClick template TE Topology Explorer Tree in topology as '<Topology Explorer Tree1>'"""
+    CommonUtil.write_text_file("\nWhen I RClick template TE Topology Explorer Tree in topology as \""+topologyExplorerTree1+"\"")
+    obj.textboxtopologyexplorertreerclicktemplatete(topologyExplorerTree1)
+    
+@when("I Click on MenuItem in TE Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree2):
+    """I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'"""
+    CommonUtil.write_text_file("\nWhen I Click on MenuItem in TE Topology Explorer Tree in topology as \""+topologyExplorerTree2+"\"")
+    obj.textboxtopologyexplorertreeclickonmenuiteminte(topologyExplorerTree2)
+    
+@when("I modal dialog window select Item Topology Explorer Tree in topology as {arg}")
+def step_impl(topologyExplorerTree3):
+    """I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'"""
+    CommonUtil.write_text_file("\nWhen I modal dialog window select Item Topology Explorer Tree in topology as \""+topologyExplorerTree3+"\"")
+    obj.textboxtopologyexplorertreemodaldialogwindowselectitem(topologyExplorerTree3)

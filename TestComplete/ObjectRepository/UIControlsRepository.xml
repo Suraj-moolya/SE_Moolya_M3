@@ -180,9 +180,7 @@
 			 <UIControl Element="StartEngineCheckbox_TopologyExporerTab" Name="WPFObject('Box')" Parent="EngineeringClient_" />
 			 <UIControl Element="passwordOKButton_TopologyExporerTab" Name="WPFObject('ButtonOK')" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('Button', 'Deploy', 1)" Visible="True" Parent="EngineeringClient_" />
-			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />
-			 
-			 
+			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />	 
         </Component>
         <Component name="Global Templates Tab">
              <UIControl Element="globaltemplatecore_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
@@ -419,41 +417,8 @@
              <UIControl Element="startenginecheckbox_Topology" Name="WPFObject('Box')" Parent="EngineeringClient_" />
 			 <UIControl Element="backupdatadescription_Topology" Name="WPFObject('TextBox', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="deploydataselectiongrid_Topology" Name="WPFObject('SelectionGrid')" Parent="EngineeringClient_" />
-        </Component>
-        <Component name="Refine Offline">
-             <UIControl Element="CloseRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Close" Parent="EngineeringClient_" />
-             <UIControl Element="Refineonlinewindow_RefineOffline" Name="WPFObject('RefineOffline', '', *)" Parent="EngineeringClient_" />
-             <UIControl Element="SaveRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Save" Parent="EngineeringClient_" />
-             <UIControl Element="ConsistencyCheck_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Consistency Check" Parent="EngineeringClient_" />
-			 <UIControl Element="BuildDeployChanges_RefineOnline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Build and deploy the changes" Parent="EngineeringClient_" />
-             <UIControl Element="ProjectBrowserRO_RefineOffline" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="EngineeringClient_" />
-             <UIControl Element="MDIWindow_RefineOffline" Name="MDIWindow('*')" Parent="EngineeringClient_" />
-             <UIControl Element="FBDSectionWindow_RefineOffline" Name="Window('AfxFrameOrView140u', '', 1)" Parent="EngineeringClient_" />
-             <UIControl Element="WindowCombobox_RefineOffline" Name="Window('ComboBox', '', 1)" Parent="EngineeringClient_" />
-             <UIControl Element="DataSelection_RefineOffline" Name="MenuItem('Data Selection...\tCtrl+D')" Parent="ControlExpert_" />
-             <UIControl Element="Createvariable_RefineOffline" Name="Button('VCVALIDATE')" Parent="ControlExpert_" />
-             <UIControl Element="TypeCombobox_RefineOffline" Name="ComboBox('Type" Parent="ControlExpert_" />
-             <UIControl Element="RestoreParticipantwindowCE_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Restore Participant window" Parent="EngineeringClient_" />
-             <UIControl Element="Unlock_RefineOffline" Name="MenuItem('Unlock...')" Parent="ControlExpert_" />
-             <UIControl Element="ParentDialogWindowCE_RefineOffline" Name="Dialog('*')" Parent="ControlExpert_" />
-             <UIControl Element="Typecolumnellipsis_RefineOffline" ClassName="CDSEBitmapButton" Parent="EngineeringClient_MDIWindow" />
-             <UIControl Element="CustomizeColumns_RefineOffline" Name="MenuItem('Customize Columns...')" Parent="ControlExpert_" />
-             <UIControl Element="ManageNetworkVariables_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Manage Network Variables" Parent="EngineeringClient_" />
-			 <UIControl Element="WindowCombobox_RefineOffline" Name="Window('ComboBox', '', 1)" Visible="True" Parent="EngineeringClient_" />
-			 <UIControl Element="FacetTextbox_RefineOffline" Name="TextObject('CondSumGP_ST', 2)" Visible="True" Parent="EngineeringClient_" />
-			 
-		</Component>
-		<Component name="Operation client">
-             <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />       
-		</Component>
-		<Component name="Topology">
-             <UIControl Element="TopologyExplorerTree_Topology" Name="WPFObject('TopologicalExplorerTree')" Parent="EngineeringClient_" />
-             <UIControl Element="Topologydeviceediter_Topology" Name="WPFObject('PART_InnerPresenter')" Parent="EngineeringClient_TopologyExplorerTree" />
-             <UIControl Element="projectdropdown_Topology" Name="WPFObject('Projects')" Parent="EngineeringClient_" />
-             <UIControl Element="Executablesdropdown_Topology" Name="WPFObject('Executables')" Parent="EngineeringClient_" />
-             <UIControl Element="NewPasswordbox_Topology" Name="WPFObject('NewPasswordBox')" Parent="EngineeringClient_" />
+			 <UIControl Element="NewPasswordbox_Topology" Name="WPFObject('NewPasswordBox')" Parent="EngineeringClient_" />
              <UIControl Element="ConfirmPasswordbox_Topology" Name="WPFObject('ConfirmPasswordBox')" Parent="EngineeringClient_" />
              <UIControl Element="OldPasswordBox_Topology" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
         </Component>
-        
 </UIControlRepository>

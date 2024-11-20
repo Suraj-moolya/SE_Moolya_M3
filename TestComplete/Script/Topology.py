@@ -1,4 +1,4 @@
-"""Topology"""
+﻿"""Topology"""
 from MapBase import MapBase
 
 class Topology(MapBase):
@@ -60,4 +60,3 @@ class Topology(MapBase):
         """oldpasswordboxtextbox"""
         return self.get_element("OldPasswordBox_Topology")
               
-

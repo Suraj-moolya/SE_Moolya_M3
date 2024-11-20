@@ -49,3 +49,58 @@ class TopologyWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
 
+    def textboxtopologyexplorertreesearchtemplatebrowserec(self,search_text):
+        """textboxtopologyexplorertreesearchtemplatebrowserec"""
+        try:
+            Topologyexplorerutility.search_template_browser_EC(search_text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreeselecttemplateec(self,param):
+        """textboxtopologyexplorertreeselecttemplateec"""
+        try:
+            Topologyexplorerutility.Select_template_EC (param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreedblclicktemplatete(self,temp_name):
+        """textboxtopologyexplorertreedblclicktemplatete"""
+        try:
+            Topologyexplorerutility.DblClick_template_TE(temp_name)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreeexpandcommunicationtabte(self,val):
+        """textboxtopologyexplorertreeexpandcommunicationtabte"""
+        try:
+            Topologyexplorerutility.Expand_communication_tab_TE(val)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreeeditipaddress(self,param):
+        """textboxtopologyexplorertreeeditipaddress"""
+        try:
+            Topologyexplorerutility.edit_IP_Address(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreerclicktemplatete(self,temp_name):
+        """textboxtopologyexplorertreerclicktemplatete"""
+        try:
+            Topologyexplorerutility.RClick_template_TE(temp_name)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreeclickonmenuiteminte(self,menu_option):
+        """textboxtopologyexplorertreeclickonmenuiteminte"""
+        try:
+            Topologyexplorerutility.click_MenuItem_Toolbar(menu_option)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorertreemodaldialogwindowselectitem(self,val):
+        """textboxtopologyexplorertreemodaldialogwindowselectitem"""
+        try:
+            Actionutility.modal_dialog_windo_selectItem(val)
+        except Exception as ex:
+            raise Exception(ex) from ex
