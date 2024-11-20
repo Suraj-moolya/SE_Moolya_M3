@@ -79,16 +79,21 @@ Examples:
   | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | identifier         |
   | 1     | EIPGenericDeviceHW      | Communication           | IPAddress$$192.168.10.2 | EIPGenericDeviceHW |
 
-  
+## I have changed it according to execution plan please check ur orginal test case once  
 @TC_EPE_TE_CN_0022c
 @test003
 Scenario Outline: Map EtherNet IP device to Controller - add Ethernet Network
-When I RClick template TE Topology Explorer Tree in topology as '<Topology Explorer Tree1>'
-And I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'
+When I Right Click on nodes System Explorer Node in system explorer as '<Topology Explorer Tree1>'
+And I Select context menu item EC project browser in project explorer as '<Topology Explorer Tree2>'
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
+And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree4>'
+When I click modal dialog window project browser in project explorer as '<Button>'
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 |
-  | 1     | EIPGenericDeviceHW      | Physical Connections    | EthernetNetwork_1       |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3       | Topology Explorer Tree4       | Button |
+  | 1     | M580_Standalone         | Physical Connections    | M580_Standalone 0$$SE_Network | M580_Standalone 2$$SE_Network | OK     |
+  
+  
+
 
 
 

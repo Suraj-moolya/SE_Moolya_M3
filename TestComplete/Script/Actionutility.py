@@ -192,7 +192,17 @@ def modal_dialog_window_dialog(param):
       take_screenshot('Taking Screenshot of the Message Window.')
       break
       
-def modal_dialog_windo_selectItem(val):
-  list = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'ComboBox', 1000)
-  list[0].SelectedItem = val
-  Log.Message(val + " is selected")
+def modal_dialog_windo_selectItem(param):
+  controller, val = param.split("$$")
+  network_list = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'ComboBox', 1000)
+  for network in network_list:
+    if controller in network.DataContext.DeviceIdentifier.OleValue:
+      Log.Message(network.DataContext.DeviceIdentifier.OleValue)
+      network.SelectedItem = val
+      Log.Message(str(network_list[0].SelectedItem) + " is selected")
+      take_screenshot('Taking Screenshot')
+      break
+  else:
+    Log.Warning(f'{val} does not exist in the drop down')
+      
+      
