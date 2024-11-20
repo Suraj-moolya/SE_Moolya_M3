@@ -121,5 +121,5 @@ def select_latest_backup_data_TE():
       Log.Checkpoint(f'The item with Time stamp {obj.Items.Item[j].BackupTime.OleValue} is selected.')
       Applicationutility.take_screenshot('Taking screenshot of the selected')
       break
-    
-      
+
+ 

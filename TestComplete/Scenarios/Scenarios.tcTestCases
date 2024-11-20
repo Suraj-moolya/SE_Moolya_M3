@@ -83,5 +83,6 @@
 		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
 		<Feature Path="61 Check manage password, clear password and forget password.feature" />
 		<Feature Path="60 Check all the devices mapped for controller.feature" />
+		<Feature Path="55 Map the EPE devices to controller.feature" />
 	</Folder>
 </Scenarios>

@@ -192,4 +192,7 @@ def modal_dialog_window_dialog(param):
       take_screenshot('Taking Screenshot of the Message Window.')
       break
       
-
+def modal_dialog_windo_selectItem(val):
+  list = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'ComboBox', 1000)
+  list[0].SelectedItem = val
+  Log.Message(val + " is selected")
