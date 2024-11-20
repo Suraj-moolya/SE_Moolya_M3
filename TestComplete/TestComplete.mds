@@ -2794,22 +2794,22 @@
 			<testItem name="Nov 21 Execution order (Milestone 3)" key="{759FFAC2-8D09-4275-ACB3-601C95EA1AEF}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_1" key="{711DDDC1-BEB9-4460-A7E1-B3E82D3E8665}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_1" key="{711DDDC1-BEB9-4460-A7E1-B3E82D3E8665}" group="False" parallel="False" enabled="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_1" key="{9C79C6E1-D6CB-4CFC-9808-329881F3694F}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_1" key="{9C79C6E1-D6CB-4CFC-9808-329881F3694F}" group="False" parallel="False" enabled="False" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_1" key="{13374250-E0BD-44D2-A6C7-FD4DEDC9500E}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_1" key="{13374250-E0BD-44D2-A6C7-FD4DEDC9500E}" group="False" parallel="False" enabled="False" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_1" key="{BF66CA0B-7331-4DA1-949D-F1B59DE9BB96}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_1" key="{BF66CA0B-7331-4DA1-949D-F1B59DE9BB96}" group="False" parallel="False" enabled="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2884,52 +2884,57 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem36_2" key="{580A5B86-EA8C-4470-BD9D-87AC05D04690}" group="False" parallel="False" enabled="True" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem36_3" key="{26EA4BEE-95DC-41D1-874B-FD9C85B7EC8C}" group="False" parallel="False" enabled="True" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem37_2" key="{3778E026-92C7-47B5-A280-667A9ACC8E80}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDI_1602_slot2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem46_1" key="{E8053218-3DB4-4099-A0F7-C261561F0B0E}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Close PLC Bus Window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem38_2" key="{9B47C0E1-15E1-445C-8953-61AC5F3C044D}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDO_1602_slot3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem43_3" key="{4B0F6425-62CD-4440-99C6-7C147555BDE4}" group="False" parallel="False" enabled="True" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_5040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem39_2" key="{D0974A62-888D-466F-95B3-9BA61A04E0EE}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Analog_Module__BMX_AMI_0810_Slot4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem44_2" key="{C23B2F08-30A7-46CF-91E3-ECD1F7EAE2EC}" group="False" parallel="False" enabled="True" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.179.243.21" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem43_2" key="{B0AE803A-B00D-454D-BC2E-F99EF08AF609}" group="False" parallel="False" enabled="True" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_5040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem45_2" key="{DA67DFAB-C786-4146-BA96-323174269385}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Close the logical network window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem44_1" key="{C2C6FAB7-82EC-4B22-BEE5-C5A0FCA5EB55}" group="False" parallel="False" enabled="True" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.179.243.21" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem37_3" key="{A95164E5-18AD-4C61-A384-D0E4212E331B}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDI_1602_slot2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem45_1" key="{D9203B5B-906D-48BD-BF88-98F8A5E8B4A2}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Close the logical network window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem38_3" key="{856937A3-90D6-4920-BC84-C0E9D2FB9FD1}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDO_1602_slot3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem40_2" key="{D0263D15-F0A7-4D25-840D-0F46E4F8C64B}" group="False" parallel="False" enabled="True" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem39_3" key="{B1C11B0E-192A-4EDF-8EFC-EE8959ECBD9F}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Analog_Module__BMX_AMI_0810_Slot4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem41_2" key="{A63B9B5F-DA03-4DC8-9E39-F8F94E834D2B}" group="False" parallel="False" enabled="True" testMoniker="66 Do some modification in configure and deploy the project to controller|Deploy Controller M580 Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem40_3" key="{C6CF8015-B2E4-4900-BF3B-D29D871BC724}" group="False" parallel="False" enabled="True" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem42_2" key="{82CCDE8F-03CF-474E-A72F-7CF30B1268B9}" group="False" parallel="False" enabled="True" testMoniker="66 Do some modification in configure and deploy the project to controller|Select IP and Click on Start Engine" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem41_3" key="{466ADB65-F914-4639-AEA2-F581A2A64BB3}" group="False" parallel="False" enabled="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Deploy Controller M580 Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem42_3" key="{DBC29D6F-3914-475B-A192-7A42953DE3B6}" group="False" parallel="False" enabled="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Select IP and Click on Start Engine" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -2939,12 +2944,12 @@
 			<testItem name="Group1" key="{8CA77F35-5CFB-4C5F-A4FC-B444EB07A810}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="ProjectTestItem36" key="{3AB49394-6416-459A-A1EC-2487CEF34F8F}" group="False" parallel="False" enabled="True" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem36" key="{3AB49394-6416-459A-A1EC-2487CEF34F8F}" group="False" parallel="False" enabled="False" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem45_2" key="{CC78CA71-8604-4132-9AB5-064396C92718}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Close the logical network window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem46" key="{47CA7A0C-6CB1-4B43-AC74-5BCB86CD7D8B}" group="False" parallel="False" enabled="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Close PLC Bus Window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -3581,14 +3586,14 @@
 		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="10000" />
 		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="50" />
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
-		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
 		<setting name="Playback_StopOnError" type="1" value="True" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
 		<setting name="Playback_StopOnWarning" type="1" value="False" />
 		<setting name="Playback_TestItemMaxReRunCount" type="2" value="1" />
 		<setting name="Playback_UnexpectedWndHandling_ClickOnFocusedControl" type="1" value="True" />
-		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="False" />
+		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_PressEnter" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_PressEsc" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_SendCloseCommand" type="1" value="True" />

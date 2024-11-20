@@ -157,7 +157,7 @@
 			 <UIControl Element="NewPasswordbox_TopologyExporerTab" Name="WPFObject('NewPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="ConfirmPasswordbox_TopologyExporerTab" Name="WPFObject('ConfirmPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="OldPasswordBox_TopologyExporerTab" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
-			 <UIControl Element="ClosebuttonTM_TopologyExporerTab" Name="Button('Close')" Parent="EngineeringClient_" />
+			 <UIControl Element="ClosebuttonTM_TopologyExporerTab" Name="Button('Close')" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />	 
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="TopologyConfigurationWindow_TopologyExporerTab" Name="MenuBar('Application')" Parent="EngineeringClient_" />
