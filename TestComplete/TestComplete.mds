@@ -3550,13 +3550,32 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="0" colIndex="1">
+		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="19" colIndex="0">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
 			</columns>
 			<data>
 				<row val0="True" val1="AfxWnd140u" />
+				<row val0="True" val1="VSFlexGrid8N" />
+				<row val0="True" val1="Afx:00400000:8" />
+				<row val0="True" val1="msctls_statusbar32" />
+				<row val0="True" val1="AfxWnd90u" />
+				<row val0="True" val1="AfxFrameOrView90u" />
+				<row val0="True" val1="Afx:00D80000:8" />
+				<row val0="True" val1="CCFIOFWTabControl" />
+				<row val0="True" val1="AfxFrameOrView140u" />
+				<row val0="True" val1="Afx:00D80000:b" />
+				<row val0="True" val1="Afx:00D60000:8" />
+				<row val0="True" val1="Afx:00650000:8" />
+				<row val0="True" val1="Afx:00220000:8" />
+				<row val0="True" val1="GXWND" />
+				<row val0="True" val1="Afx:00410000:8" />
+				<row val0="True" val1="ThunderRT6PictureBoxDC" />
+				<row val0="True" val1="MDIClient" />
+				<row val0="True" val1="TreeView20WndClass" />
+				<row val0="True" val1="Thunder*" />
+				<row val0="True" val1="Afx*" />
 			</data>
 		</setting>
 		<setting name="Visualizer_AutoUpdate" type="1" value="False" />
