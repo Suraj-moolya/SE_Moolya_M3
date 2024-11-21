@@ -85,5 +85,6 @@
 		<Feature Path="60 Check all the devices mapped for controller.feature" />
 		<Feature Path="55 Map the EPE devices to controller.feature" />
 		<Feature Path="50A add physical connections to Controllers_Workstation.feature" />
+		<Feature Path="76 Deploy the CP to respective simulators.feature" />
 	</Folder>
 </Scenarios>
