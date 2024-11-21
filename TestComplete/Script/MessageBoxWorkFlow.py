@@ -223,6 +223,11 @@ class MessageBoxWorkFlow:
             Topologyexplorerutility.Verify_forgot_password_Authentication_Code()
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def clickopenimporttewindow(self):
+        """messagebox_obj.reconfirmokbutton"""
+        MessageBoxWorkFlow.messagebox_obj.importteopenbutton.click()
+            
 
                 
 

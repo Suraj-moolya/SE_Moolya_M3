@@ -2,6 +2,7 @@
 from MessageBoxWorkFlow import MessageBoxWorkFlow
 import CommonUtil
 import Applicationutility
+import Applicationexplorertabutility
 
 obj=MessageBoxWorkFlow()
 
@@ -93,6 +94,13 @@ def step_impl(save):
     """I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'"""
     CommonUtil.write_text_file("\nWhen I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'")
     obj.buttonexportclickonbuttoninaeexplorerwindow(save)
+   
+@when("I Click on Button in TE Explorer Window Export in ec windows explorer as {arg}")
+def step_impl(save):
+    """I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'"""
+    CommonUtil.write_text_file("\nWhen I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'")
+    Applicationexplorertabutility.Explorer_buttons_TE(save) 
+
   
 @then("Verify export_System1_Export_Popup_AE Export in ec windows explorer as {arg}")
 def step_impl(areYouSureYouWantToContinue):
@@ -202,4 +210,11 @@ def step_impl():
     CommonUtil.write_text_file("\nThen Verify forgot password Authentication Code Export popup in message box")
     obj.buttonexportpopupverifyforgotpasswordauthenticationcode()
     Applicationutility.take_screenshot("Full Screenshot")
+    
+    
+@when("I Click on Open button from Import TE window")
+def step_impl():
+    """I Click on Open button from Import TE window"""
+    CommonUtil.write_text_file("\nWhen I Click on Open button from Import TE window")
+    obj.clickopenimporttewindow()
 

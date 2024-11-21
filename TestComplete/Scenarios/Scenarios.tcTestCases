@@ -84,6 +84,7 @@
 		<Feature Path="61 Check manage password, clear password and forget password.feature" />
 		<Feature Path="60 Check all the devices mapped for controller.feature" />
 		<Feature Path="55 Map the EPE devices to controller.feature" />
-		<Feature Path="50A add physical connections to Controllers_Workstation.feature" />
+		<Feature Path="65 Export the controller and devices from TM root folder.feature" />
+		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
 	</Folder>
 </Scenarios>

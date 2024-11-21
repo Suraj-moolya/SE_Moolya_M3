@@ -165,8 +165,12 @@ class MessageBox(MapBase):
         """modificationpopuptextbox"""
         return self.get_element("Modificationpopup_MessageBox")  
         
+    @property
+    def importteopenbutton(self):
+        """importteopenbutton"""
+        return self.get_element("Importopen_MessageBox")      
         
-        
+       
         
         
         
