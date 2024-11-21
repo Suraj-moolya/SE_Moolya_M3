@@ -497,7 +497,7 @@ Examples:
 @TC_EPE_AE_0029
 @test029
 Scenario Outline: Export instance - Click Export, Save and Open CSV
-And I Select context menu item EC Application browser in application explorer as '<Application browser5>'
+When I Select context menu item EC Application browser in application explorer as '<Application browser5>'
 And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'
 And I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'
 Then Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'

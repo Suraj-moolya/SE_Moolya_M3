@@ -6,11 +6,11 @@
 Scenario Outline: Import - RightClick on the system_1 and select Import from the context menu
 When I rclick application browser folder AE Application browser in application explorer as '<Application browser1>'
 And I Select context menu item EC Application browser in application explorer as '<Application browser2>'
-
-
 Examples:
   | SlNo. | Application browser1 | Application browser2 |
   | 1     | System_1             | Import               |
+  
+
   
   
 @TC_EPE_AE_00
@@ -22,10 +22,14 @@ And I Click on Buttons in Import System1 Popup_AE Import in import dialog as '<I
 And I Wait for Import popup Import in import dialog
 And I Click on Buttons in Import Dialog popup AE Import Dialog in import dialog as 'OK'
 Then Verify Message from notification panel AE Notification Pannel in message box 
-
+@import_Enter_the_filelocation_and_file_name_as_csv
 Examples: 
   | SlNo. | Import3                  | Import4 |
   | 1     | Import_instance_test.csv | Open    |
+@import_Enter_the_filelocation_and_file_name_as_sbk
+Examples: 
+  | SlNo. | Import3             | Import4 |
+  | 1     | Deploy_ReDeploy.sbk | Open    |
   
 @TC_EPE_AE_00
 @test00

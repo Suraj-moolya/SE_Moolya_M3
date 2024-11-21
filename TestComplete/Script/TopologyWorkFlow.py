@@ -106,3 +106,10 @@ class TopologyWorkFlow:
             Actionutility.modal_dialog_windo_selectItem(val)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def buttonexplorerbuttonte(self,button):
+        """textboxtopologyexplorertreemodaldialogwindowselectitem"""
+        try:
+            Applicationexplorertabutility.Explorer_buttons_TE(button)
+        except Exception as ex:
+            raise Exception(ex) from ex

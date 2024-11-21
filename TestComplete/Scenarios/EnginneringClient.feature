@@ -386,10 +386,14 @@ Scenario Outline: Navigation To Topology Explorer(TE)
 When I Click on Nodes System Explorer Node in system explorer as '<Systems Explorer>'
 And I navigate to explorers MainToolBar in system explorer as '<MainToolBar1>'
 Then verify Tabs Explorer tab in system explorer as '<Explorer tab2>'
-
+@Navigate_TE_selecting_system1
 Examples:
   | SlNo. | Systems Explorer | MainToolBar1                   | Explorer tab2 |
   | 1     | System_1         | Open Topology Explorer (Alt+T) | Topology      |
+@Navigate_TE_selecting_system2
+Examples:
+  | SlNo. | Systems Explorer | MainToolBar1                   | Explorer tab2 |
+  | 1     | System_2         | Open Topology Explorer (Alt+T) | Topology      |
   
   
 @TC_EPE_EC_0032

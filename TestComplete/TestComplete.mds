@@ -3014,17 +3014,36 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Group2" key="{2A57ACFE-E1AC-4620-B14B-6EF0CA771F39}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-				<testParameters />
-				<children>
-					<testItem name="ProjectTestItem37" key="{AF004C9F-7EE1-45D6-8EBA-1148D599CAEB}" group="False" parallel="False" enabled="True" testMoniker="66 Do some modification in configure and deploy the project to controller|Deploy Changes for Controller M580 Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem37" key="{5FC900F2-FC24-42AA-BAE1-2F08F76FB560}" group="False" parallel="False" enabled="True" testMoniker="65 Export the controller and devices from TM root folder|Export Topology from root folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem38" key="{50A32AD1-5B2D-4270-809C-C19ABDDC5AF8}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem39" key="{11201B02-5C2B-4709-915C-594E9309CC9D}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem40" key="{A9ACE8D7-D05A-4CC5-861F-1DBDE3F32B91}" group="False" parallel="False" enabled="True" testMoniker="*|@Navigate_TE_selecting_system2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem42" key="{1C1105FB-6D81-4831-9B71-AE0E59B1B6E9}" group="False" parallel="False" enabled="True" testMoniker="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps|Import Topology Devices" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
 				</children>
+			</testItem>
+			<testItem name="Group2" key="{2A57ACFE-E1AC-4620-B14B-6EF0CA771F39}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+				<testParameters />
+				<children />
 			</testItem>
 		</children>
 	</testItems>
@@ -3044,6 +3063,9 @@
 					<DefValue IntValue="0" />
 				</Variable>
 				<Variable Name="Rename_Folder_HF" Type="String" Local="True">
+					<DefValue />
+				</Variable>
+				<Variable Name="system_1" Type="String" Local="True">
 					<DefValue />
 				</Variable>
 			</Items>
