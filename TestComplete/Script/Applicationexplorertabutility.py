@@ -365,7 +365,9 @@ def Enter_systemName_systemlocation_ExportWindow_AE(file_format):
         Project.Variables.AddVariable('system_1', "String")
   Project.Variables.system_1 = str('System1_' + datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
   Log.Message(Project.Variables.system_1)
-  Export_window = msg_obj.exportwpopupbutton.object
+  Applicationutility.wait_in_seconds(2000,"Wait")
+  Export_window = msg_obj.exportfilenametextbox.object
+  
   if Export_window.Exists:
     filename_textbox = msg_obj.exportfilenametextbox.object
     filename_textbox.Keys(Project.Variables.system_1+file_format)
@@ -378,11 +380,33 @@ def Enter_systemName_systemlocation_ExportWindow_AE(file_format):
   Sys.Keys(os.getcwd())
   Sys.Keys("[Enter]")
   
-
+def import_TE():
+  Export_window = aet_obj.comboboxtextbox.object
+  
+  if Export_window.Exists:
+    filename_textbox = aet_obj.comboboxtextbox.object
+    filename_textbox.Keys(Project.Variables.system_1+".sbk")
+  else:
+    Log.Warning("Export Windows doesnt exists")
+  filelocation = msg_obj.exportfilelocationtextbox
+  tox = (filelocation.object.Height)/2
+  toy = 5
+  filelocation.click_at(tox,toy)
+  Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]")
   
   
 def Explorer_buttons_AE(button_name):
   buttons_list = msg_obj.exportwpopupbutton.object.FindAllChildren('WndClass', 'Button', 1000)
+  for button in buttons_list:
+    if button_name in str(button.WndCaption) :
+      button.click()
+      break
+  else:
+    Log.Warning("Button name mentioned doesnt exists")
+    
+def Explorer_buttons_TE(button_name):
+  buttons_list = msg_obj.exportbutton.object.FindAllChildren('WndClass', 'Button', 1000)
   for button in buttons_list:
     if button_name in str(button.WndCaption) :
       button.click()
@@ -531,13 +555,11 @@ def Import_File_Directory():##
   Project.Variables.ImportTestFile_path = os.getcwd()     
       
 def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
-  Import_window = aet_obj.importtextbox.object
-  if Import_window.Exists:
-    filename_textbox = aet_obj.comboboxtextbox.object
-    filename_textbox.Click()
-    filename_textbox.Keys(file_format)
-  else:
-    Log.Warning("Export Windows doesnt exists")
+#  Import_window = aet_obj.importtextbox.object
+#  if Import_window.Exists:
+  filename_textbox = aet_obj.comboboxtextbox.object
+  filename_textbox.Click()
+  filename_textbox.Keys(file_format)
   filelocation = aet_obj.addressbandtextbox
   tox = (filelocation.object.Height)/2
   toy = 5
