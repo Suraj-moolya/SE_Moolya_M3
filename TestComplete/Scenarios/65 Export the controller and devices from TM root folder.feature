@@ -9,6 +9,15 @@ And I Select controller in context menu as '<sub_context_menu>'
 And I click modal dialog window Instance editor save in application explorer as 'OK'
 And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.sbk'
 And I Click on Button in TE Explorer Window Export in ec windows explorer as 'Save'
+
+@RClick_System_1
 Examples:
-  | SlNo. | Controllers | context menu | project browser1   | sub_context_menu |
-  | 1     | System_1    | Export       | Create Workstation | Topology         |
+  | SlNo. | Controllers | context menu | sub_context_menu |
+  | 1     | System_1    | Export       | Topology         |
+  
+#Created in Test Scenario 105 on 65 using Different Test data  
+@RClick_P2P
+Examples:
+  | SlNo. | Controllers | context menu | sub_context_menu |
+  | 1     | P2P         | Export       | Topology         |
+
