@@ -882,7 +882,6 @@ def click_menu_item_in_topo_configuration(menu_item):
 def select_tab_in_topo_config(tabname):
   for h in topo_obj.configurationhardwarecatalog.object.FindAllChildren("ClassName", "SECTabControl", 10):
     for i in range(h.ChildCount):
-      Log.Message(h.ChildCount)
       if tabname in h.Child(i).Text:
         h.Child(i).Click()
         Log.Checkpoint(f"Clicking on '{tabname}'")
@@ -900,7 +899,10 @@ def Dblclick_config_panel_item_TE(property):
         Log.Checkpoint(f'{property}' "is Double Clicked.")
         Applicationutility.wait_in_seconds(1000, 'Wait')
         return
-        
+  else:
+    Log.Warning(f'{property}' " Was Not found.")
+
+## need to fix this 
 def click_update_in_config():
   topo_obj.updatebutton.object.Click()
   Log.Checkpoint("Update Button Clicked")
