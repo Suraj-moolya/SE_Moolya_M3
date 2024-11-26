@@ -19,8 +19,8 @@ And I double click on the installed '<prm>' on DTM Browser
 And I double click on '<settings>' in PRM Window
 And I update the '<ip_address>' in PRM Window
 And I click '<button1>' on PRM Window
-And I selected Save PRM Configuration in Configuration Window
 And I selected Close Configuration window in Topology Explorer
+And I click modal dialog window '<button>' in Topology Explorer
 Then Verify Action message in notification pannel project browser in project explorer as '<notification pannel>'
 When I right-click on '<node_name2>' in the Topology Explorer
 And I Select context menu item EC in Topology Explorer as '<action3>'

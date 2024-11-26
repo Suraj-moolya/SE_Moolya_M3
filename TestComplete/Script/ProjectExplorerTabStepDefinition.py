@@ -521,11 +521,6 @@ def step_impl(arg):
   CommonUtil.write_text_file(f"\nWhen I click on the '{arg}' in Restore project window")
   obj.clickbuttonplantscada(arg)
   
-@when("I Click on the {arg} in Restore project popup window")
-def step_impl(arg):
-  CommonUtil.write_text_file(f"\nWhen I click on the '{arg}' in Restore project popup window")
-  obj.clickyesinplantscada(arg)
-  
 @when("I Select the {arg} in Backup-Restore window")
 def step_impl(arg):
   CommonUtil.write_text_file(f"\nWhen I Select the '{arg}' in Backup-Restore window")
@@ -556,9 +551,9 @@ def step_impl(button):
     CommonUtil.write_text_file(f"\nWhen I clicks the '{button}' in the login dialog box")
     obj.clickbuttontologinscadapage(button)
     
-@when("I clicks the {arg} in the popup dialog box")
+@when("I clicks the {arg} in the Plant Scada popup dialog box")
 def step_impl(button):
-    """I clicks the '<button>' in the popup dialog box"""
+    """I clicks the '<button>' in the Plant Scada popup dialog box"""
     CommonUtil.write_text_file(f"\nWhen I clicks the '{button}' in the popup dialog box")
     obj.clickbuttononscadapopup(button)
     

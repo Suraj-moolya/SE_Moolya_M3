@@ -580,10 +580,10 @@ class ProjectExplorerTabWorkFlow:
             except Exception as ex:
               raise Exception(ex) from ex   
               
-    def clickbuttonplantscada(self, caption):
+    def clickbuttonplantscada(self, button):
             """clickbuttonplantscada"""
             try:
-              Projectexplorertabutility.click_button(caption)
+              Projectexplorertabutility.click_button_in_aveva(button)
             except Exception as ex:
               raise Exception(ex) from ex    
               
@@ -592,14 +592,7 @@ class ProjectExplorerTabWorkFlow:
             try:
               Projectexplorertabutility.verify_and_select_file(file_name)
             except Exception as ex:
-              raise Exception(ex) from ex      
-              
-    def clickyesinplantscada(self):
-            """clickyesinplantscada"""
-            try:
-              Projectexplorertabutility.click_yes_button()
-            except Exception as ex:
-              raise Exception(ex) from ex       
+              raise Exception(ex) from ex
               
     def checkboxclickindeploymentfilesection(self, filenames):
             """checkboxclickindeploymentfilesection"""

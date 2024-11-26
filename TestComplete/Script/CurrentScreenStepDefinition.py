@@ -78,6 +78,7 @@ def step_impl():
 @when("I Click on start engine checkobox in deploy changes refine online window")
 def step_impl():
     """I change the controller protection to disable"""
+    Applicationutility.wait_in_seconds(2000, "wait")
     obj.clickstartenginecheckbox()
     
     

@@ -27,8 +27,8 @@ And I Click on the '<button>' in Scada properties and Click '<drop_button>'
 And I Click on the '<button2>' in Restore project window 
 And I Select the '<file_name>' in Backup-Restore window
 And I Click on the '<button3>' in Restore project window 
-And I Click on the '<project browser3>' in Restore project popup window
+And I Click on the '<project browser3>' in Restore project window
 
 Examples: 
-  | SlNo. | project browser1 | project browser2     | project browser3 | instance_names | MainToolBar                     | button | drop_button | button2    | file_name                      | button3 |
-  | 1     | Executable_1     | Deploy Built Project | Yes              | Includes       | Release Supervision Participant | Backup | Restore     | &Browse... | Supervision_1_Executable_1.ctz | OK      |
+  | SlNo. | project browser1 | project browser2     | project browser3 | instance_names | MainToolBar                     | button | drop_button | button2 | file_name                      | button3 |
+  | 1     | Executable_1     | Deploy Built Project | Yes              | Includes       | Release Supervision Participant | Backup | Restore     | Browse  | Supervision_1_Executable_1.ctz | OK      |

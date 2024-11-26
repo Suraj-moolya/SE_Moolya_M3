@@ -6,7 +6,7 @@ Scenario Outline: Run Citect runtime from Standalone Plant SCADA Run Citect runt
 When I clicks on the '<sidebar>' icon from the vertical menubar
 And I Enters the '<username>' and '<password>' in Aveva Plant Scada Window
 And I clicks the '<button>' in the login dialog box
-And I clicks the '<button>' in the popup dialog box
+And I clicks the '<button>' in the Plant Scada popup dialog box
 Then I verifies that the Master (startup) page for HD1080 res window is opened
 
 Examples:
