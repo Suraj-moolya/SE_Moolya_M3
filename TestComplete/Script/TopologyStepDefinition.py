@@ -322,3 +322,11 @@ def step_impl(ip):
     """I Select '<ip>' in Workstation Deployment Window"""
     CommonUtil.write_text_file("\nWhen I Select '{ip}' in Workstation Deployment Window")
     obj.selectipindeployworkstationte(ip)
+    
+    
+@when("I Verify {arg} in Hardware Catalog Window")
+def step_impl(smp):
+    """I Verify '<smp>' in Hardware Catalog Window"""
+    CommonUtil.write_text_file("\nWhen I Verify '<smp>' in Hardware Catalog Window")
+    obj.textboxtopologyexplorerhardwarecatalogdevices(smp)
+    Applicationutility.take_screenshot("Full Screenshot")
