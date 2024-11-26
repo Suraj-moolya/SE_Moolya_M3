@@ -87,5 +87,9 @@
 		<Feature Path="50A add physical connections to Controllers_Workstation.feature" />
 		<Feature Path="77 Deploy the SP to respective stations.feature" />
 		<Feature Path="80 Check deploy changes.feature" />
+		<Feature Path="76 Deploy the CP to respective simulators.feature" />
+		<Feature Path="82 Check deploy data for each controller.feature" />
+		<Feature Path="65 Export the controller and devices from TM root folder.feature" />
+		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
 	</Folder>
 </Scenarios>

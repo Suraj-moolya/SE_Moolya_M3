@@ -1140,7 +1140,7 @@ def Change_SettingsOption(option):
       Log.Checkpoint(f"Clicked on '{option}' item.")
       break
   else:
-    Log.Warning(f"add this settings msg later")
+    Log.Warning(f"{option} not found")
     
  
 

@@ -123,14 +123,6 @@ class TopologyWorkFlow:
             raise Exception(ex) from ex
 
         
-#    def closebuttonstbpropertieste(self):
-#        """closebuttonstbpropertieste"""
-#        try:
-#            Topologyexplorerutility.stbproperties_close_button()
-#        except Exception as ex:
-#            raise Exception(ex) from ex 
-
-        
     def configureethernetnetworkinphysicalconnectionte(self, network):
         """configureethernetnetworkinphysicalconnectionte"""
         try:
@@ -300,3 +292,11 @@ class TopologyWorkFlow:
           Topologyexplorerutility.select_ip_in_deploy_workstation(ip)
         except Exception as ex:
             raise Exception(ex) from ex 
+
+    def buttonexplorerbuttonte(self,button):
+        """textboxtopologyexplorertreemodaldialogwindowselectitem"""
+        try:
+            Applicationexplorertabutility.Explorer_buttons_TE(button)
+        except Exception as ex:
+            raise Exception(ex) from ex
+

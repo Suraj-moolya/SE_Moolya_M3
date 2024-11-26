@@ -340,7 +340,8 @@
 			 <UIControl Element="Modaldialogwindow1_MessageBox" Name="WPFObject('HwndSource* ModalDialogWindow', '', 1)" Enabled="True" VisibleOnScreen="True" Parent="EngineeringClient_" />
 			 <UIControl Element="ReConfirmDBPOK_MessageBox" Name="WPFObject('Button', 'OK', 2)" Parent="EngineeringClient_" />
 			 <UIControl Element="Modificationpopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
-			 
+			 <UIControl Element="Importopen_MessageBox" Name="Window('Button', '*Open', 1)"  VisibleOnScreen="True" Parent="EngineeringClient_" />
+			  
         </Component>	
 		<Component name="Refine Offline">
              <UIControl Element="CloseRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Close" Parent="EngineeringClient_" />
