@@ -299,4 +299,11 @@ class TopologyWorkFlow:
             Applicationexplorertabutility.Explorer_buttons_TE(button)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerhardwarecatalogdevices(self,smp):
+        """textboxtopologyexplorerhardwarecatalogdevices"""
+        try:
+            Topologyutility.Verify_Device_Hardware_Catalog_TE(smp)
+        except Exception as ex:
+            raise Exception(ex) from ex
 
