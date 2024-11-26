@@ -89,5 +89,6 @@
 		<Feature Path="82 Check deploy data for each controller.feature" />
 		<Feature Path="65 Export the controller and devices from TM root folder.feature" />
 		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
+		<Feature Path="96 Update DTM Catalog.feature" />
 	</Folder>
 </Scenarios>
