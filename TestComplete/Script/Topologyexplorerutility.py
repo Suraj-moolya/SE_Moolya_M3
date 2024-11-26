@@ -4,6 +4,7 @@ import Applicationutility
 from MessageBox import MessageBox
 from RefineOffline import RefineOffline
 from ControlExpert import ControlExpert
+from ProjectExplorerTab import ProjectExplorerTab
 
 
 topo_obj = TopologyExplorerTab()
@@ -11,7 +12,7 @@ msg_obj = MessageBox()
 eng_obj = EngineeringClient()
 refo_obj = RefineOffline()
 con_obj = ControlExpert()
-
+proj_obj = ProjectExplorerTab()
 
 def select_tool_drag_drop_default_physical_view_TE(param):
   folder1, folder2, tool, dropposition = param.split('$$')
@@ -881,11 +882,15 @@ def click_menu_item_in_topo_configuration(menu_item):
 def select_tab_in_topo_config(tabname):
   for h in topo_obj.configurationhardwarecatalog.object.FindAllChildren("ClassName", "SECTabControl", 10):
     for i in range(h.ChildCount):
+      Log.Message(h.ChildCount)
       if tabname in h.Child(i).Text:
         h.Child(i).Click()
         Log.Checkpoint(f"Clicking on '{tabname}'")
         return
   Log.Warning("Could not find '{tabname}'")
+  
+def kjsdf():
+  select_tab_in_topo_config("DTM catalog")
 
 def Dblclick_config_panel_item_TE(property):
   for h in topo_obj.deviceshardwarecatalog.object.FindAllChildren("ClassName", "CfCatViewDTMTreeQueryView", 10):
@@ -1133,3 +1138,27 @@ def shshshs():
     Sys.Keys("[Right]")
   Sys.Keys("[Enter]")
   Log.Checkpoint(f"Selected rack number {rack_number} in PLC.")
+  
+  
+def select_ip_in_deploy_workstation(ip):
+  for i in proj_obj.assignmentsdocktextbox.object.FindAllChildren("ClrClassName", "GridViewCell", 100):
+    prop = i.DataContext.PropertyName
+    i.click()
+    Applicationutility.wait_in_seconds(1000, "wait")
+    break
+  dropdown_items = eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "TextBlock", 10)
+  for item in dropdown_items:
+    if ip in item.WPFControlText:
+      item.click()
+      Log.Checkpoint(f"'{ip}' selected for this '{prop}'.")
+      
+      
+def ksdj():
+  for i in proj_obj.assignmentsdocktextbox.object.FindAllChildren("ClrClassName", "GridViewCell", 100):
+    if i.DataContext.PropertyName == "Status":
+      Log.Message(i.DataContext.PrimaryValue)
+      break
+    
+    
+def jkg():
+  skdfj("192.168.1.66")

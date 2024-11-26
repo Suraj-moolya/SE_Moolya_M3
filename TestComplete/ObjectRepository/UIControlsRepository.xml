@@ -161,7 +161,7 @@
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />	 
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="TopologyConfigurationWindow_TopologyExporerTab" Name="MenuBar('Application')" Parent="EngineeringClient_" />
-			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="MDIWindow('Hardware Catalog')" Parent="EngineeringClient_" />
+			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="Window('Afx:00420000:b:00010003:00000006:04CD1721', 'Hardware Catalog', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="Catalog_TopologyExporerTab" Name="VBObject('treCatalog')" Parent="EngineeringClient_" />
              <UIControl Element="STBProperties_TopologyExporerTab" Name="WPFObject('BasePropertyGrid', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="STBPropertiesClosebutton_TopologyExporerTab" Name="WPFObject('PART_CloseInnerContent')" Parent="EngineeringClient_" />
@@ -280,7 +280,20 @@
 			 <UIControl Element="ProjectControllerSetting_ProjectExplorerTab" Name="WPFObject('ProjectContainerSettingsDialog', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="SettingsDropDown_ProjectExplorerTab" Name="WPFObject('DropDownScrollViewer')" Parent="EngineeringClient_" />
 			 <UIControl Element="Settings_ProjectExplorerTab" Name="WPFObject('ProjectContainerSettingsDialog', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="MessageBoxYes_ProjectExplorerTab" Name="WPFObject('Button', 'Yes', *)" Visible = "True" Parent="EngineeringClient_" />			 
+			 <UIControl Element="MessageBoxYes_ProjectExplorerTab" Name="WPFObject('Button', 'Yes', *)" Visible = "True" Parent="EngineeringClient_" />
+			 <UIControl Element="DeploymentFileSection_ProjectExplorerTab" Name="WPFObject('VjcDeploymentFileSelection', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="InstanceEditPage_ProjectExplorerTab" Name="Window('MDIClient', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="ContainersEditPage_ProjectExplorerTab" Name="WPFObject('UcBrowser', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="InstanceListItmes_ProjectExplorerTab" Name="WPFObject('ListView', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="SupervisionEdidPageProperties_ProjectExplorerTab" Name="WPFObject('WrapContainerView')" Parent="EngineeringClient_" />
+			 <UIControl Element="PlantScadaHomeProperties_PropertiesTab" Name="WPFObject('CommandBar', '', 1)" Parent="CitectIDE_" />
+			 <UIControl Element="MenuItem_PropertiesTab" Name="WPFObject('NonLogicalAdornerDecorator', '', 1)" Parent="CitectIDE_" />
+			 <UIControl Element="BackupRestore_PropertiesTab" Name="Window('#32770', 'Backup/Restore File', 1)" Parent="CtBack32_" />
+			 <UIControl Element="RestorePopup_PlantScadaTab" Name="Window('#32770', '*', 1)" Parent="CtBack32_" />
+			 <UIControl Element="Sidebar_PlantScadaTab" Name="WPFObject('ApplicationBar', '', 1)" Parent="CitectIDE_" />
+			 <UIControl Element="LoginPage_PlantScadaTab" Name="Window('#32770', 'AVEVA Plant SCADA', 1)" Parent="Citect32_" />
+			 <UIControl Element="ErrorPopup_PlantScadaTab" Name="Window('#32770', 'Error', 1)" Parent="Citect32_" />
+			 <UIControl Element="MasterPageMainWindow_PlantScadaTab" Name="Window('ctDSP', 'Master (startup) page for HD1080 res', 1)" Parent="Citect32_" />		 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />

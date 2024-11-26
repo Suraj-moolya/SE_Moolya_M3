@@ -810,13 +810,12 @@ def double_click_in_container(identifier):
   container_doc = proj_obj.containerdocktextbox.object.Refresh()
   container_list = proj_obj.containerdocktextbox.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for container in container_list:
-    if container.DataContext.Identifier == identifier:
+    if getattr(container.DataContext, 'Identifier', None) == identifier:
       container.DblClick()
       Log.Checkpoint(f"Double-clicked on '{identifier}'")
       Applicationutility.wait_in_seconds(1000, 'Wait')
       
         
-
 def drag_and_drop_instance_to_editpage(facetnames, option):
   facets = facetnames.split('$$')
   options = option.split('$$')
@@ -887,32 +886,17 @@ def verify_and_select_file(file_name):
     else:
       Log.Error(f"File '{file_name}' not found.")
 
-            
-#def click_ok_button():
-#  ok_button = proj_obj.restoreprojecttab.object.FindAllChildren('WndCaption', 'OK', 100)
-#  if ok_button:
-#    ok_button[0].Click()
-#    Log.Checkpoint("OK button clicked.")
-#  else:
-#    Log.Error("OK button not found.")
-
-
-def click_yes_button():
-  yes_button = proj_obj.restorepopuptab.object.FindAllChildren('WndCaption', '&Yes', 100)
-  if yes_button:
-    yes_button[0].Click() 
-    Log.Checkpoint("Yes button clicked.")
-  else:
-    Log.Error("Yes button not found.")
     
-    
-def click_button(caption):
-  button = proj_obj.restoreprojecttab.object.FindAllChildren('WndCaption', caption, 100)
-  if button:
-    button[0].Click()
-    Log.Checkpoint(f"'{caption}' button clicked.")
-  else:
-    Log.Error(f"'{caption}' button not found.")
+def click_button_in_aveva(button):
+  for buttons in proj_obj.restorepopuptab.object.FindAllChildren('WndClass', "Button", 100):
+    if button in buttons.WndCaption:
+      buttons.click()
+      Log.Checkpoint(f"'{button}' button clicked.")
+      return
+  Log.Error(f"'{button}' button not found.")
+      
+def skdfh():
+  click_button_in_aveva("Yes")
     
     
 def click_sidebar_button_in_plant_scada(sidebar):

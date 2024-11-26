@@ -181,4 +181,4 @@ class TopologyExplorerTab(MapBase):
     @property
     def deploycheckbox(self):
         """deploycheckbox"""
-        return self.get_element("DeployCheckbox_TopologyExporerTab") 
+        return self.get_element("DeployCheckbox_TopologyExporerTab")

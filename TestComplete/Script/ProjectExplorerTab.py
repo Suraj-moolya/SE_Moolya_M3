@@ -127,12 +127,7 @@ class ProjectExplorerTab(MapBase):
     @property
     def menuitemtab(self):
       """menuitemtab"""
-      return self.get_element("MenuItem_PropertiesTab")  
-      
-    @property
-    def restoreprojecttab(self):
-      """restoreprojecttab"""
-      return self.get_element("RestoreProject_PropertiesTab")  
+      return self.get_element("MenuItem_PropertiesTab") 
       
     @property
     def backuprestoretab(self):

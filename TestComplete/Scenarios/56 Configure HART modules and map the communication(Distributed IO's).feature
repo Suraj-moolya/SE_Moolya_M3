@@ -40,4 +40,4 @@ And I selected Close Configuration window in Topology Explorer
 
 Examples:
   | SlNo. | node_name    | action    | Project Browser RO1        | Dialog Panel CE3 | button   | button1 | button2 | menu  | prm             | option | protocol    | device       | device1      | menu_item   | menu_item1          | menu1 | num | button3 |
-  | 1     | Controller_1 | Configure | Configuration$$0 : PLC bus | Analog           | Maximize | OK      | Close   | Tools | BMEP58_ECPU_EXT | Add... | EtherNet IP | BME AHI 0812 | BME AHO 0412 | DTM Browser | Rebuild All Project | Build | 0   | Yes     |
+  | 1     | Controller_2 | Configure | Configuration$$0 : PLC bus | Analog           | Maximize | OK      | Close   | Tools | BMEP58_ECPU_EXT | Add... | EtherNet IP | BME AHI 0812 | BME AHO 0412 | DTM Browser | Rebuild All Project | Build | 0   | Yes     |
