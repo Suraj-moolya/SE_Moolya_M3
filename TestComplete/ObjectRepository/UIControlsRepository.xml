@@ -161,14 +161,14 @@
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />	 
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="TopologyConfigurationWindow_TopologyExporerTab" Name="MenuBar('Application')" Parent="EngineeringClient_" />
-			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="Window('Afx:00420000:b:00010003:00000006:04CD1721', 'Hardware Catalog', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="MDIWindow('Hardware Catalog')" Parent="EngineeringClient_" />
 			 <UIControl Element="Catalog_TopologyExporerTab" Name="VBObject('treCatalog')" Parent="EngineeringClient_" />
              <UIControl Element="STBProperties_TopologyExporerTab" Name="WPFObject('BasePropertyGrid', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="STBPropertiesClosebutton_TopologyExporerTab" Name="WPFObject('PART_CloseInnerContent')" Parent="EngineeringClient_" />
              <UIControl Element="ControllerPhysicalconnectiontab_TopologyExporerTab" Name="WPFObject('NetworkSelection', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="DevicesHardwareCatalog_TopologyExporerTab" Name="Window('AfxFrameOrView140u', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="UpdateButton_TopologyExporerTab" Name="Window('Button', 'Update', 4)" Parent="EngineeringClient_" />
-			 <UIControl Element="PRMgensettings_TopologyExporerTab" Name="Window('#32770', '', 2)" Parent="EngineeringClient_" />
+			 <UIControl Element="PRMgensettings_TopologyExporerTab" Name="Window('#32770', '', *)" Parent="EngineeringClient_" />
 			 <UIControl Element="DTMBrowserHost_TopologyExporerTab" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="PRMconfigwindow_TopologyExporerTab" Name="MDIWindow('PRM_Master_0001 - fdtOfflineParameterize')" Parent="EngineeringClient_" />
 			 <UIControl Element="PLCBuswindow_TopologyExporerTab" Name="MDIWindow('PLC bus')" Parent="EngineeringClient_" />
