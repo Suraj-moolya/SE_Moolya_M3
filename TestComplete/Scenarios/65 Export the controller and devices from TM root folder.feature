@@ -15,9 +15,5 @@ Examples:
   | SlNo. | Controllers | context menu | sub_context_menu |
   | 1     | System_1    | Export       | Topology         |
   
-#Created in Test Scenario 105 on 65 using Different Test data  
-@RClick_P2P
-Examples:
-  | SlNo. | Controllers | context menu | sub_context_menu |
-  | 1     | P2P         | Export       | Topology         |
+
 

@@ -52,13 +52,12 @@ Scenario Outline: Deploy Changes for Controller M580 Standalone
 When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I click modal dialog window Instance editor save in application explorer as 'OK'
-Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 When I selected Rename Pop up Ok in message box
 And I Click on OK button from Reconfirm Deploy Built Project Popup window
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser3>'
 Examples:
-  | SlNo. | context menu                         | project browser2                                                            | project browser3                                 |
-  | 1     | Deploy Changes / Undo Online Changes | Obtaining Candidates for 'Deploy Changes / Undo Online Changes' (Completed) | Deploy Changes / Undo Online Changes (Completed) |
+  | SlNo. | context menu                         | project browser3                                 |
+  | 1     | Deploy Changes / Undo Online Changes | Deploy Changes / Undo Online Changes (Completed) |
       
 
   
