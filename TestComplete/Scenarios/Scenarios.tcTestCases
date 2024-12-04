@@ -92,5 +92,8 @@
 		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
 		<Feature Path="96 Update DTM Catalog.feature" />
 		<Feature Path="75 Create Work stations for client and add multiple NIC&apos;s and configure the IP, logical network.feature" />
+		<Feature Path="81 Check backup data for each controller.feature" />
+		<Feature Path="92 Export only Devices into csv format.feature" />
+		<Feature Path="93 Edit the csv. create_delete few more devices.feature" />
 	</Folder>
 </Scenarios>
