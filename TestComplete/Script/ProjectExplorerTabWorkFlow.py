@@ -777,3 +777,10 @@ class ProjectExplorerTabWorkFlow:
             Controlexpertutility.Click_tab_item_EIO_config_window(identifiers)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxprojectbrowserverifybackupdata(self,param):
+            """textboxprojectbrowserverifybackupdata"""
+            try:
+                Projectexplorertabutility.Verify_backup_data_PE(param)
+            except Exception as ex:
+                raise Exception(ex) from ex

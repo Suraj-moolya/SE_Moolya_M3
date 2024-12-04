@@ -665,4 +665,10 @@ def step_impl():
 def step_impl(identifiers):
     """I Click tabitem in EIO configaration window in control expert as '<identifiers>'"""
     CommonUtil.write_text_file("\nWhen I Click tabitem in EIO configaration window in control expert as \""+identifiers+"\"")
-    obj.ClicktabitemEIOconfigwindow(identifiers)    
+    obj.ClicktabitemEIOconfigwindow(identifiers) 
+    
+@when("I Verify backup data PE in project explorer as {arg}")
+def step_impl(projectBrowser3):
+    """I Verify backup data PE in project explorer as '<project browser2>'"""
+    CommonUtil.write_text_file("\nWhen I Verify backup data PE in project explorer as \""+projectBrowser3+"\"")
+    obj.textboxprojectbrowserverifybackupdata(projectBrowser3)   
