@@ -1,6 +1,4 @@
-﻿Feature: 65 Export the controller and devices from TM root folder
-
-#105 Export the controllers along with devices same scenario can be used can be placed based on execution order 
+﻿Feature: 85 Export Work station with logical networks
 
 @TC_EPE_TE_CS_0003
 @test0001
@@ -14,9 +12,5 @@ And I Click on Button in TE Explorer Window Export in ec windows explorer as 'Sa
 
 @RClick_System_1
 Examples:
-  | SlNo. | Controllers | context menu | sub_context_menu |
-  | 1     | System_1    | Export       | Topology         |
-  
- 
-
-
+  | SlNo. | Controllers   | context menu | sub_context_menu |
+  | 1     | Workstation_1 | Export       | Topology         |

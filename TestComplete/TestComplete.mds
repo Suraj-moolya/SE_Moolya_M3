@@ -2792,530 +2792,12 @@
 				</children>
 			</testItem>
 			<testItem name="Nov 21 Execution order (Milestone 3)" key="{759FFAC2-8D09-4275-ACB3-601C95EA1AEF}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-			<testItem name="Nov 22 Execution order (Milestone 3) - 182.179.243.21" key="{759FFAC2-8D09-4275-ACB3-601C95EA1AEF}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
-				<children>
-					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_1" key="{711DDDC1-BEB9-4460-A7E1-B3E82D3E8665}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_1" key="{9C79C6E1-D6CB-4CFC-9808-329881F3694F}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_1" key="{13374250-E0BD-44D2-A6C7-FD4DEDC9500E}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_1" key="{BF66CA0B-7331-4DA1-949D-F1B59DE9BB96}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0007_2_1_1_1_1_2_1" key="{73BA61AA-9ADC-4643-9026-D10AED2E3CC3}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0023_2_1_1_1_1_2_1" key="{A32870E3-1A69-447D-A2FC-2A5BE6555A5B}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Application Explorer(AE)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_AE_0018_2_1_1_1_2_1" key="{80FAEE68-EB77-47AE-B37B-9A363C4612E9}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Search Template in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem12_2_1" key="{BD44092B-AAA3-4F00-BC9D-FC7D7E3B31BA}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem13_2_1" key="{5A5B38A2-1E20-4D15-A795-FD8051DED5E6}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Creation of Folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem18_2_1" key="{C18966AA-81EE-4EE8-A6D7-BF033940FB80}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create 2 Ethernet Networks and Rename" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem14_2_1" key="{2E62CBA3-773D-4102-9D6F-C732E1B228AF}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem15_2_1" key="{B83B24B8-BF3D-49ED-9474-73F2F0A46E9F}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M580_Safety" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem16_2_1" key="{54D064C5-678B-40D2-89E8-23DE882270AD}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M340_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem17_2_1" key="{E75D9708-CE52-4603-8D02-E1070E1934DC}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for Quantum" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem26_1_2" key="{8F4FD97A-F9C9-4985-ADA4-74E42BCC9E80}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change safety settings of controller to Disable" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem26_2_2_1" key="{8312375E-8CBD-41C7-91C7-4D0CF4D462E2}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Close Controllers&#32;&#32;in Topology Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem19_2_3_1" key="{D9DF79B1-4228-43AA-9685-9E3B04DE17A2}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Open Configuration window of Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem19_2_1_2_1" key="{DF07962F-4330-4841-8DF3-115C80C18929}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Double click on PLC Bus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem36_3" key="{26EA4BEE-95DC-41D1-874B-FD9C85B7EC8C}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_5040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem46_1" key="{E8053218-3DB4-4099-A0F7-C261561F0B0E}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Close PLC Bus Window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem43_3" key="{4B0F6425-62CD-4440-99C6-7C147555BDE4}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_5040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem44_2" key="{C23B2F08-30A7-46CF-91E3-ECD1F7EAE2EC}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.179.243.21" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem45_2" key="{DA67DFAB-C786-4146-BA96-323174269385}" group="False" parallel="False" enabled="True" load="False" testMoniker="54 Map logical network to all communication modules|Close the logical network window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem37_3" key="{A95164E5-18AD-4C61-A384-D0E4212E331B}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_Discrete_Module__BMX_DDI_1602_slot2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem38_3" key="{856937A3-90D6-4920-BC84-C0E9D2FB9FD1}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_Discrete_Module__BMX_DDO_1602_slot3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem39_3" key="{B1C11B0E-192A-4EDF-8EFC-EE8959ECBD9F}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_Analog_Module__BMX_AMI_0810_Slot4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem40_3" key="{C6CF8015-B2E4-4900-BF3B-D29D871BC724}" group="False" parallel="False" enabled="True" load="False" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem36" key="{3B5A864F-7387-4308-AC62-691FA7B3F32B}" group="False" parallel="False" enabled="True" load="False" testMoniker="55 Map the EPE devices to controller|Map EtherNet IP device to Controller - add Ethernet Network" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0040_1_2_2_1_2" key="{98A4886C-11B9-4DE8-8511-8AD2609DEFE9}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_4_1_1_2_1_1_1" key="{ED132135-8991-4A90-A700-C6493EE2BA0C}" group="False" parallel="False" enabled="True" load="False" testMoniker="144 Open control project|Create a Control Project for M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_5_1_1_2_1_2_1" key="{181367D2-3AF9-4AD6-9DD4-F91A4FF5489F}" group="False" parallel="False" enabled="True" load="False" testMoniker="148 Add instances to container and generate the section|Double Click on Container sections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_11_1_1_2_1_1_1" key="{776839CB-A1DA-446B-8779-E5C3AA12E639}" group="False" parallel="False" enabled="True" load="False" testMoniker="180 Assign instances to containers|Assign Instance to Containers in PE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem29_1_2_1" key="{D858D82C-9A27-4EDE-A147-855CD8B3C18C}" group="False" parallel="False" enabled="True" load="False" testMoniker="153 Open Service Mapping Editor and map the Controller|Open Service Mapping Editor of M580_Standalone and map to Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_6_1_1_1_2_1_1" key="{563A4217-B5BF-489E-A92B-16C6AE914745}" group="False" parallel="False" enabled="True" load="False" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from control executeable r-click" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem12_2_1_1_2" key="{8E445419-AC88-42D1-944B-C51550AA4C0F}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem48_1" key="{5E897D32-5CEA-4A2D-80D0-87145DFABE44}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Deploy_the_controller_after_disabling_the_password__182.179.243.21__M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem49_1" key="{826E9CFD-0EF1-4048-9903-4C64808DA141}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Check_Backup_Data__182.179.243.21__M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem50_1" key="{3B986403-0E0B-4A5E-B41A-2AE926DB28E9}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Check_Deploy_Data__182.179.243.21__M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem19_2_3_1_1_1" key="{8B51224D-CDA7-4FAE-A63B-0E472B301239}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Open Configuration window of Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem46_2" key="{C3887802-1A4E-4A7B-B97D-94F9C7479DB5}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_Analog_Module__BMX_AMO_0410_slot5" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem40_2_1_1" key="{54C41327-8222-4E25-BEB7-B217FD879932}" group="False" parallel="False" enabled="True" load="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Save and Close configuration with configuration pop up" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0040_1_2_2_1_1_1" key="{C80A0F9C-B6AA-4930-85B1-4664471E0312}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem47_1" key="{75C5F08F-41E8-4240-9DD3-D2483D7CB976}" group="False" parallel="False" enabled="True" load="False" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Build All from control executeable r-click click on yes and OK" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem12_2_1_1_1_1" key="{0F3C7458-DADA-4BDB-850A-C610EF95B619}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem37" key="{5FC900F2-FC24-42AA-BAE1-2F08F76FB560}" group="False" parallel="False" enabled="True" testMoniker="65 Export the controller and devices from TM root folder|Export Topology from root folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem38" key="{50A32AD1-5B2D-4270-809C-C19ABDDC5AF8}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem39" key="{11201B02-5C2B-4709-915C-594E9309CC9D}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem40" key="{A9ACE8D7-D05A-4CC5-861F-1DBDE3F32B91}" group="False" parallel="False" enabled="True" testMoniker="*|@Navigate_TE_selecting_system2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem42" key="{1C1105FB-6D81-4831-9B71-AE0E59B1B6E9}" group="False" parallel="False" enabled="True" testMoniker="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps|Import Topology Devices" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Group2" key="{2A57ACFE-E1AC-4620-B14B-6EF0CA771F39}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<children>
-					<testItem name="ProjectTestItem37" key="{AF004C9F-7EE1-45D6-8EBA-1148D599CAEB}" group="False" parallel="False" enabled="True" load="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Deploy Changes for Controller M580 Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-			<testItem name="Close all tab and delete System 1" key="{2A57ACFE-E1AC-4620-B14B-6EF0CA771F39}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-				<testParameters />
-				<children>
-					<testItem name="ProjectTestItem41" key="{F7004F10-ADAE-4D6E-BEAD-91A408B5C90B}" group="False" parallel="False" enabled="True" testMoniker="{001ABD02-E134-4837-B290-55898E939DEF}close_all_tab_except_Systems_explorer_EC" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem43" key="{CBB6EB90-4B1D-43E6-9BCA-E86DCEEBBF92}" group="False" parallel="False" enabled="True" testMoniker="{001ABD02-E133-4837-B290-55898E939DEF}delete_system_Folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters>
-							<param0 name="node_name" type="3" localVarName="" varType="8" value="System_1" />
-						</testParameters>
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Nov 22 Execution order (Milestone 3) - 192.168.33.4" key="{CD7EFC63-5E03-4296-ADD9-2CE035B8AAE5}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-				<testParameters />
-				<children>
-					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_1_1" key="{AFD5DC51-8B8B-4644-9338-733262C76233}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_1_1" key="{04D544C7-E65E-4D86-AA2A-891F0AF6847D}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_1_1" key="{FD2538F0-6172-47AE-A31F-C0A8D6D1D8B2}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_1_1" key="{5030369D-94F5-46A1-9ABD-6C1F333C2366}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0007_2_1_1_1_1_2_1_1" key="{CF05FA09-4129-4D8E-85BD-881524C0E288}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0023_2_1_1_1_1_2_1_1" key="{0223556B-42FE-412B-B058-1A31336ED8CD}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Application Explorer(AE)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_AE_0018_2_1_1_1_2_1_1" key="{29D55ED0-4374-46AE-B1A2-E032FF6DA29C}" group="False" parallel="False" enabled="True" testMoniker="ApplicationExplorer|Search Template in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem12_2_1_1" key="{E4064440-4EF5-4AA4-B816-E09EBF7284E7}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem13_2_1_1" key="{94FB5350-70FD-4368-9A68-FAE5E0F9AC5D}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Creation of Folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem18_2_1_1" key="{352EA1BE-F2CD-4E22-8D9F-7CE7DCF3ADB4}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create 2 Ethernet Networks and Rename" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem14_2_1_1" key="{02C0D4AF-5F9F-405A-8A97-5371B216E92A}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem15_2_1_1" key="{813028C3-B6C2-4E05-BE74-5FCA467CEE56}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M580_Safety" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem16_2_1_1" key="{89C92D6A-6105-4FBA-8463-BD44AD3B3640}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for M340_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem17_2_1_1" key="{206223E7-22FB-49B9-A432-5FC27D37C0AB}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Create a Control Project for Quantum" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem26_1_2_1" key="{6842CE15-8395-479B-B2D1-87998CCC6333}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Change safety settings of controller to Disable" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem26_2_2_1_1" key="{F3BCF4D5-C67A-471F-862B-BA42B7991E58}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Close Controllers&#32;&#32;in Topology Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem19_2_3_1_1" key="{A5CD59D4-5A1B-4355-B302-5D018E4A0E52}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Open Configuration window of Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem19_2_1_2_1_1" key="{B03F2410-2B18-4736-9CA4-54C6C40BA5AF}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Double click on PLC Bus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem36_3_1" key="{CBDE882F-B5A3-488C-931D-FE0A5C5C54F2}" group="False" parallel="False" enabled="True" testMoniker="*|@Change_CPU_Version_of_controller__BME_P58_6040_03.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem46_1_1" key="{3FE44B81-1DFB-450A-B5E3-EB40C2770331}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Close PLC Bus Window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem43_3_1" key="{8AFC7815-3BA7-4F54-8880-A69E017E83F2}" group="False" parallel="False" enabled="True" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_6040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem44_2_1" key="{54D7068C-1353-4CE2-9586-E7CBD9F83B75}" group="False" parallel="False" enabled="True" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__192.168.33.4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem45_2_1" key="{2DFD63BD-558B-4FD1-B070-B65079BBA12A}" group="False" parallel="False" enabled="True" testMoniker="54 Map logical network to all communication modules|Close the logical network window in TM" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem37_3_1" key="{99950C60-5612-4B7A-8F45-656435403C35}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDI_1602_slot2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem38_3_1" key="{1EDD45CE-7BCF-4632-8408-FB01BBD8AC88}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Discrete_Module__BMX_DDO_1602_slot3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem39_3_1" key="{163716E8-2A97-4EEA-88D5-C908F5E9A74B}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Analog_Module__BMX_AMI_0810_Slot4" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem40_3_1" key="{9E153C11-0A60-42AC-9C5B-97D9C60D4DD2}" group="False" parallel="False" enabled="True" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Save and Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem36_2" key="{37935A61-695B-4936-914B-F756C2C98A4C}" group="False" parallel="False" enabled="True" testMoniker="55 Map the EPE devices to controller|Map EtherNet IP device to Controller - add Ethernet Network" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0040_1_2_2_1_2_1" key="{7DB5CFAC-D82A-4CC8-9E41-E344E917BFAA}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_4_1_1_2_1_1_1_1" key="{5F204F3C-9394-4A5B-8243-6B40E71CB165}" group="False" parallel="False" enabled="True" testMoniker="144 Open control project|Create a Control Project for M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_5_1_1_2_1_2_1_1" key="{AD6F4B19-8D29-4D4C-9394-F779018C3FCE}" group="False" parallel="False" enabled="True" testMoniker="148 Add instances to container and generate the section|Double Click on Container sections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_11_1_1_2_1_1_1_1" key="{DA56CECB-6CEF-45CF-905D-D589136C6803}" group="False" parallel="False" enabled="True" testMoniker="180 Assign instances to containers|Assign Instance to Containers in PE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem29_1_2_1_1" key="{DDCD947C-EB54-40D1-9EE5-0D31142E9C47}" group="False" parallel="False" enabled="True" testMoniker="153 Open Service Mapping Editor and map the Controller|Open Service Mapping Editor of M580_Standalone and map to Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem1_24_6_1_1_1_2_1_1_1" key="{F496D04A-9315-42C6-8BE5-4F878EF4AF4F}" group="False" parallel="False" enabled="True" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from control executeable r-click" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem12_2_1_1_2_1" key="{12397A1C-C98E-4D76-856C-1EAE9B0457EB}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem48_1_1" key="{DFBFF299-49DA-41D6-8E6F-1ADB1E8860AB}" group="False" parallel="False" enabled="True" testMoniker="*|@Deploy_the_controller_after_disabling_the_password__192.168.33.4__M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem49_1_1" key="{23BE7D00-1807-4743-A9BC-EF105277A9BF}" group="False" parallel="False" enabled="True" testMoniker="*|@Check_Backup_Data__192.168.33.4__M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem50_1_1" key="{2B990A53-730E-4B67-967E-A71DE833E71F}" group="False" parallel="False" enabled="True" testMoniker="*|@Check_Deploy_Data__192.168.33.4__M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem19_2_3_1_1_1_1" key="{6E962BDC-50AC-44AC-AA94-5A70CF03A822}" group="False" parallel="False" enabled="True" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Open Configuration window of Controller" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem46_2_1" key="{2DC1CC57-DF8C-4523-847E-C26C754E5321}" group="False" parallel="False" enabled="True" testMoniker="*|@Add_Analog_Module__BMX_AMO_0410_slot5" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem40_2_1_1_1" key="{DCDCE6F6-6032-4A59-A9F4-9D4EE596BC40}" group="False" parallel="False" enabled="True" testMoniker="66 Do some modification in configure and deploy the project to controller|Save and Close configuration with configuration pop up" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_EC_0040_1_2_2_1_1_1_1" key="{B0A53A3D-3225-4B5A-BE4E-0893BD39467C}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem47_1_1" key="{CCF089B6-A262-46D4-BB55-DCB5686CE3E3}" group="False" parallel="False" enabled="True" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Build All from control executeable r-click click on yes and OK" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem12_2_1_1_1_1_1" key="{2414DC64-7466-41F8-ADFE-1A6171A224F1}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem37_2" key="{92F58D5B-6A57-42AB-BFD3-69B336B5A725}" group="False" parallel="False" enabled="True" testMoniker="65 Export the controller and devices from TM root folder|Export Topology from root folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem38_2" key="{BCB92191-4E4C-4F92-9FBD-BC4091FA3DFA}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem39_2" key="{DDBD6E32-A226-4FEB-9CB6-F7732F8F3068}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem40_2" key="{A2F3F7FD-3852-49B7-9B98-83154CC1F1B4}" group="False" parallel="False" enabled="True" testMoniker="*|@Navigate_TE_selecting_system2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem42_2" key="{91040030-8654-4933-A031-A78EDCC0481E}" group="False" parallel="False" enabled="True" testMoniker="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps|Import Topology Devices" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-				</children>
+				<children />
 			</testItem>
 		</children>
 	</testItems>
-	<variables key="{00B55B0A-F697-429F-AC9F-AE74135591ED}">
+	<variables key="{4AC1BB12-C9D8-43B3-A2D7-260AE8173E9C}">
 		<data Version="4">
 			<Items>
 				<Variable Name="textfile_path" Type="String" Local="True">
@@ -3330,18 +2812,14 @@
 				<Variable Name="time_interval" Type="Integer" Local="True">
 					<DefValue IntValue="0" />
 				</Variable>
-				<Variable Name="Rename_Folder_HF" Type="String" Local="True">
-					<DefValue />
-				</Variable>
 				<Variable Name="system_1" Type="String" Local="True">
 					<DefValue />
 				</Variable>
 			</Items>
 		</data>
 	</variables>
-	<settings key="{BD89207E-1EE8-4F9B-9DB6-9CEBB644634F}">
+	<settings key="{E79C25A5-1D23-45E5-92F2-8834757263BC}">
 		<settingsVersion value="15.68" />
-		<settingsVersion value="15.55" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>
@@ -3370,12 +2848,9 @@
 		<setting name="AzureDevOps_URL" type="5" value="" />
 		<setting name="BitBar_APIKey" type="5" value="" />
 		<setting name="BitBar_APIURL" type="5" value="https://cloud.bitbar.com/api/" />
-		<setting name="BitBar_FindAndroidDevice" type="5" value="( Device Group As in Selected Device )" />
-		<setting name="BitBar_FindIOSDevice" type="5" value="( Device Group As in Selected Device )" />
 		<setting name="BitBar_FRAMEWORKID_Android" type="2" value="0" />
 		<setting name="BitBar_FRAMEWORKID_IOS" type="2" value="0" />
 		<setting name="BitBar_HUBURL" type="5" value="https://appium.bitbar.com/wd/hub/" />
-		<setting name="BitBar_NewCommandTimeout" type="2" value="300" />
 		<setting name="CBT_AppsAvailability" type="6" rowIndex="0" colIndex="0">
 			<columns>
 				<column type="5" enabled="True" />
@@ -3439,7 +2914,7 @@
 		</setting>
 		<setting name="DbgServices_UseExtendedDebugger" type="1" value="True" />
 		<setting name="DraggingDelay" type="2" value="5" />
-		<setting name="General_CurrentImageFormat" type="5" value="126_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_66_0_65_0_55_0_52_0_53_0_49_0_54_0_57_0_45_0_70_0_51_0_52_0_68_0_45_0_52_0_55_0_49_0_48_0_45_0_66_0_51_0_55_0_70_0_45_0_68_0_53_0_69_0_70_0_69_0_56_0_65_0_53_0_49_0_51_0_51_0_57_0_125_0_1_0_0_0_16_0_0_0_112_0_110_0_103_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_2_0_0_0_16_0_0_0_99_0_111_0_109_0_112_0_114_0_101_0_115_0_115_0_105_0_111_0_110_0_108_0_101_0_118_0_101_0_108_0_0_0_0_0_4_0_0_0_10_0_0_0_105_0_110_0_116_0_101_0_114_0_108_0_97_0_99_0_101_0_100_0_5_0_0_0_0_0_0_0_0_249_" />
+		<setting name="General_CurrentImageFormat" type="5" value="126_0_0_0_97_113_115_111_1_0_0_0_4_0_0_0_114_0_111_0_111_0_116_0_1_0_0_0_9_0_0_0_102_0_111_0_114_0_109_0_97_0_116_0_107_0_101_0_121_0_1_0_0_0_38_0_0_0_123_0_66_0_65_0_55_0_52_0_53_0_49_0_54_0_57_0_45_0_70_0_51_0_52_0_68_0_45_0_52_0_55_0_49_0_48_0_45_0_66_0_51_0_55_0_70_0_45_0_68_0_53_0_69_0_70_0_69_0_56_0_65_0_53_0_49_0_51_0_51_0_57_0_125_0_1_0_0_0_16_0_0_0_112_0_110_0_103_0_99_0_111_0_110_0_102_0_105_0_103_0_117_0_114_0_97_0_116_0_105_0_111_0_110_0_2_0_0_0_16_0_0_0_99_0_111_0_109_0_112_0_114_0_101_0_115_0_115_0_105_0_111_0_110_0_108_0_101_0_118_0_101_0_108_0_0_0_0_0_4_0_0_0_10_0_0_0_105_0_110_0_116_0_101_0_114_0_108_0_97_0_99_0_101_0_100_0_5_0_0_0_0_0_0_0_0_90_" />
 		<setting name="General_DisableDWMBeforeCapturingImage" type="1" value="False" />
 		<setting name="General_ImageFormat" type="5" value="Format: PNG; Compression level: 4" />
 		<setting name="General_ObjectTreeModel" type="6" rowIndex="0" colIndex="0">
@@ -3523,15 +2998,6 @@
 		<setting name="LoadTestAPIKeyLogin" type="5" value="&lt;A&gt;Login to LoadNinja&lt;/A&gt; to get your API key." />
 		<setting name="LoadTestAPIKeySales" type="5" value="Want to know more &lt;A&gt;Contact Sales&lt;/A&gt;." />
 		<setting name="LoadTestAPIKeySignup" type="5" value="&lt;A&gt;Sign up for LN trial&lt;/A&gt;." />
-		<setting name="MobileSupportType" type="6" rowIndex="0" colIndex="0">
-			<columns>
-				<column type="5" enabled="True" />
-			</columns>
-			<data>
-				<row val0="Mobile device cloud (BitBar and local Appium)" />
-				<row val0="Legacy mobile support" />
-			</data>
-		</setting>
 		<setting name="MouseMovementDelay" type="2" value="0" />
 		<setting name="ObjectMapping_Objects" type="6" rowIndex="-1" colIndex="3">
 			<columns>
@@ -3559,72 +3025,8 @@
 				<row val0="True" val1="%PRODUCT_LOCATION%\Open Apps\Flex\FlashInjector.swf" />
 			</data>
 		</setting>
-		<setting name="OpenApps_HybridMobile_AccessPolicy" type="1" value="False" />
-		<setting name="OpenApps_HybridMobile_DynamicIdentifiers" type="6" rowIndex="37" colIndex="9">
-			<columns>
-				<column type="2" enabled="True" />
-				<column type="2" enabled="True" />
-				<column type="1" enabled="True" />
-				<column type="1" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="5" enabled="True" />
-				<column type="2" enabled="True" />
-			</columns>
-			<data>
-				<row val0="-1" val1="0" val2="True" val3="True" val4="ASP.NET" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="True" val4="Do not use IDs ending with a string like &quot;ctl00&quot;" val5="RegExp" val6="^(.*[-_$])?(ctl[0-9]+)$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="True" val4="Remove GUIDs and ctl00-like prefixes from Sharepoint IDs" val5="RegExp" val6="(.+?_(\h+_\h+_\h+_\h+_\h+))+(.*ctr?l[0-9]+)?[_$]?{.*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="0" val1="0" val2="False" val3="True" val4="For IDs containing a string like &quot;ctl00_&quot;, leave only symbols after this string" val5="RegExp" val6=".*(ctl[0-9]+[-_$]+){.*}" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Dojo toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="4" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;dijit_&quot;" val5="Wildcard" val6="dijit_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Google Web Toolkit" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="6" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;gwt-uid-370_runButton&quot;" val5="RegExp" val6="^(gwt-uid-[0-9]+)(_{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="6" val1="0" val2="False" val3="True" val4="Remove dynamic parts of Sencha GXT IDs" val5="RegExp" val6="^(x-((widget)|(auto))-.*[0-9]+)([-_]{.*})?$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="JavaServer Faces" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;_t14&quot;" val5="RegExp" val6="^{_t}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;j_id23&quot; or &quot;j_idt23&quot;" val5="RegExp" val6="^{j_idt?}{[0-9]+}$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Remove all but the last part of IDs like &quot;frm:menuLinks:0:link&quot;" val5="RegExp" val6="(.+):{[^0-9]+}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="9" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;frm:menuLinks:3:link&quot;" val5="RegExp" val6="(.+):(.*)" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="jQuery UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="14" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;ui-id-&quot;" val5="Wildcard" val6="ui-id-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Microsoft Dynamics" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="16" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;id-33&quot; or &quot;id__14&quot;" val5="RegExp" val6="^id[_0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Salesforce" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="18" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;checkbox-1&quot; or &quot;checkbox-123-3&quot;" val5="RegExp" val6="^checkbox-[0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="18" val1="0" val2="False" val3="True" val4="Do not use IDs like &quot;input-1&quot; or &quot;input-123-3&quot;" val5="RegExp" val6="^input-[0-9\-]+$" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Sencha ExtJS" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-gen&quot;" val5="RegExp" val6="^(.*-)?ext-gen" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;ext-comp&quot;" val5="RegExp" val6="^(.*-)?ext-comp" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;extdd-&quot;" val5="Wildcard" val6="extdd-*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="21" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;treepicker-1038&quot; or &quot;treepicker-1038-inputEl&quot;" val5="RegExp" val6="^{[A-Za-z-]+}-{\d\d\d\d+}{.*}$" val7="$1$3" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Sencha Touch" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="26" val1="0" val2="False" val3="True" val4="Remove dynamic parts of Sencha Touch IDs" val5="RegExp" val6="^ext-{.*}-\d+$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Yahoo! UI library" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="28" val1="0" val2="False" val3="True" val4="Do not use IDs starting with &quot;yui-gen&quot;" val5="Wildcard" val6="yui-gen*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="28" val1="0" val2="False" val3="True" val4="Do not use IDs containing &quot;yui_3_&quot;" val5="Wildcard" val6="*yui_3_*" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Other" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Do not use IDs containing GUID" val5="RegExp" val6="\h+-\h+-\h+-\h+-\h+" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove leading characters from IDs like &quot;c1114509959-searchform&quot;" val5="RegExp" val6="^[A-Za-z](\d\d\d\d\d+){[A-Za-z-]*}$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove trailing digits from IDs like &quot;unique-123456&quot;" val5="RegExp" val6="^{[A-Za-z-]+}(\d\d\d\d\d+)$" val7="$1" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique_123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}_(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="31" val1="0" val2="False" val3="True" val4="Remove digits from IDs like &quot;some_unique123456_text&quot;" val5="RegExp" val6="^{[A-Za-z_]+}(\d\d\d\d\d+){[A-Za-z_]*}$" val7="$1$2" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-				<row val0="-1" val1="0" val2="True" val3="True" val4="Custom" val5="" val6="" val7="" val8="Wildcard&#13;&#10;RegExp" val9="0" />
-			</data>
-		</setting>
-		<setting name="OpenApps_HybridMobile_IdentificationAttribute" type="6" rowIndex="0" colIndex="0">
-			<columns>
-				<column type="5" enabled="True" />
-			</columns>
-			<data>
-				<row val0="ID" />
-				<row val0="Name" />
-			</data>
-		</setting>
 		<setting name="OpenApps_MethodInvokeTimeout" type="2" value="3000" />
-		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="21" colIndex="0">
+		<setting name="OpenApps_MSAA_ListOfAcceptedWindows" type="6" rowIndex="11" colIndex="1">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -3642,16 +3044,6 @@
 				<row val0="True" val1="XTPTaskPanel" />
 				<row val0="True" val1="XTPReport" />
 				<row val0="True" val1="XTPPopupBar" />
-				<row val0="True" val1="SysIPAddress32" />
-				<row val0="True" val1="Afx*" />
-				<row val0="True" val1="ListBox" />
-				<row val0="True" val1="AfxWnd140u" />
-				<row val0="True" val1="AfxFrameOrView140u" />
-				<row val0="True" val1="ControlExpert" />
-				<row val0="True" val1="#32768" />
-				<row val0="True" val1="SysTreeView32" />
-				<row val0="True" val1="ATL*" />
-				<row val0="True" val1="ComboLBox" />
 			</data>
 		</setting>
 		<setting name="OpenApps_MSAA_TreeModel" type="1" value="False" />
@@ -3850,65 +3242,13 @@
 			</data>
 		</setting>
 		<setting name="OpenApps_Web_WebPageLoadingTimeout" type="2" value="60000" />
-		<setting name="OpenApps_WPF_CompositeControls" type="6" rowIndex="50" colIndex="1">
+		<setting name="OpenApps_WPF_CompositeControls" type="6" rowIndex="-1" colIndex="2">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
 				<column type="5" enabled="True" />
 			</columns>
-			<data>
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.FrameHostControl" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.RadTreeViewItem" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.InstanceEditor.Views.InstanceEditorRadGridView" val2="" />
-				<row val0="True" val1="InstanceEditorRadGridView" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ClientEssentials.UIFramework.Explorer.Controls.ExplorerNode" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ClientEssentials.UIFramework.Explorer.Controls.ExplorerNodeControl" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.CloseableTabItem" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.Docking.PaneHeader" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.RadPaneGroup" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.MoveSummary" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.ReplaceTemplateSummary" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Source.Dock.MvvmRadPaneGroup" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.ModalDialog.ModalDialogWindow" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ComboBox" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.InstanceEditor.Views.Editor" val2="" />
-				<row val0="True" val1="System.Windows.Controls.Primitives.ToggleButton" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Explorer.ExplorerNode" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Resizing.Resizer" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Explorer.ExplorerNodeControl" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.Data.PropertyGrid.PropertyGridField" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.ImportDialog " val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.TreeListView.TreeListViewRow" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.ApplicationWorkArea.Explorer.Views.UpdateTemplateControl" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ListBox" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.DomainNavigator.ApplicationToProject.AssignmentViewerDialog" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ListBoxItem" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.GridViewHeaderCell" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.ValidatedElement" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.MoveSummary" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.TemplatizationWorkArea.Controls.SearchControl" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.InstantiationWorkArea.InstanceInspector.InspectorDialog" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.GridViewRow" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Unity.Project.Client.ManageNetworkVariables" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.UcBrowser" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.FilteringControl" val2="" />
-				<row val0="True" val1="System.Windows.Controls.ContentControl" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.EditableComboBox" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.Controls.Wrap.Controls.WrapContainerView" val2="" />
-				<row val0="True" val1="System.Windows.Controls.Image" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.InstantiationWorkArea.UpdateReplaceTemplate.Views.UpdateTemplateControl" val2="" />
-				<row val0="True" val1="System.Windows.Controls.TreeViewItem" val2="" />
-				<row val0="True" val1="System.Windows.Controls.Expander" val2="" />
-				<row val0="True" val1="Telerik.Windows.Controls.GridView.GridViewCell" val2="" />
-				<row val0="True" val1="ActiproSoftware.Windows.Controls.Ribbon.Controls.SplitButton" val2="" />
-				<row val0="True" val1="SchneiderElectric.ProcessExpert.TemplatizationWorkArea.Controls.NormalPortControl" val2="" />
-				<row val0="True" val1="ActiproSoftware.Windows.Controls.Grids.TreeListViewItemCell" val2="" />
-				<row val0="True" val1="Xceed.Wpf.AvalonDock.Controls.LayoutAnchorableControl" val2="" />
-				<row val0="True" val1="Xceed.Wpf.AvalonDock.Controls.AnchorablePaneTitle" val2="" />
-				<row val0="True" val1="Xceed.Wpf.AvalonDock.Controls.LayoutDocumentTabItem" val2="" />
-				<row val0="True" val1="SchneiderElectric.Automation.Client.Presentation.Windows.Dialogs.DetailMessageDialog" val2="" />
-				<row val0="True" val1="SchneiderElectric.Automation.Client.Topology.Unity.Screens.ProjectEditor.ProjectEditorView" val2="" />
-			</data>
+			<data />
 		</setting>
 		<setting name="OpenApps_WPF_ItemsTemplates" type="6" rowIndex="-1" colIndex="2">
 			<columns>
@@ -3978,18 +3318,18 @@
 				<row val0="Breadth-first" />
 			</data>
 		</setting>
-		<setting name="Playback_OverlappingWindow_IgnoreOverlappingWindow" type="1" value="True" />
+		<setting name="Playback_OverlappingWindow_IgnoreOverlappingWindow" type="1" value="False" />
 		<setting name="Playback_Runtime_AutoWaitTimeout" type="2" value="10000" />
 		<setting name="Playback_Runtime_DelayBetweenEvents" type="2" value="50" />
 		<setting name="Playback_Runtime_DisableMouse" type="1" value="False" />
-		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="True" />
+		<setting name="Playback_Runtime_MinimizeBeforePlayback" type="1" value="False" />
 		<setting name="Playback_Runtime_UseCaseSensitiveParameters" type="1" value="False" />
 		<setting name="Playback_StopOnError" type="1" value="True" />
 		<setting name="Playback_StopOnObjectRecognitionError" type="1" value="False" />
 		<setting name="Playback_StopOnWarning" type="1" value="False" />
 		<setting name="Playback_TestItemMaxReRunCount" type="2" value="1" />
 		<setting name="Playback_UnexpectedWndHandling_ClickOnFocusedControl" type="1" value="True" />
-		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="True" />
+		<setting name="Playback_UnexpectedWndHandling_IgnoreUnexpectedWindow" type="1" value="False" />
 		<setting name="Playback_UnexpectedWndHandling_PressEnter" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_PressEsc" type="1" value="True" />
 		<setting name="Playback_UnexpectedWndHandling_SendCloseCommand" type="1" value="True" />
@@ -4006,34 +3346,12 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="2" colIndex="0">
+		<setting name="TextRecognizer_AcceptedWindows" type="6" rowIndex="-1" colIndex="1">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
 			</columns>
-			<data>
-				<row val0="True" val1="AfxWnd140u" />
-				<row val0="True" val1="VSFlexGrid8N" />
-				<row val0="False" val1="Afx:00400000:8" />
-				<row val0="True" val1="msctls_statusbar32" />
-				<row val0="False" val1="AfxWnd90u" />
-				<row val0="True" val1="AfxFrameOrView90u" />
-				<row val0="False" val1="Afx:00D80000:8" />
-				<row val0="True" val1="CCFIOFWTabControl" />
-				<row val0="True" val1="AfxFrameOrView140u" />
-				<row val0="False" val1="Afx:00D80000:b" />
-				<row val0="False" val1="Afx:00D60000:8" />
-				<row val0="False" val1="Afx:00650000:8" />
-				<row val0="False" val1="Afx:00220000:8" />
-				<row val0="True" val1="GXWND" />
-				<row val0="False" val1="Afx:00410000:8" />
-				<row val0="True" val1="ThunderRT6PictureBoxDC" />
-				<row val0="True" val1="MDIClient" />
-				<row val0="True" val1="TreeView20WndClass" />
-				<row val0="True" val1="Thunder*" />
-				<row val0="True" val1="Afx*" />
-				<row val0="False" val1="Afx:00520000:8" />
-			</data>
+			<data />
 		</setting>
 		<setting name="Visualizer_AutoUpdate" type="1" value="False" />
 		<setting name="Visualizer_AutoUpdateMode" type="6" rowIndex="0" colIndex="0">
@@ -4112,16 +3430,16 @@
 		<setting name="ZFJ_ZephyrAccessKey" type="5" value="" />
 		<setting name="ZFJ_ZephyrSecretKey" type="5" value="" />
 	</settings>
-	<analysis key="{8F7FC973-C9D3-49FA-B3F7-6D2EB2555B41}" />
+	<analysis key="{9BB9CD4D-D075-4D1A-B55C-C7ABCFD8CA8A}" />
 	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
 		<data />
 	</scc>
-	<issueTracking key="{AD7245ED-148B-434B-B7E5-AEB3B186BE86}">
+	<issueTracking key="{E70F7FD4-A7A5-4E60-A114-7164C3A33BBA}">
 		<Templates>
 			<Template Id="{1EB17ADF-E4EB-404D-97DC-AD758A1E8C1D}" ConnectionId="{00000000-0000-0000-0000-000000000000}" Description="This template is used by TestComplete&apos;s Log subsystem to post test results to an issue-tracking system. You can also use it at your desire." Name="CreateWorkItem" IsSystem="True" ItemTypeName="" ProjectName="" IsEditing="False" ItemId="">
 				<Fields>
-					<Field ItemId="{D3788070-B0A0-4AEF-8417-1D57B5DB98B8}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Subject" />
-					<Field ItemId="{C178C53D-AFEA-49FF-B0B0-678F47F5FD27}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Description" />
+					<Field ItemId="{8B75B86B-DD44-457F-9F6E-FE29666EF25E}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Subject" />
+					<Field ItemId="{CDFD3110-D200-4A4B-A57B-EDEF38065EA3}" AliasIsRequired="True" DBFieldNameIsRequired="False" Value="" DBFieldName="" Alias="Description" />
 				</Fields>
 			</Template>
 		</Templates>

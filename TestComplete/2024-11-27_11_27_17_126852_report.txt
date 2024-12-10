@@ -1,0 +1,7 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Select context menu item EC project browser in project explorer as "Export"|| Log Message:The Context Menu Item clicked is : Export
+When I Select controller in context menu as "Topology"|| Log Message:The Context Menu Item clicked is : Topology
+When I click modal dialog window Instance editor save in application explorer as 'Yes'|| Log Message:Clicked OK button.
+When I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'|| Log Message:System1_20241127112736
+When I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'
