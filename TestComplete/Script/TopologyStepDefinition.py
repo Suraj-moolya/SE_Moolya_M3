@@ -330,3 +330,9 @@ def step_impl(smp):
     CommonUtil.write_text_file("\nWhen I Verify '<smp>' in Hardware Catalog Window")
     obj.textboxtopologyexplorerhardwarecatalogdevices(smp)
     Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Enter Controller Password deploy screen TE Confirm Password box in topology as {arg}")
+def step_impl(confirmPasswordBox3):
+    """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""
+    CommonUtil.write_text_file("\nWhen I Enter Controller Password deploy screen TE Confirm Password box in topology as \""+confirmPasswordBox3+"\"")
+    obj.textboxconfirmpasswordboxentercontrollerpassworddeployscreente(confirmPasswordBox3)
