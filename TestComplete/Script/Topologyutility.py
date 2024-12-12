@@ -50,12 +50,13 @@ def DblClick_template_TE(temp_name):
     Log.Warning(f'The {temp_name} is not present')        
  
 def Expand_communication_tab_TE(val):
-  val = "Communication"
-  sections = syse_obj.systemexplorermenubutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
-  for section in sections:
-    if val in section.DataContext.Name.OleValue:
-      section.IsExpanded = True
-         
+    #sections = syse_obj.systemexplorermenubutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
+    sections = topology_obj.topologydeviceeditertextbox.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
+    for section in sections:
+      if val in section.DataContext.Name.OleValue:
+        section.IsExpanded = True
+        break
+	           
 def edit_IP_Address(param):
     name,IP_add =  param.split('$$')
     grid_row_obj = topology_obj.topologydeviceeditertextbox.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  
@@ -132,4 +133,9 @@ def Verify_Device_Hardware_Catalog_TE(smp):
       break
   else:
     Log.Warning(f'{obj.Text} is not verified')
+    
+def Enter_Controller_Password_deploy_screen_TE(password):
+      PW_box = topology_obj.PasswordControlBoxtextbox   
+      PW_box.enter_password(password)
+      Log.Message(str(PW_box.object.PasswordText) + " entered in Password")
 
