@@ -41,13 +41,7 @@ def step_impl(backupDataDescription3):
 def step_impl():
     """I Select deploy data from selection grid TE deploy data selection grid in topology"""
     CommonUtil.write_text_file("\nWhen I Select deploy data from selection grid TE deploy data selection grid in topology")
-    obj.textboxdeploydataselectiongridselectdeploydatafromselectiongridte()  
-    
-#@when("I select start engine checkbox in in topology")
-#def step_impl():
-#    """I select start engine checkbox in in topology"""
-#    CommonUtil.write_text_file("\nWhen I select start engine checkbox in in topology")
-#    obj.clickstartenginecheckbox()
+    obj.textboxdeploydataselectiongridselectdeploydatafromselectiongridte()
 
 @when("I Enter Controller Password TE New Password box in topology as {arg}")
 def step_impl(newPasswordBox1):
@@ -211,10 +205,10 @@ def step_impl():
     CommonUtil.write_text_file(f"\nWhen I click Update button on hardware catalog window")
     obj.updatebtninhardwarecatalog()
     
-@when("I select {arg} on control expert popub window")
+@when("I select {arg} on control expert popup window")
 def step_impl(button):
-    """I select '<button>' on control expert popub window"""
-    CommonUtil.write_text_file(f"\nWhen I select '{button}' on control expert popub window")
+    """I select '<button>' on control expert popup window"""
+    CommonUtil.write_text_file(f"\nWhen I select '{button}' on control expert popup window")
     obj.controlexppopup(button)
     
 @when("I double click on the installed {arg} on DTM Browser")
@@ -243,6 +237,12 @@ def step_impl(ip_address):
     """I update the '<ip_address>' in PRM Window"""
     CommonUtil.write_text_file(f"\nWhen I update the '{ip_address}' in PRM Window")
     obj.updateipaddresinprm(ip_address)
+    
+@when("I update the {arg} in FDT Configuration Window")
+def step_impl(ip_address):
+    """I update the '<ip_address>' in FDT Configuration Window"""
+    CommonUtil.write_text_file(f"\nWhen I update the '{ip_address}' in FDT Configuration Window")
+    obj.updateipinftdconfigwindow(ip_address)    
 
 @when("I click {arg} on PRM Window")
 def step_impl(button1):
@@ -256,12 +256,6 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen I selected Save PRM Configuration in Configuration Window")
     robj.buttonsaverefineofflineselected()
     Applicationutility.wait_in_seconds(2000, 'Wait')
-    
-@when("I selected {arg} Button in hardware catalog window")
-def step_impl(button):
-    """I selected '<button>' Button in hardware catalog window"""
-    CommonUtil.write_text_file("\nWhen I selected '{button}' Button in hardware catalog window")
-    obj.hardwarecatalogclosebtn(button)
     
 @when("I select {arg} in PLC window")
 def step_impl(button):
@@ -331,6 +325,78 @@ def step_impl(smp):
     obj.textboxtopologyexplorerhardwarecatalogdevices(smp)
     Applicationutility.take_screenshot("Full Screenshot")
     
+@when("I Double Click on {arg} in channel Window")
+def step_impl(property):
+    """I Double Click on '<property>' in channel Window"""
+    CommonUtil.write_text_file(f"\nWhen I Double Click on '{property}' in channel Window")
+    obj.textboxtopologyexplorerdoubleclickonaddwindow(property)
+    
+@when("I selected {arg} from the dropdown in the Reference Filtering tab")
+def step_impl(property):
+    """I selected '<property>' from the dropdown in the Reference Filtering tab"""
+    CommonUtil.write_text_file(f"\nWhen I selected {property} from the dropdown in the Reference Filtering tab")
+    obj.textboxtopologyexplorerdoubleclickonftdconfigurationwindow(property)
+    
+@when("I selected {arg} and {arg} in the Options Modules tab")
+def step_impl(slot, module):
+  """I selected '<slot>' and '<module>' in the Options Modules tab"""
+  CommonUtil.write_text_file(f"\nWhen I selected '{slot}' and '{module}' in the Options Modules tab")
+  obj.textboxtopologyexplorerselectslotinftdconfigurationwindow(slot, module)
+    
+@when("I clicked {arg} in the DTM channel window")
+def step_impl(button):
+  """I clicked '<button>' in the DTM channel window"""
+  CommonUtil.write_text_file(f"\nWhen I clicked '{button}' in the DTM channel window")
+  obj.textboxtopologyexplorerclickbuttoninfigurationwindow(button)
+    
+@then("I verify the Device Name and Reference in the DTM Channel window")
+def step_impl():
+  """I verify the Device Name and Reference in the DTM Channel window"""
+  CommonUtil.write_text_file(f"\nThen I verify the Device Name and Reference in the DTM Channel window")
+  obj.textboxtopologyexplorerverifydtmdeviceinfigurationwindow()
+  
+@when("I selected {arg} from the submenu in the DTM Browser Modal Dialogue window")
+def step_impl(option):
+  """I selected '<option>' from the submenu in the DTM Browser Modal Dialogue window"""
+  CommonUtil.write_text_file(f"\nWhen I selected '{option}' from the submenu in the DTM Browser Modal Dialogue window")
+  obj.selectsubmenuoptioninmodaldialogue(option)
+  
+@when("I click {arg} in the DTM Browser Modal Dialogue window")
+def step_impl(option):
+  """I click '<option>' in the DTM Browser Modal Dialogue window"""
+  CommonUtil.write_text_file(f"\nWhen I click '{option}' in the DTM Browser Modal Dialogue window")
+  obj.selectfinaloptioninmodaldialogue(option)
+  
+@when("I import the required module {arg} to configured modules")
+def step_impl(module):
+  """I import the required module '<module>' to configured modules"""
+  CommonUtil.write_text_file(f"\nWhen I import the required module '{module}' to configured modules")
+  obj.importmodulesinftdconfigwindow(module)
+  
+@when("I click {arg} and close the DTM Window")
+def step_impl(button):
+  """I click '<button1>' and close the DTM Window"""
+  CommonUtil.write_text_file(f"\nWhen I click '{button}' and close the DTM Window")
+  obj.clickbuttoninftdconfigwindow(button)
+  
+@when("I click on required {arg} on DTM Browser")
+def step_impl(channel):
+  """I click on required '<channel>' on DTM Browser"""
+  CommonUtil.write_text_file(f"\nWhen I click on required '{channel}' on DTM Browser")
+  obj.clickchannelinftdconfigwindow(channel)
+  
+@when("I select {arg} in FDT Configuration Window")
+def step_impl(tab):
+  """I select '<tab>' in FDT Configuration Window"""
+  CommonUtil.write_text_file(f"\nWhen I select '{tab}' in FDT Configuration Window")
+  obj.selecttabinftdconfigwindow(tab)
+  
+@when("I click the {arg} checkbox in the Update Project window")
+def step_impl(property):
+  """I click the '<property>' checkbox in the Update Project window"""
+  CommonUtil.write_text_file(f"\nWhen I click the '{property}' checkbox in the Update Project window")
+  obj.clickcheckboxinupdateprojectwindow(property)
+
 @when("I Enter Controller Password deploy screen TE Confirm Password box in topology as {arg}")
 def step_impl(confirmPasswordBox3):
     """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""

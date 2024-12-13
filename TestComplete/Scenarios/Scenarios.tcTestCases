@@ -91,6 +91,12 @@
 		<Feature Path="65 Export the controller and devices from TM root folder.feature" />
 		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
 		<Feature Path="96 Update DTM Catalog.feature" />
+		<Feature Path="97 Manage DTM.feature" />
+		<Feature Path="99 Manage GSD library.feature" />
+		<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
+		<Feature Path="84 Check Redeploy.feature" />
+		<Feature Path="36 Check build &amp; deploy changes in refine online.feature" />
+		<Feature Path="38 Check update project.feature" />
 		<Feature Path="75 Create Work stations for client and add multiple NIC&apos;s and configure the IP, logical network.feature" />
 		<Feature Path="81 Check backup data for each controller.feature" />
 		<Feature Path="92 Export only Devices into csv format.feature" />
