@@ -1,5 +1,5 @@
-﻿from TopologyExporerTab import TopologyExporerTab
-topo_obj = TopologyExporerTab()
+﻿from TopologyExplorerTab import TopologyExplorerTab
+topo_obj = TopologyExplorerTab()
 
         
 def Click_on_toolbar_icon_TE(icon_name):##

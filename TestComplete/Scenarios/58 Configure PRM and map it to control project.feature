@@ -13,8 +13,7 @@ And I Select '<tabname>' in hardware catalog window
 And I double click on '<property>' in hardware catalog window
 And I double click on '<property1>' in hardware catalog window
 And I click Update button on hardware catalog window
-And I select '<button>' on control expert popub window
-And I selected '<button2>' Button in hardware catalog window
+And I select '<button>' on control expert popup window
 And I double click on the installed '<prm>' on DTM Browser
 And I double click on '<settings>' in PRM Window
 And I update the '<ip_address>' in PRM Window
