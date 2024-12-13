@@ -396,3 +396,9 @@ def step_impl(property):
   """I click the '<property>' checkbox in the Update Project window"""
   CommonUtil.write_text_file(f"\nWhen I click the '{property}' checkbox in the Update Project window")
   obj.clickcheckboxinupdateprojectwindow(property)
+
+@when("I Enter Controller Password deploy screen TE Confirm Password box in topology as {arg}")
+def step_impl(confirmPasswordBox3):
+    """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""
+    CommonUtil.write_text_file("\nWhen I Enter Controller Password deploy screen TE Confirm Password box in topology as \""+confirmPasswordBox3+"\"")
+    obj.textboxconfirmpasswordboxentercontrollerpassworddeployscreente(confirmPasswordBox3)

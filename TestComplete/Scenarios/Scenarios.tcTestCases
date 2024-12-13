@@ -97,5 +97,12 @@
 		<Feature Path="84 Check Redeploy.feature" />
 		<Feature Path="36 Check build &amp; deploy changes in refine online.feature" />
 		<Feature Path="38 Check update project.feature" />
+		<Feature Path="75 Create Work stations for client and add multiple NIC&apos;s and configure the IP, logical network.feature" />
+		<Feature Path="81 Check backup data for each controller.feature" />
+		<Feature Path="92 Export only Devices into csv format.feature" />
+		<Feature Path="93 Edit the csv. create_delete few more devices.feature" />
+		<Feature Path="31 Enable system password in SE and open controller in TE, set PW for controller and open it.feature" />
+		<Feature Path="29 Modify the IP address after mapping to workstation.feature" />
+		<Feature Path="20 Run Supervision Client.feature" />
 	</Folder>
 </Scenarios>
