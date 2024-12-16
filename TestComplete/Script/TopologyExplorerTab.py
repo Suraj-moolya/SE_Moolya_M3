@@ -63,6 +63,11 @@ class TopologyExplorerTab(MapBase):
     def configurationhardwarecatalog(self):
         """configurationhardwarecatalog"""
         return self.get_element("ConfigurationHardwareCatalog_TopologyExporerTab")
+        
+    @property
+    def configurationhardwarecatalog1(self):
+        """configurationhardwarecatalog1"""
+        return self.get_element("ConfigurationHardwareCatalog1_TopologyExporerTab")
               
     @property
     def catalogbutton(self):
@@ -182,3 +187,23 @@ class TopologyExplorerTab(MapBase):
     def deploycheckbox(self):
         """deploycheckbox"""
         return self.get_element("DeployCheckbox_TopologyExporerTab")
+              
+    @property
+    def fdtconfigurationwindowtextbox(self):
+        """oldpasswordboxtextbox"""
+        return self.get_element("fdtConfigurationWindow_TopologyExporerTab")
+              
+    @property
+    def dtmdevicewindowtextbox(self):
+        """dtmdevicewindowtextbox"""
+        return self.get_element("DTMDevice_TopologyExporerTab")
+              
+    @property
+    def ipconfigfdtwindowtextbox(self):
+        """dtmdevicewindowtextbox"""
+        return self.get_element("IPConfigFDT_TopologyExporerTab")
+              
+    @property
+    def updateprojecttab(self):
+        """updateprojecttab"""
+        return self.get_element("UpdateProjectTab_TopologyExporerTab")

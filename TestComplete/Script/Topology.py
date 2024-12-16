@@ -64,5 +64,10 @@ class Topology(MapBase):
     def PasswordControlBoxtextbox(self):
         """PasswordControlBoxtextbox"""
         return self.get_element("PasswordControlBox_Topology")
- 
+              
+    @property
+    def fdtconfigurationwindowtextbox(self):
+        """oldpasswordboxtextbox"""
+        return self.get_element("fdtConfigurationWindow_TopologyExporerTab")
+
               

@@ -162,6 +162,7 @@
 			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="TopologyConfigurationWindow_TopologyExporerTab" Name="MenuBar('Application')" Parent="EngineeringClient_" />
 			 <UIControl Element="ConfigurationHardwareCatalog_TopologyExporerTab" Name="MDIWindow('Hardware Catalog')" Parent="EngineeringClient_" />
+			 <UIControl Element="ConfigurationHardwareCatalog1_TopologyExporerTab" Name="Window('*', 'Hardware Catalog', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="Catalog_TopologyExporerTab" Name="VBObject('treCatalog')" Parent="EngineeringClient_" />
              <UIControl Element="STBProperties_TopologyExporerTab" Name="WPFObject('BasePropertyGrid', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="STBPropertiesClosebutton_TopologyExporerTab" Name="WPFObject('PART_CloseInnerContent')" Parent="EngineeringClient_" />
@@ -180,7 +181,11 @@
 			 <UIControl Element="StartEngineCheckbox_TopologyExporerTab" Name="WPFObject('Box')" Parent="EngineeringClient_" />
 			 <UIControl Element="passwordOKButton_TopologyExporerTab" Name="WPFObject('ButtonOK')" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('Button', 'Deploy', 1)" Visible="True" Parent="EngineeringClient_" />
-			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />	 
+			 <UIControl Element="fdtConfigurationWindow_TopologyExporerTab" Name="MDIWindow('* - fdtConfiguration')" Visible="True" Parent="EngineeringClient_" />
+			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />
+			 <UIControl Element="DTMDevice_TopologyExporerTab" Name="WinFormsObject('TabPageEx', 'My Device')" Parent="EngineeringClient_" />
+			 <UIControl Element="IPConfigFDT_TopologyExporerTab" Name="Window('Button', 'IP Configuration', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="UpdateProjectTab_TopologyExporerTab" Name="WPFObject('CandidateSelectionWindow')" Parent="EngineeringClient_" />
         </Component>
         <Component name="Global Templates Tab">
              <UIControl Element="globaltemplatecore_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
@@ -393,10 +398,13 @@
 			 <UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
 			 <UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
+			 <UIControl Element="Deviceoptions_ControlExpert" Name="Popup('Device menu')" Parent="ControlExpert_" />
+			 <UIControl Element="Additionaloptions_ControlExpert" Name="Popup('Additional functions')" Parent="ControlExpert_" />
 			 <UIControl Element="ToolPopUP_ControlExpert" Name="Popup('*')" Parent="ControlExpert_" />
 			 <UIControl Element="dropdownbutton_ControlExpert" Name="Window('ComboBox', '', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="DropDownTab_ControlExpert" Name="List('Slot B :')" Parent="ControlExpert_" />
 			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
 
         </Component>
@@ -410,7 +418,7 @@
              <UIControl Element="DialogListboxCE1_DialogCE" Name="Window('AfxWnd140u', '', 2)" Parent="ControlExpert_" />
 		</Component>
 		<Component name="Supervision Project">
-             <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" />
+             <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Parent="EngineeringClient_" />
         </Component>
         <Component name="Project Explorer">
              <UIControl Element="wpfcombobox_ProjectExplorer" Name="WPFObject('ComboBox', '', 1)" Parent="EngineeringClient_" />	 
@@ -435,5 +443,12 @@
              <UIControl Element="OldPasswordBox_Topology" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
 <UIControl Element="PasswordControlBox_Topology" Name="WPFObject('PasswordControlPasswordBox')" Parent="EngineeringClient_" />
 
+        </Component>
+        <Component name="GSD Addition">
+             <UIControl Element="Homepage_GSDAddition" Name="Window('#32770', '*', 1)" Parent="Wizard_" />
+             <UIControl Element="ChooseFolderTab_GSDAddition" Name="Window('#32770', 'Choose Folder', 1)" Parent="Wizard_" />
+             <UIControl Element="DuplicateFileTab_GSDAddition" Name="Window('#32770', 'File Already Exist', 1)" Parent="Wizard_" />
+             <UIControl Element="DeleteDeviceTab_GSDAddition" Name="Window('#32770', 'GSD Deletion from Device Library', 1)" Parent="DeleteGSD_" />
+             <UIControl Element="DeleteDevicePopupTab_GSDAddition" Name="Window('#32770', 'DeleteGSD', 1)" Parent="DeleteGSD_" />
         </Component>
 </UIControlRepository>

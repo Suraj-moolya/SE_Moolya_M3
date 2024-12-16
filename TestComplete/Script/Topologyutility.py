@@ -8,6 +8,7 @@ from SystemExplorerScreen import SystemExplorerScreen
 import Actionutility
 from EngineeringClient import EngineeringClient
 from RefineOffline import RefineOffline
+from ControlExpert import ControlExpert
 
 topology_obj =  Topology()
 aet_obj = ApplicationExplorerTab()
@@ -15,6 +16,7 @@ proj_obj = ProjectExplorerTab()
 syse_obj = SystemExplorerScreen()
 eng_obj = EngineeringClient()
 refoff_obj = RefineOffline()
+con_obj = ControlExpert()
 
 def search_template_browser_EC(search_text):
   temp_browser = msg_obj.exportpopupbutton.object
@@ -144,4 +146,3 @@ def Enter_Controller_Password_deploy_screen_TE(password):
       topology_obj.PasswordControlBoxtextbox.object.Password = password
       Log.Message(str(topology_obj.PasswordControlBoxtextbox.object.Password) + " entered in Password")
       
-

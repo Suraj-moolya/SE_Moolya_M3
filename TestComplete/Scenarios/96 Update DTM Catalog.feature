@@ -12,5 +12,5 @@ And I click Update button on hardware catalog window
 And I select '<button3>' on control expert popub window
 
 Examples:
-  | SlNo. | menu  | menu_item        | button3 | property  | property1     | smp      | tabname     |
-  | 1     | Tools | Hardware Catalog | Yes     | Protocols | Profibus DPV1 | PRM Comm | DTM catalog |
+  | SlNo. | menu  | menu_item        | button3 | property  | property1     | smp        | tabname     |
+  | 1     | Tools | Hardware Catalog | Yes     | Protocols | Profibus DPV1 | PRM Master | DTM catalog |
