@@ -47,6 +47,7 @@
 		<Feature Path="214 Check all the executable mapping is present.feature" />
 		<Feature Path="217 Open Advanced Settings.feature" />
 		<Feature Path="224 Export the project. Do some modifications in SP. Build the executable.feature" />
+		<Feature Path="35 Check consistency with auto generation enable in refine offline.feature" />
 	</Folder>
 	<Folder Name="Operation Client">
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
