@@ -55,6 +55,10 @@ class SystemExplorerScreenWorkFlow:
         SystemExplorerScreenWorkFlow.systemexplorerscreen_obj.createsystembutton.click()
         Engineeringclientutility.no_password_system('OK')
         
+    def buttoncreatesystemselectedwithpassword(self):
+            """systemexplorerscreen_obj.createsystembutton"""
+            SystemExplorerScreenWorkFlow.systemexplorerscreen_obj.createsystembutton.click()
+        
         
     def buttontocompletewaitforcircularprogressbar(self):
         """buttontocompletewaitforcircularprogressbar"""

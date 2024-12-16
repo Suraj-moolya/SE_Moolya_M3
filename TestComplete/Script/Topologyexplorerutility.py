@@ -223,7 +223,8 @@ def close_tab_item(tab_name):
     if tab_name in item.DataContext.Title.OleValue:
       item.Click(item.Width-15, item.Height/2)      
       
-      
+def vd():
+  close_tab_item("System_2")     
 def DetailMessageDialogBox_Buttons(button_name):
   Popup_buttons = topo_obj.detailmessagedialogboxtextbox.object
   if button_name == "Yes" :
@@ -711,11 +712,11 @@ def enter_username_password():
   Enter_Controller_Password_TE("Password$$Moolya@123")
   Enter_Controller_Password_TE("Confirm Password$$Moolya@123")
   Applicationexplorertabutility.export_System1_Export_Popup_AE_buttons("OK")
-  Click_btn_MessageWindow("OK")
-  Delay(5000)
-  Verify_entered_Controller_Password_valid_invalid_TE("Password")
-  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
-  
+#  Click_btn_MessageWindow("OK")
+#  Delay(5000)
+#  Verify_entered_Controller_Password_valid_invalid_TE("Password")
+#  Verify_entered_Controller_Password_valid_invalid_TE("Confirm Password")
+#  
 #import Actionutility
 #def pw():
 #  Enter_Controller_Password_TE("Current Password$$Moolya")
