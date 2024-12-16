@@ -17,7 +17,7 @@ Examples:
 
 @TC_EPE_PE_CP_0032a
 @test003
-Scenario Outline: Open any section and unlink the block. Save and check the consistency.
+Scenario Outline: Click on Save in Refine Offline
 When I selected Save Refine Offline in refine offline
 
 
@@ -29,7 +29,7 @@ Examples:
 
 @TC_EPE_PE_CP_0032b
 @test004
-Scenario Outline: Open any section and unlink the block. Save and check the consistency
+Scenario Outline: Click on check the consistency in Refine Offline
 When I selected Consistency Check in refine offline
 
 
@@ -41,7 +41,7 @@ Examples:
 
 @TC_EPE_PE_CP_0032c
 @test005
-Scenario Outline: Open any section and unlink the block. Save and check the consistency. 
+Scenario Outline: Select All in Consistency Check and click Unlink in refine offline. 
 When I Consistency Check Select All Consistency Check in refine offline
 And I Click on export System1 Export Popup AE buttons Consistency Check in refine offline as 'Unlink'
 Then Verify Message from notification panel AE Consistency Check in refine offline as 'Check Consistency (Completed)'
