@@ -137,6 +137,12 @@ def Verify_Device_Hardware_Catalog_TE(smp):
     Log.Warning(f'{obj.Text} is not verified')
     
 def Enter_Controller_Password_deploy_screen_TE(password):
-      PW_box = topology_obj.PasswordControlBoxtextbox   
-      PW_box.enter_password(password)
-      Log.Message(str(PW_box.object.PasswordText) + " entered in Password")
+#      PW_box = topology_obj.PasswordControlBoxtextbox   
+#      PW_box.enter_password(password)
+#      Log.Message(str(PW_box.object.PasswordText) + " entered in Password")
+      topology_obj.PasswordControlBoxtextbox.object.Click()
+      Sys.Keys("^a")
+      Sys.Keys("[BS]")
+      topology_obj.PasswordControlBoxtextbox.object.Password = password
+      Log.Message(str(topology_obj.PasswordControlBoxtextbox.object.Password) + " entered in Password")
+      

@@ -52,6 +52,12 @@ def step_impl():
     """I selected Create System in context menu"""
     CommonUtil.write_text_file("\nWhen I selected Create System in context menu")
     obj.buttoncreatesystemselected()
+    
+@when("I selected Create System in context menu with password")
+def step_impl():
+    """I selected Create System in context menu"""
+    CommonUtil.write_text_file("\nWhen I selected Create System in context menu")
+    obj.buttoncreatesystemselectedwithpassword()
   
 @when("I Wait for Circular Progress Bar To Complete in system explorer")
 def step_impl():

@@ -441,6 +441,8 @@
 			 <UIControl Element="NewPasswordbox_Topology" Name="WPFObject('NewPasswordBox')" Parent="EngineeringClient_" />
              <UIControl Element="ConfirmPasswordbox_Topology" Name="WPFObject('ConfirmPasswordBox')" Parent="EngineeringClient_" />
              <UIControl Element="OldPasswordBox_Topology" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
+<UIControl Element="PasswordControlBox_Topology" Name="WPFObject('PasswordControlPasswordBox')" Parent="EngineeringClient_" />
+
         </Component>
         <Component name="GSD Addition">
              <UIControl Element="Homepage_GSDAddition" Name="Window('#32770', '*', 1)" Parent="Wizard_" />

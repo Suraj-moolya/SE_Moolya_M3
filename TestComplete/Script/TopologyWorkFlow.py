@@ -397,3 +397,12 @@ class TopologyWorkFlow:
                 Topologyutility.Enter_Controller_Password_deploy_screen_TE(password)
             except Exception as ex:
                 raise Exception(ex) from ex
+                
+    def textboxnewpasswordboxentercontrollerpasswordte(self,param):
+            """textboxnewpasswordboxentercontrollerpasswordte"""
+            try:
+                Topologyexplorerutility.Enter_Controller_Password_TE(param)
+            except Exception as ex:
+                raise Exception(ex) from ex
+
+
