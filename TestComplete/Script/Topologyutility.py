@@ -146,3 +146,15 @@ def Enter_Controller_Password_deploy_screen_TE(password):
       topology_obj.PasswordControlBoxtextbox.object.Password = password
       Log.Message(str(topology_obj.PasswordControlBoxtextbox.object.Password) + " entered in Password")
       
+      
+def Verify_error_messages_in_Console(text):
+#  text = "0 Error"
+  output_msg = topology_obj.outputwindowpaneltextbox.object.FindAllChildren("WndClass","RichEdit20W",10)
+  for msg in output_msg:
+    if text in msg.wText and msg.Visible:
+      Log.Checkpoint(msg.wText + " error messages is displayed in Console")
+      break
+  else:
+    Log.Message(f'{text} error messages not displayed in Console')
+
+  
