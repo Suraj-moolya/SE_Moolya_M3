@@ -404,5 +404,12 @@ class TopologyWorkFlow:
                 Topologyexplorerutility.Enter_Controller_Password_TE(param)
             except Exception as ex:
                 raise Exception(ex) from ex
+                
+    def textboxoutputwindowpanelverifyerrormessagesinconsole(self,text):
+        """textboxoutputwindowpanelverifyerrormessagesinconsole"""
+        try:
+            Topologyutility.Verify_error_messages_in_Console(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
 
-
+                

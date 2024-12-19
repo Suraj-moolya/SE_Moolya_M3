@@ -68,6 +68,7 @@
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
 		<Feature Path="150 check the modifications in refine CP.feature" />
 		<Feature Path="152 Open any section and check network variable window.feature" />
+		<Feature Path="30 Clear the errors and open configure.feature" />
 	</Folder>
 	<Folder Name="Topology explorer">
 		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
