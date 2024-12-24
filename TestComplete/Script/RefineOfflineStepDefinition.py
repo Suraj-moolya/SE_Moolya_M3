@@ -292,3 +292,14 @@ def step_impl():
     obj.clickbuilddeploychangesbutton()   
     Applicationutility.wait_in_seconds(1000,"Wait")
     
+@when("I select Initialze Animation Table in refine offline")
+def step_impl():
+    """I select Initialze Animation Table in refine offline"""
+    CommonUtil.write_text_file("\nWhen I select Initialze Animation Table in refine offline")
+    obj.initializerefineofflinemenuitemRF()
+    
+@when("I Click on Modification button after initialization of Animation Table")
+def step_impl():
+    """I select Initialze Animation Table in refine offline"""
+    CommonUtil.write_text_file("\nWhen I select Initialze Animation Table in refine offline")
+    obj.modificationbuttonrefineofflineRF()

@@ -125,10 +125,16 @@ def rclick_window_CE():
 def RClick_on_Block_Refine_Offline(identifier):  
   Window = refoff_obj.mdiwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
   for Window_Text in Window:
-    if identifier in Window_Text.Text:
+    if identifier in Window_Text.Text and Window_Text.Visible:
         Window_Text.ClickR()
         Log.Message(Window_Text.Text + ' is Right Clicked.')
-        Delay(1000)
+        break
+  else:
+    Log.Message(Window_Text.Text + ' is not visible in the Window')
+        
+def sfsfsf():
+  RClick_on_Block_Refine_Offline("WRITE_REMOTE")
+  Unlock_Dialog_popup("Unlock")
         
 def Unlock_Dialog_popup(button_name):
   obj = Sys.Process("ControlExpert", 4).Dialog("Unlock")
@@ -141,6 +147,7 @@ def Unlock_Dialog_popup(button_name):
   else:
     Log.Warning("Button name mentioned doesnt exists")
     
+    
 def Delete_link_Refine_Offline(identifier):
   Window = refoff_obj.mdiwindowtextbox.object
   Window_lst = Window.FindAllChildren("Name", "TextObject*", 1000)
@@ -148,7 +155,10 @@ def Delete_link_Refine_Offline(identifier):
     if identifier in obj.Text:
       Window.Click(obj.Left+50+obj.Width,obj.Top+40+(obj.Height/2))
       Delay(1000)
-      Sys.Keys("[Del]")
+      #Sys.Keys("[Del]")
+      
+def sfsfsf2():
+  Delete_link_Refine_Offline("R_Var_8")
           
 def Consistency_Check_Select_All():
   headers = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'GridViewHeaderCell', 25)
@@ -475,3 +485,20 @@ def Click_tab_item_EIO_config_window(identifier):
   else: 
     Log.Warning(identifier + " is not available")
 
+def Add_Vairable_Logic_Block_link_P2P(param):
+  identifier , variable = param.split("$$")
+  Window = proj_obj.mdiclientwindowtextbox.object
+  Window_lst = Window.FindAllChildren("Name", "TextObject*", 1000)
+  for obj in Window_lst:
+    if identifier in obj.Text and obj.Visible:
+      obj.DblClick()
+      Sys.Keys(variable)
+      Sys.Keys("[Enter]")
+      Log.Checkpoint(obj.Text + " is Double Clicked")
+      break
+  else:
+    Log.Warning(identifier + " is not available")
+      
+    
+def Right_Click_Initialize_table():
+  pass

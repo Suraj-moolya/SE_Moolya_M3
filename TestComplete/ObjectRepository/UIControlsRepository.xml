@@ -293,6 +293,7 @@
 			 <UIControl Element="Sidebar_PlantScadaTab" Name="WPFObject('ApplicationBar', '', 1)" Parent="CitectIDE_" />
 			 <UIControl Element="LoginPage_PlantScadaTab" Name="Window('#32770', 'AVEVA Plant SCADA', 1)" Parent="Citect32_" />
 			 <UIControl Element="ErrorPopup_PlantScadaTab" Name="Window('#32770', 'Error', 1)" Parent="Citect32_" />
+			 <UIControl Element="Elementvariable_ProjectExplorerTab" Name="OutlineItem('Elementary Variables')" Parent="EngineeringClient_" />
 			 <UIControl Element="MasterPageMainWindow_PlantScadaTab" Name="Window('ctDSP', 'Master (startup) page for HD1080 res', 1)" Parent="Citect32_" />		 
         </Component>
         <Component name="EC Warning Popup">
@@ -357,6 +358,7 @@
              <UIControl Element="TypeCombobox_RefineOffline" Name="ComboBox('Type:')" Parent="ControlExpert_" />
              <UIControl Element="RestoreParticipantwindowCE_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Restore Participant window" Parent="EngineeringClient_" />
              <UIControl Element="Unlock_RefineOffline" Name="MenuItem('Unlock...')" Parent="ControlExpert_" />
+			 <UIControl Element="Initialize_RefineOffline" Name="MenuItem('Initialize Animation Table\tCtrl+T')" Parent="ControlExpert_" />
              <UIControl Element="ParentDialogWindowCE_RefineOffline" Name="Dialog('*')" Parent="ControlExpert_" />
              <UIControl Element="Typecolumnellipsis_RefineOffline" ClassName="CDSEBitmapButton" Parent="EngineeringClient_MDIWindow" />
              <UIControl Element="CustomizeColumns_RefineOffline" Name="MenuItem('Customize Columns...')" Parent="ControlExpert_" />
@@ -373,6 +375,8 @@
 			 <UIControl Element="PanelCE_RefineOffline" Name="Panel('[0..0]')" Parent="ControlExpert_ParentDialogWindowCE" />
 			 <UIControl Element="SaveRefineOffline1_RefineOffline" Name="WPFObject('Button', '', *)" DataContext.ToolTip.OleValue="Save" Parent="EngineeringClient_" />
 			 <UIControl Element="FacetTextbox_RefineOffline" Name="TextObject('CondSumGP_ST', 2)" Visible="True" Parent="EngineeringClient_" />
+			 <UIControl Element="ModificationButton_RefineOffline" Name="Window('Button', '*Modification', 1)" Parent="EngineeringClient_" />
+			 
 		</Component>
         <Component name="Operation client">
              <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />
@@ -413,7 +417,12 @@
              <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" />
         </Component>
         <Component name="Project Explorer">
-             <UIControl Element="wpfcombobox_ProjectExplorer" Name="WPFObject('ComboBox', '', 1)" Parent="EngineeringClient_" />	 
+             <UIControl Element="wpfcombobox_ProjectExplorer" Name="WPFObject('ComboBox', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="Variable_ProjectExplorer" Name="TextObject('P2P')" Parent="EngineeringClient_" />
+			 <UIControl Element="LoadP2PVariablesTabControl_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />
+			 <UIControl Element="Unmapvariable_ProjectExplorer" Name="WPFObject('MenuItem', 'Unmap', *)" Parent="EngineeringClient_" />
+			
+			 
         </Component>
         <Component name="Menu Bar">
              <UIControl Element="ApplicationMenuBar_MenuBar" Name="MenuBar('Application')" Parent="EngineeringClient_" />

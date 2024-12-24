@@ -68,6 +68,7 @@ def expand_control_project_browser_PE(identifier):
     Log.Message(item.DataContext.Identifier.OleValue + ' is not available for expansion')
         
 
+  
 def control_executeable_combo_box_PE(param): 
   service, combo_item = param.split('$$')
   services = proj_obj.servicemapingeditortextbox.object
@@ -1014,6 +1015,9 @@ def Right_click_on_variable(var_name):
       Log.Message( item.DataContext.VariableName.OleValue+ " is right clicked")      
       Click_on_remove()
       break
+      
+def sssg():
+  Right_click_on_variable("Var5")
             
 def Click_on_remove():
   remove = eng_obj.rclickmenutextbox.object.FindAllChildren('Name', 'WPFObject("MenuItem", "Remove", 1)', 10)
@@ -1144,6 +1148,146 @@ def Change_SettingsOption(option):
     
  
 
-   
+def Enter_Variable_select_HMI(Variablename):
+  topo_obj.prmgensettings.object.Click()
+  Sys.Keys("[Enter]")
+  Sys.Keys(Variablename)
+  for i in range(6):
+    Sys.Keys("[Right]")
+  Sys.Keys("[Enter]")
   
+def gsgsg6s():
+  Enter_Variable_select_HMI("P2P")
+  
+  
+def Click_Variable_Elementary_Variable_Tab(variable_name):
+  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    if variable_name in i.Name:
+      i.Click()
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
+    
+    
+def RClick_Variable_Elementary_Variable_Tab(variable_name):
+  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    if variable_name in i.Name:
+      i.ClickR()
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
+
+    
+def Click_P2p_Create_consecutive_variables(param):
+  variable_name, HMi_Column_no = param.split("$$")
+  variable_number = 1
+  
+  for i in range(2):
+    desired_variable_name = "P2P" + str(variable_number)
+    Enter_2_consecutive_Variable_HMI(variable_name)
+    Sys.Keys("[Down]")
+    Sys.Keys("[Enter]")
+    Sys.Keys(desired_variable_name )
+    variable_number = 2
+    variable_name = "P2P1"
+    for i in range(int(HMi_Column_no)):
+      Sys.Keys("[Right]")
+    Sys.Keys("[Enter]")
+    
+def sdsdsd():
+  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7")
+    
+
+    
+def change_datatype_dataeditor(param):
+  desired_data_type,select_data_type,rownumber = param.split("$$")
+  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    if select_data_type in i.Name and rownumber in str(i.Name) :
+      i.Click()
+      Sys.Keys("[Enter]")
+      Sys.Keys(desired_data_type)
+      Log.Message(f'data type is successfully changed')
+      break
+  else:
+    Log.Message(f'data type does not exists')
+    
+def gsgsgsg():
+  change_datatype_dataeditor('INT$$BOOL$$2')
+  change_datatype_dataeditor('STRING$$BOOL$$3')
+  
+def Unpack_Variable(identifier):
+  Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Variablename:
+   if identifier in i.DataContext.Identifier.OleValue and i.Visible == True:
+    i.DataContext.IsPack = "False"
+    Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully changed the Pack Status')
+    break
+  Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
+    
+  
+def Unmap_Variable(identifier):
+  Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Variablename:
+   if identifier in i.DataContext.Identifier.OleValue and i.Visible == True:
+    i.ClickR()
+    proj_obj.unmapvariable.object.Click()
+    Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
+    break
+  Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
+  
+  
+def Unmap_Variable_by_Keyboard_action(identifier2):
+  Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Variablename:
+   if identifier2 in i.DataContext.Identifier.OleValue and i.Visible == True:
+    i.Click()
+    Sys.Keys("[Del]")
+    Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
+    break
+  Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')  
+  
+  
+def asadasd():
+  Unmap_Variable_by_Keyboard_action("ValveGp_1_OpenPosV")
+  
+def change_variable_value(param):
+  Variable , Value = param.split("$$")
+  textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Table[Data Editor]', 100)
+  for i in textbox:
+    textbox1 = i.FindAllChildren('Name', 'TextObject(*)', 100)
+  for j in textbox1:
+    if Variable in j.Text:
+      Log.Message(j.Text)
+      Log.Message(j.Id)
+      j.Click()
+      Sys.Keys("[Right]")
+      Sys.Keys("[Enter]")
+      Sys.Keys(Value)
+      Sys.Keys("[Enter]")
+      Log.Message(f'Variable value is successfully changed')
+      break
+  else:
+    Log.Message(f'Variable does not exists')
+    
+def verify_variable_value_FBDBlock(value):
+  textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Read_ControlPro_P2P_1 : [MAST]', 100)
+  for i in textbox:
+    textbox1 = i.FindAllChildren('Name', 'TextObject(*)', 100)
+  for j in textbox1:
+    if value in j.Text:
+      Log.Message(f'{j.Text} has been sucessfully veried in the screen')
+      Applicationutility.take_screenshot()
+      break
+  else:
+    Log.Message(f'{j.Text} does not exists in the screen')
+    Applicationutility.take_screenshot()
+    
+def sgsgsg():
+  verify_variable_value_FBDBlock("INT : Var5")
+  verify_variable_value_FBDBlock("164")
 

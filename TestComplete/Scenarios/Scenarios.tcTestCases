@@ -63,6 +63,12 @@
 		<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
 	</Folder>
 	<Folder Name="Control Expert">
+		<Folder Name="P2P">
+			<Feature Path="162 Check P2P with the controllers(M580 safety and non safety, M580 non safety and non safety) use both READ and WRITE functionalities.feature" />
+			<Feature Path="164 Check pack, unpack for BOOL variabels.feature" />
+			<Feature Path="166 Check unmap functionality.feature" />
+			<Feature Path="172 Open Refine online and edit the READ_REMOTE block(add variables manually and map it manually).Build and Deploy and Check the communication.feature" />
+		</Folder>
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
 		<Feature Path="150 check the modifications in refine CP.feature" />
 		<Feature Path="152 Open any section and check network variable window.feature" />
@@ -92,5 +98,6 @@
 		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
 		<Feature Path="96 Update DTM Catalog.feature" />
 		<Feature Path="75 Create Work stations for client and add multiple NIC&apos;s and configure the IP, logical network.feature" />
+		<Feature Path="nn Refine Online.feature" />
 	</Folder>
 </Scenarios>

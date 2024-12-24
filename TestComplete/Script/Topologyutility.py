@@ -8,6 +8,7 @@ from SystemExplorerScreen import SystemExplorerScreen
 import Actionutility
 from EngineeringClient import EngineeringClient
 from RefineOffline import RefineOffline
+from TopologyExplorerTab import TopologyExplorerTab
 
 topology_obj =  Topology()
 aet_obj = ApplicationExplorerTab()
@@ -15,6 +16,7 @@ proj_obj = ProjectExplorerTab()
 syse_obj = SystemExplorerScreen()
 eng_obj = EngineeringClient()
 refoff_obj = RefineOffline()
+topo_obj = TopologyExplorerTab()
 
 def search_template_browser_EC(search_text):
   temp_browser = msg_obj.exportpopupbutton.object
@@ -132,4 +134,6 @@ def Verify_Device_Hardware_Catalog_TE(smp):
       break
   else:
     Log.Warning(f'{obj.Text} is not verified')
+
+
 

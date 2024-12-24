@@ -36,3 +36,11 @@ When I Click '<tabname>' on service mapping edittor window
 Examples:
   | SlNo. | tabname         |
   | 2     | Service Mapping |
+  
+@TC_EPE_PE_CP_0040a
+@test0040a
+Scenario Outline: hghghghghghghg
+When I drag and drop DOChannel facets to HWInstance with DOChannel HWInterfaceType as '<appfacet>'
+Examples:
+  | SlNo. | appfacet |
+  | 1     | P2P2     |

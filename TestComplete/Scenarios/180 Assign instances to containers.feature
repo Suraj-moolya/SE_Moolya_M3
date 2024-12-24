@@ -6,13 +6,20 @@ Scenario Outline: Assign Instance to Containers in PE
 When I drag and Drop the Each instance to Each Sections as '<controller>' '<section>'
 And I click modal dialog window project browser in project explorer as '<Button>'
 Then I Verify the facet generation status of all facets in Assignments Dock
-
+@Assign_Instance_to_Containers_in_M580_Standalone
 Examples:
   | SlNo. | controller      | section         | Button |
   | 1     | ValveGP_1       | M580_Standalone | OK     |
   | 2     | MotorGP_1       | M580_Standalone | OK     |
   | 3     | AnalogInputGP_1 | M580_Standalone | OK     |
 #  | 4     | INTERLOCK8OFFGP_UC_1 | M580_Redundant | OK     |
+
+@Assign_Instance_to_Containers_in_M580_Safety
+Examples:
+  | SlNo. | controller      | section     | Button |
+  | 1     | ValveGP_1       | M580_Safety | OK     |
+  | 2     | MotorGP_1       | M580_Safety | OK     |
+  | 3     | AnalogInputGP_1 | M580_Safety | OK     |
   
 
 @TC_EPE_SWF_0001

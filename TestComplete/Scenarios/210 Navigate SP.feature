@@ -36,9 +36,17 @@ Examples:
 @test0001
 Scenario Outline: Expand Supervision Executables 
 When I Expand control project browser PE project browser in project explorer as '<Pane_item>'
+
+@Expand_Executables
 Examples:
   | SlNo. | Pane_item   |
   | 1     | Executables |
+  
+@Expand_M580_safety
+Examples:
+  | SlNo. | Pane_item   |
+  | 1     | M580_Safety |
+  
   
 
 @TC_EPE_PE_CP_00

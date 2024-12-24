@@ -665,4 +665,40 @@ def step_impl():
 def step_impl(identifiers):
     """I Click tabitem in EIO configaration window in control expert as '<identifiers>'"""
     CommonUtil.write_text_file("\nWhen I Click tabitem in EIO configaration window in control expert as \""+identifiers+"\"")
-    obj.ClicktabitemEIOconfigwindow(identifiers)    
+    obj.ClicktabitemEIOconfigwindow(identifiers)  
+    
+    
+@when("I Double Click on Elementary variables in Refine, configure window")
+def step_impl():
+    """I Double Click on Elementary variables in Refine, configure window"""
+    CommonUtil.write_text_file("\nWhen I Double Click on Elementary variables in Refine, configure window")
+    obj.elementvariabledoubleclick()  
+    
+@when("I Enter Variable name and select HMI option under Data Editor window")
+def step_impl():
+    """I Enter Variable name and select HMI option under Data Editor window"""
+    CommonUtil.write_text_file("\nWhen I Enter Variable name and select HMI option under Data Editor window")
+    obj.entervariableselecthmi()
+    
+@when("I Uncheck the pack CheckBox in P2P Communication Configuration window for variable {arg}")
+def step_impl(identifier):
+    """I Uncheck the pack CheckBox in P2P Communication Configuration window for variable '<identifier>'"""
+    CommonUtil.write_text_file("\nWhen I Uncheck the pack CheckBox in P2P Communication Configuration window for variable as \""+identifier+"\"")
+    obj.UnpackvariableP2Pconfigurationwindow(identifier)
+    
+@when("I Unmap variable in P2P communication configuration window by Context menu as {arg}")
+def step_impl(identifier):
+    """I Unmap variable in P2P communication configuration window by Context menu as '<identifier>'"""
+    CommonUtil.write_text_file("\nWhen I Unmap variable in P2P communication configuration window by Context menu as \""+identifier+"\"")
+    obj.UnmapP2Pvariablebycontextmenu(identifier)
+    
+@when("I Unmap variable in P2P communication configuration window by keyboard action as {arg}")
+def step_impl(identifier):
+    """I Unmap variable in P2P communication configuration window by keyboard action as '<identifier>'"""
+    CommonUtil.write_text_file("\nWhen I Unmap variable in P2P communication configuration window by keyboard action as \""+identifier+"\"")
+    obj.UnmapP2Pvariablebykeyboardaction(identifier)
+    
+@when("I Right Click on Variables from elementary variables tab named as {arg}")
+def step_impl(identifier):
+    """I Right Click on Variables from elementary variables tab named as '<identifier>'"""
+    obj.RClickVariableElementaryVariableTab(identifier)

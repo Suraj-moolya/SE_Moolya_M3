@@ -178,9 +178,15 @@ When I Right Click on nodes System Explorer Node in system explorer as '<Control
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 Then Verify Action message in notification pannel project browser in project explorer as '<Notification>'
 
+@open_Configuration_window_of_Controller_M580_Standalone
 Examples:
   | SlNo. | Controller      | context menu | Notification          |
   | 1     | M580_Standalone | Configure    | Open Configure Editor |
+  
+@open_Configuration_window_of_Controller_M580_Safety
+Examples:
+  | SlNo. | Controller  | context menu | Notification          |
+  | 1     | M580_Safety | Configure    | Open Configure Editor |
   
   
 @TC_EPE_TE_CS_000
@@ -212,6 +218,10 @@ Examples:
   | SlNo. | button                 | FolderName  |
   | 1     | M580_Standalone$$Close | Controllers |
   
+@Close_Controllers_in_Topology_Explorer__M580_Safety
+Examples:
+  | SlNo. | button             | FolderName  |
+  | 1     | M580_Safety$$Close | Controllers |
   
 @TC_EPE_TE_CS_0003
 @test0001
@@ -284,15 +294,22 @@ Examples:
   | SlNo. | Cpu_version          |
   | 1     | BME P58 5040   03.20 |
 
+@Change_CPU_Version_of_controller__BME_P58_4040S_03.20
+Examples:
+  | SlNo. | Cpu_version           |
+  | 1     | BME P58 4040S   03.20 |
+  
+  
 
 @TC_EPE_TE_CS_000
 @test000
 Scenario Outline: Double click on PLC Bus - EIO 
 When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
-
+@Double_click_on_PLC_Bus_EIO 
 Examples:
   | SlNo. | Project Browser RO1        |
   | 1     | Configuration$$0 : PLC bus |
+
   
 
 @TC_EPE_TE_CS_000
@@ -303,3 +320,21 @@ When I close PLC Bus window in controller configuration window
 Examples:
   | SlNo. |
   | 1     |
+
+  
+@TC_EPE_TE_CS_000
+@test000
+Scenario Outline: Change safety settings of safety controller to Disable
+When I Right Click on nodes System Explorer Node in system explorer as 'M580_Safety'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+When I change controller properties with drop down options as '<options>'
+And I click modal dialog window project browser in project explorer as '<Button>'
+When I change controller properties with drop down options as '<options1>'
+When I Select button in the modal dialoge window as '<Button name>'
+
+Examples:
+  | SlNo. | context menu | options           | Button name | options1      | Button |
+  | 1     | Properties   | Controller$$False | Yes         | Safety$$False | Yes    |
+  
+  
+  

@@ -777,3 +777,56 @@ class ProjectExplorerTabWorkFlow:
             Controlexpertutility.Click_tab_item_EIO_config_window(identifiers)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+            
+    def elementvariabledoubleclick(self):
+        """elementvariabledoubleclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.elementvariabletextbox.double_click()
+        except Exception as ex:
+            raise Exception(ex) from ex 
+            
+    def entervariableselecthmi(self):
+        """entervariableselecthmi"""
+        try:
+            Projectexplorertabutility.Enter_Variable_select_HMI()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def dataeditorvariableclick(self):
+        """dataeditorvariableclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.elementvariabletextboxrefine.click()
+        except Exception as ex:
+            raise Exception(ex) from ex 
+            
+            
+    def UnpackvariableP2Pconfigurationwindow(self,identifier):
+                """UnpackvariableP2Pconfigurationwindow"""
+                try:
+                    Projectexplorertabutility.Unpack_Variable(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex     
+
+                    
+    def UnmapP2Pvariablebycontextmenu(self,identifier):
+                """UnmapP2Pvariablebycontextmenu"""
+                try:
+                    Projectexplorertabutility.Unmap_Variable(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex   
+                    
+                    
+    def UnmapP2Pvariablebykeyboardaction(self,identifier):
+                """UnmapP2Pvariablebykeyboardaction"""
+                try:
+                    Projectexplorertabutility.Unmap_Variable_by_Keyboard_action(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex     
+                    
+    def RClickVariableElementaryVariableTab(self,identifier):
+                """RClickVariableElementaryVariableTab"""
+                try:
+                    Projectexplorertabutility.RClick_Variable_Elementary_Variable_Tab(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex    

@@ -64,3 +64,6 @@ class CurrentScreenWorkFlow:
         """TopologyExplorerTab_obj.Closetmbutton"""
         CurrentScreenWorkFlow.TopologyExplorerTab_obj.Closetmbutton.object.ClickButton()
         
+    def clickyesmodificationwindow(self):
+      CurrentScreenWorkFlow.ce_obj.yescebuttonbutton.click()
+        

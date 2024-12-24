@@ -86,3 +86,9 @@ def step_impl():
 def step_impl():
     """I close PLC Bus window in controller configuration window"""
     obj.closebuttonplcbus()
+    
+    
+@when("I Click on Yes in Modification Window")
+def step_impl():
+    """I close PLC Bus window in controller configuration window"""
+    obj.clickyesmodificationwindow()
