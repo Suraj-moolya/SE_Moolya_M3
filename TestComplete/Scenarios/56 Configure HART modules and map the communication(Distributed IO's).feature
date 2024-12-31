@@ -15,7 +15,7 @@ And I select "3" rack in PLC bus Window
 And I Dblclick dialog panel item CE Dialog Panel CE in dialog ce as '<Dialog Panel CE3>'
 And I Click dialog panel item CE Dialog Panel CE in dialog ce as '<device1>'
 And I select '<button1>' in New Device PopUp Window
-And I select "2" rack in PLC bus Window
+And I select "<rack number>" rack in PLC bus Window
 And I selected the checkbox for channel '<num>' in the HART configuration
 And I click Validate button on control configuration window
 And I selected Save PRM Configuration in Configuration Window
@@ -39,5 +39,5 @@ And I selected Save PRM Configuration in Configuration Window
 And I selected Close Configuration window in Topology Explorer
 
 Examples:
-  | SlNo. | node_name    | action    | Project Browser RO1        | Dialog Panel CE3 | button   | button1 | button2 | menu  | prm             | option | protocol    | device       | device1      | menu_item   | menu_item1          | menu1 | num | button3 |
-  | 1     | Controller_2 | Configure | Configuration$$0 : PLC bus | Analog           | Maximize | OK      | Close   | Tools | BMEP58_ECPU_EXT | Add... | EtherNet IP | BME AHI 0812 | BME AHO 0412 | DTM Browser | Rebuild All Project | Build | 0   | Yes     |
+  | SlNo. | node_name    | action    | Project Browser RO1        | Dialog Panel CE3 | button   | button1 | button2 | menu  | prm             | option | protocol    | device       | device1      | menu_item   | menu_item1          | menu1 | num | button3 | rack number |
+  | 1     | Controller_2 | Configure | Configuration$$0 : PLC bus | Analog           | Maximize | OK      | Close   | Tools | BMEP58_ECPU_EXT | Add... | EtherNet IP | BME AHI 0812 | BME AHO 0412 | DTM Browser | Rebuild All Project | Build | 0   | Yes     | 2           |
