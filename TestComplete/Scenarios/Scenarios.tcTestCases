@@ -74,6 +74,10 @@
 		<Feature Path="152 Open any section and check network variable window.feature" />
 	</Folder>
 	<Folder Name="Topology explorer">
+		<Folder Name="Workstation">
+			<Feature Path="XX Workstation Settings .feature" />
+			<Feature Path="XX PLCSimulator.feature" />
+		</Folder>
 		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
 		<Feature Path="51 Open configure window, add some modules, synch the changes.feature" />
 		<Feature Path="52 Open configure window and switch to full screen, add modules and synch the changes.feature" />

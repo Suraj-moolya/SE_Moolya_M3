@@ -609,7 +609,17 @@ def Controller_property():
           return
   Log.Error("Could not find the specific 'Controller' element.")
 
-############################################################
+def Workstation_property():
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  for control in controller_row:
+    if getattr(getattr(control, "DataContext", None), "DisplayName", None) == "Workstation":
+      control.Click()
+      aqUtils.Delay(500)
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "ComboBoxItem", 10):
+        if item.WPFControlText == "False":
+          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          return
+  Log.Error("Could not find the specific 'Controller' element.")
 
 
   

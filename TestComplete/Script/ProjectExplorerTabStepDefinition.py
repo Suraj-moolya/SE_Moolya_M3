@@ -702,3 +702,8 @@ def step_impl(identifier):
 def step_impl(identifier):
     """I Right Click on Variables from elementary variables tab named as '<identifier>'"""
     obj.RClickVariableElementaryVariableTab(identifier)
+    
+@when("I Run PLC Simulator")
+def step_impl():
+    """I Run PLC Simulator"""
+    obj.RunPLCsimulator()

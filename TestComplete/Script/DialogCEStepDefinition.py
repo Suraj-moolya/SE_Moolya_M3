@@ -35,4 +35,16 @@ def step_impl(dialogListBoxCe5):
     """I Select bottom listitem dialog panel item CE Dialog List box CE in dialog ce as '<Dialog List box CE5>'"""
     CommonUtil.write_text_file("\nWhen I Select bottom listitem dialog panel item CE Dialog List box CE in dialog ce as \""+dialogListBoxCe5+"\"")
     obj.textboxdialoglistboxceselectbottomlistitemdialogpanelitemce1(dialogListBoxCe5)
+    
+@when("I click on Start button on PLC Simulator")
+def step_impl():
+    """I click on Start button on PLC Simulator"""
+    CommonUtil.write_text_file("\nWhen I click on Start button on PLC Simulator")
+    obj.buttondialogstartsimulatorbutton()
+    
+@when("I change port number of simulator to 503")
+def step_impl():
+    """I change port number of simulator to 503"""
+    CommonUtil.write_text_file("\nWhen I change port number of simulator to 503")
+    obj.textboxchangeportnumberplcsimulator()
   

@@ -830,3 +830,10 @@ class ProjectExplorerTabWorkFlow:
                     Projectexplorertabutility.RClick_Variable_Elementary_Variable_Tab(identifier)
                 except Exception as ex:
                     raise Exception(ex) from ex    
+                    
+    def RunPLCsimulator(self):
+                """RunPLCsimulator"""
+                try:
+                    Projectexplorertabutility.Run_PLC_Simulator()
+                except Exception as ex:
+                    raise Exception(ex) from ex  

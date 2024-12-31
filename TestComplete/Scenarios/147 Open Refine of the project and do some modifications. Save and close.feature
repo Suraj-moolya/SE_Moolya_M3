@@ -8,9 +8,15 @@ When I RClick control project browser project browser in project explorer as '<p
 And I Select context menu item EC project browser in project explorer as '<project browser2>'
 Then verify displayed Project Browser RO in refine offline
 
+@Open_Refine_offline_of_M580_Standalone_from_Context_Menu
 Examples:
   | SlNo. | project browser1 | project browser2 |
   | 1     | M580_Standalone  | Refine           |
+  
+@Open_Refine_offline_of_M580_Standalone2_from_Context_Menu
+Examples:
+  | SlNo. | project browser1 | project browser2 |
+  | 1     | M580_Standalone2 | Refine           |
 
 
 

@@ -108,9 +108,15 @@ And I Select controller in context menu as '<controller>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
 When I rename the ControlProject as '<controller_name>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
+@Create_First_Controller_for_standlone
 Examples:
   | SlNo. | context menu      | controller | controller_name | project browser1  | project browser2  |
   | 1     | Create Controller | M580       | M580_Standalone | Create Controller | Update Controller |
+  
+@Create_Second_Controller_for_standlone
+Examples:
+  | SlNo. | context menu      | controller | controller_name  | project browser1  | project browser2  |
+  | 1     | Create Controller | M580       | M580_Standalone2 | Create Controller | Update Controller |
   
   
 @TC_EPE_TE_CS_0003a
@@ -223,6 +229,17 @@ Examples:
   | SlNo. | button             | FolderName  |
   | 1     | M580_Safety$$Close | Controllers |
   
+  
+@test0002b
+Scenario Outline: Close Workstation  in Topology Explorer
+When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
+
+@Close_Controllers_in_Topology_Explorer__M580_Standalone
+Examples:
+  | SlNo. | button                 | FolderName  |
+  | 1     | M580_Standalone$$Close | Controllers |
+  
 @TC_EPE_TE_CS_0003
 @test0001
 Scenario Outline: Create a Station Node in Workstation folder
@@ -230,6 +247,12 @@ When I Right Click on nodes System Explorer Node in system explorer as 'Workstat
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I enterkey Project Browser RO in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
+@Create_Workstation_1
+Examples:
+  | SlNo. | context menu        | project browser1   |
+  | 1     | Create Station Node | Create Workstation |
+  
+@Create_Workstation_2
 Examples:
   | SlNo. | context menu        | project browser1   |
   | 1     | Create Station Node | Create Workstation |
@@ -247,6 +270,19 @@ Examples:
   | 2     | Create Control Service | Create Service Handler | Workstation_1$$Close |
   | 3     | Create Supervision     | Create Service Handler | Workstation_1$$Close |
   
+  
+@TC_EPE_TE_CS_0003
+@test0001
+Scenario Outline: Create OFS,Control Service,Supervision in Workstation_2 folder
+When I Right Click on nodes System Explorer Node in system explorer as 'Workstation_2'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
+Examples:
+  | SlNo. | context menu           | project browser1       | button               |
+  | 1     | Create OFS             | Create Service Handler | Workstation_1$$Close |
+  | 2     | Create Control Service | Create Service Handler | Workstation_1$$Close |
+  | 3     | Create Supervision     | Create Service Handler | Workstation_1$$Close |
   
 @TC_EPE_TE_CS_0003
 @test0001
@@ -272,6 +308,7 @@ Examples:
   | SlNo. | context menu | options           | Button name |
   | 1     | Properties   | Controller$$False | Yes         |
   
+
   
 @TC_EPE_TE_CS_000
 @test000
@@ -336,5 +373,7 @@ Examples:
   | SlNo. | context menu | options           | Button name | options1      | Button |
   | 1     | Properties   | Controller$$False | Yes         | Safety$$False | Yes    |
   
+  
+
   
   

@@ -275,7 +275,7 @@
 			 <UIControl Element="MDIClientWindow_ProjectExplorerTab" Name="Window('MDIClient', '', 1)" Visible = "True" Parent="EngineeringClient_" />
 			 <UIControl Element="ListView_ProjectExplorerTab" Name="WPFObject('ListView', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="containerpagedock_ProjectExplorerTab" Name="WPFObject('UcBrowser', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="ControllerPropertytab_TopologyExporerTab" Name="WPFObject('ItemsControl', '', 1)" Visible = "True" Parent="EngineeringClient_" />
 			 <UIControl Element="HardwareInstanceTab_ProjectExplorerTab" Name="WPFObject('HardwareInstance')" Parent="EngineeringClient_" />
 			 <UIControl Element="ProjectControllerSetting_ProjectExplorerTab" Name="WPFObject('ProjectContainerSettingsDialog', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="SettingsDropDown_ProjectExplorerTab" Name="WPFObject('DropDownScrollViewer')" Parent="EngineeringClient_" />
@@ -412,9 +412,11 @@
              <UIControl Element="DialogOKCE_DialogCE" Name="Window('Button', 'OK', *)" Visible="True" Parent="ControlExpert_"/>
              <UIControl Element="DialogListboxCE_DialogCE" Name="Window('ListBox', '', 1)" Parent="ControlExpert_" />
              <UIControl Element="DialogListboxCE1_DialogCE" Name="Window('AfxWnd140u', '', 2)" Parent="ControlExpert_" />
+			 <UIControl Element="StartSimulator_DialogCE" Name="WPFObject('ButtonStart')" Parent="PLCSimulatorStarter_" />
+			 <UIControl Element="SimulatorPort_DialogCE" Name="WPFObject('TextBox', '', 1)" Parent="PLCSimulatorStarter_" />
 		</Component>
 		<Component name="Supervision Project">
-             <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" />
+             <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" /> 
         </Component>
         <Component name="Project Explorer">
              <UIControl Element="wpfcombobox_ProjectExplorer" Name="WPFObject('ComboBox', '', 1)" Parent="EngineeringClient_" />

@@ -48,3 +48,19 @@ class DialogCEWorkFlow:
         """dialogce_obj.messagelabel"""
         Applicationutility.screen_displayed()
         
+    def buttondialogstartsimulatorbutton(self):
+        """dialogce_obj.dialogokcebutton"""
+        DialogCEWorkFlow.dialogce_obj.startsimulatorbutton.click()
+        Applicationutility.wait_in_seconds(1000,"Waiting for simulator to start")
+        
+    def buttondialogstartsimulatorbutton(self):
+        """dialogce_obj.dialogokcebutton"""
+        DialogCEWorkFlow.dialogce_obj.startsimulatorbutton.click()
+        
+    def textboxchangeportnumberplcsimulator(self):
+        """textboxdialogpanelceclickdialogpanelitemce"""
+        try:
+            Controlexpertutility.change_Port_Number_PLC_Simulator()
+        except Exception as ex:
+            raise Exception(ex) from ex
+        

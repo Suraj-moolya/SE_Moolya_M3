@@ -32,7 +32,7 @@ def right_click_control_project_browser_PE(identifier):
   proj_list = proj.find_children_for_treeviewrow()
   for item in proj_list:
     if item.Visible:
-      if identifier in item.DataContext.Identifier.OleValue:
+      if identifier == item.DataContext.Identifier.OleValue:
         item.ClickR()
         Log.Checkpoint(item.DataContext.Identifier.OleValue + ' is Right Clicked.')
         break
@@ -1113,6 +1113,7 @@ def Change_Password_Protection_Controller(param):
   field_label, options = param.split("$$")
   controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
   for control in controller_row:
+    Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
     if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
       control.Click()
       aqUtils.Delay(500)
@@ -1122,6 +1123,8 @@ def Change_Password_Protection_Controller(param):
           return
   Log.Error("Could not find the specific 'Controller' element.")
   
+def gsgsg99():
+  Change_Password_Protection_Controller("Password Protection$$False")
   
 def Click_on_Settings_Header(settings):
   tab_List = proj_obj.projectcontrollersettingtab.find_children_for_treeviewrow()
@@ -1188,7 +1191,7 @@ def Click_P2p_Create_consecutive_variables(param):
   
   for i in range(2):
     desired_variable_name = "P2P" + str(variable_number)
-    Enter_2_consecutive_Variable_HMI(variable_name)
+    Click_Variable_Elementary_Variable_Tab(variable_name)
     Sys.Keys("[Down]")
     Sys.Keys("[Enter]")
     Sys.Keys(desired_variable_name )
@@ -1290,4 +1293,7 @@ def verify_variable_value_FBDBlock(value):
 def sgsgsg():
   verify_variable_value_FBDBlock("INT : Var5")
   verify_variable_value_FBDBlock("164")
-
+  
+  
+def Run_PLC_Simulator():
+  TestedApps.PLCSimulatorStarter.Run()

@@ -104,12 +104,17 @@ def Select_IP_from_ControlProjectDeployment(IP_address):
   Dropdown_options = eng_obj.userdropdownmenuitemtextbox.object
   Dropdown_IPList = Dropdown_options.FindAllChildren("ClrClassName","RadComboBoxItem",10)
   for IP in Dropdown_IPList:
+    Log.Message(IP.DataContext.FormattedAddress.OleValue)
     if IP_address in IP.DataContext.FormattedAddress.OleValue:
+      
       IP.Click()
       Log.Message(f'{IP.DataContext.FormattedAddress.OleValue} was selected from Dropdown option')
       break
   else:
     Log.Message(f'{IP_address} did not exist in Dropdown option')
+    
+def sggsg():
+  Select_IP_from_ControlProjectDeployment("10.179.244.99")
 
 
 def select_latest_backup_data_TE():
@@ -135,5 +140,36 @@ def Verify_Device_Hardware_Catalog_TE(smp):
   else:
     Log.Warning(f'{obj.Text} is not verified')
 
+#Author: Suraj 
+#Created for double click the properties when workstation is open 
+#some of the properties are controlExpert_1,NIC,OFS ..etc
 
+def DBlClick_Properties_workstation(Text):
+  properties = proj_obj.assignmentsdocktextbox.object.FindAllChildren("ClrClassName","GridViewRow",100)
+  for property in properties:
+    if Text == property.DataContext.Identifier.OleValue:
+      property.DblClick()
+      Log.Message(f'{property.DataContext.Identifier.OleValue} is clicked')
+      break
+  else:
+     Log.Message(f'{property.DataContext.Identifier.OleValue} property doesnt exists')
+     
+     
+#Author: Suraj 
+#Created for Expanding  the properties when workstation is open 
+#some of the properties are Configuration,$System ..etc
 
+def Expand_Properties_workstation(Text):
+  properties = proj_obj.assignmentsdocktextbox.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
+  Log.Message(len(properties))
+  for property in properties:
+    if Text == property.DataContext.Identifier.OleValue:
+      property.IsExpanded = True
+      Log.Message(f'{property.DataContext.Identifier.OleValue} is Expanded')
+      break
+  else:
+     Log.Message(f'{property.DataContext.Identifier.OleValue} property doesnt exists')
+
+def hshshs():
+  #DBlClick_Properties_workstation("ControlExpert_1")
+  Expand_Properties_workstation("Configuration")

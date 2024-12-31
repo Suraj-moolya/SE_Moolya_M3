@@ -6,9 +6,16 @@
 @test00
 Scenario Outline: Double click on Elementary variables 
 When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
+
+@Double_click_on_Elementary_variables_with_path_Programs-PROCESS$$Variables_&_FB_instances
 Examples:
   | SlNo. | Project Browser RO1                                              |
   | 1     | Programs-PROCESS$$Variables & FB instances$$Elementary Variables |
+  
+@Double_click_on_Elementary_variables_with_path_Variables_&_FB_instances
+Examples:
+  | SlNo. | Project Browser RO1                            |
+  | 1     | Variables & FB instances$$Elementary Variables |
   
 @TC_EPE_PE_CP_00
 @test00

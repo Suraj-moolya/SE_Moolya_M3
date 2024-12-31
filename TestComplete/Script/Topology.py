@@ -59,4 +59,9 @@ class Topology(MapBase):
     def oldpasswordboxtextbox(self):
         """oldpasswordboxtextbox"""
         return self.get_element("OldPasswordBox_Topology")
+        
+    @property
+    def propertywindowtextbox(self):
+        """propertywindowtextbox"""
+        return self.get_element("PropertyWindow_Topology")
               

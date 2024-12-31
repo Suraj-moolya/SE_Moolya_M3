@@ -59,8 +59,8 @@ And I Select context menu item EC project browser in project explorer as '<proje
 And I click modal dialog window project browser in project explorer as '<project browser3>'
 
 Examples:
-  | SlNo. | project browser1 | project browser2   | project browser3 |
-  | 1     | Executable_1     | Generate and Build | OK               |
+  | SlNo. | project browser1    | project browser2   | project browser3 |
+  | 1     | ControlExecutable_1 | Generate and Build | OK               |
   
 @TC_Build_All11
 @test003

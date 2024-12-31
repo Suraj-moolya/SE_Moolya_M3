@@ -500,5 +500,6 @@ def Add_Vairable_Logic_Block_link_P2P(param):
     Log.Warning(identifier + " is not available")
       
     
-def Right_Click_Initialize_table():
-  pass
+def change_Port_Number_PLC_Simulator():
+  Simulator_Textbox = diace_obj.simulatorporttextbox.object
+  Simulator_Textbox.SetText("503")

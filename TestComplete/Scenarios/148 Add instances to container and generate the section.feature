@@ -25,12 +25,56 @@ Examples:
 @TC_EPE_PE_CP_00
 Scenario Outline: Double Click on Container sections
 When I Dclick Control project broswer project browser in project explorer as '<Containers>' 
-
+@Double_Click_Containers
 Examples:
   | SlNo. | Containers |
   | 1     | Containers |
   
+@DoubleClick_M580_Standalone_1_Checkes_weather_expanded_and_expands
+Examples:
+  | SlNo. | projectBrowser1 |
+  | 1     | M580_Standalone |
+  
+@DoubleClick_M580_Standalone_2_Checkes_weather_expanded_and_expands
+Examples:
+  | SlNo. | projectBrowser1  |
+  | 1     | M580_Standalone2 |
+  
+@DoubleClick_ControlExecutable_1_Checkes_weather_expanded_and_expands
+Examples:
+  | SlNo. | projectBrowser1     |
+  | 1     | ControlExecutable_1 |
+  
 
+
+@TC_EPE_PE_CP_0024
+Scenario Outline: Right Click Controllers and select Expand All,Collapse All 
+When I RClick control project browser project browser in project explorer as '<containerinstance>'
+And I Select context menu item EC project browser in project explorer as '<contextmenu_item>'
+@Right_Click_M580_Standalone_ExpandAll
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | M580_Standalone   | Expand All       |
+  
+@Right_Click_ControlProject_1_ExpandAll
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | ControlProject_1  | Expand All       |
+  
+@Right_Click_M580_Standalone_Collapse_All
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | M580_Standalone   | Collapse All     |
+  
+@Right_Click_M580_Standalone2_ExpandAll
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | M580_Standalone2  | Expand All       |
+  
+@Right_Click_M580_Standalone2_Collapse_All
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | M580_Standalone2  | Collapse All     |
 
 @TC_EPE_SWF_0000
 @test0025

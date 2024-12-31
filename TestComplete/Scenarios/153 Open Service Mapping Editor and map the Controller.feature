@@ -8,10 +8,20 @@ And I Expand control project browser PE project browser in project explorer as '
 And I Expand control project browser PE project browser in project explorer as '<project browser2>'
 And I Dclick Control project broswer project browser in project explorer as '<project browser3>'
 And I Control executable dropdown PE project browser in project explorer as '<project browser4>'
-
+@Map_M580_Controller_in_ControlExecutable
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                    |
   | 1     | M580_Standalone  | Executable       | ControlExecutable_1 | ControlExecutive_1$$M580_Standalone |
+  
+@Map_Workstation_1_in_ControlExecutable
+Examples:
+  | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                  |
+  | 1     | M580_Standalone  | Executable       | ControlExecutable_1 | ControlExecutive_1$$Workstation_1 |
+  
+@Map_Workstation_2_in_ControlExecutable
+Examples:
+  | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                  |
+  | 1     | M580_Standalone2 | Executable       | ControlExecutable_1 | ControlExecutive_1$$Workstation_2 |
 
 
 @TC_EPE_PE_CP_0004
