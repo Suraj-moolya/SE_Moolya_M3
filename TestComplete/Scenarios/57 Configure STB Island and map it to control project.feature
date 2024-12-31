@@ -23,6 +23,10 @@ And I right-click on '<node_name2>' in the Topology Explorer
 And I Select context menu item EC in Topology Explorer as '<action4>'
 And I Select particular '<network>' for each  Controller in physical connection
 And I Select button in the modal dialoge window as '<buttonname>'
+
+########################## End Test case here #############
+# V no need to create control project, has to be done through execution order #####
+
 And I navigate to explorers MainToolBar in system explorer as '<MainToolBar>'
 And I RClick control project browser project browser in project explorer as '<node_name>'
 And I Select context menu item EC project browser in project explorer as '<contextmenu>'
@@ -31,9 +35,14 @@ And I rename the ControlProject as '<controller_name>'
 And I Dclick Control project broswer project browser in project explorer as '<projectbrowser2>'
 And I Dclick Control project broswer project browser in project explorer as '<projectbrowser3>'
 And I Control executable dropdown PE project browser in project explorer as '<network2>'
+
+############################## separate test case to add STB island in service editor #################
 And I Click '<tabname>' on service mapping edittor window
 And I Drag and drop the EPE Managed Device from devices to channels as '<node_name2>'
 And I Click on '<buttonname>' in the dialog box
+
+############ End 2nd test here ##############
+#  V build All test case already present nad has to be used through execution order ###### 
 And I RClick control project browser project browser in project explorer as '<projectbrowser3>'
 And I Select context menu item EC project browser in project explorer as '<contextmenu_item1>'
 And I click modal dialog window project browser in project explorer as '<buttonname>'
