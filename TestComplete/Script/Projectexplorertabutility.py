@@ -1297,3 +1297,18 @@ def sgsgsg():
   
 def Run_PLC_Simulator():
   TestedApps.PLCSimulatorStarter.Run()
+  
+  
+def Verify_backup_data_PE(param):
+  param = "Workstation_1"
+  row_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'GridViewRow', 1000)
+  for row in row_list:
+      if param in row.DataContext.Controller.OleValue:   
+          Log.Message("Description: " + row.DataContext.Description.OleValue)
+          Log.Message("BackupTime: " + row.DataContext.BackupTime.OleValue)
+          Log.Message("User: " + row.DataContext.User.OleValue)
+          Log.Message("Executable: " + row.DataContext.Executable.OleValue)
+          Log.Message("Controller: " + row.DataContext.Controller.OleValue)       
+          break
+  else:
+    Log.Message("Message not successfully verified")

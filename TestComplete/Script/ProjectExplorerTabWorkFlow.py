@@ -837,3 +837,11 @@ class ProjectExplorerTabWorkFlow:
                     Projectexplorertabutility.Run_PLC_Simulator()
                 except Exception as ex:
                     raise Exception(ex) from ex  
+                    
+                    
+    def textboxprojectbrowserverifybackupdata(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Verify_backup_data_PE(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
