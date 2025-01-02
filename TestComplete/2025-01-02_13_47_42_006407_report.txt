@@ -1,2 +1,0 @@
-
-When I navigate to explorers MainToolBar in system explorer as "Topology Explorer"|| Log Error:Exception: The object does not exist.

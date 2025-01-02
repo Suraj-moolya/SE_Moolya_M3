@@ -1,2 +1,0 @@
-
-When I entered User name in login page as "SE_Moolya_Test"|| Log Error:RuntimeError: The object does not exist.

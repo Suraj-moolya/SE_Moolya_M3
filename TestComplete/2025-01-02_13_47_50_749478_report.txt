@@ -1,2 +1,0 @@
-
-When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'|| Log Error:Exception: The object does not exist.

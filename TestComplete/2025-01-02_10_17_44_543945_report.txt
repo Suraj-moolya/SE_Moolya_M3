@@ -1,2 +1,0 @@
-
-When I Double Click on propeties as {arg} available when window is open|| Log Error:NameError: name 'text' is not defined

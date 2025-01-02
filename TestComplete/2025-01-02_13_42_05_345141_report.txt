@@ -1,4 +1,0 @@
-
-When I RClick control project browser project browser in project explorer as "M580_Standalone2"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:M580_Standalone2 is Right Clicked.
-When I Select context menu item EC project browser in project explorer as "Refine"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Refine
-Then verify displayed Project Browser RO in refine offline|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:ProjectBrowserRO is displayed|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_13_23_28_950\Picture66.png

@@ -1,2 +1,0 @@
-
-When I Close instance editor tab Instance editor close in application explorer as "MotorGP_1"|| Log Message:InstanceEditor_ApplicationExplorerTab

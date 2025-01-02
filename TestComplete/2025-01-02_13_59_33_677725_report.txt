@@ -1,2 +1,0 @@
-
-When I Drag and drop the EPE Managed Device from devices to channels as "ValveGP_1_OPV"|| Log Message:ServerCommunicationCounterpartsDeviceIO_ProjectExplorerTab|| Log Message:_TopologyExporerTab|| Log Message:_TopologyExporerTab

@@ -1,6 +1,0 @@
-
-When I entered User name in login page as "SE_Moolya_Test"|| Log Message:Username_SystemServer
-When I entered Password in login page as "P@ssw0rd1234"|| Log Message:Password_SystemServer
-When I selected Log In in login page|| Log Message:LogIn_SystemServer
-When I open system server console show hidden icon in windows explorer|| Log Message:showhiddenicon_WindowsExplorer|| Log Message:notificationarea_WindowsExplorer|| Log Message:ContextMenu_SystemServer
-Then verify text in system server console Console in server console as "A user was successfully logged on"|| Log Message:Console_SystemServer|| Log Message:A user was successfully logged on [SE_Moolya_Test]|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_09_38_12_825\Picture2.png

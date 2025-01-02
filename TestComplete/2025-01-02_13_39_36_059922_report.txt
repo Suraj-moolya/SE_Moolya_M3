@@ -1,3 +1,0 @@
-
-When I Navigate through project browser CE Project Browser RO in refine offline as "Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME P58 5040$$EIO"|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:The tree node '[0]' is already selected.|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:MDIWindow_RefineOffline
-When I Click tabitem in EIO configaration window in control expert as "IPConfig"|| Log Message:MDIClientWindow_ProjectExplorerTab|| Log Message:IPConfig is Clicked

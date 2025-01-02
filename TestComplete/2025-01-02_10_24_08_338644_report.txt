@@ -1,2 +1,0 @@
-
-When I Expand on propeties header as {arg} available when window is open|| Log Message:Workstationpropertywindow_Topology|| Log Message:Configuration is Expanded|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_10_24_07_974\Picture1.png

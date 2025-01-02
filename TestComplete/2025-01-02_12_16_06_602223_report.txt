@@ -1,2 +1,0 @@
-
-When I open system server console show hidden icon in windows explorer|| Log Error:Exception: The object does not exist.

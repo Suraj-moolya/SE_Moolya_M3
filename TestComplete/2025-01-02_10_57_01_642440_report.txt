@@ -1,2 +1,0 @@
-
-Then Verify Action message in notification pannel project browser in project explorer as "Update Control Service (Completed)"|| Log Message:NotificationPannel_MessageBox|| Log Message:NotificationPannel_MessageBox|| Log Message:NotificationPannel_MessageBox|| Log Message:Update Control Service (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_10_57_01_274\Picture1.png

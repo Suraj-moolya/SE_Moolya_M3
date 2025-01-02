@@ -1,3 +1,0 @@
-
-When I navigate to explorers MainToolBar in system explorer as "Project Explorer"|| Log Message:MainToolBar_SystemExplorerScreen
-Then verify Tabs Explorer tab in system explorer as "Project Explorer"|| Log Message:mainscreen_EngineeringClient|| Log Message:Tab is sucesfully verified|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_16_35_649\Picture49.png

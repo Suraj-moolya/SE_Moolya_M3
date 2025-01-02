@@ -1,2 +1,0 @@
-
-When I selected Instance editor save in application explorer|| Log Message:Instanceeditorsave_ApplicationExplorerTab

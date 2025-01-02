@@ -1,5 +1,0 @@
-
-When I edit IP Address in configure MDI Window in refine offline as "Main IP address$$10.179.244.99"|| Log Message:MDIWindow_RefineOffline|| Log Message:Main IP address is updated as 10.179.244.99
-When I edit IP Address in configure MDI Window in refine offline as "Subnetwork mask$$255.255.0.0"|| Log Message:MDIWindow_RefineOffline|| Log Message:Subnetwork mask is updated as 255.255.0.0
-When I edit IP Address in configure MDI Window in refine offline as "IP address A$$10.179.244.100"|| Log Message:MDIWindow_RefineOffline|| Log Message:IP address A is updated as 10.179.244.100
-When I edit IP Address in configure MDI Window in refine offline as "Gateway address$$10.179.10.0"|| Log Message:MDIWindow_RefineOffline|| Log Message:Gateway address is updated as 10.179.10.0

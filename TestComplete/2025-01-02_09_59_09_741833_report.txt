@@ -1,3 +1,0 @@
-
-When I change port number of simulator to 503|| Log Message:SimulatorPort_DialogCE
-When I click on Start button on PLC Simulator|| Log Message:StartSimulator_DialogCE

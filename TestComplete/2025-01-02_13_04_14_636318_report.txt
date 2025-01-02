@@ -1,2 +1,0 @@
-
-When I Navigate through project browser CE Project Browser RO in refine offline as "Configuration$$0 : PLC bus"|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:The tree node '[0]' is already selected.|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:ProjectBrowserRO_RefineOffline|| Log Message:MDIWindow_RefineOffline
