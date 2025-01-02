@@ -707,3 +707,9 @@ def step_impl(identifier):
 def step_impl():
     """I Run PLC Simulator"""
     obj.RunPLCsimulator()
+    
+@when("I Verify backup data PE in project explorer as {arg}")
+def step_impl(projectBrowser3):
+    """I Verify backup data PE in project explorer as '<project browser2>'"""
+    CommonUtil.write_text_file("\nWhen I Verify backup data PE in project explorer as \""+projectBrowser3+"\"")
+    obj.textboxprojectbrowserverifybackupdata(projectBrowser3)

@@ -13,65 +13,64 @@
 		<Feature Path="SystemServer.feature" />
 	</Folder>
 	<Folder Name="Project Explorer">
-		<Feature Path="199 copy instances and paste in other container.feature" />
-		<Feature Path="183 Unlink facets.feature" />
-		<Feature Path="184 Relink facets.feature" />
-		<Feature Path="180 Assign instances to containers.feature" />
-		<Feature Path="181 Move instances from Section to other section.feature" />
-		<Feature Path="145 Check existing Excutable Status(if it is in build state, open refine).feature" />
-		<Feature Path="146 Build_Build all the existing executable(if any errors found, clear and build).feature" />
-		<Feature Path="190 Remove links in instance workspace.feature" />
-		<Feature Path="148 Add instances to container and generate the section.feature" />
-		<Feature Path="189 add links in instance workspaces.feature" />
-		<Feature Path="204 create 10 Sections with each Section having 10 assets in Containers.feature" />
-		<Feature Path="144 Open control project.feature" />
-		<Feature Path="207 unassign facets.feature" />
-		<Feature Path="208 re assign facets.feature" />
-		<Feature Path="187 add facets to instances.feature" />
-		<Feature Path="188 remove facets to instances.feature" />
-		<Feature Path="154 Navigate to Communication mapping Tab and check the mapping is availabl e.feature" />
-		<Feature Path="155 Navigate to Hardware mapping Tab and check the mapping is available.feature" />
-		<Feature Path="156 Navigate to varibale mapping editor and check the mapping is available.feature" />
-		<Feature Path="157 Navigate to Manage network variable window.feature" />
-		<Feature Path="202 Navigate instance workspace to PE.feature" />
-		<Feature Path="203 create instance from PE.feature" />
-		<Feature Path="185 Refine offline check consistency.feature" />
-		<Feature Path="221 Build the executable.feature" />
-		<Feature Path="222 Deploy the SP.feature" />
-		<Feature Path="223 Check Deploy changes for SP.feature" />
-		<Feature Path="229 Run Citect runtime.feature" />
-		<Feature Path="147 Open Refine of the project and do some modifications. Save and close.feature" />
-		<Feature Path="149 Open (multiple) sections.feature" />
-		<Feature Path="205 delete 2 Section.feature" />
-		<Feature Path="214 Check all the executable mapping is present.feature" />
-		<Feature Path="217 Open Advanced Settings.feature" />
-		<Feature Path="224 Export the project. Do some modifications in SP. Build the executable.feature" />
-	</Folder>
-	<Folder Name="Operation Client">
-		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
-		<Feature Path="182 Delete Section.feature" />
-		<Feature Path="200 Edit Instance.feature" />
-		<Feature Path="153 Open Service Mapping Editor and map the Controller.feature" />
-		<Feature Path="201 Edit links From PE.feature" />
-		<Feature Path="218 Modify the parameters in advance settings .feature" />
-		<Feature Path="219 Open multiple pages and drop the instances in the page.feature" />
-		<Feature Path="220 Create new page and assign some instances.feature" />
-		<Feature Path="237 Double click on OC header .feature" />
-		<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
-		<Feature Path="210 Navigate SP.feature" />
-		<Feature Path="211 Refine the project.feature" />
-		<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
-	</Folder>
-	<Folder Name="Control Expert">
-		<Folder Name="P2P">
+		<Folder Name="Control Project">
+			<Feature Path="151 Unlink block, Save and check consistency.feature" />
+			<Feature Path="150 check the modifications in refine CP.feature" />
+			<Feature Path="152 Open any section and check network variable window.feature" />
+			<Feature Path="144 Open control project.feature" />
+			<Feature Path="145 Check existing Excutable Status(if it is in build state, open refine).feature" />
+			<Feature Path="146 Build_Build all the existing executable(if any errors found, clear and build).feature" />
+			<Feature Path="147 Open Refine of the project and do some modifications. Save and close.feature" />
+			<Feature Path="148 Add instances to container and generate the section.feature" />
+			<Feature Path="149 Open (multiple) sections.feature" />
+			<Feature Path="154 Navigate to Communication mapping Tab and check the mapping is availabl e.feature" />
+			<Feature Path="155 Navigate to Hardware mapping Tab and check the mapping is available.feature" />
+			<Feature Path="156 Navigate to varibale mapping editor and check the mapping is available.feature" />
+			<Feature Path="157 Navigate to Manage network variable window.feature" />
+			<Feature Path="153 Open Service Mapping Editor and map the Controller.feature" />
+			<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
+		</Folder>
+		<Folder Name="Manage P2P">
 			<Feature Path="162 Check P2P with the controllers(M580 safety and non safety, M580 non safety and non safety) use both READ and WRITE functionalities.feature" />
 			<Feature Path="164 Check pack, unpack for BOOL variabels.feature" />
 			<Feature Path="166 Check unmap functionality.feature" />
 			<Feature Path="172 Open Refine online and edit the READ_REMOTE block(add variables manually and map it manually).Build and Deploy and Check the communication.feature" />
 		</Folder>
-		<Feature Path="151 Unlink block, Save and check consistency.feature" />
-		<Feature Path="150 check the modifications in refine CP.feature" />
-		<Feature Path="152 Open any section and check network variable window.feature" />
+		<Folder Name="Simplified Work Flow">
+			<Feature Path="180 Assign instances to containers.feature" />
+			<Feature Path="181 Move instances from Section to other section.feature" />
+			<Feature Path="183 Unlink facets.feature" />
+			<Feature Path="184 Relink facets.feature" />
+			<Feature Path="185 Refine offline check consistency.feature" />
+			<Feature Path="187 add facets to instances.feature" />
+			<Feature Path="188 remove facets to instances.feature" />
+			<Feature Path="189 add links in instance workspaces.feature" />
+			<Feature Path="190 Remove links in instance workspace.feature" />
+			<Feature Path="199 copy instances and paste in other container.feature" />
+			<Feature Path="202 Navigate instance workspace to PE.feature" />
+			<Feature Path="203 create instance from PE.feature" />
+			<Feature Path="204 create 10 Sections with each Section having 10 assets in Containers.feature" />
+			<Feature Path="205 delete 2 Section.feature" />
+			<Feature Path="207 unassign facets.feature" />
+			<Feature Path="208 re assign facets.feature" />
+			<Feature Path="182 Delete Section.feature" />
+			<Feature Path="200 Edit Instance.feature" />
+			<Feature Path="201 Edit links From PE.feature" />
+		</Folder>
+		<Folder Name="Supervision">
+			<Feature Path="214 Check all the executable mapping is present.feature" />
+			<Feature Path="217 Open Advanced Settings.feature" />
+			<Feature Path="221 Build the executable.feature" />
+			<Feature Path="222 Deploy the SP.feature" />
+			<Feature Path="223 Check Deploy changes for SP.feature" />
+			<Feature Path="224 Export the project. Do some modifications in SP. Build the executable.feature" />
+			<Feature Path="210 Navigate SP.feature" />
+			<Feature Path="211 Refine the project.feature" />
+			<Feature Path="218 Modify the parameters in advance settings .feature" />
+			<Feature Path="219 Open multiple pages and drop the instances in the page.feature" />
+			<Feature Path="220 Create new page and assign some instances.feature" />
+			<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
+		</Folder>
 	</Folder>
 	<Folder Name="Topology explorer">
 		<Folder Name="Workstation">
@@ -82,9 +81,10 @@
 			<Feature Path="77 Deploy the SP to respective stations.feature" />
 			<Feature Path="80 Check deploy changes.feature" />
 			<Feature Path="82 Check deploy data for each controller.feature" />
-			<Feature Path="96 Update DTM Catalog.feature" />
 			<Feature Path="nn Refine Online.feature" />
 			<Feature Path="73 Configure Work Stations and it&apos;s services like CE, VJC and OFS.feature" />
+			<Feature Path="81 Check backup data for each controller.feature" />
+
 		</Folder>
 		<Folder Name="Controllers">
 			<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
@@ -106,5 +106,14 @@
 			<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
 			<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
 		</Folder>
+		<Folder Name="Import and Export EPE Devices" />
+		<Folder Name="TM or 3rd party DTM&apos;s">
+			<Feature Path="96 Update DTM Catalog.feature" />
+		</Folder>
+	</Folder>
+	<Folder Name="RTNS">
+		<Feature Path="229 Run Citect runtime.feature" />
+		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
+		<Feature Path="237 Double click on OC header .feature" />
 	</Folder>
 </Scenarios>
