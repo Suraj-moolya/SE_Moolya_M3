@@ -84,6 +84,8 @@
 			<Feature Path="nn Refine Online.feature" />
 			<Feature Path="73 Configure Work Stations and it&apos;s services like CE, VJC and OFS.feature" />
 			<Feature Path="81 Check backup data for each controller.feature" />
+			<Feature Path="78 Open refine online and check the build and deploy functionality.feature" />
+			<Feature Path="79 Update the Control project.feature" />
 			<Feature Path="74 Map the Workstation to SP.feature" />
 			<Feature Path="Chnage Port settings in worksation.feature" />
 		</Folder>
