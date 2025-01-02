@@ -30,6 +30,11 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen I selected Unlock Safety Protection CE in control expert")
     obj.buttonunlocksafetyprotectionceselected()
     
+@when("I selected Build and Deploy Changes in control expert")
+def step_impl():
+    """I selected Build and Deploy Changes in control expert"""
+    CommonUtil.write_text_file("\nWhen I selected Build and Deploy Changes in control expert")
+    obj.buttonbuildanddeploychangesselected()
 
         
   

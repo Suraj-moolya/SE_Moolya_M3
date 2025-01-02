@@ -201,10 +201,6 @@ class MessageBoxWorkFlow:
             Actionutility.modal_dialog_window_dialog(param)
         except Exception as ex:
             raise Exception(ex) from ex
-            
-    
-      
-
 
     def clickokfromdbppopupwindow(self):
         """messagebox_obj.reconfirmokbutton"""
@@ -227,7 +223,10 @@ class MessageBoxWorkFlow:
     def clickopenimporttewindow(self):
         """messagebox_obj.reconfirmokbutton"""
         MessageBoxWorkFlow.messagebox_obj.importteopenbutton.click()
-            
+        
+    def checkboxheadercbchecked(self):
+        """messagebox_obj.headercbcheckbox"""
+        MessageBoxWorkFlow.messagebox_obj.headercbcheckbox.checkbox_checked()           
 
                 
 
