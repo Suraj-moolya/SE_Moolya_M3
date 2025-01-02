@@ -86,6 +86,8 @@
 			<Feature Path="81 Check backup data for each controller.feature" />
 			<Feature Path="78 Open refine online and check the build and deploy functionality.feature" />
 			<Feature Path="79 Update the Control project.feature" />
+			<Feature Path="74 Map the Workstation to SP.feature" />
+			<Feature Path="Chnage Port settings in worksation.feature" />
 		</Folder>
 		<Folder Name="Controllers">
 			<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />

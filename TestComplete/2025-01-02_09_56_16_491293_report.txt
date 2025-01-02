@@ -1,0 +1,6 @@
+
+When I wait in seconds Refine online window in refine offline
+When I selected Save Refine Offline in refine offline|| Log Message:SaveRefineOffline_RefineOffline
+When I wait in seconds Refine online window in refine offline
+When I selected Close Refine Offline in refine offline|| Log Message:CloseRefineOffline_RefineOffline|| Log Message:NotificationPannel_MessageBox
+Then Verify Action message in notification pannel project browser in project explorer as "Close Control Project Editor (Completed)"|| Log Message:NotificationPannel_MessageBox|| Log Message:NotificationPannel_MessageBox|| Log Message:NotificationPannel_MessageBox|| Log Message:Close Control Project Editor (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_09_38_12_825\Picture65.png

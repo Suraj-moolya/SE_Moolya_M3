@@ -1186,23 +1186,23 @@ def RClick_Variable_Elementary_Variable_Tab(variable_name):
 
     
 def Click_P2p_Create_consecutive_variables(param):
-  variable_name, HMi_Column_no = param.split("$$")
+  variable_name, HMi_Column_no, desired_variable_name = param.split("$$")
   variable_number = 1
   
   for i in range(2):
-    desired_variable_name = "P2P" + str(variable_number)
+    desired_variable_name = desired_variable_name + str(variable_number)
     Click_Variable_Elementary_Variable_Tab(variable_name)
     Sys.Keys("[Down]")
     Sys.Keys("[Enter]")
     Sys.Keys(desired_variable_name )
     variable_number = 2
-    variable_name = "P2P1"
+    variable_name = desired_variable_name 
     for i in range(int(HMi_Column_no)):
       Sys.Keys("[Right]")
     Sys.Keys("[Enter]")
     
 def sdsdsd():
-  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7")
+  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7$$P2P")
     
 
     
@@ -1312,3 +1312,26 @@ def Verify_backup_data_PE(param):
           break
   else:
     Log.Message("Message not successfully verified")
+
+    
+def drag_and_drop_remote_to_local_P2P(param):
+  target, source = param.split("$$")
+  devices = proj_obj.remotevariablebutton.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  channels = proj_obj.sourcevariablebutton.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for device in devices:
+    if device.DataContext.Identifier.OleValue == source:
+      from_x = device.ScreenLeft + (device.Width / 2)
+      from_y = device.ScreenTop + (device.Height / 2)
+      break
+  else:
+    Log.Message("No visible device found with identifier")
+  for channel in channels:
+    if channel.DataContext.Identifier.OleValue == target:
+      to_x = channel.ScreenLeft + (channel.Width / 2)
+      to_y = channel.ScreenTop + (channel.Height / 2)
+      break
+  device.Drag(from_x - device.ScreenLeft, from_y - device.ScreenTop, to_x - from_x, to_y - from_y)
+  Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
+  
+def sgsfsfs():
+  drag_and_drop_remote_to_local_P2P("PES_CONST_TRUE$$PES_CONST_TRUE")

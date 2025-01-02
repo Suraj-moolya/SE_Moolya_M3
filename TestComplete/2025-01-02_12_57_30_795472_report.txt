@@ -1,0 +1,6 @@
+
+When I Collapse control project browser PE project browser in project explorer|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:Executables is Collapsed.|| Log Message:Containers is Collapsed.|| Log Message:M580_Standalone is Collapsed.
+When I Expand control project browser PE project browser in project explorer as "M580_Standalone"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:M580_Standalone is Expanded.|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_45_06_209\Picture55.png
+When I Expand control project browser PE project browser in project explorer as "Executable"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:Executables is Expanded.|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_45_06_209\Picture56.png
+When I Dclick Control project broswer project browser in project explorer as "ControlExecutable_1"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:ControlExecutable_1 is Double Clicked.
+When I Control executable dropdown PE project browser in project explorer as "ControlExecutive_1$$Workstation_1"|| Log Message:servicemapingeditor_ProjectExplorerTab|| Log Message:The item Workstation_1 is seclected from the combo box.

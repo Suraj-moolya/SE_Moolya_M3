@@ -1,0 +1,2 @@
+|| Log Message:The application "C:\Program Files\Schneider Electric\EcoStruxure\Process Expert\Utilities\SimulatorStarter\PLCSimulatorStarter.exe" started.
+When I click on Start button on PLC Simulator|| Log Message:StartSimulator_DialogCE

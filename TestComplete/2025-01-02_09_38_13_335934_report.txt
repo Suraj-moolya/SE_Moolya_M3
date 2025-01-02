@@ -1,0 +1,3 @@
+
+When I start system server Log In in login page|| Log Message:The application "C:\Program Files\Schneider Electric\EcoStruxure\Process Expert\System Server\SystemServer.exe" started.
+Verify that the User Login Dialogue window appeared|| Log Message:Username_SystemServer|| Log Message:Login Dialogue box successfully appeared

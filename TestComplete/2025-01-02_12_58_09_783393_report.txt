@@ -1,0 +1,6 @@
+
+When I RClick control project browser project browser in project explorer as "System_1"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:System_1 is Right Clicked.
+When I Select context menu item EC project browser in project explorer as "Create Control Project"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Create Control Project
+When I Select controller in context menu as "M580"|| Log Message:rclicksubmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : M580
+When I rename the ControlProject as "M580_Standalone2"
+Then I verifies that 'M580_Standalone2' Created in Project Explorer|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:'M580_Standalone2' Was Created in Project Explorer

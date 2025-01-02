@@ -1,0 +1,1 @@
+|| Log Message:Workstationpropertywindow_Topology|| Log Message:$System|| Log Message:$System|| Log Message:$System|| Log Message:Configuration|| Log Message:Configuration|| Log Message:502 check and enter valid active port

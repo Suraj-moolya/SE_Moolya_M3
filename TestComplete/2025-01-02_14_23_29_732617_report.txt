@@ -1,0 +1,1 @@
+|| Log Message:Remotevariable_ProjectExplorer|| Log Message:Sourcevariable_ProjectExplorer|| Log Message:Dragging from (1471.5, 306.5) to (792.5, 306.5) completed.

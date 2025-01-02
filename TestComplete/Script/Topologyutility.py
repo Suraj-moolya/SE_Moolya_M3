@@ -111,16 +111,17 @@ def Select_IP_from_ControlProjectDeployment(IP_address):
   Dropdown_IPList = Dropdown_options.FindAllChildren("ClrClassName","RadComboBoxItem",10)
   for IP in Dropdown_IPList:
     Log.Message(IP.DataContext.FormattedAddress.OleValue)
+    Log.Message(IP_address)
     if IP_address in IP.DataContext.FormattedAddress.OleValue:
-      
       IP.Click()
       Log.Message(f'{IP.DataContext.FormattedAddress.OleValue} was selected from Dropdown option')
       break
   else:
     Log.Message(f'{IP_address} did not exist in Dropdown option')
     
+    
 def sggsg():
-  Select_IP_from_ControlProjectDeployment("10.179.244.99")
+  Select_IP_from_ControlProjectDeployment("Slot NIC_1 {127.0.0.1:503}")
 
 
 def select_latest_backup_data_TE():
@@ -180,7 +181,11 @@ def change_port_number_workstation_TE(param):
   heading, activeport, portvalue = param.split("$$")
   ports = topology_obj.propertywindowtextbox.object.FindAllChildren("ClrClassName","GridViewRow",100)
   for port in ports:
-    if port.Item.Category == heading:
+    Log.Message(port.Item.Category)
+    Log.Checkpoint(heading)
+    
+    if str(port.Item.Category) == heading:
+      Log.Message(port.Item.Category)
       values = port.FindAllChildren("ClrClassName","GridViewCell",100)
       for value in values:
         if activeport in value.WPFControlText:
@@ -188,8 +193,9 @@ def change_port_number_workstation_TE(param):
           Sys.Keys(portvalue)
           Sys.Keys("[Enter]")
   else:
-    Log.Message("Hudimaga")
+    Log.Message(f'{activeport} check and enter valid active port')
 
 def hshshs():
   #DBlClick_Properties_workstation("ControlExpert_1")
-  Expand_Properties_workstation("Configuration")
+  #Expand_Properties_workstation("Configuration")
+  change_port_number_workstation_TE("Configuration$$502$$503")

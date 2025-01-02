@@ -1,0 +1,4 @@
+
+When I double click on template Identifier in application browser as "MotorGP_1"|| Log Message:Applicationbrowser_ApplicationExplorerTab
+When I Check instance editor Instance editor checklist in application explorer as "Running$$1"|| Log Message:Instanceeditorchecklist_ApplicationExplorerTab|| Log Message:Checked
+When I Enter description AE Instance description in application explorer|| Log Message:Instancedescription_ApplicationExplorerTab

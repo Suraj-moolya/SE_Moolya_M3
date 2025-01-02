@@ -313,4 +313,25 @@ class TopologyWorkFlow:
             Topologyutility.Verify_Device_Hardware_Catalog_TE(smp)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def dblclickpropertiesworkstation(self,text):
+        """dblclickpropertiesworkstation"""
+        try:
+            Topologyutility.DBlClick_Properties_workstation(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def expandpropertiesworkstation(self,text):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyutility.Expand_Properties_workstation(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def changeportnumberworkstation(self,text):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyutility.change_port_number_workstation_TE(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
 

@@ -21,3 +21,4 @@ Then Verify Mapped DTM device present CE Project Browser RO in refine offline as
 Examples:
   | SlNo. | projectBrowser1  | projectBrowser2 | projectBrowser3     | tabname               | server     | button | contextmenu_item1 | contextmenu_item2  | Project Browser RO1 |
   | 1     | ControlProject_1 | Executables     | ControlExecutable_1 | Communication Mapping | Advantys_1 | OK     | Build All         | Open Built Project | 192.168.0.1         |
+  

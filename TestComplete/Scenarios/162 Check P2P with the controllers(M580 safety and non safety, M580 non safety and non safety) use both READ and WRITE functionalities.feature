@@ -25,6 +25,14 @@ Examples:
   | SlNo. |
   | 1     |
   
+@TC_EPE_PE_CP_00
+@test00
+Scenario Outline: Create Consecutive variable and select HMI option under Data Editor window when the table is blank
+When I Enter Variable name and select HMI option under Data Editor window
+Examples:
+  | SlNo. |
+  | 1     |
+  
   
 @TC_EPE_PE_CP_0001
 @test0001
@@ -34,7 +42,19 @@ And I Select context menu item EC project browser in project explorer as '<conte
 When I click modal dialog window project browser in project explorer as '<Button>'
 Examples:
   | SlNo. | project browser1 | context menu        | Button |
-  | 1     | M580_Safety      | Manage Peer to Peer | Next   |
+  | 1     | M580_Standalone  | Manage Peer to Peer | Next   |
+  
+
+@TC_EPE_PE_CP_0039
+@test0039
+Scenario Outline: Drag remote variable to sorce variable 
+When I Drag and drop from remote varaibles to source variables in P2P as '<server>'
+When I click modal dialog window project browser in project explorer as '<Button>'
+When I click modal dialog window project browser in project explorer as '<Button2>'
+Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
+Examples:
+  | SlNo. | server                         | Button | button2 | project browser2                              |
+  | 1     | PES_CONST_TRUE$$PES_CONST_TRUE | OK     | Next    | Manage Peer to Peer Communication (Completed) |
   
   
   

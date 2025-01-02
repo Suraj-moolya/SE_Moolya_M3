@@ -1,0 +1,5 @@
+
+When I rclick application browser template AE Application browser in application explorer as "MotorGP$$1.0.123"|| Log Message:Applicationbrowser_ApplicationExplorerTab|| Log Message:Right Clicked object is : MotorGP_1
+When I Select context menu item EC Application browser in application explorer as "Inspect Instance"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Inspect Instance
+Then verify inspect instance window open Inspect instance tree in inspect instance as "MotorGP_1"|| Log Message:Inspectinstancewindow_ApplicationExplorerTab|| Log Message:Inspect Instance window is open for : MotorGP_1: Inspect Instance|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_16_35_649\Picture23.png
+When I selected Inspect instance ok in inspect instance|| Log Message:Inspectinstanceok_ApplicationExplorerTab

@@ -1,0 +1,2 @@
+
+When I click modal dialog window Instance editor save in application explorer as 'Yes'|| Log Message:Modaldialogwindow_MessageBox|| Log Message:Clicked Yes button.

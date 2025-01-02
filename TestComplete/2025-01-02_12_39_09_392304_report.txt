@@ -1,0 +1,2 @@
+
+When I Dclick Control project broswer project browser in project explorer as "<Containers>"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:System_1 is already expanded.

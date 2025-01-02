@@ -1,0 +1,2 @@
+
+When I Expand control project browser PE project browser in project explorer as "Executables"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:Executables is Expanded.|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_13_23_28_950\Picture54.png

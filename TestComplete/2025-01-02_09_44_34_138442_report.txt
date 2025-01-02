@@ -1,0 +1,2 @@
+
+Then Verify template added in Application browser AE Application browser in application explorer as "MotorGP_1_1"|| Log Message:Applicationbrowser_ApplicationExplorerTab|| Log Message:MotorGP_1_1 does not exists in Application browser|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_09_38_12_825\Picture22.png

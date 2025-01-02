@@ -429,6 +429,9 @@
 			 <UIControl Element="Variable_ProjectExplorer" Name="TextObject('P2P')" Parent="EngineeringClient_" />
 			 <UIControl Element="LoadP2PVariablesTabControl_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />
 			 <UIControl Element="Unmapvariable_ProjectExplorer" Name="WPFObject('MenuItem', 'Unmap', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="Remotevariable_ProjectExplorer" Name="WPFObject('RemoteProjectVariablesGrid')" Parent="EngineeringClient_" />
+			 <UIControl Element="Sourcevariable_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />
+			 
 			
 			 
         </Component>
