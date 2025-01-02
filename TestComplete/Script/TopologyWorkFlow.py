@@ -54,42 +54,42 @@ class TopologyWorkFlow:
     def textboxtopologyexplorertreesearchtemplatebrowserec(self,search_text):
         """textboxtopologyexplorertreesearchtemplatebrowserec"""
         try:
-            Topologyexplorerutility.search_template_browser_EC(search_text)
+            Topologyutility.search_template_browser_EC(search_text)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeselecttemplateec(self,param):
         """textboxtopologyexplorertreeselecttemplateec"""
         try:
-            Topologyexplorerutility.Select_template_EC (param)
+            Topologyutility.Select_template_EC(param)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreedblclicktemplatete(self,temp_name):
         """textboxtopologyexplorertreedblclicktemplatete"""
         try:
-            Topologyexplorerutility.DblClick_template_TE(temp_name)
+            Topologyutility.DblClick_template_TE(temp_name)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeexpandcommunicationtabte(self,val):
         """textboxtopologyexplorertreeexpandcommunicationtabte"""
         try:
-            Topologyexplorerutility.Expand_communication_tab_TE(val)
+            Topologyutility.Expand_communication_tab_TE(val)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeeditipaddress(self,param):
         """textboxtopologyexplorertreeeditipaddress"""
         try:
-            Topologyexplorerutility.edit_IP_Address(param)
+            Topologyutility.edit_IP_Address(param)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreerclicktemplatete(self,temp_name):
         """textboxtopologyexplorertreerclicktemplatete"""
         try:
-            Topologyexplorerutility.RClick_template_TE(temp_name)
+            Topologyutility.RClick_template_TE(temp_name)
         except Exception as ex:
             raise Exception(ex) from ex
             

@@ -9,6 +9,7 @@ import Actionutility
 from EngineeringClient import EngineeringClient
 from RefineOffline import RefineOffline
 from TopologyExplorerTab import TopologyExplorerTab
+from MessageBox import MessageBox
 
 topology_obj =  Topology()
 aet_obj = ApplicationExplorerTab()
@@ -17,6 +18,7 @@ syse_obj = SystemExplorerScreen()
 eng_obj = EngineeringClient()
 refoff_obj = RefineOffline()
 topo_obj = TopologyExplorerTab()
+msg_obj = MessageBox()
 
 def search_template_browser_EC(search_text):
   temp_browser = msg_obj.exportpopupbutton.object
@@ -52,12 +54,15 @@ def DblClick_template_TE(temp_name):
     Log.Warning(f'The {temp_name} is not present')        
  
 def Expand_communication_tab_TE(val):
-  val = "Communication"
-  sections = syse_obj.systemexplorermenubutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
+  #val = "Communication"
+  sections = syse_obj.systemexplorernodebutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",1000)
   for section in sections:
-    if val in section.DataContext.Name.OleValue:
+    if val in str(section.DataContext.Name.OleValue):
       section.IsExpanded = True
-         
+      Log.Message(f'{section.DataContext.Name.OleValue} is expanded')
+  else:
+    Log.Warning(f'{val} not found') 
+    
 def edit_IP_Address(param):
     name,IP_add =  param.split('$$')
     grid_row_obj = topology_obj.topologydeviceeditertextbox.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  

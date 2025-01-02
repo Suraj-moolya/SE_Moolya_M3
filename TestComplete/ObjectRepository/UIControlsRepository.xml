@@ -419,7 +419,7 @@
              <UIControl Element="DialogListboxCE1_DialogCE" Name="Window('AfxWnd140u', '', 2)" Parent="ControlExpert_" />
 			 <UIControl Element="StartSimulator_DialogCE" Name="WPFObject('ButtonStart')" Parent="PLCSimulatorStarter_" />
 			 <UIControl Element="SimulatorPort_DialogCE" Name="WPFObject('TextBox', '', 1)" Parent="PLCSimulatorStarter_" />
-			 <UIControl Element="ListofmodifiedYesbuttonCE_DialogCE" Name="Window('Button', '&Yes', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="ListofmodifiedYesbuttonCE_DialogCE" Name="Window('Button', '*Yes', 1)" Parent="ControlExpert_" />
 		</Component>
 		<Component name="Supervision Project">
              <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" /> 
