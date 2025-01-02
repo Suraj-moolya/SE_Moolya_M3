@@ -60,17 +60,18 @@ def Expand_communication_tab_TE(val):
     if val in str(section.DataContext.Name.OleValue):
       section.IsExpanded = True
       Log.Message(f'{section.DataContext.Name.OleValue} is expanded')
+      break
   else:
     Log.Warning(f'{val} not found') 
     
 def edit_IP_Address(param):
     name,IP_add =  param.split('$$')
-    grid_row_obj = topology_obj.topologydeviceeditertextbox.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  
+    grid_row_obj = syse_obj.systemexplorernodebutton.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  
     for grid_row in grid_row_obj:
-      Sys.HighlightObject(grid_row,1)  
+      #Sys.HighlightObject(grid_row,1)  
       grid_cell_obj = grid_row.FindAllChildren("ClrClassName", "GridViewCell", 100)
       for cell_val in grid_cell_obj:
-        Sys.HighlightObject(cell_val,1)
+        #Sys.HighlightObject(cell_val,1)
         if name in cell_val.WPFControlText:
           grid_row.DataContext.Expression = IP_add         
           if grid_row.DataContext.Expression == IP_add:
