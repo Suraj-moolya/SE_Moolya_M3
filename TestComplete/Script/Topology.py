@@ -63,5 +63,10 @@ class Topology(MapBase):
     @property
     def propertywindowtextbox(self):
         """propertywindowtextbox"""
-        return self.get_element("PropertyWindow_Topology")
+        return self.get_element("Workstationpropertywindow_Topology")
+        
+    @property
+    def workstationporttextbox(self):
+        """propertywindowtextbox"""
+        return self.get_element("Workstationport_Topology")
               

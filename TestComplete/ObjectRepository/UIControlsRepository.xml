@@ -444,5 +444,7 @@
 			 <UIControl Element="NewPasswordbox_Topology" Name="WPFObject('NewPasswordBox')" Parent="EngineeringClient_" />
              <UIControl Element="ConfirmPasswordbox_Topology" Name="WPFObject('ConfirmPasswordBox')" Parent="EngineeringClient_" />
              <UIControl Element="OldPasswordBox_Topology" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
+			 <UIControl Element="Workstationpropertywindow_Topology" Name="WPFObject('RadTreeView', '', 1)" Visible="True" Parent="EngineeringClient_" />
+			 <UIControl Element="Workstationport_Topology" Name="WPFObject('GroupBox', 'Parameters', 1)" Visible="True"  Parent="EngineeringClient_" />
         </Component>
 </UIControlRepository>
