@@ -15,7 +15,7 @@ Then Verify Action message in notification pannel project browser in project exp
 
 Examples:
   | SlNo. | Controller    | context menu | Topology Explorer Tree1 | Modal dialog window4 | Modal dialog window5 | Modal Dialog Window 16                    | project browser2                 |
-  | 1     | Workstation_1 | Control      | Deploy Built Project    | OK                   | 192.168.11.68:502    | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) |
+  | 1     | Workstation_1 | Control      | Deploy Built Project    | OK                   | 127.0.0.1:502    | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) |
 
 
 @TC_EPE_WS_0007a
