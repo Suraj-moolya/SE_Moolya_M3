@@ -1,0 +1,3 @@
+
+When I Click on Buttons in Conflict Dialog popup Import Conflict Dialog in import dialog as "Update All"|| Log Message:ImportConflictDialog_ApplicationExplorerTab
+When I Click on Buttons in Conflict Dialog popup Import Conflict Dialog in import dialog as "OK"|| Log Message:ImportConflictDialog_ApplicationExplorerTab|| Log Message:NotificationPannel_MessageBox|| Log Message:NotificationPannel_MessageBox|| Log Message:Import (Completed) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_16_35_649\Picture21.png

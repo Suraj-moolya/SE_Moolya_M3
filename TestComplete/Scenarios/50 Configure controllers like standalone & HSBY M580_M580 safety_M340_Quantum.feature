@@ -231,14 +231,14 @@ Examples:
   
   
 @test0002b
-Scenario Outline: Close Workstation  in Topology Explorer
+Scenario Outline: Open Workstation_2  in Topology Explorer
 When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
 
-@Close_Controllers_in_Topology_Explorer__M580_Standalone
+@Open_Workstation_in_Topology_Explorer_Workstation_2
 Examples:
-  | SlNo. | button                 | FolderName  |
-  | 1     | M580_Standalone$$Close | Controllers |
+  | SlNo. | button              | FolderName  |
+  | 1     | Workstation_2$$Open | Controllers |
   
 @TC_EPE_TE_CS_0003
 @test0001

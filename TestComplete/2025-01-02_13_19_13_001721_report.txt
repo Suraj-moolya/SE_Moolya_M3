@@ -1,0 +1,2 @@
+
+When I Change the port number of workstation as {arg}|| Log Message:Workstationpropertywindow_Topology|| Log Message:$System|| Log Message:"Configuration|| Log Message:$System|| Log Message:"Configuration|| Log Message:$System|| Log Message:"Configuration|| Log Message:Configuration|| Log Message:"Configuration|| Log Message:502 check and enter valid active port|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_13_19_12_629\Picture1.png

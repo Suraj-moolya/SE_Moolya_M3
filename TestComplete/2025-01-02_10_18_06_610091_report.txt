@@ -1,0 +1,2 @@
+
+When I Double Click on propeties as {arg} available when window is open|| Log Message:assignmentsdock_ProjectExplorerTab|| Log Message:ControlExpert_1 property doesnt exists|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_10_18_06_271\Picture1.png

@@ -1,0 +1,2 @@
+
+When I Change the port number of workstation as {arg}|| Log Message:Workstationpropertywindow_Topology|| Log Message:502 check and enter valid active port|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_13_10_05_156\Picture1.png

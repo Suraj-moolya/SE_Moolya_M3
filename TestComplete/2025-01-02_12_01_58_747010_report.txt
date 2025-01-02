@@ -1,0 +1,3 @@
+
+When I RClick control project browser project browser in project explorer as "M580_Standalone"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:M580_Standalone is Right Clicked.
+When I Select context menu item EC project browser in project explorer as "Collapse All"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Collapse All

@@ -1,0 +1,10 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'|| Log Message:SystemExplorerNode_SystemExplorerScreen
+When I Select context menu item EC Topology Explorer Tree in topology as "Control"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Control
+When I Select controller in context menu as "Deploy Built Project"|| Log Message:rclicksubmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Deploy Built Project
+When I select deploy popup dropdown value TE project dropdown in topology as "Topology$$projectdropdowntextbox$$M580_Standalone"|| Log Message:projectdropdown_Topology|| Log Message:The selected value is M580_Standalone2
+When I select deploy popup dropdown value TE Executables dropdown in topology as "Topology$$executablesdropdowntextbox$$ControlExecutable_1"|| Log Message:Executablesdropdown_Topology|| Log Message:The selected value is ControlExecutable_1
+When I click modal dialog window Modal dialog window in message box as "OK"|| Log Message:Modaldialogwindow_MessageBox|| Log Message:Clicked OK button.
+When I select ip adress from deploy project build TE Modal dialog window in message box as "Slot NIC_1{127.0.0.1:503}"|| Log Message:primaryaddresslistdropdown_Topology|| Log Message:userdropdownMenuItem_EngineeringClient|| Log Message:Slot NIC_1 {127.0.0.1:503}|| Log Message:Slot NIC_1{127.0.0.1:503}|| Log Message:Slot NIC_1{127.0.0.1:503} did not exist in Dropdown option|| Log Message:StartEngineCheckbox_TopologyExporerTab
+When I click modal dialog window Modal dialog window in message box as "OK"|| Log Message:Modaldialogwindow_MessageBox|| Log Message:Clicked OK button.
+When I Click popup button object Modal Dialog Window 1 in message box as "MessageBox$$modaldialogwindow1textbox$$OK"|| Log Message:Modaldialogwindow1_MessageBox|| Log Message:_TopologyExporerTab

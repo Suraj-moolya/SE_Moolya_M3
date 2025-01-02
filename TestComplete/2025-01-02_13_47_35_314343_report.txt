@@ -1,0 +1,4 @@
+
+When I RClick control project browser project browser in project explorer as "ControlExecutable_1"|| Log Message:projectbrowser_ProjectExplorerTab|| Log Message:ControlExecutable_1 is Right Clicked.
+When I Select context menu item EC project browser in project explorer as "Generate and Build"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Generate and Build
+When I click modal dialog window project browser in project explorer as "OK"|| Log Message:NotificationPannel_MessageBox|| Log Error:RuntimeError: The object does not exist.

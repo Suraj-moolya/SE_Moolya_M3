@@ -35,10 +35,19 @@ Examples:
   
   
 @test0002b
-Scenario Outline: Open Workstation  in Topology Explorer
+Scenario Outline: Open Workstation_1  in Topology Explorer
 When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
 
 Examples:
   | SlNo. | button              | FolderName  |
   | 1     | Workstation_1$$Open | Workstation |
+  
+@test0002b
+Scenario Outline: Open Workstation_2  in Topology Explorer
+When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
+
+Examples:
+  | SlNo. | button              | FolderName  |
+  | 1     | Workstation_2$$Open | Workstation |

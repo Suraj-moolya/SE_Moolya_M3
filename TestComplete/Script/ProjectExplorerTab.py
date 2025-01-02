@@ -252,4 +252,18 @@ class ProjectExplorerTab(MapBase):
     @property
     def unmapvariable(self):
         """unmapvariable"""
-        return self.get_element("Unmapvariable_ProjectExplorer")    
+        return self.get_element("Unmapvariable_ProjectExplorer")  
+        
+    @property
+    def remotevariablebutton(self):
+        """remotevariablebutton"""
+        return self.get_element("Remotevariable_ProjectExplorer") 
+        
+    @property
+    def sourcevariablebutton(self):
+        """sourcevariablebutton"""
+        return self.get_element("Sourcevariable_ProjectExplorer")
+        
+        
+        
+       

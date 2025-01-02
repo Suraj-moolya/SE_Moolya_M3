@@ -1,0 +1,4 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'|| Log Message:SystemExplorerNode_SystemExplorerScreen
+When I Select context menu item EC project browser in project explorer as "Properties"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Properties
+When I change controller properties with drop down options as '<options>'|| Log Message:ControllerPropertytab_TopologyExporerTab|| Log Message:|| Log Message:TCP Listening Port|| Log Message:TCP Listening Port|| Log Message:|| Log Message:Password Protection|| Log Message:userdropdownMenuItem_EngineeringClient|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_16_35_649\Picture45.png|| Log Message:Modaldialogwindow_MessageBox|| Log Message:Clicked Yes button.

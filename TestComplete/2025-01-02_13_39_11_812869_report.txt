@@ -1,0 +1,2 @@
+
+When I selected select PLC bus combobox item CE in refine offline as <PLC bus combo box item>|| Log Message:WindowCombobox_RefineOffline|| Log Message:182|| Log Message:BME P58 5040   03.20 is selected.|| Log Message:YesCEbutton_ControlExpert|| Log Message:YesCEbutton_ControlExpert

@@ -1,0 +1,4 @@
+
+When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'|| Log Message:SystemExplorerNode_SystemExplorerScreen
+When I Select context menu item EC Topology Explorer Tree in topology as "Control"|| Log Message:rclickmenu_EngineeringClient
+When I Select controller in context menu as "Deploy Built Project"|| Log Message:rclicksubmenu_EngineeringClient|| Log Message:_TopologyExporerTab|| Log Message:_TopologyExporerTab|| Log Message:_TopologyExporerTab|| Log Message:_TopologyExporerTab|| Log Message:_TopologyExporerTab|| Log Message:_TopologyExporerTab

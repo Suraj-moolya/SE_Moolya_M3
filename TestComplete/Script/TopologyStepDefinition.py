@@ -330,3 +330,24 @@ def step_impl(smp):
     CommonUtil.write_text_file("\nWhen I Verify '<smp>' in Hardware Catalog Window")
     obj.textboxtopologyexplorerhardwarecatalogdevices(smp)
     Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Double Click on propeties as {arg} available when window is open")
+def step_impl(text):
+    """I Double Click on propeties as {arg} available when window is open"""
+    CommonUtil.write_text_file("\nWhen I Double Click on propeties as {arg} available when window is open")
+    obj.dblclickpropertiesworkstation(text)
+    Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Expand on propeties header as {arg} available when window is open")
+def step_impl(text):
+    """I Expand on propeties header as {arg} available when window is open"""
+    CommonUtil.write_text_file("\nWhen I Expand on propeties header as {arg} available when window is open")
+    obj.expandpropertiesworkstation(text)
+    Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Change the port number of workstation as {arg}")
+def step_impl(text):
+    """I Change the port number of workstation as {arg}"""
+    CommonUtil.write_text_file("\nWhen I Change the port number of workstation as {arg}")
+    obj.changeportnumberworkstation(text)
+    Applicationutility.take_screenshot("Full Screenshot")

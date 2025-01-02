@@ -845,3 +845,10 @@ class ProjectExplorerTabWorkFlow:
                     Projectexplorertabutility.Verify_backup_data_PE(param)
                 except Exception as ex:
                     raise Exception(ex) from ex
+                
+    def textboxdraganddropremotetolocalP2P(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.drag_and_drop_remote_to_local_P2P(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex

@@ -1,0 +1,5 @@
+
+When I Enter FileLocation and FileName to be Imported Import in import dialog as "Import_instance_test.csv"|| Log Message:ComboBox_ApplicationExplorerTab|| Log Message:AddressBand_ApplicationExplorerTab
+When I Click on Buttons in Import System1 Popup_AE Import in import dialog as "Open"|| Log Message:Import_ApplicationExplorerTab|| Log Message:&Open
+When I Wait for Import popup Import in import dialog|| Log Message:ImportDialog_ApplicationExplorerTab|| Log Message:_ApplicationExplorerTab
+When I Click on Buttons in Import Dialog popup AE Import Dialog in import dialog as 'OK'|| Log Message:ImportDialog_ApplicationExplorerTab|| Log Message:NotificationPannel_MessageBox|| Log Message:NotificationPannel_MessageBox|| Log Message:Import (In progress) in Notification Pannel|| Log Picture:C:\Users\sesi013760\Documents\test\SE_Moolya_M3\TestComplete\Log\02-01-2025_12_45_06_209\Picture20.png

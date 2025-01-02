@@ -713,3 +713,9 @@ def step_impl(projectBrowser3):
     """I Verify backup data PE in project explorer as '<project browser2>'"""
     CommonUtil.write_text_file("\nWhen I Verify backup data PE in project explorer as \""+projectBrowser3+"\"")
     obj.textboxprojectbrowserverifybackupdata(projectBrowser3)
+    
+@when("I Drag and drop from remote varaibles to source variables in P2P as {arg}")
+def step_impl(server):
+    """I Drag and drop from remote varaibles to source variables in P2P as '<server>'"""
+    CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    obj.textboxdraganddropremotetolocalP2P(server)

@@ -1,0 +1,5 @@
+
+When I rclick application browser template AE Application browser in application explorer as "INTERLOCK8OFFGP$$1.0.5"|| Log Message:Applicationbrowser_ApplicationExplorerTab|| Log Message:Right Clicked object is : INTERLOCK8OFFGP_UC_1
+When I Select context menu item EC Application browser in application explorer as "Replace Template"|| Log Message:rclickmenu_EngineeringClient|| Log Message:The Context Menu Item clicked is : Replace Template
+I Rename the Insatnce to the requirement "Replace Template"|| Log Message:Replacetemplate_ApplicationExplorerTab|| Log Message:Replace Template is visible on screen.|| Log Message:Replacetemplatecombo_ApplicationExplorerTab|| Log Message:Replacetemplate_ApplicationExplorerTab|| Log Message:The Selected template is $INTERLOCK4ONGP_UC [1.0.14]|| Log Message:Replacetemplate_ApplicationExplorerTab
+When I take evidence Instance Editor in application explorer
