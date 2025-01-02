@@ -1068,7 +1068,6 @@ def select_protocol_in_add_device(protocol, device):
       Log.Message(opt.ObjectIdentifier)
       opt.Click()
       Log.Checkpoint(f"'{protocol}' was selected in Control Expert Modal Dialogue Window")
-<<<<<<< Updated upstream
       break
   for bmi in con_obj.addwindowce.object.FindAllChildren("Name", f"TextObject('{device}')", 100):
     if bmi.Text == device:
@@ -1084,7 +1083,6 @@ def select_btn_device_prop(button):
       Log.Checkpoint(f"'{button}' Clicked on Device Property")
       return
   Log.Warning(f"'{button}' Not Found on Device Property")
-=======
 #      return
 #  Log.Warning(f"'{protocol}' was not found in the dropdown options")
   

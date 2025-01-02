@@ -21,6 +21,125 @@
 	<Node name="root">
 		<Node name="folders"/>
 		<Node name="logs"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45652.4322542477"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{322F8DBD-C3F8-495A-B2C3-96CEA7144650}"/>
+				<Prp name="nameofroot" type="S" value="Nov 21 Execution order (Milestone 3)"/>
+				<Prp name="relpath" type="S" value="26-12-2024_10_22_26_767\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45652.491846493"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{E6BF78E3-D377-444F-BF01-AA41488A4F00}"/>
+				<Prp name="nameofroot" type="S" value="Export instance - Rclick instance, Export, save and cancel in export window"/>
+				<Prp name="relpath" type="S" value="26-12-2024_11_48_15_537\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45652.4927151042"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{708EE2E9-7773-48B6-8611-936F2A98EC8C}"/>
+				<Prp name="nameofroot" type="S" value="Export instance - Rclick instance, Export, save and cancel in export window"/>
+				<Prp name="relpath" type="S" value="26-12-2024_11_49_30_585\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6040814236"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{135D2ADE-0116-408C-9513-463E5576565B}"/>
+				<Prp name="nameofroot" type="S" value="Configure HART modules and map the communication(Distributed IO's)"/>
+				<Prp name="relpath" type="S" value="31-12-2024_14_29_52_635\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6127749884"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{19BEDF57-B7FB-4214-93C4-6E96C44B8549}"/>
+				<Prp name="nameofroot" type="S" value="P2p"/>
+				<Prp name="relpath" type="S" value="31-12-2024_14_42_23_759\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6373185532"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{66E53A12-6B82-4E75-9311-879843D3A7E6}"/>
+				<Prp name="nameofroot" type="S" value="Configure HART modules and map the communication(Distributed IO's)"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_17_44_323\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6431494676"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2C76FB92-4096-4B18-825D-766EEFAC0425}"/>
+				<Prp name="nameofroot" type="S" value="I click 'DTM Browser' in Tool Bar popup window"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_26_08_114\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6439671181"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{44CA4707-7AEB-43FE-A362-12E3FC990851}"/>
+				<Prp name="nameofroot" type="S" value="I click 'Tools' in Tool Bar"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_27_18_759\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.644143044"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{A0249F3D-2B86-43D1-B037-700801162E46}"/>
+				<Prp name="nameofroot" type="S" value="I click 'Tools' in Tool Bar"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_27_33_959\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6465348495"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{521159FD-24C1-457D-B0CD-C06B0CE0924D}"/>
+				<Prp name="nameofroot" type="S" value="Configure HART modules and map the communication(Distributed IO's)"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_31_00_611\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0010">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6493384259"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{7B5A1079-3648-4CCA-8C76-68DB4DD4CC11}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\kczjvb]"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_35_02_840\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0011">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6496577083"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D61C4A00-6986-4E02-B362-B6A119ECF0CE}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\kczjvb]"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_35_30_426\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0012">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45657.6501342477"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5684ED5F-1DD6-4BDB-A71F-C02EB363F1CE}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Topologyexplorerutility\kczjvb]"/>
+				<Prp name="relpath" type="S" value="31-12-2024_15_36_11_599\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
 		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
 		<Prp name="version" type="S" value="11.0"/>
 	</Node>

@@ -73,7 +73,6 @@
 		</Folder>
 	</Folder>
 	<Folder Name="Topology explorer">
-<<<<<<< Updated upstream
 		<Folder Name="Workstation">
 			<Feature Path="XX Workstation Settings .feature" />
 			<Feature Path="XX PLCSimulator.feature" />
@@ -116,7 +115,6 @@
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
-=======
 		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
 		<Feature Path="51 Open configure window, add some modules, synch the changes.feature" />
 		<Feature Path="52 Open configure window and switch to full screen, add modules and synch the changes.feature" />
@@ -154,6 +152,5 @@
 		<Feature Path="29 Modify the IP address after mapping to workstation.feature" />
 		<Feature Path="20 Run Supervision Client.feature" />
 		<Feature Path="174 Export the project with P2P enable. Do the modifications in P2P(map or unmap varibales).feature" />
->>>>>>> Stashed changes
 	</Folder>
 </Scenarios>
