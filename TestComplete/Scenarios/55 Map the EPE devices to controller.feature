@@ -43,7 +43,7 @@ And I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology E
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
 Examples:
   | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 |
-  | 1     | ETesysTHW               | Physical Connections    | EthernetNetwork_1       |
+  | 1     | ETesysTHW               | Physical Connections    | SE_Network              |
 
   
   
