@@ -9,6 +9,7 @@ import Actionutility
 from EngineeringClient import EngineeringClient
 from RefineOffline import RefineOffline
 from TopologyExplorerTab import TopologyExplorerTab
+from MessageBox import MessageBox
 
 topology_obj =  Topology()
 aet_obj = ApplicationExplorerTab()
@@ -17,6 +18,7 @@ syse_obj = SystemExplorerScreen()
 eng_obj = EngineeringClient()
 refoff_obj = RefineOffline()
 topo_obj = TopologyExplorerTab()
+msg_obj = MessageBox()
 
 def search_template_browser_EC(search_text):
   temp_browser = msg_obj.exportpopupbutton.object

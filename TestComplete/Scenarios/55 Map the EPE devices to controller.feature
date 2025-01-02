@@ -41,9 +41,10 @@ Scenario Outline: Map Modbus TCP device to Controller - add Ethernet Network
 When I RClick template TE Topology Explorer Tree in topology as '<Topology Explorer Tree1>'
 And I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
+When I click modal dialog window project browser in project explorer as '<Button>'
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 |
-  | 1     | ETesysTHW               | Physical Connections    | SE_Network              |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button |
+  | 1     | ETesysTHW               | Physical Connections    | ETesysTHW$$SE_Network   | OK     |
 
   
   

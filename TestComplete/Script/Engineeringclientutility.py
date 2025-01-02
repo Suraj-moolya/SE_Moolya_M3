@@ -578,9 +578,8 @@ def Verify_folder_Content_Status_TE(FolderName):
        Log.Message(f'{SE_node_list[i].DataContext.Identifier.OleValue} folder is expanded')
        break
   else:
-    Log.Message(f'{SE_node_list[i].DataContext.Identifier.OleValue} folder is not expanded')
-          
-
+    Log.Message(f'{FolderName} folder is not expanded')
+  
 def no_password_system(btn):
   buttons = lm_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName','Button', 10)
   checkbox = lm_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName','CheckBox', 10)
