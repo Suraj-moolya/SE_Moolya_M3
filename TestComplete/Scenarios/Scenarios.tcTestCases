@@ -73,6 +73,7 @@
 		</Folder>
 	</Folder>
 	<Folder Name="Topology explorer">
+<<<<<<< Updated upstream
 		<Folder Name="Workstation">
 			<Feature Path="XX Workstation Settings .feature" />
 			<Feature Path="XX PLCSimulator.feature" />
@@ -115,5 +116,44 @@
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
+=======
+		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
+		<Feature Path="51 Open configure window, add some modules, synch the changes.feature" />
+		<Feature Path="52 Open configure window and switch to full screen, add modules and synch the changes.feature" />
+		<Feature Path="53 Add communication modules, add Drops and synch the changes.feature" />
+		<Feature Path="54 Map logical network to all communication modules.feature" />
+		<Feature Path="62 Deploy the controller .feature" />
+		<Feature Path="63 Check Back Up Data.feature" />
+		<Feature Path="64 Check Deploy Data.feature" />
+		<Feature Path="57 Configure STB Island and map it to control project.feature" />
+		<Feature Path="58 Configure PRM and map it to control project.feature" />
+		<Feature Path="56 Configure HART modules and map the communication(Distributed IO&apos;s).feature" />
+		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
+		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
+		<Feature Path="61 Check manage password, clear password and forget password.feature" />
+		<Feature Path="60 Check all the devices mapped for controller.feature" />
+		<Feature Path="55 Map the EPE devices to controller.feature" />
+		<Feature Path="77 Deploy the SP to respective stations.feature" />
+		<Feature Path="80 Check deploy changes.feature" />
+		<Feature Path="76 Deploy the CP to respective simulators.feature" />
+		<Feature Path="82 Check deploy data for each controller.feature" />
+		<Feature Path="65 Export the controller and devices from TM root folder.feature" />
+		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
+		<Feature Path="96 Update DTM Catalog.feature" />
+		<Feature Path="97 Manage DTM.feature" />
+		<Feature Path="99 Manage GSD library.feature" />
+		<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
+		<Feature Path="84 Check Redeploy.feature" />
+		<Feature Path="36 Check build &amp; deploy changes in refine online.feature" />
+		<Feature Path="38 Check update project.feature" />
+		<Feature Path="75 Create Work stations for client and add multiple NIC&apos;s and configure the IP, logical network.feature" />
+		<Feature Path="81 Check backup data for each controller.feature" />
+		<Feature Path="92 Export only Devices into csv format.feature" />
+		<Feature Path="93 Edit the csv. create_delete few more devices.feature" />
+		<Feature Path="31 Enable system password in SE and open controller in TE, set PW for controller and open it.feature" />
+		<Feature Path="29 Modify the IP address after mapping to workstation.feature" />
+		<Feature Path="20 Run Supervision Client.feature" />
+		<Feature Path="174 Export the project with P2P enable. Do the modifications in P2P(map or unmap varibales).feature" />
+>>>>>>> Stashed changes
 	</Folder>
 </Scenarios>

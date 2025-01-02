@@ -1065,8 +1065,10 @@ def select_protocol_in_add_device(protocol, device):
   con_obj.dropdownbtnce.object.Click()
   for opt in con_obj.dropdownbtnoptionce.object.FindAllChildren("ObjectType", "ListItem", 10):
     if protocol in opt.ObjectIdentifier:
+      Log.Message(opt.ObjectIdentifier)
       opt.Click()
       Log.Checkpoint(f"'{protocol}' was selected in Control Expert Modal Dialogue Window")
+<<<<<<< Updated upstream
       break
   for bmi in con_obj.addwindowce.object.FindAllChildren("Name", f"TextObject('{device}')", 100):
     if bmi.Text == device:
@@ -1082,6 +1084,57 @@ def select_btn_device_prop(button):
       Log.Checkpoint(f"'{button}' Clicked on Device Property")
       return
   Log.Warning(f"'{button}' Not Found on Device Property")
+=======
+#      return
+#  Log.Warning(f"'{protocol}' was not found in the dropdown options")
+  
+def kczjvb():
+  select_protocol("EtherNetIP")
+  
+def select_device(device):
+  scrollable_area = con_obj.addwindowce.object
+  while True:
+    for bmi in scrollable_area.FindAllChildren("Name", f"TextObject('{device}')", 100):
+      if bmi.Text == device:
+        Log.Checkpoint(f"{device} has been verified")
+        bmi.DblClick()
+        Log.Checkpoint(f"'{device}' is selected")
+        return
+    scrollable_area.MouseWheel(-1)
+    aqUtils.Delay(20)
+    if not scrollable_area.VisibleOnScreen:
+      Log.Warning(f"'{device}' was not found on this window")
+      return
+
+
+def select_protocol_in_add_device(protocol, device):
+  select_protocol(protocol)
+  select_device(device)  
+
+def find_and_click_button(parent_obj, button_name, max_depth=10):
+  buttons = parent_obj.FindAllChildren("WndClass", "Button", max_depth)
+  for btn in buttons:
+    if hasattr(btn, 'WndCaption') and button_name in btn.WndCaption:
+      btn.Click()
+      Log.Checkpoint(f"Button '{button_name}' was clicked.")
+      return
+  Log.Warning(f"'{button_name}' button not found.")
+
+def controlexp_popup(button_name):
+  find_and_click_button(con_obj.modaldialogewindowce.object, button_name, 10)
+  wait_for_dtm_update()
+#  topo_obj.configurationhardwarecatalog.object.Close()
+
+def click_button_in_prm(button_name):
+  find_and_click_button(topo_obj.prmconfigwindow.object, button_name, 100)
+
+def modaldialogue_window_ce(button_name):
+  find_and_click_button(con_obj.okmodaldialoguewindowce.object, button_name, 100)
+  Applicationutility.wait_in_seconds(2000, "wait")
+
+def select_btn_device_prop(button_name):
+  find_and_click_button(con_obj.devicepropertywindowce.object, button_name)
+>>>>>>> Stashed changes
 
 def click_validate_btn_in_control_config():
   topo_obj.paneleditbutton.object.click()
