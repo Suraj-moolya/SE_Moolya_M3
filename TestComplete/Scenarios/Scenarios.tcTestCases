@@ -82,7 +82,9 @@
 			<Feature Path="80 Check deploy changes.feature" />
 			<Feature Path="82 Check deploy data for each controller.feature" />
 			<Feature Path="nn Refine Online.feature" />
+			<Feature Path="73 Configure Work Stations and it&apos;s services like CE, VJC and OFS.feature" />
 			<Feature Path="81 Check backup data for each controller.feature" />
+
 		</Folder>
 		<Folder Name="Controllers">
 			<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />

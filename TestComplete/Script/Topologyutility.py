@@ -160,15 +160,29 @@ def DBlClick_Properties_workstation(Text):
 #some of the properties are Configuration,$System ..etc
 
 def Expand_Properties_workstation(Text):
-  properties = proj_obj.assignmentsdocktextbox.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
-  Log.Message(len(properties))
+  properties = topology_obj.propertywindowtextbox.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
   for property in properties:
-    if Text == property.DataContext.Identifier.OleValue:
+    if Text == property.DataContext.Name.OleValue:
       property.IsExpanded = True
-      Log.Message(f'{property.DataContext.Identifier.OleValue} is Expanded')
+      Log.Message(f'{property.DataContext.Name.OleValue} is Expanded')
       break
   else:
-     Log.Message(f'{property.DataContext.Identifier.OleValue} property doesnt exists')
+     Log.Message(f'{property.DataContext.Name.OleValue} property doesnt exists')
+     
+     
+def change_port_number_workstation_TE(param):
+  heading, activeport, portvalue = param.split("$$")
+  ports = topology_obj.propertywindowtextbox.object.FindAllChildren("ClrClassName","GridViewRow",100)
+  for port in ports:
+    if port.Item.Category == heading:
+      values = port.FindAllChildren("ClrClassName","GridViewCell",100)
+      for value in values:
+        if activeport in value.WPFControlText:
+          value.Click()
+          Sys.Keys(portvalue)
+          Sys.Keys("[Enter]")
+  else:
+    Log.Message("Hudimaga")
 
 def hshshs():
   #DBlClick_Properties_workstation("ControlExpert_1")
