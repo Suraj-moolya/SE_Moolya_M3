@@ -3933,7 +3933,7 @@
 					</testItem>
 				</children>
 			</testItem>
-			<testItem name="Group2" key="{3BF74DB5-00CC-478E-A210-7DA414C8ADB5}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+			<testItem name="WorkStation" key="{3BF74DB5-00CC-478E-A210-7DA414C8ADB5}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
 					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_2_1" key="{EAB9BF46-B109-4E68-93E5-504816BEFD92}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">

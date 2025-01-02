@@ -163,3 +163,23 @@ class RefineOffline(MapBase):
     def modificationbuttonrefineoffline(self):
         """modificationbuttonrefineoffline"""
         return self.get_element("ModificationButton_RefineOffline") 
+        
+    @property
+    def accesstounmappedhardwarecebutton(self):
+        """accesstounmappedhardwarecebutton"""
+        return self.get_element("AccesstounmappedhardwareCE_RefineOffline")
+              
+    @property
+    def ioddtcecheckbox(self):
+        """ioddtcecheckbox"""
+        return self.get_element("IODDTCE_RefineOffline")
+              
+    @property
+    def deviceddtcecheckbox(self):
+        """deviceddtcecheckbox"""
+        return self.get_element("DeviceDDTCE_RefineOffline")
+              
+    @property
+    def deviceddtpopupmoveallcebutton(self):
+        """deviceddtpopupmoveallcebutton"""
+        return self.get_element("DeviceDDTpopupmoveallCE_RefineOffline")

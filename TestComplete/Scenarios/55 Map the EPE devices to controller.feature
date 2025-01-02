@@ -29,6 +29,8 @@ And I Expand communication tab TE Topology Explorer Tree in topology as '<Topolo
 And I edit IP Address Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
 And I edit IP Address Topology Explorer Tree in topology as '<Topology Explorer Tree4>'
 When I Close the Tab by Clicking on Close as '<identifier>'
+
+@Map_Modbus_TCP_device_open_template_add_IP_close_Editor_tab_-55-_192.168.33__159_machine
 Examples:
   | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Topology Explorer Tree4 | identifier |
   | 1     | ETesysTHW               | Communication           | IPAddress$$192.168.10.2 | SubnetMask$$255.255.0.0 | ETesysTHW  |
@@ -43,7 +45,7 @@ And I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology E
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
 Examples:
   | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 |
-  | 1     | ETesysTHW               | Physical Connections    | EthernetNetwork_1       |
+  | 1     | ETesysTHW               | Physical Connections    | SE_Network              |
 
   
   

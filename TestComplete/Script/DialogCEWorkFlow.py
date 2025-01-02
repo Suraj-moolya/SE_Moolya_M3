@@ -64,3 +64,6 @@ class DialogCEWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
         
+    def buttonlistofmodifiedyesbuttonceselected(self):
+        """dialogce_obj.listofmodifiedyesbuttoncebutton"""
+        DialogCEWorkFlow.dialogce_obj.listofmodifiedyesbuttoncebutton.click()
