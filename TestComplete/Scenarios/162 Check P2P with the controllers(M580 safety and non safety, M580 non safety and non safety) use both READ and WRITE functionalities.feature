@@ -49,12 +49,12 @@ Examples:
 @test0039
 Scenario Outline: Drag remote variable to sorce variable 
 When I Drag and drop from remote varaibles to source variables in P2P as '<server>'
+When I selected Rename Pop up Ok in message box
 When I click modal dialog window project browser in project explorer as '<Button>'
-When I click modal dialog window project browser in project explorer as '<Button2>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 Examples:
-  | SlNo. | server                         | Button | Button2 | project browser2                              |
-  | 1     | PES_CONST_TRUE$$PES_CONST_TRUE | OK     | Next    | Manage Peer to Peer Communication (Completed) |
+  | SlNo. | server                         | Button  | project browser2                              |
+  | 1     | PES_CONST_TRUE$$PES_CONST_TRUE | OK        | Manage Peer to Peer Communication (Completed) |
   
   
   
