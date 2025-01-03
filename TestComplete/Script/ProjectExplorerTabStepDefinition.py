@@ -718,4 +718,12 @@ def step_impl(projectBrowser3):
 def step_impl(server):
     """I Drag and drop from remote varaibles to source variables in P2P as '<server>'"""
     CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    Applicationutility.wait_in_seconds(1000,"wait")
     obj.textboxdraganddropremotetolocalP2P(server)
+    
+    
+@when("I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as {arg}")
+def step_impl(server):
+    """I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    obj.textboxclickp2pcreateconsecutivevariables(server)

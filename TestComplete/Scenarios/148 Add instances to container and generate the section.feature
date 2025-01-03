@@ -24,11 +24,11 @@ Examples:
   
 @TC_EPE_PE_CP_00
 Scenario Outline: Double Click on Container sections
-When I Dclick Control project broswer project browser in project explorer as '<Containers>' 
+When I Dclick Control project broswer project browser in project explorer as '<projectBrowser1>' 
 @Double_Click_Containers
 Examples:
-  | SlNo. | Containers |
-  | 1     | Containers |
+  | SlNo. | projectBrowser1 |
+  | 1     | Containers      |
   
 @DoubleClick_M580_Standalone_1_Checkes_weather_expanded_and_expands
 Examples:

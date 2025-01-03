@@ -1186,11 +1186,11 @@ def RClick_Variable_Elementary_Variable_Tab(variable_name):
 
     
 def Click_P2p_Create_consecutive_variables(param):
-  variable_name, HMi_Column_no, desired_variable_name = param.split("$$")
+  variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
   variable_number = 1
   
   for i in range(2):
-    desired_variable_name = desired_variable_name + str(variable_number)
+    desired_variable_name = desired_variable_name_input + str(variable_number)
     Click_Variable_Elementary_Variable_Tab(variable_name)
     Sys.Keys("[Down]")
     Sys.Keys("[Enter]")

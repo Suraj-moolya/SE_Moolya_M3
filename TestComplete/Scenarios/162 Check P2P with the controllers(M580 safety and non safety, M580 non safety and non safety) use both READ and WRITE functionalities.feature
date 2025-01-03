@@ -28,10 +28,10 @@ Examples:
 @TC_EPE_PE_CP_00
 @test00
 Scenario Outline: Create Consecutive variable and select HMI option under Data Editor window when the table is blank
-When I Enter Variable name and select HMI option under Data Editor window
+When I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as '<param>'
 Examples:
-  | SlNo. |
-  | 1     |
+  | SlNo. | param                 |
+  | 1     | ValveGP_1_OPV$$7$$P2P |
   
   
 @TC_EPE_PE_CP_0001
@@ -53,7 +53,7 @@ When I click modal dialog window project browser in project explorer as '<Button
 When I click modal dialog window project browser in project explorer as '<Button2>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 Examples:
-  | SlNo. | server                         | Button | button2 | project browser2                              |
+  | SlNo. | server                         | Button | Button2 | project browser2                              |
   | 1     | PES_CONST_TRUE$$PES_CONST_TRUE | OK     | Next    | Manage Peer to Peer Communication (Completed) |
   
   

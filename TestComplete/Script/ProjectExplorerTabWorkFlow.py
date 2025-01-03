@@ -852,3 +852,11 @@ class ProjectExplorerTabWorkFlow:
                     Projectexplorertabutility.drag_and_drop_remote_to_local_P2P(param)
                 except Exception as ex:
                     raise Exception(ex) from ex
+                    
+                    
+    def textboxclickp2pcreateconsecutivevariables(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Click_P2p_Create_consecutive_variables(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
