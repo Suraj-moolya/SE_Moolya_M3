@@ -128,7 +128,7 @@ def Click_on_toolbar_icon_TE(icon_name):
       break
       
 def click_MenuItem_Toolbar(menu_option):
-  menu_items = topo_obj.popuproottextbox.object.FindAllChildren('ClrClassName', 'MenuItem', 1000)
+  menu_items = eng_obj.rclickmenutextbox.object.FindAllChildren('ClrClassName', 'MenuItem', 1000)
   Log.Message(len(menu_items))
   for item in menu_items:
     Log.Message((item.WPFControlText))
