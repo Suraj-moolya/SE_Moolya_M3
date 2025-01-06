@@ -1178,6 +1178,10 @@ def Click_on_variable_and_change_data_value_animation_table(param):
   Click_Variable_Elementary_Variable_Tab(presentvalue)
   Sys.Keys(changedValue)
   Sys.Keys("[Enter]")
+  
+def gsgsgsgsg():
+  Click_on_variable_and_change_data_value_animation_table("0$$162")
+  
     
     
 def RClick_Variable_Elementary_Variable_Tab(variable_name):
@@ -1294,12 +1298,20 @@ def change_variable_value(param):
   else:
     Log.Message(f'Variable does not exists')
     
+def change_FBD_Value():
+  textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    if i.Text == "L_VAR_6":
+      i.DblClick()
+      Sys.Keys("SE1")
+      Sys.Keys("[Enter]")
 
     
 def verify_variable_value_FBDBlock(value):
   textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Read_ControlPro_P2P_1 : [MAST]', 100)
   for i in textbox:
     textbox1 = i.FindAllChildren('Name', 'TextObject(*)', 100)
+    Log.Message(len(textbox1))
   for j in textbox1:
     if value in j.Text:
       Log.Message(f'{j.Text} has been sucessfully veried in the screen')
@@ -1309,9 +1321,6 @@ def verify_variable_value_FBDBlock(value):
     Log.Message(f'{j.Text} does not exists in the screen')
     Applicationutility.take_screenshot()
     
-def sgsgsg():
-  verify_variable_value_FBDBlock("INT : Var5")
-  verify_variable_value_FBDBlock("164")
   
   
 def Run_PLC_Simulator():

@@ -40,7 +40,13 @@ Examples:
   | SlNo. | Variable |
   | 1     | Var5     |
   
-  
+@TC_EPE_TE_CS_0002
+@test0002
+Scenario Outline: change Data value in Animation Table 
+When I change Data value in Data Editor as '<param>'
+Examples:
+  | SlNo. | param  |
+  | 1     | 0$$162 |
 
 
   
