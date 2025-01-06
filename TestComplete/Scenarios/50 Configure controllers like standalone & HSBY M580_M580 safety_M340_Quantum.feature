@@ -228,7 +228,12 @@ Examples:
 Examples:
   | SlNo. | button             | FolderName  |
   | 1     | M580_Safety$$Close | Controllers |
-  
+
+@Close_devices_in_Topology_Explorer__Devices__-50-
+Examples:
+  | SlNo. | button         | FolderName |
+  | 1     | Devices$$Close | Devices    |
+    
   
 @test0002b
 Scenario Outline: Open Workstation_2  in Topology Explorer

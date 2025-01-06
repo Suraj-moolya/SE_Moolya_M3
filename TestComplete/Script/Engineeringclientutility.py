@@ -578,9 +578,8 @@ def Verify_folder_Content_Status_TE(FolderName):
        Log.Message(f'{SE_node_list[i].DataContext.Identifier.OleValue} folder is expanded')
        break
   else:
-    Log.Message(f'{SE_node_list[i].DataContext.Identifier.OleValue} folder is not expanded')
-          
-
+    Log.Message(f'{FolderName} folder is not expanded')
+  
 def no_password_system(btn):
   buttons = lm_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName','Button', 10)
   checkbox = lm_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName','CheckBox', 10)
@@ -592,9 +591,20 @@ def no_password_system(btn):
       button.Click()
   Applicationutility.wait_in_seconds(2000, 'Wait')
 
-        
-        
 
+def close_the_tab_EC(param):
+  tabs = eng_obj.workspacetextbox.find_children_for_closeable_tab_item()
+  for tab in tabs:
+    Log.Message(tab.WPFControlText)
+    if param in str(tab.DataContext.TitleToolTip):
+        tab.Click((tab.Width-15), (tab.Height/2)) 
+        
+  else:
+    Log.Message(f'{param} parameter passed might be wrong')       
+
+        
+def gsgsgsg():
+  close_the_tab_EC('Project Explorer')
       
 
 

@@ -483,7 +483,7 @@ def Drag_instance_drop_container_section(param):
     if instance_identifier in instance.DataContext.Identifier.OleValue :
       fromx = instance.Top
       fromy = instance.Height / 2
-      instance.Drag(fromx,fromy,0,tox/2)
+      instance.Drag(fromx,fromy,0,tox/2+25)
       Log.Message("Drag and drop operation was performed")
       break
     
@@ -1173,24 +1173,36 @@ def Click_Variable_Elementary_Variable_Tab(variable_name):
   else:
     Log.Message(f'{variable_name} does not exists')
     
+def Click_on_variable_and_change_data_value_animation_table(param):
+  presentvalue, changedValue = param.split("$$")
+  Click_Variable_Elementary_Variable_Tab(presentvalue)
+  Sys.Keys(changedValue)
+  Sys.Keys("[Enter]")
+    
     
 def RClick_Variable_Elementary_Variable_Tab(variable_name):
-  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  Log.Message(len(textbox))
   for i in textbox:
+    Log.Message(i.Name)
     if variable_name in i.Name:
-      i.ClickR()
+      i.Click()
+      Sys.Keys("^T")
       Log.Message(f'{variable_name} in data editior was clicked')
       break
   else:
     Log.Message(f'{variable_name} does not exists')
+    
+def gsgs1g():
+  RClick_Variable_Elementary_Variable_Tab('SE1')
 
     
 def Click_P2p_Create_consecutive_variables(param):
-  variable_name, HMi_Column_no, desired_variable_name = param.split("$$")
+  variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
   variable_number = 1
   
   for i in range(2):
-    desired_variable_name = desired_variable_name + str(variable_number)
+    desired_variable_name = desired_variable_name_input + str(variable_number)
     Click_Variable_Elementary_Variable_Tab(variable_name)
     Sys.Keys("[Down]")
     Sys.Keys("[Enter]")
@@ -1207,12 +1219,13 @@ def sdsdsd():
 
     
 def change_datatype_dataeditor(param):
-  desired_data_type,select_data_type,rownumber = param.split("$$")
+  variablename,desired_data_type = param.split("$$")
   textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for i in textbox:
-    if select_data_type in i.Name and rownumber in str(i.Name) :
+    Log.Message(i.Name)
+    if variablename in i.Name:
       i.Click()
-      Sys.Keys("[Enter]")
+      Sys.Keys("[Right]")
       Sys.Keys(desired_data_type)
       Log.Message(f'data type is successfully changed')
       break
@@ -1220,8 +1233,9 @@ def change_datatype_dataeditor(param):
     Log.Message(f'data type does not exists')
     
 def gsgsgsg():
-  change_datatype_dataeditor('INT$$BOOL$$2')
-  change_datatype_dataeditor('STRING$$BOOL$$3')
+  #change_datatype_dataeditor('INT$$BOOL$$2')
+  change_datatype_dataeditor('Moolya2$$INT')
+  #change_datatype_dataeditor('STRING$$BOOL$$3')
   
 def Unpack_Variable(identifier):
   Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
@@ -1242,6 +1256,9 @@ def Unmap_Variable(identifier):
     Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
     break
   Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
+  
+def gsgsg45():
+  Unmap_Variable("ValveGP_1_OPV")
   
   
 def Unmap_Variable_by_Keyboard_action(identifier2):
@@ -1276,6 +1293,8 @@ def change_variable_value(param):
       break
   else:
     Log.Message(f'Variable does not exists')
+    
+
     
 def verify_variable_value_FBDBlock(value):
   textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Read_ControlPro_P2P_1 : [MAST]', 100)
@@ -1334,4 +1353,7 @@ def drag_and_drop_remote_to_local_P2P(param):
   Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
   
 def sgsfsfs():
-  drag_and_drop_remote_to_local_P2P("PES_CONST_TRUE$$PES_CONST_TRUE")
+  drag_and_drop_remote_to_local_P2P("AnalogInputGP_1_AInputGP_AISV$$AnalogInputGP_1_AInputGP_AISV")
+  
+def sgsfsfs2():
+  drag_and_drop_remote_to_local_P2P("SE1$$Moolya1")
