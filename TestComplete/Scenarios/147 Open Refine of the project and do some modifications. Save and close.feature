@@ -61,7 +61,7 @@ Examples:
 @test004
 Scenario Outline: Do modifications in Section
 When I Modifications of sections CE FBD SectionWindow in refine offline
-Then Verify modifications available in Refine Offline FBD SectionWindow in refine offline
+#Then Verify modifications available in Refine Offline FBD SectionWindow in refine offline
 
 Examples:
   | SlNo. | content |

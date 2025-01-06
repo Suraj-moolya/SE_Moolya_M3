@@ -168,7 +168,13 @@ class MessageBox(MapBase):
     @property
     def importteopenbutton(self):
         """importteopenbutton"""
-        return self.get_element("Importopen_MessageBox")      
+        return self.get_element("Importopen_MessageBox") 
+        
+    @property
+    def headercbcheckbox(self):
+        """headercbcheckbox"""
+        return self.get_element("headercb_MessageBox")
+     
         
        
         

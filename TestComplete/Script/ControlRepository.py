@@ -44,7 +44,7 @@ class ControlRepository:
     def get_object_properties(self, element_name):
         """get_object_properties"""
         self.parse_object_repository()
-        Log.Message(element_name)
+#        Log.Message(element_name)
         return self.__get_props__(self.objects["_" + element_name])
 
     def get_parent(self, component_element_name):

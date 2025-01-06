@@ -342,6 +342,8 @@
 			 <UIControl Element="ReConfirmDBPOK_MessageBox" Name="WPFObject('Button', 'OK', 2)" Parent="EngineeringClient_" />
 			 <UIControl Element="Modificationpopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
 			 <UIControl Element="Importopen_MessageBox" Name="Window('Button', '*Open', 1)"  VisibleOnScreen="True" Parent="EngineeringClient_" />
+<UIControl Element="headercb_MessageBox" Name="WPFObject('headerCheckBox')" Parent="EngineeringClient_" />
+        
 			  
         </Component>	
 		<Component name="Refine Offline">
@@ -402,6 +404,8 @@
 			 <UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
 			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
+<UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
+        
 
         </Component>
         <Component name="Dialog CE">
@@ -414,6 +418,8 @@
              <UIControl Element="DialogListboxCE1_DialogCE" Name="Window('AfxWnd140u', '', 2)" Parent="ControlExpert_" />
 			 <UIControl Element="StartSimulator_DialogCE" Name="WPFObject('ButtonStart')" Parent="PLCSimulatorStarter_" />
 			 <UIControl Element="SimulatorPort_DialogCE" Name="WPFObject('TextBox', '', 1)" Parent="PLCSimulatorStarter_" />
+<UIControl Element="ListofmodifiedYesbuttonCE_DialogCE" Name="Window('Button', '*Yes', 1)" Parent="ControlExpert_" />
+
 		</Component>
 		<Component name="Supervision Project">
              <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" /> 

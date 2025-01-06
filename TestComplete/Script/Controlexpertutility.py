@@ -3,6 +3,7 @@
 from RefineOffline import RefineOffline
 from MessageBox import MessageBox
 import Applicationutility
+import Topologyexplorerutility
 from CurrentScreen import CurrentScreen
 from DialogCE import DialogCE    
 from ControlExpert import ControlExpert  
@@ -62,7 +63,23 @@ def afbsdzv():
   list_items = "Configuration$$0 : PLC bus" #"ControlProject_1", 
   double_click_selected_project_browser_item_CE(list_items)
 #  data_selection = refoff_obj.dataselectiontextbox  #.object
+
+def rclick_window_CE(): 
+  win = refoff_obj.mdiwindowtextbox.object
+  win.ClickR((win.Width/2)-100, win.Height/2)
   
+  data_selection = refoff_obj.dataselectiontextbox.object
+  data_selection.Click()
+  
+  comb = refoff_obj.windowcomboboxtextbox.object
+  comb.Keys('XOR')
+  comb.Keys('[Enter]')
+  Topologyexplorerutility.modaldialogue_window_ce("Yes")
+  win.Click((win.Width/2)-100, win.Height/2)
+  win.Keys('[Esc]')
+  win1 = refoff_obj.fbdsectionwindowtextbox.object 
+  Applicationutility.wait_in_seconds(1500, 'wait')
+   
 #def rclick_window_CE(): 
 #  win = refoff_obj.mdiwindowtextbox.object
 #  text = refoff_obj.face+ttextbox.object.ClickR()
@@ -104,20 +121,20 @@ def afbsdzv():
 #  validate = refoff_obj.createvariablebutton.object
 #  validate.Click()
 
-def rclick_window_CE(): 
-  win = refoff_obj.mdiwindowtextbox.object
-  text = refoff_obj.facettextbox.object.ClickR()
-  
-  data_selection = refoff_obj.dataselectiontextbox.object
-  data_selection.Click()
-  
-  comb = refoff_obj.windowcomboboxtextbox.object
-  comb.Keys('XOR')
-  comb.Keys('[Enter]')
-  win.Click(win.Width/2, win.Height/2)
-  win.Keys('[Esc]')
-  win1 = refoff_obj.fbdsectionwindowtextbox.object 
-  Applicationutility.wait_in_seconds(1500, 'wait')
+#def rclick_window_CE(): 
+#  win = refoff_obj.mdiwindowtextbox.object
+#  text = refoff_obj.facettextbox.object.ClickR()
+#  
+#  data_selection = refoff_obj.dataselectiontextbox.object
+#  data_selection.Click()
+#  
+#  comb = refoff_obj.windowcomboboxtextbox.object
+#  comb.Keys('XOR')
+#  comb.Keys('[Enter]')
+#  win.Click(win.Width/2, win.Height/2)
+#  win.Keys('[Esc]')
+#  win1 = refoff_obj.fbdsectionwindowtextbox.object 
+#  Applicationutility.wait_in_seconds(1500, 'wait')
 
   
   

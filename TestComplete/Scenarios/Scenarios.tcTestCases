@@ -88,6 +88,7 @@
 			<Feature Path="79 Update the Control project.feature" />
 			<Feature Path="74 Map the Workstation to SP.feature" />
 			<Feature Path="Chnage Port settings in worksation.feature" />
+			<Feature Path="84 Check Redeploy.feature" />
 		</Folder>
 		<Folder Name="Controllers">
 			<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
