@@ -48,3 +48,8 @@ class DialogCE(MapBase):
     def simulatorporttextbox(self):
         """simulatorporttextbox"""
         return self.get_element("SimulatorPort_DialogCE")
+        
+    @property
+    def listofmodifiedyesbuttoncebutton(self):
+          """listofmodifiedyesbuttoncebutton"""
+          return self.get_element("ListofmodifiedYesbuttonCE_DialogCE")

@@ -183,7 +183,7 @@ class RefineOfflineWorkFlow:
         """refineoffline_obj.dtmbrowserbutton"""
         #RefineOfflineWorkFlow.refineoffline_obj.dtmbrowserbutton.click()
         Sys.Keys("~!1")
-        
+        Applicationutility.wait_in_seconds(1500, 'Wait')
         
     def textboxprojectbrowserroverifymappeddtmdevicepresentce(self,Identifier):
         """textboxprojectbrowserroverifymappeddtmdevicepresentce"""

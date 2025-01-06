@@ -166,9 +166,9 @@ def close_tab_items_EC(identifier):
     if template_list[i].Visible: 
       if identifier in str(template_list[i].Header.OleValue):
         template_list[i].Click((template_list[i].Width-15), (template_list[i].Height/2)) 
+        break
   else:
      Log.Warning("Tab Item mentioned is not Valid")
-     
      
 def ProjectSample():
     # Obtains the path to the folder that stores the project configuration files
@@ -199,7 +199,7 @@ def modal_dialog_windo_selectItem(param):
     if controller in network.DataContext.DeviceIdentifier.OleValue:
       Log.Message(network.DataContext.DeviceIdentifier.OleValue)
       network.SelectedItem = val
-      Log.Message(str(network_list[0].SelectedItem) + " is selected")
+      Log.Message(str(network.SelectedItem) + " is selected")
       take_screenshot('Taking Screenshot')
       break
   else:

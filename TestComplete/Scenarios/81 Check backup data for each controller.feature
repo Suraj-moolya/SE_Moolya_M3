@@ -15,7 +15,7 @@ Then Verify notification panel message Notification Pannel in message box as '<N
 
 Examples:
   | SlNo. | Controller    | context menu | Topology Explorer Tree1 | Modal dialog window2 | backup data description3 | Modal dialog window4 | Modal Dialog Window 15                | Modal Dialog Window 16                    | Notification Pannel7     |
-  | 1     | Workstation_1 | Control      | Back Up Data            | 192.168.11.68        | Workstation data backup  | OK                   | MessageBox$$modaldialogwindow1textbox | MessageBox$$modaldialogwindow1textbox$$OK | Back Up Data (Completed) |
+  | 1     | Workstation_1 | Control      | Back Up Data            | 127.0.0.1:502        | Workstation data backup  | OK                   | MessageBox$$modaldialogwindow1textbox | MessageBox$$modaldialogwindow1textbox$$OK | Back Up Data (Completed) |
 
 
 @TC_EPE_WS_0015a
@@ -28,4 +28,4 @@ And I Close modal dialog window
 
 Examples:
   | SlNo. | project browser1 | project browser2         | project browser3 |
-  | 1     | M580             | Manage Data Backup Files | Workstation_1    |
+  | 1     | M580_Standalone             | Manage Data Backup Files | Workstation_1    |

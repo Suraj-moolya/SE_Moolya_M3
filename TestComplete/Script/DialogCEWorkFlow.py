@@ -63,4 +63,8 @@ class DialogCEWorkFlow:
             Controlexpertutility.change_Port_Number_PLC_Simulator()
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def buttonlistofmodifiedyesbuttonceselected(self):
+            """dialogce_obj.listofmodifiedyesbuttoncebutton"""
+            DialogCEWorkFlow.dialogce_obj.listofmodifiedyesbuttoncebutton.click()
         

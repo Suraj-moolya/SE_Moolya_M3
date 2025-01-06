@@ -47,4 +47,10 @@ def step_impl():
     """I change port number of simulator to 503"""
     CommonUtil.write_text_file("\nWhen I change port number of simulator to 503")
     obj.textboxchangeportnumberplcsimulator()
+    
+@when("I selected List of modified Yes button CE in dialog ce")
+def step_impl():
+    """I selected List of modified Yes button CE in dialog ce"""
+    CommonUtil.write_text_file("\nWhen I selected List of modified Yes button CE in dialog ce")
+    obj.buttonlistofmodifiedyesbuttonceselected()
   

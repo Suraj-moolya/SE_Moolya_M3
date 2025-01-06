@@ -32,6 +32,10 @@ class ControlExpertWorkFlow:
             try:
                 Controlexpertutility.Click_tab_item_EIO_config_window(identifiers)
             except Exception as ex:
-                raise Exception(ex) from ex    
+                raise Exception(ex) from ex  
+                
+    def buttonbuildanddeploychangesselected(self):
+            """controlexpert_obj.buildanddeploychangesbutton"""
+            ControlExpertWorkFlow.controlexpert_obj.buildanddeploychangesbutton.click()  
         
         

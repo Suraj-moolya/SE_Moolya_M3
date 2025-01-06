@@ -93,7 +93,7 @@ class MapBase:
                     element = parent.find_child(props["names"], props["values"])
                 if element.exists:
                     if element.visible:
-                        Log.Message("--Element is visible")
+                        #Log.Message("--Element is visible")
                         return element
                     iteration_count += 1
                     Log.Message("--Element Exist but it is not visible")
