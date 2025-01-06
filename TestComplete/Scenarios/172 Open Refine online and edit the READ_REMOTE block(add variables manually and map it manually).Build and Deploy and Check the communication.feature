@@ -9,29 +9,36 @@ When I Click on Yes in Modification Window
 And I Click on Yes in Modification Window
 
 Examples:
-  | SlNo. | context menu  | Block        |
-  | 1     | Refine Online | WRITE_REMOTE |
+  | SlNo. | Block       |
+  | 1     | READ_REMOTE |
   
 @TC_EPE_TE_CS_0002
 @test0002
 Scenario Outline: Initialize Animation Table 
 When I Right Click on Variables from elementary variables tab named as '<Variable>'
-And I select Initialze Animation Table in refine offline
-
+@Initialize_Animation_Table_for_varibale_SE1
 Examples:
-  | SlNo. | Variable | Block        |
-  | 1     | Var5     | WRITE_REMOTE |
+  | SlNo. | Variable |
+  | 1     | SE1      |
+  
+@Initialize_Animation_Table_for_varibale_Moolya1  
+Examples:
+  | SlNo. | Variable |
+  | 1     | Moolya1  |
+  
+@Initialize_Animation_Table_for_varibale_Moolya2  
+Examples:
+  | SlNo. | Variable |
+  | 1     | Moolya2  |
   
 
 @TC_EPE_TE_CS_0002
 @test0002
 Scenario Outline: Click on Modification Button after Animation Initialization 
 When I Click on Modification button after initialization of Animation Table
-And I select Initialze Animation Table in refine offline
-
 Examples:
-  | SlNo. | Variable | Block        |
-  | 1     | Var5     | WRITE_REMOTE |
+  | SlNo. | Variable |
+  | 1     | Var5     |
   
   
 

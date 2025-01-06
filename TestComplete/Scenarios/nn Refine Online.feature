@@ -14,13 +14,27 @@ Examples:
   | 1     | Refine Online | M580_Standalone | OK     | Open Refine Online Editor (Completed) |
   
   
+@TC_EPE_WS_0006
+@test001
+Scenario Outline: Refine Online of Workstation
+When I Right Click on nodes System Explorer Node in system explorer as '<Workstation>'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+And I Select controller in context menu as '<Topology Explorer Tree1>'
+When I click modal dialog window project browser in project explorer as '<Button>'
+And I Click on OK button from Reconfirm Deploy Built Project Popup window
+Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
+
+Examples:
+  | SlNo. | context menu | Workstation   | Button | project browser1                      | Topology Explorer Tree1 |
+  | 1     | Control      | Workstation_1 | OK     | Open Refine Online Editor (Completed) | Refine Online           |
+  
   
 @TC_EPE_TE_CS_000
 @test000
-Scenario Outline: Navigate Through Project Browser
-When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
+Scenario Outline: Navigate Through Mast section and verify communaction is happening
+When I Navigate through project browser CE Project Browser RO in refine offline and verify Communication is happening as '<Project Browser RO1>'
 @Double_click_on_PLC_Bus_EIO 
 Examples:
-  | SlNo. | Project Browser RO1                                  |
-  | 1     | Programs$$Tasks$$MAST$$Logic$$Write_M580_Stand_P2P_1 |
+  | SlNo. | Project Browser RO1                                 |
+  | 1     | Programs$$Tasks$$MAST$$Logic$$Read_M580_Stand_P2P_1 |
   

@@ -296,6 +296,7 @@ def step_impl():
 def step_impl():
     """I select Initialze Animation Table in refine offline"""
     CommonUtil.write_text_file("\nWhen I select Initialze Animation Table in refine offline")
+    Applicationutility.wait_in_seconds(1000,"Wait")
     obj.initializerefineofflinemenuitemRF()
     
 @when("I Click on Modification button after initialization of Animation Table")
@@ -303,3 +304,11 @@ def step_impl():
     """I select Initialze Animation Table in refine offline"""
     CommonUtil.write_text_file("\nWhen I select Initialze Animation Table in refine offline")
     obj.modificationbuttonrefineofflineRF()
+    
+    
+@when("I Navigate through project browser CE Project Browser RO in refine offline and verify Communication is happening as {arg}")
+def step_impl(projectBrowserRo1):
+    """I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'"""
+    CommonUtil.write_text_file("\nWhen I Navigate through project browser CE Project Browser RO in refine offline as \""+projectBrowserRo1+"\"")
+    obj.textboxprojectbrowserronavigatethroughprojectbrowserce(projectBrowserRo1)
+    Applicationutility.take_screenshot()

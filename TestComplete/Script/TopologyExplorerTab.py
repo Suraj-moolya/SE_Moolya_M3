@@ -60,6 +60,11 @@ class TopologyExplorerTab(MapBase):
         return self.get_element("PRMgensettings_TopologyExporerTab")
         
     @property
+    def prmgensettingsrefineonline(self):
+        """prmgensettings"""
+        return self.get_element("PRMgensettingsrefineonline_TopologyExporerTab")
+        
+    @property
     def configurationhardwarecatalog(self):
         """configurationhardwarecatalog"""
         return self.get_element("ConfigurationHardwareCatalog_TopologyExporerTab")

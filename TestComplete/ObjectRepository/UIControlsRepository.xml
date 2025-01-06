@@ -169,6 +169,7 @@
 			 <UIControl Element="DevicesHardwareCatalog_TopologyExporerTab" Name="Window('AfxFrameOrView140u', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="UpdateButton_TopologyExporerTab" Name="Window('Button', 'Update', 4)" Parent="EngineeringClient_" />
 			 <UIControl Element="PRMgensettings_TopologyExporerTab" Name="Window('#32770', '', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="PRMgensettingsrefineonline_TopologyExporerTab" Name="Window('#32770', 'Variables', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="DTMBrowserHost_TopologyExporerTab" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="PRMconfigwindow_TopologyExporerTab" Name="MDIWindow('PRM_Master_0001 - fdtOfflineParameterize')" Parent="EngineeringClient_" />
 			 <UIControl Element="PLCBuswindow_TopologyExporerTab" Name="MDIWindow('PLC bus')" Parent="EngineeringClient_" />
@@ -358,7 +359,7 @@
              <UIControl Element="TypeCombobox_RefineOffline" Name="ComboBox('Type:')" Parent="ControlExpert_" />
              <UIControl Element="RestoreParticipantwindowCE_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Restore Participant window" Parent="EngineeringClient_" />
              <UIControl Element="Unlock_RefineOffline" Name="MenuItem('Unlock...')" Parent="ControlExpert_" />
-			 <UIControl Element="Initialize_RefineOffline" Name="MenuItem('Initialize Animation Table\tCtrl+T')" Parent="ControlExpert_" />
+			 <UIControl Element="Initialize_RefineOffline" FullName="MenuItem('Initialize Animation Table\tCtrl+T')" Parent="ControlExpert_" />
              <UIControl Element="ParentDialogWindowCE_RefineOffline" Name="Dialog('*')" Parent="ControlExpert_" />
              <UIControl Element="Typecolumnellipsis_RefineOffline" ClassName="CDSEBitmapButton" Parent="EngineeringClient_MDIWindow" />
              <UIControl Element="CustomizeColumns_RefineOffline" Name="MenuItem('Customize Columns...')" Parent="ControlExpert_" />

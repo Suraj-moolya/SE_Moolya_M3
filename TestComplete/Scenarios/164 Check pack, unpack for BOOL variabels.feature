@@ -5,5 +5,7 @@
 Scenario Outline: Unpack for BOOL variables
 When I Uncheck the pack CheckBox in P2P Communication Configuration window for variable '<identifier>'
 Examples:
-  | SlNo. | identifier     |
-  | 1     | PES_CONST_TRUE |
+  | SlNo. | identifier          |
+  | 1     | ValveGP_1_OPV       |
+  | 2     | ValveGP_1_ClosePosV |
+  | 3     | ValveGP_1_OpenPosV  |
