@@ -152,6 +152,11 @@ Examples:
 Examples:
   | Button | tabname                             |
   | OK     | M580_Standalone |
+  
+@close_Project_explorer
+Examples:
+  | Button | tabname     |
+  | OK     |Project Explorer |
 
 
   
