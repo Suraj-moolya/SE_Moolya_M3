@@ -12,7 +12,7 @@ Examples:
   | 1     | ValveGP_1       | M580_Standalone | OK     |
   | 2     | MotorGP_1       | M580_Standalone | OK     |
   | 3     | AnalogInputGP_1 | M580_Standalone | OK     |
-#  | 4     | INTERLOCK8OFFGP_UC_1 | M580_Redundant | OK     |
+ # | 4     | INTERLOCK8OFFGP_UC_1 | M580_Redundant | OK     |
 
 @Assign_Instance_to_Containers_in_M580_Safety
 Examples:

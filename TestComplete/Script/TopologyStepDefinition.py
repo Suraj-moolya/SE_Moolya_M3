@@ -255,7 +255,7 @@ def step_impl():
     """I selected Save PRM Configuration in Configuration Window"""
     CommonUtil.write_text_file("\nWhen I selected Save PRM Configuration in Configuration Window")
     robj.buttonsaverefineofflineselected()
-    Applicationutility.wait_in_seconds(2000, 'Wait')
+    Applicationutility.wait_in_seconds(3000, 'Wait')
     
 @when("I selected {arg} Button in hardware catalog window")
 def step_impl(button):

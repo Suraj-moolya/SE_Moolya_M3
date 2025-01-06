@@ -199,7 +199,7 @@ def modal_dialog_windo_selectItem(param):
     if controller in network.DataContext.DeviceIdentifier.OleValue:
       Log.Message(network.DataContext.DeviceIdentifier.OleValue)
       network.SelectedItem = val
-      Log.Message(str(network_list[0].SelectedItem) + " is selected")
+      Log.Message(str(network.SelectedItem) + " is selected")
       take_screenshot('Taking Screenshot')
       break
   else:

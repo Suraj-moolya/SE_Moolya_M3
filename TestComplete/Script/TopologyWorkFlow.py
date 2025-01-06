@@ -6,11 +6,12 @@ import Engineeringclientutility
 import Topologyutility
 import Actionutility
 import Topologyexplorerutility
+from SystemExplorerScreen import SystemExplorerScreen
 
 class TopologyWorkFlow:
     """TopologyWorkFlow"""
     topology_obj = Topology()
-
+    ses_obj = SystemExplorerScreen()
         
     def textboxtopologyexplorertreeselectcontextmenuitemec(self,menu_item):
         """textboxtopologyexplorertreeselectcontextmenuitemec"""
@@ -29,6 +30,7 @@ class TopologyWorkFlow:
     def textboxbackupdatadescriptionentered(self,backupDataDescription3):
         """topology_obj.backupdatadescriptiontextbox"""
         TopologyWorkFlow.topology_obj.backupdatadescriptiontextbox.enter_text(backupDataDescription3)
+        ses_obj.circularprogressbarbutton.wait_for_element_property('Exists', None, 20000)
         
     def textboxdeploydataselectiongridselectdeploydatafromselectiongridte(self):
         """textboxdeploydataselectiongridselectdeploydatafromselectiongridte"""

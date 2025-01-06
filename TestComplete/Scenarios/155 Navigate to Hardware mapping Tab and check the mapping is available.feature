@@ -26,6 +26,9 @@ Then I verify that all App facets '<appfacet>' are correctly mapped in the Hardw
 Examples:
   | SlNo. | tabname          | appfacet           |
   | 1     | Hardware Mapping | ValveGP_1_ClosePos |
+  | 2     | Hardware Mapping | ValveGP_1_OpenPos  |
+  | 3     | Hardware Mapping | ValveGP_1_OP       |
+  
   
   
 @TC_EPE_PE_CP_0040b
