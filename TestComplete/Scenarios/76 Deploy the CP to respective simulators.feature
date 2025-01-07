@@ -44,7 +44,7 @@ And I click modal dialog window Modal dialog window in message box as '<Modal di
 And I Click popup button object Modal Dialog Window 1 in message box as '<Modal Dialog Window 16>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 
-@Deploy_the_controller_after_disabling_the_password__192.168.33.4__M580_Standalone
+@Deploy_the_controller_after_disabling_the_password__192.168.33.4__M580_Standalone_Simulator
 Examples:
   | SlNo. | Controller    | context menu | Topology Explorer Tree1 | Modal dialog window4 | Modal Dialog Window 16                    | project browser2                 |
   | 1     | Workstation_1 | Control      | Deploy Built Project    | OK                   | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) |

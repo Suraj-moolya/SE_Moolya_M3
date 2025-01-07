@@ -732,5 +732,12 @@ def step_impl(server):
 def step_impl(server):
     """I change Data type in Data Editor as '<param>'"""
     CommonUtil.write_text_file("\nWhen I change Data type in Data Editor as \""+server+"\"")
-    obj.textboxchangedatatypedataeditor(server)   
+    obj.textboxchangedatatypedataeditor(server)  
+    
+    
+@when("I change Data value in Data Editor as {arg}")
+def step_impl(server):
+    """I change Data value in Data Editor as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data value in Data Editor as \""+server+"\"")
+    obj.clickonvariableandchangedatavalueanimationtable(server) 
     

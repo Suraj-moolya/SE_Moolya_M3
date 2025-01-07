@@ -8,6 +8,7 @@ from CurrentScreen import CurrentScreen
 from DialogCE import DialogCE    
 from ControlExpert import ControlExpert  
 from ProjectExplorerTab import ProjectExplorerTab
+from TopologyExplorerTab import TopologyExplorerTab
 
 diace_obj = DialogCE()
 ce_obj = ControlExpert()
@@ -15,6 +16,7 @@ cs_obj = CurrentScreen()
 msg_obj = MessageBox()
 refoff_obj = RefineOffline()
 proj_obj = ProjectExplorerTab()
+topoexo_obj = TopologyExplorerTab()
 
 def select_main_folder_project_browser_CE():
   project_browser = refoff_obj.projectbrowserrotextbox.object
@@ -394,8 +396,9 @@ def edit_IP_Address(param):
   
       
 def Verify_Mapped_DTM_device_present_CE(Identifier):
-  objects = cs_obj.projectbrowserwindow.object.FindAllChildren("ObjectType","OutlineItem",20)
+  objects = topoexo_obj.dtmbrowserprop.object.FindAllChildren("ObjectType","OutlineItem",200)
   for obj in objects:
+    Log.Message(str(obj.ObjectIdentifier))
     if Identifier in str(obj.ObjectIdentifier):
       Log.Checkpoint(str(obj.ObjectIdentifier)+" DTM device added")
       break

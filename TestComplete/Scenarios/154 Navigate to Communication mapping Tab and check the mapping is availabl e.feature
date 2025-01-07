@@ -18,7 +18,10 @@ And I Select context menu item EC project browser in project explorer as '<conte
 And I selected Tools button in menu bar
 And I selected DTM Browser in menu bar
 Then Verify Mapped DTM device present CE Project Browser RO in refine offline as '<Project Browser RO1>'
+When I selected Close Refine Offline in refine offline
+Then Verify notification panel message Notification Pannel in message box as '<content>'
+
 Examples:
-  | SlNo. | projectBrowser1  | projectBrowser2 | projectBrowser3     | tabname               | server     | button | contextmenu_item1 | contextmenu_item2  | Project Browser RO1 |
-  | 1     | ControlProject_1 | Executables     | ControlExecutable_1 | Communication Mapping | Advantys_1 | OK     | Build All         | Open Built Project | 192.168.0.1         |
+  | SlNo. | projectBrowser1 | projectBrowser2 | projectBrowser3     | tabname               | server      | button | button1 | contextmenu_item1 | contextmenu_item2  | Project Browser RO1 | content                                |
+  | 1     | M580_Standalone | Executables     | ControlExecutable_1 | Communication Mapping | ETesysTHW_1 | OK     | Yes     | Build All         | Open Built Project | ETesysTHW_1         | Close Built Project Editor (Completed) |
   
