@@ -81,6 +81,19 @@ def rclick_window_CE():
   win.Keys('[Esc]')
   win1 = refoff_obj.fbdsectionwindowtextbox.object 
   Applicationutility.wait_in_seconds(1500, 'wait')
+  win1.TextObject("IN2").DblClick()
+  comb.Keys('Int2')
+  comb.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait')
+  Sys.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait') 
+  win1.TextObject("OUT").DblClick()
+  comb.Keys('Int3')
+  comb.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait')
+  Sys.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait')
+
    
 #def rclick_window_CE(): 
 #  win = refoff_obj.mdiwindowtextbox.object

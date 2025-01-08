@@ -38,3 +38,8 @@ Examples:
   | SlNo. | Project Browser RO1                                 |
   | 1     | Programs$$Tasks$$MAST$$Logic$$Read_M580_Stand_P2P_1 |
   
+@Navigate_to_FBDSection_1_in_refine
+Examples:
+  | SlNo. | Project Browser RO1                        |
+  | 1     | Programs$$Tasks$$MAST$$Logic$$FBDSection_1 |
+  
