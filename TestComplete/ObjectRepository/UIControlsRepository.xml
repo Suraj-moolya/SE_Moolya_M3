@@ -168,7 +168,7 @@
              <UIControl Element="ControllerPhysicalconnectiontab_TopologyExporerTab" Name="WPFObject('NetworkSelection', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="DevicesHardwareCatalog_TopologyExporerTab" Name="Window('AfxFrameOrView140u', '', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="UpdateButton_TopologyExporerTab" Name="Window('Button', 'Update', 4)" Parent="EngineeringClient_" />
-			 <UIControl Element="PRMgensettings_TopologyExporerTab" Name="Window('#32770', '', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="PRMgensettings_TopologyExporerTab" Name="Window('#32770', '', 1)" Visible = "True" Parent="EngineeringClient_" />
 			 <UIControl Element="PRMgensettingsrefineonline_TopologyExporerTab" Name="Window('#32770', 'Variables', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="DTMBrowserHost_TopologyExporerTab" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="EngineeringClient_" />
 			 <UIControl Element="PRMconfigwindow_TopologyExporerTab" Name="MDIWindow('PRM_Master_0001 - fdtOfflineParameterize')" Parent="EngineeringClient_" />
@@ -295,7 +295,10 @@
 			 <UIControl Element="LoginPage_PlantScadaTab" Name="Window('#32770', 'AVEVA Plant SCADA', 1)" Parent="Citect32_" />
 			 <UIControl Element="ErrorPopup_PlantScadaTab" Name="Window('#32770', 'Error', 1)" Parent="Citect32_" />
 			 <UIControl Element="Elementvariable_ProjectExplorerTab" Name="OutlineItem('Elementary Variables')" Parent="EngineeringClient_" />
-			 <UIControl Element="MasterPageMainWindow_PlantScadaTab" Name="Window('ctDSP', 'Master (startup) page for HD1080 res', 1)" Parent="Citect32_" />		 
+			 <UIControl Element="MasterPageMainWindow_PlantScadaTab" Name="Window('ctDSP', 'Master (startup) page for HD1080 res', 1)" Parent="Citect32_" />
+			 <UIControl Element="AnimationTable_ProjectExplorerTab" Name="MDIWindow('Table[Data Editor] (1)')" Visible = "True" Parent="EngineeringClient_" />
+
+			 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />

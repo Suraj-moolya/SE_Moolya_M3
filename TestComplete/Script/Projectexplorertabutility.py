@@ -1159,23 +1159,25 @@ def Enter_Variable_select_HMI(Variablename):
     Sys.Keys("[Right]")
   Sys.Keys("[Enter]")
   
-def gsgsg6s():
-  Enter_Variable_select_HMI("P2P")
   
-  
-def Click_Variable_Elementary_Variable_Tab(variable_name):
-  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+def Click_Variable_animation_table_Variable_Tab(variable_name):
+  textbox = proj_obj.animationtablewindow.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for i in textbox:
+    Log.Message((i.Name))
     if variable_name in i.Name:
+      Log.Message(len(textbox))
       i.Click()
       Log.Message(f'{variable_name} in data editior was clicked')
       break
   else:
     Log.Message(f'{variable_name} does not exists')
     
+def shsshhssh():
+  Click_Variable_Elementary_Variable_Tab("0")
+    
 def Click_on_variable_and_change_data_value_animation_table(param):
   presentvalue, changedValue = param.split("$$")
-  Click_Variable_Elementary_Variable_Tab(presentvalue)
+  Click_Variable_animation_table_Variable_Tab(presentvalue)
   Sys.Keys(changedValue)
   Sys.Keys("[Enter]")
   
@@ -1184,7 +1186,7 @@ def gsgsgsgsg():
   
     
     
-def RClick_Variable_Elementary_Variable_Tab(variable_name):
+def Click_Variable_Elementary_Initiate_animationtable_Tab(variable_name):
   textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
   Log.Message(len(textbox))
   for i in textbox:
@@ -1199,6 +1201,18 @@ def RClick_Variable_Elementary_Variable_Tab(variable_name):
     
 def gsgs1g():
   RClick_Variable_Elementary_Variable_Tab('SE1')
+  
+def Click_Variable_Elementary_Variable_Tab(variable_name):
+  textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  Log.Message(len(textbox))
+  for i in textbox:
+    Log.Message(i.Name)
+    if variable_name in i.Name:
+      i.Click()
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
 
     
 def Click_P2p_Create_consecutive_variables(param):
@@ -1298,21 +1312,21 @@ def change_variable_value(param):
   else:
     Log.Message(f'Variable does not exists')
     
-def change_FBD_Value():
+def change_FBD_Value(param):
+  source_variable,desired_variable = param.split("$$")
   textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for i in textbox:
-    if i.Text == "L_VAR_6":
+    if i.Text == source_variable:
       i.DblClick()
-      Sys.Keys("SE1")
+      Sys.Keys(desired_variable)
       Sys.Keys("[Enter]")
 
+def sgsgs():
+  change_FBD_Value("R_VAR_6$$SE2")
     
 def verify_variable_value_FBDBlock(value):
-  textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Read_ControlPro_P2P_1 : [MAST]', 100)
-  for i in textbox:
-    textbox1 = i.FindAllChildren('Name', 'TextObject(*)', 100)
-    Log.Message(len(textbox1))
-  for j in textbox1:
+  textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for j in textbox:
     if value in j.Text:
       Log.Message(f'{j.Text} has been sucessfully veried in the screen')
       Applicationutility.take_screenshot()
@@ -1321,7 +1335,8 @@ def verify_variable_value_FBDBlock(value):
     Log.Message(f'{j.Text} does not exists in the screen')
     Applicationutility.take_screenshot()
     
-  
+def gsgsg123s():
+  verify_variable_value_FBDBlock("162")
   
 def Run_PLC_Simulator():
   TestedApps.PLCSimulatorStarter.Run()

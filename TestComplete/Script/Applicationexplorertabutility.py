@@ -956,7 +956,7 @@ def Verify_Notification_pannel_Message(Message):
         Log.Warning(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         
 def jsjsjs():
-  Verify_Notification_pannel_Message("Update")
+  Verify_Notification_pannel_Message("Close Refine Online Editor (Completed)")
 
 ## this method can be used for drag and drop intances in assetworkspace or linkeditor based on position 
 ## only 3 position can be defined based on the screen width

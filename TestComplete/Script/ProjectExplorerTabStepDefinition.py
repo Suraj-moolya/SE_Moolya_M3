@@ -698,10 +698,10 @@ def step_impl(identifier):
     CommonUtil.write_text_file("\nWhen I Unmap variable in P2P communication configuration window by keyboard action as \""+identifier+"\"")
     obj.UnmapP2Pvariablebykeyboardaction(identifier)
     
-@when("I Right Click on Variables from elementary variables tab named as {arg}")
+@when("I  Click on Variables from elementary variables tab to initiate animationtable editor window named as {arg}")
 def step_impl(identifier):
     """I Right Click on Variables from elementary variables tab named as '<identifier>'"""
-    obj.RClickVariableElementaryVariableTab(identifier)
+    obj.clickvariableelementaryinitiateanimationtabletab(identifier)
     
 @when("I Run PLC Simulator")
 def step_impl():
@@ -740,4 +740,18 @@ def step_impl(server):
     """I change Data value in Data Editor as '<param>'"""
     CommonUtil.write_text_file("\nWhen I change Data value in Data Editor as \""+server+"\"")
     obj.clickonvariableandchangedatavalueanimationtable(server) 
+    
+@when("I change Data value in FBD Section as {arg}")
+def step_impl(server):
+    """I change Data value in FBD Section as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data value in FBD Section as \""+server+"\"")
+    obj.changeFBDValue(server)
+    
+@when("I verify {arg} is reflected in FBD section")
+def step_impl(server):
+    """I verify '<variable>' is reflected in FBD section"""
+    obj.verifyvariablevalueFBDBlock(server)
+    
+    
+
     
