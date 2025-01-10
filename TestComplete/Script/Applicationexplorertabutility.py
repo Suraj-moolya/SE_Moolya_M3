@@ -374,7 +374,7 @@ def Enter_systemName_systemlocation_ExportWindow_AE(file_format):
   else:
     Log.Warning("Export Windows doesnt exists")
   filelocation = msg_obj.exportfilelocationtextbox
-  tox = (filelocation.object.Height)/2-10
+  tox = (filelocation.object.Height)/2
   toy = 10
   filelocation.click_at(tox,toy)
   Sys.Keys(os.getcwd())

@@ -1417,12 +1417,5 @@ def Click_On_Topological_entity_IODvices(service,field):
             j.Click()
             return 
                
-def lkdsvnl():
-  Map_IO_Devices("IODevice_1$$2$$Workstation_1")
-  Map_IO_Devices("IODevice_2$$2$$Workstation_1")
-  Map_IO_Devices("IODevice_1$$3$$NIC_1")
-  Map_IO_Devices("IODevice_2$$3$$NIC_1")
-
-      
       
     
