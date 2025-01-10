@@ -1,4 +1,4 @@
-"""SystemServer"""
+﻿"""SystemServer"""
 from MapBase import MapBase
 
 class SystemServer(MapBase):
@@ -158,4 +158,44 @@ class SystemServer(MapBase):
     def cancelbutton(self):
         """cancelbutton"""
         return self.get_element("cancel_SystemServer")
+              
+    @property
+    def settingsbutton(self):
+        """settingsbutton"""
+        return self.get_element("Settings_SystemServer")
+              
+    @property
+    def systembackupshedulerbutton(self):
+        """settingsbutton"""
+        return self.get_element("SystemBackupSheduler_SystemServer")
+              
+    @property
+    def systembackupdropdownbutton(self):
+        """systembackupdropdownbutton"""
+        return self.get_element("dropdownbutton_SystemServer")
+              
+    @property
+    def systembackupsavebutton(self):
+        """systembackupbuttonbutton"""
+        return self.get_element("SaveButton_SystemServer")
+              
+    @property
+    def systembackupcancelbutton(self):
+        """systembackupbuttonbutton"""
+        return self.get_element("CancelButton_SystemServer")
+              
+    @property
+    def systemserverconfirmationpopup(self):
+        """systembackupbuttonbutton"""
+        return self.get_element("ConfirmationPopup_SystemServer")
+              
+    @property
+    def systembackupshedulerbutton1(self):
+        """systembackupbuttonbutton"""
+        return self.get_element("SystemBackupSheduler_SystemServer")
+              
+    @property
+    def filesavedlocation(self):
+        """aepostconditionbutton"""
+        return self.get_element("Filesavedlocation_SaveAswindow1")
               

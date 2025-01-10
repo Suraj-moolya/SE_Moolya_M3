@@ -222,4 +222,56 @@ def step_impl():
 def step_impl(): 
   Engineeringclientutility.checks_folder_create_folder()
   
-
+@when("I selected {arg} in settings")
+def step_impl(option):
+  CommonUtil.write_text_file(f'I selected {option} in settings')
+  obj.selectoptioninserversettings(option)
+  Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I selected {arg} in System Backup Sheduler window")
+def step_impl(system):
+  CommonUtil.write_text_file(f'I Selected {system} in System Backup Sheduler window')
+  obj.selectoptioninsystembackupshedulerdropdown(system)
+  Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I click {arg} Checkbox in System Backup Sheduler window")
+def step_impl(prop):
+  CommonUtil.write_text_file(f'I Click {prop} Checkbox in System Backup Sheduler window')
+  obj.checkboxsystembackupsheduler(prop)
+  Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I select {arg} from the Frequency dropdown in the System Backup Scheduler window")
+def step_impl(freq):
+  CommonUtil.write_text_file(f'I select {freq} from the Frequency dropdown in the System Backup Scheduler window')
+  obj.selectfreqbackupsheduler(freq)
+  Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I click on Save button in System Backup Scheduler window")
+def step_impl():
+  CommonUtil.write_text_file(f'I click on Save button in System Backup Scheduler window')
+  obj.systembackupsavebuttonselected()
+  Applicationutility.take_screenshot("Full Screenshot")
+  
+@when("I click on {arg} in Confirmation popup window")
+def step_impl(button):
+  CommonUtil.write_text_file(f'I click on {button} in Confirmation popup window')
+  obj.confiramtionpopup(button)
+  Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Click on Button in Save as windows explorer as {arg}")
+def step_impl(button):
+    """I Click on Button in Save as windows explorer as '<button>'"""
+    CommonUtil.write_text_file(f"\nWhen I Click on Button in Save as windows explorer as {button}")
+    obj.saveaswindowbutton(button)
+    
+@when("I Click CheckBox in System backup Window as {arg}")
+def step_impl(prop):
+    """I Click CheckBox in System backup Window as '<prop>'"""
+    CommonUtil.write_text_file(f"\nWhen I Click CheckBox in System backup Window as {prop}")
+    obj.backupwindowcheckbox(prop)
+    
+@when("I Click on Button in Back up  window as {arg}")
+def step_impl(button):
+    """I Click on Button in Back up  window as '<button>'"""
+    CommonUtil.write_text_file(f"\nWhen I Click on Button in Back up  window as {button}")
+    obj.backupwindowbutton(button)

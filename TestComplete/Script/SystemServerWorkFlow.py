@@ -174,5 +174,56 @@ class SystemServerWorkFlow:
       try:
         Systemserverutility.verify_SS_LoginDialogue()
       except Exception as ex:
+        raise Exception(ex) from ex 
+            
+    def selectoptioninserversettings(self, option):
+      try:
+        Systemserverutility.select_settings_submenu_systemserver(option)
+      except Exception as ex:
+        raise Exception(ex) from ex 
+            
+    def selectoptioninsystembackupshedulerdropdown(self, system):
+      try:
+        Systemserverutility.select_system_in_systembackupsheduler(system)
+      except Exception as ex:
+        raise Exception(ex) from ex 
+            
+    def checkboxsystembackupsheduler(self, prop):
+      try:
+        Systemserverutility.checkboxinsystembackup(prop)
+      except Exception as ex:
+        raise Exception(ex) from ex 
+            
+    def selectfreqbackupsheduler(self, freq):
+      try:
+        Systemserverutility.select_frequency_in_system_backup(freq)
+      except Exception as ex:
         raise Exception(ex) from ex
-      
+        
+    def systembackupsavebuttonselected(self):
+        """systemserver_obj.systembackupsavebutton"""
+        SystemServerWorkFlow.systemserver_obj.systembackupsavebutton.click()
+            
+    def confiramtionpopup(self, button):
+      try:
+        Systemserverutility.system_server_popup(button)
+      except Exception as ex:
+        raise Exception(ex) from ex
+            
+    def saveaswindowbutton(self, button):
+      try:
+        Systemserverutility.clicksaveaswindowbutton(button)
+      except Exception as ex:
+        raise Exception(ex) from ex
+            
+    def backupwindowcheckbox(self, prop):
+      try:
+        Systemserverutility.backup_window_checkbox(prop)
+      except Exception as ex:
+        raise Exception(ex) from ex
+            
+    def backupwindowbutton(self, button):
+      try:
+        Systemserverutility.backup_window_button(button)
+      except Exception as ex:
+        raise Exception(ex) from ex

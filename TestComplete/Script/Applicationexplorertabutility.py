@@ -557,9 +557,6 @@ def Import_File_Directory():##
 def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
 #  Import_window = aet_obj.importtextbox.object
 #  if Import_window.Exists:
-  filename_textbox = aet_obj.comboboxtextbox.object
-  filename_textbox.Click()
-  filename_textbox.Keys(file_format)
   filelocation = aet_obj.addressbandtextbox
   tox = (filelocation.object.Height)/2
   toy = 5
@@ -569,6 +566,9 @@ def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
   full_path = os.path.join(base_path, folder_name)
   os.chdir(full_path) 
   Sys.Keys(os.getcwd())
+  filename_textbox = aet_obj.comboboxtextbox.object
+  filename_textbox.Click()
+  filename_textbox.Keys(file_format)
   Sys.Keys("[Enter]")  
   
 def Import_System1_Popup_AE_buttons(button_name):
@@ -953,7 +953,7 @@ def Verify_Notification_pannel_Message(Message):
         Log.Checkpoint(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         break
       else:
-        Log.Warning(f'{i.DataContext.Message.OleValue} in Notification Pannel')
+        Log.Message(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         
 def jsjsjs():
   Verify_Notification_pannel_Message("Close Refine Online Editor (Completed)")

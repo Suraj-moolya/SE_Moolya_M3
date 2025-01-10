@@ -1124,7 +1124,7 @@ def Change_Password_Protection_Controller(param):
   Log.Error("Could not find the specific 'Controller' element.")
   
 def gsgsg99():
-  Change_Password_Protection_Controller("Password Protection$$False")
+  Change_Password_Protection_Controller("Controller$$False")
   
 def Click_on_Settings_Header(settings):
   tab_List = proj_obj.projectcontrollersettingtab.find_children_for_treeviewrow()

@@ -256,3 +256,9 @@ def step_impl(asPerRequirement1):
     """I Rename Folder as per requirement in system explorer as '<as per requirement1>'"""
     CommonUtil.write_text_file("\nWhen I Rename Folder as per requirement in system explorer as \""+asPerRequirement1+"\"")
     obj.textboxasperrequirementrenamefolder(asPerRequirement1)
+    
+@when("I Click on Browse Button in System backup Window")
+def step_impl():
+    """I Click on Browse Button in System backup Window"""
+    CommonUtil.write_text_file("\nWhen I Click on Browse Button in System backup Window")
+    obj.buttonsystemexplorerbrowse()
