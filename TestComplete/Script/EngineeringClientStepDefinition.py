@@ -197,3 +197,9 @@ def step_impl(button):
 def step_impl(FolderName):
     """I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded"""
     obj.VerifyFolderExpansionstatusTE(FolderName)
+    
+@when("I Close the Tab by Clicking on Close in EC as {arg}")
+def step_impl(tabname):
+    """I Close the Tab by Clicking on Close in EC as '<tabname>''"""
+    CommonUtil.write_text_file("\nWhen I Close the Tab by Clicking on Close in EC as \""+tabname+"\"")
+    obj.closetabec(tabname)

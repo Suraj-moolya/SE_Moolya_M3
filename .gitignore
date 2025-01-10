@@ -10,8 +10,3 @@ Log/
 
 # Ignore backup files
 *.bak
-TestComplete/Events/{FCB06852-7FDA-4DB9-AC68-326272917B94}/logError0.tcax.tlb
-TestComplete/Events/{E7733A3B-4EF6-46CC-B1DD-A724A5A44D2C}/LogCheckpoint0.tcax.tlb
-TestComplete/Events/{8F03EDA3-141F-4DF6-A549-FA021F8AF6BF}/LogPicture0.tcax.tlb
-TestComplete/Events/{4F1E57E9-6214-4230-A79E-999B8B13C520}/LogMessage0.tcax.tlb
-TestComplete/Events/{2DAACB31-714A-4A71-B8DC-66552AFF033A}/OnStartTest0.tcax.tlb

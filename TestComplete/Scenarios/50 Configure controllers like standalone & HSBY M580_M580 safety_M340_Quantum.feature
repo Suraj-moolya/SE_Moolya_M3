@@ -29,9 +29,13 @@ Then Verify Action message in notification pannel project browser in project exp
 When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
 Examples:
-  | SlNo. | context menu            | as per requirement1 | project browser1        | button          | project browser2        | FolderName |
-  | 1     | Create Ethernet Network | SE_Network          | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
-  | 2     | Create Ethernet Network | Lab_Network         | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | SlNo. | context menu            | as per requirement1       | project browser1        | button          | project browser2        | FolderName |
+  | 1     | Create Ethernet Network | SE_Network                | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | 2     | Create Ethernet Network | Lab_Network               | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | 3     | Create Ethernet Network | STB_Island_Device_Network | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | 4     | Create Ethernet Network | PRM_Device_Network        | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  
+
   
   
 @test0002a
@@ -240,17 +244,22 @@ Examples:
 Examples:
   | SlNo. | button             | FolderName  |
   | 1     | M580_Safety$$Close | Controllers |
-  
+
+@Close_devices_in_Topology_Explorer__Devices__-50-
+Examples:
+  | SlNo. | button         | FolderName |
+  | 1     | Devices$$Close | Devices    |
+    
   
 @test0002b
-Scenario Outline: Close Workstation  in Topology Explorer
+Scenario Outline: Open Workstation_2  in Topology Explorer
 When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
 
-@Close_Controllers_in_Topology_Explorer__M580_Standalone
+@Open_Workstation_in_Topology_Explorer_Workstation_2
 Examples:
-  | SlNo. | button                 | FolderName  |
-  | 1     | M580_Standalone$$Close | Controllers |
+  | SlNo. | button              | FolderName  |
+  | 1     | Workstation_2$$Open | Controllers |
   
 @TC_EPE_TE_CS_0003
 @test0001

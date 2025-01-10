@@ -152,6 +152,7 @@ def step_impl(network):
 def step_impl(menu):
   """I click '<menu>' in Tool Bar"""
   CommonUtil.write_text_file(f"\nWhen I click '{menu}' in Tool Bar")
+  Applicationutility.wait_in_seconds(1000, 'Wait')
   obj.clickbuttontoolbar(menu)
   
 @when("I click {arg} in Tool Bar popup window")
@@ -255,7 +256,7 @@ def step_impl():
     """I selected Save PRM Configuration in Configuration Window"""
     CommonUtil.write_text_file("\nWhen I selected Save PRM Configuration in Configuration Window")
     robj.buttonsaverefineofflineselected()
-    Applicationutility.wait_in_seconds(2000, 'Wait')
+    Applicationutility.wait_in_seconds(3000, 'Wait')
     
 @when("I selected {arg} Button in hardware catalog window")
 def step_impl(button):
@@ -403,3 +404,24 @@ def step_impl(ip_address):
     """I update the '<ip_address>' in FDT Configuration Window"""
     CommonUtil.write_text_file(f"\nWhen I update the '{ip_address}' in FDT Configuration Window")
     obj.updateipinftdconfigwindow(ip_address) 
+
+@when("I Double Click on propeties as {arg} available when window is open")
+def step_impl(text):
+    """I Double Click on propeties as {arg} available when window is open"""
+    CommonUtil.write_text_file("\nWhen I Double Click on propeties as {arg} available when window is open")
+    obj.dblclickpropertiesworkstation(text)
+    Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Expand on propeties header as {arg} available when window is open")
+def step_impl(text):
+    """I Expand on propeties header as {arg} available when window is open"""
+    CommonUtil.write_text_file("\nWhen I Expand on propeties header as {arg} available when window is open")
+    obj.expandpropertiesworkstation(text)
+    Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Change the port number of workstation as {arg}")
+def step_impl(text):
+    """I Change the port number of workstation as {arg}"""
+    CommonUtil.write_text_file("\nWhen I Change the port number of workstation as {arg}")
+    obj.changeportnumberworkstation(text)
+    Applicationutility.take_screenshot("Full Screenshot")

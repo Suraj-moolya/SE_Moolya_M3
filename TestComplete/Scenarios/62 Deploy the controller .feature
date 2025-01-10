@@ -41,11 +41,11 @@ Then Verify Action message in notification pannel project browser in project exp
 
 @Deploy_the_Workstation_1_after_disabling_the_password__Slot_NIC_1{127.0.0.1:502}_Simulator
 Examples:
-  | SlNo. | Controller    | Topology Explorer Tree1 | project dropdown2                                 | Executables dropdown3                                     | Modal dialog window4 | Modal dialog window5      | Modal Dialog Window 16                    | project browser2                 | sub_context_menu     |
-  | 1     | Workstation_1 | Control                 | Topology$$projectdropdowntextbox$$M580_Standalone | Topology$$executablesdropdowntextbox$$ControlExecutable_1 | OK                   | Slot NIC_1{127.0.0.1:502} | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) | Deploy Built Project |
+  | SlNo. | Controller    | Topology Explorer Tree1 | project dropdown2                                 | Executables dropdown3                                     | Modal dialog window4 | Modal dialog window5       | Modal Dialog Window 16                    | project browser2                 | sub_context_menu     |
+  | 1     | Workstation_1 | Control                 | Topology$$projectdropdowntextbox$$M580_Standalone | Topology$$executablesdropdowntextbox$$ControlExecutable_1 | OK                   | Slot NIC_1 {127.0.0.1:502} | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) | Deploy Built Project |
   
   
-@Deploy_the_Workstation_2_after_disabling_the_password__192.168.10.1__M580_Standalone
+@Deploy_the_Workstation_2_after_disabling_the_password__NIC_1{127.0.0.1:503}_Standalone
 Examples:
-  | SlNo. | Controller    | Topology Explorer Tree1 | project dropdown2                                 | Executables dropdown3                                     | Modal dialog window4 | Modal dialog window5 | Modal Dialog Window 16                    | project browser2                 | sub_context_menu     |
-  | 1     | Workstation_2 | Control                 | Topology$$projectdropdowntextbox$$M580_Standalone | Topology$$executablesdropdowntextbox$$ControlExecutable_1 | OK                   | 192.168.33.4         | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) | Deploy Built Project |
+  | SlNo. | Controller    | Topology Explorer Tree1 | project dropdown2                                 | Executables dropdown3                                     | Modal dialog window4 | Modal dialog window5       | Modal Dialog Window 16                    | project browser2                 | sub_context_menu     |
+  | 1     | Workstation_2 | Control                 | Topology$$projectdropdowntextbox$$M580_Standalone | Topology$$executablesdropdowntextbox$$ControlExecutable_1 | OK                   | Slot NIC_1 {127.0.0.1:503} | MessageBox$$modaldialogwindow1textbox$$OK | Deploy Built Project (Completed) | Deploy Built Project |

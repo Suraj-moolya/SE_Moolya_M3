@@ -483,7 +483,7 @@ def Drag_instance_drop_container_section(param):
     if instance_identifier in instance.DataContext.Identifier.OleValue :
       fromx = instance.Top
       fromy = instance.Height / 2
-      instance.Drag(fromx,fromy,0,tox/2)
+      instance.Drag(fromx,fromy,0,tox/2+25)
       Log.Message("Drag and drop operation was performed")
       break
     
@@ -1159,26 +1159,56 @@ def Enter_Variable_select_HMI(Variablename):
     Sys.Keys("[Right]")
   Sys.Keys("[Enter]")
   
-def gsgsg6s():
-  Enter_Variable_select_HMI("P2P")
   
-  
-def Click_Variable_Elementary_Variable_Tab(variable_name):
-  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+def Click_Variable_animation_table_Variable_Tab(variable_name):
+  textbox = proj_obj.animationtablewindow.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for i in textbox:
+    Log.Message((i.Name))
     if variable_name in i.Name:
+      Log.Message(len(textbox))
       i.Click()
       Log.Message(f'{variable_name} in data editior was clicked')
       break
   else:
     Log.Message(f'{variable_name} does not exists')
     
+def shsshhssh():
+  Click_Variable_Elementary_Variable_Tab("0")
     
-def RClick_Variable_Elementary_Variable_Tab(variable_name):
-  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+def Click_on_variable_and_change_data_value_animation_table(param):
+  presentvalue, changedValue = param.split("$$")
+  Click_Variable_animation_table_Variable_Tab(presentvalue)
+  Sys.Keys(changedValue)
+  Sys.Keys("[Enter]")
+  
+def gsgsgsgsg():
+  Click_on_variable_and_change_data_value_animation_table("0$$162")
+  
+    
+    
+def Click_Variable_Elementary_Initiate_animationtable_Tab(variable_name):
+  textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  Log.Message(len(textbox))
   for i in textbox:
+    Log.Message(i.Name)
     if variable_name in i.Name:
-      i.ClickR()
+      i.Click()
+      Sys.Keys("^T")
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
+    
+def gsgs1g():
+  RClick_Variable_Elementary_Variable_Tab('SE1')
+  
+def Click_Variable_Elementary_Variable_Tab(variable_name):
+  textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  Log.Message(len(textbox))
+  for i in textbox:
+    Log.Message(i.Name)
+    if variable_name in i.Name:
+      i.Click()
       Log.Message(f'{variable_name} in data editior was clicked')
       break
   else:
@@ -1186,33 +1216,34 @@ def RClick_Variable_Elementary_Variable_Tab(variable_name):
 
     
 def Click_P2p_Create_consecutive_variables(param):
-  variable_name, HMi_Column_no = param.split("$$")
+  variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
   variable_number = 1
   
   for i in range(2):
-    desired_variable_name = "P2P" + str(variable_number)
+    desired_variable_name = desired_variable_name_input + str(variable_number)
     Click_Variable_Elementary_Variable_Tab(variable_name)
     Sys.Keys("[Down]")
     Sys.Keys("[Enter]")
     Sys.Keys(desired_variable_name )
     variable_number = 2
-    variable_name = "P2P1"
+    variable_name = desired_variable_name 
     for i in range(int(HMi_Column_no)):
       Sys.Keys("[Right]")
     Sys.Keys("[Enter]")
     
 def sdsdsd():
-  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7")
+  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7$$P2P")
     
 
     
 def change_datatype_dataeditor(param):
-  desired_data_type,select_data_type,rownumber = param.split("$$")
+  variablename,desired_data_type = param.split("$$")
   textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for i in textbox:
-    if select_data_type in i.Name and rownumber in str(i.Name) :
+    Log.Message(i.Name)
+    if variablename in i.Name:
       i.Click()
-      Sys.Keys("[Enter]")
+      Sys.Keys("[Right]")
       Sys.Keys(desired_data_type)
       Log.Message(f'data type is successfully changed')
       break
@@ -1220,8 +1251,9 @@ def change_datatype_dataeditor(param):
     Log.Message(f'data type does not exists')
     
 def gsgsgsg():
-  change_datatype_dataeditor('INT$$BOOL$$2')
-  change_datatype_dataeditor('STRING$$BOOL$$3')
+  #change_datatype_dataeditor('INT$$BOOL$$2')
+  change_datatype_dataeditor('Moolya2$$INT')
+  #change_datatype_dataeditor('STRING$$BOOL$$3')
   
 def Unpack_Variable(identifier):
   Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
@@ -1242,6 +1274,9 @@ def Unmap_Variable(identifier):
     Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
     break
   Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
+  
+def gsgsg45():
+  Unmap_Variable("ValveGP_1_OPV")
   
   
 def Unmap_Variable_by_Keyboard_action(identifier2):
@@ -1277,11 +1312,21 @@ def change_variable_value(param):
   else:
     Log.Message(f'Variable does not exists')
     
-def verify_variable_value_FBDBlock(value):
-  textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Read_ControlPro_P2P_1 : [MAST]', 100)
+def change_FBD_Value(param):
+  source_variable,desired_variable = param.split("$$")
+  textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for i in textbox:
-    textbox1 = i.FindAllChildren('Name', 'TextObject(*)', 100)
-  for j in textbox1:
+    if i.Text == source_variable:
+      i.DblClick()
+      Sys.Keys(desired_variable)
+      Sys.Keys("[Enter]")
+
+def sgsgs():
+  change_FBD_Value("R_VAR_6$$SE2")
+    
+def verify_variable_value_FBDBlock(value):
+  textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for j in textbox:
     if value in j.Text:
       Log.Message(f'{j.Text} has been sucessfully veried in the screen')
       Applicationutility.take_screenshot()
@@ -1290,10 +1335,8 @@ def verify_variable_value_FBDBlock(value):
     Log.Message(f'{j.Text} does not exists in the screen')
     Applicationutility.take_screenshot()
     
-def sgsgsg():
-  verify_variable_value_FBDBlock("INT : Var5")
-  verify_variable_value_FBDBlock("164")
-  
+def gsgsg123s():
+  verify_variable_value_FBDBlock("162")
   
 def Run_PLC_Simulator():
   TestedApps.PLCSimulatorStarter.Run()
@@ -1312,3 +1355,29 @@ def Verify_backup_data_PE(param):
           break
   else:
     Log.Message("Message not successfully verified")
+
+    
+def drag_and_drop_remote_to_local_P2P(param):
+  target, source = param.split("$$")
+  devices = proj_obj.remotevariablebutton.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  channels = proj_obj.sourcevariablebutton.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for device in devices:
+    if device.DataContext.Identifier.OleValue == source:
+      from_x = device.ScreenLeft + (device.Width / 2)
+      from_y = device.ScreenTop + (device.Height / 2)
+      break
+  else:
+    Log.Message("No visible device found with identifier")
+  for channel in channels:
+    if channel.DataContext.Identifier.OleValue == target:
+      to_x = channel.ScreenLeft + (channel.Width / 2)
+      to_y = channel.ScreenTop + (channel.Height / 2)
+      break
+  device.Drag(from_x - device.ScreenLeft, from_y - device.ScreenTop, to_x - from_x, to_y - from_y)
+  Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
+  
+def sgsfsfs():
+  drag_and_drop_remote_to_local_P2P("AnalogInputGP_1_AInputGP_AISV$$AnalogInputGP_1_AInputGP_AISV")
+  
+def sgsfsfs2():
+  drag_and_drop_remote_to_local_P2P("SE1$$Moolya1")

@@ -6,11 +6,12 @@ import Engineeringclientutility
 import Topologyutility
 import Actionutility
 import Topologyexplorerutility
+from SystemExplorerScreen import SystemExplorerScreen
 
 class TopologyWorkFlow:
     """TopologyWorkFlow"""
     topology_obj = Topology()
-
+    ses_obj = SystemExplorerScreen()
         
     def textboxtopologyexplorertreeselectcontextmenuitemec(self,menu_item):
         """textboxtopologyexplorertreeselectcontextmenuitemec"""
@@ -29,6 +30,7 @@ class TopologyWorkFlow:
     def textboxbackupdatadescriptionentered(self,backupDataDescription3):
         """topology_obj.backupdatadescriptiontextbox"""
         TopologyWorkFlow.topology_obj.backupdatadescriptiontextbox.enter_text(backupDataDescription3)
+        ses_obj.circularprogressbarbutton.wait_for_element_property('Exists', None, 20000)
         
     def textboxdeploydataselectiongridselectdeploydatafromselectiongridte(self):
         """textboxdeploydataselectiongridselectdeploydatafromselectiongridte"""
@@ -54,42 +56,42 @@ class TopologyWorkFlow:
     def textboxtopologyexplorertreesearchtemplatebrowserec(self,search_text):
         """textboxtopologyexplorertreesearchtemplatebrowserec"""
         try:
-            Topologyexplorerutility.search_template_browser_EC(search_text)
+            Topologyutility.search_template_browser_EC(search_text)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeselecttemplateec(self,param):
         """textboxtopologyexplorertreeselecttemplateec"""
         try:
-            Topologyexplorerutility.Select_template_EC (param)
+            Topologyutility.Select_template_EC(param)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreedblclicktemplatete(self,temp_name):
         """textboxtopologyexplorertreedblclicktemplatete"""
         try:
-            Topologyexplorerutility.DblClick_template_TE(temp_name)
+            Topologyutility.DblClick_template_TE(temp_name)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeexpandcommunicationtabte(self,val):
         """textboxtopologyexplorertreeexpandcommunicationtabte"""
         try:
-            Topologyexplorerutility.Expand_communication_tab_TE(val)
+            Topologyutility.Expand_communication_tab_TE(val)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeeditipaddress(self,param):
         """textboxtopologyexplorertreeeditipaddress"""
         try:
-            Topologyexplorerutility.edit_IP_Address(param)
+            Topologyutility.edit_IP_Address(param)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreerclicktemplatete(self,temp_name):
         """textboxtopologyexplorertreerclicktemplatete"""
         try:
-            Topologyexplorerutility.RClick_template_TE(temp_name)
+            Topologyutility.RClick_template_TE(temp_name)
         except Exception as ex:
             raise Exception(ex) from ex
             
@@ -412,3 +414,23 @@ class TopologyWorkFlow:
             except Exception as ex:
                 raise Exception(ex) from ex
 
+    def dblclickpropertiesworkstation(self,text):
+        """dblclickpropertiesworkstation"""
+        try:
+            Topologyutility.DBlClick_Properties_workstation(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def expandpropertiesworkstation(self,text):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyutility.Expand_Properties_workstation(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def changeportnumberworkstation(self,text):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyutility.change_port_number_workstation_TE(text)
+        except Exception as ex:
+            raise Exception(ex) from ex

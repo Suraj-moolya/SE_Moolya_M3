@@ -9,6 +9,7 @@ import Actionutility
 from EngineeringClient import EngineeringClient
 from RefineOffline import RefineOffline
 from TopologyExplorerTab import TopologyExplorerTab
+from MessageBox import MessageBox
 
 topology_obj =  Topology()
 aet_obj = ApplicationExplorerTab()
@@ -17,6 +18,7 @@ syse_obj = SystemExplorerScreen()
 eng_obj = EngineeringClient()
 refoff_obj = RefineOffline()
 topo_obj = TopologyExplorerTab()
+msg_obj = MessageBox()
 
 def search_template_browser_EC(search_text):
   temp_browser = msg_obj.exportpopupbutton.object
@@ -53,19 +55,23 @@ def DblClick_template_TE(temp_name):
  
 def Expand_communication_tab_TE(val):
   val = "Communication"
-  sections = syse_obj.systemexplorermenubutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",100)
+  sections = syse_obj.systemexplorernodebutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",1000)
   for section in sections:
     if val in section.DataContext.Name.OleValue:
       section.IsExpanded = True
-         
+      Log.Message(f'{section.DataContext.Name.OleValue} is expanded')
+      break
+  else:
+    Log.Warning(f'{val} not found')
+    
 def edit_IP_Address(param):
     name,IP_add =  param.split('$$')
-    grid_row_obj = topology_obj.topologydeviceeditertextbox.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  
+    grid_row_obj = syse_obj.systemexplorernodebutton.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  
     for grid_row in grid_row_obj:
-      Sys.HighlightObject(grid_row,1)  
+      #Sys.HighlightObject(grid_row,1)  
       grid_cell_obj = grid_row.FindAllChildren("ClrClassName", "GridViewCell", 100)
       for cell_val in grid_cell_obj:
-        Sys.HighlightObject(cell_val,1)
+        #Sys.HighlightObject(cell_val,1)
         if name in cell_val.WPFControlText:
           grid_row.DataContext.Expression = IP_add         
           if grid_row.DataContext.Expression == IP_add:
@@ -105,16 +111,17 @@ def Select_IP_from_ControlProjectDeployment(IP_address):
   Dropdown_IPList = Dropdown_options.FindAllChildren("ClrClassName","RadComboBoxItem",10)
   for IP in Dropdown_IPList:
     Log.Message(IP.DataContext.FormattedAddress.OleValue)
+    Log.Message(IP_address)
     if IP_address in IP.DataContext.FormattedAddress.OleValue:
-      
       IP.Click()
       Log.Message(f'{IP.DataContext.FormattedAddress.OleValue} was selected from Dropdown option')
       break
   else:
     Log.Message(f'{IP_address} did not exist in Dropdown option')
     
+    
 def sggsg():
-  Select_IP_from_ControlProjectDeployment("10.179.244.99")
+  Select_IP_from_ControlProjectDeployment("Slot NIC_1 {127.0.0.1:503}")
 
 
 def select_latest_backup_data_TE():
@@ -174,7 +181,11 @@ def change_port_number_workstation_TE(param):
   heading, activeport, portvalue = param.split("$$")
   ports = topology_obj.propertywindowtextbox.object.FindAllChildren("ClrClassName","GridViewRow",100)
   for port in ports:
-    if port.Item.Category == heading:
+    Log.Message(port.Item.Category)
+    Log.Checkpoint(heading)
+    
+    if str(port.Item.Category) == heading:
+      Log.Message(port.Item.Category)
       values = port.FindAllChildren("ClrClassName","GridViewCell",100)
       for value in values:
         if activeport in value.WPFControlText:
@@ -182,8 +193,9 @@ def change_port_number_workstation_TE(param):
           Sys.Keys(portvalue)
           Sys.Keys("[Enter]")
   else:
-    Log.Message("Hudimaga")
+    Log.Message(f'{activeport} check and enter valid active port')
 
 def hshshs():
   #DBlClick_Properties_workstation("ControlExpert_1")
-  Expand_Properties_workstation("Configuration")
+  #Expand_Properties_workstation("Configuration")
+  change_port_number_workstation_TE("Configuration$$502$$503")

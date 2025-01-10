@@ -373,7 +373,7 @@ def step_impl(identifier):
     CommonUtil.write_text_file("\nWhen I Double Click on Containers as \""+identifier+"\"")
     obj.textboxprojectbrowserdclickcontrolprojectbroswer(identifier)
     
-@when("I Drag and Drop the Instance to in Container as '(.*)'")
+@when("I Drag and Drop the Instance to in Container as {arg}")
 def step_impl(Instance):
     """I Drag and Drop the Instance to in Container"""
     #CommonUtil.write_text_file("\nWhen I Drag and Drop the Instance in Container to section as\""+controller+section+"\"")
@@ -698,10 +698,10 @@ def step_impl(identifier):
     CommonUtil.write_text_file("\nWhen I Unmap variable in P2P communication configuration window by keyboard action as \""+identifier+"\"")
     obj.UnmapP2Pvariablebykeyboardaction(identifier)
     
-@when("I Right Click on Variables from elementary variables tab named as {arg}")
+@when("I  Click on Variables from elementary variables tab to initiate animationtable editor window named as {arg}")
 def step_impl(identifier):
     """I Right Click on Variables from elementary variables tab named as '<identifier>'"""
-    obj.RClickVariableElementaryVariableTab(identifier)
+    obj.clickvariableelementaryinitiateanimationtabletab(identifier)
     
 @when("I Run PLC Simulator")
 def step_impl():
@@ -713,3 +713,45 @@ def step_impl(projectBrowser3):
     """I Verify backup data PE in project explorer as '<project browser2>'"""
     CommonUtil.write_text_file("\nWhen I Verify backup data PE in project explorer as \""+projectBrowser3+"\"")
     obj.textboxprojectbrowserverifybackupdata(projectBrowser3)
+    
+@when("I Drag and drop from remote varaibles to source variables in P2P as {arg}")
+def step_impl(server):
+    """I Drag and drop from remote varaibles to source variables in P2P as '<server>'"""
+    CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    Applicationutility.wait_in_seconds(1000,"wait")
+    obj.textboxdraganddropremotetolocalP2P(server)
+    
+    
+@when("I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as {arg}")
+def step_impl(server):
+    """I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    obj.textboxclickp2pcreateconsecutivevariables(server)
+ 
+@when("I change Data type in Data Editor as {arg}")
+def step_impl(server):
+    """I change Data type in Data Editor as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data type in Data Editor as \""+server+"\"")
+    obj.textboxchangedatatypedataeditor(server)  
+    
+    
+@when("I change Data value in Data Editor as {arg}")
+def step_impl(server):
+    """I change Data value in Data Editor as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data value in Data Editor as \""+server+"\"")
+    obj.clickonvariableandchangedatavalueanimationtable(server) 
+    
+@when("I change Data value in FBD Section as {arg}")
+def step_impl(server):
+    """I change Data value in FBD Section as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data value in FBD Section as \""+server+"\"")
+    obj.changeFBDValue(server)
+    
+@when("I verify {arg} is reflected in FBD section")
+def step_impl(server):
+    """I verify '<variable>' is reflected in FBD section"""
+    obj.verifyvariablevalueFBDBlock(server)
+    
+    
+
+    

@@ -41,9 +41,10 @@ Scenario Outline: Map Modbus TCP device to Controller - add Ethernet Network
 When I RClick template TE Topology Explorer Tree in topology as '<Topology Explorer Tree1>'
 And I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
+When I click modal dialog window project browser in project explorer as '<Button>'
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 |
-  | 1     | ETesysTHW               | Physical Connections    | EthernetNetwork_1       |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button |
+  | 1     | ETesysTHW               | Physical Connections    | ETesysTHW$$SE_Network   | OK     |
 
   
   
@@ -92,7 +93,21 @@ Examples:
   | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3       | Topology Explorer Tree4       | Button |
   | 1     | M580_Standalone         | Physical Connections    | M580_Standalone 0$$SE_Network | M580_Standalone 2$$SE_Network | OK     |
   
+
+@TC_EPE_TE_CN_0022d
+@test003
+Scenario Outline: Map Workstion to Ethernet Network
+When I Right Click on nodes System Explorer Node in system explorer as '<Topology Explorer Tree1>'
+And I Select context menu item EC project browser in project explorer as '<Topology Explorer Tree2>'
+And I Select particular '<network>' for each  Controller in physical connection
+When I click modal dialog window project browser in project explorer as '<Button>'
+
+Examples:
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | network    | Button |
+  | 1     | Workstation_1           | Physical Connections    | SE_Network | OK     |
   
+  
+ 
 
 
 

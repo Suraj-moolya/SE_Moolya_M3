@@ -824,10 +824,10 @@ class ProjectExplorerTabWorkFlow:
                 except Exception as ex:
                     raise Exception(ex) from ex     
                     
-    def RClickVariableElementaryVariableTab(self,identifier):
+    def clickvariableelementaryinitiateanimationtabletab(self,identifier):
                 """RClickVariableElementaryVariableTab"""
                 try:
-                    Projectexplorertabutility.RClick_Variable_Elementary_Variable_Tab(identifier)
+                    Projectexplorertabutility.Click_Variable_Elementary_Initiate_animationtable_Tab(identifier)
                 except Exception as ex:
                     raise Exception(ex) from ex    
                     
@@ -845,3 +845,50 @@ class ProjectExplorerTabWorkFlow:
                     Projectexplorertabutility.Verify_backup_data_PE(param)
                 except Exception as ex:
                     raise Exception(ex) from ex
+                
+    def textboxdraganddropremotetolocalP2P(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.drag_and_drop_remote_to_local_P2P(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+                    
+    def textboxclickp2pcreateconsecutivevariables(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Click_P2p_Create_consecutive_variables(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def textboxchangedatatypedataeditor(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.change_datatype_dataeditor(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def clickonvariableandchangedatavalueanimationtable(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Click_on_variable_and_change_data_value_animation_table(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+                    
+    def changeFBDValue(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.change_FBD_Value(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def verifyvariablevalueFBDBlock(self,param):
+                """verifyvariablevalueFBDBlock"""
+                try:
+                    Projectexplorertabutility.verify_variable_value_FBDBlock(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+                 
+                    
