@@ -70,6 +70,10 @@
 			<Feature Path="219 Open multiple pages and drop the instances in the page.feature" />
 			<Feature Path="220 Create new page and assign some instances.feature" />
 			<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
+			<Feature Path="AS1 Map associated control project to the tag container in properties.feature" />
+			<Feature Path="AS2 Create one more Tag container, create one IO Device and map the IO Device to tag container.feature" />
+			<Feature Path="AS3 Map the port to the new tag container and map the device in the communication mapping.feature" />
+			<Feature Path="AS4 Export supervision empty pages.feature" />
 		</Folder>
 	</Folder>
 	<Folder Name="Topology explorer">

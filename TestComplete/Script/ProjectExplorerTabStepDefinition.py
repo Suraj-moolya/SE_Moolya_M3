@@ -740,4 +740,21 @@ def step_impl(server):
     """I change Data value in Data Editor as '<param>'"""
     CommonUtil.write_text_file("\nWhen I change Data value in Data Editor as \""+server+"\"")
     obj.clickonvariableandchangedatavalueanimationtable(server) 
-    
+ 
+@when("I Expand IO Device section project browser in project explorer as {arg}")
+def step_impl(projectBrowser1):
+    """I Expand IO Device section project browser in project explorer as '<project browser1>'"""
+    CommonUtil.write_text_file("\nWhen I Expand IO Device section project browser in project explorer as \""+projectBrowser1+"\"")
+    obj.textboxprojectbrowserexpandiodevicesection(projectBrowser1)
+  
+@when("I Edit IO Device Properties project browser in project explorer as {arg}")
+def step_impl(projectBrowser2):
+    """I Edit IO Device Properties project browser in project explorer as '<project browser2>'"""
+    CommonUtil.write_text_file("\nWhen I Edit IO Device Properties project browser in project explorer as \""+projectBrowser2+"\"")
+    obj.textboxprojectbrowsereditiodeviceproperties(projectBrowser2)
+  
+@when("I Map IO Devices in PE project browser in project explorer as {arg}")
+def step_impl(projectBrowser4):
+    """I Map IO Devices in PE project browser in project explorer as '<project browser4>'"""
+    CommonUtil.write_text_file("\nWhen I Map IO Devices in PE project browser in project explorer as \""+projectBrowser4+"\"")
+    obj.textboxprojectbrowsermapiodevicesinpe(projectBrowser4)   

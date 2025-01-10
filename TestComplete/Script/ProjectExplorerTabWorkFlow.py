@@ -874,3 +874,25 @@ class ProjectExplorerTabWorkFlow:
                     Projectexplorertabutility.Click_on_variable_and_change_data_value_animation_table(param)
                 except Exception as ex:
                     raise Exception(ex) from ex
+                    
+    def textboxprojectbrowserexpandiodevicesection(self,param):
+        """textboxprojectbrowserexpandiodevicesection"""
+        try:
+            Projectexplorertabutility.Expand_IODevice_section(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxprojectbrowsereditiodeviceproperties(self,param):
+        """textboxprojectbrowsereditiodeviceproperties"""
+        try:
+            Projectexplorertabutility.Edit_IODevice_Properties(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxprojectbrowsermapiodevicesinpe(self,param):
+        """textboxprojectbrowsermapiodevicesinpe"""
+        try:
+            Projectexplorertabutility.Map_IO_Devices(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
