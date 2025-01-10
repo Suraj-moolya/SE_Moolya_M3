@@ -132,7 +132,7 @@ def select_latest_backup_data_TE():
       break
 
 def Verify_Device_Hardware_Catalog_TE(smp):
-  obj_lst = refoff_obj.fbdsectionwindowtextbox.object.FindAllChildren("Name",f"TextObject'{smp}'",10)
+  obj_lst = refoff_obj.fbdsectionwindowtextbox.object.FindAllChildren("Name",f"TextObject({smp})",10)
   for obj in obj_lst:
     if obj.Text == smp:
       Log.Checkpoint(f'{obj.Text} is verified sucessfully')

@@ -11,6 +11,9 @@
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
+		<Feature Path="3.System backup Scheduler.feature" />
+		<Feature Path="23 System backup Restore on migrated DB.feature" />
+		<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
 	</Folder>
 	<Folder Name="Project Explorer">
 		<Folder Name="Control Project">
@@ -84,7 +87,7 @@
 			<Feature Path="nn Refine Online.feature" />
 			<Feature Path="73 Configure Work Stations and it&apos;s services like CE, VJC and OFS.feature" />
 			<Feature Path="81 Check backup data for each controller.feature" />
-
+			<Feature Path="74 Map the Workstation to SP.feature" />
 		</Folder>
 		<Folder Name="Controllers">
 			<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
@@ -109,6 +112,11 @@
 		<Folder Name="Import and Export EPE Devices" />
 		<Folder Name="TM or 3rd party DTM&apos;s">
 			<Feature Path="96 Update DTM Catalog.feature" />
+			<Feature Path="97 Manage DTM.feature" />
+			<Feature Path="95 Open DTM Browser.feature" />
+			<Feature Path="99 Manage GSD library.feature" />
+			<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
+			<Feature Path="92 Export only Devices into csv format.feature" />
 		</Folder>
 	</Folder>
 	<Folder Name="RTNS">
