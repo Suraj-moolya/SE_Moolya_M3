@@ -5,6 +5,7 @@ from MessageBox import MessageBox
 from RefineOffline import RefineOffline
 from ControlExpert import ControlExpert
 from ProjectExplorerTab import ProjectExplorerTab
+from SystemExplorerScreen import SystemExplorerScreen
 
 
 topo_obj = TopologyExplorerTab()
@@ -13,6 +14,7 @@ eng_obj = EngineeringClient()
 refo_obj = RefineOffline()
 con_obj = ControlExpert()
 proj_obj = ProjectExplorerTab()
+sys_obj = SystemExplorerScreen()
 
 def select_tool_drag_drop_default_physical_view_TE(param):
   folder1, folder2, tool, dropposition = param.split('$$')
@@ -1162,5 +1164,72 @@ def ksdj():
       break
     
     
-def jkg():
-  skdfj("192.168.1.66")
+#######################################################################################
+
+def right_click(name):
+  test = eng_obj.systemexplorertreeview.object.FindAllChildren("ClrClassName", "ExplorerNode", 100)
+  for i in test:
+    if i.DataContext.Identifier == name:
+      i.ClickR()
+      Log.Checkpoint("Success")
+      return
+  Log.Warning("Fail")
+
+def dslkf():  
+  right_click("System_1")
+  
+
+def menuitem(name):
+  menu = sys_obj.rclickmenuitemsbutton.object.FindAllChildren("ClrClassName", "MenuItem", 100)
+  for i in menu:
+    if i.WPFControlText == name:
+      i.Click()
+      Log.Message("success")
+      
+def hjf():
+  right_click("System_1")
+  menuitem("Expand")
+
+def modal():
+  for i in msg_obj.exportpopupbutton.object.FindAllChildren("ClrClassName", "Checkbox", 100):
+    if i.WPFControlText == "Do not use a System Access password on this system.":
+      i.click()
+      Log.Message("success")
+      return
+    Log.Warning("fail")
+    
+    
+def clickbtn():
+  msg_obj.licensemanagementokbutton.object.click()
+  for i in msg_obj.exportpopupbutton.object.FindAllChildren("ClrClassName", "Button", 100):
+    if i.WPFControlText == "OK":
+          i.Click()
+          Log.Message("success")
+          
+#################################################################################################
+
+def open_networks_folder(node):
+  test = eng_obj.systemexplorertreeview.object.FindAllChildren("ClrClassName", "ExplorerNode", 100)
+  for i in test:
+    if i.DataContext.Identifier == node:
+      i.DblClick()
+      Log.Checkpoint("Success")
+      return
+  
+def open_ethernetnetwork(ethernet):
+  network = topo_obj.openethernetnetwork.object.FindAllChildren("ClrClassName", "GridViewRow", 100)
+  for i in network:
+    if i.DataContext.Identifier == ethernet:
+      i.DblClick()
+      Log.Checkpoint("Success")
+      return
+      
+def network_panel(interface, controller):
+  panel = topo_obj.networkpanel.object.FindAllChildren("ClrClassName", "TextBlock", 100)
+  for i in panel:
+    if i.WPFControlText == interface:
+      i.DblClick()
+      if controller in i.DataContext.DestinationInstance.OleValue:
+        Log.Checkpoint(f"The Ethernet Network is mapped to the {controller}")
+        return
+  

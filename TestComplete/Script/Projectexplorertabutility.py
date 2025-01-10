@@ -1147,3 +1147,9 @@ def Change_SettingsOption(option):
    
   
 
+def jjkdfn():
+  proj_tab = proj_obj.projectbrowsertextbox.object.FindAllChildren("ClrClassName", "TreeListViewRow", 100)
+  for tab in proj_tab:
+    if tab.DataContext.Identifier == "Containers":
+      tab.ClickR()
+      Log.Message("Super Brooo")

@@ -216,10 +216,44 @@ def step_impl():
 def step_impl():
   Engineeringclientutility.checks_system_create_system()
   
-
   
 @when("Checks for folder and creates if absent")
 def step_impl(): 
   Engineeringclientutility.checks_folder_create_folder()
   
-
+@when("I click on Username dropdown")
+def step_impl():
+    """I click on Username dropdown"""
+    CommonUtil.write_text_file("\nWhen I click on Username dropdown")
+    obj.usernamedropdown()
+    
+@when("I click on Logout option")
+def step_impl():
+    """I click on Logout option"""
+    CommonUtil.write_text_file("\nAnd I click on Logout option")
+    obj.SSlogout()
+    
+@when("I click on Login option")
+def step_impl():
+    """I click on Login option"""
+    CommonUtil.write_text_file("\nAnd I click on Login option")
+    obj.SSlogin()
+    
+@when("I press Ctrl+M {arg}")
+def step_impl(mode):
+    """I press Ctrl+M '<mode>'"""
+    CommonUtil.write_text_file("\nWhen I press Ctrl+M")
+    obj.maintenancemode(mode)
+    
+@when("I enter the Maintenance mode Password {arg} and press Enter key {arg}")
+def step_impl(password, key):
+    """And I enter the Maintenance mode Password '<password>'and press Enter key '<key>'"""
+    CommonUtil.write_text_file("\nAnd I enter the Maintenance mode Password and press Enter key")
+    obj.entermaintenancepassword(password, key)
+    
+@when("I enter {arg} and press Enter key {arg}")
+def step_impl(command, key):
+    """And I enter '<command>' and press Enter key '<key>'"""
+    CommonUtil.write_text_file("\nAnd I enter command and press Enter key")
+    obj.databasedeleteall(command, key)
+    

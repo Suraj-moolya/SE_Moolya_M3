@@ -330,3 +330,24 @@ def step_impl(smp):
     CommonUtil.write_text_file("\nWhen I Verify '<smp>' in Hardware Catalog Window")
     obj.textboxtopologyexplorerhardwarecatalogdevices(smp)
     Applicationutility.take_screenshot("Full Screenshot")
+    
+    
+@when("I Double Click open the {arg} in Topology Explorer")
+def step_impl(node):
+    """I Double Click open the '<node>' in Topology Explorer"""
+    CommonUtil.write_text_file("\nWhen I Double Click open the '<node>' in Topology Explorer")
+    obj.opennetworksfolder(node)
+    
+    
+@when("I Double Click open the {arg}")
+def step_impl(ethernet):
+    """I Double Click open the '<ethernet network>'"""
+    CommonUtil.write_text_file("\nI Double Click open the '<ethernet network>'")
+    obj.opennetwork(ethernet)
+    
+    
+@then("I Expand {arg} and Verify it is mapped to {arg}")
+def step_impl(interface, controller):
+    """I Expand '<physical interface>' and Verify it is mapped to '<controller>'"""
+    CommonUtil.write_text_file("\nI Expand '<physical interface>' and Verify it is mapped to '<controller>'")
+    obj.verifynetworkpanel(interface, controller)

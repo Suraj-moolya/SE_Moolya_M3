@@ -591,10 +591,5 @@ def no_password_system(btn):
     if btn in button.WPFControlText:
       button.Click()
   Applicationutility.wait_in_seconds(2000, 'Wait')
-
-        
-        
-
-      
-
+  
 

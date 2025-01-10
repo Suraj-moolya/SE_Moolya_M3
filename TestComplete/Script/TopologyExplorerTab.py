@@ -182,3 +182,14 @@ class TopologyExplorerTab(MapBase):
     def deploycheckbox(self):
         """deploycheckbox"""
         return self.get_element("DeployCheckbox_TopologyExporerTab")
+        
+    @property
+    def openethernetnetwork(self):
+        """checkethernetnetwork"""
+        return self.get_element("OpenEthernetNetwork_TopologyExplorerTab")
+        
+    @property
+    def networkpanel(self):
+        """checkethernetnetwork"""
+        return self.get_element("NetworkPanel_TopologyExplorerTab")
+    

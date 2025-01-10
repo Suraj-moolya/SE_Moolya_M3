@@ -31,6 +31,12 @@
              <UIControl Element="saveandclose_SystemServer" Name="WPFObject('Button', 'Save and Close', 2)" Parent="ServerConfiguration_" />
              <UIControl Element="hosting_SystemServer" Name="WPFObject('ScrollViewer', '', 1)" Parent="ServerConfiguration_" />
              <UIControl Element="cancel_SystemServer" Name="WPFObject('Button', 'Cancel', 3)" Parent="ServerConfiguration_" />
+             <UIControl Element="usernamedropdown_SystemServer" Name="WPFObject('Menu', '', 1)" Parent="SystemServer_" />
+             <UIControl Element="logout_SystemServer" Name="WPFObject('NonLogicalAdornerDecorator', '', 1)" Parent="SystemServer_" />
+             <UIControl Element="login1_SystemServer" Name="WPFObject('MenuItem', 'Log In', 1)" Parent="SystemServer_" />
+             <UIControl Element="DBcommand_SystemServer" Name="WPFObject('InputWindow')" Parent="SystemServer_" />
+
+             
         </Component>
         <Component name="Current Screen">
              <UIControl Element="CollapseAll_CurrentScreen" Name="WPFObject('MenuItem', 'Collapse All', *)" Parent="EngineeringClient_" />
@@ -84,8 +90,9 @@
              <UIControl Element="Workspace_EngineeringClient" Name="WPFObject('WorkspaceControl')" Parent="EngineeringClient_" />
              <UIControl Element="rclickmenu_EngineeringClient" Name="WPFObject('HwndSource* PopupRoot', '')" Parent="EngineeringClient_" />
              <UIControl Element="rclicksubmenu_EngineeringClient" Name="WPFObject('HwndSource* PopupRoot', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="userdropdownMenuItem_EngineeringClient" Name="WPFObject('NonLogicalAdornerDecorator', '', 1)" Parent="EngineeringClient_" />
-			 <UIControl Element="userlogoutscreen_EngineeringClient" Name="WPFObject('TxtMessage')" Parent="EngineeringClient_" />			 
+		     <UIControl Element="userdropdownMenuItem_EngineeringClient" Name="WPFObject('NonLogicalAdornerDecorator', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="userlogoutscreen_EngineeringClient" Name="WPFObject('TxtMessage')" Parent="EngineeringClient_" />
+			 <UIControl Element="SystemExplorerTreeview_EngineeringClient" Name="WPFObject('HwndSource: Main')" Parent="EngineeringClient_" />			 
         </Component>
         <Component name="System Explorer Screen">
              <UIControl Element="SystemExplorerNode_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
@@ -121,8 +128,10 @@
              <UIControl Element="ToComplete_SystemExplorerScreen" Name="WPFObject('CircularProgressBar', '', 1))" Parent="EngineeringClient_" />
              <UIControl Element="forselectedFolder_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="asperrequirement_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="ReleaseSupervisionParticipant_SystemExplorerScreen" Name="WPFObject('ContentPresenter', '', 9)" Parent="EngineeringClient_" />
         </Component>
         <Component name="Topology Exporer Tab">
+             <UIControl Element="TopoTreeview_TopologyExplorerTab" Name="WPFObject('ExplorerNode', '', *)" Parent="EngineeringClient_" />
              <UIControl Element="CloseableTab_TopologyExporerTab" Name="WPFObject('CloseableTabItem', '*', *)" Parent="EngineeringClient_" />
              <UIControl Element="SystemProject_TopologyExporerTab" Name="WPFObject('TreeListView', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="ToolboxCatalog_TopologyExporerTab" Name="WPFObject('CatalogView')" Parent="EngineeringClient_" />
@@ -181,6 +190,8 @@
 			 <UIControl Element="passwordOKButton_TopologyExporerTab" Name="WPFObject('ButtonOK')" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('Button', 'Deploy', 1)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />	 
+                <UIControl Element="OpenEthernetNetwork_TopologyExplorerTab" Name="WPFObject('PART_PortContainer')" Parent="EngineeringClient_" />
+                <UIControl Element="NetworkPanel_TopologyExplorerTab" Name="WPFObject('RadTreeViewItem', '', 2)" Parent="EngineeringClient_" />
         </Component>
         <Component name="Global Templates Tab">
              <UIControl Element="globaltemplatecore_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />

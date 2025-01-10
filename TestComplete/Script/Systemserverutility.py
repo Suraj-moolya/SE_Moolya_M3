@@ -134,7 +134,6 @@ def navigate_to_explorers(Explorername):
       menu_items_list[i].click()
       
 def verify_explorer_tab(TabName):
-  
   tab_obj = eng_obj.mainscreenbutton.object
   colesable_items = tab_obj.FindAllChildren("ClrClassName", "CloseableTabItem", 50)
   for item in colesable_items:
@@ -287,3 +286,40 @@ def check_server_stop_1():
     else:
       Applicationutility.wait_in_seconds(1000, 'Wait for server ready !')
       console_obj.Refresh()
+      
+def click_on_username_dropdown():
+  dropdown = server_obj.usernamedropdown.object
+  if dropdown.ClrClassName == "Menu":
+    dropdown.Click()
+    Log.Checkpoint("Username dropdown is clicked")
+    
+def click_on_logout():
+  logout = server_obj.logout.object.FindAllChildren("ClrClassName", "MenuItem", 50)
+  for option in logout:
+    if option.WPFControlText == "Log Out":
+      option.Click()
+      Log.Checkpoint("Logout option is clicked")
+      
+def click_on_login():
+  server_obj.loginmenuitem.object.Click()
+  Log.Checkpoint("Login option is clicked")
+  
+def enter_maintenance_mode(param):
+  Sys.Keys(param)
+  Log.Checkpoint(f'The keyboard action - {param}, has been performed.')
+  
+def enter_maintenance_password(password, key):
+  server_obj.passwordboxtextbox.enter_text(password)
+  Log.Checkpoint(f'The maintenance mode password {password}, has been entered.')
+  Applicationutility.wait_in_seconds(2000, "wait")
+  Sys.Keys(key)
+  Log.Checkpoint(f'The keyboard action - {key}, has been performed.')
+  
+def database_deleteall(command, key):
+  server_obj.DBcommand.enter_text("  "+command)
+  Log.Checkpoint(f'The command {command}, has been entered.')
+  Applicationutility.wait_in_seconds(2000, "wait")
+  Sys.Keys(key)
+  Log.Checkpoint(f'The keyboard action - {key}, has been performed.')
+  
+  
