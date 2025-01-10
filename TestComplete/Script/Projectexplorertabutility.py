@@ -45,7 +45,7 @@ def double_click_control_project_browser_PE(identifier):
   proj_list = proj.find_children_for_treeviewrow()
   for item in proj_list:
     if item.Visible and identifier in item.DataContext.Identifier.OleValue:
-      if not item.IsExpanded:
+      #if not item.IsExpanded:
         item.DblClick()
         Log.Checkpoint(item.DataContext.Identifier.OleValue + ' is Double Clicked.')
         Applicationutility.wait_in_seconds(2000, "Wait")
@@ -1071,7 +1071,7 @@ def map_workstation(param):
       break
   else:
     Log.Message(f'{i.Text} doesnt exists')
-    
+   
 # will ad this later need to analyze properly for now we can skip this wont matter much  
 #def verify_nic_cards_available_mapping(param):
 #  service, engine = param.split("$$")
@@ -1123,8 +1123,6 @@ def Change_Password_Protection_Controller(param):
           return
   Log.Error("Could not find the specific 'Controller' element.")
   
-def gsgsg99():
-  Change_Password_Protection_Controller("Controller$$False")
   
 def Click_on_Settings_Header(settings):
   tab_List = proj_obj.projectcontrollersettingtab.find_children_for_treeviewrow()
@@ -1381,3 +1379,56 @@ def sgsfsfs():
   
 def sgsfsfs2():
   drag_and_drop_remote_to_local_P2P("SE1$$Moolya1")
+  
+def Edit_IODevice_Properties(param):
+  field_label, options = param.split("$$")
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  for control in controller_row:
+    Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
+    if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
+      control.DblClick()
+      aqUtils.Delay(500)
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "RadioButton", 10):
+        if item.WPFControlText == options:
+          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          return
+  Log.Error("Could not find the specific 'Controller' element.")
+   
+def Expand_IODevice_section(param):
+  IODevices_row = proj_obj.assignmentsdocktextbox.object.FindAllChildren("Name", "WPFObject('CheckedVisual')", 100)
+  for list in IODevices_row:
+    Sys.HighlightObject(list)
+    if param == list.DataContext.Identifier.OleValue:
+      list.Click()
+      Log.Message(list.DataContext.Identifier.OleValue+ " is expanded")
+      break     
+  else:
+    Log.Message(param+" is expanded")
+    
+def Map_IO_Devices(param):
+  service,field,engine = param.split("$$")
+  Click_On_Topological_entity_IODvices(service,field)
+  Map = proj_obj.servicemapdropdownbox.object
+  Map_List = Map.FindAllChildren('ClrClassName', 'TextBlock', 100)
+  for i in Map_List:
+    if i.Text == engine:
+      i.Click()
+      Log.Message(f'{i.Text} was clicked')
+      break
+  else:
+    Log.Message(f'{i.Text} doesnt exists')
+
+def Click_On_Topological_entity_IODvices(service,field):
+  Map = proj_obj.controlexecutablesproperty.object
+  Map_List = Map.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Map_List:
+    Sys.HighlightObject(i)
+    if service in str(i.DataContext.Identifier.OleValue):
+      service_list = i.FindAllChildren('ClrClassName', 'GridViewCell', 100)
+      for j in service_list:
+          if str(j.WPFControlOrdinalNo) == field:
+            j.Click()
+            return 
+               
+      
+    
