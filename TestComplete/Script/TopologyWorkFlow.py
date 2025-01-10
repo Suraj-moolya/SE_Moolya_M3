@@ -123,6 +123,13 @@ class TopologyWorkFlow:
             Topologyexplorerutility.set_ip_and_subnet(ip_address, subnet_mask)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerdoubleclickonaddwindow(self,property):
+        """textboxtopologyexplorerhardwarecatalogdevices"""
+        try:
+            Topologyexplorerutility.Double_Click_on_Channel(property)
+        except Exception as ex:
+            raise Exception(ex) from ex
 
         
     def configureethernetnetworkinphysicalconnectionte(self, network):
@@ -316,6 +323,97 @@ class TopologyWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
             
+    def textboxtopologyexplorerdoubleclickonftdconfigurationwindow(self,property):
+        """textboxtopologyexplorerdoubleclickonftdconfigurationwindow"""
+        try:
+            Topologyexplorerutility.double_click_on_ftdconfiguration_window(property)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerselectslotinftdconfigurationwindow(self,slot, module):
+        """textboxtopologyexplorerdoubleclickonftdconfigurationwindow"""
+        try:
+            Topologyexplorerutility.select_slots_in_ftdconfiguration(slot, module)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerclickbuttoninfigurationwindow(self, button):
+        """textboxtopologyexplorerclickbuttoninfigurationwindow"""
+        try:
+            Topologyexplorerutility.Click_button_in_ftdconfiguration(button)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerverifydtmdeviceinfigurationwindow(self):
+        """textboxtopologyexplorerverifydtmdeviceinfigurationwindow"""
+        try:
+            Topologyexplorerutility.verify_dtm_device()
+        except Exception as ex:
+            raise Exception(ex) from ex    
+        
+    def selectsubmenuoptioninmodaldialogue(self, option):
+        """clickbtninnewdevicepopup"""
+        try:
+          Topologyexplorerutility.select_submenu_options_in_controlexpert_modaldialogue(option)
+        except Exception as ex:
+            raise Exception(ex) from ex  
+        
+    def selectfinaloptioninmodaldialogue(self, option):
+        """clickbtninnewdevicepopup"""
+        try:
+          Topologyexplorerutility.select_final_option_in_controlexpert_modaldialogue(option)
+        except Exception as ex:
+            raise Exception(ex) from ex    
+            
+    def importmodulesinftdconfigwindow(self, modules):
+        """importmodulesinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.import_modules_in_ftdconfig(modules)
+        except Exception as ex:
+            raise Exception(ex) from ex  
+            
+    def clickbuttoninftdconfigwindow(self, button):
+        """clickbuttoninftdconfigwindow"""
+        try:
+            Topologyexplorerutility.click_button_in_fdtconfig(button)
+        except Exception as ex:
+            raise Exception(ex) from ex 
+            
+    def clickchannelinftdconfigwindow(self, property):
+        """clickchannelinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.click_dtm_channel_in_fdtconfig(property)
+        except Exception as ex:
+            raise Exception(ex) from ex  
+            
+    def selecttabinftdconfigwindow(self, tab_name):
+        """selecttabinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.select_tab_in_FDTConfig(tab_name)
+        except Exception as ex:
+            raise Exception(ex) from ex   
+            
+    def updateipinftdconfigwindow(self, ip):
+        """updateipinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.update_ip_address_in_fdtconfig(ip)
+        except Exception as ex:
+            raise Exception(ex) from ex   
+            
+    def clickcheckboxinupdateprojectwindow(self, prop):
+        """updateipinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.select_checkbox_in_updateproject(prop)
+        except Exception as ex:
+            raise Exception(ex) from ex
+
+    def textboxconfirmpasswordboxentercontrollerpassworddeployscreente(self,password):
+            """textboxconfirmpasswordboxentercontrollerpassworddeployscreente"""
+            try:
+                Topologyutility.Enter_Controller_Password_deploy_screen_TE(password)
+            except Exception as ex:
+                raise Exception(ex) from ex
+
     def dblclickpropertiesworkstation(self,text):
         """dblclickpropertiesworkstation"""
         try:
@@ -336,4 +434,3 @@ class TopologyWorkFlow:
             Topologyutility.change_port_number_workstation_TE(text)
         except Exception as ex:
             raise Exception(ex) from ex
-

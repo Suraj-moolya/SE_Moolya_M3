@@ -264,6 +264,12 @@ class ProjectExplorerTab(MapBase):
         """sourcevariablebutton"""
         return self.get_element("Sourcevariable_ProjectExplorer")
         
+    @property
+    def animationtablewindow(self):
+        """animationtablewindow"""
+        return self.get_element("AnimationTable_ProjectExplorerTab") 
         
+        
+
         
        

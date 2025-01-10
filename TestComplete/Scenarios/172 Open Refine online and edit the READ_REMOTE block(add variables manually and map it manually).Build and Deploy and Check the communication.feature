@@ -15,7 +15,7 @@ Examples:
 @TC_EPE_TE_CS_0002
 @test0002
 Scenario Outline: Initialize Animation Table 
-When I Right Click on Variables from elementary variables tab named as '<Variable>'
+When I  Click on Variables from elementary variables tab to initiate animationtable editor window named as '<Variable>'
 @Initialize_Animation_Table_for_varibale_SE1
 Examples:
   | SlNo. | Variable |
@@ -47,6 +47,28 @@ When I change Data value in Data Editor as '<param>'
 Examples:
   | SlNo. | param  |
   | 1     | 0$$162 |
+
+@TC_EPE_TE_CS_0002
+@test0002
+Scenario Outline: change Data value in FBD Section 
+When I change Data value in FBD Section as '<param>'
+Examples:
+  | SlNo. | param        |
+  | 1     | L_VAR_6$$SE1 |
+  
+@TC_EPE_TE_CS_0002
+@test0002
+Scenario Outline: verify variable in FBD section 
+When I verify '<variable>' is reflected in FBD section
+Examples:
+  | SlNo. | variable |
+  | 1     | 162      |
+  
+  
+
+  
+  
+  
 
 
   

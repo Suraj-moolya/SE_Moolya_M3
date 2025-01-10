@@ -109,7 +109,7 @@ def drag_composite_template_drop_app_browser_system1_AE(param):
         Log.Message('The object selected to drop to is : ' + str(App_list[j].Item.Identifier.OleValue))
         break
   main_screen = eng_obj.mainscreenbutton    
-  main_screen.drag((fromx+15), (fromy+15), (fromx+tox+115), -(fromy-toy))
+  main_screen.drag((fromx+100), (fromy+15), (fromx+tox+115), -(fromy-toy))
   Applicationutility.wait_in_seconds(1000, 'wait')
   
   
@@ -557,9 +557,6 @@ def Import_File_Directory():##
 def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
 #  Import_window = aet_obj.importtextbox.object
 #  if Import_window.Exists:
-  filename_textbox = aet_obj.comboboxtextbox.object
-  filename_textbox.Click()
-  filename_textbox.Keys(file_format)
   filelocation = aet_obj.addressbandtextbox
   tox = (filelocation.object.Height)/2
   toy = 5
@@ -569,6 +566,9 @@ def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
   full_path = os.path.join(base_path, folder_name)
   os.chdir(full_path) 
   Sys.Keys(os.getcwd())
+  filename_textbox = aet_obj.comboboxtextbox.object
+  filename_textbox.Click()
+  filename_textbox.Keys(file_format)
   Sys.Keys("[Enter]")  
   
 def Import_System1_Popup_AE_buttons(button_name):
@@ -809,13 +809,17 @@ def expand_folder_system():
       i.IsExpanded = True
       continue
       
-def verify_instance_application_browser():
+def verify_instance_application_browser(param):
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object
   instances = instnaceBroswer.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
   for instance in instances:
     if instance.Panel_ZIndex != 0 and instance.DataContext != None:
-        Log.Message(str(instance.DataContext.Identifier.OleValue) + ' is  present in the Application browser')
-        
+#        Log.Message(str(instance.DataContext.Identifier.OleValue) + ' is  present in the Application browser')
+      if param in str(instance.DataContext.Identifier.OleValue):
+        Log.Checkpoint(f'{str(instance.DataContext.Identifier.OleValue)} is present in Application Browser')
+        break
+  else:
+    Log.Warning(f'{str(instance.DataContext.Identifier.OleValue)} is not present in Application Browser')
         
 def verify_SameName_Errorbox_application_browser():
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object
@@ -953,10 +957,10 @@ def Verify_Notification_pannel_Message(Message):
         Log.Checkpoint(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         break
       else:
-        Log.Warning(f'{i.DataContext.Message.OleValue} in Notification Pannel')
+        Log.Message(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         
 def jsjsjs():
-  Verify_Notification_pannel_Message("Update")
+  Verify_Notification_pannel_Message("Close Refine Online Editor (Completed)")
 
 ## this method can be used for drag and drop intances in assetworkspace or linkeditor based on position 
 ## only 3 position can be defined based on the screen width

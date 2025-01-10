@@ -596,11 +596,11 @@ def step_impl():
     Applicationexplorertabutility.Verify_file_existance()
     
 
-@then("Verify the template is present in Application browser")
-def step_impl():
+@then("Verify the template is present in Application browser as {arg}")
+def step_impl(Templatesbrowser1):
     """Verify the template is present in Application browser"""
     CommonUtil.write_text_file("\nThen Verify the template is present in Application browser")
-    Applicationexplorertabutility.verify_instance_application_browser()
+    Applicationexplorertabutility.verify_instance_application_browser(Templatesbrowser1)
     Applicationutility.take_screenshot("Full Screenshot")
     
 @when("I Expand System and Folder in Application browser")

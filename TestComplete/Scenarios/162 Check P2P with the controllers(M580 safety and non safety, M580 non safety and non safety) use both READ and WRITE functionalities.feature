@@ -43,6 +43,7 @@ Examples:
 @test00
 Scenario Outline: Change Data type in Data Editor in Configure window Window
 When I change Data type in Data Editor as '<param>'
+And I clicked Enter in keyboard shortcut
 @Change_SE1_bool_value_to_INT
 Examples:
   | SlNo. | param    |

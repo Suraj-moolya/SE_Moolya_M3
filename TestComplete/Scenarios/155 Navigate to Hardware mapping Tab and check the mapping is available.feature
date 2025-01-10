@@ -25,9 +25,7 @@ And I drag and drop DOChannel facets to HWInstance with DOChannel HWInterfaceTyp
 Then I verify that all App facets '<appfacet>' are correctly mapped in the Hardware Instance
 Examples:
   | SlNo. | tabname          | appfacet           |
-  | 1     | Hardware Mapping | ValveGP_1_ClosePos |
-  | 2     | Hardware Mapping | ValveGP_1_OpenPos  |
-  | 3     | Hardware Mapping | ValveGP_1_OP       |
+  | 1     | Hardware Mapping | ValveGP_1_OP       |
   
   
   

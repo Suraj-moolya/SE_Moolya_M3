@@ -1,4 +1,4 @@
-"""CurrentScreen"""
+﻿"""CurrentScreen"""
 from MapBase import MapBase
 
 class CurrentScreen(MapBase):

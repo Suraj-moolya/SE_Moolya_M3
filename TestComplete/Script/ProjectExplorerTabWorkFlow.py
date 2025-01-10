@@ -824,10 +824,10 @@ class ProjectExplorerTabWorkFlow:
                 except Exception as ex:
                     raise Exception(ex) from ex     
                     
-    def RClickVariableElementaryVariableTab(self,identifier):
+    def clickvariableelementaryinitiateanimationtabletab(self,identifier):
                 """RClickVariableElementaryVariableTab"""
                 try:
-                    Projectexplorertabutility.RClick_Variable_Elementary_Variable_Tab(identifier)
+                    Projectexplorertabutility.Click_Variable_Elementary_Initiate_animationtable_Tab(identifier)
                 except Exception as ex:
                     raise Exception(ex) from ex    
                     
@@ -896,3 +896,18 @@ class ProjectExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
         
+                    
+    def changeFBDValue(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.change_FBD_Value(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def verifyvariablevalueFBDBlock(self,param):
+                """verifyvariablevalueFBDBlock"""
+                try:
+                    Projectexplorertabutility.verify_variable_value_FBDBlock(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    

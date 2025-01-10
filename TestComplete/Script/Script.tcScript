@@ -27,6 +27,7 @@
 				<child name="DialogCEWorkFlow" key="{935B7F1D-AC4C-4CC6-BE9C-D9423E5FF7C8}" path="DialogCEWorkFlow.py" />
 				<child name="SupervisionProjectWorkFlow" key="{70EF14AC-D40C-4439-A462-EBC916491FFB}" path="SupervisionProjectWorkFlow.py" />
 				<child name="TopologyWorkFlow" key="{0D7594AD-8DEB-40A7-87E9-078907DE686E}" path="TopologyWorkFlow.py" />
+				<child name="GSDAdditionWorkFlow" key="{FC793AC0-71F4-4D5C-9A36-0A5F068240FD}" path="GSDAdditionWorkFlow.py" />
 			</folder>
 			<folder name="StepDefinitions">
 				<child name="CurrentScreenStepDefinition" key="{001ABD02-E109-4837-B290-55898E939DEF}" path="CurrentScreenStepDefinition.py" />
@@ -45,6 +46,7 @@
 				<child name="DialogCEStepDefinition" key="{DA19AF80-1B07-40DF-9D64-38C9D4BA2AED}" path="DialogCEStepDefinition.py" />
 				<child name="SupervisionProjectStepDefinition" key="{78CA9E56-AB11-4F34-A0DA-EFDA0D461362}" path="SupervisionProjectStepDefinition.py" />
 				<child name="TopologyStepDefinition" key="{6C515026-B05C-4CF6-90B3-FAA3285FBD54}" path="TopologyStepDefinition.py" />
+				<child name="GSDAdditionStepDefinition" key="{7EB381B7-67DD-4D5E-B4F1-43DA624D9757}" path="GSDAdditionStepDefinition.py" />
 			</folder>
 			<folder name="WindowsDialogs">
 				<child name="SystemServer" key="{001ABD02-E118-4837-B290-55898E939DEF}" path="SystemServer.py" />
@@ -66,6 +68,7 @@
 				<child name="DialogCE" key="{C4F056D8-8313-45EC-82AF-1A460C9E0457}" path="DialogCE.py" />
 				<child name="SupervisionProject" key="{E08E20AB-2175-4591-9FD4-8E999C9C0052}" path="SupervisionProject.py" />
 				<child name="Topology" key="{DBEC4667-51D0-43C0-89BB-C23334F94A17}" path="Topology.py" />
+				<child name="GSDAddition" key="{80AA10EE-98BB-435C-A689-163CB2B9A7C7}" path="GSDAddition.py" />
 			</folder>
 			<folder name="Utilities">
 				<child name="Applicationutility" key="{001ABD02-E129-4837-B290-55898E939DEF}" path="Applicationutility.py" />
@@ -81,6 +84,7 @@
 				<child name="Controlexpertutility" key="{A3E073AE-3E58-4340-99C7-B951D449CCC9}" path="Controlexpertutility.py" />
 				<child name="Operationclientutility" key="{93A2AD89-4459-4CBD-AA57-ECAE52D23AFA}" path="Operationclientutility.py" />
 				<child name="Topologyutility" key="{D091D4AE-AB43-4735-A018-66156D78951F}" path="Topologyutility.py" />
+				<child name="GSDAdditionutility" key="{F2C1134C-1F44-4DC0-8AE7-A5717EA13C27}" path="GSDAdditionutility.py" />
 			</folder>
 		</folder>
 	</children>

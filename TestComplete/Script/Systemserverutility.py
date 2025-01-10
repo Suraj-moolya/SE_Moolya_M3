@@ -4,12 +4,17 @@ from EngineeringClient import EngineeringClient
 import Applicationutility
 from SystemExplorerScreen import SystemExplorerScreen
 import Engineeringclientutility
+from ProjectExplorerTab import ProjectExplorerTab
+from MessageBox import MessageBox
+
 
 
 server_obj = SystemServer()
 win_obj = WindowsExplorer()
 eng_obj = EngineeringClient()
 ses_obj = SystemExplorerScreen()
+proj_obj = ProjectExplorerTab()
+msg_obj = MessageBox()
 
 def system_server_icon_rclick_on(element): 
   Applicationutility.wait_in_seconds(1000, 'wait')
@@ -287,3 +292,95 @@ def check_server_stop_1():
     else:
       Applicationutility.wait_in_seconds(1000, 'Wait for server ready !')
       console_obj.Refresh()
+      
+def select_settings_submenu_systemserver(option):
+  menu_items = server_obj.settingsbutton.object.FindAllChildren("ClrClassName", "MenuItem", 50)
+  menu_item = next((item for item in menu_items if item.WPFControlText == option), None)  
+  if menu_item is not None:
+    menu_item.click()
+    Log.Checkpoint(f"{option} was selected in Server Settings Context Menu.")
+  else:
+    Log.Warning(f"{option} not found in Server Settings Context Menu.")
+  
+def select_system_in_systembackupsheduler(system):
+  for box in server_obj.systembackupshedulerbutton.object.FindAllChildren("ClrClassName", "ComboBox", 50):
+    if system in box.wText:
+      box.click()
+      break
+  else:
+    Log.Warning(f'{system} not found in ComboBox.')
+    return
+  for item in server_obj.systembackupdropdownbutton.object.FindAllChildren("ClrClassName", "TextBlock", 50):
+    if item.DataContext.Identifier == system:
+      item.click()
+      Log.Checkpoint(f'{system} was selected in DropDown.')
+      return
+  Log.Warning(f'{system} was not found in DropDown.')
+
+  
+def checkboxinsystembackup(prop):
+  unchecked_checkboxes = [i for i in server_obj.systembackupshedulerbutton.object.FindAllChildren("ClrClassName", "CheckBox", 50) 
+                          if i.WPFControlText.strip() in set(prop.split("/")) and not i.IsChecked]
+  for checkbox in unchecked_checkboxes:
+    checkbox.Click()
+    Log.Checkpoint(f"Checkbox for {checkbox.WPFControlText.strip()} is Checked")
+  Log.Message("checkbox are already checked." if not unchecked_checkboxes else "")
+
+
+def select_frequency_in_system_backup(freq):
+  for box in server_obj.systembackupshedulerbutton.object.FindAllChildren("ClrClassName", "ComboBox", 50):
+    if "Daily|Weekly|Monthly" in box.wItemList:
+      box.click()
+      break
+  else:
+    Log.Warning(f'dropdown not found in ComboBox.')
+    return
+  for item in server_obj.systembackupdropdownbutton.object.FindAllChildren("ClrClassName", "ComboBoxItem", 50):
+    if item.WPFControlText == freq:
+      item.click()
+      Log.Checkpoint(f'{freq} was selected in DropDown.')
+      if freq == "Weekly":
+        checkboxinsystembackup("Monday/Tuesday/Wednesday/Thursday/Friday")
+      return
+  Log.Warning(f'{freq} was not found in DropDown.')
+  
+  
+def system_server_popup(button):
+  for btn in server_obj.systemserverconfirmationpopup.object.FindAllChildren("WndClass", "Button", 50):
+    if button in btn.WndCaption:
+      btn.click()
+      Log.Checkpoint(f"{button} Clicked in Popup Window.")
+      break
+  else:
+    Log.Warning("{button} button not found.")
+  
+  
+def ldkjf():
+  server_obj.systembackupshedulerbutton.object.Close()
+  
+def clicksaveaswindowbutton(button):
+  for i in server_obj.filesavedlocation.object.FindAllChildren("WndClass", "Button", 50):
+    if button in i.WndCaption:
+      i.click()
+      Log.Checkpoint(f"{button} Clicked in Popup Window.")
+      break
+  else:
+    Log.Warning("{button} button not found.")
+    
+def backup_window_checkbox(prop):
+  for i in msg_obj.modeldialogfeedbacktextbox.object.FindAllChildren("ClrClassName", "CheckBox", 50):
+    if prop in i.WPFControlText:
+      i.click()
+      Log.Checkpoint(f'{prop} check box clicked.')
+      break
+  else:
+    Log.Warning(f'{prop} check box not found.')
+    
+def backup_window_button(button):
+  for i in msg_obj.modeldialogfeedbacktextbox.object.FindAllChildren("ClrClassName", "Button", 50):
+    if button in i.WPFControlText:
+      i.click()
+      Log.Checkpoint(f'{button} Button Clicked in Backup Window.')
+      break
+  else:
+    Log.Warning(f'{button} Button not found in Backup Window.')

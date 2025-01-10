@@ -106,7 +106,7 @@ Examples:
 @TC_EPE_TE_CS_0003
 @test0001
 Scenario Outline: Create a Control Project for M580_Standalone
-When I Right Click on nodes System Explorer Node in system explorer as 'Controllers'
+When I Right Click on nodes System Explorer Node in system explorer as '<Folder Name>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I Select controller in context menu as '<controller>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
@@ -114,13 +114,25 @@ When I rename the ControlProject as '<controller_name>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 @Create_First_Controller_for_standlone
 Examples:
-  | SlNo. | context menu      | controller | controller_name | project browser1  | project browser2  |
-  | 1     | Create Controller | M580       | M580_Standalone | Create Controller | Update Controller |
+  | SlNo. | Folder Name | context menu      | controller | controller_name | project browser1  | project browser2  |
+  | 1     | Controllers | Create Controller | M580       | M580_Standalone | Create Controller | Update Controller |
   
 @Create_Second_Controller_for_standlone
 Examples:
-  | SlNo. | context menu      | controller | controller_name  | project browser1  | project browser2  |
-  | 1     | Create Controller | M580       | M580_Standalone2 | Create Controller | Update Controller |
+  | SlNo. | Folder Name | context menu      | controller | controller_name  | project browser1  | project browser2  |
+  | 1     | Controllers | Create Controller | M580       | M580_Standalone2 | Create Controller | Update Controller |
+
+  
+@TC_EPE_TE_CS_0003d
+@test0001
+Scenario Outline: Create a Devices For PRM Profibus
+When I Right Click on nodes System Explorer Node in system explorer as '<Folder Name>'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+Then Verify Action message in notification pannel project browser in project explorer as '<context menu>'   
+@Create_PRM_Device
+Examples:
+  | SlNo. | Folder Name | context menu           |
+  | 1     | Controllers | Create PRM Profibus DP |
   
   
 @TC_EPE_TE_CS_0003a
@@ -258,13 +270,13 @@ And I enterkey Project Browser RO in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
 @Create_Workstation_1
 Examples:
-  | SlNo. | context menu        | project browser1   |
-  | 1     | Create Station Node | Create Workstation |
+  | SlNo. | context menu       | project browser1   |
+  | 1     | Create Workstation | Create Workstation |
   
 @Create_Workstation_2
 Examples:
-  | SlNo. | context menu        | project browser1   |
-  | 1     | Create Station Node | Create Workstation |
+  | SlNo. | context menu       | project browser1   |
+  | 1     | Create Workstation | Create Workstation |
   
 
   
