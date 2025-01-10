@@ -109,7 +109,7 @@ def drag_composite_template_drop_app_browser_system1_AE(param):
         Log.Message('The object selected to drop to is : ' + str(App_list[j].Item.Identifier.OleValue))
         break
   main_screen = eng_obj.mainscreenbutton    
-  main_screen.drag((fromx+15), (fromy+15), (fromx+tox+115), -(fromy-toy))
+  main_screen.drag((fromx+100), (fromy+15), (fromx+tox+115), -(fromy-toy))
   Applicationutility.wait_in_seconds(1000, 'wait')
   
   
@@ -809,13 +809,17 @@ def expand_folder_system():
       i.IsExpanded = True
       continue
       
-def verify_instance_application_browser():
+def verify_instance_application_browser(param):
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object
   instances = instnaceBroswer.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
   for instance in instances:
     if instance.Panel_ZIndex != 0 and instance.DataContext != None:
-        Log.Message(str(instance.DataContext.Identifier.OleValue) + ' is  present in the Application browser')
-        
+#        Log.Message(str(instance.DataContext.Identifier.OleValue) + ' is  present in the Application browser')
+      if param in str(instance.DataContext.Identifier.OleValue):
+        Log.Checkpoint(f'{str(instance.DataContext.Identifier.OleValue)} is present in Application Browser')
+        break
+  else:
+    Log.Warning(f'{str(instance.DataContext.Identifier.OleValue)} is not present in Application Browser')
         
 def verify_SameName_Errorbox_application_browser():
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object

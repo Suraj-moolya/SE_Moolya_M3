@@ -151,7 +151,7 @@ def select_instance_drag_drop_container_dock_PE1(identifier, dropping_point):
         return
 
     item.Drag(fromx - item.ScreenLeft, fromy - item.ScreenTop, tox - fromx, toy - fromy)
-    Applicationutility.wait_in_seconds(1500, 'Wait')
+    Applicationutility.wait_in_seconds(3000, 'Wait')
     Log.Message(f"Dragging from ({fromx}, {fromy}) to ({tox}, {toy}) completed.")
     if dropping_point == "ControlProject_1":
       Actionutility.modal_dialog_window_button("OK")
