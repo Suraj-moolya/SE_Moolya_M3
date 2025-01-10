@@ -32,7 +32,7 @@ def right_click_control_project_browser_PE(identifier):
   proj_list = proj.find_children_for_treeviewrow()
   for item in proj_list:
     if item.Visible:
-      if identifier in item.DataContext.Identifier.OleValue:
+      if identifier == item.DataContext.Identifier.OleValue:
         item.ClickR()
         Log.Checkpoint(item.DataContext.Identifier.OleValue + ' is Right Clicked.')
         break
@@ -45,7 +45,7 @@ def double_click_control_project_browser_PE(identifier):
   proj_list = proj.find_children_for_treeviewrow()
   for item in proj_list:
     if item.Visible and identifier in item.DataContext.Identifier.OleValue:
-      if not item.IsExpanded:
+      #if not item.IsExpanded:
         item.DblClick()
         Log.Checkpoint(item.DataContext.Identifier.OleValue + ' is Double Clicked.')
         Applicationutility.wait_in_seconds(2000, "Wait")
@@ -68,6 +68,7 @@ def expand_control_project_browser_PE(identifier):
     Log.Message(item.DataContext.Identifier.OleValue + ' is not available for expansion')
         
 
+  
 def control_executeable_combo_box_PE(param): 
   service, combo_item = param.split('$$')
   services = proj_obj.servicemapingeditortextbox.object
@@ -150,7 +151,7 @@ def select_instance_drag_drop_container_dock_PE1(identifier, dropping_point):
         return
 
     item.Drag(fromx - item.ScreenLeft, fromy - item.ScreenTop, tox - fromx, toy - fromy)
-    Applicationutility.wait_in_seconds(1500, 'Wait')
+    Applicationutility.wait_in_seconds(3000, 'Wait')
     Log.Message(f"Dragging from ({fromx}, {fromy}) to ({tox}, {toy}) completed.")
     if dropping_point == "ControlProject_1":
       Actionutility.modal_dialog_window_button("OK")
@@ -482,7 +483,7 @@ def Drag_instance_drop_container_section(param):
     if instance_identifier in instance.DataContext.Identifier.OleValue :
       fromx = instance.Top
       fromy = instance.Height / 2
-      instance.Drag(fromx,fromy,0,tox/2)
+      instance.Drag(fromx,fromy,0,tox/2+25)
       Log.Message("Drag and drop operation was performed")
       break
     
@@ -1014,6 +1015,9 @@ def Right_click_on_variable(var_name):
       Log.Message( item.DataContext.VariableName.OleValue+ " is right clicked")      
       Click_on_remove()
       break
+      
+def sssg():
+  Right_click_on_variable("Var5")
             
 def Click_on_remove():
   remove = eng_obj.rclickmenutextbox.object.FindAllChildren('Name', 'WPFObject("MenuItem", "Remove", 1)', 10)
@@ -1067,7 +1071,7 @@ def map_workstation(param):
       break
   else:
     Log.Message(f'{i.Text} doesnt exists')
-    
+   
 # will ad this later need to analyze properly for now we can skip this wont matter much  
 #def verify_nic_cards_available_mapping(param):
 #  service, engine = param.split("$$")
@@ -1109,6 +1113,7 @@ def Change_Password_Protection_Controller(param):
   field_label, options = param.split("$$")
   controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
   for control in controller_row:
+    Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
     if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
       control.Click()
       aqUtils.Delay(500)
@@ -1144,12 +1149,256 @@ def Change_SettingsOption(option):
     
  
 
-   
+def Enter_Variable_select_HMI(Variablename):
+  topo_obj.prmgensettings.object.Click()
+  Sys.Keys("[Enter]")
+  Sys.Keys(Variablename)
+  for i in range(6):
+    Sys.Keys("[Right]")
+  Sys.Keys("[Enter]")
   
+  
+def Click_Variable_animation_table_Variable_Tab(variable_name):
+  textbox = proj_obj.animationtablewindow.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    Log.Message((i.Name))
+    if variable_name in i.Name:
+      Log.Message(len(textbox))
+      i.Click()
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
+    
+def shsshhssh():
+  Click_Variable_Elementary_Variable_Tab("0")
+    
+def Click_on_variable_and_change_data_value_animation_table(param):
+  presentvalue, changedValue = param.split("$$")
+  Click_Variable_animation_table_Variable_Tab(presentvalue)
+  Sys.Keys(changedValue)
+  Sys.Keys("[Enter]")
+  
+def gsgsgsgsg():
+  Click_on_variable_and_change_data_value_animation_table("0$$162")
+  
+    
+    
+def Click_Variable_Elementary_Initiate_animationtable_Tab(variable_name):
+  textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  Log.Message(len(textbox))
+  for i in textbox:
+    Log.Message(i.Name)
+    if variable_name in i.Name:
+      i.Click()
+      Sys.Keys("^T")
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
+    
+def gsgs1g():
+  RClick_Variable_Elementary_Variable_Tab('SE1')
+  
+def Click_Variable_Elementary_Variable_Tab(variable_name):
+  textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  Log.Message(len(textbox))
+  for i in textbox:
+    Log.Message(i.Name)
+    if variable_name in i.Name:
+      i.Click()
+      Log.Message(f'{variable_name} in data editior was clicked')
+      break
+  else:
+    Log.Message(f'{variable_name} does not exists')
 
-def jjkdfn():
-  proj_tab = proj_obj.projectbrowsertextbox.object.FindAllChildren("ClrClassName", "TreeListViewRow", 100)
-  for tab in proj_tab:
-    if tab.DataContext.Identifier == "Containers":
-      tab.ClickR()
-      Log.Message("Super Brooo")
+def Click_P2p_Create_consecutive_variables(param):
+  variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
+  variable_number = 1
+  
+  for i in range(2):
+    desired_variable_name = desired_variable_name_input + str(variable_number)
+    Click_Variable_Elementary_Variable_Tab(variable_name)
+    Sys.Keys("[Down]")
+    Sys.Keys("[Enter]")
+    Sys.Keys(desired_variable_name )
+    variable_number = 2
+    variable_name = desired_variable_name 
+    for i in range(int(HMi_Column_no)):
+      Sys.Keys("[Right]")
+    Sys.Keys("[Enter]")
+       
+def change_datatype_dataeditor(param):
+  variablename,desired_data_type = param.split("$$")
+  textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    Log.Message(i.Name)
+    if variablename in i.Name:
+      i.Click()
+      Sys.Keys("[Right]")
+      Sys.Keys(desired_data_type)
+      Log.Message(f'data type is successfully changed')
+      break
+  else:
+    Log.Message(f'data type does not exists')
+    
+def Unpack_Variable(identifier):
+  Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Variablename:
+   if identifier in i.DataContext.Identifier.OleValue and i.Visible == True:
+    i.DataContext.IsPack = "False"
+    Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully changed the Pack Status')
+    break
+  Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
+    
+  
+def Unmap_Variable(identifier):
+  Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Variablename:
+   if identifier in i.DataContext.Identifier.OleValue and i.Visible == True:
+    i.ClickR()
+    proj_obj.unmapvariable.object.Click()
+    Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
+    break
+  Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
+  
+def Unmap_Variable_by_Keyboard_action(identifier2):
+  Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Variablename:
+   if identifier2 in i.DataContext.Identifier.OleValue and i.Visible == True:
+    i.Click()
+    Sys.Keys("[Del]")
+    Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
+    break
+  Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')  
+  
+def change_variable_value(param):
+  Variable , Value = param.split("$$")
+  textbox = proj_obj.mdiclientwindowtextbox.object.FindAllChildren('WndCaption', 'Table[Data Editor]', 100)
+  for i in textbox:
+    textbox1 = i.FindAllChildren('Name', 'TextObject(*)', 100)
+  for j in textbox1:
+    if Variable in j.Text:
+      Log.Message(j.Text)
+      Log.Message(j.Id)
+      j.Click()
+      Sys.Keys("[Right]")
+      Sys.Keys("[Enter]")
+      Sys.Keys(Value)
+      Sys.Keys("[Enter]")
+      Log.Message(f'Variable value is successfully changed')
+      break
+  else:
+    Log.Message(f'Variable does not exists')
+    
+def change_FBD_Value(param):
+  source_variable,desired_variable = param.split("$$")
+  textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for i in textbox:
+    if i.Text == source_variable:
+      i.DblClick()
+      Sys.Keys(desired_variable)
+      Sys.Keys("[Enter]")
+      
+def verify_variable_value_FBDBlock(value):
+  textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
+  for j in textbox:
+    if value in j.Text:
+      Log.Message(f'{j.Text} has been sucessfully veried in the screen')
+      Applicationutility.take_screenshot()
+      break
+  else:
+    Log.Message(f'{j.Text} does not exists in the screen')
+    Applicationutility.take_screenshot()
+    
+def gsgsg123s():
+  verify_variable_value_FBDBlock("162")
+  
+def Run_PLC_Simulator():
+  TestedApps.PLCSimulatorStarter.Run()
+  
+def Verify_backup_data_PE(param):
+  param = "Workstation_1"
+  row_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'GridViewRow', 1000)
+  for row in row_list:
+      if param in row.DataContext.Controller.OleValue:   
+          Log.Message("Description: " + row.DataContext.Description.OleValue)
+          Log.Message("BackupTime: " + row.DataContext.BackupTime.OleValue)
+          Log.Message("User: " + row.DataContext.User.OleValue)
+          Log.Message("Executable: " + row.DataContext.Executable.OleValue)
+          Log.Message("Controller: " + row.DataContext.Controller.OleValue)       
+          break
+  else:
+    Log.Message("Message not successfully verified")
+
+    
+def drag_and_drop_remote_to_local_P2P(param):
+  target, source = param.split("$$")
+  devices = proj_obj.remotevariablebutton.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  channels = proj_obj.sourcevariablebutton.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for device in devices:
+    if device.DataContext.Identifier.OleValue == source:
+      from_x = device.ScreenLeft + (device.Width / 2)
+      from_y = device.ScreenTop + (device.Height / 2)
+      break
+  else:
+    Log.Message("No visible device found with identifier")
+  for channel in channels:
+    if channel.DataContext.Identifier.OleValue == target:
+      to_x = channel.ScreenLeft + (channel.Width / 2)
+      to_y = channel.ScreenTop + (channel.Height / 2)
+      break
+  device.Drag(from_x - device.ScreenLeft, from_y - device.ScreenTop, to_x - from_x, to_y - from_y)
+  Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
+  
+def Edit_IODevice_Properties(param):
+  field_label, options = param.split("$$")
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  for control in controller_row:
+    Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
+    if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
+      control.DblClick()
+      aqUtils.Delay(500)
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "RadioButton", 10):
+        if item.WPFControlText == options:
+          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          return
+  Log.Error("Could not find the specific 'Controller' element.")
+   
+def Expand_IODevice_section(param):
+  IODevices_row = proj_obj.assignmentsdocktextbox.object.FindAllChildren("Name", "WPFObject('CheckedVisual')", 100)
+  for list in IODevices_row:
+    Sys.HighlightObject(list)
+    if param == list.DataContext.Identifier.OleValue:
+      list.Click()
+      Log.Message(list.DataContext.Identifier.OleValue+ " is expanded")
+      break     
+  else:
+    Log.Message(param+" is expanded")
+    
+def Map_IO_Devices(param):
+  service,field,engine = param.split("$$")
+  Click_On_Topological_entity_IODvices(service,field)
+  Map = proj_obj.servicemapdropdownbox.object
+  Map_List = Map.FindAllChildren('ClrClassName', 'TextBlock', 100)
+  for i in Map_List:
+    if i.Text == engine:
+      i.Click()
+      Log.Message(f'{i.Text} was clicked')
+      break
+  else:
+    Log.Message(f'{i.Text} doesnt exists')
+
+def Click_On_Topological_entity_IODvices(service,field):
+  Map = proj_obj.controlexecutablesproperty.object
+  Map_List = Map.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Map_List:
+    Sys.HighlightObject(i)
+    if service in str(i.DataContext.Identifier.OleValue):
+      service_list = i.FindAllChildren('ClrClassName', 'GridViewCell', 100)
+      for j in service_list:
+          if str(j.WPFControlOrdinalNo) == field:
+            j.Click()
+            return 
+               
+

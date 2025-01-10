@@ -373,7 +373,7 @@ def step_impl(identifier):
     CommonUtil.write_text_file("\nWhen I Double Click on Containers as \""+identifier+"\"")
     obj.textboxprojectbrowserdclickcontrolprojectbroswer(identifier)
     
-@when("I Drag and Drop the Instance to in Container as '(.*)'")
+@when("I Drag and Drop the Instance to in Container as {arg}")
 def step_impl(Instance):
     """I Drag and Drop the Instance to in Container"""
     #CommonUtil.write_text_file("\nWhen I Drag and Drop the Instance in Container to section as\""+controller+section+"\"")
@@ -665,4 +665,112 @@ def step_impl():
 def step_impl(identifiers):
     """I Click tabitem in EIO configaration window in control expert as '<identifiers>'"""
     CommonUtil.write_text_file("\nWhen I Click tabitem in EIO configaration window in control expert as \""+identifiers+"\"")
-    obj.ClicktabitemEIOconfigwindow(identifiers)    
+    obj.ClicktabitemEIOconfigwindow(identifiers)  
+    
+    
+@when("I Double Click on Elementary variables in Refine, configure window")
+def step_impl():
+    """I Double Click on Elementary variables in Refine, configure window"""
+    CommonUtil.write_text_file("\nWhen I Double Click on Elementary variables in Refine, configure window")
+    obj.elementvariabledoubleclick()  
+    
+@when("I Enter Variable name and select HMI option under Data Editor window")
+def step_impl():
+    """I Enter Variable name and select HMI option under Data Editor window"""
+    CommonUtil.write_text_file("\nWhen I Enter Variable name and select HMI option under Data Editor window")
+    obj.entervariableselecthmi()
+    
+@when("I Uncheck the pack CheckBox in P2P Communication Configuration window for variable {arg}")
+def step_impl(identifier):
+    """I Uncheck the pack CheckBox in P2P Communication Configuration window for variable '<identifier>'"""
+    CommonUtil.write_text_file("\nWhen I Uncheck the pack CheckBox in P2P Communication Configuration window for variable as \""+identifier+"\"")
+    obj.UnpackvariableP2Pconfigurationwindow(identifier)
+    
+@when("I Unmap variable in P2P communication configuration window by Context menu as {arg}")
+def step_impl(identifier):
+    """I Unmap variable in P2P communication configuration window by Context menu as '<identifier>'"""
+    CommonUtil.write_text_file("\nWhen I Unmap variable in P2P communication configuration window by Context menu as \""+identifier+"\"")
+    obj.UnmapP2Pvariablebycontextmenu(identifier)
+    
+@when("I Unmap variable in P2P communication configuration window by keyboard action as {arg}")
+def step_impl(identifier):
+    """I Unmap variable in P2P communication configuration window by keyboard action as '<identifier>'"""
+    CommonUtil.write_text_file("\nWhen I Unmap variable in P2P communication configuration window by keyboard action as \""+identifier+"\"")
+    obj.UnmapP2Pvariablebykeyboardaction(identifier)
+    
+@when("I  Click on Variables from elementary variables tab to initiate animationtable editor window named as {arg}")
+def step_impl(identifier):
+    """I Right Click on Variables from elementary variables tab named as '<identifier>'"""
+    obj.clickvariableelementaryinitiateanimationtabletab(identifier)
+    
+@when("I Run PLC Simulator")
+def step_impl():
+    """I Run PLC Simulator"""
+    obj.RunPLCsimulator()
+    
+@when("I Verify backup data PE in project explorer as {arg}")
+def step_impl(projectBrowser3):
+    """I Verify backup data PE in project explorer as '<project browser2>'"""
+    CommonUtil.write_text_file("\nWhen I Verify backup data PE in project explorer as \""+projectBrowser3+"\"")
+    obj.textboxprojectbrowserverifybackupdata(projectBrowser3)
+    
+@when("I Drag and drop from remote varaibles to source variables in P2P as {arg}")
+def step_impl(server):
+    """I Drag and drop from remote varaibles to source variables in P2P as '<server>'"""
+    CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    Applicationutility.wait_in_seconds(1000,"wait")
+    obj.textboxdraganddropremotetolocalP2P(server)
+    
+    
+@when("I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as {arg}")
+def step_impl(server):
+    """I Enter Consecutive Variable name and select HMI option under Data Editor window and enter parameters as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I Drag and drop from remote varaibles to source variables in P2P as \""+server+"\"")
+    obj.textboxclickp2pcreateconsecutivevariables(server)
+ 
+@when("I change Data type in Data Editor as {arg}")
+def step_impl(server):
+    """I change Data type in Data Editor as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data type in Data Editor as \""+server+"\"")
+    obj.textboxchangedatatypedataeditor(server)  
+    
+    
+@when("I change Data value in Data Editor as {arg}")
+def step_impl(server):
+    """I change Data value in Data Editor as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data value in Data Editor as \""+server+"\"")
+    obj.clickonvariableandchangedatavalueanimationtable(server) 
+ 
+@when("I Expand IO Device section project browser in project explorer as {arg}")
+def step_impl(projectBrowser1):
+    """I Expand IO Device section project browser in project explorer as '<project browser1>'"""
+    CommonUtil.write_text_file("\nWhen I Expand IO Device section project browser in project explorer as \""+projectBrowser1+"\"")
+    obj.textboxprojectbrowserexpandiodevicesection(projectBrowser1)
+  
+@when("I Edit IO Device Properties project browser in project explorer as {arg}")
+def step_impl(projectBrowser2):
+    """I Edit IO Device Properties project browser in project explorer as '<project browser2>'"""
+    CommonUtil.write_text_file("\nWhen I Edit IO Device Properties project browser in project explorer as \""+projectBrowser2+"\"")
+    obj.textboxprojectbrowsereditiodeviceproperties(projectBrowser2)
+  
+@when("I Map IO Devices in PE project browser in project explorer as {arg}")
+def step_impl(projectBrowser4):
+    """I Map IO Devices in PE project browser in project explorer as '<project browser4>'"""
+    CommonUtil.write_text_file("\nWhen I Map IO Devices in PE project browser in project explorer as \""+projectBrowser4+"\"")
+    obj.textboxprojectbrowsermapiodevicesinpe(projectBrowser4)   
+
+    
+@when("I change Data value in FBD Section as {arg}")
+def step_impl(server):
+    """I change Data value in FBD Section as '<param>'"""
+    CommonUtil.write_text_file("\nWhen I change Data value in FBD Section as \""+server+"\"")
+    obj.changeFBDValue(server)
+    
+@when("I verify {arg} is reflected in FBD section")
+def step_impl(server):
+    """I verify '<variable>' is reflected in FBD section"""
+    obj.verifyvariablevalueFBDBlock(server)
+    
+    
+
+   

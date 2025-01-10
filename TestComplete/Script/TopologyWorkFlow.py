@@ -6,11 +6,12 @@ import Engineeringclientutility
 import Topologyutility
 import Actionutility
 import Topologyexplorerutility
+from SystemExplorerScreen import SystemExplorerScreen
 
 class TopologyWorkFlow:
     """TopologyWorkFlow"""
     topology_obj = Topology()
-
+    ses_obj = SystemExplorerScreen()
         
     def textboxtopologyexplorertreeselectcontextmenuitemec(self,menu_item):
         """textboxtopologyexplorertreeselectcontextmenuitemec"""
@@ -29,6 +30,7 @@ class TopologyWorkFlow:
     def textboxbackupdatadescriptionentered(self,backupDataDescription3):
         """topology_obj.backupdatadescriptiontextbox"""
         TopologyWorkFlow.topology_obj.backupdatadescriptiontextbox.enter_text(backupDataDescription3)
+        ses_obj.circularprogressbarbutton.wait_for_element_property('Exists', None, 20000)
         
     def textboxdeploydataselectiongridselectdeploydatafromselectiongridte(self):
         """textboxdeploydataselectiongridselectdeploydatafromselectiongridte"""
@@ -54,42 +56,42 @@ class TopologyWorkFlow:
     def textboxtopologyexplorertreesearchtemplatebrowserec(self,search_text):
         """textboxtopologyexplorertreesearchtemplatebrowserec"""
         try:
-            Topologyexplorerutility.search_template_browser_EC(search_text)
+            Topologyutility.search_template_browser_EC(search_text)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeselecttemplateec(self,param):
         """textboxtopologyexplorertreeselecttemplateec"""
         try:
-            Topologyexplorerutility.Select_template_EC (param)
+            Topologyutility.Select_template_EC(param)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreedblclicktemplatete(self,temp_name):
         """textboxtopologyexplorertreedblclicktemplatete"""
         try:
-            Topologyexplorerutility.DblClick_template_TE(temp_name)
+            Topologyutility.DblClick_template_TE(temp_name)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeexpandcommunicationtabte(self,val):
         """textboxtopologyexplorertreeexpandcommunicationtabte"""
         try:
-            Topologyexplorerutility.Expand_communication_tab_TE(val)
+            Topologyutility.Expand_communication_tab_TE(val)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreeeditipaddress(self,param):
         """textboxtopologyexplorertreeeditipaddress"""
         try:
-            Topologyexplorerutility.edit_IP_Address(param)
+            Topologyutility.edit_IP_Address(param)
         except Exception as ex:
             raise Exception(ex) from ex
             
     def textboxtopologyexplorertreerclicktemplatete(self,temp_name):
         """textboxtopologyexplorertreerclicktemplatete"""
         try:
-            Topologyexplorerutility.RClick_template_TE(temp_name)
+            Topologyutility.RClick_template_TE(temp_name)
         except Exception as ex:
             raise Exception(ex) from ex
             
@@ -119,6 +121,13 @@ class TopologyWorkFlow:
         """setipandsubnetinstbpropertieste"""
         try:
             Topologyexplorerutility.set_ip_and_subnet(ip_address, subnet_mask)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerdoubleclickonaddwindow(self,property):
+        """textboxtopologyexplorerhardwarecatalogdevices"""
+        try:
+            Topologyexplorerutility.Double_Click_on_Channel(property)
         except Exception as ex:
             raise Exception(ex) from ex
 
@@ -306,7 +315,7 @@ class TopologyWorkFlow:
             Topologyutility.Verify_Device_Hardware_Catalog_TE(smp)
         except Exception as ex:
             raise Exception(ex) from ex
-            
+
     def rightclickcontroller(self, item):
             """rightclickinstalledprm"""
             try:
@@ -334,4 +343,122 @@ class TopologyWorkFlow:
                       Topologyexplorerutility.network_panel(interface, controller)
                     except Exception as ex:
                         raise Exception(ex) from ex
+                    
+    def textboxtopologyexplorerhardwarecatalogdevices(self,smp):
+        """textboxtopologyexplorerhardwarecatalogdevices"""
+        try:
+            Topologyutility.Verify_Device_Hardware_Catalog_TE(smp)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerdoubleclickonftdconfigurationwindow(self,property):
+        """textboxtopologyexplorerdoubleclickonftdconfigurationwindow"""
+        try:
+            Topologyexplorerutility.double_click_on_ftdconfiguration_window(property)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerselectslotinftdconfigurationwindow(self,slot, module):
+        """textboxtopologyexplorerdoubleclickonftdconfigurationwindow"""
+        try:
+            Topologyexplorerutility.select_slots_in_ftdconfiguration(slot, module)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerclickbuttoninfigurationwindow(self, button):
+        """textboxtopologyexplorerclickbuttoninfigurationwindow"""
+        try:
+            Topologyexplorerutility.Click_button_in_ftdconfiguration(button)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxtopologyexplorerverifydtmdeviceinfigurationwindow(self):
+        """textboxtopologyexplorerverifydtmdeviceinfigurationwindow"""
+        try:
+            Topologyexplorerutility.verify_dtm_device()
+        except Exception as ex:
+            raise Exception(ex) from ex    
+        
+    def selectsubmenuoptioninmodaldialogue(self, option):
+        """clickbtninnewdevicepopup"""
+        try:
+          Topologyexplorerutility.select_submenu_options_in_controlexpert_modaldialogue(option)
+        except Exception as ex:
+            raise Exception(ex) from ex  
+        
+    def selectfinaloptioninmodaldialogue(self, option):
+        """clickbtninnewdevicepopup"""
+        try:
+          Topologyexplorerutility.select_final_option_in_controlexpert_modaldialogue(option)
+        except Exception as ex:
+            raise Exception(ex) from ex    
+            
+    def importmodulesinftdconfigwindow(self, modules):
+        """importmodulesinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.import_modules_in_ftdconfig(modules)
+        except Exception as ex:
+            raise Exception(ex) from ex  
+            
+    def clickbuttoninftdconfigwindow(self, button):
+        """clickbuttoninftdconfigwindow"""
+        try:
+            Topologyexplorerutility.click_button_in_fdtconfig(button)
+        except Exception as ex:
+            raise Exception(ex) from ex 
+            
+    def clickchannelinftdconfigwindow(self, property):
+        """clickchannelinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.click_dtm_channel_in_fdtconfig(property)
+        except Exception as ex:
+            raise Exception(ex) from ex  
+            
+    def selecttabinftdconfigwindow(self, tab_name):
+        """selecttabinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.select_tab_in_FDTConfig(tab_name)
+        except Exception as ex:
+            raise Exception(ex) from ex   
+            
+    def updateipinftdconfigwindow(self, ip):
+        """updateipinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.update_ip_address_in_fdtconfig(ip)
+        except Exception as ex:
+            raise Exception(ex) from ex   
+            
+    def clickcheckboxinupdateprojectwindow(self, prop):
+        """updateipinftdconfigwindow"""
+        try:
+            Topologyexplorerutility.select_checkbox_in_updateproject(prop)
+        except Exception as ex:
+            raise Exception(ex) from ex
 
+    def textboxconfirmpasswordboxentercontrollerpassworddeployscreente(self,password):
+            """textboxconfirmpasswordboxentercontrollerpassworddeployscreente"""
+            try:
+                Topologyutility.Enter_Controller_Password_deploy_screen_TE(password)
+            except Exception as ex:
+                raise Exception(ex) from ex
+
+    def dblclickpropertiesworkstation(self,text):
+        """dblclickpropertiesworkstation"""
+        try:
+            Topologyutility.DBlClick_Properties_workstation(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def expandpropertiesworkstation(self,text):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyutility.Expand_Properties_workstation(text)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def changeportnumberworkstation(self,text):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyutility.change_port_number_workstation_TE(text)
+        except Exception as ex:
+            raise Exception(ex) from ex

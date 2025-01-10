@@ -8,7 +8,7 @@ And I click modal dialog window project browser in project explorer as '<Button>
 Then I Verify the new fbd section created
 
 Examples:
-  | SlNo. | assignmentsdock1                   | Button |
+  | SlNo. | assignmentsdock1                    | Button |
   | 1     | M580_Standalone$$Create FBD Section | OK     |
   
 
@@ -19,7 +19,7 @@ Scenario Outline: Creating Multiple section and verify
 When I Create multiple FBD Sections and Verify as '<assignmentsdock2>'
 
 Examples:
-  | SlNo. | assignmentsdock2                       |
+  | SlNo. | assignmentsdock2                        |
   | 1     | M580_Standalone$$Create FBD Section$$10 |
   
   

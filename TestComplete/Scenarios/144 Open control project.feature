@@ -8,10 +8,15 @@ And I Select context menu item EC project browser in project explorer as '<conte
 And I Select controller in context menu as '<controller>'
 And I rename the ControlProject as '<controller_name>'
 Then I verifies that '<controller_name>' Created in Project Explorer
+@Create_standalone_Control_Project_1
 Examples:
   | SlNo. | project browser1 | context menu           | controller | controller_name |
   | 1     | System_1         | Create Control Project | M580       | M580_Standalone |
   
+@Create_standalone_Control_Project_2
+Examples:
+  | SlNo. | project browser1 | context menu           | controller | controller_name  |
+  | 1     | System_1         | Create Control Project | M580       | M580_Standalone2 |
   
 @TC_EPE_PE_CP_0003
 @test0003
@@ -44,14 +49,20 @@ Examples:
   
 @TC_EPE_PE_CP_0007
 @test0007
-Scenario Outline: Create a Control Project for M580_Safety_Redunant
+Scenario Outline: Rename Controller
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I rename the ControlProject as '<controller_name>'
 Then I verifies that '<controller_name>' Created in Project Explorer
+@Rename_controller_M580_Safety_Redundant
 Examples:
   | SlNo. | project browser1 | context menu | controller_name       |
   | 1     | ControlProject_1 | Rename       | M580_Safety_Redundant |
+  
+@Rename_controller_M580_Safety 
+Examples:
+  | SlNo. | project browser1 | context menu | controller_name |
+  | 1     | ControlProject_1 | Rename       | M580_Safety     |
   
   
 @TC_EPE_PE_CP_0009

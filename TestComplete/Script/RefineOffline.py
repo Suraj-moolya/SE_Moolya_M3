@@ -154,3 +154,12 @@ class RefineOffline(MapBase):
         """builddeploychangesbutton"""
         return self.get_element("BuildDeployChanges_RefineOnline")            
               
+    @property
+    def initializerefineofflinemenuitem(self):
+        """initializerefineoffline"""
+        return self.get_element("Initialize_RefineOffline") 
+
+    @property
+    def modificationbuttonrefineoffline(self):
+        """modificationbuttonrefineoffline"""
+        return self.get_element("ModificationButton_RefineOffline") 

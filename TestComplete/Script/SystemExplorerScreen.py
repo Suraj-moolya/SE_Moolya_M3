@@ -173,9 +173,15 @@ class SystemExplorerScreen(MapBase):
     def asperrequirementbutton(self):
         """asperrequirementbutton"""
         return self.get_element("asperrequirement_SystemExplorerScreen")
-        
+
     @property
     def releasesupervisionparticipant(self):
         """asperrequirementbutton"""
         return self.get_element("MainToolBar_SystemExplorerScreen")
+      
+    @property
+    def browsebutton(self):
+        """browsebutton"""
+        return self.get_element("BrowseButton_SystemExplorerScreen")
+
               

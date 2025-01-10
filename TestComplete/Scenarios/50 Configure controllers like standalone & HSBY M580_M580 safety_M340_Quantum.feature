@@ -29,9 +29,13 @@ Then Verify Action message in notification pannel project browser in project exp
 When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
 Examples:
-  | SlNo. | context menu            | as per requirement1 | project browser1        | button          | project browser2        | FolderName |
-  | 1     | Create Ethernet Network | SE_Network          | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
-  | 2     | Create Ethernet Network | Lab_Network         | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | SlNo. | context menu            | as per requirement1       | project browser1        | button          | project browser2        | FolderName |
+  | 1     | Create Ethernet Network | SE_Network                | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | 2     | Create Ethernet Network | Lab_Network               | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | 3     | Create Ethernet Network | STB_Island_Device_Network | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  | 4     | Create Ethernet Network | PRM_Device_Network        | Create Ethernet Network | Networks$$Close | Update Ethernet Network | Networks   |
+  
+
   
   
 @test0002a
@@ -102,15 +106,33 @@ Examples:
 @TC_EPE_TE_CS_0003
 @test0001
 Scenario Outline: Create a Control Project for M580_Standalone
-When I Right Click on nodes System Explorer Node in system explorer as 'Controllers'
+When I Right Click on nodes System Explorer Node in system explorer as '<Folder Name>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I Select controller in context menu as '<controller>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
 When I rename the ControlProject as '<controller_name>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
+@Create_First_Controller_for_standlone
 Examples:
-  | SlNo. | context menu      | controller | controller_name | project browser1  | project browser2  |
-  | 1     | Create Controller | M580       | M580_Standalone | Create Controller | Update Controller |
+  | SlNo. | Folder Name | context menu      | controller | controller_name | project browser1  | project browser2  |
+  | 1     | Controllers | Create Controller | M580       | M580_Standalone | Create Controller | Update Controller |
+  
+@Create_Second_Controller_for_standlone
+Examples:
+  | SlNo. | Folder Name | context menu      | controller | controller_name  | project browser1  | project browser2  |
+  | 1     | Controllers | Create Controller | M580       | M580_Standalone2 | Create Controller | Update Controller |
+
+  
+@TC_EPE_TE_CS_0003d
+@test0001
+Scenario Outline: Create a Devices For PRM Profibus
+When I Right Click on nodes System Explorer Node in system explorer as '<Folder Name>'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+Then Verify Action message in notification pannel project browser in project explorer as '<context menu>'   
+@Create_PRM_Device
+Examples:
+  | SlNo. | Folder Name | context menu           |
+  | 1     | Controllers | Create PRM Profibus DP |
   
   
 @TC_EPE_TE_CS_0003a
@@ -178,9 +200,15 @@ When I Right Click on nodes System Explorer Node in system explorer as '<Control
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 Then Verify Action message in notification pannel project browser in project explorer as '<Notification>'
 
+@open_Configuration_window_of_Controller_M580_Standalone
 Examples:
   | SlNo. | Controller      | context menu | Notification          |
   | 1     | M580_Standalone | Configure    | Open Configure Editor |
+  
+@open_Configuration_window_of_Controller_M580_Safety
+Examples:
+  | SlNo. | Controller  | context menu | Notification          |
+  | 1     | M580_Safety | Configure    | Open Configure Editor |
   
   
 @TC_EPE_TE_CS_000
@@ -212,6 +240,26 @@ Examples:
   | SlNo. | button                 | FolderName  |
   | 1     | M580_Standalone$$Close | Controllers |
   
+@Close_Controllers_in_Topology_Explorer__M580_Safety
+Examples:
+  | SlNo. | button             | FolderName  |
+  | 1     | M580_Safety$$Close | Controllers |
+
+@Close_devices_in_Topology_Explorer__Devices__-50-
+Examples:
+  | SlNo. | button         | FolderName |
+  | 1     | Devices$$Close | Devices    |
+    
+  
+@test0002b
+Scenario Outline: Open Workstation_2  in Topology Explorer
+When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+Then I Verify Folder Renamed as '<FolderName>' in Topology Explorer is Expanded
+
+@Open_Workstation_in_Topology_Explorer_Workstation_2
+Examples:
+  | SlNo. | button              | FolderName  |
+  | 1     | Workstation_2$$Open | Controllers |
   
 @TC_EPE_TE_CS_0003
 @test0001
@@ -220,23 +268,17 @@ When I Right Click on nodes System Explorer Node in system explorer as 'Workstat
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I enterkey Project Browser RO in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
+@Create_Workstation_1
 Examples:
-  | SlNo. | context menu        | project browser1   |
-  | 1     | Create Station Node | Create Workstation |
+  | SlNo. | context menu       | project browser1   |
+  | 1     | Create Workstation | Create Workstation |
   
-@TC_EPE_TE_CS_0003
-@test0001
-Scenario Outline: Create OFS,Control Service,Supervision in Workstation folder
-When I Right Click on nodes System Explorer Node in system explorer as 'Workstation_1'
-And I Select context menu item EC project browser in project explorer as '<context menu>'
-When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
-Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
+@Create_Workstation_2
 Examples:
-  | SlNo. | context menu           | project browser1       | button               |
-  | 1     | Create OFS             | Create Service Handler | Workstation_1$$Close |
-  | 2     | Create Control Service | Create Service Handler | Workstation_1$$Close |
-  | 3     | Create Supervision     | Create Service Handler | Workstation_1$$Close |
+  | SlNo. | context menu       | project browser1   |
+  | 1     | Create Workstation | Create Workstation |
   
+
   
 @TC_EPE_TE_CS_0003
 @test0001
@@ -262,6 +304,7 @@ Examples:
   | SlNo. | context menu | options           | Button name |
   | 1     | Properties   | Controller$$False | Yes         |
   
+
   
 @TC_EPE_TE_CS_000
 @test000
@@ -284,15 +327,22 @@ Examples:
   | SlNo. | Cpu_version          |
   | 1     | BME P58 5040   03.20 |
 
+@Change_CPU_Version_of_controller__BME_P58_4040S_03.20
+Examples:
+  | SlNo. | Cpu_version           |
+  | 1     | BME P58 4040S   03.20 |
+  
+  
 
 @TC_EPE_TE_CS_000
 @test000
 Scenario Outline: Double click on PLC Bus - EIO 
 When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
-
+@Double_click_on_PLC_Bus_EIO 
 Examples:
   | SlNo. | Project Browser RO1        |
   | 1     | Configuration$$0 : PLC bus |
+
   
 
 @TC_EPE_TE_CS_000
@@ -303,3 +353,23 @@ When I close PLC Bus window in controller configuration window
 Examples:
   | SlNo. |
   | 1     |
+
+  
+@TC_EPE_TE_CS_000
+@test000
+Scenario Outline: Change safety settings of safety controller to Disable
+When I Right Click on nodes System Explorer Node in system explorer as 'M580_Safety'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+When I change controller properties with drop down options as '<options>'
+And I click modal dialog window project browser in project explorer as '<Button>'
+When I change controller properties with drop down options as '<options1>'
+When I Select button in the modal dialoge window as '<Button name>'
+
+Examples:
+  | SlNo. | context menu | options           | Button name | options1      | Button |
+  | 1     | Properties   | Controller$$False | Yes         | Safety$$False | Yes    |
+  
+  
+
+  
+  

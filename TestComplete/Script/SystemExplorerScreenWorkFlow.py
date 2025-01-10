@@ -206,4 +206,8 @@ class SystemExplorerScreenWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
         
+    def buttonsystemexplorerbrowse(self):
+        """systemexplorerscreen_obj.systemexplorernodebutton"""
+        SystemExplorerScreenWorkFlow.systemexplorerscreen_obj.browsebutton.click()
+        
         

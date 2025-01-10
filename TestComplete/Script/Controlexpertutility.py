@@ -3,10 +3,12 @@
 from RefineOffline import RefineOffline
 from MessageBox import MessageBox
 import Applicationutility
+import Topologyexplorerutility
 from CurrentScreen import CurrentScreen
 from DialogCE import DialogCE    
 from ControlExpert import ControlExpert  
 from ProjectExplorerTab import ProjectExplorerTab
+from TopologyExplorerTab import TopologyExplorerTab
 
 diace_obj = DialogCE()
 ce_obj = ControlExpert()
@@ -14,6 +16,7 @@ cs_obj = CurrentScreen()
 msg_obj = MessageBox()
 refoff_obj = RefineOffline()
 proj_obj = ProjectExplorerTab()
+topoexo_obj = TopologyExplorerTab()
 
 def select_main_folder_project_browser_CE():
   project_browser = refoff_obj.projectbrowserrotextbox.object
@@ -62,7 +65,36 @@ def afbsdzv():
   list_items = "Configuration$$0 : PLC bus" #"ControlProject_1", 
   double_click_selected_project_browser_item_CE(list_items)
 #  data_selection = refoff_obj.dataselectiontextbox  #.object
+
+def rclick_window_CE(): 
+  win = refoff_obj.mdiwindowtextbox.object
+  win.ClickR((win.Width/2)-100, win.Height/2)
   
+  data_selection = refoff_obj.dataselectiontextbox.object
+  data_selection.Click()
+  
+  comb = refoff_obj.windowcomboboxtextbox.object
+  comb.Keys('XOR')
+  comb.Keys('[Enter]')
+  Topologyexplorerutility.modaldialogue_window_ce("Yes")
+  win.Click((win.Width/2)-100, win.Height/2)
+  win.Keys('[Esc]')
+  win1 = refoff_obj.fbdsectionwindowtextbox.object 
+  Applicationutility.wait_in_seconds(1500, 'wait')
+  win1.TextObject("IN2").DblClick()
+  comb.Keys('Int2')
+  comb.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait')
+  Sys.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait') 
+  win1.TextObject("OUT").DblClick()
+  comb.Keys('Int3')
+  comb.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait')
+  Sys.Keys('[Enter]')
+  Applicationutility.wait_in_seconds(1000, 'wait')
+
+   
 #def rclick_window_CE(): 
 #  win = refoff_obj.mdiwindowtextbox.object
 #  text = refoff_obj.face+ttextbox.object.ClickR()
@@ -104,20 +136,20 @@ def afbsdzv():
 #  validate = refoff_obj.createvariablebutton.object
 #  validate.Click()
 
-def rclick_window_CE(): 
-  win = refoff_obj.mdiwindowtextbox.object
-  text = refoff_obj.facettextbox.object.ClickR()
-  
-  data_selection = refoff_obj.dataselectiontextbox.object
-  data_selection.Click()
-  
-  comb = refoff_obj.windowcomboboxtextbox.object
-  comb.Keys('XOR')
-  comb.Keys('[Enter]')
-  win.Click(win.Width/2, win.Height/2)
-  win.Keys('[Esc]')
-  win1 = refoff_obj.fbdsectionwindowtextbox.object 
-  Applicationutility.wait_in_seconds(1500, 'wait')
+#def rclick_window_CE(): 
+#  win = refoff_obj.mdiwindowtextbox.object
+#  text = refoff_obj.facettextbox.object.ClickR()
+#  
+#  data_selection = refoff_obj.dataselectiontextbox.object
+#  data_selection.Click()
+#  
+#  comb = refoff_obj.windowcomboboxtextbox.object
+#  comb.Keys('XOR')
+#  comb.Keys('[Enter]')
+#  win.Click(win.Width/2, win.Height/2)
+#  win.Keys('[Esc]')
+#  win1 = refoff_obj.fbdsectionwindowtextbox.object 
+#  Applicationutility.wait_in_seconds(1500, 'wait')
 
   
   
@@ -125,10 +157,16 @@ def rclick_window_CE():
 def RClick_on_Block_Refine_Offline(identifier):  
   Window = refoff_obj.mdiwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
   for Window_Text in Window:
-    if identifier in Window_Text.Text:
+    if identifier in Window_Text.Text and Window_Text.Visible:
         Window_Text.ClickR()
         Log.Message(Window_Text.Text + ' is Right Clicked.')
-        Delay(1000)
+        break
+  else:
+    Log.Message(Window_Text.Text + ' is not visible in the Window')
+        
+def sfsfsf():
+  RClick_on_Block_Refine_Offline("WRITE_REMOTE")
+  Unlock_Dialog_popup("Unlock")
         
 def Unlock_Dialog_popup(button_name):
   obj = Sys.Process("ControlExpert", 4).Dialog("Unlock")
@@ -141,6 +179,7 @@ def Unlock_Dialog_popup(button_name):
   else:
     Log.Warning("Button name mentioned doesnt exists")
     
+    
 def Delete_link_Refine_Offline(identifier):
   Window = refoff_obj.mdiwindowtextbox.object
   Window_lst = Window.FindAllChildren("Name", "TextObject*", 1000)
@@ -148,7 +187,10 @@ def Delete_link_Refine_Offline(identifier):
     if identifier in obj.Text:
       Window.Click(obj.Left+50+obj.Width,obj.Top+40+(obj.Height/2))
       Delay(1000)
-      Sys.Keys("[Del]")
+      #Sys.Keys("[Del]")
+      
+def sfsfsf2():
+  Delete_link_Refine_Offline("R_Var_8")
           
 def Consistency_Check_Select_All():
   headers = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'GridViewHeaderCell', 25)
@@ -367,8 +409,9 @@ def edit_IP_Address(param):
   
       
 def Verify_Mapped_DTM_device_present_CE(Identifier):
-  objects = cs_obj.projectbrowserwindow.object.FindAllChildren("ObjectType","OutlineItem",20)
+  objects = topoexo_obj.dtmbrowserprop.object.FindAllChildren("ObjectType","OutlineItem",200)
   for obj in objects:
+    Log.Message(str(obj.ObjectIdentifier))
     if Identifier in str(obj.ObjectIdentifier):
       Log.Checkpoint(str(obj.ObjectIdentifier)+" DTM device added")
       break
@@ -475,3 +518,21 @@ def Click_tab_item_EIO_config_window(identifier):
   else: 
     Log.Warning(identifier + " is not available")
 
+def Add_Vairable_Logic_Block_link_P2P(param):
+  identifier , variable = param.split("$$")
+  Window = proj_obj.mdiclientwindowtextbox.object
+  Window_lst = Window.FindAllChildren("Name", "TextObject*", 1000)
+  for obj in Window_lst:
+    if identifier in obj.Text and obj.Visible:
+      obj.DblClick()
+      Sys.Keys(variable)
+      Sys.Keys("[Enter]")
+      Log.Checkpoint(obj.Text + " is Double Clicked")
+      break
+  else:
+    Log.Warning(identifier + " is not available")
+      
+    
+def change_Port_Number_PLC_Simulator():
+  Simulator_Textbox = diace_obj.simulatorporttextbox.object
+  Simulator_Textbox.SetText("503")

@@ -227,6 +227,11 @@ class MessageBoxWorkFlow:
     def clickopenimporttewindow(self):
         """messagebox_obj.reconfirmokbutton"""
         MessageBoxWorkFlow.messagebox_obj.importteopenbutton.click()
+        
+        
+    def checkboxheadercbchecked(self):
+            """messagebox_obj.headercbcheckbox"""
+            MessageBoxWorkFlow.messagebox_obj.headercbcheckbox.checkboxchecked()
             
 
                 

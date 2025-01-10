@@ -183,7 +183,7 @@ class RefineOfflineWorkFlow:
         """refineoffline_obj.dtmbrowserbutton"""
         #RefineOfflineWorkFlow.refineoffline_obj.dtmbrowserbutton.click()
         Sys.Keys("~!1")
-        
+        Applicationutility.wait_in_seconds(1500, 'Wait')
         
     def textboxprojectbrowserroverifymappeddtmdevicepresentce(self,Identifier):
         """textboxprojectbrowserroverifymappeddtmdevicepresentce"""
@@ -314,5 +314,19 @@ class RefineOfflineWorkFlow:
       """clickbuilddeploychanges"""
       try:
         RefineOfflineWorkFlow.refineoffline_obj.builddeploychangesbutton.click()
+      except Exception as ex:
+        raise Exception(ex) from ex
+        
+    def initializerefineofflinemenuitemRF(self):
+      """clickbuilddeploychanges"""
+      try:
+        RefineOfflineWorkFlow.refineoffline_obj.initializerefineofflinemenuitem.click()
+      except Exception as ex:
+        raise Exception(ex) from ex
+        
+    def modificationbuttonrefineofflineRF(self):
+      """clickbuilddeploychanges"""
+      try:
+        RefineOfflineWorkFlow.refineoffline_obj.modificationbuttonrefineoffline.click()
       except Exception as ex:
         raise Exception(ex) from ex

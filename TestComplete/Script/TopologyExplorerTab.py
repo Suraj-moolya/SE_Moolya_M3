@@ -8,6 +8,11 @@ class TopologyExplorerTab(MapBase):
     def closeabletabbutton(self):
         """closeabletabbutton"""
         return self.get_element("CloseableTab_TopologyExporerTab")
+        
+    @property
+    def configurationhardwarecatalog1(self):
+        """configurationhardwarecatalog1"""
+        return self.get_element("ConfigurationHardwareCatalog1_TopologyExporerTab")
               
     @property
     def systemprojectbutton(self):
@@ -58,6 +63,11 @@ class TopologyExplorerTab(MapBase):
     def prmgensettings(self):
         """prmgensettings"""
         return self.get_element("PRMgensettings_TopologyExporerTab")
+        
+    @property
+    def prmgensettingsrefineonline(self):
+        """prmgensettings"""
+        return self.get_element("PRMgensettingsrefineonline_TopologyExporerTab")
         
     @property
     def configurationhardwarecatalog(self):
@@ -182,7 +192,7 @@ class TopologyExplorerTab(MapBase):
     def deploycheckbox(self):
         """deploycheckbox"""
         return self.get_element("DeployCheckbox_TopologyExporerTab")
-        
+
     @property
     def openethernetnetwork(self):
         """checkethernetnetwork"""
@@ -192,4 +202,23 @@ class TopologyExplorerTab(MapBase):
     def networkpanel(self):
         """checkethernetnetwork"""
         return self.get_element("NetworkPanel_TopologyExplorerTab")
-    
+     
+    @property
+    def fdtconfigurationwindowtextbox(self):
+        """oldpasswordboxtextbox"""
+        return self.get_element("fdtConfigurationWindow_TopologyExporerTab")
+              
+    @property
+    def dtmdevicewindowtextbox(self):
+        """dtmdevicewindowtextbox"""
+        return self.get_element("DTMDevice_TopologyExporerTab")
+              
+    @property
+    def ipconfigfdtwindowtextbox(self):
+        """dtmdevicewindowtextbox"""
+        return self.get_element("IPConfigFDT_TopologyExporerTab")
+              
+    @property
+    def updateprojecttab(self):
+        """updateprojecttab"""
+        return self.get_element("UpdateProjectTab_TopologyExporerTab")

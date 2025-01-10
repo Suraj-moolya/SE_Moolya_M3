@@ -777,3 +777,137 @@ class ProjectExplorerTabWorkFlow:
             Controlexpertutility.Click_tab_item_EIO_config_window(identifiers)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+            
+    def elementvariabledoubleclick(self):
+        """elementvariabledoubleclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.elementvariabletextbox.double_click()
+        except Exception as ex:
+            raise Exception(ex) from ex 
+            
+    def entervariableselecthmi(self):
+        """entervariableselecthmi"""
+        try:
+            Projectexplorertabutility.Enter_Variable_select_HMI()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def dataeditorvariableclick(self):
+        """dataeditorvariableclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.elementvariabletextboxrefine.click()
+        except Exception as ex:
+            raise Exception(ex) from ex 
+            
+            
+    def UnpackvariableP2Pconfigurationwindow(self,identifier):
+                """UnpackvariableP2Pconfigurationwindow"""
+                try:
+                    Projectexplorertabutility.Unpack_Variable(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex     
+
+                    
+    def UnmapP2Pvariablebycontextmenu(self,identifier):
+                """UnmapP2Pvariablebycontextmenu"""
+                try:
+                    Projectexplorertabutility.Unmap_Variable(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex   
+                    
+                    
+    def UnmapP2Pvariablebykeyboardaction(self,identifier):
+                """UnmapP2Pvariablebykeyboardaction"""
+                try:
+                    Projectexplorertabutility.Unmap_Variable_by_Keyboard_action(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex     
+                    
+    def clickvariableelementaryinitiateanimationtabletab(self,identifier):
+                """RClickVariableElementaryVariableTab"""
+                try:
+                    Projectexplorertabutility.Click_Variable_Elementary_Initiate_animationtable_Tab(identifier)
+                except Exception as ex:
+                    raise Exception(ex) from ex    
+                    
+    def RunPLCsimulator(self):
+                """RunPLCsimulator"""
+                try:
+                    Projectexplorertabutility.Run_PLC_Simulator()
+                except Exception as ex:
+                    raise Exception(ex) from ex  
+                    
+                    
+    def textboxprojectbrowserverifybackupdata(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Verify_backup_data_PE(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                
+    def textboxdraganddropremotetolocalP2P(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.drag_and_drop_remote_to_local_P2P(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+                    
+    def textboxclickp2pcreateconsecutivevariables(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Click_P2p_Create_consecutive_variables(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def textboxchangedatatypedataeditor(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.change_datatype_dataeditor(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def clickonvariableandchangedatavalueanimationtable(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.Click_on_variable_and_change_data_value_animation_table(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def textboxprojectbrowserexpandiodevicesection(self,param):
+        """textboxprojectbrowserexpandiodevicesection"""
+        try:
+            Projectexplorertabutility.Expand_IODevice_section(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxprojectbrowsereditiodeviceproperties(self,param):
+        """textboxprojectbrowsereditiodeviceproperties"""
+        try:
+            Projectexplorertabutility.Edit_IODevice_Properties(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxprojectbrowsermapiodevicesinpe(self,param):
+        """textboxprojectbrowsermapiodevicesinpe"""
+        try:
+            Projectexplorertabutility.Map_IO_Devices(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+                    
+    def changeFBDValue(self,param):
+                """textboxprojectbrowserverifybackupdata"""
+                try:
+                    Projectexplorertabutility.change_FBD_Value(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def verifyvariablevalueFBDBlock(self,param):
+                """verifyvariablevalueFBDBlock"""
+                try:
+                    Projectexplorertabutility.verify_variable_value_FBDBlock(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    

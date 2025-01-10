@@ -79,4 +79,25 @@ class ControlExpert(MapBase):
     def toolbarpopwindowce(self):
         """toolbarpopwindowce"""
         return self.get_element("ToolPopUP_ControlExpert")
+        
+    @property
+    def buildanddeploychangesbutton(self):
+        """buildanddeploychangesbutton"""
+        return self.get_element("BuildandDeployChanges_ControlExpert")
+
+
+    @property
+    def dropdowntabce(self):
+        """toolbarpopwindowce"""
+        return self.get_element("DropDownTab_ControlExpert")
+
+    @property
+    def deviceoptionstabce(self):
+        """toolbarpopwindowce"""
+        return self.get_element("Deviceoptions_ControlExpert")
+
+    @property
+    def additionaloptionstabce(self):
+        """toolbarpopwindowce"""
+        return self.get_element("Additionaloptions_ControlExpert")
 

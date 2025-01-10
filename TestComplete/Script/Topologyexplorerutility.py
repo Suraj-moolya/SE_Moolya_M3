@@ -130,7 +130,7 @@ def Click_on_toolbar_icon_TE(icon_name):
       break
       
 def click_MenuItem_Toolbar(menu_option):
-  menu_items = topo_obj.popuproottextbox.object.FindAllChildren('ClrClassName', 'MenuItem', 1000)
+  menu_items = eng_obj.rclickmenutextbox.object.FindAllChildren('ClrClassName', 'MenuItem', 1000)
   Log.Message(len(menu_items))
   for item in menu_items:
     Log.Message((item.WPFControlText))
@@ -611,7 +611,17 @@ def Controller_property():
           return
   Log.Error("Could not find the specific 'Controller' element.")
 
-############################################################
+def Workstation_property():
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  for control in controller_row:
+    if getattr(getattr(control, "DataContext", None), "DisplayName", None) == "Workstation":
+      control.Click()
+      aqUtils.Delay(500)
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "ComboBoxItem", 10):
+        if item.WPFControlText == "False":
+          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          return
+  Log.Error("Could not find the specific 'Controller' element.")
 
 
   
@@ -861,89 +871,73 @@ def double_click_selected_catalog_browser_item_TE(main_folder, subfolder, final_
     Applicationutility.wait_in_seconds(500, 'wait')
     doubleclick_catalog_browser_item_TE(final_item)
     Applicationutility.wait_in_seconds(1500, 'wait')
-      
     
-def click_tools_in_topo_configuration(menu):
-  for btn in topo_obj.topologyconfigurationwindow.object.FindAllChildren("ObjectType", "MenuItem", 10):
-    if menu in btn.ObjectIdentifier:
-      btn.Click()
-      return
-      Log.Checkpoint(f"'{menu}' was Clicked in Tool Bar")
-  Log.Warning(f"'{menu}' was not found in Tool Bar")
-  
-  
-def click_menu_item_in_topo_configuration(menu_item):
-  for btn in con_obj.toolbarpopwindowce.object.FindAllChildren("ObjectType", "MenuItem", 10):
-    if menu_item in btn.ObjectIdentifier:
-      btn.Click()
-      return
-      Log.Checkpoint(f"'{menu_item}' was Selected in Tool Bar PopUp Window")
-  Log.Checkpoint(f"'{menu_item}' was not found in Tool Bar PopUp Window")
-    
+
+#def select_tab_in_topo_config(tabname):
+#  objects = []
+#  if topo_obj.configurationhardwarecatalog:
+#    objects = topo_obj.configurationhardwarecatalog.object.FindAllChildren("ClassName", "SECTabControl", 10)
+#  if not objects and topo_obj.configurationhardwarecatalog1:
+#    objects = topo_obj.configurationhardwarecatalog1.object.FindAllChildren("ClassName", "SECTabControl", 10)
+#  if not objects and topo_obj.dtmbrowserprop:
+#    objects = topo_obj.dtmbrowserprop.object.FindAllChildren("ClassName", "SECTabControl", 10)
+#  for h in objects:
+#    for i in range(h.ChildCount):
+#      if tabname in h.Child(i).Text:
+#        h.Child(i).Click()
+#        Log.Checkpoint(f"Clicking on '{tabname}'")
+#        return
+#  Log.Warning(f"Could not find '{tabname}'")
 
 def select_tab_in_topo_config(tabname):
-  for h in topo_obj.configurationhardwarecatalog.object.FindAllChildren("ClassName", "SECTabControl", 10):
-    for i in range(h.ChildCount):
-      if tabname in h.Child(i).Text:
-        h.Child(i).Click()
-        Log.Checkpoint(f"Clicking on '{tabname}'")
+  objects = []
+  if hasattr(topo_obj, 'configurationhardwarecatalog') and topo_obj.configurationhardwarecatalog:
+    objects = topo_obj.configurationhardwarecatalog.object.FindAllChildren("Name", f"TextObject({tabname})", 10)
+  if not objects and hasattr(topo_obj, 'configurationhardwarecatalog1') and topo_obj.configurationhardwarecatalog1:
+    objects = topo_obj.configurationhardwarecatalog1.object.FindAllChildren("Name", f"TextObject({tabname})", 10)
+  for obj in objects:
+    if obj.Text == tabname:
+      try:
+        obj.Click()
+        Log.Checkpoint(f"Successfully clicked on the tab: '{tabname}'")
         return
-  Log.Warning("Could not find '{tabname}'")
-  
-def kjsdf():
+      except Exception as e:
+        Log.Error(f"Failed to click on the tab '{tabname}': {str(e)}")
+  Log.Warning(f"No tabs found with the name '{tabname}'")
+
+def nb():
   select_tab_in_topo_config("DTM catalog")
 
+
+#def Dblclick_config_panel_item_TE(property):
+#  for h in topo_obj.deviceshardwarecatalog.object.FindAllChildren("ClassName", "CfCatViewDTMTreeQueryView", 10):
+#    for i in range(h.ChildCount):
+#      if "TextObject" in h.Child(i).Name and h.Child(i).Text == property:
+#        h.Child(i).DblClick()
+#        Log.Checkpoint(f'{property}' "is Double Clicked.")
+#        Applicationutility.wait_in_seconds(1000, 'Wait')
+#        return
+#  else:
+#    Log.Warning(f'{property}' " Was Not found.")
+    
 def Dblclick_config_panel_item_TE(property):
-  for h in topo_obj.deviceshardwarecatalog.object.FindAllChildren("ClassName", "CfCatViewDTMTreeQueryView", 10):
-    for i in range(h.ChildCount):
-      if "TextObject" in h.Child(i).Name and h.Child(i).Text == property:
-        h.Child(i).DblClick()
-        Log.Checkpoint(f'{property}' "is Double Clicked.")
-        Applicationutility.wait_in_seconds(1000, 'Wait')
-        return
+  for h in topo_obj.deviceshardwarecatalog.object.FindAllChildren("Name", f"TextObject({property})", 10):
+    if h.Text == property:
+      h.DblClick()
+      Log.Checkpoint(f'{property}' "is Double Clicked.")
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      return
   else:
     Log.Warning(f'{property}' " Was Not found.")
 
+def kjvh():
+  Dblclick_config_panel_item_TE("Protocols")
+  
 ## need to fix this 
 def click_update_in_config():
   topo_obj.updatebutton.object.Click()
   Log.Checkpoint("Update Button Clicked")
-  
-def controlexp_popup(button_name):  
-  for button in con_obj.modaldialogewindowce.object.FindAllChildren("WndClass", "Button", 10):
-    if button_name in button.WndCaption:
-      button.Click()
-      Log.Checkpoint(f"'{button_name}' Button Clicked on Wnotrol Expert Window Dialoge")
-      break
-  wait_for_dtm_update()
-  
-def double_click_item_in_DTM(item):
-  dtm = topo_obj.dtmbroswerwindow.object.FindAllChildren("ObjectType", "OutlineItem", 100) 
-  for d in dtm:
-    if item in d.Caption:
-      d.DblClick()
-      Log.Checkpoint(f"Double-clicked on item: {item}")
-      return
-  Log.Warning(f"Item with caption '{item}' not found.")
-  
-def right_click_item_in_DTM(item):
-  dtm = topo_obj.dtmbrowserprop.object.FindAllChildren("ObjectType", "OutlineItem", 100) 
-  for d in dtm:
-    if item in d.Caption:
-      d.ClickR()
-      Log.Checkpoint(f"Right clicked on item: {item}")
-      return
-  Log.Warning(f"Item with caption '{item}' not found.")
 
-  
-def double_click_settings_in_PRM(item):
-  settings = topo_obj.prmconfigwindow.object.FindAllChildren("ObjectType", "OutlineItem", 100)
-  for set in settings:
-    if item in set.Caption:
-      set.DblClick()
-      Log.Checkpoint(f"Double-clicked on item: {item}")
-      return
-  Log.Warning(f"Item with caption '{item}' not found.")
   
 def jksdhf():
   double_click_settings_in_PRM("General Settings")
@@ -957,16 +951,6 @@ def update_ip_address(new_ip):
       Log.Checkpoint(f"IP Address updated to: {new_ip}")
       return
   Log.Warning("IP Address field not found.")
-
-  
-def click_button_in_prm(button_name):
-  button = topo_obj.prmconfigwindow.object.FindAllChildren("WndClass", "Button", 100)
-  for btn in button:
-    if btn.WndCaption == button_name:
-      btn.Click()
-      Log.Checkpoint(f"'{button_name}' Button clicked in PRM Config Window")
-      return
-  Log.Warning(f"'{button_name}' Button not Found in PRM Config Window")
   
 
 def close_button_selected():
@@ -983,23 +967,7 @@ def close_hardware_catalog(button):
       Log.Checkpoint(f"'{button}' button was Selectes in Hardware Catalog window")
       return
   Log.Warning(f"'{button}' button Was not Found in Hardware Catalog")
-  
-def select_button_BME_window(button):
-  for btn in topo_obj.bmehartwindow.object.FindAllChildren("ObjectType", "Button", 10):
-    if btn.ObjectIdentifier == button:
-      btn.click()
-      Log.Checkpoint(f"'{button}' button was Selectes in BME window")
-      return
-  Log.Warning(f"'{button}' button Was not Found in BME Window")
-  
-  
-def select_button_PLC(button):
-  for btn in topo_obj.plcbuswindow.object.FindAllChildren("ObjectType", "Button", 10):
-    if btn.ObjectIdentifier == button:
-      btn.click()
-      Log.Checkpoint(f"'{button}' button was Selectes in Hardware Catalog window")
-      break
-  
+
 
 def select_rack_in_PLC(rack_num):
   rack_number = int(rack_num)
@@ -1010,17 +978,7 @@ def select_rack_in_PLC(rack_num):
     Sys.Keys("[Right]")
   Sys.Keys("[Enter]")
   Log.Checkpoint(f"Selected rack number {rack_number} in PLC.")
-  
-  
-def modaldialogue_window_ce(button):
-  for btn in con_obj.okmodaldialoguewindowce.object.FindAllChildren("WndClass", "Button", 100):
-    if button in btn.WndCaption:
-      btn.click()
-      Applicationutility.wait_in_seconds(2000, "wait")
-      Log.Checkpoint(f"'{button}' Was Clicked in New Device Modal Dialogue Window")
-      return
-  Log.Warning(f"'{button}' Was not Found in New Device Modal Dialogue Window")
-  
+
   
 def uncheck_checkbox_in_hart():
   children = topo_obj.hartmodulecheckbox.object
@@ -1042,51 +1000,7 @@ def click_checkbox_in_hart(channel):
         Sys.Keys("[Right]")
         Sys.Keys(" ")
         Log.Checkpoint(f"channel '{channel}' check box is clicked")
-        
-        
-def select_options_in_controlexpert_modaldialogue(option):
-  for opt in con_obj.modaldialogewindowoptionsce.object.FindAllChildren("ObjectType", "MenuItem", 10):
-    if option in opt.ObjectIdentifier:
-      opt.Click()
-      Log.Checkpoint(f"'{option}' was Selected in COntrol Expert Modal Dialogue Window")
-      return
-  Log.Checkpoint(f"'{option}' was not found in COntrol Expert Modal Dialogue Window")
-  
-  
-def select_protocol_in_add_device(protocol, device):
-  con_obj.dropdownbtnce.object.Click()
-  for opt in con_obj.dropdownbtnoptionce.object.FindAllChildren("ObjectType", "ListItem", 10):
-    if protocol in opt.ObjectIdentifier:
-      opt.Click()
-      Log.Checkpoint(f"'{protocol}' was selected in Control Expert Modal Dialogue Window")
-      break
-  for bmi in con_obj.addwindowce.object.FindAllChildren("Name", f"TextObject('{device}')", 100):
-    if bmi.Text == device:
-      bmi.DblClick()
-      Log.Checkpoint(f"'{device}' is selected")
-      break  
-      
-      
-def select_btn_device_prop(button):
-  for btn in con_obj.devicepropertywindowce.object.FindAllChildren("WndClass", "Button", 10):
-    if btn.WndCaption == button:
-      btn.click()
-      Log.Checkpoint(f"'{button}' Clicked on Device Property")
-      return
-  Log.Warning(f"'{button}' Not Found on Device Property")
 
-def click_validate_btn_in_control_config():
-  topo_obj.paneleditbutton.object.click()
-  Log.Checkpoint("Validate Button was Clicked")
-  
-def wait_for_dtm_update():
-  updating_window = con_obj.okmodaldialoguewindowce.object
-  if updating_window.WaitProperty("Exists", False, 50000):
-    Log.Checkpoint("DTM catalog update completed.")
-  else:
-    Log.Error("DTM catalog update window did not close within the expected time.")
-  
-    
 def Select_IP_from_ControlProjectDeployment(IP_address):
   name = topo_obj.primaryaddresslistdropdown.object
   name.Click()
@@ -1162,52 +1076,7 @@ def ksdj():
     if i.DataContext.PropertyName == "Status":
       Log.Message(i.DataContext.PrimaryValue)
       break
-    
-    
-#######################################################################################
-
-def right_click(name):
-  test = eng_obj.systemexplorertreeview.object.FindAllChildren("ClrClassName", "ExplorerNode", 100)
-  for i in test:
-    if i.DataContext.Identifier == name:
-      i.ClickR()
-      Log.Checkpoint("Success")
-      return
-  Log.Warning("Fail")
-
-def dslkf():  
-  right_click("System_1")
-  
-
-def menuitem(name):
-  menu = sys_obj.rclickmenuitemsbutton.object.FindAllChildren("ClrClassName", "MenuItem", 100)
-  for i in menu:
-    if i.WPFControlText == name:
-      i.Click()
-      Log.Message("success")
       
-def hjf():
-  right_click("System_1")
-  menuitem("Expand")
-
-def modal():
-  for i in msg_obj.exportpopupbutton.object.FindAllChildren("ClrClassName", "Checkbox", 100):
-    if i.WPFControlText == "Do not use a System Access password on this system.":
-      i.click()
-      Log.Message("success")
-      return
-    Log.Warning("fail")
-    
-    
-def clickbtn():
-  msg_obj.licensemanagementokbutton.object.click()
-  for i in msg_obj.exportpopupbutton.object.FindAllChildren("ClrClassName", "Button", 100):
-    if i.WPFControlText == "OK":
-          i.Click()
-          Log.Message("success")
-          
-#################################################################################################
-
 def open_networks_folder(node):
   test = eng_obj.systemexplorertreeview.object.FindAllChildren("ClrClassName", "ExplorerNode", 100)
   for i in test:
@@ -1233,3 +1102,236 @@ def network_panel(interface, controller):
         Log.Checkpoint(f"The Ethernet Network is mapped to the {controller}")
         return
   
+def findallchildern_objecttype(parent, obj_type, identifier, action, success_log, failure_log, depth=100):
+  elements = parent.FindAllChildren("ObjectType", obj_type, depth)
+  for elem in elements:
+    if identifier in getattr(elem, 'Caption', '') and elem.Enabled:
+      getattr(elem, action)()
+      Log.Checkpoint(success_log)
+      return
+  Log.Warning(failure_log)
+
+def click_tools_in_topo_configuration(menu):
+  findallchildern_objecttype(
+    topo_obj.topologyconfigurationwindow.object, "MenuItem", menu, "Click",
+    f"'{menu}' was clicked in Tool Bar", f"'{menu}' was not found in Tool Bar"
+  )
+
+def click_menu_item_in_topo_configuration(menu_item):
+  findallchildern_objecttype(
+    con_obj.toolbarpopwindowce.object, "MenuItem", menu_item, "Click",
+    f"'{menu_item}' was selected in Tool Bar PopUp Window", f"'{menu_item}' was not found in Tool Bar PopUp Window"
+  )
+
+def double_click_item_in_DTM(item):
+  findallchildern_objecttype(
+    topo_obj.dtmbroswerwindow.object, "OutlineItem", item, "DblClick",
+    f"Double-clicked on item: {item}", f"Item with caption '{item}' not found."
+  )
+
+def right_click_item_in_DTM(item):
+  findallchildern_objecttype(
+    topo_obj.dtmbrowserprop.object, "OutlineItem", item, "ClickR",
+    f"Right-clicked on item: {item}", f"Item with caption '{item}' not found."
+  )
+  
+def double_click_settings_in_PRM(item):
+  findallchildern_objecttype(
+    topo_obj.prmconfigwindow.object, "OutlineItem", item, "DblClick",
+    f"Double-clicked on item: {item}", f"Item with caption '{item}' not found."
+  )
+
+
+def select_button_BME_window(button):
+  findallchildern_objecttype(
+    topo_obj.bmehartwindow.object, "Button", button, "Click",
+    f"'{button}' button was selected in BME window", f"'{button}' button was not found in BME Window"
+  )
+
+def select_button_PLC(button):
+  findallchildern_objecttype(
+    topo_obj.plcbuswindow.object, "Button", button, "Click",
+    f"'{button}' button was selected in Hardware Catalog window", f"'{button}' button was not found in Hardware Catalog"
+  )
+
+def Double_Click_on_Channel(property):
+  findallchildern_objecttype(
+    con_obj.okmodaldialoguewindowce.object, "ListItem", property, "DblClick",
+    f"{property} was double-clicked.", f"{property} was not found in window"
+  )
+
+def select_options_in_controlexpert_modaldialogue(option):
+  findallchildern_objecttype(
+    con_obj.toolbarpopwindowce.object, "MenuItem", option, "Click",
+    f"'{option}' was selected in Control Expert Modal Dialogue Window", f"'{option}' was not found in Control Expert Modal Dialogue Window"
+  )
+  
+def select_submenu_options_in_controlexpert_modaldialogue(option):
+  findallchildern_objecttype(
+    con_obj.deviceoptionstabce.object, "MenuItem", option, "Click",
+    f"'{option}' was selected in Control Expert Modal Dialogue Window", f"'{option}' was not found in Control Expert Modal Dialogue Window"
+  )
+  
+def select_final_option_in_controlexpert_modaldialogue(option):
+  findallchildern_objecttype(
+    con_obj.additionaloptionstabce.object, "MenuItem", option, "Click",
+    f"'{option}' was selected in Control Expert Modal Dialogue Window", f"'{option}' was not found in Control Expert Modal Dialogue Window"
+  )  
+
+def double_click_on_ftdconfiguration_window(property):
+  window = topo_obj.fdtconfigurationwindowtextbox.object
+  window.Maximize()
+  findallchildern_objecttype(
+    topo_obj.fdtconfigurationwindowtextbox.object, "ListItem", property, "DblClick",
+    f"{property} was double-clicked.", f"{property} was not found in window"
+  )
+
+def select_option_module_in_dropdown(channel):
+  findallchildern_objecttype(
+    con_obj.dropdowntabce.object, "ListItem", channel, "Click",
+    f"{channel} was selected in dropdown", f"{channel} was not found in dropdown"
+  )
+
+def Click_button_in_ftdconfiguration(button):
+  for btn in topo_obj.fdtconfigurationwindowtextbox.object.FindAllChildren("ClrClassName", "PsButton", 100):
+    if btn.Text == button:
+      btn.click()
+      Log.Checkpoint(f"{button} button was clicked in this window")
+      return
+  Log.Warning(f"{button} was not found in this window")
+
+
+def select_protocol(protocol):
+  con_obj.dropdownbtnce.object.Click()
+  for opt in con_obj.dropdownbtnoptionce.object.FindAllChildren("ObjectType", "ListItem", 10):
+    if protocol in opt.ObjectIdentifier:
+      opt.Click()
+      Log.Checkpoint(f"'{protocol}' was selected in Control Expert Modal Dialogue Window")
+      return
+  Log.Warning(f"'{protocol}' was not found in the dropdown options")
+  
+def select_device(device):
+  scrollable_area = con_obj.addwindowce.object
+  while True:
+    for bmi in scrollable_area.FindAllChildren("Name", f"TextObject('{device}')", 100):
+      if bmi.Text == device:
+        Log.Checkpoint(f"{device} has been verified")
+        bmi.DblClick()
+        Log.Checkpoint(f"'{device}' is selected")
+        return
+    scrollable_area.MouseWheel(-1)
+    aqUtils.Delay(20)
+    if not scrollable_area.VisibleOnScreen:
+      Log.Warning(f"'{device}' was not found on this window")
+      return
+
+
+def select_protocol_in_add_device(protocol, device):
+  select_protocol(protocol)
+  select_device(device)  
+
+def find_and_click_button(parent_obj, button_name, max_depth=10):
+  buttons = parent_obj.FindAllChildren("WndClass", "Button", max_depth)
+  for btn in buttons:
+    if hasattr(btn, 'WndCaption') and button_name in btn.WndCaption:
+      btn.Click()
+      Log.Checkpoint(f"Button '{button_name}' was clicked.")
+      return
+  Log.Warning(f"'{button_name}' button not found.")
+
+def controlexp_popup(button_name):
+  find_and_click_button(con_obj.modaldialogewindowce.object, button_name, 10)
+  wait_for_dtm_update()
+#  topo_obj.configurationhardwarecatalog.object.Close()
+
+def click_button_in_prm(button_name):
+  find_and_click_button(topo_obj.prmconfigwindow.object, button_name, 100)
+
+def modaldialogue_window_ce(button_name):
+  find_and_click_button(con_obj.okmodaldialoguewindowce.object, button_name, 100)
+  Applicationutility.wait_in_seconds(2000, "wait")
+
+def select_btn_device_prop(button_name):
+  find_and_click_button(con_obj.devicepropertywindowce.object, button_name)
+
+def click_validate_btn_in_control_config():
+  topo_obj.paneleditbutton.object.click()
+  Log.Checkpoint("Validate Button was Clicked")
+  
+def wait_for_dtm_update():
+  updating_window = con_obj.okmodaldialoguewindowce.object
+  if updating_window.WaitProperty("Exists", False, 50000):
+    Log.Checkpoint("DTM catalog update completed.")
+  else:
+    Log.Error("DTM catalog update window did not close within the expected time.")
+    
+  
+def select_slots_in_ftdconfiguration(slot, channel):
+  for slots in topo_obj.fdtconfigurationwindowtextbox.object.FindAllChildren("ClrClassName", "ComboBox", 100):
+    if slots.Tag == slot:
+      slots.click()
+      Log.Checkpoint(f"{slot} Was clicked.")
+      if channel:
+        select_option_module_in_dropdown(channel)
+      return
+  Log.Warning(f"{slot} was not found in this window")
+  
+  
+def verify_dtm_device():
+  for device in topo_obj.dtmdevicewindowtextbox.object.FindAllChildren("ClrClassName", "Label", 100):
+    if isinstance(device, object) and hasattr(device, 'WinFormsControlName') and device.WinFormsControlName in ["lblDeviceName", "lblReference"]:
+      Log.Checkpoint(f"{device.WinFormsControlName}: {device.Text}")
+  window = topo_obj.fdtconfigurationwindowtextbox.object
+  window.Close()
+      
+      
+def import_modules_in_ftdconfig(module):
+  findallchildern_objecttype(
+      topo_obj.prmgensettings.object, "ListItem", module, "Click",
+      f"{module} was Clicked.", f"{module} was not found in window"
+    )
+  find_and_click_button(topo_obj.prmgensettings.object, "->")
+    
+def click_button_in_fdtconfig(button):
+  find_and_click_button(topo_obj.fdtconfigurationwindowtextbox.object, button)
+  topo_obj.fdtconfigurationwindowtextbox.object.Close()
+  
+def click_dtm_channel_in_fdtconfig(prop):
+  findallchildern_objecttype(
+      topo_obj.fdtconfigurationwindowtextbox.object, "OutlineItem", prop, "Click",
+      f"{prop} was clicked.", f"{prop} was not found in window"
+    )
+    
+def select_tab_in_FDTConfig(tab_name):
+  findallchildern_objecttype(
+        topo_obj.fdtconfigurationwindowtextbox.object, "PageTab", tab_name, "Click",
+        f"{tab_name} was clicked.", f"{tab_name} was not found in window"
+      )
+      
+def update_ip_address_in_fdtconfig(new_ip):
+  for ip in topo_obj.prmgensettings.object.FindAllChildren("WndClass", "SysIPAddress32", 100):
+    if ip.wAddress =='192.168.10.3' and ip.Enabled:
+      Log.Message(f"Current IP Address: {ip.Value}")
+      ip.Value = new_ip
+      Log.Checkpoint(f"IP Address updated to: {new_ip}")
+      return
+  Log.Warning("IP Address field not found.")
+  
+def lkd():
+  update_ip_address_in_fdtconfig("192.168.10.5")
+  
+def click_icon_on_refine_online(icon):
+  for btn in sp_obj.advancesettingswindowspbutton.object.FindAllChildren("ClrClassName", "ContentPresenter", 100):
+    if btn.ToolTip == icon:
+      btn.click()
+      Log.Checkpoint(f'{icon} was clicked in Refine Online Window')
+      return
+  Log.Warning(f"{icon} Not Found on Refine Online Window")
+  
+def select_checkbox_in_updateproject(prop):
+  for check in topo_obj.updateprojecttab.object.FindAllChildren("ClrClassName", "CheckBox", 100):
+    if check.DataContext.Name == prop:
+      check.click()
+      Log.Checkpoint(f'{prop} check box clicked in Update Project window')
+      return
+  Log.Warning(f'{prop} Not Found in Update Project Window')

@@ -217,4 +217,10 @@ def step_impl():
     """I Click on Open button from Import TE window"""
     CommonUtil.write_text_file("\nWhen I Click on Open button from Import TE window")
     obj.clickopenimporttewindow()
+    
+@when("I checked header cb in message box")
+def step_impl():
+    """I checked header cb in message box"""
+    CommonUtil.write_text_file("\nWhen I checked header cb in message box")
+    obj.checkboxheadercbchecked()
 

@@ -202,5 +202,12 @@ class EngineeringClientWorkFlow:
         try:
             Engineeringclientutility.Verify_folder_Content_Status_TE(foldername)
         except Exception as ex:
-            raise Exception(ex) from ex       
+            raise Exception(ex) from ex  
+            
+    def closetabec(self,param):
+        """closetabec"""
+        try:
+            Engineeringclientutility.close_the_tab_EC(param)
+        except Exception as ex:
+            raise Exception(ex) from ex      
             

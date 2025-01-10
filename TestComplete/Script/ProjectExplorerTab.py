@@ -230,3 +230,46 @@ class ProjectExplorerTab(MapBase):
     def messageboxyesbutton(self):
         """messageboxyesbutton"""
         return self.get_element("MessageBoxYes_ProjectExplorerTab")
+        
+    @property
+    def elementvariabletextbox(self):
+        """elementvariabletextbox"""
+        return self.get_element("Elementvariable_ProjectExplorerTab")
+        
+    @property
+    def elementvariabletextboxrefine(self):
+        """elementvariabletextboxrefine"""
+        return self.get_element("Variable_ProjectExplorer")
+       
+       
+    @property
+    def loadp2pvariablestabcontrol(self):
+        """loadp2pvariablestabcontrol"""
+        return self.get_element("LoadP2PVariablesTabControl_ProjectExplorer")
+        
+    
+ 
+    @property
+    def unmapvariable(self):
+        """unmapvariable"""
+        return self.get_element("Unmapvariable_ProjectExplorer")  
+        
+    @property
+    def remotevariablebutton(self):
+        """remotevariablebutton"""
+        return self.get_element("Remotevariable_ProjectExplorer") 
+        
+    @property
+    def sourcevariablebutton(self):
+        """sourcevariablebutton"""
+        return self.get_element("Sourcevariable_ProjectExplorer")
+        
+    @property
+    def animationtablewindow(self):
+        """animationtablewindow"""
+        return self.get_element("AnimationTable_ProjectExplorerTab") 
+        
+        
+
+        
+       

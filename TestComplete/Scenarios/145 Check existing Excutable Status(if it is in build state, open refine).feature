@@ -6,10 +6,15 @@
 Scenario Outline: Check existing Executable Status - right click control project and generate
 When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
 Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
-
+@Generate_general_controlproject
 Examples:
   | SlNo. | container dock1            | container dock3 |
   | 1     | ControlProject_1$$Generate | Generate        |
+  
+@Generate_M580_Safety_controlproject
+Examples:
+  | SlNo. | container dock1       | container dock3 |
+  | 1     | M580_Safety$$Generate | Generate        |
 
 
 

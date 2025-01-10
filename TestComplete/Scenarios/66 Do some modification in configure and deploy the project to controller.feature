@@ -124,7 +124,17 @@ Examples:
   | 1     | Close Configure Editor (Completed) |
 
   
-  
+@TC_EPE_PE_CP_00
+@test00
+Scenario Outline: Save and Close configuration without configuration pop up
+When I wait in seconds Refine online window in refine offline
+And I selected Save Refine Offline in refine offline
+And I wait in seconds Refine online window in refine offline
+And I selected Close Refine Offline in refine offline
+Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
+Examples:
+  | SlNo. | project browser2                         |
+  | 1     | Close Control Project Editor (Completed) |
 
   
   

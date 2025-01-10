@@ -17,6 +17,11 @@ Examples:
 Examples:
   | SlNo. | MDI Window1                     | MDI Window2                  | MDI Window3                  | MDI Window4                   |
   | 1     | Main IP address$$182.179.243.21 | Subnetwork mask$$255.255.0.0 | IP address A$$182.179.243.22 | Gateway address$$182.179.10.0 |
+  
+@Map_the_logical_network_-_edit_IP_Address__10.179.244.99
+Examples:
+  | SlNo. | MDI Window1                    | MDI Window2                  | MDI Window3                  | MDI Window4                  |
+  | 1     | Main IP address$$10.179.244.99 | Subnetwork mask$$255.255.0.0 | IP address A$$10.179.244.100 | Gateway address$$10.179.10.0 |
 
 
 
@@ -56,6 +61,11 @@ Examples:
 Examples:
   | SlNo. | Project Browser RO1                                                     | identifiers |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME P58 5040$$EIO | IPConfig    |
+  
+@Open_configure_window_and_click_on_IPConfig__M580_standalone_P58_4040_3.20
+Examples:
+  | SlNo. | Project Browser RO1                                                     | identifiers |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME P58 4040$$EIO | IPConfig    |
   
 @TC_EPE_TE_00
 @test00

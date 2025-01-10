@@ -38,3 +38,18 @@ class DialogCE(MapBase):
     def dialoglistboxce1textbox(self):
         """dialoglistboxcetextbox"""
         return self.get_element("DialogListboxCE1_DialogCE")
+        
+    @property
+    def startsimulatorbutton(self):
+        """startsimulatorbutton"""
+        return self.get_element("StartSimulator_DialogCE")
+        
+    @property
+    def simulatorporttextbox(self):
+        """simulatorporttextbox"""
+        return self.get_element("SimulatorPort_DialogCE")
+        
+    @property
+    def listofmodifiedyesbuttoncebutton(self):
+          """listofmodifiedyesbuttoncebutton"""
+          return self.get_element("ListofmodifiedYesbuttonCE_DialogCE")

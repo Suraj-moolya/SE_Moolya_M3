@@ -155,7 +155,6 @@
 																								</Children>
 																							</Child>
 																							<Child Name="ServicesDocking" Key="{348367FC-3203-4D3C-B762-0B1487E6813F}" ExtendedFind="True">
-																								<Image FileName="1575639243" Left="301" Top="164" Right="1920" Bottom="928" />
 																								<Properties>
 																									<Property Name="WPFControlName">
 																										<Value Value="ServicesDocking" />
@@ -163,7 +162,6 @@
 																								</Properties>
 																								<Children>
 																									<Child Name="RadSplitContainer" Key="{DCC7F6AC-653C-4A4B-B796-4179514EAE2F}" ExtendedFind="True">
-																										<Image FileName="1575639243" Left="301" Top="164" Right="1920" Bottom="928" />
 																										<Properties>
 																											<Property Name="ClrFullClassName">
 																												<Value Value="Telerik.Windows.Controls.RadSplitContainer" />
@@ -171,7 +169,6 @@
 																										</Properties>
 																										<Children>
 																											<Child Name="ExecutableServicesGroupPane" Key="{36AB8165-F9F1-4532-B456-62EE6AD2FF31}" ExtendedFind="True">
-																												<Image FileName="1575639243" Left="301" Top="164" Right="1920" Bottom="928" />
 																												<Properties>
 																													<Property Name="WPFControlName">
 																														<Value Value="ExecutableServicesGroupPane" />
@@ -179,7 +176,6 @@
 																												</Properties>
 																												<Children>
 																													<Child Name="Border" Key="{C3D4773C-AA57-4541-9EB0-8ADC8E04413D}" ExtendedFind="True">
-																														<Image FileName="1575639243" Left="1381" Top="207" Right="1913" Bottom="894" />
 																														<Properties>
 																															<Property Name="ClrFullClassName">
 																																<Value Value="System.Windows.Controls.Border" />
@@ -190,7 +186,6 @@
 																														</Properties>
 																														<Children>
 																															<Child Name="GridViewRow" Key="{6E51AAFD-E282-44BE-B555-BD13B5275CD1}" ExtendedFind="True">
-																																<Image FileName="1575639243" Left="1075" Top="378" Right="1911" Bottom="405" />
 																																<Properties>
 																																	<Property Name="ClrFullClassName">
 																																		<Value Value="Telerik.Windows.Controls.GridView.GridViewRow" />
@@ -204,7 +199,6 @@
 																																</Properties>
 																																<Children>
 																																	<Child Name="GridviewcellValvegp" Key="{6B161536-D12C-4AFE-B3ED-96713216914E}" ExtendedFind="True">
-																																		<Image FileName="1575639243" Left="1475" Top="378" Right="1595" Bottom="405" />
 																																		<Properties>
 																																			<Property Name="ClrFullClassName">
 																																				<Value Value="Telerik.Windows.Controls.GridView.GridViewCell" />
@@ -219,7 +213,6 @@
 																														</Children>
 																													</Child>
 																													<Child Name="GridviewheadercellHwinterfacetype" Key="{D7A17EC8-F75B-400D-85EF-15A854CB4E07}" ExtendedFind="True">
-																														<Image FileName="-516508339" Left="1092" Top="238" Right="1253" Bottom="274" />
 																														<TypeInfo Item0="{CDA7DF8C-EEAF-47F3-868B-29D1301F18ED}" />
 																														<Properties>
 																															<Property Name="ClrFullClassName">
@@ -250,10 +243,151 @@
 											</Child>
 										</Children>
 									</Child>
+									<Child Name="WinFormsAdapter" Key="{D1769955-F8E1-4731-B2C0-CD3CB857AC84}">
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="System.Windows.Forms.Integration.WinFormsAdapter" />
+											</Property>
+											<Property Name="WndCaption">
+												<Value Value="" />
+											</Property>
+											<Property Name="Index">
+												<Value Value="1" Type="0" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Panel" Key="{13237041-6091-4266-9A84-6FE80562A89A}">
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Forms.Panel" />
+													</Property>
+													<Property Name="WndCaption">
+														<Value Value="" />
+													</Property>
+													<Property Name="Index">
+														<Value Value="2" Type="0" />
+													</Property>
+												</Properties>
+												<Children>
+													<Child Name="ToolConnectorPanel" Key="{0C2F09E4-0CE6-4F0B-A4D8-B59F4C1DF3D4}">
+														<TypeInfo Item0="{E8EDE760-BCBF-4230-BC16-97B74C159C25}" />
+														<Properties>
+															<Property Name="WinFormsControlName">
+																<Value Value="ToolConnectorPanel" />
+															</Property>
+														</Properties>
+														<Children>
+															<Child Name="formEcostruxureControlExpertClas" Key="{374B508D-F765-469B-BF97-79666B812C93}">
+																<Image FileName="-1395025855" Left="1" Top="37" Right="1916" Bottom="1018" />
+																<Properties>
+																	<Property Name="ObjectType">
+																		<Value Value="Form" />
+																	</Property>
+																	<Property Name="WndClass">
+																		<Value Value="ControlExpert" />
+																	</Property>
+																	<Property Name="ObjectGroupIndex">
+																		<Value Value="1" Type="0" />
+																	</Property>
+																</Properties>
+																<Children>
+																	<Child Name="MDIClient" Key="{28D1B585-2F97-4A45-A5B6-E06D867AA8A4}">
+																		<Image FileName="-1395025855" Left="492" Top="135" Right="1903" Bottom="875" />
+																		<Properties>
+																			<Property Name="WndClass">
+																				<Value Value="MDIClient" />
+																			</Property>
+																		</Properties>
+																		<Children>
+																			<Child Name="diwindowWriteM580StandP2p1Mast" Key="{CC58BD60-4AF2-4561-8667-776FC8D86A5B}">
+																				<Image FileName="-1395025855" Left="483" Top="97" Right="1912" Bottom="884" />
+																				<Properties>
+																					<Property Name="ObjectType">
+																						<Value Value="MDIWindow" />
+																					</Property>
+																					<Property Name="Caption">
+																						<Value Value="Write_M580_Stand_P2P_1 : [MAST]" />
+																					</Property>
+																					<Property Name="ObjectGroupIndex">
+																						<Value Value="1" Type="0" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="panel" Key="{3A59634B-5F86-4F82-BBCE-ED9448EA1B9F}">
+																						<Image FileName="-1395025855" Left="492" Top="135" Right="1903" Bottom="875" />
+																						<TypeInfo Item0="{722030E8-6909-41D2-9763-0B086FD01141}" />
+																						<Properties>
+																							<Property Name="WndClass">
+																								<Value Value="AfxFrameOrView140u" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="diwindowTableDataEditor" Key="{4EE9959A-0542-472E-8037-62EFE3AE29D7}">
+																				<Image FileName="1098021706" Left="474" Top="97" Right="1912" Bottom="884" />
+																				<Properties>
+																					<Property Name="ObjectType">
+																						<Value Value="MDIWindow" />
+																					</Property>
+																					<Property Name="Caption">
+																						<Value Value="Table[Data Editor]" />
+																					</Property>
+																					<Property Name="ObjectGroupIndex">
+																						<Value Value="1" Type="0" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="page32770" Key="{0F5EE4D7-A013-47AD-83E1-F50D7E35C5F4}">
+																						<Image FileName="1098021706" Left="483" Top="135" Right="1903" Bottom="875" />
+																						<Properties>
+																							<Property Name="WndClass">
+																								<Value Value="#32770" />
+																							</Property>
+																						</Properties>
+																						<Children>
+																							<Child Name="panelCommontreelist" Key="{581B25F6-FFBC-4D64-BF15-5FC2A1194561}">
+																								<Image FileName="1098021706" Left="491" Top="173" Right="1895" Bottom="867" />
+																								<Properties>
+																									<Property Name="ObjectType">
+																										<Value Value="Panel" />
+																									</Property>
+																									<Property Name="Caption">
+																										<Value Value="CommonTreeList" />
+																									</Property>
+																									<Property Name="ObjectGroupIndex">
+																										<Value Value="1" Type="0" />
+																									</Property>
+																								</Properties>
+																								<Children>
+																									<Child Name="Var5" Key="{F4DC0DCA-FECF-4423-9DC5-09A5E7FDB835}">
+																										<Image FileName="1098021706" Left="546" Top="222" Right="578" Bottom="238" />
+																										<TypeInfo Item0="{CDA7DF8C-EEAF-47F3-868B-29D1301F18ED}" />
+																										<Properties>
+																											<Property Name="Text">
+																												<Value Value="Var5" />
+																											</Property>
+																										</Properties>
+																									</Child>
+																								</Children>
+																							</Child>
+																						</Children>
+																					</Child>
+																				</Children>
+																			</Child>
+																		</Children>
+																	</Child>
+																</Children>
+															</Child>
+														</Children>
+													</Child>
+												</Children>
+											</Child>
+										</Children>
+									</Child>
 								</Children>
 							</Child>
 							<Child Name="HwndSource_PopupRoot" Key="{314DB02F-A045-4D54-8993-E53896B9C614}">
-								<Image FileName="-623344938" Left="0" Top="0" Right="278" Bottom="590" />
 								<Properties>
 									<Property Name="RootVisual.ClrClassName">
 										<Value Value="PopupRoot" />
@@ -264,7 +398,6 @@
 								</Properties>
 								<Children>
 									<Child Name="PopupRoot" Key="{915C90DC-1540-4C6D-ACD1-CAE1ABBBE51B}">
-										<Image FileName="-623344938" Left="0" Top="0" Right="278" Bottom="590" />
 										<Properties>
 											<Property Name="ClrFullClassName">
 												<Value Value="System.Windows.Controls.Primitives.PopupRoot" />
@@ -272,7 +405,6 @@
 										</Properties>
 										<Children>
 											<Child Name="FilteringControl" Key="{96274326-6668-4537-976B-C694CB556227}" ExtendedFind="True">
-												<Image FileName="-623344938" Left="0" Top="2" Right="278" Bottom="590" />
 												<TypeInfo Item0="{CDA7DF8C-EEAF-47F3-868B-29D1301F18ED}" />
 												<Properties>
 													<Property Name="ClrFullClassName">
@@ -313,6 +445,26 @@
 													<Child Name="GridviewcellValvegp" Owner="{6B161536-D12C-4AFE-B3ED-96713216914E}" />
 													<Child Name="GridviewheadercellHwinterfacetype" Owner="{D7A17EC8-F75B-400D-85EF-15A854CB4E07}" />
 												</Child>
+											</Child>
+										</Child>
+									</Child>
+								</Child>
+							</Child>
+						</Child>
+					</Child>
+				</Child>
+				<Child Name="WinFormsAdapter" Owner="{D1769955-F8E1-4731-B2C0-CD3CB857AC84}">
+					<Child Name="Panel" Owner="{13237041-6091-4266-9A84-6FE80562A89A}">
+						<Child Name="ToolConnectorPanel" Owner="{0C2F09E4-0CE6-4F0B-A4D8-B59F4C1DF3D4}">
+							<Child Name="formEcostruxureControlExpertClas" Owner="{374B508D-F765-469B-BF97-79666B812C93}">
+								<Child Name="MDIClient" Owner="{28D1B585-2F97-4A45-A5B6-E06D867AA8A4}">
+									<Child Name="diwindowWriteM580StandP2p1Mast" Owner="{CC58BD60-4AF2-4561-8667-776FC8D86A5B}">
+										<Child Name="panel" Owner="{3A59634B-5F86-4F82-BBCE-ED9448EA1B9F}" />
+									</Child>
+									<Child Name="diwindowTableDataEditor" Owner="{4EE9959A-0542-472E-8037-62EFE3AE29D7}">
+										<Child Name="page32770" Owner="{0F5EE4D7-A013-47AD-83E1-F50D7E35C5F4}">
+											<Child Name="panelCommontreelist" Owner="{581B25F6-FFBC-4D64-BF15-5FC2A1194561}">
+												<Child Name="Var5" Owner="{F4DC0DCA-FECF-4423-9DC5-09A5E7FDB835}" />
 											</Child>
 										</Child>
 									</Child>

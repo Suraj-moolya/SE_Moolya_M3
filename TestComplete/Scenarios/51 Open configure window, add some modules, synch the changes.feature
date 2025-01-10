@@ -20,15 +20,22 @@ And I Click dialog panel item CE Dialog Panel CE in dialog ce as '<Dialog Panel 
 And I Select bottom listitem dialog panel item CE Dialog List box CE in dialog ce as '<Dialog List box CE5>'
 And I selected Dialog OK CE in dialog ce
  
-@Add_Analog_Module__BMX_AMO_0410_slot5
+@Add_Analog_Module__BMX_AMO_0410_slot6
 Examples:
   | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
-  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$5 | Analog           | BMX AMO 0410     |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$6 | Analog           | BMX AMO 0410     |
 @Add_Analog_Module__BMX_AMI_0810_Slot4
 Examples:
   | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$4 | Analog           | BMX AMI 0810     |
- 
+@Add_Analog_Module__BMX_AMI_0812_Slot4_HART
+Examples:
+  | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$4 | Analog           | BME AHI 0812     | 
+@Add_Analog_Module__BME_AHO_0412_Slot5_HART
+Examples:
+  | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$5 | Analog           | BME AHO 0412     |
   
 @TC_EPE_TE_CS_0014B
 Scenario Outline: Open configure window, add Discrete modules
