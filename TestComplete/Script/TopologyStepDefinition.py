@@ -152,6 +152,7 @@ def step_impl(network):
 def step_impl(menu):
   """I click '<menu>' in Tool Bar"""
   CommonUtil.write_text_file(f"\nWhen I click '{menu}' in Tool Bar")
+  Applicationutility.wait_in_seconds(1000, 'Wait')
   obj.clickbuttontoolbar(menu)
   
 @when("I click {arg} in Tool Bar popup window")
