@@ -5,6 +5,7 @@ from MessageBox import MessageBox
 from RefineOffline import RefineOffline
 from ControlExpert import ControlExpert
 from ProjectExplorerTab import ProjectExplorerTab
+from SystemExplorerScreen import SystemExplorerScreen
 
 
 topo_obj = TopologyExplorerTab()
@@ -13,6 +14,7 @@ eng_obj = EngineeringClient()
 refo_obj = RefineOffline()
 con_obj = ControlExpert()
 proj_obj = ProjectExplorerTab()
+sys_obj = SystemExplorerScreen()
 
 def select_tool_drag_drop_default_physical_view_TE(param):
   folder1, folder2, tool, dropposition = param.split('$$')
@@ -1074,10 +1076,31 @@ def ksdj():
     if i.DataContext.PropertyName == "Status":
       Log.Message(i.DataContext.PrimaryValue)
       break
-    
-    
-def jkg():
-  skdfj("192.168.1.66")
+      
+def open_networks_folder(node):
+  test = eng_obj.systemexplorertreeview.object.FindAllChildren("ClrClassName", "ExplorerNode", 100)
+  for i in test:
+    if i.DataContext.Identifier == node:
+      i.DblClick()
+      Log.Checkpoint("Success")
+      return
+  
+def open_ethernetnetwork(ethernet):
+  network = topo_obj.openethernetnetwork.object.FindAllChildren("ClrClassName", "GridViewRow", 100)
+  for i in network:
+    if i.DataContext.Identifier == ethernet:
+      i.DblClick()
+      Log.Checkpoint("Success")
+      return
+      
+def network_panel(interface, controller):
+  panel = topo_obj.networkpanel.object.FindAllChildren("ClrClassName", "TextBlock", 100)
+  for i in panel:
+    if i.WPFControlText == interface:
+      i.DblClick()
+      if controller in i.DataContext.DestinationInstance.OleValue:
+        Log.Checkpoint(f"The Ethernet Network is mapped to the {controller}")
+        return
   
 def findallchildern_objecttype(parent, obj_type, identifier, action, success_log, failure_log, depth=100):
   elements = parent.FindAllChildren("ObjectType", obj_type, depth)

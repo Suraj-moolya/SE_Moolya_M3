@@ -590,8 +590,7 @@ def no_password_system(btn):
     if btn in button.WPFControlText:
       button.Click()
   Applicationutility.wait_in_seconds(2000, 'Wait')
-
-
+  
 def close_the_tab_EC(param):
   tabs = eng_obj.workspacetextbox.find_children_for_closeable_tab_item()
   for tab in tabs:
@@ -601,10 +600,5 @@ def close_the_tab_EC(param):
         
   else:
     Log.Message(f'{param} parameter passed might be wrong')       
-
-        
-def gsgsgsg():
-  close_the_tab_EC('Project Explorer')
-      
 
 

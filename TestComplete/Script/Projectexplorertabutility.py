@@ -1212,7 +1212,6 @@ def Click_Variable_Elementary_Variable_Tab(variable_name):
   else:
     Log.Message(f'{variable_name} does not exists')
 
-    
 def Click_P2p_Create_consecutive_variables(param):
   variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
   variable_number = 1
@@ -1228,12 +1227,7 @@ def Click_P2p_Create_consecutive_variables(param):
     for i in range(int(HMi_Column_no)):
       Sys.Keys("[Right]")
     Sys.Keys("[Enter]")
-    
-def sdsdsd():
-  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7$$P2P")
-    
-
-    
+       
 def change_datatype_dataeditor(param):
   variablename,desired_data_type = param.split("$$")
   textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
@@ -1248,11 +1242,6 @@ def change_datatype_dataeditor(param):
   else:
     Log.Message(f'data type does not exists')
     
-def gsgsgsg():
-  #change_datatype_dataeditor('INT$$BOOL$$2')
-  change_datatype_dataeditor('Moolya2$$INT')
-  #change_datatype_dataeditor('STRING$$BOOL$$3')
-  
 def Unpack_Variable(identifier):
   Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for i in Variablename:
@@ -1273,10 +1262,6 @@ def Unmap_Variable(identifier):
     break
   Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
   
-def gsgsg45():
-  Unmap_Variable("ValveGP_1_OPV")
-  
-  
 def Unmap_Variable_by_Keyboard_action(identifier2):
   Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for i in Variablename:
@@ -1286,10 +1271,6 @@ def Unmap_Variable_by_Keyboard_action(identifier2):
     Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
     break
   Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')  
-  
-  
-def asadasd():
-  Unmap_Variable_by_Keyboard_action("ValveGp_1_OpenPosV")
   
 def change_variable_value(param):
   Variable , Value = param.split("$$")
@@ -1318,10 +1299,7 @@ def change_FBD_Value(param):
       i.DblClick()
       Sys.Keys(desired_variable)
       Sys.Keys("[Enter]")
-
-def sgsgs():
-  change_FBD_Value("R_VAR_6$$SE2")
-    
+      
 def verify_variable_value_FBDBlock(value):
   textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for j in textbox:
@@ -1338,7 +1316,6 @@ def gsgsg123s():
   
 def Run_PLC_Simulator():
   TestedApps.PLCSimulatorStarter.Run()
-  
   
 def Verify_backup_data_PE(param):
   param = "Workstation_1"
@@ -1373,12 +1350,6 @@ def drag_and_drop_remote_to_local_P2P(param):
       break
   device.Drag(from_x - device.ScreenLeft, from_y - device.ScreenTop, to_x - from_x, to_y - from_y)
   Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
-  
-def sgsfsfs():
-  drag_and_drop_remote_to_local_P2P("AnalogInputGP_1_AInputGP_AISV$$AnalogInputGP_1_AInputGP_AISV")
-  
-def sgsfsfs2():
-  drag_and_drop_remote_to_local_P2P("SE1$$Moolya1")
   
 def Edit_IODevice_Properties(param):
   field_label, options = param.split("$$")
@@ -1430,5 +1401,4 @@ def Click_On_Topological_entity_IODvices(service,field):
             j.Click()
             return 
                
-      
-    
+

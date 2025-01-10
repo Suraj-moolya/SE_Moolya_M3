@@ -528,3 +528,13 @@ Examples:
   | SlNo. | MainToolBar3         | Explorer tab4        |
   | 1     | Application Explorer | Application Explorer |
   
+  
+@TC_EPE_EC_0043
+@test0043
+Scenario Outline: Release Supervision Participant - Main Tool Bar 
+When I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
+Then Verify Message from notification panel AE Notification Pannel in message box 
+
+Examples:
+  | SlNo. | MainToolBar3                    |
+  | 1     | Release Supervision Participant |

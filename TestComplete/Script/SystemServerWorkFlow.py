@@ -215,6 +215,42 @@ class SystemServerWorkFlow:
         Systemserverutility.clicksaveaswindowbutton(button)
       except Exception as ex:
         raise Exception(ex) from ex
+        
+    def usernamedropdown(self):
+      try:
+        Systemserverutility.click_on_username_dropdown()
+      except Exception as ex:
+        raise Exception(ex) from ex
+        
+    def SSlogout(self):
+      try:
+        Systemserverutility.click_on_logout()
+      except Exception as ex:
+        raise Exception(ex) from ex
+         
+    def SSlogin(self):
+          try:
+            Systemserverutility.click_on_login()
+          except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def maintenancemode(self, mode):
+      try:
+        Systemserverutility.enter_maintenance_mode(mode)
+      except Exception as ex:
+        raise Exception(ex) from ex
+        
+    def entermaintenancepassword(self, password, key):
+          try:
+            Systemserverutility.enter_maintenance_password(password, key)
+          except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def databasedeleteall(self, command, key):
+              try:
+                Systemserverutility.database_deleteall(command, key)
+              except Exception as ex:
+                raise Exception(ex) from ex
             
     def backupwindowcheckbox(self, prop):
       try:

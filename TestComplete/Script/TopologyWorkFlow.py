@@ -315,7 +315,35 @@ class TopologyWorkFlow:
             Topologyutility.Verify_Device_Hardware_Catalog_TE(smp)
         except Exception as ex:
             raise Exception(ex) from ex
+
+    def rightclickcontroller(self, item):
+            """rightclickinstalledprm"""
+            try:
+              Topologyexplorerutility.rclickController(item)
+            except Exception as ex:
+                raise Exception(ex) from ex
             
+    def opennetworksfolder(self, node):
+            """opennetworksfolder"""
+            try:
+              Topologyexplorerutility.open_networks_folder(node)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+    def opennetwork(self, ethernet):
+                """opennetwork"""
+                try:
+                  Topologyexplorerutility.open_ethernetnetwork(ethernet)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+                    
+    def verifynetworkpanel(self, interface, controller):
+                    """verifynetworkpanel"""
+                    try:
+                      Topologyexplorerutility.network_panel(interface, controller)
+                    except Exception as ex:
+                        raise Exception(ex) from ex
+                    
     def textboxtopologyexplorerhardwarecatalogdevices(self,smp):
         """textboxtopologyexplorerhardwarecatalogdevices"""
         try:

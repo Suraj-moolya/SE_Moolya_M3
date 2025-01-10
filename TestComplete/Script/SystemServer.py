@@ -158,7 +158,27 @@ class SystemServer(MapBase):
     def cancelbutton(self):
         """cancelbutton"""
         return self.get_element("cancel_SystemServer")
-              
+
+    @property
+    def usernamedropdown(self):
+        """usernamedropdown"""
+        return self.get_element("usernamedropdown_SystemServer")
+        
+    @property
+    def logout(self):
+        """logout"""
+        return self.get_element("logout_SystemServer")
+        
+    @property
+    def loginmenuitem(self):
+        """loginmenuitem"""
+        return self.get_element("login1_SystemServer")
+        
+    @property
+    def DBcommand(self):
+        """DBcommand"""
+        return self.get_element("DBcommand_SystemServer")
+   
     @property
     def settingsbutton(self):
         """settingsbutton"""
@@ -198,4 +218,5 @@ class SystemServer(MapBase):
     def filesavedlocation(self):
         """aepostconditionbutton"""
         return self.get_element("Filesavedlocation_SaveAswindow1")
+
               

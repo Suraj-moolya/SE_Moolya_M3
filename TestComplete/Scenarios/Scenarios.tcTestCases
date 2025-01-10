@@ -11,6 +11,8 @@
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
+		<Feature Path="AS10 User login and logout for System server.feature" />
+		<Feature Path="AS9 Clearing Database.feature" />
 		<Feature Path="3.System backup Scheduler.feature" />
 		<Feature Path="23 System backup Restore on migrated DB.feature" />
 		<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
@@ -132,5 +134,43 @@
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
+		<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
+		<Feature Path="210 Navigate SP.feature" />
+		<Feature Path="211 Refine the project.feature" />
+		<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
+	</Folder>
+	<Folder Name="Control Expert">
+		<Feature Path="151 Unlink block, Save and check consistency.feature" />
+		<Feature Path="150 check the modifications in refine CP.feature" />
+		<Feature Path="152 Open any section and check network variable window.feature" />
+	</Folder>
+	<Folder Name="Topology explorer">
+		<Feature Path="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum.feature" />
+		<Feature Path="51 Open configure window, add some modules, synch the changes.feature" />
+		<Feature Path="52 Open configure window and switch to full screen, add modules and synch the changes.feature" />
+		<Feature Path="53 Add communication modules, add Drops and synch the changes.feature" />
+		<Feature Path="54 Map logical network to all communication modules.feature" />
+		<Feature Path="62 Deploy the controller .feature" />
+		<Feature Path="63 Check Back Up Data.feature" />
+		<Feature Path="64 Check Deploy Data.feature" />
+		<Feature Path="57 Configure STB Island and map it to control project.feature" />
+		<Feature Path="58 Configure PRM and map it to control project.feature" />
+		<Feature Path="56 Configure HART modules and map the communication(Distributed IO&apos;s).feature" />
+		<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
+		<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
+		<Feature Path="61 Check manage password, clear password and forget password.feature" />
+		<Feature Path="60 Check all the devices mapped for controller.feature" />
+		<Feature Path="55 Map the EPE devices to controller.feature" />
+		<Feature Path="77 Deploy the SP to respective stations.feature" />
+		<Feature Path="80 Check deploy changes.feature" />
+		<Feature Path="76 Deploy the CP to respective simulators.feature" />
+		<Feature Path="82 Check deploy data for each controller.feature" />
+		<Feature Path="65 Export the controller and devices from TM root folder.feature" />
+		<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
+		<Feature Path="96 Update DTM Catalog.feature" />
+		<Feature Path="75 Create Work stations for client and add multiple NIC&apos;s and configure the IP, logical network.feature" />
+		<Feature Path="28 Check Ethernet Network.feature" />
+	<Folder Name="Alternate Scenarios">
+		<Feature Path="AS6 Import the empty pages in supervision project and check the pages are created with the default page which is selected in the project settings.feature" />
 	</Folder>
 </Scenarios>

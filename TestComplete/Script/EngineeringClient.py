@@ -158,4 +158,9 @@ class EngineeringClient(MapBase):
     def rclicksubmenutextbox(self):
         """rclicksubmenutextbox"""
         return self.get_element("rclicksubmenu_EngineeringClient")
+              
+    @property
+    def systemexplorertreeview(self):
+        """rclicksubmenutextbox"""
+        return self.get_element("SystemExplorerTreeview_EngineeringClient")
       
