@@ -3,10 +3,7 @@
 @TC_EPE_PE_CP_0039
 @test0039
 Scenario Outline: Navigate to Communication mapping Tab, check the mapping is available and map
-When I Dclick Control project broswer project browser in project explorer as '<projectBrowser1>'
-When I Dclick Control project broswer project browser in project explorer as '<projectBrowser2>'
-And I Dclick Control project broswer project browser in project explorer as '<projectBrowser3>'
-And I Click '<tabname>' on service mapping edittor window
+When I Click '<tabname>' on service mapping edittor window
 And I Verify if the added device is available for mapping as '<server>'
 And I Drag and drop the EPE Managed Device from devices to channels as '<server>'
 And I Click on '<button>' in the dialog box
@@ -22,6 +19,6 @@ When I selected Close Refine Offline in refine offline
 Then Verify notification panel message Notification Pannel in message box as '<content>'
 
 Examples:
-  | SlNo. | projectBrowser1 | projectBrowser2 | projectBrowser3     | tabname               | server      | button | button1 | contextmenu_item1 | contextmenu_item2  | Project Browser RO1 | content                                |
-  | 1     | M580_Standalone | Executables     | ControlExecutable_1 | Communication Mapping | ETesysTHW_1 | OK     | Yes     | Build All         | Open Built Project | ETesysTHW_1         | Close Built Project Editor (Completed) |
+  | SlNo. | tabname               | server      | button | button1 | contextmenu_item1 | contextmenu_item2  | Project Browser RO1 | content                                |
+  | 1     | Communication Mapping | ETesysTHW_1 | OK     | Yes     | Build All         | Open Built Project | ETesysTHW_1         | Close Built Project Editor (Completed) |
   
