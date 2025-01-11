@@ -45,11 +45,7 @@ When I Select button in the modal dialoge window as '<Button name>'
 Examples:
   | SlNo. | Button name |
   | 1     | Yes         |
+  
 
-
-@Navigate_to_FBDSection_1_in_refine
-Examples:
-  | SlNo. | Project Browser RO1                        |
-  | 1     | Programs$$Tasks$$MAST$$Logic$$FBDSection_1 |
   
 
