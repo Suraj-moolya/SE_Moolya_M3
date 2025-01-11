@@ -566,10 +566,10 @@ def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
   full_path = os.path.join(base_path, folder_name)
   os.chdir(full_path) 
   Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]") 
   filename_textbox = aet_obj.comboboxtextbox.object
   filename_textbox.Click()
-  filename_textbox.Keys(file_format)
-  Sys.Keys("[Enter]")  
+  filename_textbox.Keys(file_format) 
   
 def Import_System1_Popup_AE_buttons(button_name):
     buttons_list = aet_obj.importtextbox.object.FindAllChildren('WndClass', 'Button', 1000)
