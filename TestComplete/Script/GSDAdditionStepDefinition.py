@@ -20,7 +20,7 @@ def step_impl(button):
     CommonUtil.write_text_file(f"\nWhen I click the '{button}' button in the GSD Additions Window")
     Applicationutility.wait_in_seconds(2000, "wait")
     obj.clickbuttoningsdwindow(button)
-    Applicationutility.wait_in_seconds(60000, "wait")
+    Applicationutility.wait_in_seconds(80000, "wait")
     
 @when("I select {arg} in the GSD Browser")
 def step_impl(folder):
