@@ -45,7 +45,7 @@ def double_click_control_project_browser_PE(identifier):
   proj_list = proj.find_children_for_treeviewrow()
   for item in proj_list:
     if item.Visible and identifier in item.DataContext.Identifier.OleValue:
-      if not item.IsExpanded:
+      #if not item.IsExpanded:
         item.DblClick()
         Log.Checkpoint(item.DataContext.Identifier.OleValue + ' is Double Clicked.')
         Applicationutility.wait_in_seconds(2000, "Wait")
@@ -151,7 +151,7 @@ def select_instance_drag_drop_container_dock_PE1(identifier, dropping_point):
         return
 
     item.Drag(fromx - item.ScreenLeft, fromy - item.ScreenTop, tox - fromx, toy - fromy)
-    Applicationutility.wait_in_seconds(1500, 'Wait')
+    Applicationutility.wait_in_seconds(3000, 'Wait')
     Log.Message(f"Dragging from ({fromx}, {fromy}) to ({tox}, {toy}) completed.")
     if dropping_point == "ControlProject_1":
       Actionutility.modal_dialog_window_button("OK")
@@ -1071,7 +1071,7 @@ def map_workstation(param):
       break
   else:
     Log.Message(f'{i.Text} doesnt exists')
-    
+   
 # will ad this later need to analyze properly for now we can skip this wont matter much  
 #def verify_nic_cards_available_mapping(param):
 #  service, engine = param.split("$$")
@@ -1123,8 +1123,6 @@ def Change_Password_Protection_Controller(param):
           return
   Log.Error("Could not find the specific 'Controller' element.")
   
-def gsgsg99():
-  Change_Password_Protection_Controller("Password Protection$$False")
   
 def Click_on_Settings_Header(settings):
   tab_List = proj_obj.projectcontrollersettingtab.find_children_for_treeviewrow()
@@ -1214,7 +1212,6 @@ def Click_Variable_Elementary_Variable_Tab(variable_name):
   else:
     Log.Message(f'{variable_name} does not exists')
 
-    
 def Click_P2p_Create_consecutive_variables(param):
   variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
   variable_number = 1
@@ -1230,12 +1227,7 @@ def Click_P2p_Create_consecutive_variables(param):
     for i in range(int(HMi_Column_no)):
       Sys.Keys("[Right]")
     Sys.Keys("[Enter]")
-    
-def sdsdsd():
-  Click_P2p_Create_consecutive_variables("ValveGP_1_OPV$$7$$P2P")
-    
-
-    
+       
 def change_datatype_dataeditor(param):
   variablename,desired_data_type = param.split("$$")
   textbox = topo_obj.prmgensettings.object.FindAllChildren('Name', 'TextObject(*)', 100)
@@ -1250,11 +1242,6 @@ def change_datatype_dataeditor(param):
   else:
     Log.Message(f'data type does not exists')
     
-def gsgsgsg():
-  #change_datatype_dataeditor('INT$$BOOL$$2')
-  change_datatype_dataeditor('Moolya2$$INT')
-  #change_datatype_dataeditor('STRING$$BOOL$$3')
-  
 def Unpack_Variable(identifier):
   Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for i in Variablename:
@@ -1275,10 +1262,6 @@ def Unmap_Variable(identifier):
     break
   Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')
   
-def gsgsg45():
-  Unmap_Variable("ValveGP_1_OPV")
-  
-  
 def Unmap_Variable_by_Keyboard_action(identifier2):
   Variablename = proj_obj.loadp2pvariablestabcontrol.object.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for i in Variablename:
@@ -1288,10 +1271,6 @@ def Unmap_Variable_by_Keyboard_action(identifier2):
     Log.Message(f'{i.DataContext.Identifier.OleValue} has been successfully Unmapped')
     break
   Log.Message(f'{i.DataContext.Identifier.OleValue} does not exist in the P2P Communication Configuration window')  
-  
-  
-def asadasd():
-  Unmap_Variable_by_Keyboard_action("ValveGp_1_OpenPosV")
   
 def change_variable_value(param):
   Variable , Value = param.split("$$")
@@ -1320,10 +1299,7 @@ def change_FBD_Value(param):
       i.DblClick()
       Sys.Keys(desired_variable)
       Sys.Keys("[Enter]")
-
-def sgsgs():
-  change_FBD_Value("R_VAR_6$$SE2")
-    
+      
 def verify_variable_value_FBDBlock(value):
   textbox = ref_obj.fbdsectionwindowtextbox.object.FindAllChildren('Name', 'TextObject(*)', 100)
   for j in textbox:
@@ -1340,7 +1316,6 @@ def gsgsg123s():
   
 def Run_PLC_Simulator():
   TestedApps.PLCSimulatorStarter.Run()
-  
   
 def Verify_backup_data_PE(param):
   param = "Workstation_1"
@@ -1376,8 +1351,54 @@ def drag_and_drop_remote_to_local_P2P(param):
   device.Drag(from_x - device.ScreenLeft, from_y - device.ScreenTop, to_x - from_x, to_y - from_y)
   Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
   
-def sgsfsfs():
-  drag_and_drop_remote_to_local_P2P("AnalogInputGP_1_AInputGP_AISV$$AnalogInputGP_1_AInputGP_AISV")
-  
-def sgsfsfs2():
-  drag_and_drop_remote_to_local_P2P("SE1$$Moolya1")
+def Edit_IODevice_Properties(param):
+  field_label, options = param.split("$$")
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  for control in controller_row:
+    Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
+    if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
+      control.DblClick()
+      aqUtils.Delay(500)
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "RadioButton", 10):
+        if item.WPFControlText == options:
+          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          return
+  Log.Error("Could not find the specific 'Controller' element.")
+   
+def Expand_IODevice_section(param):
+  IODevices_row = proj_obj.assignmentsdocktextbox.object.FindAllChildren("Name", "WPFObject('CheckedVisual')", 100)
+  for list in IODevices_row:
+    Sys.HighlightObject(list)
+    if param == list.DataContext.Identifier.OleValue:
+      list.Click()
+      Log.Message(list.DataContext.Identifier.OleValue+ " is expanded")
+      break     
+  else:
+    Log.Message(param+" is expanded")
+    
+def Map_IO_Devices(param):
+  service,field,engine = param.split("$$")
+  Click_On_Topological_entity_IODvices(service,field)
+  Map = proj_obj.servicemapdropdownbox.object
+  Map_List = Map.FindAllChildren('ClrClassName', 'TextBlock', 100)
+  for i in Map_List:
+    if i.Text == engine:
+      i.Click()
+      Log.Message(f'{i.Text} was clicked')
+      break
+  else:
+    Log.Message(f'{i.Text} doesnt exists')
+
+def Click_On_Topological_entity_IODvices(service,field):
+  Map = proj_obj.controlexecutablesproperty.object
+  Map_List = Map.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for i in Map_List:
+    Sys.HighlightObject(i)
+    if service in str(i.DataContext.Identifier.OleValue):
+      service_list = i.FindAllChildren('ClrClassName', 'GridViewCell', 100)
+      for j in service_list:
+          if str(j.WPFControlOrdinalNo) == field:
+            j.Click()
+            return 
+               
+

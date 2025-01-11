@@ -11,6 +11,11 @@
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
+		<Feature Path="AS10 User login and logout for System server.feature" />
+		<Feature Path="AS9 Clearing Database.feature" />
+		<Feature Path="3.System backup Scheduler.feature" />
+		<Feature Path="23 System backup Restore on migrated DB.feature" />
+		<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
 	</Folder>
 	<Folder Name="Project Explorer">
 		<Folder Name="Control Project">
@@ -84,6 +89,7 @@
 			<Feature Path="nn Refine Online.feature" />
 			<Feature Path="73 Configure Work Stations and it&apos;s services like CE, VJC and OFS.feature" />
 			<Feature Path="81 Check backup data for each controller.feature" />
+			<Feature Path="74 Map the Workstation to SP.feature" />
 			<Feature Path="78 Open refine online and check the build and deploy functionality.feature" />
 			<Feature Path="79 Update the Control project.feature" />
 			<Feature Path="74 Map the Workstation to SP.feature" />
@@ -113,11 +119,34 @@
 		<Folder Name="Import and Export EPE Devices" />
 		<Folder Name="TM or 3rd party DTM&apos;s">
 			<Feature Path="96 Update DTM Catalog.feature" />
+			<Feature Path="97 Manage DTM.feature" />
+			<Feature Path="95 Open DTM Browser.feature" />
+			<Feature Path="99 Manage GSD library.feature" />
+			<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
+			<Feature Path="92 Export only Devices into csv format.feature" />
+			<Feature Path="96 Update DTM Catalog.feature" />
 		</Folder>
+		<Feature Path="28 Check Ethernet Network.feature" />
 	</Folder>
 	<Folder Name="RTNS">
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
+		<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
+		<Feature Path="210 Navigate SP.feature" />
+		<Feature Path="211 Refine the project.feature" />
+		<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
+	</Folder>
+	<Folder Name="Control Expert">
+		<Feature Path="151 Unlink block, Save and check consistency.feature" />
+		<Feature Path="150 check the modifications in refine CP.feature" />
+		<Feature Path="152 Open any section and check network variable window.feature" />
+	</Folder>
+	<Folder Name="Alternate Scenarios">
+		<Feature Path="AS6 Import the empty pages in supervision project and check the pages are created with the default page which is selected in the project settings.feature" />
+		<Feature Path="AS1 Map associated control project to the tag container in properties.feature" />
+		<Feature Path="AS2 Create one more Tag container, create one IO Device and map the IO Device to tag container.feature" />
+		<Feature Path="AS3 Map the port to the new tag container and map the device in the communication mapping.feature" />
+		<Feature Path="AS4 Export supervision empty pages.feature" />
 	</Folder>
 </Scenarios>
