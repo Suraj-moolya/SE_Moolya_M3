@@ -1023,3 +1023,18 @@ def remove_PV_ranged_link_AE():
       break
   else:
     Log.Warning('PVRanged not found.')
+    
+def EmptyPages_ImportWindow_PE(file_format):
+  filelocation = aet_obj.addressbandtextbox
+  tox = (filelocation.object.Height)/2
+  toy = 5
+  filelocation.click_at(tox,toy)
+  base_path = os.getcwd()
+  folder_name = "Test_Import_Files"
+  full_path = os.path.join(base_path, folder_name)
+  os.chdir(full_path) 
+  Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]")
+  filename_textbox = aet_obj.comboboxtextbox.object
+  filename_textbox.Click()
+  filename_textbox.Keys(file_format)

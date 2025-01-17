@@ -7,6 +7,7 @@ from ECWarningPopup import ECWarningPopup
 from SystemExplorerScreen import SystemExplorerScreen
 from ApplicationExplorerTab import ApplicationExplorerTab
 from GlobalTemplatesTab import GlobalTemplatesTab
+import os
 
 eng_obj = EngineeringClient()
 war_obj = ECWarningPopup()
@@ -89,3 +90,18 @@ def verify_title_bar(tabname):
     Log.Checkpoint(f"Successfully navigated to '{tabname}'.")
   else:
     Log.Warning(f"Navigation error: Expected '{tabname}', but currently on '{titlebar.DataContext.HeaderText}'.")
+    
+def GlobalTemplates_Import(path, folder, file):
+    filelocation = aet_obj.addressbandtextbox
+    tox = (filelocation.object.Height)/2
+    toy = 5
+    filelocation.click_at(tox,toy)
+#    base_path = path
+#    folder_name = folder
+    full_path = os.path.join(path, folder)
+    os.chdir(full_path) 
+    Sys.Keys(os.getcwd())
+    Sys.Keys("[Enter]")
+    filename_textbox = aet_obj.comboboxtextbox.object
+    filename_textbox.Click()
+    filename_textbox.Keys(file)

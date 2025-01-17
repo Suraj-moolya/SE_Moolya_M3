@@ -97,11 +97,19 @@ class GlobalTemplatesTabWorkFlow:
             Log.Message('The Duplicate window is open')
        except:
           Log.Checkpoint('The duplicate window is closed')
-        
-        
+               
     def verifytittlebar(self, tabname):
         """verifytittlebar"""
         try:
             Globaltemplatesutility.verify_title_bar(tabname)
         except Exception as ex:
             raise Exception(ex) from ex
+
+            
+    def GTimportfilenamefilelocation(self, path, folder, file):
+            """GTimportfilenamefilelocation"""
+            try:
+                Globaltemplatesutility.GlobalTemplates_Import(path, folder, file)
+            except Exception as ex:
+                raise Exception(ex) from ex
+    

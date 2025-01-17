@@ -78,6 +78,11 @@ class GlobalTemplatesTab(MapBase):
     def titlebartab(self):
         """titlebartab"""
         return self.get_element("TitleBar_GlobalTemplatesTab")
+        
+    @property
+    def baseexplorertree(self):
+        """baseexplorertree"""
+        return self.get_element("baseexplorertree_GlobalTemplatesTab")
     
     
     
