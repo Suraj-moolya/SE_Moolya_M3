@@ -115,6 +115,8 @@
 			<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
 			<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
 			<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
+			<Feature Path="91 Configure EPE device to M340 Controller.feature" />
+			<Feature Path="32 Upgrade the controller FW version and check.feature" />
 		</Folder>
 		<Folder Name="Import and Export EPE Devices" />
 		<Folder Name="TM or 3rd party DTM&apos;s">
@@ -125,6 +127,7 @@
 			<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
 			<Feature Path="92 Export only Devices into csv format.feature" />
 			<Feature Path="96 Update DTM Catalog.feature" />
+			<Feature Path="98 Manage EDS Library.feature" />
 		</Folder>
 		<Feature Path="28 Check Ethernet Network.feature" />
 	</Folder>
