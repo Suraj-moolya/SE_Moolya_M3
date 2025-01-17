@@ -41,6 +41,11 @@ Examples:
   | SlNo. | Project Browser RO1                    |
   | 1     | Programs$$Tasks$$MAST$$Logic$$System_1 |
   
+@Double_click_on_Networks_Ethernet_2
+Examples:
+  | SlNo. | Project Browser RO1                    |
+  | 1     | Communication$$Networks$$Ethernet_2 |
+  
   
 @TC_EPE_WS_0011c
 Scenario Outline: Close Refine online window and yes on popup

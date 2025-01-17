@@ -38,7 +38,15 @@ def doubleclick_project_browser_item_CE(val):
     if val in project_browser.wItem[i]:
       project_browser.DblClickItem(val)
       break
-
+      
+def rightclick_project_browser_item_CE(val):  
+  project_browser = refoff_obj.projectbrowserrotextbox.object
+  count = project_browser.wItems.Item[0].Items.Count
+  for i in range(count):
+    if val in project_browser.wItem[i]:
+      project_browser.ClickItemR(val)
+      break
+      
 def maximize_window_CE():
   try:
     Applicationutility.wait_in_seconds(2000, 'Wait')
@@ -61,11 +69,19 @@ def double_click_selected_project_browser_item_CE(param):
       maximize_window_CE()
       Applicationutility.wait_in_seconds(2000, 'wait')
       
-def afbsdzv():
-  list_items = "Configuration$$0 : PLC bus" #"ControlProject_1", 
-  double_click_selected_project_browser_item_CE(list_items)
-#  data_selection = refoff_obj.dataselectiontextbox  #.object
-
+def Right_click_selected_project_browser_item_CE(param):
+  selection_items_list = param.split('$$')
+  select_main_folder_project_browser_CE()  
+  max = len(selection_items_list)
+  for i in range(max):
+    if i != (max-1):
+      select_project_browser_item_CE(selection_items_list[i])
+      Applicationutility.wait_in_seconds(500, 'wait')
+    else:
+      rightclick_project_browser_item_CE(selection_items_list[i])
+      Applicationutility.wait_in_seconds(1500, 'wait')
+      
+      
 def rclick_window_CE(): 
   win = refoff_obj.mdiwindowtextbox.object
   win.ClickR((win.Width/2)-100, win.Height/2)
@@ -536,3 +552,54 @@ def Add_Vairable_Logic_Block_link_P2P(param):
 def change_Port_Number_PLC_Simulator():
   Simulator_Textbox = diace_obj.simulatorporttextbox.object
   Simulator_Textbox.SetText("503")
+  
+  
+def click_MenuItem_Toolbar_CE(menu_option):
+  menu_items = ce_obj.modaldialogewindowoptionsce.object.FindAllChildren('ObjectType', 'MenuItem', 1000)
+  for item in menu_items:
+#    Log.Message(str(item.ObjectIdentifier))
+    if menu_option in str(item.ObjectIdentifier):
+      item.click()
+      break
+  
+def Select_network_CE(menu_option):
+  menu_items = ce_obj.okmodaldialoguewindowce.object.FindChild('wText', 'No Selection', 10)
+  Log.Message(menu_items.wText)
+  menu_items.ClickItem(menu_option)
+  Log.Message(menu_items.wText+" is selected")
+       
+      
+def Click_ok_button_add_network_popup_CE(button):
+  menu_items = ce_obj.okmodaldialoguewindowce.object.FindChild(('WndClass', 'WndCaption'),('Button',button), 10)
+  menu_items.Click()
+  Log.Message("Ok is Clicked")
+ 
+    
+def select_item_mdi_window_CE(identifier):        
+  menu_items = refoff_obj.mdiwindowtextbox.object.FindAllChildren('WndClass', 'ComboBox',20)
+  for item in menu_items:
+    if identifier in str(item.wItemList): 
+      item.ClickItem(identifier)
+      Log.Message(item.wText+" is selected")
+      break
+  else:
+      Log.Message(identifier+" is not selected")
+    
+    
+def afbsdzv():
+  list_items = "Communication$$Networks" #"ControlProject_1", 
+  Right_click_selected_project_browser_item_CE(list_items)
+#  data_selection = refoff_obj.dataselectiontextbox  #.object
+  
+def knc():
+  Delay(5000)
+  click_MenuItem_Toolbar_CE("New Network")
+  Select_network_CE("Ethernet")
+  Click_ok_button_add_network_popup_CE("Yes")
+  
+  Click_tab_item_EIO_config_window("Channel 0")
+  select_item_mdi_window_CE("ETH TCP IP")
+  select_item_mdi_window_CE("Ethernet_2")
+  
+  
+  

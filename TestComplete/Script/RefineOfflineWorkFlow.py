@@ -330,3 +330,10 @@ class RefineOfflineWorkFlow:
         RefineOfflineWorkFlow.refineoffline_obj.modificationbuttonrefineoffline.click()
       except Exception as ex:
         raise Exception(ex) from ex
+        
+    def textboxmdiwindowselectitemmdiwindowce(self,identifier):
+        """textboxmdiwindowselectitemmdiwindowce"""
+        try:
+            Controlexpertutility.select_item_mdi_window_CE(identifier)
+        except Exception as ex:
+            raise Exception(ex) from ex
