@@ -221,6 +221,7 @@
              <UIControl Element="Save_GlobalTemplatesTab" Name="WPFObject('SaveButton')" Parent="EngineeringClient_" />
              <UIControl Element="Cancel_GlobalTemplatesTab" Name="WPFObject('CancelButton')" Parent="EnginneringClient_" />
              <UIControl Element="compositeeditorworkspace_GlobalTemplatesTab" Name="WPFObject('CompositeEditorControl', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="baseexplorertree_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EnginneringClient_" />
         </Component>
         <Component name="Application Explorer Tab">
              <UIControl Element="Templatesbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
@@ -453,6 +454,16 @@
 		</Component>
 		<Component name="Supervision Project">
              <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" /> 
+             <UIControl Element="settingswindowSP_SupervisionProject" Name="WPFObject('BaseTreeView')" Visible="True" Parent="EngineeringClient_" /> 
+             <UIControl Element="pagetemplate_SupervisionProject" Name="WPFObject('BaseDataGridControl', '', 1)" Visible="True" Parent="EngineeringClient_" /> 
+             <UIControl Element="refineapplicationbar_SupervisionProject" Name="WPFObject('ApplicationBar', '', 1)" Parent="EngineeringClient_" /> 
+             <UIControl Element="commandbar_SupervisionProject" Name="WPFObject('CommandBar', '', 1)" Parent="EngineeringClient_" /> 
+             <UIControl Element="ExportDataWindow_SupervisionProject" Name="Window('#32770', 'Export Data', 1)" Parent="CitectIDE_" /> 
+             <UIControl Element="ExportData_Filename_SupervisionProject" Name="Window('ComboBox', '', 1)" Parent="CitectIDE_" /> 
+             <UIControl Element="ExportData_Filelocation_SupervisionProject" Name="Window('ToolbarWindow32, 'Address: *', 1)" Parent="CitectIDE_" />
+             <UIControl Element="SystemModel_Menubar_SupervisionProject" Name="WPFObject('NavMenu', '', *)" Parent="EngineeringClient_" /> 
+
+
         </Component>
         <Component name="Project Explorer">
              <UIControl Element="wpfcombobox_ProjectExplorer" Name="WPFObject('ComboBox', '', 1)" Parent="EngineeringClient_" />
@@ -462,8 +473,7 @@
 			 <UIControl Element="Remotevariable_ProjectExplorer" Name="WPFObject('RemoteProjectVariablesGrid')" Parent="EngineeringClient_" />
 			 <UIControl Element="Sourcevariable_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />
 			 
-			
-			 
+					 
         </Component>
         <Component name="Menu Bar">
              <UIControl Element="ApplicationMenuBar_MenuBar" Name="MenuBar('Application')" Parent="EngineeringClient_" />

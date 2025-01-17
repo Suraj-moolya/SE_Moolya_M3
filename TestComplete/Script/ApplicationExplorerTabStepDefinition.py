@@ -693,3 +693,9 @@ def step_impl():
     CommonUtil.write_text_file("\nThen Verify link two instances asset workspace Assert Workspace Editor in application explorer")
     obj.textboxassertworkspaceeditorverifylinktwoinstancesassetworkspace()
     Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Enter FileLocation and FileName in empty pages import dialog as {arg}")
+def step_impl(importfile):
+    """I Enter FileLocation and FileName in empty pages import dialog as '<Import3>'"""
+    CommonUtil.write_text_file("\nI Enter FileLocation and FileName in empty pages import dialog as \""+importfile+"\"")
+    obj.textboximportemptypagesenterfilelocationandfilenametobeimported(importfile)
