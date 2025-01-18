@@ -221,6 +221,12 @@
              <UIControl Element="Save_GlobalTemplatesTab" Name="WPFObject('SaveButton')" Parent="EngineeringClient_" />
              <UIControl Element="Cancel_GlobalTemplatesTab" Name="WPFObject('CancelButton')" Parent="EnginneringClient_" />
              <UIControl Element="compositeeditorworkspace_GlobalTemplatesTab" Name="WPFObject('CompositeEditorControl', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="SaveAs_GlobalTemplatesTab" Name="WPFObject('SaveDialogControl')" Parent="EngineeringClient_" />
+             <UIControl Element="PanelButton_GlobalTemplatesTab" Name="WPFObject('DockPanel', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="AddTagsDialog_GlobalTemplatesTab" Name="WPFObject('AddTagsDialog', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="SupervisionDataElements_GlobalTemplatesTab" Name="WPFObject('WizardSupervisionDataElements', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="SupervisionGenieElements_GlobalTemplatesTab" Name="WPFObject('WizardSupervisionGenieElements', '', *)" Parent="EngineeringClient_" />
+             <UIControl Element="BrowseButton_GlobalTemplatesTab" Name="WPFObject('Button', '...', *)" ToolTip.OleValue = 'Browse for control constituent file' Parent="EngineeringClient_" />
         </Component>
         <Component name="Application Explorer Tab">
              <UIControl Element="Templatesbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
@@ -468,9 +474,10 @@
         <Component name="Menu Bar">
              <UIControl Element="ApplicationMenuBar_MenuBar" Name="MenuBar('Application')" Parent="EngineeringClient_" />
         </Component>
+		
         <Component name="Save As window">
-             <UIControl Element="Filesavedlocation_SaveAswindow" Parent="EnginneringClient_" />
              <UIControl Element="Filesavedlocation_SaveAswindow1" Name="Window('#32770', 'Save As', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="Filesavedlocation_SaveAswindow" Name="Window('#32770', '*',*)" Parent="EngineeringClient_" />
         </Component>
 		<Component name="Topology">
              <UIControl Element="TopologyExplorerTree_Topology" Name="WPFObject('TopologicalExplorerTree')" Parent="EngineeringClient_" />

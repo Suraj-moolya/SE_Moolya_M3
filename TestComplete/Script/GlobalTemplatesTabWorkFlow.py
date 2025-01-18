@@ -105,3 +105,98 @@ class GlobalTemplatesTabWorkFlow:
             Globaltemplatesutility.verify_title_bar(tabname)
         except Exception as ex:
             raise Exception(ex) from ex
+    
+    def textboxglobaltemplatesearchsearchtextandrightclickgte(self,param):
+        """textboxglobaltemplatesearchsearchtextandselectgte"""
+        try:
+            Globaltemplatesutility.search_and_right_click_search_text_GTE(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def textboxglobaltemplateselecttabgte(self,param):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.select_tab_in_gtw(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def textboxglobaltemplatedraganddroptoolsgte(self,param):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.drag_and_drop_toolbox_to_window(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def textboxglobaltemplatesaveaswindowclickbuttongte(self,param):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.click_item_in_save_as_window(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def textboxglobaltemplatesaveaswindownameandversiongte(self, name, version):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.change_template_name_and_version(name, version)
+        except Exception as ex:
+            raise Exception(ex) from ex
+    
+    def textboxglobaltemplatesaveaswindowndescgte(self, desc):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.description_for_save_as_window(desc)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def buttonnextselected(self, button):
+        """globaltemplatestab_obj.buttonnextselected"""
+        try:
+            Globaltemplatesutility.panel_button_gtw(button)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def buttonbrowseselected(self):
+        """globaltemplatestab_obj.buttonbrowseselected"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.browsebuttonselected.click()
+        
+    def buttonaddselected(self, elem):
+        """globaltemplatestab_obj.buttonaddselected"""
+        try:
+            Globaltemplatesutility.click_add_icon_gtw(elem)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxglobaltemplateexpandpropertiesgte(self, elem):
+        """globaltemplatestab_obj.buttonaddselected"""
+        try:
+            Globaltemplatesutility.expand_librarys_in_gtw(elem)
+        except Exception as ex:
+            raise Exception(ex) from ex 
+    
+    def textboxglobaltemplateselecttaggte(self, desc):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.select_tag_gtw(desc)
+        except Exception as ex:
+            raise Exception(ex) from ex 
+    
+    def textboxglobaltemplatedraganddropgeniegte(self, prop):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.drag_and_drop_genie_to_genie_facet_in_gtw(prop)
+        except Exception as ex:
+            raise Exception(ex) from ex 
+    
+    def textboxglobaltemplateclicklibrarygte(self, prop):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.click_library_in_gtw(prop)
+        except Exception as ex:
+            raise Exception(ex) from ex 
+    
+    def textboxglobaltemplaterightclickcreatedtemplategte(self, prop):
+        """textboxglobaltemplateselecttabgte"""
+        try:
+            Globaltemplatesutility.right_click_created_template_gtw(prop)
+        except Exception as ex:
+            raise Exception(ex) from ex 

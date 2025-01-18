@@ -149,4 +149,7 @@
 		<Feature Path="AS3 Map the port to the new tag container and map the device in the communication mapping.feature" />
 		<Feature Path="AS4 Export supervision empty pages.feature" />
 	</Folder>
+	<Folder Name="Templates">
+		<Feature Path="137 Edit any customized template and save_ create any new template using GTW.feature" />
+	</Folder>
 </Scenarios>
