@@ -113,6 +113,8 @@ class GlobalTemplatesTab(MapBase):
     def supervisiongenieelement(self):
         """filesavewindow"""
         return self.get_element("SupervisionGenieElements_GlobalTemplatesTab")
-    
-    
-    
+
+    @property
+    def baseexplorertree(self):
+        """baseexplorertree"""
+        return self.get_element("baseexplorertree_GlobalTemplatesTab")

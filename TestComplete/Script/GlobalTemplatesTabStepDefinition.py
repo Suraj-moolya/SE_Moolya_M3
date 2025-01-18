@@ -200,3 +200,10 @@ def step_impl(prop):
     """I right click on the created template in global template explorer as '<prop>'"""
     CommonUtil.write_text_file("\nWhen I right click on the created template in global template explorer as \""+prop+"\"")
     obj.textboxglobaltemplaterightclickcreatedtemplategte(prop)
+    Applicationutility.take_screenshot('Full screenshot')    
+    
+@when("I Enter FileLocation {arg}, {arg} and FileName {arg} import window")
+def step_impl(path, folder, file):
+    """I Enter FileLocation '<path>', '<folder>' and FileName '<file>' import window"""
+    CommonUtil.write_text_file("\nWhen I Enter FileLocation '<path>', '<folder>' and FileName '<file>' import window")
+    obj.GTimportfilenamefilelocation(path, folder, file)

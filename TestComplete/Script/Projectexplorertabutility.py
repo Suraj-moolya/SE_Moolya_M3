@@ -13,6 +13,10 @@ import Actionutility
 from ApplicationExplorerTab import ApplicationExplorerTab
 from RefineOffline import RefineOffline
 from SystemServer import SystemServer
+from SupervisionProject import SupervisionProject
+import datetime
+import os
+import csv
 
 
 
@@ -24,6 +28,7 @@ proj_obj = ProjectExplorerTab()
 aet_obj = ApplicationExplorerTab()
 ref_obj = RefineOffline()
 sys_obj = SystemServer()
+SP_obj = SupervisionProject()
 
 
 
@@ -1400,5 +1405,73 @@ def Click_On_Topological_entity_IODvices(service,field):
           if str(j.WPFControlOrdinalNo) == field:
             j.Click()
             return 
-               
-
+            
+def Settings_SP(header):
+  window = SP_obj.settingswindow.object
+  sections = window.FindAllChildren('ClrClassName', 'TextBlock', 100)
+  for section in sections:
+    if section.Text == header:
+      section.Click()
+      Log.Checkpoint("Page Templates is clicked")
+      
+def verify_page_template():
+  temp = SP_obj.pagetemplate.object
+  default = temp.FindAllChildren('ClrClassName', 'GridViewRow', 100)
+  for template in default:
+    if template.item.IsDefault == True:
+      identifier = template.item.Identifier
+      Log.Checkpoint(f"{identifier} template selected as default")
+      
+def click_on_systemmodel(button):
+  appbar = SP_obj.refineapplicationbar.object
+  verticalbar = appbar.FindAllChildren('ClrClassName', 'Button', 100)
+  for menu in verticalbar:
+    if menu.WPFControlAutomationId == button:
+      menu.Click()
+      Log.Checkpoint(f"{button} is clicked")
+      
+def click_on_equipment_exportall(button1):
+    Applicationutility.wait_in_seconds(1000, 'Wait')
+    commandbar = SP_obj.refinesystemmodelcommandbar.object
+    horizontalbar = commandbar.FindAllChildren('ClrClassName', 'Button', 100)
+    for button in horizontalbar:
+      if button.WPFControlAutomationId == button1:
+          button.Click()
+          Log.Checkpoint(f"{button1} is clicked")
+          
+def Enter_systemName_systemlocation_ExportDataWindow_SPRefine(name):
+  if not Project.Variables.VariableExists(name):
+        Project.Variables.AddVariable(name, "String")
+  Project.Variables.SupervisionProject = str(name + datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
+  Log.Message(Project.Variables.SupervisionProject)
+  Applicationutility.wait_in_seconds(2000,"Wait")
+  Export_window = SP_obj.exportdatawindow.object
+  
+  if Export_window.Exists:
+    Sys.Keys("[Del]")
+    filename_textbox = SP_obj.exportdatafilename.object
+    filename_textbox.Keys(Project.Variables.SupervisionProject)
+  else:
+    Log.Warning("Export Windows doesnt exists")
+  filelocation = SP_obj.exportdatafilelocation
+  tox = (filelocation.object.Height)/2
+  toy = 10
+  filelocation.click_at(tox,toy)
+  Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]")
+      
+def Click_on_Savebutton_in_ExportData(btn):
+  savebutton = SP_obj.exportdatawindow.object.FindAllChildren('WndClass', 'Button', 10)
+  for button in savebutton:
+    if btn in button.WndCaption:
+      button.Click()
+      Log.Checkpoint(f"{btn} button is clicked")
+      
+def Click_on_RefineSystemModel_menubar(menu):
+  sysmodelmenubar = SP_obj.refinesystemmodelmenubar.object
+  menubar = sysmodelmenubar.FindAllChildren('ClrClassName', 'Button', 100)
+  for menuitem in menubar:
+    if menu in menuitem.WPFControlAutomationId:
+      menuitem.Click()
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      Log.Checkpoint(f"{menu} is clicked")

@@ -446,3 +446,22 @@ def step_impl(text):
     obj.changeportnumberworkstation(text)
     Applicationutility.take_screenshot("Full Screenshot")
 
+@when("I Right_click_selected_project_browser_item_CE System Project in topology explorer as {arg}")
+def step_impl(systemProject1):
+    """I Right_click_selected_project_browser_item_CE System Project in topology explorer as '<System Project1>'"""
+    CommonUtil.write_text_file("\nWhen I Right_click_selected_project_browser_item_CE System Project in topology explorer as \""+systemProject1+"\"")
+    obj.textboxsystemprojectrightclickselectedprojectbrowseritemce(systemProject1)
+  
+@when("I click_MenuItem_Toolbar_CE System Project in topology explorer as {arg}")
+def step_impl(systemProject2):
+    """I click_MenuItem_Toolbar_CE System Project in topology explorer as '<System Project2>'"""
+    CommonUtil.write_text_file("\nWhen I click_MenuItem_Toolbar_CE System Project in topology explorer as \""+systemProject2+"\"")
+    obj.textboxsystemprojectclickmenuitemtoolbarce(systemProject2)
+  
+@when("I Select_network_CE System Project in topology explorer as {arg}")
+def step_impl(systemProject3):
+    """I Select_network_CE System Project in topology explorer as '<System Project3>'"""
+    CommonUtil.write_text_file("\nWhen I Select_network_CE System Project in topology explorer as \""+systemProject3+"\"")
+    obj.textboxsystemprojectselectnetworkce(systemProject3)
+  
+

@@ -8,6 +8,7 @@ from SystemExplorerScreen import SystemExplorerScreen
 from ApplicationExplorerTab import ApplicationExplorerTab
 from GlobalTemplatesTab import GlobalTemplatesTab
 from MessageBox import MessageBox
+import os
 
 eng_obj = EngineeringClient()
 war_obj = ECWarningPopup()
@@ -108,7 +109,6 @@ def verify_title_bar(tabname):
     Log.Checkpoint(f"Successfully navigated to '{tabname}'.")
   else:
     Log.Warning(f"Navigation error: Expected '{tabname}', but currently on '{titlebar.DataContext.HeaderText}'.")
-    
     
 def select_tab_in_gtw(prop):
   for i in gte_obj.compositeeditorworkspacebutton.object.FindAllChildren("ClrClassName", 'RadPane', 100):
@@ -224,3 +224,18 @@ def right_click_created_template_gtw(prop):
       Log.Checkpoint(f"{prop} Clicked.")
       return
   Log.Warning(f"{prop} Not Found.")
+
+def GlobalTemplates_Import(path, folder, file):
+    filelocation = aet_obj.addressbandtextbox
+    tox = (filelocation.object.Height)/2
+    toy = 5
+    filelocation.click_at(tox,toy)
+#    base_path = path
+#    folder_name = folder
+    full_path = os.path.join(path, folder)
+    os.chdir(full_path) 
+    Sys.Keys(os.getcwd())
+    Sys.Keys("[Enter]")
+    filename_textbox = aet_obj.comboboxtextbox.object
+    filename_textbox.Click()
+    filename_textbox.Keys(file)

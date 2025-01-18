@@ -584,3 +584,9 @@ class ApplicationExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
 
+    def textboximportemptypagesenterfilelocationandfilenametobeimported(self,file_format):
+            """textboximportenterfilelocationandfilenametobeimported"""
+            try:
+                Applicationexplorertabutility.EmptyPages_ImportWindow_PE(file_format)
+            except Exception as ex:
+                raise Exception(ex) from ex

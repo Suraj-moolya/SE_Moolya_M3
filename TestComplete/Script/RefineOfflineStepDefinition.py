@@ -312,3 +312,10 @@ def step_impl(projectBrowserRo1):
     CommonUtil.write_text_file("\nWhen I Navigate through project browser CE Project Browser RO in refine offline as \""+projectBrowserRo1+"\"")
     obj.textboxprojectbrowserronavigatethroughprojectbrowserce(projectBrowserRo1)
     Applicationutility.take_screenshot()
+    
+@when("I select_item_mdi_window_CE MDI Window in refine offline as {arg}")
+def step_impl(mdiWindow1):
+    """I select_item_mdi_window_CE MDI Window in refine offline as '<MDI Window1>'"""
+    CommonUtil.write_text_file("\nWhen I select_item_mdi_window_CE MDI Window in refine offline as \""+mdiWindow1+"\"")
+    obj.textboxmdiwindowselectitemmdiwindowce(mdiWindow1)
+  
