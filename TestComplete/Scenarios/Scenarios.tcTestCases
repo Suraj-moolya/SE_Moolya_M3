@@ -156,4 +156,7 @@
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />
 	</Folder>
+	<Folder Name="Templates">
+		<Feature Path="137 Edit any customized template and save_ create any new template using GTW.feature" />
+	</Folder>
 </Scenarios>

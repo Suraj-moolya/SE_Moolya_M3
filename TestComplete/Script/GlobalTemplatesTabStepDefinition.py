@@ -113,6 +113,93 @@ def step_impl(tabname):
     """I verify that I have navigated to the '<tabname>'"""
     CommonUtil.write_text_file("\nWhen Verify Duplicate window close")
     obj.verifytittlebar(tabname)
+    Applicationutility.take_screenshot('Full screenshot') 
+    
+@when("I Search text and Right-Click GTE global template search in global template explorer as {arg}")
+def step_impl(globalTemplateSearch1):
+    """I Search text and Right-Click GTE global template search in global template explorer as '<global template search1>'"""
+    CommonUtil.write_text_file("\nWhen I Search text and Right-Click GTE global template search in global template explorer as \""+globalTemplateSearch1+"\"")
+    obj.textboxglobaltemplatesearchsearchtextandrightclickgte(globalTemplateSearch1)
+    
+@when("I Select {arg} in global template explorer")
+def step_impl(tab):
+    """I Select '<tab>' in global template explorer"""
+    CommonUtil.write_text_file(f"\nWhen I Select '{tab}' in global template explorer")
+    obj.textboxglobaltemplateselecttabgte(tab)
+    
+@when("I Drag and Drop {arg} from toolbox to the edit page in global template explorer")
+def step_impl(source):
+    """I Drag and Drop '<source>' from toolbox to the edit page in global template explorer"""
+    CommonUtil.write_text_file(f"\nWhen I Drag and Drop '{source}' from toolbox to the edit page in global template explorer")
+    obj.textboxglobaltemplatedraganddroptoolsgte(source)
+
+
+@when("I click on {arg} in the Save As window")
+def step_impl(btn):
+    """I click on '<btn>' in the Save As window"""
+    CommonUtil.write_text_file(f"\nWhen I click on '{btn}' in the Save As window")
+    obj.textboxglobaltemplatesaveaswindowclickbuttongte(btn)
+
+@when("I select {arg} in Select Tag Window")
+def step_impl(btn):
+    """I select '<btn>' in Select Tag Window"""
+    CommonUtil.write_text_file(f"\nWhen I select '{btn}' in Select Tag Window")
+    obj.textboxglobaltemplateselecttaggte(btn)
+    
+@when("I change the template name to {arg} and version to {arg} in the Save As window")
+def step_impl(name, version):
+    """I change the template name to '<name>' and version to '<version>' in the Save As window"""
+    CommonUtil.write_text_file(f"\nWhen I change the template name to '{name}' and version to '{version}' in the Save As window")
+    obj.textboxglobaltemplatesaveaswindownameandversiongte(name, version)
+    
+@when("I enter the description in the Save As window as {arg}")
+def step_impl(desc):
+    """I enter the description in the Save As window as '<desc>'"""
+    CommonUtil.write_text_file("\nWhen I enter the description in the Save As window as {desc}")
+    obj.textboxglobaltemplatesaveaswindowndescgte(desc)
+    Applicationutility.wait_in_seconds(1000, 'wait')
+    
+@when("I click on the {arg} button in the Template Creation Wizard")
+def step_impl(button):
+    """I click on the '<button>' button in the Template Creation Wizard"""
+    CommonUtil.write_text_file("\nWhen I click on the {button} button in the Template Creation Wizard")
+    obj.buttonnextselected(button)
+    
+@when("I click on the Browse button in the Template Creation Wizard")
+def step_impl():
+    """I click on the Browse button in the Template Creation Wizard"""
+    CommonUtil.write_text_file("\nWhen I click on the Browse button in the Template Creation Wizard")
+    obj.buttonbrowseselected()
+    
+@when("I click on the {arg} Add button in the Template Creation Wizard")
+def step_impl(elem):
+    """I click on the '<elem>' Add button in the Template Creation Wizard"""
+    CommonUtil.write_text_file(f"\nWhen I click on the {elem} Add button in the Template Creation Wizard")
+    obj.buttonaddselected(elem)
+    
+@when("I click on the {arg} in Template Creation Wizard")
+def step_impl(elem):
+    """I click on the '<elem>' in Template Creation Wizard"""
+    CommonUtil.write_text_file(f"\nWhen I click on the {elem} in Template Creation Wizard")
+    obj.textboxglobaltemplateclicklibrarygte(elem)
+    
+@when("I Exapnd the {arg} in Template Creation Wizard")
+def step_impl(elem):
+    """I Exapnd the '<elem>' in Template Creation Wizard"""
+    CommonUtil.write_text_file(f"\nWhen I Expand the {elem} in Template Creation Wizard")
+    obj.textboxglobaltemplateexpandpropertiesgte(elem)
+    
+@when("I Drag and Drop {arg} from Genie to Genie Facet in Template Creation Wizard")
+def step_impl(prop):
+    """I Drag and Drop '<prop>' from Genie to Genie Facet in Template Creation Wizard"""
+    CommonUtil.write_text_file(f"\nWhen I Drag and Drop '{prop}' from Genie to Genie Facet in Template Creation Wizard")
+    obj.textboxglobaltemplatedraganddropgeniegte(prop)
+    
+@when("I right click on the created template in global template explorer as {arg}")
+def step_impl(prop):
+    """I right click on the created template in global template explorer as '<prop>'"""
+    CommonUtil.write_text_file("\nWhen I right click on the created template in global template explorer as \""+prop+"\"")
+    obj.textboxglobaltemplaterightclickcreatedtemplategte(prop)
     Applicationutility.take_screenshot('Full screenshot')    
     
 @when("I Enter FileLocation {arg}, {arg} and FileName {arg} import window")

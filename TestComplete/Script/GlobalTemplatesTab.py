@@ -78,11 +78,43 @@ class GlobalTemplatesTab(MapBase):
     def titlebartab(self):
         """titlebartab"""
         return self.get_element("TitleBar_GlobalTemplatesTab")
-        
+              
+    @property
+    def saveaswindow(self):
+        """saveaswindow"""
+        return self.get_element("SaveAs_GlobalTemplatesTab")
+              
+    @property
+    def panelbutton(self):
+        """saveaswindow"""
+        return self.get_element("PanelButton_GlobalTemplatesTab")
+              
+    @property
+    def browsebuttonselected(self):
+        """browsebutton"""
+        return self.get_element("BrowseButton_GlobalTemplatesTab")
+              
+    @property
+    def filesavewindow(self):
+        """filesavewindow"""
+        return self.get_element("Filesavedlocation_SaveAswindow")
+              
+    @property
+    def supervisiondataelement(self):
+        """filesavewindow"""
+        return self.get_element("SupervisionDataElements_GlobalTemplatesTab")
+              
+    @property
+    def addtagswindow(self):
+        """filesavewindow"""
+        return self.get_element("AddTagsDialog_GlobalTemplatesTab")
+              
+    @property
+    def supervisiongenieelement(self):
+        """filesavewindow"""
+        return self.get_element("SupervisionGenieElements_GlobalTemplatesTab")
+
     @property
     def baseexplorertree(self):
         """baseexplorertree"""
         return self.get_element("baseexplorertree_GlobalTemplatesTab")
-    
-    
-    
