@@ -11,11 +11,8 @@
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
-		<Feature Path="AS10 User login and logout for System server.feature" />
-		<Feature Path="AS9 Clearing Database.feature" />
 		<Feature Path="3.System backup Scheduler.feature" />
 		<Feature Path="23 System backup Restore on migrated DB.feature" />
-		<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
 	</Folder>
 	<Folder Name="Project Explorer">
 		<Folder Name="Control Project">
@@ -76,6 +73,7 @@
 			<Feature Path="220 Create new page and assign some instances.feature" />
 			<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
 		</Folder>
+		<Feature Path="39 Check Consistency.feature" />
 	</Folder>
 	<Folder Name="Topology explorer">
 		<Folder Name="Workstation">
@@ -115,21 +113,22 @@
 			<Feature Path="66 Do some modification in configure and deploy the project to controller.feature" />
 			<Feature Path="67 Do Some modification in configure side in refine online and update the project and check configure(add_delete communication_DIO_AIO modules).feature" />
 			<Feature Path="68 Import the TM backup with Update(check configuration, all the mappings, IP address, physical view and logical network) 1 case 12steps.feature" />
-			<Feature Path="91 Configure EPE device to M340 Controller.feature" />
-			<Feature Path="32 Upgrade the controller FW version and check.feature" />
 		</Folder>
-		<Folder Name="Import and Export EPE Devices" />
+		<Folder Name="Import and Export EPE Devices">
+			<Feature Path="91 Configure EPE device to M340 Controller.feature" />
+			<Feature Path="92 Export only Devices into csv format.feature" />
+		</Folder>
 		<Folder Name="TM or 3rd party DTM&apos;s">
 			<Feature Path="96 Update DTM Catalog.feature" />
 			<Feature Path="97 Manage DTM.feature" />
 			<Feature Path="95 Open DTM Browser.feature" />
 			<Feature Path="99 Manage GSD library.feature" />
 			<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
-			<Feature Path="92 Export only Devices into csv format.feature" />
-			<Feature Path="96 Update DTM Catalog.feature" />
 			<Feature Path="98 Manage EDS Library.feature" />
 		</Folder>
 		<Feature Path="28 Check Ethernet Network.feature" />
+		<Feature Path="32 Upgrade the controller FW version and check.feature" />
+		<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
 	</Folder>
 	<Folder Name="RTNS">
 		<Feature Path="229 Run Citect runtime.feature" />
@@ -152,6 +151,8 @@
 		<Feature Path="AS3 Map the port to the new tag container and map the device in the communication mapping.feature" />
 		<Feature Path="AS4 Export supervision empty pages.feature" />
 		<Feature Path="AS7 Export all Equipments,tags(Equipments, variables, Trends, Advanced alarms etc).feature" />
+		<Feature Path="AS10 User login and logout for System server.feature" />
+		<Feature Path="AS9 Clearing Database.feature" />
 	</Folder>
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />

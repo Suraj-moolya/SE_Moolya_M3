@@ -7,6 +7,11 @@ from MessageBox import MessageBox
 ss_obj = SystemServer()
 msg_obj = MessageBox()
 
+###############################################################################
+#Author : Preetham S R
+#Function : Stops Server and Closes System Server
+#Parameter : No
+###############################################################################
 def close_system_server():
     """close appliactions"""
     try:
