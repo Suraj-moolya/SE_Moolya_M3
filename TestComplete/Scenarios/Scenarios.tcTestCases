@@ -72,8 +72,8 @@
 			<Feature Path="219 Open multiple pages and drop the instances in the page.feature" />
 			<Feature Path="220 Create new page and assign some instances.feature" />
 			<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
+			<Feature Path="225 Import the project and check the project is updated properly..feature" />
 		</Folder>
-		<Feature Path="39 Check Consistency.feature" />
 	</Folder>
 	<Folder Name="Topology explorer">
 		<Folder Name="Workstation">
@@ -126,18 +126,18 @@
 			<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
 			<Feature Path="98 Manage EDS Library.feature" />
 		</Folder>
-		<Feature Path="28 Check Ethernet Network.feature" />
-		<Feature Path="32 Upgrade the controller FW version and check.feature" />
-		<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
+		<Folder Name="TE">
+			<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
+			<Feature Path="28 Check Ethernet Network.feature" />
+			<Feature Path="32 Upgrade the controller FW version and check.feature" />
+			<Feature Path="39 Check Consistency.feature" />
+		</Folder>
 	</Folder>
 	<Folder Name="RTNS">
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
 		<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
-		<Feature Path="210 Navigate SP.feature" />
-		<Feature Path="211 Refine the project.feature" />
-		<Feature Path="158 Open control project settings and modify the settings. Save and close.feature" />
 	</Folder>
 	<Folder Name="Control Expert">
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
@@ -156,8 +156,6 @@
 	</Folder>
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />
-	</Folder>
-	<Folder Name="Templates">
 		<Feature Path="137 Edit any customized template and save_ create any new template using GTW.feature" />
 	</Folder>
 </Scenarios>
