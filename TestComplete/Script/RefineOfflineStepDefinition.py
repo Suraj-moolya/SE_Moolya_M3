@@ -318,4 +318,28 @@ def step_impl(mdiWindow1):
     """I select_item_mdi_window_CE MDI Window in refine offline as '<MDI Window1>'"""
     CommonUtil.write_text_file("\nWhen I select_item_mdi_window_CE MDI Window in refine offline as \""+mdiWindow1+"\"")
     obj.textboxmdiwindowselectitemmdiwindowce(mdiWindow1)
+
+@when("I checked IODDT CE in elemetary variables")
+def step_impl():
+    """I checked IODDT CE in elemetary variables"""
+    CommonUtil.write_text_file("\nWhen I checked IODDT CE in elemetary variables")
+    obj.checkboxioddtcechecked()
+  
+@when("I checked Device DDT CE in elemetary variables")
+def step_impl():
+    """I checked Device DDT CE in elemetary variables"""
+    CommonUtil.write_text_file("\nWhen I checked Device DDT CE in elemetary variables")
+    obj.checkboxdeviceddtcechecked()
+  
+@when("I selected Access to unmapped hardware CE in refine offline")
+def step_impl():
+    """I selected Access to unmapped hardware CE in refine offline"""
+    CommonUtil.write_text_file("\nWhen I selected Access to unmapped hardware CE in refine offline")
+    obj.buttonaccesstounmappedhardwareceselected()
+  
+@when("I selected Device DDT popup moveall CE in elemetary variables")
+def step_impl():
+    """I selected Device DDT popup moveall CE in elemetary variables"""
+    CommonUtil.write_text_file("\nWhen I selected Device DDT popup moveall CE in elemetary variables")
+    obj.buttondeviceddtpopupmoveallceselected() 
   

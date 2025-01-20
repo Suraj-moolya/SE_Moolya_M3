@@ -337,3 +337,21 @@ class RefineOfflineWorkFlow:
             Controlexpertutility.select_item_mdi_window_CE(identifier)
         except Exception as ex:
             raise Exception(ex) from ex
+
+    def checkboxioddtcechecked(self):
+        """refineoffline_obj.ioddtcecheckbox"""
+        RefineOfflineWorkFlow.refineoffline_obj.ioddtcecheckbox.checkbox_checked()
+        Applicationutility.take_screenshot('Taking Screenshot')
+        
+    def checkboxdeviceddtcechecked(self):
+        """refineoffline_obj.deviceddtcecheckbox"""
+        RefineOfflineWorkFlow.refineoffline_obj.deviceddtcecheckbox.checkbox_checked()
+        Applicationutility.take_screenshot('Taking Screenshot')
+        
+    def buttonaccesstounmappedhardwareceselected(self):
+        """refineoffline_obj.accesstounmappedhardwarecebutton"""
+        RefineOfflineWorkFlow.refineoffline_obj.accesstounmappedhardwarecebutton.click()     
+        
+    def buttondeviceddtpopupmoveallceselected(self):
+        """refineoffline_obj.deviceddtpopupmoveallcebutton"""
+        RefineOfflineWorkFlow.refineoffline_obj.deviceddtpopupmoveallcebutton.click()

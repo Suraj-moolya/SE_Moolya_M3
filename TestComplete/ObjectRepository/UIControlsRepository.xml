@@ -198,8 +198,8 @@
 			 <UIControl Element="passwordOKButton_TopologyExporerTab" Name="WPFObject('ButtonOK')" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('Button', 'Deploy', 1)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />	 
-                <UIControl Element="OpenEthernetNetwork_TopologyExplorerTab" Name="WPFObject('PART_PortContainer')" Parent="EngineeringClient_" />
-                <UIControl Element="NetworkPanel_TopologyExplorerTab" Name="WPFObject('RadTreeViewItem', '', 2)" Parent="EngineeringClient_" />
+             <UIControl Element="OpenEthernetNetwork_TopologyExplorerTab" Name="WPFObject('PART_PortContainer')" Parent="EngineeringClient_" />
+             <UIControl Element="NetworkPanel_TopologyExplorerTab" Name="WPFObject('RadTreeViewItem', '', 2)" Parent="EngineeringClient_" />
 			 <UIControl Element="fdtConfigurationWindow_TopologyExporerTab" Name="MDIWindow('* - fdtConfiguration')" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DeployOK_TopologyExporerTab" Name="WPFObject('CheckBox', 'Start engine after deploying built project.', 1)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="DTMDevice_TopologyExporerTab" Name="WinFormsObject('TabPageEx', 'My Device')" Parent="EngineeringClient_" />
@@ -326,9 +326,7 @@
 			 <UIControl Element="ErrorPopup_PlantScadaTab" Name="Window('#32770', 'Error', 1)" Parent="Citect32_" />
 			 <UIControl Element="Elementvariable_ProjectExplorerTab" Name="OutlineItem('Elementary Variables')" Parent="EngineeringClient_" />
 			 <UIControl Element="MasterPageMainWindow_PlantScadaTab" Name="Window('ctDSP', 'Master (startup) page for HD1080 res', 1)" Parent="Citect32_" />
-			 <UIControl Element="AnimationTable_ProjectExplorerTab" Name="MDIWindow('Table[Data Editor] (1)')" Visible = "True" Parent="EngineeringClient_" />
-
-			 
+			 <UIControl Element="AnimationTable_ProjectExplorerTab" Name="MDIWindow('Table[Data Editor] (1)')" Visible = "True" Parent="EngineeringClient_" />	 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />
@@ -376,9 +374,7 @@
 			 <UIControl Element="ReConfirmDBPOK_MessageBox" Name="WPFObject('Button', 'OK', 2)" Parent="EngineeringClient_" />
 			 <UIControl Element="Modificationpopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
 			 <UIControl Element="Importopen_MessageBox" Name="Window('Button', '*Open', 1)"  VisibleOnScreen="True" Parent="EngineeringClient_" />
-<UIControl Element="headercb_MessageBox" Name="WPFObject('headerCheckBox')" Parent="EngineeringClient_" />
-        
-			  
+			 <UIControl Element="headercb_MessageBox" Name="WPFObject('headerCheckBox')" Parent="EngineeringClient_" />			  
         </Component>	
 		<Component name="Refine Offline">
              <UIControl Element="CloseRefineOffline_RefineOffline" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Close" Parent="EngineeringClient_" />
@@ -412,7 +408,10 @@
 			 <UIControl Element="SaveRefineOffline1_RefineOffline" Name="WPFObject('Button', '', *)" DataContext.ToolTip.OleValue="Save" Parent="EngineeringClient_" />
 			 <UIControl Element="FacetTextbox_RefineOffline" Name="TextObject('CondSumGP_ST', 2)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="ModificationButton_RefineOffline" Name="Window('Button', '*Modification', 1)" Parent="EngineeringClient_" />
-			 
+			 <UIControl Element="AccesstounmappedhardwareCE_RefineOffline" Name="WPFObject('PartButton')"  DataContext.ToolTip.OleValue="Access to unmapped hardware(Device DDTs)" Parent="EngineeringClient_" />
+             <UIControl Element="IODDTCE_RefineOffline" Name="Window('Button', 'IODDT', *)" Parent="EngineeringClient_" />
+             <UIControl Element="DeviceDDTCE_RefineOffline" Name="Window('Button', 'Device DDT', *)" Parent="EngineeringClient_" />
+             <UIControl Element="DeviceDDTpopupmoveallCE_RefineOffline" Name="WPFObject('MoveAll')" Parent="EngineeringClient_" />
 		</Component>
         <Component name="Operation client">
              <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />
@@ -441,9 +440,7 @@
 			 <UIControl Element="Deviceoptions_ControlExpert" Name="Popup('Device menu')" Parent="ControlExpert_" />
 			 <UIControl Element="Additionaloptions_ControlExpert" Name="Popup('Additional functions')" Parent="ControlExpert_" />
 			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
-<UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
-        
-
+			 <UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
         </Component>
         <Component name="Dialog CE">
              <UIControl Element="DialogPanelCE_DialogCE" Name ="Panel('[0..0]')" Parent="ControlExpert_"/>
@@ -455,8 +452,7 @@
              <UIControl Element="DialogListboxCE1_DialogCE" Name="Window('AfxWnd140u', '', 2)" Parent="ControlExpert_" />
 			 <UIControl Element="StartSimulator_DialogCE" Name="WPFObject('ButtonStart')" Parent="PLCSimulatorStarter_" />
 			 <UIControl Element="SimulatorPort_DialogCE" Name="WPFObject('TextBox', '', 1)" Parent="PLCSimulatorStarter_" />
-<UIControl Element="ListofmodifiedYesbuttonCE_DialogCE" Name="Window('Button', '*Yes', 1)" Parent="ControlExpert_" />
-
+			 <UIControl Element="ListofmodifiedYesbuttonCE_DialogCE" Name="Window('Button', '*Yes', 1)" Parent="ControlExpert_" />
 		</Component>
 		<Component name="Supervision Project">
              <UIControl Element="advancesettingswindowSP_SupervisionProject" Name="WPFObject('MainIcon')" Text="*Advanced Settings" Parent="EngineeringClient_" /> 
@@ -468,8 +464,6 @@
              <UIControl Element="ExportData_Filename_SupervisionProject" Name="Window('ComboBox', '', 1)" Parent="CitectIDE_" /> 
              <UIControl Element="ExportData_Filelocation_SupervisionProject" Name="Window('ToolbarWindow32, 'Address: *', 1)" Parent="CitectIDE_" />
              <UIControl Element="SystemModel_Menubar_SupervisionProject" Name="WPFObject('NavMenu', '', *)" Parent="EngineeringClient_" /> 
-
-
         </Component>
         <Component name="Project Explorer">
              <UIControl Element="wpfcombobox_ProjectExplorer" Name="WPFObject('ComboBox', '', 1)" Parent="EngineeringClient_" />
@@ -477,14 +471,11 @@
 			 <UIControl Element="LoadP2PVariablesTabControl_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />
 			 <UIControl Element="Unmapvariable_ProjectExplorer" Name="WPFObject('MenuItem', 'Unmap', *)" Parent="EngineeringClient_" />
 			 <UIControl Element="Remotevariable_ProjectExplorer" Name="WPFObject('RemoteProjectVariablesGrid')" Parent="EngineeringClient_" />
-			 <UIControl Element="Sourcevariable_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />
-			 
-					 
+			 <UIControl Element="Sourcevariable_ProjectExplorer" Name="WPFObject('SourceProjectVariablesGrid')" Parent="EngineeringClient_" />							 
         </Component>
         <Component name="Menu Bar">
              <UIControl Element="ApplicationMenuBar_MenuBar" Name="MenuBar('Application')" Parent="EngineeringClient_" />
-        </Component>
-		
+        </Component>		
         <Component name="Save As window">
              <UIControl Element="Filesavedlocation_SaveAswindow1" Name="Window('#32770', 'Save As', 1)" Parent="EngineeringClient_" />
              <UIControl Element="Filesavedlocation_SaveAswindow" Name="Window('#32770', '*',*)" Parent="EngineeringClient_" />

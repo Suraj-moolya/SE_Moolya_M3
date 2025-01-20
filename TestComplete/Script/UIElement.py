@@ -1606,5 +1606,15 @@ class UIElement:
         except: 
           Log.Warning(object + 'is not visible on screen.')
         
-
-       
+############################################################
+#check :- this function is to change checkbox wstate to 1 (checked)
+############################################################
+    def checkbox_checked(self):
+        """checkbox_checked"""
+        if self.element.wState != 1:
+          self.element.wState = 1
+          Log.Checkpoint('Checkbox checked')
+        else:
+          Log.Message('Checkbox already checked')
+		 
+    

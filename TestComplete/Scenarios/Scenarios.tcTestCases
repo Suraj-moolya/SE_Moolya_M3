@@ -125,6 +125,7 @@
 			<Feature Path="99 Manage GSD library.feature" />
 			<Feature Path="102 Configure the TM and 3rd party devices. Open the devices and save.feature" />
 			<Feature Path="98 Manage EDS Library.feature" />
+			<Feature Path="104 Use the device variables(IO DDT variables) in control project(PE).feature" />
 		</Folder>
 		<Folder Name="TE">
 			<Feature Path="26 Go to Refine Online of controller in migrated DB.feature" />
@@ -137,7 +138,6 @@
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
-		<Feature Path="226 Check all the trends tags, alarm tags are updated properly after import.feature" />
 	</Folder>
 	<Folder Name="Control Expert">
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
