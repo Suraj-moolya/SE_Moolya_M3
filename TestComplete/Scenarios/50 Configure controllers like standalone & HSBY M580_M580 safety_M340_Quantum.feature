@@ -270,13 +270,13 @@ And I enterkey Project Browser RO in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
 @Create_Workstation_1
 Examples:
-  | SlNo. | context menu       | project browser1   |
-  | 1     | Create Workstation | Create Workstation |
+  | SlNo. | context menu        | project browser1   |
+  | 1     | Create Station Node | Create Workstation |
   
 @Create_Workstation_2
 Examples:
-  | SlNo. | context menu       | project browser1   |
-  | 1     | Create Workstation | Create Workstation |
+  | SlNo. | context menu        | project browser1   |
+  | 1     | Create Station Node | Create Workstation |
   
 
   
