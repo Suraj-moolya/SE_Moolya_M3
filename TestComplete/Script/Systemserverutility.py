@@ -298,12 +298,15 @@ def click_on_username_dropdown():
     dropdown.Click()
     Log.Checkpoint("Username dropdown is clicked")
     
-def click_on_logout():
+def click_on_menuitem_Usericon(param):
   logout = server_obj.logout.object.FindAllChildren("ClrClassName", "MenuItem", 50)
   for option in logout:
-    if option.WPFControlText == "Log Out":
+    if option.WPFControlText == param:
       option.Click()
-      Log.Checkpoint("Logout option is clicked")
+      Log.Checkpoint(f'{param} option is clicked')
+      break
+  else:
+    Log.Warning(f'{param} option is does not exists in menuitem')
       
 def click_on_login():
   server_obj.loginmenuitem.object.Click()
