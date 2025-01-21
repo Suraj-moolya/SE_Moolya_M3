@@ -5,6 +5,7 @@
 		<Feature Path="ApplicationExplorer.feature" />
 		<Feature Path="129 Import the instances which is exported in above step.feature" />
 		<Feature Path="130 Modify Instance.feature" />
+		<Feature Path="AS22 Unlink between instances in Asset work space and save.feature" />
 	</Folder>
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
