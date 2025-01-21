@@ -602,3 +602,23 @@ def close_the_tab_EC(param):
     Log.Message(f'{param} parameter passed might be wrong')       
 
 
+def update_report_details(customer_name, site_name, report_desc, report_author, page_size, orientation, report_footer, report_header):
+  updates = {
+    'CustomerName': customer_name,
+    'SiteName': site_name,
+    'ReportDescription': report_desc,
+    'ReportAuthor': report_author,
+    'PageSize': page_size,
+    'Orientation': orientation,
+    'ReportFooter': report_footer,
+    'ReportHeader': report_header
+  }
+  for det in cs_obj.reportdialogwindow.object.FindAllChildren('ClrClassName', 'TextBlock', 100):
+    data_context = getattr(det, 'DataContext', None)
+    if data_context is not None:
+      for attr, value in updates.items():
+        if hasattr(data_context, attr):
+          setattr(data_context, attr, value)
+          Log.Message(f"{attr} updated to '{value}'")
+    else:
+      Log.Warning("Something happend.")
