@@ -911,3 +911,23 @@ class ProjectExplorerTabWorkFlow:
                 except Exception as ex:
                     raise Exception(ex) from ex
                     
+    def pagetemplatesspsettingsbuttonclick(self):
+        """dataeditorvariableclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.pagetemplatesspsettingsbutton.click()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def addpagetemplatebuttonclick(self):
+        """dataeditorvariableclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.addpagetemplatebutton.click()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def newpagetemplateradiobuttoncheck(self):
+        """newpagetemplateradiobuttoncheck"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.newpagetemplateradiobutton.checkboxchecked()
+        except Exception as ex:
+            raise Exception(ex) from ex

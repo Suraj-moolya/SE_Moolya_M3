@@ -219,7 +219,7 @@
              <UIControl Element="Description_GlobalTemplatesTab" Name="WPFObject('ChangeDescriptionInput')" Parent="EngineeringClient_" />
              <UIControl Element="Partidentifier_GlobalTemplatesTab" Name="WPFObject('PartIdentifier')" Parent="EngineeringClient_" />
              <UIControl Element="Save_GlobalTemplatesTab" Name="WPFObject('SaveButton')" Parent="EngineeringClient_" />
-             <UIControl Element="Cancel_GlobalTemplatesTab" Name="WPFObject('CancelButton')" Parent="EnginneringClient_" />
+             <UIControl Element="Cancel_GlobalTemplatesTab" Name="WPFObject('CancelButton')" Parent="EngineeringClient_" />
              <UIControl Element="compositeeditorworkspace_GlobalTemplatesTab" Name="WPFObject('CompositeEditorControl', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="SaveAs_GlobalTemplatesTab" Name="WPFObject('SaveDialogControl')" Parent="EngineeringClient_" />
              <UIControl Element="PanelButton_GlobalTemplatesTab" Name="WPFObject('DockPanel', '', *)" Parent="EngineeringClient_" />
@@ -227,7 +227,15 @@
              <UIControl Element="SupervisionDataElements_GlobalTemplatesTab" Name="WPFObject('WizardSupervisionDataElements', '', *)" Parent="EngineeringClient_" />
              <UIControl Element="SupervisionGenieElements_GlobalTemplatesTab" Name="WPFObject('WizardSupervisionGenieElements', '', *)" Parent="EngineeringClient_" />
              <UIControl Element="BrowseButton_GlobalTemplatesTab" Name="WPFObject('Button', '...', *)" ToolTip.OleValue = 'Browse for control constituent file' Parent="EngineeringClient_" />
-             <UIControl Element="baseexplorertree_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EnginneringClient_" />
+             <UIControl Element="baseexplorertree_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+			 <UIControl Element="ControlTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Control (Composite Template)" Parent="EngineeringClient_" />
+			 <UIControl Element="MotorTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Motor (Composite Template)" Parent="EngineeringClient_" />
+			 <UIControl Element="LogicTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Logic (Logic)" Parent="EngineeringClient_" />
+			 <UIControl Element="TemplatizerButton_GlobalTemplatesTab" Name="WPFObject('MenuItem', 'Templatizer', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="OpenControlParticipantButton_GlobalTemplatesTab" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue = "Open Control Participant" Parent="EngineeringClient_" />
+			 <UIControl Element="SupervisionTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Supervision (Composite Template)" Parent="EngineeringClient_" />
+			 <UIControl Element="GeniesTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Genies (Composite Template)" Parent="EngineeringClient_" />
+			 <UIControl Element="PumpRightGenieTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Pump Right (Genie)" Parent="EngineeringClient_" />			 
         </Component>
         <Component name="Application Explorer Tab">
              <UIControl Element="Templatesbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
@@ -326,7 +334,10 @@
 			 <UIControl Element="ErrorPopup_PlantScadaTab" Name="Window('#32770', 'Error', 1)" Parent="Citect32_" />
 			 <UIControl Element="Elementvariable_ProjectExplorerTab" Name="OutlineItem('Elementary Variables')" Parent="EngineeringClient_" />
 			 <UIControl Element="MasterPageMainWindow_PlantScadaTab" Name="Window('ctDSP', 'Master (startup) page for HD1080 res', 1)" Parent="Citect32_" />
-			 <UIControl Element="AnimationTable_ProjectExplorerTab" Name="MDIWindow('Table[Data Editor] (1)')" Visible = "True" Parent="EngineeringClient_" />	 
+			 <UIControl Element="AnimationTable_ProjectExplorerTab" Name="MDIWindow('Table[Data Editor] (1)')" Visible = "True" Parent="EngineeringClient_" />	 	 
+			 <UIControl Element="PageTemplatesSPsettings_ProjectExplorerTab" Name="WPFObject('TreeListViewRow', '', *)" DataContext.Identifier.OleValue = "Page Templates" Parent="EngineeringClient_" />
+			 <UIControl Element="AddPageTemplateButton_ProjectExplorerTab" Name="WPFObject('AddPageTemplateButton')" Parent="EngineeringClient_" />
+			 <UIControl Element="New_Page_TemplateRadioButton_ProjectExplorerTab" Name="WPFObject('RadioButton', '', *)" DataContext.Identifier.OleValue= "New_Page_Template" Parent="EngineeringClient_" />		 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />
