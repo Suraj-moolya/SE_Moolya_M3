@@ -283,6 +283,11 @@ class ProjectExplorerTab(MapBase):
     def newpagetemplateradiobutton(self):
         """addpagetemplatebutton"""
         return self.get_element("New_Page_TemplateRadioButton_ProjectExplorerTab") 
+        
+    @property
+    def closetoolbarbutton(self):
+        """closetoolbarbutton"""
+        return self.get_element("CloseToolBar_ProjectExplorerTab")
           
         
         

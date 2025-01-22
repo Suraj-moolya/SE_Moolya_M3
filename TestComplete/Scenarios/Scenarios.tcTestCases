@@ -5,7 +5,6 @@
 		<Feature Path="ApplicationExplorer.feature" />
 		<Feature Path="129 Import the instances which is exported in above step.feature" />
 		<Feature Path="130 Modify Instance.feature" />
-		<Feature Path="AS22 Unlink between instances in Asset work space and save.feature" />
 	</Folder>
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
@@ -156,10 +155,13 @@
 		<Feature Path="AS10 User login and logout for System server.feature" />
 		<Feature Path="AS9 Clearing Database.feature" />
 		<Feature Path="AS 16 Add customized page style template in project settings and select the customized page as default.feature" />
+		<Feature Path="AS22 Unlink between instances in Asset work space and save.feature" />
 	</Folder>
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />
 		<Feature Path="137 Edit any customized template and save_ create any new template using GTW.feature" />
 		<Feature Path="138 Check Control and supervision participants are opening in GT.feature" />
+		<Feature Path="139 Update the customized template in AE(to higher version).feature" />
+		<Feature Path="140 Use the created template in AE.feature" />
 	</Folder>
 </Scenarios>

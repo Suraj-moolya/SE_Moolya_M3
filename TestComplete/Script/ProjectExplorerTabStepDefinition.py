@@ -788,3 +788,9 @@ def step_impl():
     """I check new page template radio button in project explorer"""
     CommonUtil.write_text_file("\nWhen I check new page template radio button in project explorer")
     obj.newpagetemplateradiobuttoncheck()
+    
+@when("I click close tool bar button in project explorer")
+def step_impl():
+    """I click close tool bar button in project explorerr"""
+    CommonUtil.write_text_file("\nWhen I click close tool bar button in project explorer")
+    obj.closetoolbarbuttonclick()
