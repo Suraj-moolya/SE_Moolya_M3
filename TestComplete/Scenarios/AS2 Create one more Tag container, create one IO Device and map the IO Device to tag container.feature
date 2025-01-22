@@ -7,8 +7,8 @@ When I Right click container dock context menu item PE container dock in project
 And I click modal dialog window project browser in project explorer as '<Button>'
 
 Examples:
-  | SlNo. | container dock1                     | Button |
-  | 1     | Supervision_1$$Create Tag Container | OK     |
+  | SlNo. | container dock1                        | Button |
+  | 1     | Supervision_Test$$Create Tag Container | OK     |
   
   
 @TC_EPE_PE_AS2b
@@ -25,6 +25,16 @@ And I Edit IO Device Properties project browser in project explorer as '<project
 
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3 | project browser4 | project browser5 | context menu     | project browser7 | project browser8              |
-  | 1     | Supervision_1    | Cluster_1        | Services         | IOServer_1       | IODevices        | Create IO Device | IODevice_2       | TagContainers$$TagContainer_1 |
+  | 1     | Supervision_Test | Cluster_1        | Services         | IOServer_1       | IODevices        | Create IO Device | IODevice_2       | TagContainers$$TagContainer_1 |
 
-  
+ 
+@TC_EPE_PE_AS2
+Scenario Outline: Generate from Supervision Project Browser pane
+When I RClick control project browser project browser in project explorer as '<containerinstance>'
+And I Select context menu item EC project browser in project explorer as '<contextmenu_item>'
+Then Verify Message from notification panel AE Notification Pannel in message box
+And I Verify the facet generation status of all facets in Assignments Dock  
+
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | Supervision_Test  | Generate         |

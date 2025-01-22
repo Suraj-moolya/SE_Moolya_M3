@@ -1029,10 +1029,10 @@ def remove_PV_ranged_link_AE():
 def EmptyPages_ImportWindow_PE(file_format):
   filelocation = aet_obj.addressbandtextbox
   tox = (filelocation.object.Height)/2
-  toy = 5
+  toy = 10
   filelocation.click_at(tox,toy)
   base_path = os.getcwd()
-  folder_name = "Test_Import_Files"
+  folder_name =  "Test_Import_Files"
   full_path = os.path.join(base_path, folder_name)
   os.chdir(full_path) 
   Sys.Keys(os.getcwd())

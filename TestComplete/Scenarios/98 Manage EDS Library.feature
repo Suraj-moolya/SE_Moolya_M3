@@ -17,7 +17,7 @@ Scenario Outline: Add EDS to library
 When I click '<option3>' in the DTM Browser Modal Dialogue window
 When I click the '<button>' button in the GSD Addition Window
 And I click the '<button2>' button in the GSD Addition Window
-And I select '<folder>' in the GSD Browser
+#And I select '<folder>' in the GSD Browser
 And I click the '<button3>' button in the GSD Addition Window
 And I click the '<button>' button in the GSD Additions Window
 And I click the '<button>' button in the GSD Additions Window

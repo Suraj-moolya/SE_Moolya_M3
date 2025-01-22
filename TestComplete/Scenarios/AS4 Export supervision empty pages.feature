@@ -13,4 +13,4 @@ And I Click on Button in AE Explorer Window Export in ec windows explorer as 'Sa
 
 Examples:
   | SlNo. | Supervision   | context menu | Button |
-  | 1     | Supervision_1 | Export Empty Pages      | OK     |
+  | 1     | Supervision_Test | Export Empty Pages      | OK     |

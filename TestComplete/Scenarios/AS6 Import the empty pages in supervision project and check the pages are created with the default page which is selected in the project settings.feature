@@ -7,7 +7,7 @@ When I RClick control project browser project browser in project explorer as '<p
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I Enter FileLocation and FileName in empty pages import dialog as '<Import file>'
 And I Click on Open button from Import TE window
-#And I click modal dialog window project browser in project explorer as '<Button>'
+And I click modal dialog window project browser in project explorer as '<Button>'
 And I click modal dialog window project browser in project explorer as '<dialogbox button>'
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<context menu1>'
