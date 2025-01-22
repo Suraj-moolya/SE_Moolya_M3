@@ -13,10 +13,16 @@ And I enter the description in the Save As window as '<desc>'
 And I selected Save in save as windowo
 When I Close tab items EC main screen in engineering client as 'Sample'
 
+@Edit_MotorGP_template_and_save_as_Sample_Test
 Examples:
   | SlNo. | Templates browser1        | global template core5 | tab     | source | btn   | name        | version | desc               |
   | 1     | Motorgp$$MotorGP$$1.0.123 | Edit                  | Toolbox | Add    | Other | Sample_Test | 1.0.126 | Sample Description |
-  
+
+@Edit_Sample_Test_template_and_save_as_Sample_Test_to_update
+Examples:
+  | SlNo. | Templates browser1                | global template core5 | tab     | source | btn   | name        | version | desc                       |
+  | 1     | Sample_Test$$Sample_Test$$1.0.126 | Edit                  | Toolbox | And    | Other | Sample_Test | 1.0.130 | Updated Sample Description |
+      
   
 @TC_EPE_GT_0005
 Scenario Outline: Create any new template using GTW

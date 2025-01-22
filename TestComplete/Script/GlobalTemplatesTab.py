@@ -118,3 +118,54 @@ class GlobalTemplatesTab(MapBase):
     def baseexplorertree(self):
         """baseexplorertree"""
         return self.get_element("baseexplorertree_GlobalTemplatesTab")
+        ##
+    @property
+    def controltemplateheader(self):
+      """controltemplateheader"""
+      return self.get_element("ControlTemplateHeader_GlobalTemplatesTab")
+    
+    @property
+    def motortemplateheader(self):
+      """motortemplateheader"""
+      return self.get_element("MotorTemplateHeader_GlobalTemplatesTab")
+      
+    @property
+    def logictemplateheader(self):
+      """logictemplateheader"""
+      return self.get_element("LogicTemplateHeader_GlobalTemplatesTab")
+      
+    @property
+    def templatizerbutton(self):
+      """templatizerbutton"""
+      return self.get_element("TemplatizerButton_GlobalTemplatesTab")
+      
+    @property
+    def opencontrolparticipantbutton(self):
+      """opencontrolparticipantbutton"""
+      return self.get_element("OpenControlParticipantButton_GlobalTemplatesTab")
+      
+    @property
+    def openparticipantbutton(self):
+      """opencontrolparticipantbutton"""
+      return self.get_element("OpenParticipantButton_GlobalTemplatesTab")
+      
+    @property
+    def supervisiontemplateheader(self):
+      """supervisiontemplateheader"""
+      return self.get_element("SupervisionTemplateHeader_GlobalTemplatesTab")  
+      
+    @property
+    def geniestemplateheader(self):
+      """geniestemplateheader"""
+      return self.get_element("GeniesTemplateHeader_GlobalTemplatesTab")  
+      
+    @property
+    def pumprightgenietemplateheader(self):
+      """pumprightgenietemplateheader"""
+      return self.get_element("PumpRightGenieTemplateHeader_GlobalTemplatesTab")  
+      
+    @property
+    def fittocontentbutton(self):
+      """pumprightgenietemplateheader"""
+      return self.get_element("Fittocontent_GlobalTemplatesTab")  
+      

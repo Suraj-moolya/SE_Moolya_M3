@@ -931,3 +931,12 @@ class ProjectExplorerTabWorkFlow:
             ProjectExplorerTabWorkFlow.projectexplorertab_obj.newpagetemplateradiobutton.checkboxchecked()
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def closetoolbarbuttonclick(self):
+        """closetoolbarbuttonclick"""
+        try:
+            ProjectExplorerTabWorkFlow.projectexplorertab_obj.closetoolbarbutton.click()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+            

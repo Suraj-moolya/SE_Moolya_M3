@@ -227,12 +227,14 @@
              <UIControl Element="SupervisionDataElements_GlobalTemplatesTab" Name="WPFObject('WizardSupervisionDataElements', '', *)" Parent="EngineeringClient_" />
              <UIControl Element="SupervisionGenieElements_GlobalTemplatesTab" Name="WPFObject('WizardSupervisionGenieElements', '', *)" Parent="EngineeringClient_" />
              <UIControl Element="BrowseButton_GlobalTemplatesTab" Name="WPFObject('Button', '...', *)" ToolTip.OleValue = 'Browse for control constituent file' Parent="EngineeringClient_" />
-             <UIControl Element="baseexplorertree_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="baseexplorertree_GlobalTemplatesTab" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />			 
 			 <UIControl Element="ControlTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Control (Composite Template)" Parent="EngineeringClient_" />
 			 <UIControl Element="MotorTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Motor (Composite Template)" Parent="EngineeringClient_" />
+			 <UIControl Element="Fittocontent_GlobalTemplatesTab" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue ="Fit to content  (Ctrl + 0)" Parent="EngineeringClient_" />
 			 <UIControl Element="LogicTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Logic (Logic)" Parent="EngineeringClient_" />
 			 <UIControl Element="TemplatizerButton_GlobalTemplatesTab" Name="WPFObject('MenuItem', 'Templatizer', *)" Parent="EngineeringClient_" />
 			 <UIControl Element="OpenControlParticipantButton_GlobalTemplatesTab" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue = "Open Control Participant" Parent="EngineeringClient_" />
+			 <UIControl Element="OpenParticipantButton_GlobalTemplatesTab" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue = "Open Supervision Participant" Parent="EngineeringClient_" />
 			 <UIControl Element="SupervisionTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Supervision (Composite Template)" Parent="EngineeringClient_" />
 			 <UIControl Element="GeniesTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Genies (Composite Template)" Parent="EngineeringClient_" />
 			 <UIControl Element="PumpRightGenieTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Pump Right (Genie)" Parent="EngineeringClient_" />			 
@@ -338,6 +340,7 @@
 			 <UIControl Element="PageTemplatesSPsettings_ProjectExplorerTab" Name="WPFObject('TreeListViewRow', '', *)" DataContext.Identifier.OleValue = "Page Templates" Parent="EngineeringClient_" />
 			 <UIControl Element="AddPageTemplateButton_ProjectExplorerTab" Name="WPFObject('AddPageTemplateButton')" Parent="EngineeringClient_" />
 			 <UIControl Element="New_Page_TemplateRadioButton_ProjectExplorerTab" Name="WPFObject('RadioButton', '', *)" DataContext.Identifier.OleValue= "New_Page_Template" Parent="EngineeringClient_" />		 
+			 <UIControl Element="CloseToolBar_ProjectExplorerTab" Name="WPFObject('CloseToolBar')" Parent="EngineeringClient_" />		 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />

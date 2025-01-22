@@ -207,3 +207,64 @@ def step_impl(path, folder, file):
     """I Enter FileLocation '<path>', '<folder>' and FileName '<file>' import window"""
     CommonUtil.write_text_file("\nWhen I Enter FileLocation '<path>', '<folder>' and FileName '<file>' import window")
     obj.GTimportfilenamefilelocation(path, folder, file)
+
+@when("I Right Click on control template header in global template explorer")
+def step_impl():
+    """I Right Click on control template header in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on control template header in global template explorer")
+    obj.rclickcontroltemplateheader()
+    
+@when("I Right Click on motor template header in global template explorer")
+def step_impl():
+    """I Right Click on motor template header in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on motor template header in global template explorer")
+    obj.rclickmotortemplateheader()
+    
+@when("I Right Click on logic template header in global template explorer")
+def step_impl():
+    """I Right Click on logic template header in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on logic template header in global template explorer")
+    obj.rclicklogictemplateheader()
+    
+@when("I Click on templatizer button in global template explorer")
+def step_impl():
+    """I Right Click on templatizer button in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on templatizer button in global template explorer")
+    obj.clicktemplatizerbutton()
+ 
+@when("I Click on open control participant button in global template explorer")
+def step_impl():
+    """I Right Click on open control participant button in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on open control participant button in global template explorer")
+    obj.clickopencontrolparticipantbutton()   
+
+@when("I Right Click on supervision template header in global template explorer")
+def step_impl():
+    """I Right Click on supervision template header in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on supervision template header in global template explorer")
+    obj.rclicksupervisiontemplateheader()
+    
+@when("I Right Click on genie template header in global template explorer")
+def step_impl():
+    """I Right Click on genie template header in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on genie template header in global template explorer")
+    obj.rclickgeniestemplateheader()
+    
+@when("I Right Click on pump right genie template header in global template explorer")
+def step_impl():
+    """I Right Click on pump right genie template header in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on pump right genie template header in global template explorer")
+    obj.rclickpumprightgenietemplateheader()
+    
+@when("I Click on fit to content button in global template explorer")
+def step_impl():
+    """I Right Click on fit to content button in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on fit to contentt button in global template explorer")
+    obj.clickfittocontentbutton()
+  
+@when("I Click on open participant button in global template explorer")
+def step_impl():
+    """I Right Click on open participant button in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on open participant button in global template explorer")
+    obj.clickopenparticipantbutton()  
+    

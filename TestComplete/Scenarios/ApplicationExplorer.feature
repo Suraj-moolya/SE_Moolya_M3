@@ -340,9 +340,16 @@ When I search text template browser AE Templates browser in application explorer
 And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
 Then Verify the template is present in Application browser
 
+@search_drag_drop_Valve_GP_template
 Examples:
-  | SlNo. | Templates browser1 | Templates browser2     |
-  | 1     | ValveGP            | ValveGP$$1.0.100       |
+  | SlNo. | Templates browser1 | Templates browser2 |
+  | 1     | ValveGP            | ValveGP$$1.0.100   |
+
+@search_drag_drop_sample_test_template_1.0.126
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2   |
+  | 1     | Sample_Test        | Sample_Test$$1.0.126 |
+  
 
   
   

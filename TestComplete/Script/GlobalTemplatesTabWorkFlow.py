@@ -201,8 +201,50 @@ class GlobalTemplatesTabWorkFlow:
             raise Exception(ex) from ex 
             
     def GTimportfilenamefilelocation(self, path, folder, file):
-            """GTimportfilenamefilelocation"""
-            try:
-                Globaltemplatesutility.GlobalTemplates_Import(path, folder, file)
-            except Exception as ex:
-                raise Exception(ex) from ex
+        """GTimportfilenamefilelocation"""
+        try:
+            Globaltemplatesutility.GlobalTemplates_Import(path, folder, file)
+        except Exception as ex:
+            raise Exception(ex) from ex
+                ##
+    def rclickcontroltemplateheader(self):
+        """globaltemplatestab_obj.controltemplateheader"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.controltemplateheader.right_click()
+        
+    def rclickmotortemplateheader(self):
+        """globaltemplatestab_obj.motortemplateheader"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.motortemplateheader.right_click()
+        
+    def rclicklogictemplateheader(self):
+        """globaltemplatestab_obj.controltemplateheader"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.logictemplateheader.right_click()
+        
+    def clicktemplatizerbutton(self):
+        """globaltemplatestab_obj.templatizerbutton"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.templatizerbutton.click()
+        
+    def clickopencontrolparticipantbutton(self):
+        """globaltemplatestab_obj.opencontrolparticipantbutton"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.opencontrolparticipantbutton.click()
+        
+    def rclicksupervisiontemplateheader(self):
+        """globaltemplatestab_obj.supervisiontemplateheader"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.supervisiontemplateheader.right_click()
+        
+    def rclickgeniestemplateheader(self):
+        """globaltemplatestab_obj.geniestemplateheader"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.geniestemplateheader.right_click()
+        
+    def rclickpumprightgenietemplateheader(self):
+        """globaltemplatestab_obj.pumprightgenietemplateheader"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.pumprightgenietemplateheader.right_click()
+        
+    def clickfittocontentbutton(self):
+        """globaltemplatestab_obj.fittocontentbutton"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.fittocontentbutton.click()
+        
+    def clickopenparticipantbutton(self):
+        """globaltemplatestab_obj.opencontrolparticipantbutton"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.openparticipantbutton.click()
+    
+        
