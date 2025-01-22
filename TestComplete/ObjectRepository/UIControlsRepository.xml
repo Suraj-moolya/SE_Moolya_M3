@@ -134,7 +134,7 @@
              <UIControl Element="forselectedFolder_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="asperrequirement_SystemExplorerScreen" Name="WPFObject('CoreGraph', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="ReleaseSupervisionParticipant_SystemExplorerScreen" Name="WPFObject('ContentPresenter', '', 9)" Parent="EngineeringClient_" />
-             <UIControl Element="BrowseButton_SystemExplorerScreen" Name="WPFObject('Button', '', 1)" Parent="EngineeringClient_" />
+             <UIControl Element="BrowseButton_SystemExplorerScreen" Name="WPFObject('PathContainner')" Parent="EngineeringClient_" />
         </Component>
         <Component name="Topology Exporer Tab">
              <UIControl Element="TopoTreeview_TopologyExplorerTab" Name="WPFObject('ExplorerNode', '', *)" Parent="EngineeringClient_" />
