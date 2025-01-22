@@ -421,3 +421,8 @@ def backup_window_button(button):
       break
   else:
     Log.Warning(f'{button} Button not found in Backup Window.')
+
+def browsebutton_backup():
+  for btn in ses_obj.browsebutton.object.FindAllChildren("ClrClassName", "Button", 50):
+    if btn.ToolTip == "Select the desired file destination path":
+      btn.click()
