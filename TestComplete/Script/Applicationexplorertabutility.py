@@ -822,7 +822,7 @@ def verify_instance_application_browser(param):
         Log.Checkpoint(f'{str(instance.DataContext.Identifier.OleValue)} is present in Application Browser')
         break
   else:
-    Log.Warning(f'{str(instance.DataContext.Identifier.OleValue)} is not present in Application Browser')
+    Log.Warning(f'{param} is not present in Application Browser')
         
 def verify_SameName_Errorbox_application_browser():
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object
@@ -960,7 +960,7 @@ def Verify_Notification_pannel_Message(Message):
         Log.Checkpoint(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         break
       else:
-        Log.Message(f'{i.DataContext.Message.OleValue} in Notification Pannel')
+        Log.Warning(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         
 def jsjsjs():
   Verify_Notification_pannel_Message("Close Refine Online Editor (Completed)")

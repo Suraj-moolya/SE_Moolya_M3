@@ -156,6 +156,7 @@
 		<Feature Path="AS9 Clearing Database.feature" />
 		<Feature Path="AS 16 Add customized page style template in project settings and select the customized page as default.feature" />
 		<Feature Path="AS22 Unlink between instances in Asset work space and save.feature" />
+		<Feature Path="AS 15 add Communication Modules in refine online .feature" />
 	</Folder>
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />

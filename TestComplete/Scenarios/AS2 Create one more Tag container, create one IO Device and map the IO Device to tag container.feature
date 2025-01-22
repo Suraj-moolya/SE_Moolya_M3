@@ -13,28 +13,42 @@ Examples:
   
 @TC_EPE_PE_AS2b
 Scenario Outline: Create one IO Device and map the IO Device to tag container
-When I Expand control project browser PE project browser in project explorer as '<project browser1>'
-And I Expand control project browser PE project browser in project explorer as '<project browser2>'
-And I Expand control project browser PE project browser in project explorer as '<project browser3>'
-And I Expand control project browser PE project browser in project explorer as '<project browser4>'
-When I RClick control project browser project browser in project explorer as '<project browser5>'
+When I RClick control project browser project browser in project explorer as '<project browser1>'
+And I Select context menu item EC project browser in project explorer as '<context menu1>'
+When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
-When I Expand IO Device section project browser in project explorer as '<project browser7>'
+And I RClick control project browser project browser in project explorer as '<project browser5>'
+And I Select context menu item EC project browser in project explorer as '<create>'
+And I Expand IO Device section project browser in project explorer as '<project browser7>'
 And I Edit IO Device Properties project browser in project explorer as '<project browser8>'
-
+Then Verify Action message in notification pannel project browser in project explorer as '<message>'
+When I Close instance editor tab Instance editor close in application explorer as 'IODevices'
 
 Examples:
-  | SlNo. | project browser1 | project browser2 | project browser3 | project browser4 | project browser5 | context menu     | project browser7 | project browser8              |
-  | 1     | Supervision_Test | Cluster_1        | Services         | IOServer_1       | IODevices        | Create IO Device | IODevice_2       | TagContainers$$TagContainer_1 |
+  | SlNo. | project browser1 | context menu | context menu1 | project browser7 | project browser8              | message                     | project browser5 | create           |
+  | 1     | Supervision_Test | Expand All   | Collapse All  | IODevice_1       | TagContainers$$TagContainer_1 | Create IODevice (Completed) | IODevices        | Create IO Device |
+
+  
+@TC_EPE_PE_AS2c
+Scenario Outline: map the IO Device to tag container
+When I Dclick Control project broswer project browser in project explorer as '<project browser5>'
+When I Expand IO Device section project browser in project explorer as '<project browser7>'
+And I Edit IO Device Properties project browser in project explorer as '<project browser8>'
+Then Verify Action message in notification pannel project browser in project explorer as '<message>'
+When I Close instance editor tab Instance editor close in application explorer as 'IODevices'
+
+@map_the_IODevice_2_to_TagContainer_2
+Examples:
+  | SlNo. | project browser5 | project browser7 | project browser8              | message                     |
+  | 1     | IODevices        | IODevice_2       | TagContainers$$TagContainer_2 | Update IODevice (Completed) |
 
  
 @TC_EPE_PE_AS2
 Scenario Outline: Generate from Supervision Project Browser pane
 When I RClick control project browser project browser in project explorer as '<containerinstance>'
 And I Select context menu item EC project browser in project explorer as '<contextmenu_item>'
-Then Verify Message from notification panel AE Notification Pannel in message box
-And I Verify the facet generation status of all facets in Assignments Dock  
-
+Then Verify Action message in notification pannel project browser in project explorer as '<message>'
+ 
 Examples:
-  | SlNo. | containerinstance | contextmenu_item |
-  | 1     | Supervision_Test  | Generate         |
+  | SlNo. | containerinstance | contextmenu_item | message                                  |
+  | 1     | Supervision_Test  | Generate         | Generate Supervision Project (Completed) |

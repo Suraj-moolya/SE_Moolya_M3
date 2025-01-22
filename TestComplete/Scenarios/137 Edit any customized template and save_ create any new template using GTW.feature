@@ -12,6 +12,7 @@ And I change the template name to '<name>' and version to '<version>' in the Sav
 And I enter the description in the Save As window as '<desc>'
 And I selected Save in save as windowo
 When I Close tab items EC main screen in engineering client as 'Sample'
+And I Close tab items EC main screen in engineering client as 'Global'
 
 @Edit_MotorGP_template_and_save_as_Sample_Test
 Examples:
@@ -20,8 +21,8 @@ Examples:
 
 @Edit_Sample_Test_template_and_save_as_Sample_Test_to_update
 Examples:
-  | SlNo. | Templates browser1                | global template core5 | tab     | source | btn   | name        | version | desc                       |
-  | 1     | Sample_Test$$Sample_Test$$1.0.126 | Edit                  | Toolbox | And    | Other | Sample_Test | 1.0.130 | Updated Sample Description |
+  | SlNo. | Templates browser1                | global template core5 | tab     | source | btn       | name        | version | desc                       |
+  | 1     | Sample_Test$$Sample_Test$$1.0.126 | Edit                  | Toolbox | And    | New Build | Sample_Test | 1.0.130 | Updated Sample Description |
       
   
 @TC_EPE_GT_0005

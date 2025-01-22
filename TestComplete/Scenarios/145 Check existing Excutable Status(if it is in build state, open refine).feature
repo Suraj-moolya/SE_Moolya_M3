@@ -16,6 +16,11 @@ Examples:
   | SlNo. | container dock1       | container dock3 |
   | 1     | M580_Safety$$Generate | Generate        |
 
+  
+@Generate_general_Supervision_Test
+Examples:
+  | SlNo. | container dock1            | container dock3 |
+  | 1     | Supervision_Test$$Generate | Generate        |
 
 
 @TC_open_refine_online

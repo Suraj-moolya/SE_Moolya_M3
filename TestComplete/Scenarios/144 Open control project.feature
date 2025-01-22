@@ -8,6 +8,7 @@ And I Select context menu item EC project browser in project explorer as '<conte
 And I Select controller in context menu as '<controller>'
 And I rename the ControlProject as '<controller_name>'
 Then I verifies that '<controller_name>' Created in Project Explorer
+
 @Create_standalone_Control_Project_1
 Examples:
   | SlNo. | project browser1 | context menu           | controller | controller_name |

@@ -15,5 +15,5 @@ When I Click popup button object Modal Dialog Window 1 in message box as '<Butto
 Then Verify Action message in notification pannel project browser in project explorer as '<message>'
 
 Examples:
-  | SlNo. | Supervision   | context menu | Button | Import                | Button1                                    | message                                       | Button2                                   |
-  | 1     | Supervision_1 | Settings     | OK     | New_Page_Template.zip | MessageBox$$modaldialogwindow1textbox$$Yes | Save Supervision Project Settings (Completed) | MessageBox$$modaldialogwindow1textbox$$OK |
+  | SlNo. | Supervision      | context menu | Button | Import                | Button1                                    | message                                       | Button2                                   |
+  | 1     | Supervision_Test | Settings     | OK     | New_Page_Template.zip | MessageBox$$modaldialogwindow1textbox$$Yes | Save Supervision Project Settings (Completed) | MessageBox$$modaldialogwindow1textbox$$OK |

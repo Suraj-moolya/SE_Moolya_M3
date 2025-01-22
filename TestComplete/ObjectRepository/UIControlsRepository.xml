@@ -272,7 +272,7 @@
              <UIControl Element="Dockpannel_ApplicationExplorerTab" Name="WPFObject('DockPanel', '', 2)" Parent="EngineeringClient_" />
              <UIControl Element="Workspace_ApplicationExplorerTab" Name="WPFObject('WorkspaceControl', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="CreateMultipleinstance_ApplicationExplorerTab" Parent="EngineeringClient_" />
-             <UIControl Element="InstanceEditor_ApplicationExplorerTab" Name="WPFObject('WorkspaceControl', '', 1)"  Parent="EngineeringClient_" />
+             <UIControl Element="InstanceEditor_ApplicationExplorerTab" Name="WPFObject('WorkspaceControl'*)"  Parent="EngineeringClient_" />
              <UIControl Element="Instancedescription_ApplicationExplorerTab" Name="WPFObject('ParameterGrid')" Parent="EngineeringClient_" />
              <UIControl Element="Instanceeditorsave_ApplicationExplorerTab" Name="WPFObject('Button', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="Instanceeditorclose_ApplicationExplorerTab" Name="WPFObject('abc')" Parent="EngineeringClient_" />

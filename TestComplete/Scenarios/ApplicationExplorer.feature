@@ -338,7 +338,8 @@ Examples:
 Scenario Outline: Search Valve_Gp in Template browser and Drag and drop from template browser to application browser
 When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
 And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
-Then Verify the template is present in Application browser
+Then Verify the template is present in Application browser as '<Templates browser1>'
+####
 
 @search_drag_drop_Valve_GP_template
 Examples:

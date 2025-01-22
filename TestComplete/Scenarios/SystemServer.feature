@@ -20,8 +20,8 @@ And I open system server console show hidden icon in windows explorer
 Then verify text in system server console Console in server console as '<Console1>'
 
 Examples:
-  | SlNo. | User name1     | Password2    |Console1 | 
-  | 1     | SE_Moolya_Test | P@ssw0rd1234 |A user was successfully logged on |
+  | SlNo. | User name1     | Password2    | Console1                          |
+  | 1     | SE_Moolya_Test | P@ssw0rd1234 | A user was successfully logged on |
 
 
 @TC_EPE_SS_0003
@@ -30,11 +30,11 @@ Scenario Outline: Open SS from system tray and click on SS start and wair for SS
 When I open system server console show hidden icon in windows explorer
 And I selected Action Menu in action
 And I selected Start server in action
-Then verify system server ready Flow document in server console
+Then verify text in system server console Console in server console as '<Console1>'
 
 Examples:
-  | SlNo. |
-  | 1     |
+  | SlNo. | Console1        |
+  | 1     | Server is ready |
   
   
 @TC_EPE_SS_0004

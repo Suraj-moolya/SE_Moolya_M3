@@ -42,9 +42,9 @@ When I drag and Drop the Each instance to Each Sections as '<controller>' '<sect
 Then I Verify the facet generation status of all facets in Assignments Dock
 
 Examples:
-  | SlNo. | controller      | section          | 
-  | 1     | ValveGP_1       | Supervision_Test |     
-  | 2     | MotorGP_1       | Supervision_Test |    
+  | SlNo. | controller  | section          |
+  | 1     | Sample_Test | Supervision_Test |
+   
 
 
   
