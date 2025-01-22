@@ -592,14 +592,14 @@ def afbsdzv():
 #  data_selection = refoff_obj.dataselectiontextbox  #.object
   
 def knc():
-  Delay(5000)
-  click_MenuItem_Toolbar_CE("New Network")
-  Select_network_CE("Ethernet")
-  Click_ok_button_add_network_popup_CE("Yes")
-  
-  Click_tab_item_EIO_config_window("Channel 0")
-  select_item_mdi_window_CE("ETH TCP IP")
-  select_item_mdi_window_CE("Ethernet_2")
+#  Delay(5000)
+#  click_MenuItem_Toolbar_CE("New Network")
+#  Select_network_CE("Ethernet")
+  Click_ok_button_add_network_popup_CE("OK")
+#  
+#  Click_tab_item_EIO_config_window("Channel 0")
+#  select_item_mdi_window_CE("ETH TCP IP")
+#  select_item_mdi_window_CE("Ethernet_2")
   
   
   
