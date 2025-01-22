@@ -9,6 +9,7 @@
 	</Folder>
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
+		<Feature Path="19 Check Report Generation.feature" />
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
@@ -24,7 +25,6 @@
 			<Feature Path="145 Check existing Excutable Status(if it is in build state, open refine).feature" />
 			<Feature Path="146 Build_Build all the existing executable(if any errors found, clear and build).feature" />
 			<Feature Path="147 Open Refine of the project and do some modifications. Save and close.feature" />
-			<Feature Path="148 Add instances to container and generate the section.feature" />
 			<Feature Path="149 Open (multiple) sections.feature" />
 			<Feature Path="154 Navigate to Communication mapping Tab and check the mapping is availabl e.feature" />
 			<Feature Path="155 Navigate to Hardware mapping Tab and check the mapping is available.feature" />
@@ -144,6 +144,7 @@
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
 		<Feature Path="150 check the modifications in refine CP.feature" />
 		<Feature Path="152 Open any section and check network variable window.feature" />
+		<Feature Path="148 Add instances to container and generate the section.feature" />
 	</Folder>
 	<Folder Name="Alternate Scenarios">
 		<Feature Path="AS6 Import the empty pages in supervision project and check the pages are created with the default page which is selected in the project settings.feature" />
@@ -154,9 +155,11 @@
 		<Feature Path="AS7 Export all Equipments,tags(Equipments, variables, Trends, Advanced alarms etc).feature" />
 		<Feature Path="AS10 User login and logout for System server.feature" />
 		<Feature Path="AS9 Clearing Database.feature" />
+		<Feature Path="AS 16 Add customized page style template in project settings and select the customized page as default.feature" />
 	</Folder>
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />
 		<Feature Path="137 Edit any customized template and save_ create any new template using GTW.feature" />
+		<Feature Path="138 Check Control and supervision participants are opening in GT.feature" />
 	</Folder>
 </Scenarios>

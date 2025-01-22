@@ -222,9 +222,9 @@ class SystemServerWorkFlow:
       except Exception as ex:
         raise Exception(ex) from ex
         
-    def SSlogout(self):
+    def SSlogout(self,param):
       try:
-        Systemserverutility.click_on_logout()
+        Systemserverutility.click_on_menuitem_Usericon(param)
       except Exception as ex:
         raise Exception(ex) from ex
          

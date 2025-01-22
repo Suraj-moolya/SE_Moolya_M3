@@ -1475,3 +1475,4 @@ def Click_on_RefineSystemModel_menubar(menu):
       menuitem.Click()
       Applicationutility.wait_in_seconds(1000, 'Wait')
       Log.Checkpoint(f"{menu} is clicked")
+      

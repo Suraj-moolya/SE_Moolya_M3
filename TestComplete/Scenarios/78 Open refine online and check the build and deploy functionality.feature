@@ -9,8 +9,8 @@ And I click modal dialog window Modal dialog window in message box as '<Modal di
 Then Verify notification panel message Notification Pannel in message box as '<Notification Pannel2>'
 
 Examples:
-  | SlNo. | Modal dialog window1 | Notification Pannel2                 | 
-  | 1     | OK                   | Build and Deploy Changes (Completed) | 
+  | SlNo. | Modal dialog window1 | Notification Pannel2                 |
+  | 1     | OK                   | Build and Deploy Changes (Completed) |
 
 
 #Total No. of Test Cases :1
@@ -43,7 +43,7 @@ Examples:
   
 @Double_click_on_Networks_Ethernet_2
 Examples:
-  | SlNo. | Project Browser RO1                    |
+  | SlNo. | Project Browser RO1                 |
   | 1     | Communication$$Networks$$Ethernet_2 |
   
   
@@ -54,7 +54,7 @@ When I selected Close Refine Offline in refine offline
 Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
 
 Examples:
-  | SlNo. | Button | container dock3                  |
+  | SlNo. | Button | container dock3                        |
   | 1     | Yes    | Close Refine Online Editor (Completed) |
   
 
@@ -64,8 +64,18 @@ When I Close tab items EC main screen in engineering client as 'System_1'
 And I wait in seconds Refine online window in refine offline
 
 Examples:
-  | SlNo. | 
+  | SlNo. |
   | 1     |
   
 
+@TC_EPE_WS_0011
+@test001
+Scenario Outline: Open refine online and check the build and deploy and click on deploy in pop up 
+When I selected Build and Deploy Changes in control expert
+And I click modal dialog window Modal dialog window in message box as '<Modal dialog window1>'
+Then Verify notification panel message Notification Pannel in message box as '<Notification Pannel2>'
+
+Examples:
+  | SlNo. | Modal dialog window1 | Notification Pannel2                 |
+  | 1     | Deploy               | Build and Deploy Changes (Completed) |
 

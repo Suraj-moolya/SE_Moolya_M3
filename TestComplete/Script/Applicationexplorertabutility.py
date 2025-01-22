@@ -570,6 +570,7 @@ def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
   filename_textbox = aet_obj.comboboxtextbox.object
   filename_textbox.Click()
   filename_textbox.Keys(file_format)
+  Applicationutility.take_screenshot('taking Screenshot')
   Sys.Keys("[Enter]")
   
   

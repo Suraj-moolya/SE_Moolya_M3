@@ -771,6 +771,20 @@ def step_impl(server):
     """I verify '<variable>' is reflected in FBD section"""
     obj.verifyvariablevalueFBDBlock(server)
     
+@when("I Select page templates sp settings button in project explorer")
+def step_impl():
+    """I Select page templates sp settings button in project explore"""
+    CommonUtil.write_text_file("\nWhen I Select page templates sp settings button in project explore")
+    obj.pagetemplatesspsettingsbuttonclick()
     
-
+@when("I click add page template button in project explorer")
+def step_impl():
+    """I click add page template button in project explorer"""
+    CommonUtil.write_text_file("\nI click add page template button in project explorer")
+    obj.addpagetemplatebuttonclick()
    
+@when("I check new page template radio button in project explorer")
+def step_impl():
+    """I check new page template radio button in project explorer"""
+    CommonUtil.write_text_file("\nWhen I check new page template radio button in project explorer")
+    obj.newpagetemplateradiobuttoncheck()
