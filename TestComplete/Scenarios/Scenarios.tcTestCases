@@ -9,6 +9,7 @@
 	</Folder>
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
+		<Feature Path="19 Check Report Generation.feature" />
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
@@ -154,9 +155,11 @@
 		<Feature Path="AS7 Export all Equipments,tags(Equipments, variables, Trends, Advanced alarms etc).feature" />
 		<Feature Path="AS10 User login and logout for System server.feature" />
 		<Feature Path="AS9 Clearing Database.feature" />
+		<Feature Path="AS 16 Add customized page style template in project settings and select the customized page as default.feature" />
 	</Folder>
 	<Folder Name="Global Templates">
 		<Feature Path="136 Import the latest templates.feature" />
 		<Feature Path="137 Edit any customized template and save_ create any new template using GTW.feature" />
+		<Feature Path="138 Check Control and supervision participants are opening in GT.feature" />
 	</Folder>
 </Scenarios>

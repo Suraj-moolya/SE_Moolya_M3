@@ -650,6 +650,7 @@ def step_impl():
 def step_impl(Buttonname):    
     """I Select button in the modal dialoge window as '<Buttonname>'"""
     obj.modaldiawindow(Buttonname)
+    Applicationutility.wait_in_seconds(5000, 'Wait')
 
 @when("I Close modal dialog window")
 def step_impl():
