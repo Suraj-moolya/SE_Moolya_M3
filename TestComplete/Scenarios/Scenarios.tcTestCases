@@ -145,6 +145,7 @@
 		<Feature Path="150 check the modifications in refine CP.feature" />
 		<Feature Path="152 Open any section and check network variable window.feature" />
 		<Feature Path="148 Add instances to container and generate the section.feature" />
+		<Feature Path="30 Clear the errors and open configure.feature" />
 	</Folder>
 	<Folder Name="Alternate Scenarios">
 		<Feature Path="AS6 Import the empty pages in supervision project and check the pages are created with the default page which is selected in the project settings.feature" />

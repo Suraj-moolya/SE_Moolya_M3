@@ -484,4 +484,11 @@ class TopologyWorkFlow:
             Controlexpertutility.Select_network_CE(menu_option)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxoutputwindowpanelverifyerrormessagesinconsole(self,text):
+            """textboxoutputwindowpanelverifyerrormessagesinconsole"""
+            try:
+                Topologyutility.Verify_error_messages_in_Console(text)
+            except Exception as ex:
+                raise Exception(ex) from ex
         
