@@ -1364,7 +1364,7 @@ def Edit_IODevice_Properties(param):
     if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
       control.DblClick()
       aqUtils.Delay(500)
-      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "RadioButton", 10):
+      for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "RadioButton", 100):
         if item.WPFControlText == options:
           item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
           return

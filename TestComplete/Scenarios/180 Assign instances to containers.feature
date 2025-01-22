@@ -20,13 +20,6 @@ Examples:
   | 1     | ValveGP_1       | M580_Safety | OK     |
   | 2     | MotorGP_1       | M580_Safety | OK     |
   | 3     | AnalogInputGP_1 | M580_Safety | OK     |
-  
-@Assign_Instance_to_Containers_in_Supervision_Test
-Examples:
-  | SlNo. | controller      | section          | Button |
-  | 1     | ValveGP_1       | Supervision_Test | OK     |
-  | 2     | MotorGP_1       | Supervision_Test | OK     |
-  | 3     | AnalogInputGP_1 | Supervision_Test | OK     |
 
   
 @TC_EPE_SWF_0001
