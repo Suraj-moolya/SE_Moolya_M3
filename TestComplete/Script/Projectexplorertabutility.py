@@ -494,6 +494,8 @@ def Drag_instance_drop_container_section(param):
     if instance_identifier in instance.DataContext.Identifier.OleValue :
       fromx = instance.Top
       fromy = instance.Height / 2
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      instance.Click()
       instance.Drag(fromx,fromy,0,tox/2+25)
       Log.Message("Drag and drop operation was performed")
       break

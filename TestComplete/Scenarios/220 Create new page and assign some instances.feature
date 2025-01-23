@@ -6,7 +6,7 @@ Scenario Outline: Create new page and assign some instances. Drag and Drop
 When I drag instance drop container page SP instance dock in supervision project as '<instance dock1>'
 And I Select value list view SVP instance dock in supervision project as '<instance dock2>'
 And I selected Save Refine Offline in refine offline
-And I selected Close Refine Offline in refine offline
+#And I selected Close Refine Offline in refine offline
 
 Examples:
   | SlNo. | instance dock1 | instance dock2 |

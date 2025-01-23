@@ -365,12 +365,15 @@ def drag_instance_drop_container_page_SP(template):
   for i in range(len(template_list)):
     if template_list[i].Visible: 
       if template == str(template_list[i].DataContext.Identifier.OleValue):
-            Sys.HighlightObject(template_list[i])
+            #Sys.HighlightObject(template_list[i])
             fromx = template_list[i].Width/2
             fromy = template_list[i].Height/2
             Log.Message('The object selected to drag is : ' + str(template_list[i].DataContext.Identifier.OleValue))
+            Applicationutility.wait_in_seconds(2000, 'Wait')
+            template_list[i].Click()
+            Applicationutility.wait_in_seconds(2000, 'Wait')
             template_list[i].Drag(fromx, fromy, tox+100, 0)
-            Delay(5000)
+            Applicationutility.wait_in_seconds(2000, 'Wait')
             break
             
 def gsgsg():
@@ -379,9 +382,11 @@ def gsgsg():
 def select_value_listview_SVP(val):
   list_items = proj_obj.listviewtextbox.object.FindAllChildren('ClrClassName', 'ListViewItem', 100)  
   for list in list_items:
-    Sys.HighlightObject(list)
+    #Sys.HighlightObject(list)
     if val in list.DataContext.Identifier.OleValue:
+      Applicationutility.wait_in_seconds(1000, 'Wait')
       list.Click()
+      Applicationutility.wait_in_seconds(2000, 'Wait')
       break
   
 def Double_click_on_header_OC ():

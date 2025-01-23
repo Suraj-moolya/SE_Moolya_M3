@@ -10,6 +10,6 @@ Then Verify Action message in notification pannel project browser in project exp
 
 @Update_the_sample_test_template_to_higher_version
 Examples:
-  | SlNo. | Application browser  | Menu Item       | Message                               | Button |
-  | 1     | Sample_Test$$1.0.126 | Update Template | Update Instance Template (Completed)	 | OK     |
+  | SlNo. | Application browser  | Menu Item       | Message                              | Button |
+  | 1     | Sample_Test$$1.0.126 | Update Template | Update Instance Template (Completed) | OK     |
 

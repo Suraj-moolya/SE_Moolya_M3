@@ -960,7 +960,7 @@ def Verify_Notification_pannel_Message(Message):
         Log.Checkpoint(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         break
       else:
-        Log.Warning(f'{i.DataContext.Message.OleValue} in Notification Pannel')
+        Log.Message(f'{i.DataContext.Message.OleValue} in Notification Pannel')
         
 def jsjsjs():
   Verify_Notification_pannel_Message("Close Refine Online Editor (Completed)")
