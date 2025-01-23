@@ -238,7 +238,9 @@
 			 <UIControl Element="SupervisionTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Supervision (Composite Template)" Parent="EngineeringClient_" />
 			 <UIControl Element="GeniesTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Genies (Composite Template)" Parent="EngineeringClient_" />
 			 <UIControl Element="PumpRightGenieTemplateHeader_GlobalTemplatesTab" Name="WPFObject('PartHeader')" ToolTip.OleValue ="Pump Right (Genie)" Parent="EngineeringClient_" />			 
-        </Component>
+			 <UIControl Element="StateSelectorapprovedinsaveas_GlobalTemplatesTab" Name="WPFObject('templateRoot')" Parent="EngineeringClient_" />			    
+			 <UIControl Element="approvedcomboitem_GlobalTemplatesTab" Name="WPFObject('ComboBoxItem', '', 1)" Parent="EngineeringClient_" />			    
+	   </Component>
         <Component name="Application Explorer Tab">
              <UIControl Element="Templatesbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
              <UIControl Element="Applicationbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationBrowser')" Parent="EngineeringClient_" />

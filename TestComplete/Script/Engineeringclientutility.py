@@ -274,6 +274,7 @@ def select_ContextMenu_Items_EC(menu_item):
       if item.Header != None and str(item.Header.OleValue) == str(menu_item):
         item.Click()
         Log.Checkpoint('The Context Menu Item clicked is : ' + str(menu_item))
+        Sys.Keys('[Esc]')
         break
   else:
     Log.Warning(f'The Context menu item {menu_item} not found !')

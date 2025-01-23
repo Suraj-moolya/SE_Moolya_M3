@@ -127,6 +127,7 @@ def drag_and_drop_toolbox_to_window(func):
       to_x, to_y = location.ScreenLeft + location.Width / 2, location.ScreenTop + location.Height / 2
       tool.Drag(from_x - tool.ScreenLeft, from_y - tool.ScreenTop, to_x - from_x, to_y - from_y)
       Log.Checkpoint(f"Dragged '{func}' tool to the edit page.")
+      Applicationutility.wait_in_seconds(1500, 'Wait')
       return
   Log.Warning("Could not find the tool or destination to perform drag-and-drop.")
   

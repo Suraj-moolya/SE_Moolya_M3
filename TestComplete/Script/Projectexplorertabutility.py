@@ -178,15 +178,21 @@ def right_click_container_dock_context_menu_item_PE(param):
   container_dock = proj_obj.containerdocktextbox
   #Log.Message(str(container_dock))
   container_list = container_dock.find_children_for_grid_view_row()
-  for item in container_list:
-    if item.Visible:
-      if identifier in item.DataContext.Identifier.OleValue:
-        item.ClickR()
-        Applicationutility.wait_in_seconds(750, 'Wait')
-        Engineeringclientutility.select_ContextMenu_Items_EC(Context_menu_item)
-        
+  if container_list:
+    for item in container_list:
+      if item.Visible:
+        if identifier in item.DataContext.Identifier.OleValue:
+          item.ClickR()
+          Applicationutility.wait_in_seconds(750, 'Wait')
+          Engineeringclientutility.select_ContextMenu_Items_EC(Context_menu_item)
+          break
+    else:
+      Log.Warning(f"{identifier} not in container") 
+  else:
+    Log.Warning('No Container objects present')   
+    
 def mika():
-  right_click_container_dock_context_menu_item_PE("Supervision_Test$$Create Tag Container")
+  right_click_container_dock_context_menu_item_PE("Page_1$$Edit")
 
         
 def Executables_Properties(Identifier_Textvalue):
