@@ -17,6 +17,7 @@ Examples:
 Scenario Outline: Create new page and assign some instances. save and close - create page
 When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
 And I click modal dialog window project browser in project explorer as '<Button>'
+And I click container dock in project explorer
 
 Examples:
   | SlNo. | container dock1               | Button |
