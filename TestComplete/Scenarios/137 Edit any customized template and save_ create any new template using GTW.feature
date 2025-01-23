@@ -8,8 +8,6 @@ And I Select '<tab>' in global template explorer
 And I Drag and Drop '<source>' from toolbox to the edit page in global template explorer
 And I selected save as composite editor in composite editor
 And I click on '<btn>' in the Save As window
-And I Click on State Selector in global template explorer
-And I Click on Approved combo item in global template explorer
 And I change the template name to '<name>' and version to '<version>' in the Save As window
 And I enter the description in the Save As window as '<desc>'
 And I selected Save in save as windowo
@@ -20,6 +18,22 @@ And I Close tab items EC main screen in engineering client as 'Global'
 Examples:
   | SlNo. | Templates browser1        | global template core5 | tab     | source | btn   | name        | version | desc               |
   | 1     | Motorgp$$MotorGP$$1.0.123 | Edit                  | Toolbox | Add    | Other | Sample_Test | 1.0.126 | Sample Description |
+
+@TC_EPE_GT_0005A
+Scenario Outline: Edit Sample Test customized template and save
+When I Search text and Right-Click GTE global template search in global template explorer as '<Templates browser1>'
+And I Select context menu item EC global template core in global template explorer as '<global template core5>'
+And I Select '<tab>' in global template explorer
+And I Drag and Drop '<source>' from toolbox to the edit page in global template explorer
+And I selected save as composite editor in composite editor
+And I click on '<btn>' in the Save As window
+And I Click on State Selector in global template explorer
+And I Click on Approved combo item in global template explorer
+And I change the template name to '<name>' and version to '<version>' in the Save As window
+And I enter the description in the Save As window as '<desc>'
+And I selected Save in save as windowo
+When I Close tab items EC main screen in engineering client as 'Sample'
+And I Close tab items EC main screen in engineering client as 'Global'
 
 @Edit_Sample_Test_template_and_save_as_Sample_Test_to_update
 Examples:
