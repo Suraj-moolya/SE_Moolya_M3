@@ -302,6 +302,7 @@ Examples:
 @TC_EPE_EC_0017
 @test009
 Scenario Outline: Navigate to Project Explorer Without selecting the system and click on OK in popup 
+When I selected System Explorer Canvas in system explorer
 When I navigate to explorers MainToolBar in system explorer as '<MainToolBar1>'
 Then verify Explorer warning message Warning popup in system explorer as '<Warning popup2>'
 When I selected Popup Ok in system explorer
@@ -314,6 +315,7 @@ Examples:
 @TC_EPE_EC_0018
 @test010
 Scenario Outline: Navigate to Project Explorer Without selecting the system and click on X in popup
+When I selected System Explorer Canvas in system explorer
 When I navigate to explorers MainToolBar in system explorer as '<MainToolBar1>'
 Then verify Explorer warning message Warning popup in system explorer as '<Warning popup2>'
 When I PE warning Popup Close in system explorer
@@ -358,6 +360,17 @@ Then verify Tabs Explorer tab in system explorer as '<Explorer tab2>'
 Examples:
   | SlNo. | System_11 | Explorer tab2    |
   | 1     | System_1  | Project Explorer |
+  
+@TC_EPE_EC_0021a
+@test0040
+Scenario Outline: Navigation To Project Explorer(PE) - Main Tool Bar by selecting system
+When I Click on Nodes System Explorer Node in system explorer as '<System_21a>'
+When I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
+Then verify Tabs Explorer tab in system explorer as '<Explorer tab4>'
+
+Examples:
+  | SlNo. | MainToolBar3     | Explorer tab4    |System_21a|
+  | 1     | Project Explorer | Project Explorer |System_1|
 
     
 @TC_EPE_EC_0022
