@@ -372,7 +372,7 @@ def drag_instance_drop_container_page_SP(template):
             Applicationutility.wait_in_seconds(2000, 'Wait')
             template_list[i].Click()
             Applicationutility.wait_in_seconds(2000, 'Wait')
-            template_list[i].Drag(fromx, fromy, tox+100, 0)
+            template_list[i].Drag(fromx-50, fromy, tox+100, 0)
             Applicationutility.wait_in_seconds(2000, 'Wait')
             break
             

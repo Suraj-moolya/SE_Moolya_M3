@@ -135,7 +135,7 @@ def verify_invalid_hosting_control_instances():
     Log.Checkpoint(str(msg))
 
 def navigate_to_explorers(Explorername):
-  aqUtils.Delay(5000)    
+  Applicationutility.wait_in_seconds(3000, 'Wait')
   menu_items_obj = ses_obj.maintoolbartextbox.object
   menu_items_list = menu_items_obj.FindAllChildren("ClrClassName", "ContentPresenter", 50)
   for i in range(len(menu_items_list)):
