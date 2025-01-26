@@ -5438,6 +5438,256 @@
 					</testItem>
 				</children>
 			</testItem>
+			<testItem name="E2E Suraj 1" key="{67F859C9-7F7C-4FA2-825E-E1DF6E91FA8E}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+				<testParameters />
+				<children>
+					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_2_2_3" key="{144B864B-9A08-40C8-BC21-807DDB362875}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_2_2_3" key="{1FA762F1-8CAF-46CC-8797-C61FB65F97EE}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_2_2_3" key="{7836D4AF-05F3-4DC6-94AD-451682D3FA4B}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray and click on SS start and wair for SS ready" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_2_2_3" key="{37448ED7-984F-4FC7-ABBB-81D4443A3C0B}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="Creation of folder, system" key="{F729E9F8-F576-40F3-BCD2-BCC7AFF077BC}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<children>
+							<testItem name="Creation of System By Right clicking on System" key="{DA984A87-DBD2-41C0-9B8A-D15B273F9267}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="TC_EPE_EC_0007_2_1_1_1_1_2_2_3" key="{B9D9FA47-679B-434B-8C29-F8B033A2C8AE}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Creation of 2 Systems from Context menu of System Explorer" key="{AF8D2D45-2CFC-46A7-BE7F-491241546E13}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem89" key="{AA10DAF7-2C38-41D4-BA76-30455ED8AF47}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="2" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Creation of Folder" key="{B59CC6DB-542F-436B-81E8-AAD16E2C350A}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem90" key="{235DE959-6A6B-4021-A29F-F76509AF9DE7}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of Folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Creation of System within Folder" key="{6AFF40D9-53C1-4A9C-BE07-3FC3F6607A93}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem91" key="{450D2BD6-F5D8-4C7B-95A4-C906CCDB8A5A}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System within Folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Creation of 2 System within Folder" key="{DBE97A72-E396-4254-A730-16B409856208}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem92" key="{587776F8-405B-49E1-ABF5-66C70DBC594F}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System within Folder" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Creation of 2 Folder within Folder" key="{9AE6F776-4920-43FC-9AFA-2EED358D3B9D}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem93" key="{E7339674-8A7D-4AE5-983B-9348718B5AF0}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of Folder within Folder" count="2" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="Renaming of folder, system" key="{69303D71-F001-4941-A87D-BE5FF9975F29}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<children>
+							<testItem name="Rename of Folder as Floor_1/Test_1 (Valid condition)" key="{A8B4FEAD-46CC-4A2C-8B0D-F000242941C5}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem101" key="{DBB339D5-7005-47DB-906A-AF14615E7E17}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of Folder as Test_1" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of Folder as 12345" key="{B8338EFE-B675-4E68-B664-0B7954927D76}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem102" key="{BDC6066D-4C0E-4964-BAB0-006234230712}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of Folder as 12345 and close" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of Folder as Floor@1" key="{4B78CE6B-3F6E-4A68-97E4-3449239289B7}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem103" key="{12B747C2-B116-4D0A-BD07-0AFEFD7574F6}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of Folder as Floor@1 and close" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of System as Control_1" key="{52606618-333F-47DE-8DC4-07DC409F001A}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem104" key="{90C5D7B6-62B4-4E74-A281-CACB789E8419}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of System as Control_Test" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="ProjectTestItem113" key="{6D57F45F-8030-41E4-916F-A488F72391B9}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+							<testItem name="Rename of System as 12345 X button" key="{B34316A7-8EF8-4ADC-BB82-54125E8721F4}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem105" key="{EE7DB97D-C37B-472B-A5F8-E93814A13D00}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of System as 12345, Click on Close" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of System as 12345 OK button" key="{BDFF10AE-228C-4E69-84A9-564955680C93}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem106" key="{288F8EAC-3DB1-4A14-8D4C-BD811F5AE535}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of System as 12345, Click on ok Button" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of System as Control@123 x button" key="{540AB94A-9843-4CD4-9E2D-0E845E4DA7DB}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem107" key="{E676F811-F47A-47D2-9FD9-FEA191858D93}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of System as Control@123 Click on close" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of System as Control@123 ok button" key="{D0838702-AEB1-44A7-9E07-299B01D838E6}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem108" key="{3E93A3D6-6436-401A-91F1-A30EEF959C5C}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of System as Control@123 Click on ok Button" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of 2 Folders with same name x button" key="{65E7E285-BCDB-4A1A-97BC-359EE4CD30D6}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem109" key="{45D50283-25E9-4AF3-A7C7-BA0B2F538B31}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of 2 folder with same name by clicking on close" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of 2 Folders with same name close button" key="{C1723E0B-0C28-4B6A-A729-C77B6C879AD7}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem110" key="{ECF90D53-AED8-4CB4-8EB1-39373A420E02}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of 2 folder with same name using OK" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of 2 System with same name x button" key="{35995F6D-B8EA-47FE-8BF3-E8AA7CEDB6EB}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem111" key="{D5B0E90F-FC04-4FC5-A591-02B6E56E71D9}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of 2 system with same name by clicking on close" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+							<testItem name="Rename of 2 System with same name close button" key="{DD780AFE-CBCF-41B8-B55B-0BEB97EFD62B}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<children>
+									<testItem name="ProjectTestItem112" key="{CF555A3B-9DD5-43C3-8062-487A10240F41}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Rename of 2 system with same name using OK" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+										<testParameters />
+										<environments activeCloud="SWT" />
+										<children />
+									</testItem>
+								</children>
+							</testItem>
+						</children>
+					</testItem>
+					<testItem name="ProjectTestItem94" key="{34D788CB-E903-4D29-AB3C-BDA05DC0B0BB}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem95" key="{44106BF7-0923-4D9D-95CE-35223C2D3D4A}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem96" key="{A89968DD-DC33-4606-88DC-8B4B00B08273}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem98" key="{E23FFFC4-9498-484A-8A47-CB4D3EF56BFF}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem99" key="{DA30FC74-849F-4E71-80BA-9074EBB4CB46}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem100" key="{8C93D673-D5DE-48B3-A502-F8F2123D2832}" group="False" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
 		</children>
 	</testItems>
 	<variables key="{00B55B0A-F697-429F-AC9F-AE74135591ED}">

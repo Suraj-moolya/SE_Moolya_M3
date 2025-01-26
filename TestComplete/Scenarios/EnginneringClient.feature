@@ -70,6 +70,18 @@ Then verify system and folder created System Explorer Node in system explorer
 Examples:
   | SlNo. |
   | 1     |
+  
+@TC_EPE_EC_0006a
+@test004
+Scenario Outline: Creation of Folder within Folder
+When I Right Click on nodes System Explorer Node in system explorer as '<Folder>'
+Then verify context menu items from Rclick menu items in system explorer
+When I selected Create Folder in context menu
+Then verify system and folder created System Explorer Node in system explorer
+
+Examples:
+  | SlNo. | Folder   |
+  | 1     | Folder_1 |
  
   
 @TC_EPE_EC_0007
@@ -81,8 +93,8 @@ When I selected Create System in context menu
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 
 Examples:
-  | SlNo. |project browser2|
-  | 1     |Create System   |
+  | SlNo. | project browser2 |
+  | 1     | Create System    |
 
      
 @TC_EPE_EC_0008 
@@ -157,6 +169,20 @@ Examples:
   | SlNo. | as per requirement1 | Rename Pop up3             |
   | 1     | 12345               | Identifier must start with |
   
+@TC_EPE_EC_0012
+@test009
+Scenario Outline: Rename of System as 12345, Click on Close
+When I Right Click on nodes System Explorer Node in system explorer as 'System_1'
+Then verify context menu items from Rclick menu items in system explorer
+When I selected Rename in context menu
+When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
+Then Verify Rename Warning Message Rename Pop up in message box as '<Rename Pop up3>'
+Then I Close the message window
+
+Examples:
+  | SlNo. | as per requirement1 | Rename Pop up3             |
+  | 1     | 12345               | Identifier must start with |
+  
   
 @TC_EPE_EC_0013
 @test009
@@ -171,6 +197,33 @@ When I selected Rename Pop up Ok in message box
 Examples:
   | SlNo. | as per requirement1 | Rename Pop up3     |
   | 1     | Control@123         | Special characters |
+  
+  
+@TC_EPE_EC_0013a
+@test009
+Scenario Outline: Rename of System as Control@123 Click on close
+When I Right Click on nodes System Explorer Node in system explorer as 'System_1'
+Then verify context menu items from Rclick menu items in system explorer
+When I selected Rename in context menu
+When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
+Then Verify Rename Warning Message Rename Pop up in message box as '<Rename Pop up3>'
+Then I Close the message window
+
+Examples:
+  | SlNo. | as per requirement1 | Rename Pop up3     |
+  | 1     | Control@123         | Special characters |
+  
+@TC_EPE_EC_0013
+@test009
+Scenario Outline: Rename of System as Control_Test
+When I Right Click on nodes System Explorer Node in system explorer as 'System_1'
+Then verify context menu items from Rclick menu items in system explorer
+When I selected Rename in context menu
+When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
+Then Verify_Folder_Renamed as per requirement in system explorer
+Examples:
+  | SlNo. | as per requirement1 | Rename Pop up3     |
+  | 1     | Control_Test        | Special characters |
 
 
 @TC_EPE_EC_0014
@@ -182,6 +235,21 @@ When I selected Rename in context menu
 When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
 Then Verify Rename Warning Message Rename Pop up in message box as '<Rename Pop up6>'
 When I selected Rename Pop up Ok in message box
+
+Examples:
+  | SlNo. | as per requirement1 | Rename Pop up6           |
+  | 1     | Folder_1            | Identifier is not unique |
+  
+  
+@TC_EPE_EC_0014
+@test012
+Scenario Outline: Rename of 2 folder with same name by clicking on close
+When I Right Click on nodes System Explorer Node in system explorer as 'Folder_2'
+Then verify context menu items from Rclick menu items in system explorer
+When I selected Rename in context menu
+When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
+Then Verify Rename Warning Message Rename Pop up in message box as '<Rename Pop up6>'
+Then I Close the message window
 
 Examples:
   | SlNo. | as per requirement1 | Rename Pop up6           |
@@ -201,6 +269,23 @@ When I selected Rename Pop up Ok in message box
 Examples:
   | SlNo. | as per requirement1 | Rename Pop up6           |
   | 1     | System_1            | Identifier is not unique |
+  
+  
+  
+@TC_EPE_EC_0015a
+@test012
+Scenario Outline: Rename of 2 system with same name by clicking on close
+When I Right Click on nodes System Explorer Node in system explorer as 'System_2'
+Then verify context menu items from Rclick menu items in system explorer
+When I selected Rename in context menu
+When I Rename Folder as per requirement in system explorer as '<as per requirement1>'
+Then Verify Rename Warning Message Rename Pop up in message box as '<Rename Pop up6>'
+Then I Close the message window
+
+Examples:
+  | SlNo. | as per requirement1 | Rename Pop up6           |
+  | 1     | System_1            | Identifier is not unique | 
+
 
 @TC_EPE_EC_0016
 @test0016
