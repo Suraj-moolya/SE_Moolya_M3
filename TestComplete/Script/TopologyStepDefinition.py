@@ -470,5 +470,11 @@ def step_impl(outputwindowpanel1):
       CommonUtil.write_text_file("\nThen Verify_error_messages_in_Console OutputWindowPanel in topology as \""+outputwindowpanel1+"\"")
       obj.textboxoutputwindowpanelverifyerrormessagesinconsole(outputwindowpanel1)
       Applicationutility.take_screenshot("Full Screenshot")
+      
+@when("I Enter Controller Password deploy screen TE Confirm Password box in topology as {arg}")
+def step_impl(confirmPasswordBox3):
+    """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""
+    CommonUtil.write_text_file("\nWhen I Enter Controller Password deploy screen TE Confirm Password box in topology as \""+confirmPasswordBox3+"\"")
+    obj.textboxconfirmpasswordboxentercontrollerpassworddeployscreente(confirmPasswordBox3)
   
 

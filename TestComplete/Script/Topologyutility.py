@@ -204,3 +204,8 @@ def Verify_error_messages_in_Console(text):
       break
   else:
     Log.Message(f'{text} error messages not displayed in Console')
+    
+def Enter_Controller_Password_deploy_screen_TE(password):
+      PW_box = topology_obj.PasswordControlBoxtextbox   
+      PW_box.enter_password(password)
+      Log.Message(str(PW_box.object.PasswordText) + " entered in Password")

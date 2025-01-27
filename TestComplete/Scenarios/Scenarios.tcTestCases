@@ -132,12 +132,15 @@
 			<Feature Path="28 Check Ethernet Network.feature" />
 			<Feature Path="32 Upgrade the controller FW version and check.feature" />
 			<Feature Path="39 Check Consistency.feature" />
+			<Feature Path="29 Modify the IP address after mapping to workstation.feature" />
+			<Feature Path="31 Enable system password in SE and open controller in TE, set PW for controller and open it.feature" />
 		</Folder>
 	</Folder>
 	<Folder Name="RTNS">
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
+		<Feature Path="20 Run Supervision Client.feature" />
 	</Folder>
 	<Folder Name="Control Expert">
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
