@@ -9,6 +9,7 @@
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
 		<Feature Path="19 Check Report Generation.feature" />
+		<Feature Path="4 System Password protection.feature" />
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />

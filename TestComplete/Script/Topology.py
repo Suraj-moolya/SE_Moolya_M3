@@ -73,5 +73,11 @@ class Topology(MapBase):
     @property
     def outputwindowpaneltextbox(self):
         """outputwindowpaneltextbox"""
-        return self.get_element("OutputWindowPanel_Topology")  
+        return self.get_element("OutputWindowPanel_Topology") 
+        
+    @property
+    def PasswordControlBoxtextbox(self):
+        """PasswordControlBoxtextbox"""
+        return self.get_element("PasswordControlBox_Topology")
+  
               
