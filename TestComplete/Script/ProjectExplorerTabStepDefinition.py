@@ -794,3 +794,9 @@ def step_impl():
     """I click close tool bar button in project explorerr"""
     CommonUtil.write_text_file("\nWhen I click close tool bar button in project explorer")
     obj.closetoolbarbuttonclick()
+
+@when("I click container dock in project explorer")
+def step_impl():
+    """I click container dock in project explorerr"""
+    CommonUtil.write_text_file("\nWhen I click container dock in project explorer")
+    obj.containerdockclick()

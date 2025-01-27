@@ -939,4 +939,6 @@ class ProjectExplorerTabWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
             
-            
+    def containerdockclick(self):
+        """closetoolbarbuttonclick"""
+        ProjectExplorerTabWorkFlow.projectexplorertab_obj.containerdocktextbox.click()

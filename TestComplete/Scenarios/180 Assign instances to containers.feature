@@ -39,10 +39,17 @@ Scenario Outline: Assign  Instance from system to different Containers in PE
 When I Assign Instances from instance dock to sections in containers dock as '<param>'
 And I click modal dialog window project browser in project explorer as '<Button>'
 Then I Verify the facet generation status of all facets in Assignments Dock
+
 @Assign_Instance_from_system_to_different_Containers_in_PE
 Examples:
   | SlNo. | param                   | Button |
   | 1     | System$$M580_Standalone | OK     |
+  
+  
+@Assign_Instance_from_system_to_different_Containers_in_Supervision_PE
+Examples:
+  | SlNo. | param               | Button |
+  | 1     | System$$Supervision | OK     |
 
 
   

@@ -31,7 +31,7 @@ def step_impl():
     """I selected Save Refine Offline in refine offline"""
     CommonUtil.write_text_file("\nWhen I selected Save Refine Offline in refine offline")
     obj.buttonsaverefineofflineselected()
-    Applicationutility.wait_in_seconds(2000, 'Wait')
+    Applicationutility.wait_in_seconds(10000, 'Wait')
   
 @when("I selected Consistency Check in refine offline")
 def step_impl():

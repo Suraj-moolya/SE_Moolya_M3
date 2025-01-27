@@ -77,10 +77,10 @@ class SystemServerWorkFlow:
           Log.Message(logOnDialogue3)
     def windowconsoleverifytextinsystemserverconsole(self,verify_message):
         """windowconsoleverifytextinsystemserverconsole"""
-        try:
-            Systemserverutility.check_server_console_flowdocument(verify_message)
-        except Exception as ex:
-            raise Exception(ex) from ex
+#        try:
+        Systemserverutility.check_server_console_flowdocument(verify_message)
+#        except Exception as ex:
+#            raise Exception(ex) from ex
         
     def windowconsoleselectfromsystemservericon(self,element):
         """windowconsoleselectfromsystemservericon"""

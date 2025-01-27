@@ -822,7 +822,7 @@ def verify_instance_application_browser(param):
         Log.Checkpoint(f'{str(instance.DataContext.Identifier.OleValue)} is present in Application Browser')
         break
   else:
-    Log.Warning(f'{str(instance.DataContext.Identifier.OleValue)} is not present in Application Browser')
+    Log.Warning(f'{param} is not present in Application Browser')
         
 def verify_SameName_Errorbox_application_browser():
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object

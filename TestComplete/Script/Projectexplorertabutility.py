@@ -176,17 +176,23 @@ def multidraganddrop(controllers, sections):
 def right_click_container_dock_context_menu_item_PE(param):
   identifier, Context_menu_item = param.split('$$')
   container_dock = proj_obj.containerdocktextbox
-  Log.Message(str(container_dock))
+  #Log.Message(str(container_dock))
   container_list = container_dock.find_children_for_grid_view_row()
-  for item in container_list:
-    if item.Visible:
-      if identifier in item.DataContext.Identifier.OleValue:
-        item.ClickR()
-        Applicationutility.wait_in_seconds(750, 'Wait')
-        Engineeringclientutility.select_ContextMenu_Items_EC(Context_menu_item)
-        
+  if container_list:
+    for item in container_list:
+      if item.Visible:
+        if identifier in item.DataContext.Identifier.OleValue:
+          item.ClickR()
+          Applicationutility.wait_in_seconds(750, 'Wait')
+          Engineeringclientutility.select_ContextMenu_Items_EC(Context_menu_item)
+          break
+    else:
+      Log.Warning(f"{identifier} not in container") 
+  else:
+    Log.Warning('No Container objects present')   
+    
 def mika():
-  right_click_container_dock_context_menu_item_PE("Supervision_Test$$Create Tag Container")
+  right_click_container_dock_context_menu_item_PE("Page_1$$Edit")
 
         
 def Executables_Properties(Identifier_Textvalue):
@@ -488,6 +494,8 @@ def Drag_instance_drop_container_section(param):
     if instance_identifier in instance.DataContext.Identifier.OleValue :
       fromx = instance.Top
       fromy = instance.Height / 2
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      instance.Click()
       instance.Drag(fromx,fromy,0,tox/2+25)
       Log.Message("Drag and drop operation was performed")
       break
@@ -620,6 +628,7 @@ def rename(controller):
   Sys.Keys(controller)
   Applicationutility.wait_in_seconds(1000, 'Wait')
   Sys.Keys("[Enter]")
+  Applicationutility.take_screenshot('Taking screenshot')
 
 def verify_facet_assignment_before_generate(facet_name):
   facet_names = facet_name.split("$$") if "$$" in facet_name else [facet_name]
@@ -952,12 +961,17 @@ def verify_master_page_main_window():
 def verify_control_project(identifier):
   proj = proj_obj.projectbrowsertextbox
   proj_list = proj.find_children_for_treeviewrow()
-  for item in proj_list:
-    if item.Visible:
-      if item.DataContext.Identifier.OleValue == identifier:
-        Log.Checkpoint(f"'{identifier}' Was Created in Project Explorer")
-        break
-
+  if proj_list:
+    for item in proj_list:
+      if item.Visible:
+        if item.DataContext.Identifier.OleValue == identifier:
+          Log.Checkpoint(f"'{item.DataContext.Identifier.OleValue}' Was Created in Project Explorer")
+          break
+    else:
+      Log.Warning(f'{identifier} was not created')
+  else:
+    Log.Warning('No objects created')
+    
 def hadj(): 
   drag_and_drop_device_to_channel("ControlExecutable")  
   
@@ -1360,20 +1374,24 @@ def Edit_IODevice_Properties(param):
   field_label, options = param.split("$$")
   controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
   for control in controller_row:
-    Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
+    #Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
     if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
       control.DblClick()
       aqUtils.Delay(500)
       for item in eng_obj.userdropdownmenuitemtextbox.object.FindAllChildren("ClrClassName", "RadioButton", 100):
         if item.WPFControlText == options:
-          item.Click() if item.Enabled else Log.Error("Dropdown item 'False' is disabled.")
+          if item.Enabled:
+            item.Click() 
+            Sys.Keys('[Esc]')
+          else:
+            Log.Error("Dropdown item 'False' is disabled.")
           return
   Log.Error("Could not find the specific 'Controller' element.")
    
 def Expand_IODevice_section(param):
   IODevices_row = proj_obj.assignmentsdocktextbox.object.FindAllChildren("Name", "WPFObject('CheckedVisual')", 100)
   for list in IODevices_row:
-    Sys.HighlightObject(list)
+    #Sys.HighlightObject(list)
     if param == list.DataContext.Identifier.OleValue:
       list.Click()
       Log.Message(list.DataContext.Identifier.OleValue+ " is expanded")
@@ -1398,7 +1416,7 @@ def Click_On_Topological_entity_IODvices(service,field):
   Map = proj_obj.controlexecutablesproperty.object
   Map_List = Map.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for i in Map_List:
-    Sys.HighlightObject(i)
+    #Sys.HighlightObject(i)
     if service in str(i.DataContext.Identifier.OleValue):
       service_list = i.FindAllChildren('ClrClassName', 'GridViewCell', 100)
       for j in service_list:

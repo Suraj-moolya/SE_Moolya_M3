@@ -247,4 +247,11 @@ class GlobalTemplatesTabWorkFlow:
         """globaltemplatestab_obj.opencontrolparticipantbutton"""
         GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.openparticipantbutton.click()
     
-        
+    def clickStateSelectorapprovedinsaveas(self):
+        """globaltemplatestab_obj.StateSelectorapprovedinsaveas"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.StateSelectorapprovedinsaveas.click() 
+    
+    def clickapprovedcomboitem(self):
+        """globaltemplatestab_obj.approvedcomboitem"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.approvedcomboitem.click()
+                   

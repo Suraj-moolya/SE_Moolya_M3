@@ -169,3 +169,15 @@ class GlobalTemplatesTab(MapBase):
       """pumprightgenietemplateheader"""
       return self.get_element("Fittocontent_GlobalTemplatesTab")  
       
+    @property
+    def StateSelectorapprovedinsaveas(self):
+      """StateSelectorapprovedinsaveas"""
+      return self.get_element("StateSelectorapprovedinsaveas_GlobalTemplatesTab")  
+      
+    @property
+    def approvedcomboitem(self):
+      """approvedcomboitem"""
+      return self.get_element("approvedcomboitem_GlobalTemplatesTab") 
+      
+      
+      

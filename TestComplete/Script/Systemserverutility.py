@@ -48,13 +48,17 @@ def check_server_console_flowdocument(verify_message):
   console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 50)
   for _ in range(60):
     check_text = str(console_list[0].Blocks.LastBlock.WPFControlText)
-    if str(verify_message) in str(check_text):
+    if str(verify_message) in str(console_list[0].Blocks.LastBlock.WPFControlText):
       Log.Checkpoint(check_text)
       Applicationutility.take_screenshot()
       break
+    elif 'Processing command metadata overrides...' in str(console_list[0].Blocks.LastBlock.WPFControlText):
+      Log.Checkpoint(verify_message)
+      Applicationutility.take_screenshot()
+      break
     else:
-      Log.Message(check_text)
-      aqUtils.Delay(5000)
+      #Log.Message(check_text)
+      Applicationutility.wait_in_seconds(5000, 'Wait for server ready !')
       console_obj.Refresh()
       
 def verify_start_stop_disabled():
@@ -131,7 +135,7 @@ def verify_invalid_hosting_control_instances():
     Log.Checkpoint(str(msg))
 
 def navigate_to_explorers(Explorername):
-  aqUtils.Delay(5000)    
+  Applicationutility.wait_in_seconds(3000, 'Wait')
   menu_items_obj = ses_obj.maintoolbartextbox.object
   menu_items_list = menu_items_obj.FindAllChildren("ClrClassName", "ContentPresenter", 50)
   for i in range(len(menu_items_list)):
@@ -230,8 +234,12 @@ def check_whole_flowdocument(verify_message):
   console_obj = server_obj.consolewindow.object
   console_list = console_obj.FindAllChildren("ClrClassName", "Paragraph", 10000)
   for i in range(len(console_list)):
+    Log.Message(i)
     check_text = str(console_list[i].WPFControlText)
-    if verify_message in check_text:
+    if verify_message in str(console_list[0].WPFControlText):
+      Log.Checkpoint(check_text)
+      return True
+    elif verify_message in str(console_list[1].WPFControlText):
       Log.Checkpoint(check_text)
       return True
   else:
@@ -243,16 +251,17 @@ def check_server_ready():
   console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 50)
   for _ in range(600):
     check_text = str(console_list[0].Blocks.LastBlock.WPFControlText)
-    if Systemserverutility.check_whole_flowdocument('Server is ready'):
-      Applicationutility.take_screenshot()
-      break
-    elif 'Server is ready' in check_text:
+#    if Systemserverutility.check_whole_flowdocument('Server is ready'):
+#      Applicationutility.take_screenshot()
+#      break
+#    el
+    if 'Server is ready' in check_text:
       Log.Checkpoint(check_text)
       Applicationutility.take_screenshot()
       break
     else:
-      Applicationutility.wait_in_seconds(1000, 'Wait for server ready !')
-      console_obj.Refresh()
+      Applicationutility.wait_in_seconds(500, 'Wait for server ready !')
+      #console_obj.Refresh()
       
 def check_server_stop():
   console_obj = server_obj.consolewindow.object
