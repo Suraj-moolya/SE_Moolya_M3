@@ -18,19 +18,38 @@ refoff_obj = RefineOffline()
 proj_obj = ProjectExplorerTab()
 topoexo_obj = TopologyExplorerTab()
 
+###############################################################################
+#Author : Preetham S R
+#Function : Select main folder project browser CE
+#Parameter : No
+###############################################################################
 def select_main_folder_project_browser_CE():
   project_browser = refoff_obj.projectbrowserrotextbox.object
   project_browser.wItems.Item[0].Select()
   Applicationutility.wait_in_seconds(1000, 'Wait')
 
+###############################################################################
+#Author : Priyanka T
+#Function : Select value from dropdown in project browser item CE
+#Parameter : dropdown text value 
+###############################################################################
 def select_project_browser_item_CE(val):
   project_browser = refoff_obj.projectbrowserrotextbox.object
   count = project_browser.wItemCount 
   for i in range(count):
     if val in project_browser.wItem[i]:
       project_browser.SelectItem(val)
+      Log.Message(val + ' is selected')
       break
+  else:
+    Log.Message(val + ' is not selected')
+
       
+###############################################################################
+#Author : Preetham S R
+#Function : double click in project browser item CE
+#Parameter : double click text value 
+###############################################################################     
 def doubleclick_project_browser_item_CE(val):  
   project_browser = refoff_obj.projectbrowserrotextbox.object
   count = project_browser.wItems.Item[0].Items.Count
@@ -38,7 +57,15 @@ def doubleclick_project_browser_item_CE(val):
     if val in project_browser.wItem[i]:
       project_browser.DblClickItem(val)
       break
-      
+  else:
+    Log.Message(val + ' is not Click')
+
+    
+###############################################################################
+#Author : Priyanka T
+#Function : Right click in project browser item CE
+#Parameter : Right click text value 
+###############################################################################      
 def rightclick_project_browser_item_CE(val):  
   project_browser = refoff_obj.projectbrowserrotextbox.object
   count = project_browser.wItems.Item[0].Items.Count
@@ -46,15 +73,27 @@ def rightclick_project_browser_item_CE(val):
     if val in project_browser.wItem[i]:
       project_browser.ClickItemR(val)
       break
-      
+  else:
+    Log.Message(val + ' is not selected')
+ 
+###############################################################################
+#Author : Preetham S R
+#Function : Maximize MDI Window in project browser
+#Parameter : No 
+###############################################################################     
 def maximize_window_CE():
   try:
     Applicationutility.wait_in_seconds(2000, 'Wait')
     win = refoff_obj.mdiwindowtextbox.object
     win.Maximize()
   except:
-    Log.Message('No Window to Maximize')    
-    
+    Log.Message('No Window to Maximize')  
+      
+###############################################################################
+#Author : Preetham S R
+#Function : double click on item and Maximize MDI Window in project browser
+#Parameter : eg. Configuration$$0 : PLC bus 
+###############################################################################    
 def double_click_selected_project_browser_item_CE(param):
   selection_items_list = param.split('$$')
   select_main_folder_project_browser_CE()  
@@ -68,7 +107,12 @@ def double_click_selected_project_browser_item_CE(param):
       Applicationutility.wait_in_seconds(1500, 'wait')
       maximize_window_CE()
       Applicationutility.wait_in_seconds(2000, 'wait')
-      
+
+###############################################################################
+#Author : Priyanka T
+#Function : right click on item and Maximize MDI Window in project browser
+#Parameter : eg. Configuration$$0 : PLC bus 
+###############################################################################      
 def Right_click_selected_project_browser_item_CE(param):
   selection_items_list = param.split('$$')
   select_main_folder_project_browser_CE()  
@@ -81,7 +125,11 @@ def Right_click_selected_project_browser_item_CE(param):
       rightclick_project_browser_item_CE(selection_items_list[i])
       Applicationutility.wait_in_seconds(1500, 'wait')
       
-      
+###############################################################################
+#Author : Preetham S R
+#Function : Modify refine window, add data section, IN1, IN2 and OUT
+#Parameter : No
+###############################################################################    
 def rclick_window_CE(): 
   win = refoff_obj.mdiwindowtextbox.object
   win.ClickR((win.Width/2)-100, win.Height/2)
@@ -168,8 +216,11 @@ def rclick_window_CE():
 #  Applicationutility.wait_in_seconds(1500, 'wait')
 
   
-  
-   
+###############################################################################
+#Author : Priyanka T
+#Function : Right Click on Block Refine Offline window
+#Parameter : Block name text
+###############################################################################   
 def RClick_on_Block_Refine_Offline(identifier):  
   Window = refoff_obj.mdiwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
   for Window_Text in Window:
@@ -180,10 +231,11 @@ def RClick_on_Block_Refine_Offline(identifier):
   else:
     Log.Message(Window_Text.Text + ' is not visible in the Window')
         
-def sfsfsf():
-  RClick_on_Block_Refine_Offline("WRITE_REMOTE")
-  Unlock_Dialog_popup("Unlock")
-        
+###############################################################################
+#Author : Preetham S R
+#Function : Unlock Dialog popup
+#Parameter : Block name text
+###############################################################################  
 def Unlock_Dialog_popup(button_name):
   obj = Sys.Process("ControlExpert", 4).Dialog("Unlock")
   buttons_list = obj.FindAllChildren('WndClass', 'Button', 1000)
@@ -195,7 +247,12 @@ def Unlock_Dialog_popup(button_name):
   else:
     Log.Warning("Button name mentioned doesnt exists")
     
-    
+
+###############################################################################
+#Author : Priyanka T
+#Function : Delete link in Refine Offline
+#Parameter : text
+###############################################################################   
 def Delete_link_Refine_Offline(identifier):
   Window = refoff_obj.mdiwindowtextbox.object
   Window_lst = Window.FindAllChildren("Name", "TextObject*", 1000)
@@ -205,9 +262,11 @@ def Delete_link_Refine_Offline(identifier):
       Delay(1000)
       #Sys.Keys("[Del]")
       
-def sfsfsf2():
-  Delete_link_Refine_Offline("R_Var_8")
-          
+###############################################################################
+#Author : Priyanka T
+#Function : Click on Check/Uncheck All button
+#Parameter : No
+###############################################################################          
 def Consistency_Check_Select_All():
   headers = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'GridViewHeaderCell', 25)
   buttons_list = headers[0].FindAllChildren('ClrClassName', 'CheckBox', 1000)
@@ -219,6 +278,11 @@ def Consistency_Check_Select_All():
     else:
         Log.Message(str(button.WPFControlText) +" button is Enabled")
 
+###############################################################################
+#Author : Priyanka T
+#Function : Click on Check/Uncheck All button
+#Parameter : No
+###############################################################################
 def Verify_modifications_available_in_Refine_Offline(identifier):        
   Window = refoff_obj.mdiwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
   for Window_Text in Window:
