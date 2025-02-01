@@ -507,8 +507,11 @@ Scenario Outline: Export instance - Click Export, Save and Open CSV
 When I Select context menu item EC Application browser in application explorer as '<Application browser5>'
 And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'
 And I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'
-Then Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'
-When I Click on export System1 Export Popup AE buttons Export in ec windows explorer as 'OK'
+
+# these 2 pop ups has been removed in this build kept the step filesincase its added in next version
+
+#Then Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'
+#When I Click on export System1 Export Popup AE buttons Export in ec windows explorer as 'OK'
 Then Verify Extracted Template CSV Data and Template Details Export in ec windows explorer
 
 Examples:
