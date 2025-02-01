@@ -484,4 +484,23 @@ class TopologyWorkFlow:
             Controlexpertutility.Select_network_CE(menu_option)
         except Exception as ex:
             raise Exception(ex) from ex
-        
+            
+    def textboxoutputwindowpanelverifyerrormessagesinconsole(self,text):
+            """textboxoutputwindowpanelverifyerrormessagesinconsole"""
+            try:
+                Topologyutility.Verify_error_messages_in_Console(text)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+    def textboxconfirmpasswordboxentercontrollerpassworddeployscreente(self,password):
+                """textboxconfirmpasswordboxentercontrollerpassworddeployscreente"""
+                try:
+                    Topologyutility.Enter_Controller_Password_deploy_screen_TE(password)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+    def textboxnewpasswordboxentercontrollerpasswordte(self,param):
+                """textboxnewpasswordboxentercontrollerpasswordte"""
+                try:
+                    Topologyexplorerutility.Enter_Controller_Password_TE(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex

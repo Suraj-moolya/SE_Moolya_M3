@@ -510,6 +510,7 @@
              <UIControl Element="OldPasswordBox_Topology" Name="WPFObject('OldPasswordBox')" Parent="EngineeringClient_" />
 			 <UIControl Element="Workstationpropertywindow_Topology" Name="WPFObject('RadTreeView', '', 1)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="Workstationport_Topology" Name="WPFObject('GroupBox', 'Parameters', 1)" Visible="True"  Parent="EngineeringClient_" />
+			 <UIControl Element="OutputWindowPanel_Topology" Name="Panel('Output Window')" Parent="EngineeringClient_" />
         </Component>
 		<Component name="GSD Addition">
              <UIControl Element="Homepage_GSDAddition" Name="Window('#32770', '*', 1)" Parent="Wizzard_" />

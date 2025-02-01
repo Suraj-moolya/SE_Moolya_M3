@@ -9,6 +9,7 @@
 	<Folder Name="Engineering Client">
 		<Feature Path="EnginneringClient.feature" />
 		<Feature Path="19 Check Report Generation.feature" />
+		<Feature Path="4 System Password protection.feature" />
 	</Folder>
 	<Folder Name="System Server">
 		<Feature Path="SystemServer.feature" />
@@ -132,18 +133,22 @@
 			<Feature Path="28 Check Ethernet Network.feature" />
 			<Feature Path="32 Upgrade the controller FW version and check.feature" />
 			<Feature Path="39 Check Consistency.feature" />
+			<Feature Path="29 Modify the IP address after mapping to workstation.feature" />
+			<Feature Path="31 Enable system password in SE and open controller in TE, set PW for controller and open it.feature" />
 		</Folder>
 	</Folder>
 	<Folder Name="RTNS">
 		<Feature Path="229 Run Citect runtime.feature" />
 		<Feature Path="232 Go to instance logic section and check the status on section(should open in online_run).feature" />
 		<Feature Path="237 Double click on OC header .feature" />
+		<Feature Path="20 Run Supervision Client.feature" />
 	</Folder>
 	<Folder Name="Control Expert">
 		<Feature Path="151 Unlink block, Save and check consistency.feature" />
 		<Feature Path="150 check the modifications in refine CP.feature" />
 		<Feature Path="152 Open any section and check network variable window.feature" />
 		<Feature Path="148 Add instances to container and generate the section.feature" />
+		<Feature Path="30 Clear the errors and open configure.feature" />
 	</Folder>
 	<Folder Name="Alternate Scenarios">
 		<Feature Path="AS6 Import the empty pages in supervision project and check the pages are created with the default page which is selected in the project settings.feature" />

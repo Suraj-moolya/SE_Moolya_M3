@@ -463,5 +463,18 @@ def step_impl(systemProject3):
     """I Select_network_CE System Project in topology explorer as '<System Project3>'"""
     CommonUtil.write_text_file("\nWhen I Select_network_CE System Project in topology explorer as \""+systemProject3+"\"")
     obj.textboxsystemprojectselectnetworkce(systemProject3)
+    
+@then("Verify_error_messages_in_Console OutputWindowPanel in topology as {arg}")
+def step_impl(outputwindowpanel1):
+      """Verify_error_messages_in_Console OutputWindowPanel in topology as '<OutputWindowPanel1>'"""
+      CommonUtil.write_text_file("\nThen Verify_error_messages_in_Console OutputWindowPanel in topology as \""+outputwindowpanel1+"\"")
+      obj.textboxoutputwindowpanelverifyerrormessagesinconsole(outputwindowpanel1)
+      Applicationutility.take_screenshot("Full Screenshot")
+      
+@when("I Enter Controller Password deploy screen TE Confirm Password box in topology as {arg}")
+def step_impl(confirmPasswordBox3):
+    """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""
+    CommonUtil.write_text_file("\nWhen I Enter Controller Password deploy screen TE Confirm Password box in topology as \""+confirmPasswordBox3+"\"")
+    obj.textboxconfirmpasswordboxentercontrollerpassworddeployscreente(confirmPasswordBox3)
   
 
