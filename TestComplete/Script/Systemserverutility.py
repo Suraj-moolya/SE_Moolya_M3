@@ -234,7 +234,6 @@ def check_whole_flowdocument(verify_message):
   console_obj = server_obj.consolewindow.object
   console_list = console_obj.FindAllChildren("ClrClassName", "Paragraph", 10000)
   for i in range(len(console_list)):
-    Log.Message(i)
     check_text = str(console_list[i].WPFControlText)
     if verify_message in str(console_list[0].WPFControlText):
       Log.Checkpoint(check_text)
@@ -276,7 +275,7 @@ def check_server_stop():
       Applicationutility.take_screenshot()
       break
     else:
-      Applicationutility.wait_in_seconds(1000, 'Wait for server ready !')
+      Applicationutility.wait_in_seconds(1000, 'Wait for server Stopped !')
       console_obj.Refresh()
   system_server_icon_rclick_on('Exit')
       

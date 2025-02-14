@@ -36,6 +36,13 @@ Examples:
   | SlNo. | Console1        |
   | 1     | Server is ready |
   
+@TC_EPE_SS_0003
+@test0003 
+Scenario Outline: Open SS from system tray
+When I open system server console show hidden icon in windows explorer
+Examples:
+  | SlNo. |
+  | 1     |
   
 @TC_EPE_SS_0004
 @test0004
@@ -84,6 +91,16 @@ Examples:
 Scenario Outline: Open SS from system tray and click on Basic Settings
 When I open system server console show hidden icon in windows explorer
 And I selected Settings Menu in settings
+And I selected Basic settings in settings
+
+Examples:
+  | SlNo. |
+  | 1     |
+  
+@TC_EPE_SS_0007
+@test0007  
+Scenario Outline: click on Basic Settings in SS Console
+When I selected Settings Menu in settings
 And I selected Basic settings in settings
 
 Examples:

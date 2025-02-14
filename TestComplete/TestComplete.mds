@@ -6015,6 +6015,51 @@
 					</testItem>
 				</children>
 			</testItem>
+			<testItem name="EX-1" key="{7DE417ED-2319-46A1-8C83-BD44AA57ECE9}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+				<testParameters />
+				<children>
+					<testItem name="TC_EPE_SS_0001_3_1_1_1_1_1_1" key="{64C3A648-9A63-4BAF-8A92-64633BE87E7D}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_SS_0002_3_1_1_1_1_1_1" key="{7BBEA0BF-51D4-46BE-A379-E38532A4D392}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1" key="{3E9B346A-1C3D-4A9E-8677-61EEC70459BD}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_SS_0008_4" key="{2BFDA286-CD18-47EF-9F9D-024C7DA085B7}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open hosting in basic settings in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_SS_0009_3" key="{4EDDEF79-8F97-4004-AEAB-D61D33607D36}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|CE tool slot management - Enter 4 Instance of CE and start the system server" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_EC_0001_2_1_1_1_1_1_1" key="{0DE830A0-25C7-4A39-B723-D3C3B8CF5D23}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_EC_0007_2_1_1_1_1_1_1" key="{0793CD08-2335-472A-A8BE-ACF6D8A37D26}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Creation of System - By Right clicking on System Explorer" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="TC_EPE_EC_0023_2_1_1_1_1_1_1" key="{A95F7436-F828-4402-9916-A2AF969A79C0}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Application Explorer(AE)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+				</children>
+			</testItem>
 		</children>
 	</testItems>
 	<variables key="{00B55B0A-F697-429F-AC9F-AE74135591ED}">
@@ -6042,7 +6087,7 @@
 		</data>
 	</variables>
 	<settings key="{BD89207E-1EE8-4F9B-9DB6-9CEBB644634F}">
-		<settingsVersion value="15.69" />
+		<settingsVersion value="15.72" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>
