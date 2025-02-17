@@ -700,3 +700,9 @@ def step_impl(importfile):
     """I Enter FileLocation and FileName in empty pages import dialog as '<Import3>'"""
     CommonUtil.write_text_file("\nI Enter FileLocation and FileName in empty pages import dialog as \""+importfile+"\"")
     obj.textboximportemptypagesenterfilelocationandfilenametobeimported(importfile)
+
+@when("I drag Template from Template browser and drop to the Folders in Application browser with folder name as {arg}")
+def step_impl(templatesBrowser2):
+    """I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'"""
+    CommonUtil.write_text_file("\nWhen I drag Template from Template browser and drop to the Folders in Application browser with folder name as \""+templatesBrowser2+"\"")
+    Applicationexplorertabutility.drag_composite_template_drop_app_browser_folder_AE(templatesBrowser2)

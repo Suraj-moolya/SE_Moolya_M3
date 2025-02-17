@@ -11,8 +11,8 @@ And I Wait for Execution assignmentsdock in project explorer
 Then Verify generation status of facet from assignments PE assignmentsdock in project explorer as '<assignmentsdock4>'
 
 Examples:
-  | SlNo. | container dock1 | assignmentsdock2     | assignmentsdock3       | assignmentsdock4  |
-  | 1     | FBDSection_1    | LockOn$$FBDSection_2 | FBDSection_2$$Generate | LockOn$$Generated |
+  | SlNo. | container dock1 | assignmentsdock2        | assignmentsdock3       | assignmentsdock4  |
+  | 1     | System_1    | LockOn$$FBDSection_1  | FBDSection_1$$Generate | LockOn$$Generated |
 
 
 

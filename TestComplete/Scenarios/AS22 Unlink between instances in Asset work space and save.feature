@@ -9,8 +9,8 @@ Then Verify Link Status Node Instance in application explorer
 When I Close all tab Deletes system AE Post Condition in conditions
 
 Examples:
-  | SlNo. |  | ContextMenu5     | Asset workspace6 | Asset workspace7 | Assert Workspace Editor8 | Assert Workspace Editor9 | Assert Workspace Editor10 | Assert Workspace Editor11 | AssetWorkspace element12 | Assert Workspace Editor13 |
-  | 1     |     | Create Workspace | AssetWorkspace_1 | Edit Workspace   | AnalogOutputGP_1         | AnalogOutputGP_1         | AnalogInputGP_1           | AnalogInputGP_1           | Interlock                | AnalogInputGP_1           |
+  | SlNo. | ContextMenu5     | Asset workspace6 | Asset workspace7 | Assert Workspace Editor8 | Assert Workspace Editor9 | Assert Workspace Editor10 | Assert Workspace Editor11 | AssetWorkspace element12 | Assert Workspace Editor13 |
+  | 1     | Create Workspace | AssetWorkspace_1 | Edit Workspace   | AnalogOutputGP_1         | AnalogOutputGP_1         | AnalogInputGP_1           | AnalogInputGP_1           | Interlock                | AnalogInputGP_1           |
 
 
 #Total No. of Test Cases : 1

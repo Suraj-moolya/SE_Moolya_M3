@@ -166,6 +166,7 @@ def right_click_application_browser_folder_AE(identifier):
     Log.Warning("InValid Identifier")
   Applicationutility.wait_in_seconds(1000, 'wait')
   
+  
 def right_click_asset_workspace_folder_AE(identifier):
   App_browser = aet_obj.assetworkspacetextbox
   App_list = App_browser.find_children_for_treeviewrow()
