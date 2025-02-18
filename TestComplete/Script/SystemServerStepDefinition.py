@@ -225,13 +225,17 @@ def step_impl():
 def step_impl():
     """I click on Username dropdown"""
     CommonUtil.write_text_file("\nWhen I click on Username dropdown")
+    Applicationutility.wait_in_seconds(1000, 'Wait')
     obj.usernamedropdown()
+    Applicationutility.wait_in_seconds(1000, 'Wait')
     
-@when("I click on Logout option")
-def step_impl():
-    """I click on Logout option"""
-    CommonUtil.write_text_file("\nAnd I click on Logout option")
-    obj.SSlogout()
+@when("I click on menuItem option from usericon as {arg}")
+def step_impl(param):
+    """I click on menuItem option from usericon as '<param>'"""
+    CommonUtil.write_text_file("\nAnd I click on menuItem option from usericon")
+    Applicationutility.wait_in_seconds(1000, 'Wait')
+    obj.SSlogout(param)
+    Applicationutility.wait_in_seconds(1000, 'Wait')
     
 @when("I click on Login option")
 def step_impl():

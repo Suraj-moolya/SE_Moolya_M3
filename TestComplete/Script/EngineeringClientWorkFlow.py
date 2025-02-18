@@ -211,3 +211,10 @@ class EngineeringClientWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex      
             
+    def updatereport(self,customer_name, site_name, report_desc, report_author, page_size, orientation, report_footer, report_header):
+        """updatereport"""
+        try:
+            Engineeringclientutility.update_report_details(customer_name, site_name, report_desc, report_author, page_size, orientation, report_footer, report_header)
+        except Exception as ex:
+            raise Exception(ex) from ex   
+            

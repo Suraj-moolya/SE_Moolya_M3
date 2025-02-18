@@ -24,7 +24,6 @@ Examples:
   | 1     | Main IP address$$10.179.244.99 | Subnetwork mask$$255.255.0.0 | IP address A$$10.179.244.100 | Gateway address$$10.179.10.0 |
 
 
-
 @TC_EPE_TE_0020b
 @test002
 Scenario Outline: Map the logical network to all communication modules - click Edit, Validate

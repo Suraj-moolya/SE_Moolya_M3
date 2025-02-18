@@ -208,6 +208,13 @@ class SystemExplorerScreenWorkFlow:
         
     def buttonsystemexplorerbrowse(self):
         """systemexplorerscreen_obj.systemexplorernodebutton"""
-        SystemExplorerScreenWorkFlow.systemexplorerscreen_obj.browsebutton.click()
+        try:
+            Systemserverutility.browsebutton_backup()
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def buttoncreatesystemselectedwithpassword(self):
+                """systemexplorerscreen_obj.createsystembutton"""
+                SystemExplorerScreenWorkFlow.systemexplorerscreen_obj.createsystembutton.click()
         
         

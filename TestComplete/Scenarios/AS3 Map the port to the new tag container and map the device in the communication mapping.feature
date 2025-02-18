@@ -4,8 +4,8 @@
 @TC_EPE_PE_AS3a
 @test003
 Scenario Outline: Map the port to the new tag container
-When I Edit IO Device Properties project browser in project explorer as '<project browser8>'
-And I Close tab items EC main screen in engineering client as 'IODevices'
+#When I Edit IO Device Properties project browser in project explorer as '<project browser8>'
+When I Close tab items EC main screen in engineering client as 'IODevices'
 
 Examples:
   | SlNo. | project browser8 |
@@ -33,6 +33,20 @@ Examples:
   | 2     | IODevice_2$$2$$Workstation_1 |
   | 3     | IODevice_1$$3$$NIC_1         |
   | 4     | IODevice_2$$3$$NIC_1         |
+  
+  
+@TC_EPE_SWF_0001
+@test0001
+Scenario Outline: Assign Instance to Containers in Supervision Prject
+When I drag and Drop the Each instance to Each Sections as '<controller>' '<section>'
+Then I Verify the facet generation status of all facets in Assignments Dock
+
+Examples:
+  | SlNo. | controller  | section          |
+  | 1     | Sample_Test | Supervision_Test |
+   
+
+
   
 
 

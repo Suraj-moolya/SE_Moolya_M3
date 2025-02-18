@@ -195,7 +195,17 @@ def change_port_number_workstation_TE(param):
   else:
     Log.Message(f'{activeport} check and enter valid active port')
 
-def hshshs():
-  #DBlClick_Properties_workstation("ControlExpert_1")
-  #Expand_Properties_workstation("Configuration")
-  change_port_number_workstation_TE("Configuration$$502$$503")
+def Verify_error_messages_in_Console(text):
+#  text = "0 Error"
+  output_msg = topology_obj.outputwindowpaneltextbox.object.FindAllChildren("WndClass","RichEdit20W",10)
+  for msg in output_msg:
+    if text in msg.wText and msg.Visible:
+      Log.Checkpoint(msg.wText + " error messages is displayed in Console")
+      break
+  else:
+    Log.Message(f'{text} error messages not displayed in Console')
+    
+def Enter_Controller_Password_deploy_screen_TE(password):
+      PW_box = topology_obj.PasswordControlBoxtextbox   
+      PW_box.enter_password(password)
+      Log.Message(str(PW_box.object.PasswordText) + " entered in Password")

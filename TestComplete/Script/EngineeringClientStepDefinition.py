@@ -203,3 +203,9 @@ def step_impl(tabname):
     """I Close the Tab by Clicking on Close in EC as '<tabname>''"""
     CommonUtil.write_text_file("\nWhen I Close the Tab by Clicking on Close in EC as \""+tabname+"\"")
     obj.closetabec(tabname)
+    
+@when("I update the report details with {arg}, {arg}, {arg}, {arg}, {arg}, {arg}, {arg}, {arg}")
+def step_impl(customer_name, site_name, report_desc, report_author, page_size, orientation, report_footer, report_header):
+    """I update the report details with '<customer_name>', '<site_name>', '<report_desc>', '<report_author>', '<page_size>', '<orientation>', '<report_footer>', '<report_header>'"""
+    CommonUtil.write_text_file(f"\nWhen I update the report details with '{customer_name}', '{site_name}', '{report_desc}', '{report_author}', '{page_size}', '{orientation}', '{report_footer}', '{report_header}'")
+    obj.updatereport(customer_name, site_name, report_desc, report_author, page_size, orientation, report_footer, report_header)

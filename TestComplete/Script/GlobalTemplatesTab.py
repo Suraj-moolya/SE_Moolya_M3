@@ -78,6 +78,106 @@ class GlobalTemplatesTab(MapBase):
     def titlebartab(self):
         """titlebartab"""
         return self.get_element("TitleBar_GlobalTemplatesTab")
+              
+    @property
+    def saveaswindow(self):
+        """saveaswindow"""
+        return self.get_element("SaveAs_GlobalTemplatesTab")
+              
+    @property
+    def panelbutton(self):
+        """saveaswindow"""
+        return self.get_element("PanelButton_GlobalTemplatesTab")
+              
+    @property
+    def browsebuttonselected(self):
+        """browsebutton"""
+        return self.get_element("BrowseButton_GlobalTemplatesTab")
+              
+    @property
+    def filesavewindow(self):
+        """filesavewindow"""
+        return self.get_element("Filesavedlocation_SaveAswindow")
+              
+    @property
+    def supervisiondataelement(self):
+        """filesavewindow"""
+        return self.get_element("SupervisionDataElements_GlobalTemplatesTab")
+              
+    @property
+    def addtagswindow(self):
+        """filesavewindow"""
+        return self.get_element("AddTagsDialog_GlobalTemplatesTab")
+              
+    @property
+    def supervisiongenieelement(self):
+        """filesavewindow"""
+        return self.get_element("SupervisionGenieElements_GlobalTemplatesTab")
+
+    @property
+    def baseexplorertree(self):
+        """baseexplorertree"""
+        return self.get_element("baseexplorertree_GlobalTemplatesTab")
+        ##
+    @property
+    def controltemplateheader(self):
+      """controltemplateheader"""
+      return self.get_element("ControlTemplateHeader_GlobalTemplatesTab")
     
-    
-    
+    @property
+    def motortemplateheader(self):
+      """motortemplateheader"""
+      return self.get_element("MotorTemplateHeader_GlobalTemplatesTab")
+      
+    @property
+    def logictemplateheader(self):
+      """logictemplateheader"""
+      return self.get_element("LogicTemplateHeader_GlobalTemplatesTab")
+      
+    @property
+    def templatizerbutton(self):
+      """templatizerbutton"""
+      return self.get_element("TemplatizerButton_GlobalTemplatesTab")
+      
+    @property
+    def opencontrolparticipantbutton(self):
+      """opencontrolparticipantbutton"""
+      return self.get_element("OpenControlParticipantButton_GlobalTemplatesTab")
+      
+    @property
+    def openparticipantbutton(self):
+      """opencontrolparticipantbutton"""
+      return self.get_element("OpenParticipantButton_GlobalTemplatesTab")
+      
+    @property
+    def supervisiontemplateheader(self):
+      """supervisiontemplateheader"""
+      return self.get_element("SupervisionTemplateHeader_GlobalTemplatesTab")  
+      
+    @property
+    def geniestemplateheader(self):
+      """geniestemplateheader"""
+      return self.get_element("GeniesTemplateHeader_GlobalTemplatesTab")  
+      
+    @property
+    def pumprightgenietemplateheader(self):
+      """pumprightgenietemplateheader"""
+      return self.get_element("PumpRightGenieTemplateHeader_GlobalTemplatesTab")  
+      
+    @property
+    def fittocontentbutton(self):
+      """pumprightgenietemplateheader"""
+      return self.get_element("Fittocontent_GlobalTemplatesTab")  
+      
+    @property
+    def StateSelectorapprovedinsaveas(self):
+      """StateSelectorapprovedinsaveas"""
+      return self.get_element("StateSelectorapprovedinsaveas_GlobalTemplatesTab")  
+      
+    @property
+    def approvedcomboitem(self):
+      """approvedcomboitem"""
+      return self.get_element("approvedcomboitem_GlobalTemplatesTab") 
+      
+      
+      

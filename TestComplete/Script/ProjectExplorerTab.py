@@ -269,7 +269,26 @@ class ProjectExplorerTab(MapBase):
         """animationtablewindow"""
         return self.get_element("AnimationTable_ProjectExplorerTab") 
         
+    @property
+    def pagetemplatesspsettingsbutton(self):
+        """pagetemplatesspsettingsbutton"""
+        return self.get_element("PageTemplatesSPsettings_ProjectExplorerTab") 
+    
+    @property
+    def addpagetemplatebutton(self):
+        """addpagetemplatebutton"""
+        return self.get_element("AddPageTemplateButton_ProjectExplorerTab") 
+          
+    @property
+    def newpagetemplateradiobutton(self):
+        """addpagetemplatebutton"""
+        return self.get_element("New_Page_TemplateRadioButton_ProjectExplorerTab") 
         
-
+    @property
+    def closetoolbarbutton(self):
+        """closetoolbarbutton"""
+        return self.get_element("CloseToolBar_ProjectExplorerTab")
+          
+        
         
        

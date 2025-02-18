@@ -30,15 +30,29 @@ win_obj = WindowsExplorer()
 server_obj = SystemServer()
 eng_obj = EngineeringClient()
 
-
+###############################################################################
+#Author : Preetham S R
+#Function : Launches Engineering Client
+#Parameter : No
+###############################################################################
 def launch_engineering_client():
     TestedApps.EngineeringClient.Run()
-    aqUtils.Delay(30000)
-    
+    Applicationutility.wait_for_execution(30000, 'Launching Engineering Client')
+
+###############################################################################
+#Author : Subhramanya B M
+#Function : Launches Engineering Client even if one instance already running.
+#Parameter : No
+###############################################################################    
 def launch_engineering_client_with_secondtime():
     TestedApps.EngineeringClient.Run(-1, True, -1)
-    aqUtils.Delay(30000)
+    Applicationutility.wait_for_execution(30000, 'Launching Engineering Client')
 
+###############################################################################
+#Author : 
+#Function :
+#Parameter :
+###############################################################################
 def click_on_more_option(element):
   task_obj = server_obj.consolewindow.object
   task_list = task_obj.FindAllChildren("ClassName", "accessiblebutton", 50)
@@ -46,7 +60,12 @@ def click_on_more_option(element):
     if task_list[i].ObjectIdentifier == element:
       task_list[i].Click()
       break
-  
+
+###############################################################################
+#Author : Preetham S R
+#Function : To Open task manager and open details tab
+#Parameter : No
+###############################################################################
 def open_select_details_tab_TM():
   Sys.Keys('^![Esc]')
   task_obj = win_obj.commandbarbutton.object
@@ -59,10 +78,15 @@ def open_select_details_tab_TM():
   for j in range(tab.wTabCount):
     if tab.wTabCaption[j] == 'Details':
       tab.ClickTab(j)
-      aqUtils.Delay(2000)
+      Log.Message('Clicked on Detals tab')
+      Applicationutility.wait_in_seconds(2000, 'Wait')
       break
          
-
+###############################################################################
+#Author : Suraj R
+#Function : Engineering Client Shortcut Key options
+#Parameter :R, T, A, P 
+###############################################################################
 def explorer_shortcut_key(Shortcut):
   Explorer_shortcut = {"Alt+R":"R","Alt+T":"T","Alt+A":"A","Alt+P":"P"}
   if Shortcut in Explorer_shortcut:
@@ -70,21 +94,40 @@ def explorer_shortcut_key(Shortcut):
     Sys.Keys(shortcut_key)
   else:
     Log.Error("No shortcut key assigned for the explorer")
-
+    
+###############################################################################
+#Author : Suraj R
+#Function : Escape keyboard action
+#Parameter : No
+###############################################################################
 def escape_key_action():
     Sys.Keys('[Esc]')
     Applicationutility.take_screenshot()
-    
+
+###############################################################################
+#Author : Preetham S R
+#Function : Takes screenshot of the screen
+#Parameter : Message
+###############################################################################    
 def take_screenshot(msg="taking screenshot of current screen"):
     """take screenshot"""
     element = Sys.Desktop.Picture()
     Log.Picture(element, msg)
-    
+
+###############################################################################
+#Author : Suraj R
+#Function : Performs Delete Keboard action
+#Parameter : No
+###############################################################################    
 def delete_key_AE():
   Sys.Keys('[Del]')
   Applicationutility.take_screenshot()
   
-  
+###############################################################################
+#Author : Preetham S R
+#Function : Checks Control exepert instances in Task Manager
+#Parameter : No of instances
+###############################################################################  
 def check_CE_instances_TM(instances):
   Applicationutility.wait_in_seconds(2000, 'wait')
   details_list = win_obj.detaillisttextbox.object
@@ -109,7 +152,11 @@ def check_CE_instances_TM(instances):
     Log.Warning(str(count) + ' instances of CE is running in Task Manager')
     Applicationutility.take_screenshot()
   
-    
+###############################################################################
+#Author : Preetham S R
+#Function : Waits for execution completion WRT Engineering Client Notification Panel
+#Parameter : No
+###############################################################################    
 def wait_for_execution():
   Applicationutility.wait_in_seconds(500, 'Wait')
   Abort_list = msg_obj.notificationpanneltextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
@@ -120,7 +167,13 @@ def wait_for_execution():
           break
         else:
           Applicationutility.wait_in_seconds(1000, 'Loading !!!')
-
+  Applicationutility.wait_in_seconds(1500, 'Wait')
+  
+###############################################################################
+#Author : Preetham S R
+#Function : Performs click action on Engineering client pop up window
+#Parameter : Button Name
+###############################################################################
 def modal_dialog_window_button(button_name):
   buttons_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'Button', 1000)
   take_screenshot('Taking Screenshot of the Message Window.')
@@ -132,9 +185,11 @@ def modal_dialog_window_button(button_name):
   else:
     Log.Warning("Button name mentioned doesnt exists")
     
-def ffdfdfdfd():
-  modal_dialog_window_button("OK")  
-  
+###############################################################################
+#Author : Preetham S R
+#Function : To get the object from the object repository
+#Parameter : Screen Name & Object Name
+###############################################################################  
 def get_obj(param):
   Screen, property = param.split('$$')
   for Screen_item in Screen_List:
@@ -143,22 +198,35 @@ def get_obj(param):
         return obj
   else:
     Log.Warning(f'The object {property} at {Screen} not found !')
-  
+
+###############################################################################
+#Author : Preetham S R
+#Function : To click on pop ups
+#Parameter : window_class, parent_object, Button Name
+###############################################################################  
 def Click_popup_button(param):
   window_class, parent_object, button_name = param.split('$$') 
   parm = window_class + '$$' + parent_object
   obj = get_obj(parm)
   buttons_list = obj.object.FindAllChildren('ClrClassName', 'Button', 1000)
-  take_screenshot('Taking Screenshot of the Popup Window.')
-  for button in buttons_list:
-    Applicationutility.wait_in_seconds(1000, 'Wait')
-    if button_name in str(button.WPFControlText) and button.Enabled == True:
-      button.click()
-      Log.Message('Clicked ' + str(button.WPFControlText) + ' button.')
-      break
+  Applicationutility.wait_in_seconds(500, 'Wait')
+  if buttons_list:
+    take_screenshot('Taking Screenshot of the Popup Window.')
+    for button in buttons_list:
+      Applicationutility.wait_in_seconds(1000, 'Wait')
+      if button_name in str(button.WPFControlText) and button.Enabled == True:
+        button.click()
+        Log.Message('Clicked ' + str(button.WPFControlText) + ' button.')
+        Applicationutility.wait_in_seconds(1000, 'Wait')
+        break
   else:
     Log.Warning("Button name mentioned doesnt exists")
-    
+
+###############################################################################
+#Author : Preetham S R
+#Function : Close tab in Engineering Client 
+#Parameter : tab Name
+###############################################################################    
 def close_tab_items_EC(identifier):
   template = eng_obj.mainscreenbutton.object
   template_list = template.FindAllChildren('ClrClassName', 'CloseableTabItem', 1000)
@@ -169,7 +237,12 @@ def close_tab_items_EC(identifier):
         break
   else:
      Log.Warning("Tab Item mentioned is not Valid")
-     
+ 
+###############################################################################
+#Author : 
+#Function :
+#Parameter :
+###############################################################################    
 def ProjectSample():
     # Obtains the path to the folder that stores the project configuration files
     ConfigPath = Project.ConfigPath
@@ -182,27 +255,45 @@ def ProjectSample():
     else:
       Log.Message("No .tcLS files were found")
 
+###############################################################################
+#Author : Preetham S R
+#Function : Verify Dialog Window Text 
+#Parameter : Text
+###############################################################################
 def modal_dialog_window_dialog(param):
-  obj = get_obj(param)
+  obj = msg_obj.modaldialogwindowtextbox
   headder_list = obj.object.FindAllChildren('WPFControlName', 'HeaderGrid', 1000)
   dialog = headder_list[0].FindAllChildren('ClrClassName', 'TextBlock', 10)
-  for text in dialog:
-    if str(text.WPFControlText) != '':
-      Log.Checkpoint('Dialog box message : ' + str(text.WPFControlText))
-      take_screenshot('Taking Screenshot of the Message Window.')
-      break
+  if dialog:
+    for text in dialog:
+      if param in str(text.WPFControlText):
+        Log.Checkpoint('Dialog box message : ' + str(text.WPFControlText))
+        take_screenshot('Taking Screenshot of the Message Window.')
+        break
+      else:
+        Log.Warning(f'{param} : not found!')
+  else:
+    Log.Warning('{Dialog Window not found!')
       
+###############################################################################
+#Author : Preetham S R
+#Function : To select dropdown value in PopUp Dialog Window
+#Parameter : Dependant Dropdown text, Dropdown Value
+###############################################################################  
 def modal_dialog_windo_selectItem(param):
   controller, val = param.split("$$")
   network_list = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'ComboBox', 1000)
-  for network in network_list:
-    if controller in network.DataContext.DeviceIdentifier.OleValue:
-      Log.Message(network.DataContext.DeviceIdentifier.OleValue)
-      network.SelectedItem = val
-      Log.Message(str(network.SelectedItem) + " is selected")
-      take_screenshot('Taking Screenshot')
-      break
+  if network_list:
+    for network in network_list:
+      if controller in network.DataContext.DeviceIdentifier.OleValue:
+        Log.Message(network.DataContext.DeviceIdentifier.OleValue)
+        network.SelectedItem = val
+        Log.Message(str(network.SelectedItem) + " is selected")
+        take_screenshot('Taking Screenshot')
+        break
+    else:
+      Log.Warning(f'{val} does not exist in the drop down')
   else:
-    Log.Warning(f'{val} does not exist in the drop down')
+    Log.Warning(f'{controller}, {val} : not found !')
       
       

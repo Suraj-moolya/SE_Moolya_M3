@@ -133,8 +133,8 @@ And I wait in seconds Refine online window in refine offline
 And I selected Close Refine Offline in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 Examples:
-  | SlNo. | project browser2                         |
-  | 1     | Close Control Project Editor (Completed) |
+  | SlNo. | project browser2              |
+  | 1     | Close Page Editor (Completed) |
 
   
   

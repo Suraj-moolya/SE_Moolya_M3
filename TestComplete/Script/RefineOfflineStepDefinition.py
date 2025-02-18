@@ -31,7 +31,7 @@ def step_impl():
     """I selected Save Refine Offline in refine offline"""
     CommonUtil.write_text_file("\nWhen I selected Save Refine Offline in refine offline")
     obj.buttonsaverefineofflineselected()
-    Applicationutility.wait_in_seconds(2000, 'Wait')
+    Applicationutility.wait_in_seconds(10000, 'Wait')
   
 @when("I selected Consistency Check in refine offline")
 def step_impl():
@@ -312,3 +312,34 @@ def step_impl(projectBrowserRo1):
     CommonUtil.write_text_file("\nWhen I Navigate through project browser CE Project Browser RO in refine offline as \""+projectBrowserRo1+"\"")
     obj.textboxprojectbrowserronavigatethroughprojectbrowserce(projectBrowserRo1)
     Applicationutility.take_screenshot()
+    
+@when("I select_item_mdi_window_CE MDI Window in refine offline as {arg}")
+def step_impl(mdiWindow1):
+    """I select_item_mdi_window_CE MDI Window in refine offline as '<MDI Window1>'"""
+    CommonUtil.write_text_file("\nWhen I select_item_mdi_window_CE MDI Window in refine offline as \""+mdiWindow1+"\"")
+    obj.textboxmdiwindowselectitemmdiwindowce(mdiWindow1)
+
+@when("I checked IODDT CE in elemetary variables")
+def step_impl():
+    """I checked IODDT CE in elemetary variables"""
+    CommonUtil.write_text_file("\nWhen I checked IODDT CE in elemetary variables")
+    obj.checkboxioddtcechecked()
+  
+@when("I checked Device DDT CE in elemetary variables")
+def step_impl():
+    """I checked Device DDT CE in elemetary variables"""
+    CommonUtil.write_text_file("\nWhen I checked Device DDT CE in elemetary variables")
+    obj.checkboxdeviceddtcechecked()
+  
+@when("I selected Access to unmapped hardware CE in refine offline")
+def step_impl():
+    """I selected Access to unmapped hardware CE in refine offline"""
+    CommonUtil.write_text_file("\nWhen I selected Access to unmapped hardware CE in refine offline")
+    obj.buttonaccesstounmappedhardwareceselected()
+  
+@when("I selected Device DDT popup moveall CE in elemetary variables")
+def step_impl():
+    """I selected Device DDT popup moveall CE in elemetary variables"""
+    CommonUtil.write_text_file("\nWhen I selected Device DDT popup moveall CE in elemetary variables")
+    obj.buttondeviceddtpopupmoveallceselected() 
+  

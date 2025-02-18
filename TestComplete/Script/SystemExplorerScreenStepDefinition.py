@@ -262,3 +262,9 @@ def step_impl():
     """I Click on Browse Button in System backup Window"""
     CommonUtil.write_text_file("\nWhen I Click on Browse Button in System backup Window")
     obj.buttonsystemexplorerbrowse()
+    
+@when("I selected Create System in context menu with password")
+def step_impl():
+    """I selected Create System in context menu"""
+    CommonUtil.write_text_file("\nWhen I selected Create System in context menu")
+    obj.buttoncreatesystemselectedwithpassword()

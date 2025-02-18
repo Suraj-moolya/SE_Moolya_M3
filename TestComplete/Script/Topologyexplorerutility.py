@@ -902,12 +902,9 @@ def select_tab_in_topo_config(tabname):
     objects = topo_obj.configurationhardwarecatalog1.object.FindAllChildren("Name", f"TextObject({tabname})", 10)
   for obj in objects:
     if obj.Text == tabname:
-      try:
-        obj.Click()
-        Log.Checkpoint(f"Successfully clicked on the tab: '{tabname}'")
-        return
-      except Exception as e:
-        Log.Error(f"Failed to click on the tab '{tabname}': {str(e)}")
+      obj.Click()
+      Log.Checkpoint(f"Successfully clicked on the tab: '{tabname}'")
+      return
   Log.Warning(f"No tabs found with the name '{tabname}'")
 
 def nb():

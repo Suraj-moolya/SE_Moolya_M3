@@ -48,7 +48,7 @@ Then Verify Section Deleted in Control Project containers container dock in proj
 
 Examples:
   | SlNo. | container dock1     | container dock2 | container dock3 |
-  | 1     | Container_1$$Delete | Yes             | Container_2     |
+  | 1     | Container_1$$Delete | Yes             | Container_1     |
   
 @TC_EPE_SWF_0005
 @test001

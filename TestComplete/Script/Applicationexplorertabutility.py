@@ -166,6 +166,7 @@ def right_click_application_browser_folder_AE(identifier):
     Log.Warning("InValid Identifier")
   Applicationutility.wait_in_seconds(1000, 'wait')
   
+  
 def right_click_asset_workspace_folder_AE(identifier):
   App_browser = aet_obj.assetworkspacetextbox
   App_list = App_browser.find_children_for_treeviewrow()
@@ -566,10 +567,13 @@ def Enter_systemName_systemlocation_ImportWindow_AE(file_format):
   full_path = os.path.join(base_path, folder_name)
   os.chdir(full_path) 
   Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]") 
   filename_textbox = aet_obj.comboboxtextbox.object
   filename_textbox.Click()
   filename_textbox.Keys(file_format)
-  Sys.Keys("[Enter]")  
+  Applicationutility.take_screenshot('taking Screenshot')
+  Sys.Keys("[Enter]")
+  
   
 def Import_System1_Popup_AE_buttons(button_name):
     buttons_list = aet_obj.importtextbox.object.FindAllChildren('WndClass', 'Button', 1000)
@@ -819,7 +823,7 @@ def verify_instance_application_browser(param):
         Log.Checkpoint(f'{str(instance.DataContext.Identifier.OleValue)} is present in Application Browser')
         break
   else:
-    Log.Warning(f'{str(instance.DataContext.Identifier.OleValue)} is not present in Application Browser')
+    Log.Warning(f'{param} is not present in Application Browser')
         
 def verify_SameName_Errorbox_application_browser():
   instnaceBroswer = aet_obj.applicationbrowsertextbox.object
@@ -1023,3 +1027,18 @@ def remove_PV_ranged_link_AE():
       break
   else:
     Log.Warning('PVRanged not found.')
+    
+def EmptyPages_ImportWindow_PE(file_format):
+  filelocation = aet_obj.addressbandtextbox
+  tox = (filelocation.object.Height)/2
+  toy = 10
+  filelocation.click_at(tox,toy)
+  base_path = os.getcwd()
+  folder_name =  "Test_Import_Files"
+  full_path = os.path.join(base_path, folder_name)
+  os.chdir(full_path) 
+  Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]")
+  filename_textbox = aet_obj.comboboxtextbox.object
+  filename_textbox.Click()
+  filename_textbox.Keys(file_format)

@@ -469,3 +469,34 @@ def step_impl(oldpassword, password):
     """I Entered '<oldpassword>' and '<password>' in Modify Password Dialogue window"""
     CommonUtil.write_text_file(f"\nWhen I Entered '{oldpassword}' and '{password}' in Modify Password Dialogue window")
     obj.setoldpasswordandnewpasswordinmodifypassworddialogue(oldpassword, password)
+
+@when("I Right_click_selected_project_browser_item_CE System Project in topology explorer as {arg}")
+def step_impl(systemProject1):
+    """I Right_click_selected_project_browser_item_CE System Project in topology explorer as '<System Project1>'"""
+    CommonUtil.write_text_file("\nWhen I Right_click_selected_project_browser_item_CE System Project in topology explorer as \""+systemProject1+"\"")
+    obj.textboxsystemprojectrightclickselectedprojectbrowseritemce(systemProject1)
+  
+@when("I click_MenuItem_Toolbar_CE System Project in topology explorer as {arg}")
+def step_impl(systemProject2):
+    """I click_MenuItem_Toolbar_CE System Project in topology explorer as '<System Project2>'"""
+    CommonUtil.write_text_file("\nWhen I click_MenuItem_Toolbar_CE System Project in topology explorer as \""+systemProject2+"\"")
+    obj.textboxsystemprojectclickmenuitemtoolbarce(systemProject2)
+  
+@when("I Select_network_CE System Project in topology explorer as {arg}")
+def step_impl(systemProject3):
+    """I Select_network_CE System Project in topology explorer as '<System Project3>'"""
+    CommonUtil.write_text_file("\nWhen I Select_network_CE System Project in topology explorer as \""+systemProject3+"\"")
+    obj.textboxsystemprojectselectnetworkce(systemProject3)
+    
+@then("Verify_error_messages_in_Console OutputWindowPanel in topology as {arg}")
+def step_impl(outputwindowpanel1):
+      """Verify_error_messages_in_Console OutputWindowPanel in topology as '<OutputWindowPanel1>'"""
+      CommonUtil.write_text_file("\nThen Verify_error_messages_in_Console OutputWindowPanel in topology as \""+outputwindowpanel1+"\"")
+      obj.textboxoutputwindowpanelverifyerrormessagesinconsole(outputwindowpanel1)
+      Applicationutility.take_screenshot("Full Screenshot")
+      
+@when("I Enter Controller Password deploy screen TE Confirm Password box in topology as {arg}")
+def step_impl(confirmPasswordBox3):
+    """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""
+    CommonUtil.write_text_file("\nWhen I Enter Controller Password deploy screen TE Confirm Password box in topology as \""+confirmPasswordBox3+"\"")
+    obj.textboxconfirmpasswordboxentercontrollerpassworddeployscreente(confirmPasswordBox3)

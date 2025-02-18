@@ -650,6 +650,7 @@ def step_impl():
 def step_impl(Buttonname):    
     """I Select button in the modal dialoge window as '<Buttonname>'"""
     obj.modaldiawindow(Buttonname)
+    Applicationutility.wait_in_seconds(5000, 'Wait')
 
 @when("I Close modal dialog window")
 def step_impl():
@@ -693,3 +694,15 @@ def step_impl():
     CommonUtil.write_text_file("\nThen Verify link two instances asset workspace Assert Workspace Editor in application explorer")
     obj.textboxassertworkspaceeditorverifylinktwoinstancesassetworkspace()
     Applicationutility.take_screenshot("Full Screenshot")
+    
+@when("I Enter FileLocation and FileName in empty pages import dialog as {arg}")
+def step_impl(importfile):
+    """I Enter FileLocation and FileName in empty pages import dialog as '<Import3>'"""
+    CommonUtil.write_text_file("\nI Enter FileLocation and FileName in empty pages import dialog as \""+importfile+"\"")
+    obj.textboximportemptypagesenterfilelocationandfilenametobeimported(importfile)
+
+@when("I drag Template from Template browser and drop to the Folders in Application browser with folder name as {arg}")
+def step_impl(templatesBrowser2):
+    """I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'"""
+    CommonUtil.write_text_file("\nWhen I drag Template from Template browser and drop to the Folders in Application browser with folder name as \""+templatesBrowser2+"\"")
+    Applicationexplorertabutility.drag_composite_template_drop_app_browser_folder_AE(templatesBrowser2)

@@ -332,17 +332,38 @@ Examples:
   | 5     | ValveGP            | ValveGP$$1.0.100       |
   
   
+
+@TC_EPE_AE_0018
+@test0018
+@TC_EPE_AE_0018
+Scenario Outline: Search MotorGP in Template browser and Drag and drop from template browser to application browser
+When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
+And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
+Then Verify the template is present in Application browser as '<Templates browser1>'
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2 |
+  | 1     | MotorGP            | MotorGP$$1.0.123   |
+  
+  
 @TC_EPE_AE_0018
 @test0018
 @TC_EPE_AE_0018
 Scenario Outline: Search Valve_Gp in Template browser and Drag and drop from template browser to application browser
 When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
 And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
-Then Verify the template is present in Application browser
+Then Verify the template is present in Application browser as '<Templates browser1>'
+####
 
+@search_drag_drop_Valve_GP_template
 Examples:
-  | SlNo. | Templates browser1 | Templates browser2     |
-  | 1     | ValveGP            | ValveGP$$1.0.100       |
+  | SlNo. | Templates browser1 | Templates browser2 |
+  | 1     | ValveGP            | ValveGP$$1.0.100   |
+
+@search_drag_drop_sample_test_template_1.0.126
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2   |
+  | 1     | Sample_Test        | Sample_Test$$1.0.126 |
+  
 
   
   
@@ -499,8 +520,11 @@ Scenario Outline: Export instance - Click Export, Save and Open CSV
 When I Select context menu item EC Application browser in application explorer as '<Application browser5>'
 And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'
 And I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'
-Then Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'
-When I Click on export System1 Export Popup AE buttons Export in ec windows explorer as 'OK'
+
+# these 2 pop ups has been removed in this build kept the step filesincase its added in next version
+
+#Then Verify export_System1_Export_Popup_AE Export in ec windows explorer as 'Are you sure you want to continue'
+#When I Click on export System1 Export Popup AE buttons Export in ec windows explorer as 'OK'
 Then Verify Extracted Template CSV Data and Template Details Export in ec windows explorer
 
 Examples:
@@ -511,7 +535,7 @@ Examples:
 
 @TC_EPE_AE_0030
 @test030
-Scenario Outline: Export instance - Rclick root node ( folder ), Export as XML, open XML file
+Scenario Outline: Export instance - Rclick root node ( folder ), Export as XML, verify XML file
 When I rclick application browser folder AE Application browser in application explorer as '<Application browser4>'
 And I Select context menu item EC Application browser in application explorer as '<Application browser5>'
 And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.xml'
@@ -578,12 +602,16 @@ Then verify context menu items ContextMenu in application explorer
 When I Select context menu item EC ContextMenu in application explorer as '<ContextMenu2>'
 Then Verify delete window AE MotorGP template in application explorer as '<MotorGP template3>'
 When I Click on buttons in popup window Delete popup in message box as 'Yes'
-Then Verify Message from notification panel AE Delete popup in message box as 'Delete Instance'
-
-
+Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
+@Delete_instance_MotorGP_from_context_Menu
 Examples:
-  | SlNo. | MotorGP template1  | ContextMenu2 | MotorGP template3                             |
+  | SlNo. | MotorGP template1  | ContextMenu2 | container dock3                               |
   | 1     | MotorGP_1$$1.0.123 | Delete       | Are you sure you want to delete this Instance |
+  
+@Delete_instance_1234_from_context_Menu
+Examples:
+  | SlNo. | MotorGP template1 | ContextMenu2 | container dock3                               |
+  | 1     | 1234$$1.0.123     | Delete       | Are you sure you want to delete this Instance |
 
 
 
@@ -694,4 +722,25 @@ Examples:
   | SlNo. | Asset workspace4 | Asset workspace5 | Asset workspace6 | Asset workspace7 | Assert Workspace Editor8 | Assert Workspace Editor9 | Assert Workspace Editor10 | Assert Workspace Editor11 |
   | 1     | System_1         | Create Workspace | AssetWorkspace   | Edit Workspace   | AnalogOutputGP           | AnalogInputGP            | AnalogInputGP             | AnalogOutputGP            |
 
+
+@TC_EPE_AE_00
+@test035
+Scenario Outline: Create 2 folders in Application browser
+When I rclick application browser folder AE Application browser in application explorer as '<Application browser54>'
+Then verify context menu items ContextMenu in application explorer
+When I Select context menu item EC ContextMenu in application explorer as '<ContextMenu2>'
+Examples:
+  | SlNo. | Application browser54 | ContextMenu2  |
+  | 1     | System_1              | Create Folder |
   
+@TC_EPE_AE_0000
+@test0000
+@TC_EPE_AE_0000
+Scenario Outline: Search Template in Template browser and Drag and drop from template browser to folder structure in application browser
+When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
+And I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'
+Then Verify the template is present in Application browser as '<Templates browser1>'
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2               |
+  | 1     | INTERLOCK8OFFGP    | INTERLOCK8OFFGP$$1.0.5$$Folder_1 |
+  | 2     | ValveGP            | ValveGP$$1.0.100                 |

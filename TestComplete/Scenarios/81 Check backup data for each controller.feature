@@ -4,7 +4,7 @@
 @test001
 Scenario Outline: Check backup data for each controller
 When I Right Click on nodes System Explorer Node in system explorer as '<Controller>'
-And I Select context menu item EC project browser in project explorer as '<context menu>'
+And I Select context menu item  ECproject browser in project explorer as '<context menu>'
 And I Select controller in context menu as '<Topology Explorer Tree1>'
 And I select ip adress from deploy project build TE Modal dialog window in message box as '<Modal dialog window2>'
 And I entered backup data description in topology as '<backup data description3>'

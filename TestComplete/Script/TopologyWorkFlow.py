@@ -485,3 +485,44 @@ class TopologyWorkFlow:
             Topologyexplorerutility.Set_Password_for_Firmware(op, np)
         except Exception as ex:
             raise Exception(ex) from ex
+            
+    def textboxsystemprojectrightclickselectedprojectbrowseritemce(self,param):
+        """textboxsystemprojectrightclickselectedprojectbrowseritemce"""
+        try:
+            Controlexpertutility.Right_click_selected_project_browser_item_CE(param)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxsystemprojectclickmenuitemtoolbarce(self,menu_option):
+        """textboxsystemprojectclickmenuitemtoolbarce"""
+        try:
+            Controlexpertutility.click_MenuItem_Toolbar_CE(menu_option)
+        except Exception as ex:
+            raise Exception(ex) from ex
+        
+    def textboxsystemprojectselectnetworkce(self,menu_option):
+        """textboxsystemprojectselectnetworkce"""
+        try:
+            Controlexpertutility.Select_network_CE(menu_option)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def textboxoutputwindowpanelverifyerrormessagesinconsole(self,text):
+            """textboxoutputwindowpanelverifyerrormessagesinconsole"""
+            try:
+                Topologyutility.Verify_error_messages_in_Console(text)
+            except Exception as ex:
+                raise Exception(ex) from ex
+                
+    def textboxconfirmpasswordboxentercontrollerpassworddeployscreente(self,password):
+                """textboxconfirmpasswordboxentercontrollerpassworddeployscreente"""
+                try:
+                    Topologyutility.Enter_Controller_Password_deploy_screen_TE(password)
+                except Exception as ex:
+                    raise Exception(ex) from ex
+    def textboxnewpasswordboxentercontrollerpasswordte(self,param):
+                """textboxnewpasswordboxentercontrollerpasswordte"""
+                try:
+                    Topologyexplorerutility.Enter_Controller_Password_TE(param)
+                except Exception as ex:
+                    raise Exception(ex) from ex

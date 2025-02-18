@@ -6,10 +6,15 @@ Scenario Outline: Open  Settings
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<project browser2>'
 
-
+@open_control_project_settings
 Examples:
   | SlNo. | project browser1 | project browser2 |
   | 1     | M580_Standalone  | Settings         |
+ 
+@open_Supervision_settings   
+Examples:
+  | SlNo. | project browser1 | project browser2 |
+  | 1     | Supervision_1    | Settings         |
   
   
 @TC_EPE_SP_006
