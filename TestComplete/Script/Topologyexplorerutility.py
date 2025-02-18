@@ -6,6 +6,7 @@ from RefineOffline import RefineOffline
 from ControlExpert import ControlExpert
 from ProjectExplorerTab import ProjectExplorerTab
 from SystemExplorerScreen import SystemExplorerScreen
+from CurrentScreen import CurrentScreen
 
 
 topo_obj = TopologyExplorerTab()
@@ -15,6 +16,7 @@ refo_obj = RefineOffline()
 con_obj = ControlExpert()
 proj_obj = ProjectExplorerTab()
 sys_obj = SystemExplorerScreen()
+cur_obj = CurrentScreen()
 
 def select_tool_drag_drop_default_physical_view_TE(param):
   folder1, folder2, tool, dropposition = param.split('$$')
@@ -802,7 +804,10 @@ def set_ip_and_subnet(ip_address, subnet_mask):
 def jahf():
   set_ip_and_subnet("192.168.10.2", "255.255.0.0")
         
-
+def kjf():
+  topo_obj.stbpropertiesbutton.object.click()
+  
+  
 def stbproperties_close_button():
   closebtn = topo_obj.stbpropertiesclosebutton.Click()
   Log.Message(closebtn.Exists)
@@ -1332,3 +1337,25 @@ def select_checkbox_in_updateproject(prop):
       Log.Checkpoint(f'{prop} check box clicked in Update Project window')
       return
   Log.Warning(f'{prop} Not Found in Update Project Window')
+
+def Right_Click_ProjectBrowser(item):
+  findallchildern_objecttype(
+      cur_obj.projectbrowserwindow.object, "OutlineItem", item, "ClickR",
+      f"Right-clicked on item: {item}", f"Item with caption '{item}' not found."
+    )
+    
+def Select_Tab_in_Project_Properties(item):
+  findallchildern_objecttype(
+        con_obj.okmodaldialoguewindowce.object, "PageTab", item, "Click",
+        f"Clicked on item: {item}", f"Item with caption '{item}' not found."
+      )
+      
+def Set_Password_for_Firmware(oldpassword, newpassword):
+  fields = {1: oldpassword, 2: newpassword, 3: newpassword}
+  for i in con_obj.okmodaldialoguewindowce.object.FindAllChildren("WndClass", "Edit", 100):
+    index = next((k for k, v in fields.items() if i.Name == f'Window("Edit", "", {k})'), None)
+    if index:
+      i.SetText(fields[index])
+      Log.Checkpoint(f'{fields[index]} entered in Password Text Box {index}')
+  if not any(i.Name == f'Window("Edit", "", {idx})' for idx in fields):
+    Log.Warning("One or more password fields not found")

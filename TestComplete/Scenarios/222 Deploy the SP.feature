@@ -2,7 +2,7 @@
 
 @TC_EPE_SP_0012
 @test0012
-Scenario Outline: Deploy the SP
+Scenario Outline: Deploy SP without Sharing of OPSC
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<project browser2>'
 And I click modal dialog window project browser in project explorer as '<project browser3>'
@@ -15,7 +15,7 @@ Examples:
   
 @TC_EPE_SP_0013
 @test0013
-Scenario Outline: Creating
+Scenario Outline: Deploy SP with Sharing of OPSC
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<project browser2>'
 And I click modal dialog window project browser in project explorer as '<project browser3>'

@@ -7,11 +7,13 @@ import Topologyutility
 import Actionutility
 import Topologyexplorerutility
 from SystemExplorerScreen import SystemExplorerScreen
+from ControlExpert import ControlExpert
 
 class TopologyWorkFlow:
     """TopologyWorkFlow"""
     topology_obj = Topology()
     ses_obj = SystemExplorerScreen()
+    con_obj = ControlExpert()
         
     def textboxtopologyexplorertreeselectcontextmenuitemec(self,menu_item):
         """textboxtopologyexplorertreeselectcontextmenuitemec"""
@@ -463,6 +465,26 @@ class TopologyWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
             
+    def rightclickonprojectbrowserpane(self,item):
+        """expandpropertiesworkstation"""
+        try:
+            Topologyexplorerutility.Right_Click_ProjectBrowser(item)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def selecttabonprojectbrowserproperties(self,item):
+        """selecttabonprojectbrowserproperties"""
+        try:
+            Topologyexplorerutility.Select_Tab_in_Project_Properties(item)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def setoldpasswordandnewpasswordinmodifypassworddialogue(self,op, np):
+        """selecttabonprojectbrowserproperties"""
+        try:
+            Topologyexplorerutility.Set_Password_for_Firmware(op, np)
+        except Exception as ex:
+            raise Exception(ex) from ex
             
     def textboxsystemprojectrightclickselectedprojectbrowseritemce(self,param):
         """textboxsystemprojectrightclickselectedprojectbrowseritemce"""
