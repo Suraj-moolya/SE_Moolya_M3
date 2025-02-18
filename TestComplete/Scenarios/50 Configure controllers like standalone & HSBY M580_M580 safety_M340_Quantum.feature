@@ -134,6 +134,11 @@ Examples:
   | SlNo. | Folder Name | context menu           |
   | 1     | Controllers | Create PRM Profibus DP |
   
+@Create_STB_Device
+Examples:
+  | SlNo. | Folder Name | context menu      |
+  | 1     | Devices     | Create STB Island |
+  
   
 @TC_EPE_TE_CS_0003a
 @test0001
@@ -372,4 +377,32 @@ Examples:
   
 
   
+@TC_EPE_TE_CS_0008
+@test000
+Scenario Outline: Set Firmware and Web Diagnostic/ Data Storage passwords (for 4.xx M580, M580 Safety Controllers) in the Configure Editor window 
+When I Right Click on the '<item>' in Project Browser Pane
+And I click '<menu_item>' in Tool Bar popup window
+And I Select '<tab_item>' Tab in Project Browser Properties Window
+And I select '<button1>' in New Device PopUp Window
+And I Entered '<oldpassword>' and '<newpassword>' in Modify Password Dialogue window
+And I select '<button>' in New Device PopUp Window
+And I select '<button2>' in New Device PopUp Window
+And I Entered '<oldpassword1>' and '<newpassword>' in Modify Password Dialogue window
+And I select '<button>' in New Device PopUp Window
+And I select '<button3>' in New Device PopUp Window
+And I select '<button>' in New Device PopUp Window
+
+Examples:
+  | SlNo. | item    | menu_item  | tab_item                        | oldpassword | newpassword | button | button1              | oldpassword1 | button2              | button3 |
+  | 1     | Project | Properties | Project & Controller Protection | fwdownload  | Moolya@1234 | OK     | Chan&ge password ... | webuser      | Change &password ... | &Apply  |
+
   
+    
+@TC_EPE_TE_CS_0009
+@test000
+Scenario Outline: Set the Security and IP (for M580, M580 Safety) 
+When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
+
+Examples:
+  | SlNo. | Project Browser RO1        |
+  | 1     | Configuration$$0 : PLC bus |

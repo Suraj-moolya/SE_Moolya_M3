@@ -446,3 +446,26 @@ def step_impl(text):
     obj.changeportnumberworkstation(text)
     Applicationutility.take_screenshot("Full Screenshot")
 
+@when("I Right Click on the {arg} in Project Browser Pane")
+def step_impl(item):
+    """I Right Click on the '<item>' in Project Browser Pane"""
+    CommonUtil.write_text_file(f"\nWhen I Right Click on the '{item}' in Project Browser Pane")
+    obj.rightclickonprojectbrowserpane(item)
+
+@when("I Select {arg} Tab in Project Browser Properties Window")
+def step_impl(item):
+    """I Select '<item>' Tab in Project Browser Properties Window"""
+    CommonUtil.write_text_file(f"\nWhen I Select '{item}' Tab in Project Browser Properties Window")
+    obj.selecttabonprojectbrowserproperties(item)
+    
+@when("I Click Change Password Button for Firmware")
+def step_impl():
+    """I Click Change Password Button for Firmware"""
+    CommonUtil.write_text_file(f"\nWhen I Click Change Password Button for Firmware")
+    obj.firmwarechangepassword()
+    
+@when("I Entered {arg} and {arg} in Modify Password Dialogue window")
+def step_impl(oldpassword, password):
+    """I Entered '<oldpassword>' and '<password>' in Modify Password Dialogue window"""
+    CommonUtil.write_text_file(f"\nWhen I Entered '{oldpassword}' and '{password}' in Modify Password Dialogue window")
+    obj.setoldpasswordandnewpasswordinmodifypassworddialogue(oldpassword, password)
