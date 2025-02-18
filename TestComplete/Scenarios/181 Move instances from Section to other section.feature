@@ -11,8 +11,8 @@ And I Wait for Execution assignmentsdock in project explorer
 Then Verify generation status of facet from assignments PE assignmentsdock in project explorer as '<assignmentsdock4>'
 
 Examples:
-  | SlNo. | container dock1 | assignmentsdock2        | assignmentsdock3       | assignmentsdock4  |
-  | 1     | System_1    | LockOn$$FBDSection_1  | FBDSection_1$$Generate | LockOn$$Generated |
+  | SlNo. | container dock1 | assignmentsdock2     | assignmentsdock3       | assignmentsdock4  |
+  | 1     | System_1        | LockOn$$FBDSection_1 | FBDSection_1$$Generate | LockOn$$Generated |
 
 
 
@@ -33,3 +33,14 @@ Examples:
 
 
 #Total No. of Test Cases : 2
+
+
+
+@TC_EPE_SWF_0004a
+@test001
+@181
+Scenario Outline: Select the section from containers 
+When I Click on container section PE container dock in project explorer as '<container dock1>'
+Examples:
+  | SlNo. | container dock1 |
+  | 1     | System_1        |

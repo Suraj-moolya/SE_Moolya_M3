@@ -25,9 +25,8 @@ Examples:
 
 @TC_EPE_SWF_0034
 @test002
-Scenario Outline: Edit Instance from PE by Context menu
+Scenario Outline: Create instance from PE
 When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
-#And I click modal dialog window Instance editor save in application explorer as 'Yes'
 And I Wait for Execution project browser in project explorer
 
 Examples:

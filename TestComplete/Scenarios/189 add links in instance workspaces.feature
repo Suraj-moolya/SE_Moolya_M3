@@ -19,13 +19,12 @@ Then Verify Template AE Assert Workspace Editor in application explorer as '<Ass
 
 Examples:
   | SlNo. | Assert Workspace Editor8 | Assert Workspace Editor9 |
-  | 1     | PWMOutputGP_1$$3         | PWMOutputGP_1            |
+  | 1     | PWMOutputGP_1$$1         | PWMOutputGP_1            |
   
   
 @TC_EPE_AE_00
 Scenario Outline: Right Click on the facet and click on Edit Links from Project explorer
-When I Right Click on the Facet in Assignments Section as '<facet_name>'
-And I Select context menu item as '<action>'
+When I Right Click on the Facet in Assignments Section as "<facet_name>" "<action>"
 Then Verify Template AE Assert Workspace Editor in application explorer as '<Assert Workspace Editor10>'
 
 Examples:

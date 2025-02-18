@@ -59,6 +59,7 @@
 			<Feature Path="182 Delete Section.feature" />
 			<Feature Path="200 Edit Instance.feature" />
 			<Feature Path="201 Edit links From PE.feature" />
+			<Feature Path="196 Export instances to XML.feature" />
 		</Folder>
 		<Folder Name="Supervision">
 			<Feature Path="214 Check all the executable mapping is present.feature" />

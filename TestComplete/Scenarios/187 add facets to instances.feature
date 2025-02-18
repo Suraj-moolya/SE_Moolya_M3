@@ -7,11 +7,11 @@ When I Double Click on the Facet in Assingnment section as '<facet_name>'
 And I Check Any of the Facet Boxes to be added as '<instance_names>'
 And I click button on the Instance editor window as '<button_name>'
 And I Close the Tab by Clicking on Close as '<tabname>'
-And I Right Click on the Particular Section and Click on Generate '<container>'
+When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
 Then I verify the section is generated successfully as '<facet_name>' '<generation_state>'
 Examples:
-  | SlNo. | facet_name        | instance_names         | button_name | tabname   | container | generation_state   |
-  | 1     | MotorGP_1_MotorGP | Running$$Fail$$Stopped | Yes         | MotorGP_1 |  System_1 | OutOfDate          |
+  | SlNo. | facet_name        | instance_names         | button_name | tabname   | container dock1            | generation_state |
+  | 1     | MotorGP_1_MotorGP | Running$$Fail$$Stopped | Yes         | MotorGP_1 | M580Standalone_1$$Generate | OutOfDate        |
   
   
 @TC_EPE_SWF_0014
@@ -23,11 +23,11 @@ And I Check Any of the Facet Boxes to be added as '<instance_names>'
 And I click button on the Instance editor window as '<button_name>'
 And I Close the Tab by Clicking on Close as '<identifier5>'
 And I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
-And I Right Click on the Particular Section and Click on Generate '<container>'
+When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
 Then I verify the section is generated successfully as '<facet_name>' '<generation_state>'
 Examples:
-  | SlNo. | identifier5 | instance_names  | button_name | container    | facet_name        | generation_state | MainToolBar2         | MainToolBar3     |
-  | 1     | ValveGP_1   | ExternalControl | Yes         | FBDSection_1 | MotorGP_1_MotorGP | OutOfDate        | Application Explorer | Project Explorer |
+  | SlNo. | identifier5 | instance_names  | button_name | container dock1        | facet_name        | generation_state | MainToolBar2         | MainToolBar3     |
+  | 1     | ValveGP_1   | ExternalControl | Yes         | FBDSection_1$$Generate | MotorGP_1_MotorGP | OutOfDate        | Application Explorer | Project Explorer |
   
 
 @TC_EPE_SWF_0015

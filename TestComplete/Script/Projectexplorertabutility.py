@@ -553,6 +553,9 @@ def rightclickandgeneratecontainers(container):
           Actionutility.modal_dialog_window_button("OK")
         except Exception as e:
           Log.Message("Good Job Broo")
+          
+def gsgsgsg():
+  rightclickandgeneratecontainers("M580_Standalone")
 
         
         
@@ -748,7 +751,9 @@ def create_instance(value):
 #  root.Click()
 #  Log.Checkpoint("Instance Location Button was Clicked")
 
-
+def sgsgsg():
+  create_instance("MotorGP")
+  
 def verify_instance(template):
   instance_dock = proj_obj.instancedocktextbox.object
   instance_list = instance_dock.FindAllChildren("ClrClassName", 'GridViewCell', 100)

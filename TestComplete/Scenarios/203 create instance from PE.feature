@@ -9,4 +9,4 @@ And I Select button in the modal dialoge window as '<button>'
 Then I verify that the template is available in the instance window as '<template>'
 Examples:
   | SlNo. | assignmentsdock3              | template | button |
-  | 1     | FBDSection_3$$Create Instance | $MotorGP | OK     |
+  | 1     | FBDSection_2$$Create Instance | $MotorGP | OK     |

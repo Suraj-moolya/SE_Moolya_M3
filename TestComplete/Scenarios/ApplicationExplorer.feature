@@ -364,6 +364,11 @@ Examples:
   | SlNo. | Templates browser1 | Templates browser2   |
   | 1     | Sample_Test        | Sample_Test$$1.0.126 |
   
+@search_drag_drop_PWMOutputGP_1.0.74
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2  |
+  | 1     | PWMOutputGP        | PWMOutputGP$$1.0.74 |
+  
 
   
   
