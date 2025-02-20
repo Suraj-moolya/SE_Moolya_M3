@@ -110,6 +110,9 @@ def check_flowdocument_license():
     check_text = str(console_list[i].WPFControlText)
     if "Trial License" in check_text:
       Log.Checkpoint(check_text)
+      break
+  else:
+    Log.Checkpoint('Trial license not used')
       
 def check_flowdocument_control_instances(instances):
   console_obj = server_obj.consolewindow.object
