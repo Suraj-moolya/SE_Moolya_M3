@@ -45,9 +45,9 @@ Examples:
 @TC_EPE_AE_0002
 @test02
 Scenario Outline: Update all instances with latest version(Update Template from one Version to another-postive Complete Flow)
-When I create system_1 System Explorer Node in system explorer
-And I selected System Explorer Node in system explorer
-And I selected Open Global Templates Explorer in engineering client
+#When I create system_1 System Explorer Node in system explorer
+#And I selected System Explorer Node in system explorer
+When I selected Open Global Templates Explorer in engineering client
 And I Search text and select GTE global template search in global template explorer as '<global template search1>'
 And I right click on the searched template GTE global template core in global template explorer as '<global template core2>'
 And I Select context menu item EC global template core in global template explorer as '<global template core3>'

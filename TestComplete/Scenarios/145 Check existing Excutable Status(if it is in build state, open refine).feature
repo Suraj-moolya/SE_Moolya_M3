@@ -11,6 +11,11 @@ Examples:
   | SlNo. | container dock1            | container dock3 |
   | 1     | ControlProject_1$$Generate | Generate        |
   
+@Generate_M580_Standalone_controlproject
+Examples:
+  | SlNo. | container dock1           | container dock3 |
+  | 1     | M580_Standalone$$Generate | Generate        |
+  
 @Generate_M580_Safety_controlproject
 Examples:
   | SlNo. | container dock1       | container dock3 |
@@ -59,9 +64,10 @@ When I Expand control project browser PE project browser in project explorer as 
 And I Expand control project browser PE project browser in project explorer as '<project browser2>'
 Then Verify build state of control executable PE project browser in project explorer as '<project browser3>'
 
+@verify_notbuilt_for_m580_standalone
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3                                | content |
-  | 1     | ControlProject_1 | Executables      | ControlProject_1$$ControlExecutable_1$$NotBuilt | NA      |
+  | 1     | M580_Standalone  | Executables      | ControlProject_1$$ControlExecutable_1$$NotBuilt | NA      |
 
 
 

@@ -2,7 +2,7 @@
 
 @TC_EPE_SS_0013
 Scenario Outline: Set and enable System Access Password while creating System
-When I Right Click on nodes System Explorer Node in system explorer as 'Systems Explorer'
+When I Right Click on nodes System Explorer Node in system explorer as 'Folder_1'
 Then verify context menu items System Explorer Node in system explorer
 When I selected Create System in context menu with password
 And I Enter Controller Password TE New Password box in topology as '<New Password box1>'
@@ -19,9 +19,11 @@ When I Right Click on nodes System Explorer Node in system explorer as 'System_2
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 When I change controller properties with drop down options as '<options>'
 When I Close the Tab by Clicking on Close as '<identifier>'
+And I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+
 Examples:
-  | SlNo. | context menu | options                      | identifier |
-  | 1     | Properties   | System Access Password$$True | Properties |
+  | SlNo. | context menu | options                      | identifier | button          |
+  | 1     | Properties   | System Access Password$$True | Properties | System_2$$Close |
   
   
 @TC_EPE_SS_0015
@@ -34,7 +36,7 @@ And I Click on export System1 Export Popup AE buttons Export in ec windows explo
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser>'
 Examples:
   | SlNo. | Systems Explorer | MainToolBar1                   | New Password box1   | Confirm Password box2       | project browser             |
-  | 1     | System_7         | Open Topology Explorer (Alt+T) | Password$$Mooly@123 | Confirm Password$$Mooly@123 | Update System_7 (Completed) |
+  | 1     | System_2         | Open Topology Explorer (Alt+T) | Password$$Mooly@123 | Confirm Password$$Mooly@123 | Update System_2 (Completed) |
   
   
 @TC_EPE_SS_0016
@@ -46,4 +48,4 @@ When I Enter Controller Password deploy screen TE Confirm Password box in topolo
 And I click modal dialog window Modal dialog window in message box as '<Modal dialog window>'
 Examples:
   | SlNo. | Systems Explorer | MainToolBar1                   | Password box | Modal dialog window |
-  | 1     | System_7         | Open Topology Explorer (Alt+T) | Mooly@123    | OK                  |
+  | 1     | System_2         | Open Topology Explorer (Alt+T) | Mooly@123    | OK                  |
