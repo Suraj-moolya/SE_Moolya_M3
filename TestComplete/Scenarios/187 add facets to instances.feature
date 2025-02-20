@@ -14,6 +14,21 @@ Examples:
   | 1     | MotorGP_1_MotorGP | Running$$Fail$$Stopped | Yes         | MotorGP_1 | M580Standalone_1$$Generate | OutOfDate        |
   
   
+@TC_EPE_SWF_0013a
+@test0013
+Scenario Outline: Adding Facets from PE from with modal dialogue window 
+When I Double Click on the Facet in Assingnment section as '<facet_name>'
+And I Check Any of the Facet Boxes to be added as '<instance_names>'
+And I click button on the Instance editor window as '<button_name>'
+And I Close the Tab by Clicking on Close as '<tabname>'
+When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
+When I click modal dialog window project browser in project explorer as '<Button>'
+Then I verify the section is generated successfully as '<facet_name>' '<generation_state>'
+Examples:
+  | SlNo. | facet_name        | instance_names         | button_name | tabname   | container dock1            | generation_state |Button|
+  | 1     | MotorGP_1_MotorGP | Running$$Fail$$Stopped | Yes         | MotorGP_1 | M580Standalone_1$$Generate | OutOfDate        |Yes|
+  
+  
 @TC_EPE_SWF_0014
 @test0014
 Scenario Outline: Adding Facets from AE

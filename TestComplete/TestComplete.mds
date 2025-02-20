@@ -6293,7 +6293,7 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem140" key="{C1C50B44-3842-441D-933D-1F57393213EC}" group="False" parallel="False" enabled="True" load="False" testMoniker="187 add facets to instances|Adding Facets from PE with modal dialogue yes in from generate section" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="ProjectTestItem140" key="{C1C50B44-3842-441D-933D-1F57393213EC}" group="False" parallel="False" enabled="True" load="False" testMoniker="187 add facets to instances|Adding Facets from PE from with modal dialogue window" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
