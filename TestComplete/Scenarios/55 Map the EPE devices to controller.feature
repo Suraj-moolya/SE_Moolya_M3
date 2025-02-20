@@ -42,9 +42,11 @@ When I RClick template TE Topology Explorer Tree in topology as '<Topology Explo
 And I Click on MenuItem in TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
 When I click modal dialog window project browser in project explorer as '<Button>'
+And I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button |
-  | 1     | ETesysTHW               | Physical Connections    | ETesysTHW$$SE_Network   | OK     |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button | button |
+  | 1     | ETesysTHW               | Physical Connections    | ETesysTHW$$SE_Network   | OK     | Devices$$Close |
 
   
   
@@ -76,9 +78,10 @@ When I DblClick template TE Topology Explorer Tree in topology as '<Topology Exp
 And I Expand communication tab TE Topology Explorer Tree in topology as '<Topology Explorer Tree2>'
 And I edit IP Address Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
 When I Close the Tab by Clicking on Close as '<identifier>'
+And I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | identifier         |
-  | 1     | EIPGenericDeviceHW      | Communication           | IPAddress$$192.168.10.2 | EIPGenericDeviceHW |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | identifier         | button |
+  | 1     | EIPGenericDeviceHW      | Communication           | IPAddress$$192.168.10.2 | EIPGenericDeviceHW | Devices$$Close |
 
 ## I have changed it according to execution plan please check ur orginal test case once  
 @TC_EPE_TE_CN_0022c

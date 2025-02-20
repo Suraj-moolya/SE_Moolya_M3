@@ -103,7 +103,6 @@ Scenario Outline: Creation of System within Folder
 When I Right Click on nodes System Explorer Node in system explorer as 'Folder_1'
 Then verify context menu items from Rclick menu items in system explorer
 When I selected Create System in context menu
-And I Wait for Circular Progress Bar To Complete in system explorer
 Then verify system and folder created System Explorer Node in system explorer
 
 Examples:
@@ -553,11 +552,11 @@ When I selected User dropdown in engineering client
 And I selected User login in engineering client
 And I entered password in login page ec as '<password1>'
 And I selected Log in in login page ec
-Then verify displayed Open System Explorer in engineering client
+Then Verify Action message in notification pannel project browser in project explorer as '<project browser2>'
 
 Examples:
-  | SlNo. | password1    |
-  | 1     | P@ssw0rd1234 |
+  | SlNo. | password1    | project browser2 |
+  | 1     | P@ssw0rd1234 | A user was successfully logged on |
 
 
 
