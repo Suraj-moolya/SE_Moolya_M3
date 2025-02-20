@@ -190,7 +190,7 @@ Examples:
 @TC_EPE_SS_0005
 @test003
 @TC_EPE_SS_0005
-Scenario Outline: Trial License activated $$
+Scenario Outline: Trial License activated
 When I selected Console in server console as '<Console>'
 Then verify license in system server Console in server console
 
