@@ -284,7 +284,7 @@ Then I Close the message window
 
 Examples:
   | SlNo. | as per requirement1 | Rename Pop up6           |
-  | 1     | System_1            | Identifier is not unique | 
+  | 1     | System_1            | Identifier is not unique |
 
 
 @TC_EPE_EC_0016
@@ -369,8 +369,8 @@ When I navigate to explorers MainToolBar in system explorer as '<MainToolBar3>'
 Then verify Tabs Explorer tab in system explorer as '<Explorer tab4>'
 
 Examples:
-  | SlNo. | MainToolBar3     | Explorer tab4    |System_21a|
-  | 1     | Project Explorer | Project Explorer |System_1|
+  | SlNo. | MainToolBar3     | Explorer tab4    | System_21a |
+  | 1     | Project Explorer | Project Explorer | System_1   |
 
     
 @TC_EPE_EC_0022
@@ -534,14 +534,15 @@ Examples:
 @test0035
 Scenario Outline: Click - Lock - option under dropdown in EC   
 When I selected User dropdown in engineering client
-And I selected Log in in login page ec
+And I selected User lock in engineering client
 And I entered password in login page ec as '<password2>'
 And I selected Log in in login page ec
-Then verify displayed Open System Explorer in engineering client
+Then Verify Action message in notification pannel project browser in project explorer as '<notification>'
 
 Examples:
-  | SlNo. | password2    |
-  | 1     | P@ssw0rd1234 |
+  | SlNo. | password2    | notification        |
+  | 1     | P@ssw0rd1234 | A user was unlocked |
+
   
   
   
@@ -636,3 +637,14 @@ Then Verify Message from notification panel AE Notification Pannel in message bo
 Examples:
   | SlNo. | MainToolBar3                    |
   | 1     | Release Supervision Participant |
+  
+  
+@TC_EPE_EC_44
+Scenario Outline: Check the tool slots are created
+When I open details tab in task manager Windows in windows explorer
+Then verify control expert instances in task manager detail list in task manager as '<Control Participant Max Instance>'
+
+@Check_the_tool_slots_created_are_4
+Examples:
+  | SlNo. | Control Participant Max Instance |
+  | 02    | 4                                |

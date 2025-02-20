@@ -63,7 +63,7 @@
              <UIControl Element="commandbar_WindowsExplorer" Name="UIAObject('Command_Bar')" Parent="Taskmgr_" />
              <UIControl Element="Windows_WindowsExplorer" Parent="explorer_" />
              <UIControl Element="tabs_WindowsExplorer" Name="Window('SysTabControl32', '', 1)" Parent="Taskmgr_" />
-             <UIControl Element="detaillist_WindowsExplorer" Name="Window('SysListView32', '', 1)" Parent="Taskmgr_" />
+             <UIControl Element="detaillist_WindowsExplorer" Name="List('Process details')" Parent="Taskmgr_" />
         </Component>
         <Component name="Engineering Client">
              <UIControl Element="OpenSystemExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 1)" Parent="EngineeringClient_" />
