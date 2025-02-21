@@ -134,6 +134,37 @@ Examples:
   | SlNo. | Import3     | Import4 |
   | 1     | Bulk_AE.csv | Open    |
   
+@TC_EPE_AE_00
+@test00
+@TC_EPE_AE_00
+Scenario Outline: import - Enter the filelocation and select the File created manually to be imported click on OK in popup 
+When I Enter FileLocation and FileName to be Imported Import in import dialog as '<Import3>'
+And I Click on Buttons in Import System1 Popup_AE Import in import dialog as '<Import4>'
+And I Wait for Import popup Import in import dialog
+And I Click on Buttons in Import Dialog popup AE Import Dialog in import dialog as 'OK'
+Then Verify Message from notification panel AE Notification Pannel in message box 
+
+Examples: 
+  | SlNo. | Import3                           | Import4 |
+  | 1     | Import_Created_instance_Excel.csv | Open    |
+  
+  
+@TC_EPE_AE_00
+@test00
+@TC_EPE_AE_00
+Scenario Outline: import - Enter the filelocation and select the File created manually xml format to be imported click on OK in popup 
+When I Enter FileLocation and FileName to be Imported Import in import dialog as '<Import3>'
+And I Click on Buttons in Import System1 Popup_AE Import in import dialog as '<Import4>'
+And I Wait for Import popup Import in import dialog
+And I Click on Buttons in Import Dialog popup AE Import Dialog in import dialog as 'OK'
+Then Verify Message from notification panel AE Notification Pannel in message box 
+
+Examples: 
+  | SlNo. | Import3                     | Import4 |
+  | 1     | Import_Addinstance_Test.xml | Open    |
+  
+  
+  
   
 @TC_EPE_AE_00
 @test00

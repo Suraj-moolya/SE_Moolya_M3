@@ -343,6 +343,8 @@
 			 <UIControl Element="AddPageTemplateButton_ProjectExplorerTab" Name="WPFObject('AddPageTemplateButton')" Parent="EngineeringClient_" />
 			 <UIControl Element="New_Page_TemplateRadioButton_ProjectExplorerTab" Name="WPFObject('RadioButton', '', *)" DataContext.Identifier.OleValue= "New_Page_Template" Parent="EngineeringClient_" />		 
 			 <UIControl Element="CloseToolBar_ProjectExplorerTab" Name="WPFObject('CloseToolBar')" Parent="EngineeringClient_" />		 
+			 <UIControl Element="CreateInstancesTab_ProjectExplorerTab" Name="WPFObject('CreateInstancesDialog', '', 1)" Parent="EngineeringClient_" />		 
+			 
         </Component>
         <Component name="EC Warning Popup">
              <UIControl Element="Warningpopup_ECWarningPopup" Name="Window('Static', '*', 2)" Parent="EngineeringClient_" />

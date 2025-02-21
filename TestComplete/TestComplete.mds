@@ -6323,6 +6323,66 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
+					<testItem name="ProjectTestItem4_2_1_1_1" key="{22342B0D-1857-4C2F-BBDF-97040F6AF63A}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|Import - RightClick on the system_1 and select Import from the context menu" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem5_2_1_1_1" key="{29BC8895-30D3-451C-B9B2-9FBB7711F8FC}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@import_Enter_the_filelocation_and_file_name_as_csv" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem6_2_1_1_1" key="{57BAA860-F65F-4EA5-BA86-9F863428B0C4}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Click on Skip all button from resolve conflict pop up and ok" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem7_2_1_1_1" key="{537D1154-7AD7-4342-AA93-4B45639D0BE7}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Verify Template added in AE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem4_2_1_1_1_1" key="{9564B6E3-232A-4156-AB5B-4BBB96D95919}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|Import - RightClick on the system_1 and select Import from the context menu" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem5_2_1_1_1_1" key="{DD4C8BFB-FDAD-4D73-8A3C-4ED67B708AA5}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Enter the filelocation and select the File created manually to be imported click on OK in popup" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem6_2_1_1_1_1" key="{C5CB2758-BC19-448D-8235-3432BF118027}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Click on Skip all button from resolve conflict pop up and ok" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem7_2_1_1_1_1" key="{D65CD7A8-BED4-413E-A2A3-1226401649F2}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Verify Template added in AE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem4_2_1_1_1_1_1" key="{18F0E096-5DEE-4543-A35D-66DCA787A71F}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|Import - RightClick on the system_1 and select Import from the context menu" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem5_2_1_1_1_1_1" key="{D520C5BB-FFA1-4E2A-9E47-B72F4462D3A6}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Enter the filelocation and select the File created manually xml format to be imported click on OK in popup" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem6_2_1_1_1_1_1" key="{47244D8C-4A4E-42C7-9B04-297EBE8C2381}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Click on Skip all button from resolve conflict pop up and ok" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem7_2_1_1_1_1_1" key="{4CDA0324-F01B-4639-9E56-B08E426B7351}" group="False" parallel="False" enabled="True" load="False" testMoniker="129 Import the instances which is exported in above step|import - Verify Template added in AE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
 				</children>
 			</testItem>
 		</children>

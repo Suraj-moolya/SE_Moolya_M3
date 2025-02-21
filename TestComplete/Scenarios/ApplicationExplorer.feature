@@ -546,10 +546,23 @@ And I Select context menu item EC Application browser in application explorer as
 And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.xml'
 And I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'
 Then Verify Extracted Template XML Data and Template Details Export in ec windows explorer
-
 Examples:
   | SlNo. | Application browser4 | Application browser5 |
   | 1     | System               | Export               |
+  
+@TC_EPE_AE_0000
+@test000
+Scenario Outline: Export instance - Rclick instance, Export as csv, verify csv file
+When I rclick application browser folder AE Application browser in application explorer as '<Application browser4>'
+And I Select context menu item EC Application browser in application explorer as '<Application browser5>'
+And I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '.csv'
+And I Click on Button in AE Explorer Window Export in ec windows explorer as 'Save'
+Then Verify Extracted Template XML Data and Template Details Export in ec windows explorer
+Examples:
+  | SlNo. | Application browser4 | Application browser5 |
+  | 1     | MotorGP_2            | Export               |
+  
+  
 
   
 @TC_EPE_AE_0031
