@@ -45,8 +45,8 @@ def verify_SS_LoginDialogue():
     
 def check_server_console_flowdocument(verify_message):
   console_obj = server_obj.consolewindow.object
-  console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 50)
-  for _ in range(60):
+  console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 100)
+  for _ in range(100):
     check_text = str(console_list[0].Blocks.LastBlock.WPFControlText)
     if str(verify_message) in str(console_list[0].Blocks.LastBlock.WPFControlText):
       Log.Checkpoint(check_text)
@@ -58,7 +58,7 @@ def check_server_console_flowdocument(verify_message):
       break
     else:
       #Log.Message(check_text)
-      Applicationutility.wait_in_seconds(5000, 'Wait for server ready !')
+      Applicationutility.wait_in_seconds(12000, 'Wait for server ready !')
       console_obj.Refresh()
       
 def verify_start_stop_disabled():
@@ -250,7 +250,7 @@ def check_whole_flowdocument(verify_message):
     
 def check_server_ready():
   console_obj = server_obj.consolewindow.object
-  console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 50)
+  console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 100)
   for _ in range(600):
     check_text = str(console_list[0].Blocks.LastBlock.WPFControlText)
 #    if Systemserverutility.check_whole_flowdocument('Server is ready'):
@@ -262,7 +262,7 @@ def check_server_ready():
       Applicationutility.take_screenshot()
       break
     else:
-      Applicationutility.wait_in_seconds(500, 'Wait for server ready !')
+      Applicationutility.wait_in_seconds(5000, 'Wait for server ready !')
       #console_obj.Refresh()
       
 def check_server_stop():

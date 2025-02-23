@@ -75,6 +75,8 @@ class SystemServerWorkFlow:
         else:
           Log.Warning(str(content.Text.OleValue))
           Log.Message(logOnDialogue3)
+          
+          
     def windowconsoleverifytextinsystemserverconsole(self,verify_message):
         """windowconsoleverifytextinsystemserverconsole"""
 #        try:
