@@ -74,8 +74,8 @@ And I set the IP address to '<ip_address>' and subnet mask to '<subnet_mask>' in
 And I Perform action on the Folder by Clicking on '<close_button>' in Topology Explorer
 
 Examples:
-  | SlNo. | node_name | action            | node_name2  | action2   | button | action3    | main_folder   | subfolder1 | final_item1        | subfolder2 | final_item2        | subfolder3    | final_item3        | subfolder4     | final_item4        | subfolder5  | final_item5        | ip_address   | subnet_mask | action4              | network | buttonname | close_button       | notification pannel                 |
-  | 1     | Devices   | Create STB Island | STBIsland_1 | Configure | Yes    | Properties | STB - Catalog | Networking | STBNIP2311 - V5.xx | Power      | STBPDT2100 - V1.xx | Digital Input | STBDAI5230 - V1.xx | Digital Output | STBDAO5260 - V1.xx | Accessories | STBXBE1100 - V1.xx | 192.168.10.2 | 255.255.0.0 | Physical Connections |         | OK         | STBIsland_1$$Close | Close STB Island Editor (Completed) |
+  | SlNo. | node_name | action            | node_name2  | action2   | button | action3    | main_folder   | subfolder1 | final_item1        | subfolder2 | final_item2        | subfolder3    | final_item3        | subfolder4     | final_item4        | subfolder5  | final_item5        | ip_address     | subnet_mask | action4              | network | buttonname | close_button       | notification pannel                 |
+  | 1     | Devices   | Create STB Island | STBIsland_1 | Configure | Yes    | Properties | STB - Catalog | Networking | STBNIP2311 - V5.xx | Power      | STBPDT2100 - V1.xx | Digital Input | STBDAI5230 - V1.xx | Digital Output | STBDAO5260 - V1.xx | Accessories | STBXBE1100 - V1.xx | 182.179.243.26 | 255.255.0.0 | Physical Connections |         | OK         | STBIsland_1$$Close | Close STB Island Editor (Completed) |
 
   
 @TC_EPE_TE_0003b
@@ -97,5 +97,5 @@ And I Select context menu item EC project browser in project explorer as '<Topol
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
 When I click modal dialog window project browser in project explorer as '<Button>'
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3                | Button |
-  | 1     | STBIsland_1             | Physical Connections    | STBIsland_1$$STB_Island_Device_Network | OK     |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button |
+  | 1     | STBIsland_1             | Physical Connections    | STBIsland_1$$SE_Network | OK     |

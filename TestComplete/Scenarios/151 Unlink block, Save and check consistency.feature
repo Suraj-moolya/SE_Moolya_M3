@@ -6,12 +6,19 @@
 Scenario Outline: Open any section and unlink the block.
 When I RClick on Block Refine Offline project browser in project explorer as '<project browser1>'
 And I selected Unlock in refine offline
-And I Unlock Dialog popup Unlock in refine offline as 'Yes'
-And I Delete link Refine Offline Unlock in refine offline as 'ChOut'
+#And I Unlock Dialog popup Unlock in refine offline as 'Yes'
+And I select '<button>' in New Device PopUp Window
+#And I Delete link Refine Offline Unlock in refine offline as 'ChOut'
 
+@Unlock_for_AnalogOutPut
 Examples:
-  | SlNo. | project browser1 |
-  | 1     | AOUTPUTGP        |
+  | SlNo. | project browser1 | button |
+  | 1     | AOUTPUTGP        | Yes    |
+  
+@Unlock_for_MotorGp
+Examples:
+  | SlNo. | project browser1 | button |
+  | 1     | MOTORGP          | Yes    |
 
 #Total No. of Test Cases : 2
 

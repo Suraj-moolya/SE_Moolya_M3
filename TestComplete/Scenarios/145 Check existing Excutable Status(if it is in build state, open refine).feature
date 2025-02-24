@@ -26,6 +26,11 @@ Examples:
 Examples:
   | SlNo. | container dock1            | container dock3 |
   | 1     | Supervision_Test$$Generate | Generate        |
+  
+@Generate_FBDSection2
+Examples:
+  | SlNo. | container dock1        | container dock3 |
+  | 1     | FBDSection_2$$Generate | Generate        |
 
 
 @TC_open_refine_online
@@ -39,7 +44,7 @@ Then Verify Action message in notification pannel project browser in project exp
 
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3                         |
-  | 1     | ControlProject_1 | Refine           | Close Control Project Editor (Completed) |
+  | 1     | M580_Standalone  | Refine           | Close Control Project Editor (Completed) |
 
 
 
@@ -67,7 +72,7 @@ Then Verify build state of control executable PE project browser in project expl
 @verify_notbuilt_for_m580_standalone
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3                                | content |
-  | 1     | M580_Standalone  | Executables      | ControlProject_1$$ControlExecutable_1$$NotBuilt | NA      |
+  | 1     | M580_Standalone  | Executables      | M580_Standalone$$ControlExecutable_1$$NotBuilt | NA      |
 
 
 
@@ -78,9 +83,10 @@ When I Expand control project browser PE project browser in project explorer as 
 And I Expand control project browser PE project browser in project explorer as '<project browser2>'
 Then Verify build state of control executable PE project browser in project explorer as '<project browser3>'
 
+@verify_built_for_m580_standalone
 Examples:
-  | SlNo. | project browser1 | project browser2 | project browser3                             | content |
-  | 1     | ControlProject_1 | Executables      | ControlProject_1$$ControlExecutable_1$$Built | NA      |
+  | SlNo. | project browser1 | project browser2 | project browser3                            | content |
+  | 1     | M580_Standalone | Executables       | M580_Standalone$$ControlExecutable_1$$Built | NA      |
 
 
 
