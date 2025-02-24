@@ -140,7 +140,7 @@ def rclick_window_CE():
   comb = refoff_obj.windowcomboboxtextbox.object
   comb.Keys('XOR')
   comb.Keys('[Enter]')
-#  Topologyexplorerutility.modaldialogue_window_ce("Yes")  // Preetham you should keep quiet
+  #Topologyexplorerutility.modaldialogue_window_ce("Yes")
   win.Click((win.Width/2)-100, win.Height/2)
   win.Keys('[Esc]')
   win1 = refoff_obj.fbdsectionwindowtextbox.object 

@@ -17,8 +17,8 @@ Then Verify Facets Added or Removed context menu PE assignmentsdock in project e
 
 
 Examples:
-|SlNo.|assignmentsdock1|assignmentsdock2|Instance editor checklist2|assignmentsdock3|Yes|container dock1|
-|1|CompactHWGP_1_OF|Edit Instance|MXSignal$$0|CompactHWGP_1_MX|Yes|System_1$$Generate|
+  | SlNo. | assignmentsdock1 | assignmentsdock2 | Instance editor checklist2 | assignmentsdock3 | Yes | container dock1    |
+  | 1     | CompactHWGP_1_OF | Edit Instance    | MXSignal$$0                | CompactHWGP_1_MX | Yes | System_1$$Generate |
 
 
 #Total No. of Test Cases :1
@@ -30,7 +30,7 @@ When I Right click container dock context menu item PE container dock in project
 And I Wait for Execution project browser in project explorer
 
 Examples:
-|SlNo.|container dock1|
-|1|System_1$$Create Instance|
+  | SlNo. | container dock1           |
+  | 1     | System_1$$Create Instance |
 
 
