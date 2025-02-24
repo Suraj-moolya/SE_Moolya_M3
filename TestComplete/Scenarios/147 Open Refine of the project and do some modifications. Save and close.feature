@@ -28,7 +28,7 @@ Then verify displayed Refine online window in refine offline
 
 Examples:
   | SlNo. | container dock1 | content |
-  | 1     | FBDSection_1    | NA      |
+  | 1     | FBDSection_2    | NA      |
 
 
 
