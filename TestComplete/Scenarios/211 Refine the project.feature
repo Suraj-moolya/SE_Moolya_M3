@@ -26,3 +26,12 @@ Then Verify Action message in notification pannel container dock in project expl
 Examples:
   | SlNo. | Button | container dock3                  |
   | 1     | Yes    | Close Supervision Project Editor |
+  
+@TC_EPE_PE_CP_00
+Scenario Outline: Close Refine window
+When I selected Close Refine Offline in refine offline
+Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
+
+Examples:
+  | SlNo. | Button | container dock3   |
+  | 1     | Yes    | Close Page Editor |

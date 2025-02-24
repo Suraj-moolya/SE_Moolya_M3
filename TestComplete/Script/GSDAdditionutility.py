@@ -11,6 +11,9 @@ def Handle_Duplicate_file(button):
 
 def click_button_in_gsd_window(button_name):
   Topologyexplorerutility.find_and_click_button(gsd_obj.homepageingsdadditionwindow.object, button_name, 100)
+  
+def jdsf():
+  click_button_in_gsd_window("Next")
 
 def select_folder_in_gsd(items):
   if isinstance(items, str):
