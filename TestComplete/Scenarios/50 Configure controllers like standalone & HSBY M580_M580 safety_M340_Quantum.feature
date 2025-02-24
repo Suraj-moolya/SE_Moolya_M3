@@ -283,6 +283,11 @@ Examples:
   | SlNo. | context menu        | project browser1   |
   | 1     | Create Station Node | Create Workstation |
   
+@Create_Workstation_on_New_Build
+Examples:
+  | SlNo. | context menu       | project browser1   |
+  | 1     | Create Workstation | Create Workstation |
+  
 
   
 @TC_EPE_TE_CS_0003
