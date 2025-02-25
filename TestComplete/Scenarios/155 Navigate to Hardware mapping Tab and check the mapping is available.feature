@@ -1,5 +1,4 @@
 ﻿Feature: 155 Navigate to Hardware mapping Tab and check the mapping is available
-
 @TC_EPE_PE_CP_0040
 @test0040
 Scenario Outline: click on control project and Navigate to Hardware mapping Tab, check the mapping is available and map
@@ -12,10 +11,7 @@ And I drag and drop DOChannel facets to HWInstance with DOChannel HWInterfaceTyp
 Then I verify that all App facets '<appfacet>' are correctly mapped in the Hardware Instance
 Examples:
   | SlNo. | projectBrowser7  | projectBrowser8 | projectBrowser9     | tabname          | appfacet     |
-  | 1     | ControlProject_1 | Executables     | ControlExecutable_1 | Hardware Mapping | ValveGP_1_OP |
-  
-  
-  
+  | 1     | M580_Standalone  | Executables     | ControlExecutable_1 | Hardware Mapping | ValveGP_1_OP |
 @TC_EPE_PE_CP_0040a
 @test0040a
 Scenario Outline: Navigate to Hardware mapping Tab, check the mapping is available and map
@@ -26,18 +22,13 @@ Then I verify that all App facets '<appfacet>' are correctly mapped in the Hardw
 Examples:
   | SlNo. | tabname          | appfacet           |
   | 1     | Hardware Mapping | ValveGP_1_OP       |
-  
-  
-  
 @TC_EPE_PE_CP_0040b
 @test0040a
 Scenario Outline: Navigate to Service mapping Tab
 When I Click '<tabname>' on service mapping edittor window
-
 Examples:
   | SlNo. | tabname         |
   | 2     | Service Mapping |
-  
 @TC_EPE_PE_CP_0040a
 @test0040a
 Scenario Outline: hghghghghghghg

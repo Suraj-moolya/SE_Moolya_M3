@@ -535,10 +535,10 @@
 			 <UIControl Element="OutputWindowPanel_Topology" Name="Panel('Output Window')" Parent="EngineeringClient_" />
         </Component>
 		<Component name="GSD Addition">
-             <UIControl Element="Homepage_GSDAddition" Name="Window('#32770', '*', 1)" Parent="Wizzard_" />
-             <UIControl Element="Loading_GSDAddition" Name="Window('Static', '', *)" Parent="Wizzard_" />
-             <UIControl Element="ChooseFolderTab_GSDAddition" Name="Window('#32770', 'Choose Folder', 1)" Parent="Wizzard_" />
-             <UIControl Element="DuplicateFileTab_GSDAddition" Name="Window('#32770', 'File Already Exist', 1)" Parent="Wizzard_" />
+             <UIControl Element="Homepage_GSDAddition" Name="Window('#32770', '*', 1)" Parent="Wizard_" />
+             <UIControl Element="Loading_GSDAddition" Name="Window('Static', '', *)" Parent="Wizard_" />
+             <UIControl Element="ChooseFolderTab_GSDAddition" Name="Window('#32770', 'Choose Folder', 1)" Parent="Wizard_" />
+             <UIControl Element="DuplicateFileTab_GSDAddition" Name="Window('#32770', 'File Already Exist', 1)" Parent="Wizard_" />
              <UIControl Element="DeleteDeviceTab_GSDAddition" Name="Window('#32770', 'GSD Deletion from Device Library', 1)" Parent="DeleteGSD_" />
              <UIControl Element="DeleteDevicePopupTab_GSDAddition" Name="Window('#32770', 'DeleteGSD', 1)" Parent="DeleteGSD_" />
         </Component>
