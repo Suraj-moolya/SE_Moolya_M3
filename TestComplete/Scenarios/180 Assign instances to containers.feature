@@ -42,7 +42,7 @@ Then I Verify the facet generation status of all facets in Assignments Dock
 
 @Assign_Instance_from_system_to_different_Containers_in_PE
 Examples:
-  | SlNo. | param                   | Button |
+  | SlNo. | param                     | Button |
   | 1     | System_1$$M580_Standalone | OK     |
   
   
@@ -53,8 +53,13 @@ Examples:
   
 @Assign_Instance_from_Folder2_to_different_Containers_in_Supervision_PE
 Examples:
-  | SlNo. | param               | Button |
+  | SlNo. | param                 | Button |
   | 1     | Folder_2$$Supervision | OK     |
+  
+@Assign_Instance_from_Folder2_to_different_Containers_in_PE
+Examples:
+  | SlNo. | param                     | Button |
+  | 1     | Folder_2$$M580_Standalone | OK     |
 
 
   
