@@ -50,6 +50,11 @@ Examples:
 Examples:
   | SlNo. | param               | Button |
   | 1     | System$$Supervision | OK     |
+  
+@Assign_Instance_from_Folder2_to_different_Containers_in_Supervision_PE
+Examples:
+  | SlNo. | param               | Button |
+  | 1     | Folder_2$$Supervision | OK     |
 
 
   
