@@ -60,3 +60,15 @@ Then Verify Section Deleted in Control Project containers container dock in proj
 Examples:
   | SlNo. | container dock1 | container dock2 | container dock3 |
   | 1     | Page_1$$Delete  | Yes             | Container_2     |
+  
+  
+@TC_EPE_SWF_0005
+@test001
+Scenario Outline: Delete the TagContainer_1 from Context menu
+When I Right click container dock context menu item PE container dock in project explorer as '<container dock1>'
+And I click modal dialog window container dock in project explorer as '<container dock2>'
+Then Verify Section Deleted in Control Project containers container dock in project explorer as '<container dock3>'
+
+Examples:
+  | SlNo. | container dock1        | container dock2 | container dock3 |
+  | 1     | TagContainer_1$$Delete | Yes             | Container_1     |

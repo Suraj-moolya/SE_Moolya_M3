@@ -443,10 +443,10 @@ def verify_all_facet_generation_status_assignmentdock():
     facet_No = Facet_obj.Items.Count
     Log.Message(f'Total Facet Count : " {facet_No} " in " {Facet_obj.Items.Item[0].ContainerName} " Container Assignments Dock')
     for i in range(facet_No):
-      if proj_obj.assignmentsdocktextbox.object.Items.Item[i].GenerationState == "NonGenerated" and Facet_obj.Items.Item[i].Identifier.OleValue != None:
-        Log.Checkpoint(f'Facet : {Facet_obj.Items.Item[i].Identifier.OleValue} ; Generation status : {Facet_obj.Items.Item[i].GenerationState}') 
-      else:
-        Log.Checkpoint(f'Facet : {Facet_obj.Items.Item[i].Identifier.OleValue} ; Generation status : {Facet_obj.Items.Item[i].GenerationState}')
+        if proj_obj.assignmentsdocktextbox.object.Items.Item[i].GenerationState == "NonGenerated":
+          Log.Checkpoint(f'Facet : {Facet_obj.Items.Item[i].Identifier.OleValue} ; Generation status : {Facet_obj.Items.Item[i].GenerationState}') 
+        else:
+          Log.Checkpoint(f'Facet : {Facet_obj.Items.Item[i].Identifier.OleValue} ; Generation status : {Facet_obj.Items.Item[i].GenerationState}')
     
 def verify_section_containers_dock(): 
     proj_obj.containerdocktextbox.refresh()
@@ -486,6 +486,7 @@ def Drag_instance_drop_container_section(param):
   for section in section_list:
     if section.visible and section_identifier in section.DataContext.Identifier.OleValue:
       tox = section.Top
+      Log.Message(tox)
       
   for instance in instance_list:
     if instance.Level == 0:
@@ -496,7 +497,7 @@ def Drag_instance_drop_container_section(param):
       fromy = instance.Height / 2
       Applicationutility.wait_in_seconds(1000, 'Wait')
       instance.Click()
-      instance.Drag(fromx,fromy,0,tox/2+25)
+      instance.Drag(fromx,fromy,0,tox-fromx)
       Log.Message("Drag and drop operation was performed")
       break
     
