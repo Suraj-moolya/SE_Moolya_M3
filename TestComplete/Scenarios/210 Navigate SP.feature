@@ -67,7 +67,7 @@ Examples:
   | 1     | Alarm_1_P$$Workstation_1  |
   | 2     | IOServer_1$$Workstation_1 |
   | 3     | Report_1_P$$Workstation_1 |
-  | 4     | Trend_1_P$$Workstation_1  |
+
   
   
 

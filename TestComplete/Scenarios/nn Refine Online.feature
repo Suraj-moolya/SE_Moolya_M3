@@ -33,7 +33,7 @@ Examples:
 @test000
 Scenario Outline: Navigate Through Mast section and verify communaction is happening
 When I Navigate through project browser CE Project Browser RO in refine offline and verify Communication is happening as '<Project Browser RO1>'
-@Double_click_on_PLC_Bus_EIO 
+@Navigate_to_Read_M580_Stand_P2P
 Examples:
   | SlNo. | Project Browser RO1                                 |
   | 1     | Programs$$Tasks$$MAST$$Logic$$Read_M580_Stand_P2P_1 |
