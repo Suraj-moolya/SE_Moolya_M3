@@ -3,10 +3,13 @@
 Scenario Outline: Generate from Containers pane
 When I RClick on FBDSection in Container Section and select menu item as '<containerinstance>'
 Then I Verify the facet generation status of all facets in Assignments Dock
-And Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
+When I click modal dialog window project browser in project explorer as '<Button>'
+Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
+
 Examples:
-  | SlNo. | containerinstance  | container dock3 |
-  | 1     | System_1$$Generate | Generate        |
+  | SlNo. | containerinstance  | container dock3 | Button |
+  | 1     | System_1$$Generate | Generate        | Yes    |
+  
 @TC_EPE_PE_CP_0024
 Scenario Outline: Generate from Control Project Browser pane
 When I RClick control project browser project browser in project explorer as '<containerinstance>'
@@ -16,6 +19,7 @@ And I Verify the facet generation status of all facets in Assignments Dock
 Examples:
   | SlNo. | containerinstance | contextmenu_item |
   | 1     | ControlProject_1  | Generate         |
+  
 @TC_EPE_PE_CP_00
 Scenario Outline: Double Click on Container sections
 When I Dclick Control project broswer project browser in project explorer as '<projectBrowser1>'

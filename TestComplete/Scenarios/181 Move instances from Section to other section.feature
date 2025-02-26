@@ -8,12 +8,11 @@ When I Click on container section PE container dock in project explorer as '<con
 And I Drag and drop facet from assignment to container sections PE assignmentsdock in project explorer as '<assignmentsdock2>'
 And I Right click container dock context menu item PE assignmentsdock in project explorer as '<assignmentsdock3>'
 And I Wait for Execution assignmentsdock in project explorer
-When I click modal dialog window project browser in project explorer as '<Button>'
 Then Verify generation status of facet from assignments PE assignmentsdock in project explorer as '<assignmentsdock4>'
 
 Examples:
-  | SlNo. | container dock1 | assignmentsdock2     | assignmentsdock3       | assignmentsdock4  |Button|
-  | 1     | System_1        | LockOn$$FBDSection_1 | FBDSection_1$$Generate | LockOn$$Generated |Yes|
+  | SlNo. | container dock1 | assignmentsdock2     | assignmentsdock3       | assignmentsdock4  |
+  | 1     | System_1        | LockOn$$FBDSection_1 | FBDSection_1$$Generate | LockOn$$Generated |
 
 
 

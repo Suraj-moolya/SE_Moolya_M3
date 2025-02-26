@@ -589,8 +589,8 @@ def verify_facet_assignment_state1(facet_names, generation_state):
           if generation_state in facet.DataContext.AssignmentState.OleValue:
             Log.Checkpoint(f'The facet {facet.DataContext.Identifier.OleValue} has AssignmentState state as {facet.DataContext.AssignmentState.OleValue}') 
             break
-    else:
-      Log.Warning(f'The facet {facet_name} does not have the expected generation state: {generation_state}')
+        else:
+          Log.Warning(f'The facet {facet.DataContext.Identifier.OleValue} does not have the expected generation state: {facet.DataContext.AssignmentState.OleValue}')
    
 
 def right_click_instance_select_action_in_assignments(param, action):
