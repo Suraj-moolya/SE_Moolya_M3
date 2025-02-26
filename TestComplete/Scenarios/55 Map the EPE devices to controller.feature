@@ -110,7 +110,19 @@ Examples:
   | 1     | Workstation_1           | Physical Connections    | SE_Network | OK     |
   
   
- 
+@TC_EPE_TE_CN_0022c
+@test003
+Scenario Outline: Map EtherNet IP device to Controller - add Ethernet Network for M580_Standalone3
+When I Right Click on nodes System Explorer Node in system explorer as '<Topology Explorer Tree1>'
+And I Select context menu item EC project browser in project explorer as '<Topology Explorer Tree2>'
+And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree3>'
+And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree4>'
+When I click modal dialog window project browser in project explorer as '<Button>'
+Examples:
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3       | Topology Explorer Tree4       | Button |
+  | 1     | M580_Standalone3         | Physical Connections    | M580_Standalone3 0$$SE_Network | M580_Standalone3 2$$SE_Network | OK     |
+  
+
 
 
 

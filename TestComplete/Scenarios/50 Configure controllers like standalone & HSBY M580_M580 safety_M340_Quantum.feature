@@ -121,6 +121,11 @@ Examples:
 Examples:
   | SlNo. | Folder Name | context menu      | controller | controller_name  | project browser1  | project browser2  |
   | 1     | Controllers | Create Controller | M580       | M580_Standalone2 | Create Controller | Update Controller |
+  
+@Create_Third_Controller_for_standlone
+Examples:
+  | SlNo. | Folder Name | context menu      | controller | controller_name  | project browser1  | project browser2  |
+  | 1     | Controllers | Create Controller | M580       | M580_Standalone3 | Create Controller | Update Controller |
 
   
 @TC_EPE_TE_CS_0003d
@@ -215,6 +220,10 @@ Examples:
   | SlNo. | Controller  | context menu | Notification          |
   | 1     | M580_Safety | Configure    | Open Configure Editor |
   
+@open_Configuration_window_of_Controller_M580_Standalone3
+Examples:
+  | SlNo. | Controller       | context menu | Notification          |
+  | 1     | M580_Standalone3 | Configure    | Open Configure Editor |
   
 @TC_EPE_TE_CS_000
 @test000
@@ -254,6 +263,11 @@ Examples:
 Examples:
   | SlNo. | button         | FolderName |
   | 1     | Devices$$Close | Devices    |
+  
+@Close_Controllers_in_Topology_Explorer__M580_Standalone3
+Examples:
+  | SlNo. | button                  | FolderName  |
+  | 1     | M580_Standalone3$$Close | Controllers |
     
   
 @test0002b
@@ -314,6 +328,18 @@ Examples:
   | SlNo. | context menu | options           | Button name |
   | 1     | Properties   | Controller$$False | Yes         |
   
+@TC_EPE_TE_CS_000
+@test000
+Scenario Outline: Change safety settings of controller to Disable M580_Standalone3
+When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone3'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+When I change controller properties with drop down options as '<options>'
+When I Select button in the modal dialoge window as '<Button name>'
+
+Examples:
+  | SlNo. | context menu | options           | Button name |
+  | 1     | Properties   | Controller$$False | Yes         |
+  
 
   
 @TC_EPE_TE_CS_000
@@ -341,6 +367,11 @@ Examples:
 Examples:
   | SlNo. | Cpu_version           |
   | 1     | BME P58 4040S   03.20 |
+  
+@Change_CPU_Version_of_controller__BME_H58_6040S_03.20
+Examples:
+  | SlNo. | Cpu_version           |
+  | 1     | BME H58 6040S   03.20 |
   
   
 
