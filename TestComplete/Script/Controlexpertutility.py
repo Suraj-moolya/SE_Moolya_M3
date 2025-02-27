@@ -53,12 +53,12 @@ def select_project_browser_item_CE(val):
 def doubleclick_project_browser_item_CE(val):  
   project_browser = refoff_obj.projectbrowserrotextbox.object
   count = project_browser.wItems.Item[0].Items.Count
-  for i in range(count):
+  for i in range(count+1):
     if val in project_browser.wItem[i]:
       project_browser.DblClickItem(val)
       break
   else:
-    Log.Message(val + ' is not Click')
+    Log.Warning(val + ' is not Click')
 
     
 ###############################################################################

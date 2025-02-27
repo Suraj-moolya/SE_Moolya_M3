@@ -13,6 +13,11 @@ Examples:
   | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                    |
   | 1     | M580_Standalone  | Executable       | ControlExecutable_1 | ControlExecutive_1$$M580_Standalone |
   
+@Map_M580_Controller3_in_ControlExecutable
+Examples:
+  | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                     |
+  | 1     | M580_Standalone3 | Executable       | ControlExecutable_1 | ControlExecutive_1$$M580_Standalone3 |
+  
 @Map_Workstation_1_in_ControlExecutable
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                  |

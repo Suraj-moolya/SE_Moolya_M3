@@ -35,6 +35,10 @@ Examples:
 Examples:
   | SlNo. | projectBrowser1  |
   | 1     | M580_Standalone2 |
+@DoubleClick_M580_Standalone_3_Checkes_weather_expanded_and_expands
+Examples:
+  | SlNo. | projectBrowser1  |
+  | 1     | M580_Standalone3 |
 @DoubleClick_ControlExecutable_1_Checkes_weather_expanded_and_expands
 Examples:
   | SlNo. | projectBrowser1     |
