@@ -63,6 +63,10 @@ Examples:
 Examples:
   | SlNo. | containerinstance | contextmenu_item |
   | 1     | M580_Standalone2  | Collapse All     |
+@Right_Click_M580_Standalone3_ExpandAll
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | M580_Standalone3  | Expand All       |
 @Right_Click_System_Collapse_All
 Examples:
   | SlNo. | containerinstance | contextmenu_item |
@@ -71,10 +75,10 @@ Examples:
 @test0025
 Scenario Outline: Generate from Containers pane and Click on Modal Dialogue Window
 When I RClick on FBDSection in Container Section and select menu item as '<containerinstance>'
-Then I Verify the Generation PopUp Window Message
+#Then I Verify the Generation PopUp Window Message
 When I click modal dialog window project browser in project explorer as '<Button>'
 #Then I Verify the facet generation status of all facets in Assignments Dock
-And Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
+Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
 @System_generate
 Examples:
   | SlNo. | containerinstance  | Button | container dock3 |

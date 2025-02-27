@@ -17,6 +17,11 @@ Examples:
 Examples:
   | SlNo. | project browser1 | project browser2 |
   | 1     | M580_Standalone2 | Refine           |
+  
+@Open_Refine_offline_of_M580_Standalone3_from_Context_Menu
+Examples:
+  | SlNo. | project browser1 | project browser2 |
+  | 1     | M580_Standalone3 | Refine           |
 
 
 

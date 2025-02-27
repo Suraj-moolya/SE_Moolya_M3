@@ -45,6 +45,16 @@ Examples:
   | SlNo. | param                     | Button |
   | 1     | System_1$$M580_Standalone | OK     |
   
+@Assign_Instance_from_system_to_M580_Standalone2_Containers_in_PE
+Examples:
+  | SlNo. | param                      | Button |
+  | 1     | System_1$$M580_Standalone2 | OK     |
+  
+@Assign_Instance_from_system_to_M580_Standalone3_Containers_in_PE
+Examples:
+  | SlNo. | param                      | Button |
+  | 1     | System_1$$M580_Standalone3 | OK     |
+  
   
 @Assign_Instance_from_system_to_different_Containers_in_Supervision_PE
 Examples:

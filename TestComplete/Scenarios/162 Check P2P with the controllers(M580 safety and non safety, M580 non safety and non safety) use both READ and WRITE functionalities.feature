@@ -72,9 +72,16 @@ Scenario Outline: Manage Peer to Peer
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 When I click modal dialog window project browser in project explorer as '<Button>'
+
+@Manage_P2P_M580_Standalone
 Examples:
   | SlNo. | project browser1 | context menu        | Button |
   | 1     | M580_Standalone  | Manage Peer to Peer | Next   |
+  
+@Manage_P2P_M580_Standalone2
+Examples:
+  | SlNo. | project browser1 | context menu        | Button |
+  | 1     | M580_Standalone2 | Manage Peer to Peer | Next   |
   
 
 @TC_EPE_PE_CP_0039
