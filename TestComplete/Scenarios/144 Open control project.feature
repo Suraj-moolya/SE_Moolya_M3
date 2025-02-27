@@ -19,7 +19,6 @@ Examples:
   | SlNo. | project browser1 | context menu           | controller | controller_name  |
   | 1     | System_1         | Create Control Project | M580       | M580_Standalone2 |
   
-  
 @Create_standalone_Control_Project_3
 Examples:
   | SlNo. | project browser1 | context menu           | controller | controller_name  |

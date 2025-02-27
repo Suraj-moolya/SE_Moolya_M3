@@ -7,7 +7,7 @@ Scenario Outline: Moving the Instance from One section to Another without Genera
 When I Click on container section PE container dock in project explorer as '<container dock1>'
 And I Drag and drop facet from assignment to container sections PE assignmentsdock in project explorer as '<assignmentsdock2>'
 And I Right click container dock context menu item PE assignmentsdock in project explorer as '<assignmentsdock3>'
-And I Wait for Execution assignmentsdock in project explorer
+#And I Wait for Execution assignmentsdock in project explorer
 When I click modal dialog window project browser in project explorer as '<Button>'
 Then Verify generation status of facet from assignments PE assignmentsdock in project explorer as '<assignmentsdock4>'
 
