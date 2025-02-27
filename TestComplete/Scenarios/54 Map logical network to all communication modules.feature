@@ -26,7 +26,7 @@ Examples:
 @Map_the_logical_network_-_edit_IP_Address__182.233.63.1
 Examples:
   | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4                   |
-  | 1     | Main IP address$$182.233.63.1 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.2 | Gateway address$$182.233.63.0 |
+  | 1     | Main IP address$$182.233.63.1 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.3 | Gateway address$$182.233.63.0 |
 
 
 @TC_EPE_TE_0020b
@@ -71,6 +71,12 @@ Examples:
   | SlNo. | Project Browser RO1                                                     | identifiers |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME P58 4040$$EIO | IPConfig    |
   
+@Open_configure_window_and_click_on_IPConfig__M580_standalone_H58_6040_3.20
+Examples:
+  | SlNo. | Project Browser RO1                                                     | identifiers |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME H58 6040$$EIO | IPConfig    |
+  
+  
 @TC_EPE_TE_00
 @test00
 Scenario Outline: Validate using shortcut keys
@@ -79,5 +85,16 @@ Examples:
   | SlNo. |
   | 1     |
   
+@TC_EPE_TE_0020aa
+Scenario Outline: Map the logical network to all communication modules - edit IP Address HSBY
+When I edit IP Address in configure MDI Window in refine offline as '<MDI Window1>'
+And I edit IP Address in configure MDI Window in refine offline as '<MDI Window2>'
+And I edit IP Address in configure MDI Window in refine offline as '<MDI Window3>'
+And I edit IP Address in configure MDI Window in refine offline as '<MDI Window4>'
+And I edit IP Address in configure MDI Window in refine offline as '<MDI Window5>'
 
+@Map_the_logical_network_-_edit_IP_Address__182.233.63.1_HSBY
+Examples:
+  | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4                | MDI Window5                   |
+  | 1     | Main IP address$$182.233.63.1 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.3 | IP address B$$182.233.63.4 | Gateway address$$182.233.63.0 |
 

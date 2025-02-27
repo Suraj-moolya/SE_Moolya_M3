@@ -366,12 +366,12 @@ Examples:
 @Change_CPU_Version_of_controller__BME_P58_4040S_03.20
 Examples:
   | SlNo. | Cpu_version           |
-  | 1     | BME P58 4040S   03.20 |
+  | 1     | BME P58 4040   03.20 |
   
 @Change_CPU_Version_of_controller__BME_H58_6040S_03.20
 Examples:
   | SlNo. | Cpu_version           |
-  | 1     | BME H58 6040S   03.20 |
+  | 1     | BME H58 6040   03.20 |
   
   
 
