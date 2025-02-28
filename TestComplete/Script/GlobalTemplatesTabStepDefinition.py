@@ -274,6 +274,12 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen I Right Click on StateSelector in global template explorer")
     obj.clickStateSelectorapprovedinsaveas()    
 
+@when("I Click on old State Selector in global template explorer")
+def step_impl():
+    """I Right Click on old State Selector in global template explorer"""
+    CommonUtil.write_text_file("\nWhen I Right Click on StateSelector in global template explorer")
+    obj.clickOldStateSelectorapprovedinsaveas()
+        
 @when("I Click on Approved combo item in global template explorer")
 def step_impl():
     """I Right Click on Approved combo item in global template explorer"""

@@ -251,6 +251,10 @@ class GlobalTemplatesTabWorkFlow:
         """globaltemplatestab_obj.StateSelectorapprovedinsaveas"""
         GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.StateSelectorapprovedinsaveas.click() 
     
+    def clickOldStateSelectorapprovedinsaveas(self):
+        """globaltemplatestab_obj.StateSelectorapprovedinsaveas"""
+        GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.oldStateSelectorapprovedinsaveas.click() 
+    
     def clickapprovedcomboitem(self):
         """globaltemplatestab_obj.approvedcomboitem"""
         GlobalTemplatesTabWorkFlow.globaltemplatestab_obj.approvedcomboitem.click()

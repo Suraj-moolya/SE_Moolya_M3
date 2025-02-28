@@ -264,7 +264,7 @@ class RefineOfflineWorkFlow:
     def textboxrefineonlinewindowwaitinseconds(self):
         """textboxrefineonlinewindowwaitinseconds"""
         try:
-            Applicationutility.wait_in_seconds(2000,'Wait')
+            Applicationutility.wait_in_seconds(20000,'Wait')
         except Exception as ex:
             raise Exception(ex) from ex
         

@@ -49,7 +49,7 @@ Examples:
 @TC_EPE_EC_000
 @test000
 Scenario Outline: Deploy Changes for Controller M580 Standalone
-When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone'
+When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone3'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I click modal dialog window Instance editor save in application explorer as 'OK'
 When I selected Rename Pop up Ok in message box
