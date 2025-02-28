@@ -80,6 +80,7 @@ def step_impl():
     """I change the controller protection to disable"""
     Applicationutility.wait_in_seconds(2000, "wait")
     obj.clickstartenginecheckbox()
+    Applicationutility.wait_in_seconds(20000, "wait")
     
     
 @when("I close PLC Bus window in controller configuration window")

@@ -22,6 +22,18 @@ Then verify text in system server console Console in server console as '<Console
 Examples:
   | SlNo. | User name1     | Password2    | Console1                          |
   | 1     | SE_Moolya_Test | P@ssw0rd1234 | A user was successfully logged on |
+  
+@TC_EPE_SS_0002
+@test0002
+Scenario Outline: Enter Valid only password  and Login in SS
+When I entered Password in login page as '<Password2>'
+And I selected Log In in login page
+And I open system server console show hidden icon in windows explorer
+Then verify text in system server console Console in server console as '<Console1>'
+
+Examples:
+  | SlNo. | Password2    | Console1                    |
+  | 1     | P@ssw0rd1234 | A user session was unlocked |
 
 
 @TC_EPE_SS_0003
@@ -195,8 +207,8 @@ When I selected Console in server console as '<Console>'
 Then verify license in system server Console in server console
 
 Examples:
-|SlNo.|Console|content|
-|01|option2|NA|
+  | SlNo. | Console | content |
+  | 01    | option2 | NA      |
 
   
     
