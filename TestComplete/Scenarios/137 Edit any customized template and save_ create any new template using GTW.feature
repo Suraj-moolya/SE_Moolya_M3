@@ -10,6 +10,10 @@ And I selected save as composite editor in composite editor
 And I click on '<btn>' in the Save As window
 And I change the template name to '<name>' and version to '<version>' in the Save As window
 And I enter the description in the Save As window as '<desc>'
+And I Click on old State Selector in global template explorer
+And I Click on Approved combo item in global template explorer
+And I Click on State Selector in global template explorer
+And I Click on Approved combo item in global template explorer
 And I selected Save in save as windowo
 When I Close tab items EC main screen in engineering client as 'Sample'
 And I Close tab items EC main screen in engineering client as 'Global'

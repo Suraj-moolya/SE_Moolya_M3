@@ -175,6 +175,11 @@ class GlobalTemplatesTab(MapBase):
       return self.get_element("StateSelectorapprovedinsaveas_GlobalTemplatesTab")  
       
     @property
+    def oldStateSelectorapprovedinsaveas(self):
+      """oldStateSelectorapprovedinsaveas"""
+      return self.get_element("OldStateSelectorapprovedinsaveas_GlobalTemplatesTab")  
+      
+    @property
     def approvedcomboitem(self):
       """approvedcomboitem"""
       return self.get_element("approvedcomboitem_GlobalTemplatesTab") 
