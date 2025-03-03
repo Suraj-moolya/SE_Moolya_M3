@@ -70,6 +70,11 @@ Examples:
 Examples:
   | SlNo. | param                     | Button |
   | 1     | Folder_2$$M580_Standalone | OK     |
+  
+@Assign_Instance_from_Valvegp_1_to_different_Containers_in_PE
+Examples:
+  | SlNo. | param                      | Button |
+  | 1     | ValveGP_1$$M580_Standalone | OK     |
 
 
   

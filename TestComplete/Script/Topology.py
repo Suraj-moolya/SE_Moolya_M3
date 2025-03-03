@@ -79,5 +79,10 @@ class Topology(MapBase):
     def PasswordControlBoxtextbox(self):
         """PasswordControlBoxtextbox"""
         return self.get_element("PasswordControlBox_Topology")
+        
+    @property
+    def CheckAutomaticBlocking(self):
+        """PasswordControlBoxtextbox"""
+        return self.get_element("CheckAutomaticBlocking_Topology")
   
               

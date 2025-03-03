@@ -163,6 +163,7 @@ def step_impl(modalDialogWindow2):
 def step_impl(modalDialogWindow5):
     """I select ip adress from deploy project build TE Modal dialog window in message box as '<Modal dialog window5>'"""
     CommonUtil.write_text_file("\nWhen I select ip adress from deploy project build TE Modal dialog window in message box as \""+modalDialogWindow5+"\"")
+    Applicationutility.wait_in_seconds(10000,"Wait")
     obj.textboxmodaldialogwindowselectipadressfromdeployprojectbuildte(modalDialogWindow5)
   
 @when("I click modal dialog window Modal Dialog Window 1 in message box as {arg}")

@@ -534,6 +534,9 @@
 			 <UIControl Element="Workstationpropertywindow_Topology" Name="WPFObject('RadTreeView', '', 1)" Visible="True" Parent="EngineeringClient_" />
 			 <UIControl Element="Workstationport_Topology" Name="WPFObject('GroupBox', 'Parameters', 1)" Visible="True"  Parent="EngineeringClient_" />
 			 <UIControl Element="OutputWindowPanel_Topology" Name="Panel('Output Window')" Parent="EngineeringClient_" />
+			 <UIControl Element="CheckAutomaticBlocking_Topology" Name="Window('Button', 'Automatic blocking of service port on Standby CPU', 3)" Parent="EngineeringClient_" />
+			 
+			 
         </Component>
 		<Component name="GSD Addition">
              <UIControl Element="Homepage_GSDAddition" Name="Window('#32770', '*', 1)" Parent="Wizard_" />

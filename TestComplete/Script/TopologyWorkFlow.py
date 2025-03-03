@@ -525,3 +525,10 @@ class TopologyWorkFlow:
                     Topologyexplorerutility.Enter_Controller_Password_TE(param)
                 except Exception as ex:
                     raise Exception(ex) from ex
+                    
+    def checkboxcheckautomaticblocking(self):
+                """textboxnewpasswordboxentercontrollerpasswordte"""
+                try:
+                    TopologyWorkFlow.topology_obj.CheckAutomaticBlocking.object.Click()
+                except Exception as ex:
+                    raise Exception(ex) from ex

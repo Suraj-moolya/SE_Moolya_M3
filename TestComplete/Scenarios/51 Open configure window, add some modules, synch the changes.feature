@@ -37,6 +37,11 @@ Examples:
   | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$5 | Analog           | BME AHO 0412     |
   
+@Add_Communication_Module__BME_AHO_0412_Slot5_HART
+Examples:
+  | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$5 | Analog           | BME AHO 0412     |
+  
 @TC_EPE_TE_CS_0014B
 Scenario Outline: Open configure window, add Discrete modules
 When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'

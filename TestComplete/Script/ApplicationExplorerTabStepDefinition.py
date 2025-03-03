@@ -674,6 +674,7 @@ def step_impl(action):
 def step_impl(yes):
     """I click modal dialog window Instance editor save in application explorer as 'Yes'"""
     CommonUtil.write_text_file("\nWhen I click modal dialog window Instance editor save in application explorer as 'Yes'")
+    Applicationutility.wait_in_seconds(10000,"Wait")
     obj.buttoninstanceeditorsaveclickmodaldialogwindow(yes)
     
 @when("I drag template in application browser Link Editor as {arg}")

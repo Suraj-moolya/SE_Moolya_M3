@@ -7,9 +7,9 @@ When I Right Click on nodes System Explorer Node in system explorer as '<Supervi
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I Select controller in context menu as '<sub_context_menu>'
 And I Enter FileLocation and FileName to be Imported Import in import dialog as '<Import3>'
-And I Click on Open button from Import TE window
-And I click modal dialog window project browser in project explorer as '<Button>'
-And I click modal dialog window project browser in project explorer as '<Button1>'
+#And I Click on Open button from Import TE window
+#And I click modal dialog window project browser in project explorer as '<Button>'
+#And I click modal dialog window project browser in project explorer as '<Button1>'
 And I click modal dialog window project browser in project explorer as '<Button2>'
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser8>'
 

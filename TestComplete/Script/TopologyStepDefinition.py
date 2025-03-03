@@ -500,3 +500,9 @@ def step_impl(confirmPasswordBox3):
     """I Enter Controller Password deploy screen TE Confirm Password box in topology as '<Confirm Password box3>'"""
     CommonUtil.write_text_file("\nWhen I Enter Controller Password deploy screen TE Confirm Password box in topology as \""+confirmPasswordBox3+"\"")
     obj.textboxconfirmpasswordboxentercontrollerpassworddeployscreente(confirmPasswordBox3)
+    
+@when("I Double click on the Automatic blocking of service port on standby CPU in service port")
+def step_impl():
+    """I Double click on the Automatic blocking of service port on standby CPU in service port"""
+    CommonUtil.write_text_file("\nWhen I Double click on the Automatic blocking of service port on standby CPU in service port")
+    obj.checkboxcheckautomaticblocking()
