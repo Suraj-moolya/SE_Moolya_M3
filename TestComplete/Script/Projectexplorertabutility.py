@@ -585,6 +585,7 @@ def verify_facet_assignment_state1(facet_names, generation_state):
     Log.Message(f'Checking facet {facet_name} for generation state {generation_state}')
     for facet in facet_list:
       if facet.Visible:
+
         if facet_name in facet.DataContext.Identifier.OleValue:
           if generation_state in facet.DataContext.AssignmentState.OleValue:
             Log.Checkpoint(f'The facet {facet.DataContext.Identifier.OleValue} has AssignmentState state as {facet.DataContext.AssignmentState.OleValue}') 

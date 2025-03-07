@@ -694,7 +694,7 @@ def delete_all_folder_system_ord_EC():
           
 def close_Message_Window():
     inspect_win = msg_obj.renamepopupbutton
-    inspect_win.click_at(inspect_win.width-30, 30)
+    inspect_win.click_at(inspect_win.width-25, 25)
     Applicationutility.take_screenshot()   
  
 def Wait_import_conflict_dialog_AE():

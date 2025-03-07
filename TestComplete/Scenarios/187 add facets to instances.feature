@@ -26,7 +26,7 @@ When I click modal dialog window project browser in project explorer as '<Button
 Then I verify the section is generated successfully as '<facet_name>' '<generation_state>'
 Examples:
   | SlNo. | facet_name        | instance_names         | button_name | tabname   | container dock1    | generation_state | Button |
-  | 1     | MotorGP_1_MotorGP | Running$$Fail$$Stopped | Yes         | MotorGP_1 | System_1$$Generate | OutOfDate        | Yes    |
+  | 1     | MotorGP_1_MotorGP | Running$$Fail$$Stopped | Yes         | MotorGP_1 | System_1$$Generate | Out Of Date         | Yes    |
   
   
 @TC_EPE_SWF_0014

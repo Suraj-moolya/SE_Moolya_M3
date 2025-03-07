@@ -165,6 +165,23 @@ Examples:
 Examples:
   | Button | tabname     |
   | OK     |Project Explorer |
+  
+@close_Topology_explorer
+Examples:
+  | Button | tabname     |
+  | OK     |Topology Explorer |
+@close_Application_explorer
+Examples:
+  | Button | tabname     |
+  | OK     |Application Explorer |
+@close_Global_Templates_explorer
+Examples:
+  | Button | tabname     |
+  | OK     |Global Templates Explorer |
+@close_Content_Repository_explorer
+Examples:
+  | Button | tabname     |
+  | OK     |Content Repository|
 
 
   

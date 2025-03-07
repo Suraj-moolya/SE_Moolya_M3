@@ -360,7 +360,9 @@ def step_impl(container):
 def step_impl(facet_names, generation_state):
     """I verify the section is generated successfully as '<param>'"""
     CommonUtil.write_text_file("\nThen I verify the section is generated successfully as \""+facet_names+generation_state+"\"")
-    obj.verifyassignmentsstate(facet_names, generation_state)
+	Applicationutility.take_screenshot()    
+	obj.verifyassignmentsstate(facet_names, generation_state)
+    Applicationutility.take_screenshot()
     
 @when(r"Right Click on any one of the Facet in Assignments Section of PE-Container and Click Go Into Instance as '(.*)' and perform '(.*)'")
 def step_impl(facet_name, action):
