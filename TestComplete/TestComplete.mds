@@ -6028,11 +6028,6 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1" key="{3E9B346A-1C3D-4A9E-8677-61EEC70459BD}" group="False" parallel="False" enabled="False" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
 					<testItem name="ProjectTestItem96" key="{4B0EEDFA-70CB-4141-A464-089077F5B5CC}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|click on Basic Settings in SS Console" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
@@ -7193,11 +7188,6 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem40_2_1_1_2_1" key="{7045ABE7-CD0B-4965-B189-40BDC00D179F}" group="False" parallel="False" enabled="True" load="False" testMoniker="66 Do some modification in configure and deploy the project to controller|Save and Close configuration with configuration pop up" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
 					<testItem name="TC_EPE_EC_0040_1_2_2_1_1_1_2_1" key="{B18048BB-34AB-4EF6-9668-13365310CA71}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
@@ -7269,11 +7259,6 @@
 						<children />
 					</testItem>
 					<testItem name="TC_EPE_EC_0023_2_1_1_1_1_1_1_1" key="{F56DA22C-1ADE-4C58-AF8F-E55D80443FD9}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Application Explorer(AE)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_AE_0018_2_1_1_1_2_2_2_1" key="{0808426D-0601-4411-A11B-923458CE03B4}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Search Template in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
