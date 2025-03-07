@@ -10696,7 +10696,7 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem1_24_5_1_1_2_1_1_2_1_2_2_1_1_1_1" key="{81FE7102-AE7B-4F96-9C76-6B5486E17FEF}" group="False" parallel="False" enabled="True" testMoniker="148 Add instances to container and generate the section|Double Click on Container sections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+					<testItem name="ProjectTestItem1_24_5_1_1_2_1_1_2_1_2_2_1_1_1_1" key="{81FE7102-AE7B-4F96-9C76-6B5486E17FEF}" group="False" parallel="False" enabled="True" testMoniker="*|@Double_Click_Containers" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -10866,12 +10866,12 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem49_1_2_1_1" key="{46F657E6-9783-4CC3-BC39-AF5206F92B00}" group="False" parallel="False" enabled="True" testMoniker="*|@Check_Backup_Data__182.233.65.1__M580_Standalone3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="ProjectTestItem49_1_2_1_2" key="{1EE99399-5B90-4A22-BA8B-367C1B03E016}" group="False" parallel="False" enabled="True" testMoniker="*|@Check_Backup_Data__182.233.63.1__M580_Standalone3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
-					<testItem name="ProjectTestItem50_1_2_1_1" key="{5C56E477-C426-4065-AA2D-C75BD4B1A122}" group="False" parallel="False" enabled="True" testMoniker="*|@Check_Deploy_Data__182.233.65.1__M580_Standalone3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="ProjectTestItem50_1_2_1_2" key="{7E96A8FD-8764-48A8-AAF5-52A64B06C4D7}" group="False" parallel="False" enabled="True" testMoniker="*|@Check_Deploy_Data__182.233.63.1__M580_Standalone3" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
