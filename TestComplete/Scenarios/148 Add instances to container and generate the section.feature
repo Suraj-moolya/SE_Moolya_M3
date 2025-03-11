@@ -16,6 +16,7 @@ And I Verify the facet generation status of all facets in Assignments Dock
 Examples:
   | SlNo. | containerinstance | contextmenu_item |
   | 1     | ControlProject_1  | Generate         |
+
 @TC_EPE_PE_CP_00
 Scenario Outline: Double Click on Container sections
 When I Dclick Control project broswer project browser in project explorer as '<projectBrowser1>'
