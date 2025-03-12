@@ -33,6 +33,7 @@ def step_impl():
     """I selected Create Folder in context menu"""
     CommonUtil.write_text_file("\nWhen I selected Create Folder in context menu")
     obj.buttoncreatefolderselected()
+    Applicationutility.wait_in_seconds(1000,"Wait")
   
 @then("verify system and folder created System Explorer Node in system explorer")
 def step_impl():

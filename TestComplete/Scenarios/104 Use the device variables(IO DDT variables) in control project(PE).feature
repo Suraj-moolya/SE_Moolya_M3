@@ -12,8 +12,8 @@ And I selected Device DDT popup moveall CE in elemetary variables
 And I click modal dialog window Modal dialog window in message box as '<Modal dialog window3>'
 
 Examples:
-|SlNo.|Project Browser RO1|Modal dialog window2|Modal dialog window3|content|
-|1|Variables & FB instances$$Elementary Variables|Next|OK|NA|
+  | SlNo. | Project Browser RO1                            | Modal dialog window2 | Modal dialog window3 | content |
+  | 1     | Variables & FB instances$$Elementary Variables | Next                 | OK                   | NA      |
 
 
 #Total No. of Test Cases :1

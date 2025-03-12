@@ -25,12 +25,12 @@ Examples:
   
 @Map_the_logical_network_-_edit_IP_Address__182.233.63.1
 Examples:
-  | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4                   |
-  | 1     | Main IP address$$182.233.63.1 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.3 | Gateway address$$182.233.63.0 |
+  | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4              |
+  | 1     | Main IP address$$182.233.63.1 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.3 | Gateway address$$0.0.0.0 |
   
 @Map_the_logical_network_-_edit_IP_Address__182.233.63.8
 Examples:
-  | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4                   |
+  | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4              |
   | 1     | Main IP address$$182.233.63.8 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.9 | Gateway address$$0.0.0.0 |
 
 

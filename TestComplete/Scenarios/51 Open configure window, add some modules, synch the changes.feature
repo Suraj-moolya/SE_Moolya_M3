@@ -31,11 +31,13 @@ Examples:
 @Add_Analog_Module__BMX_AMI_0812_Slot4_HART
 Examples:
   | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
-  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$4 | Analog           | BME AHI 0812     | 
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$4 | Analog           | BME AHI 0812     |
 @Add_Analog_Module__BME_AHO_0412_Slot5_HART
 Examples:
   | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$5 | Analog           | BME AHO 0412     |
+  
+
   
 @Add_Communication_Module__BME_AHO_0412_Slot5_HART
 Examples:

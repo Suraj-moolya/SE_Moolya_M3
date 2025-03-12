@@ -33,6 +33,7 @@ def step_impl(button):
     """I click the "<button>" button in duplicate file window"""
     CommonUtil.write_text_file(f"\nWhen I click the '{button}' button in duplicate file window")
     obj.handleduplicatefileingsdwindow(button)
+    Applicationutility.wait_in_seconds(20000, "waiting")
     
 @when("I select the {arg} in delete device library window")
 def step_impl(file_name):

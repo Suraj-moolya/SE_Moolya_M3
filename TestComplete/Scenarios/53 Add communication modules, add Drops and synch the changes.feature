@@ -57,6 +57,23 @@ And I selected Properties of device OK CE in control expert
 Examples:
   | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$6 | Communication    | BME NOC 0301.4   |
+  
+@TC_EPE_TE_CS_0014A
+Scenario Outline: Open configure window, add Communication modules modules
+When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser RO1>'
+And I enterkey Project Browser RO in refine offline
+And I Dblclick dialog panel item CE Dialog Panel CE in dialog ce as '<Dialog Panel CE3>'
+And I Click dialog panel item CE Dialog Panel CE in dialog ce as '<Dialog Panel CE4>'
+And I selected Dialog OK CE in dialog ce 
+And I selected Dialog OK CE in dialog ce 
+And I selected List of modified Yes button CE in dialog ce
+And I selected Dialog OK CE in dialog ce 
+And I selected Dialog OK CE in dialog ce 
+And I selected Dialog OK CE in dialog ce 
+@Add_Communication_Module__BME_NOC_0301_Slot2_HART
+Examples:
+  | SlNo. | Project Browser RO1                             | Dialog Panel CE3 | Dialog Panel CE4 |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$2 | Communication    | BME NOC 0301.2   |
 
   
 
