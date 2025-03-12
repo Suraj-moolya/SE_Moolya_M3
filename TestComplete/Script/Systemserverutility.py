@@ -16,6 +16,7 @@ ses_obj = SystemExplorerScreen()
 proj_obj = ProjectExplorerTab()
 msg_obj = MessageBox()
 
+  
 def system_server_icon_rclick_on(element): 
   Applicationutility.wait_in_seconds(1000, 'wait')
   win_obj.showhiddeniconbutton.object.Click()
@@ -267,20 +268,20 @@ def check_server_ready():
       
 def check_server_stop():
   console_obj = server_obj.consolewindow.object
-  console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 50)
+  console_list = console_obj.FindAllChildren("ClrClassName", "FlowDocument", 1000)
   for _ in range(600):
     check_text = str(console_list[0].Blocks.LastBlock.WPFControlText)
-    if Systemserverutility.check_whole_flowdocument('Server is stopped'):
-      Applicationutility.take_screenshot()
-      break
-    elif 'Server is ready' in check_text:
+#    if Systemserverutility.check_whole_flowdocument('Server is stopped'):
+#      Applicationutility.take_screenshot()
+#      break
+    if 'Server is stopped' in check_text:
       Log.Checkpoint(check_text)
       Applicationutility.take_screenshot()
       break
     else:
       Applicationutility.wait_in_seconds(1000, 'Wait for server Stopped !')
       console_obj.Refresh()
-  system_server_icon_rclick_on('Exit')
+#  system_server_icon_rclick_on('Exit')
       
       
 def Click_on_Tab_Enter():

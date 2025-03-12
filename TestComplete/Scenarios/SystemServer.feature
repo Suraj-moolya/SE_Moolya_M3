@@ -58,8 +58,8 @@ Examples:
   
 @TC_EPE_SS_0004
 @test0004
-Scenario Outline: Open SS from system tray and click on SS stop and wait for SS stop 
-When I open system server console show hidden icon in windows explorer
+Scenario Outline: Open SS from system tray and click on SS stop and wait for SS stop
+#When I select from system server icon Console in server console as 'Stop'
 When I selected Action Menu in action
 And I selected Stop server in action
 And I click on tab and enter
