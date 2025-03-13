@@ -1,4 +1,4 @@
-"""WindowsExplorerWorkFlow"""
+﻿"""WindowsExplorerWorkFlow"""
 from WindowsExplorerWorkFlow import WindowsExplorerWorkFlow
 import CommonUtil
 import Applicationutility
@@ -11,6 +11,7 @@ def step_impl():
     """I open system server console show hidden icon in windows explorer"""
     CommonUtil.write_text_file("\nWhen I open system server console show hidden icon in windows explorer")
     obj.buttonshowhiddeniconopensystemserverconsole()
+    Applicationutility.wait_in_seconds(2000, 'Wait')
   
 @when("I launch Engineering Client Windows in windows explorer")
 def step_impl():

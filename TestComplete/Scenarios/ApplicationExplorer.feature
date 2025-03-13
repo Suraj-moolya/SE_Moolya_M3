@@ -762,3 +762,29 @@ Examples:
   | SlNo. | Templates browser1 | Templates browser2               |
   | 1     | INTERLOCK8OFFGP    | INTERLOCK8OFFGP$$1.0.5$$Folder_1 |
   | 2     | ValveGP            | ValveGP$$1.0.100                 |
+  
+  
+@TC_EPE_AE_0000
+@test0000
+@TC_EPE_AE_0000
+Scenario Outline: Search Template in Template browser and Drag and drop from template browser to folder structure in application browser GenericDeviceGP_1
+When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
+And I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'
+Then Verify the template is present in Application browser as '<Templates browser1>'
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2             |
+  | 1     | GenericDeviceGP    | GenericDeviceGP$$1.0.5$$System |
+  
+  
+@TC_EPE_AE_0021
+@test0021
+Scenario Outline: Rename instance GenericDeviceGP - GDGP
+When I rclick application browser template AE Application browser in application explorer as '<Application browser4>'
+And I Select context menu item EC Application browser in application explorer as '<Application browser5>' 
+And I Rename the Insatnce to the requirement '<Name1>'
+And I clicked Enter in keyboard shortcut
+Then verify the status of the instance
+ 
+Examples: 
+  | SlNo. | Application browser4   | Application browser5 | Name1 |
+  | 1     | GenericDeviceGP$$1.0.5 | Rename               | GDGP  |

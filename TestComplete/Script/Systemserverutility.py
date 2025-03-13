@@ -75,7 +75,7 @@ def verify_start_stop_disabled():
           
 def rclick_system_server_show_server_console(): 
   win_obj.showhiddeniconbutton.object.Click()
-  aqUtils.Delay(1500)
+  Applicationutility.wait_in_seconds(2500, "Wait")
   notification_area = win_obj.notificationareawindow.object
   for i in range(notification_area.wButtonCount):
     if 'EcoStruxure Process Expert - System Server' in str(notification_area.wButtonText[i]):

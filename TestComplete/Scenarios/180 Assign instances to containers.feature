@@ -75,6 +75,12 @@ Examples:
 Examples:
   | SlNo. | param                      | Button |
   | 1     | ValveGP_1$$M580_Standalone | OK     |
+  
+@Assign_Instance_from_GDGP_to_different_Containers_in_PE
+Examples:
+  | SlNo. | param                 | Button |
+  | 1     | GDGP$$M580_Standalone | OK     |
+
 
 
   
