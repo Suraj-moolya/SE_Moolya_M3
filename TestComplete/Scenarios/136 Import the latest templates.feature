@@ -12,4 +12,4 @@ Then Verify Action message in notification pannel project browser in project exp
 
 Examples:
   | SlNo. | context menu | path                                                   | folder            | file        | Button | message |
-  | 1     | Import       | C:\ProgramData\Schneider Electric\Process Expert 2025\ | Templates Classic | Devices.sbk | OK     | Import  |
+  | 1     | Import       | C:\ProgramData\Schneider Electric\Process Expert 2025\ | Templates Classic | Devices.sbk | Cancel | Import  |
