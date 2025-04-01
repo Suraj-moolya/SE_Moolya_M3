@@ -11088,7 +11088,7 @@
 			<testItem name="EX-4" key="{C389FC9A-A3E2-4B1A-925B-7067E83FE0BB}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
-					<testItem name="Launch System Server, set CE tool slots to 4, clear database, wait for System Server Ready, and Launch Engineering Client" key="{340185DE-378E-4D74-B78A-68862B67D665}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Launch System Server, set CE tool slots to 4, clear database, wait for System Server Ready, and Launch Engineering Client" key="{340185DE-378E-4D74-B78A-68862B67D665}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="TC_EPE_SS_0001_3_1_1_1_1_1_1_1_1" key="{ECB9E03A-1CD7-4CD1-A596-A80E74A8E6FB}" group="False" parallel="False" enabled="False" load="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
