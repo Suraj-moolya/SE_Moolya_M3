@@ -10,3 +10,5 @@ Log/
 
 # Ignore backup files
 *.bak
+
+*.idea
