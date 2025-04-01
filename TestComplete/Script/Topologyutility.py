@@ -20,6 +20,12 @@ refoff_obj = RefineOffline()
 topo_obj = TopologyExplorerTab()
 msg_obj = MessageBox()
 
+###############################################################################
+# Function : search_template_browser_EC
+# Description : Searches for a template in the browser using the provided text.
+# Parameter : search_text (str) - Text to search for in the template browser.
+# Example : search_template_browser_EC("Modbus TCP Device")
+###############################################################################
 def search_template_browser_EC(search_text):
   temp_browser = msg_obj.exportpopupbutton.object
   Uc_Browser = temp_browser.Find(('ClrClassName','SearchLabelText'), ('UcBrowser','Search Modbus TCP Device I/O Templates'), 10)
@@ -28,8 +34,14 @@ def search_template_browser_EC(search_text):
   Sys.Keys(search_text)
   Log.Message(search_text + " is searched")
   Delay(2000,"Wait")
-  
-def Select_template_EC (param):
+
+###############################################################################
+# Function : Select_template_EC
+# Description : Selects a template from the list based on the template name and version.
+# Parameter : param (str) - Template name and version separated by "$$".
+# Example : Select_template_EC("TemplateName$$1.0")
+###############################################################################
+def Select_template_EC(param):
   template,version = param.split('$$')
   template_list = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
   for i in range(len(template_list)):
@@ -40,10 +52,15 @@ def Select_template_EC (param):
               Log.Message(template + " is double clicked")
               Delay(3000)
               break
-              
+
+###############################################################################
+# Function : DblClick_template_TE
+# Description : Double-clicks a template in the template explorer.
+# Parameter : temp_name (str) - Name of the template to double-click.
+# Example : DblClick_template_TE("ETesysTHW")
+###############################################################################
 def DblClick_template_TE(temp_name):
-#  temp_name = "ETesysTHW"
-  temp_list = proj_obj.assignmentsdocktextbox.find_children_for_grid_view_row()#object.FindAllChildren('ClrClassName', 'GridViewRow', 1000)
+  temp_list = proj_obj.assignmentsdocktextbox.find_children_for_grid_view_row()
   for temp in temp_list:
     if temp.Visible:
       if temp_name in temp.DataContext.Identifier.OleValue:
@@ -51,8 +68,14 @@ def DblClick_template_TE(temp_name):
           Log.Checkpoint(f'{temp.DataContext.Identifier.OleValue} is double clicked') 
           break
   else:
-    Log.Warning(f'The {temp_name} is not present')        
- 
+    Log.Warning(f'The {temp_name} is not present')
+
+###############################################################################
+# Function : Expand_communication_tab_TE
+# Description : Expands the "Communication" tab in the system explorer.
+# Parameter : val (str) - Tab name to expand (default is "Communication").
+# Example : Expand_communication_tab_TE("Communication")
+###############################################################################
 def Expand_communication_tab_TE(val):
   val = "Communication"
   sections = syse_obj.systemexplorernodebutton.object.FindAllChildren("ClrClassName","GroupHeaderRow",1000)
@@ -63,15 +86,19 @@ def Expand_communication_tab_TE(val):
       break
   else:
     Log.Warning(f'{val} not found')
-    
+
+###############################################################################
+# Function : edit_IP_Address
+# Description : Edits the IP address of a specific device in the system explorer.
+# Parameter : param (str) - Device name and new IP address separated by "$$".
+# Example : edit_IP_Address("DeviceName$$192.168.1.1")
+###############################################################################
 def edit_IP_Address(param):
     name,IP_add =  param.split('$$')
     grid_row_obj = syse_obj.systemexplorernodebutton.object.FindAllChildren("ClrClassName", "GridViewRow", 1000)  
     for grid_row in grid_row_obj:
-      #Sys.HighlightObject(grid_row,1)  
       grid_cell_obj = grid_row.FindAllChildren("ClrClassName", "GridViewCell", 100)
       for cell_val in grid_cell_obj:
-        #Sys.HighlightObject(cell_val,1)
         if name in cell_val.WPFControlText:
           grid_row.DataContext.Expression = IP_add         
           if grid_row.DataContext.Expression == IP_add:
@@ -79,7 +106,7 @@ def edit_IP_Address(param):
             break
           else:  
             Log.Warring(name + " is updated not as " + IP_add)
-               
+
 def RClick_template_TE(temp_name):
 #  temp_name = "ETesysTHW"
   temp_list = proj_obj.assignmentsdocktextbox.find_children_for_grid_view_row()#object.FindAllChildren('ClrClassName', 'GridViewRow', 1000)
@@ -118,11 +145,6 @@ def Select_IP_from_ControlProjectDeployment(IP_address):
       break
   else:
     Log.Message(f'{IP_address} did not exist in Dropdown option')
-    
-    
-def sggsg():
-  Select_IP_from_ControlProjectDeployment("Slot NIC_1 {127.0.0.1:503}")
-
 
 def select_latest_backup_data_TE():
   obj = Sys.Process("EngineeringClient").WPFObject("HwndSource: ModalDialogWindow", "").WPFObject("ModalDialogWindow", "", 1).WPFObject("RestoreDataConfirmationPanel", "", 1).WPFObject("Grid", "", 1).WPFObject("GroupBox", "Select Backup Data", 3).WPFObject("SelectionGrid")
@@ -204,7 +226,13 @@ def Verify_error_messages_in_Console(text):
       break
   else:
     Log.Message(f'{text} error messages not displayed in Console')
-    
+
+###############################################################################
+# Function : Enter_Controller_Password_deploy_screen_TE
+# Description : Enters the controller password on the deployment screen.
+# Parameter : password (str) - Password to be entered.
+# Example : Enter_Controller_Password_deploy_screen_TE("password123")
+###############################################################################
 def Enter_Controller_Password_deploy_screen_TE(password):
       PW_box = topology_obj.PasswordControlBoxtextbox   
       PW_box.enter_password(password)
