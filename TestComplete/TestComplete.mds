@@ -11125,7 +11125,7 @@
 							</testItem>
 							<testItem name="TC_EPE_SS_0009_3_1_1_1" key="{8A09C95F-22D0-4D89-81C7-E142FFD3249D}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|CE tool slot management - Enter 4 Instance of CE and start the system server" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
-			S					<environments activeCloud="SWT" />
+								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
 							<testItem name="TC_EPE_EC_0001_2_1_1_1_1_1_1_1_1" key="{5C38F368-58DD-4145-BE9B-7FFC7A4DD1FA}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
