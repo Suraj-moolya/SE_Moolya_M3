@@ -11088,7 +11088,7 @@
 			<testItem name="EX-4" key="{C389FC9A-A3E2-4B1A-925B-7067E83FE0BB}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 				<testParameters />
 				<children>
-					<testItem name="Launch System Server, set CE tool slots to 4, clear database, wait for System Server Ready, and Launch Engineering Client" key="{340185DE-378E-4D74-B78A-68862B67D665}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Launch System Server, set CE tool slots to 4, clear database, wait for System Server Ready, and Launch Engineering Client" key="{340185DE-378E-4D74-B78A-68862B67D665}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="TC_EPE_SS_0001_3_1_1_1_1_1_1_1_1" key="{ECB9E03A-1CD7-4CD1-A596-A80E74A8E6FB}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11101,13 +11101,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1_2_1_1" key="{E75C1C97-9F38-4C93-A201-1F1FCB8FD250}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-								<testParameters />
-								<environments activeCloud="SWT" />
-								<children />
-							</testItem>
 							<testItem name="ProjectTestItem97_1_1_3" key="{03797F16-9882-481A-B098-C29D7EE2ED72}" group="False" parallel="False" enabled="True" load="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -11117,7 +11111,6 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-
 							<testItem name="TC_EPE_SS_0008_4_1_1_1" key="{53512F75-E3CD-4173-8888-0278C53306BF}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open hosting in basic settings in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
@@ -11135,7 +11128,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Creation of folder, system_1_1" key="{DEB4AB40-EA24-4EFB-92D8-160FE9924F3B}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Creation of folder, system_1_1" key="{DEB4AB40-EA24-4EFB-92D8-160FE9924F3B}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="Creation of System By Right clicking on System_1_2" key="{8B29D18D-5474-4DDA-8181-EEEC2265E730}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11200,7 +11193,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Navigate to Explorers" key="{10E12DEA-B31D-4842-92EC-844602675ADE}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Navigate to Explorers" key="{10E12DEA-B31D-4842-92EC-844602675ADE}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem122_1_1_2" key="{149BAC9C-19F5-4C49-B639-875F31F8467F}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11240,7 +11233,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Nav to AE, Application Explorer Test cases" key="{967C2B03-E243-4145-9D6F-8E6194184B49}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Nav to AE, Application Explorer Test cases" key="{967C2B03-E243-4145-9D6F-8E6194184B49}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="TC_EPE_EC_0023_2_1_1_1_1_1_1_2_1_1" key="{2E84120C-314D-4030-BB65-3D4C18C02760}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Application Explorer(AE)" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11325,7 +11318,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Nav TE, controllers, DTM" key="{659FC2DF-DF4A-4012-8F48-8FAA75A853DE}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Nav TE, controllers, DTM" key="{659FC2DF-DF4A-4012-8F48-8FAA75A853DE}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem12_2_1_2_2_1_1" key="{4F5CAE4C-A383-4010-A165-89DFF2851F5E}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11465,7 +11458,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Nav to PE, new control project" key="{D9D93B4B-DC16-4C8F-A16E-A615ACE6CECF}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Nav to PE, new control project" key="{D9D93B4B-DC16-4C8F-A16E-A615ACE6CECF}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem128_2_2" key="{64DE6152-A2F2-4423-9513-967CA66A4FA4}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar by selecting system" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11590,7 +11583,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="PE, AE import export" key="{B27DECC8-83AE-4070-8CF0-164F5500E945}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="PE, AE import export" key="{B27DECC8-83AE-4070-8CF0-164F5500E945}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem128_1_2_1" key="{34740933-97EE-4974-9CEA-10F2E837DC3D}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -11675,7 +11668,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Workstation, controllers. P2P" key="{9CAA0203-F532-44C0-9B61-C4044F0BC233}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Workstation, controllers. P2P" key="{9CAA0203-F532-44C0-9B61-C4044F0BC233}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem2_4_1_1" key="{0B6991D4-681C-417E-9BC3-F4BE695733FF}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Project Explorer(PE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -12210,7 +12203,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Controller, deploy, check etc" key="{B5F766AB-64BE-4EC6-9749-178D812301C2}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="Controller, deploy, check etc" key="{B5F766AB-64BE-4EC6-9749-178D812301C2}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem149_1_1" key="{9149F36C-1C1B-4281-BC0D-22D5F9C77AC0}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -12380,7 +12373,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="GTE" key="{204D9E35-A579-4DBA-A827-45DAD89D7991}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="GTE" key="{204D9E35-A579-4DBA-A827-45DAD89D7991}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem38_7_1_1_1" key="{8E3FC7AC-B6AC-4336-A5F0-1F70C63EF714}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
@@ -12480,30 +12473,30 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Group4" key="{E3035C5C-A9D9-4E7C-9CD1-6E989542EE52}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="System password" key="{E3035C5C-A9D9-4E7C-9CD1-6E989542EE52}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
-							<testItem name="ProjectTestItem122_1_1_3" key="{B85678FB-1DF1-4F6A-89A8-F6F51A439FED}" group="False" parallel="False" enabled="False" load="False" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem122_1_1_3" key="{B85678FB-1DF1-4F6A-89A8-F6F51A439FED}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem191" key="{848575DF-4FA1-47DC-AC20-FEC7B1BD0316}" group="False" parallel="False" enabled="False" load="False" testMoniker="4 System Password protection|Set and enable System Access Password while creating System" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem191" key="{848575DF-4FA1-47DC-AC20-FEC7B1BD0316}" group="False" parallel="False" enabled="True" load="False" testMoniker="4 System Password protection|Set and enable System Access Password while creating System" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem197" key="{BDE276C5-7AD3-422C-A999-93DCC9584C0E}" group="False" parallel="False" enabled="False" load="False" testMoniker="4 System Password protection|Enable System Access Password from Properties" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem197" key="{BDE276C5-7AD3-422C-A999-93DCC9584C0E}" group="False" parallel="False" enabled="True" load="False" testMoniker="4 System Password protection|Enable System Access Password from Properties" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem198" key="{08B33465-FA2A-45AF-AB18-C5E9CD104D1B}" group="False" parallel="False" enabled="False" load="False" testMoniker="4 System Password protection|Set System Access Password" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem198" key="{08B33465-FA2A-45AF-AB18-C5E9CD104D1B}" group="False" parallel="False" enabled="True" load="False" testMoniker="4 System Password protection|Set System Access Password" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem201" key="{744E0309-AA27-4AED-B415-4F13D73FA836}" group="False" parallel="False" enabled="False" load="False" testMoniker="{001ABD02-E136-4837-B290-55898E939DEF}close_x_EC" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem201" key="{744E0309-AA27-4AED-B415-4F13D73FA836}" group="False" parallel="False" enabled="True" load="False" testMoniker="{001ABD02-E136-4837-B290-55898E939DEF}close_x_EC" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -12519,66 +12512,6 @@
 								<children />
 							</testItem>
 						</children>
-					</testItem>
-				</children>
-			</testItem>
-			<testItem name="Group2" key="{86123FDF-751A-4387-9F2D-CA4BF6A70909}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<children>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1_2_1_2_1_1" key="{E33C78E2-DB6D-4896-8DCC-398B4AC2E29C}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem197_1_1" key="{D6E482AB-964A-4E39-A340-B5B832099A70}" group="False" parallel="False" enabled="True" load="False" testMoniker="AS10 User login and logout for System server|Logout for System server" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_AS_0010_1_1_1_1_1" key="{28881736-E512-4A8A-A768-AB7102857365}" group="False" parallel="False" enabled="True" load="False" testMoniker="AS10 User login and logout for System server|Click on Username Icon and select Login" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0002_4_1_1_1_1_1" key="{D2C5459B-8366-45F2-95B1-4EFC76352E50}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Enter Valid password and Login in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem198_2_1" key="{D7A071E3-8744-4ADE-9AA1-C0CF1F398758}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray and click on SS stop and wait for SS stop" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem96_1_1_1_1" key="{1D623C27-7070-4342-826E-A519541355D6}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|click on Basic Settings in SS Console" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0008_4_1_1_1_1" key="{9A8A2C68-8348-4B70-9D1A-F23D144B4090}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open hosting in basic settings in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0009_3_1_1_1_1" key="{8C289499-6340-4DFA-92EF-F454EDBB00E0}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|CE tool slot management - Enter 4 Instance of CE and start the system server" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1_2_1_1_1_1" key="{A0B617E8-5B0A-4CBE-B4F3-E8D7A53A6451}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem198_1_1_1" key="{38CDBA47-E15C-494E-8318-48D78D8872BE}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray and click on SS stop and wait for SS stop" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
-					</testItem>
-					<testItem name="ProjectTestItem97_1_1_1" key="{9E8F75B8-6A36-410F-B58D-D4E2C2349282}" group="False" parallel="False" enabled="True" load="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-						<testParameters />
-						<environments activeCloud="SWT" />
-						<children />
 					</testItem>
 				</children>
 			</testItem>
@@ -14236,10 +14169,6 @@
 						<children />
 					</testItem>
 				</children>
-			</testItem>
-			<testItem name="Group3" key="{BEF83B68-1148-4D2F-BF72-AB5EC26064EE}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
-				<testParameters />
-				<children />
 			</testItem>
 		</children>
 	</testItems>
