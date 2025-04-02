@@ -11101,12 +11101,13 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1_2_1_1" key="{E75C1C97-9F38-4C93-A201-1F1FCB8FD250}" group="False" parallel="False" enabled="False" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="TC_EPE_SS_0003_1_1_1_1_1_1_1_2_1_1" key="{E75C1C97-9F38-4C93-A201-1F1FCB8FD250}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open SS from system tray" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
 							<testItem name="ProjectTestItem97_1_1_3" key="{03797F16-9882-481A-B098-C29D7EE2ED72}" group="False" parallel="False" enabled="True" load="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -11116,6 +11117,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
+
 							<testItem name="TC_EPE_SS_0008_4_1_1_1" key="{53512F75-E3CD-4173-8888-0278C53306BF}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|Open hosting in basic settings in SS" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
@@ -11123,7 +11125,7 @@
 							</testItem>
 							<testItem name="TC_EPE_SS_0009_3_1_1_1" key="{8A09C95F-22D0-4D89-81C7-E142FFD3249D}" group="False" parallel="False" enabled="True" load="False" testMoniker="SystemServer|CE tool slot management - Enter 4 Instance of CE and start the system server" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
-								<environments activeCloud="SWT" />
+			S					<environments activeCloud="SWT" />
 								<children />
 							</testItem>
 							<testItem name="TC_EPE_EC_0001_2_1_1_1_1_1_1_1_1" key="{5C38F368-58DD-4145-BE9B-7FFC7A4DD1FA}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Launch Engineering Client" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
