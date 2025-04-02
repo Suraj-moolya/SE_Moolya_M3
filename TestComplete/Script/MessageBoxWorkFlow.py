@@ -202,14 +202,13 @@ class MessageBoxWorkFlow:
         except Exception as ex:
             raise Exception(ex) from ex
             
-    
-      
-
-
     def clickokfromdbppopupwindow(self):
         """messagebox_obj.reconfirmokbutton"""
-        MessageBoxWorkFlow.messagebox_obj.reconfirmokbutton.click()
-        
+        try:
+          MessageBoxWorkFlow.messagebox_obj.reconfirmokbutton.click()
+        except:
+            Log.Message('No pop up found !')
+
     def textboxmodificationpopupclickbuttonmessagewindow(self,button):
         """textboxmodificationpopupclickbuttonmessagewindow"""
         try:

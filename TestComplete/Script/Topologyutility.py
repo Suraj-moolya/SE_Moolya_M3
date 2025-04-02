@@ -159,9 +159,6 @@ def select_dropdown_value_popup_TE(param):
   Screen, property, dropdown_value = param.split('$$') 
   para = Screen + '$$' + property 
   object_ = Actionutility.get_obj(para) 
-  if not object_ or not object_.object.Items: 
-    Log.Message("Dropdown object or items not found.") 
-    return 
   for i in range(object_.object.Items.Count): 
     if dropdown_value in object_.object.Items.Item[i].Identifier.OleValue: 
       object_.object.SelectedIndex = i 
@@ -199,9 +196,6 @@ def Select_IP_from_ControlProjectDeployment(IP_address):
 ############################################################################### 
 def select_latest_backup_data_TE(): 
   obj = Sys.Process("EngineeringClient").WPFObject("HwndSource: ModalDialogWindow", "").WPFObject("ModalDialogWindow", "", 1).WPFObject("RestoreDataConfirmationPanel", "", 1).WPFObject("Grid", "", 1).WPFObject("GroupBox", "Select Backup Data", 3).WPFObject("SelectionGrid") 
-  if not obj or not obj.Items: 
-    Log.Message("No backup data found.") 
-    return 
   list = [int(obj.Items.Item[i].BackupTime.OleValue) for i in range(obj.Items.Count)] 
   latest = max(list) 
   for j in range(obj.Items.Count): 
@@ -322,9 +316,6 @@ def Verify_error_messages_in_Console(text):
 # Example : Enter_Controller_Password_deploy_screen_TE("password123") 
 ############################################################################### 
 def Enter_Controller_Password_deploy_screen_TE(password): 
-  PW_box = topology_obj.PasswordControlBoxtextbox 
-  if not PW_box: 
-    Log.Message("Password control box not found.") 
-    return 
-  PW_box.enter_password(password) 
-  Log.Message(str(PW_box.object.PasswordText) + " entered in Password")
+  PW_box = topology_obj.PasswordControlBoxtextbox.object
+  PW_box.Keys(password) 
+  Log.Message(str(PW_box.Password) + " entered in Password")

@@ -350,10 +350,10 @@ class ProjectExplorerTabWorkFlow:
         
     def textboxprojectbrowsercontrolexecutabledropdownpe(self,param):
         """textboxprojectbrowsercontrolexecutabledropdownpe"""
-        try:
-            Projectexplorertabutility.control_executeable_combo_box_PE(param)
-        except Exception as ex:
-            raise Exception(ex) from ex
+#        try:
+        Projectexplorertabutility.control_executeable_combo_box_PE(param)
+#        except Exception as ex:
+#            raise Exception(ex) from ex
             
     def textboxassignmentsdockrightclickfacetfromassignmentdockpe(self,facet_name):
         """textboxassignmentsdockrightclickfacetfromassignmentdockpe"""

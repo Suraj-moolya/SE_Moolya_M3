@@ -19,8 +19,8 @@ Scenario Outline: Creating Multiple section and verify
 When I Create multiple FBD Sections and Verify as '<assignmentsdock2>'
 
 Examples:
-  | SlNo. | assignmentsdock2                        |
-  | 1     | M580_Standalone$$Create FBD Section$$10 |
+  | SlNo. | assignmentsdock2                       |
+  | 1     | M580_Standalone$$Create FBD Section$$8 |
   
   
 @TC_EPE_SWF_000

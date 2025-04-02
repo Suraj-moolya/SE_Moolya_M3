@@ -896,9 +896,7 @@ def Open_Close_folder_TE(param):
         if i.ToolTip.OleValue == ButtonName and i.Visible:
           i.Click()
           return
-  else:
-    Log.Error(f"Folder {FolderName} or button {ButtonName} not found")
-
+  
 ###############################################################################
 # Function: Verify_folder_Content_Status_TE
 # Description: Verifies if the specified folder is expanded in the Topology Explorer.

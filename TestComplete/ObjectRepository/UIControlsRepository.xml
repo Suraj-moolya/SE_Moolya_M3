@@ -535,7 +535,7 @@
 			 <UIControl Element="Workstationport_Topology" Name="WPFObject('GroupBox', 'Parameters', 1)" Visible="True"  Parent="EngineeringClient_" />
 			 <UIControl Element="OutputWindowPanel_Topology" Name="Panel('Output Window')" Parent="EngineeringClient_" />
 			 <UIControl Element="CheckAutomaticBlocking_Topology" Name="Window('Button', 'Automatic blocking of service port on Standby CPU', 3)" Parent="EngineeringClient_" />
-			 
+			 <UIControl Element="PasswordControlBox_Topology" Name="WPFObject('PasswordControlPasswordBox')" Parent="EngineeringClient_" />
 			 
         </Component>
 		<Component name="GSD Addition">

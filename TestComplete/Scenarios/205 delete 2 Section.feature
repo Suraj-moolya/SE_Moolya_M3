@@ -7,7 +7,7 @@ And I click modal dialog window container dock in project explorer as '<containe
 Then Verify Section Deleted in Control Project containers container dock in project explorer as '<container dock3>'
 
 Examples:
-  | SlNo. | container dock1       | container dock2 | container dock3 |
-  | 1     | FBDSection_3$$Delete  | Yes             | FBDSection_3    |
-  | 2     | FBDSection_10$$Delete | Yes             | FBDSection_10   |
+  | SlNo. | container dock1      | container dock2 | container dock3 |
+  | 1     | FBDSection_3$$Delete | Yes             | FBDSection_3    |
+  | 2     | FBDSection_7$$Delete | Yes             | FBDSection_7    |
 

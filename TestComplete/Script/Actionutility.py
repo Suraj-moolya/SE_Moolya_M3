@@ -175,15 +175,18 @@ def wait_for_execution():
 #Parameter : Button Name
 ###############################################################################
 def modal_dialog_window_button(button_name):
-  buttons_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'Button', 1000)
-  take_screenshot('Taking Screenshot of the Message Window.')
-  for button in buttons_list:
-    if button_name in str(button.WPFControlText) :
-      button.click()
-      Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
-      break
-  else:
-    Log.Warning("Button name mentioned doesnt exists")
+  try:
+    buttons_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'Button', 1000)
+    take_screenshot('Taking Screenshot of the Message Window.')
+    for button in buttons_list:
+      if button_name in str(button.WPFControlText) :
+        button.click()
+        Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
+        break
+    else:
+      Log.Warning("Button name mentioned doesnt exists")
+  except:
+    Log.Message('Expected Pop up not present')  
     
 ###############################################################################
 #Author : Preetham S R

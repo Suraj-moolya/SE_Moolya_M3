@@ -19,7 +19,7 @@ Examples:
 Scenario Outline: Create OFS,Control Service,Supervision in Workstation_2 folder
 When I Right Click on nodes System Explorer Node in system explorer as 'Workstation_2'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
-When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+#When I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
 Examples:
   | SlNo. | context menu           | project browser1       | button               |

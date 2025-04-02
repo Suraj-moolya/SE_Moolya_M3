@@ -53,7 +53,7 @@ When I Right Click on nodes System Explorer Node in system explorer as 'M580_Sta
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I click modal dialog window Instance editor save in application explorer as 'OK'
 When I selected Rename Pop up Ok in message box
-#And I Click on OK button from Reconfirm Deploy Built Project Popup window
+And I Click on OK button from Reconfirm Deploy Built Project Popup window
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser3>'
 Examples:
   | SlNo. | context menu                         | project browser3                                 |

@@ -109,9 +109,6 @@ def rclick_system_server_show_server_console():
   win_obj.showhiddeniconbutton.object.Click()
   Applicationutility.wait_in_seconds(2500, "Wait")
   notification_area = win_obj.notificationareawindow.object
-  if not notification_area:
-    Log.Message("Notification area not found.")
-    return
   for i in range(notification_area.wButtonCount):
     if 'EcoStruxure Process Expert - System Server' in str(notification_area.wButtonText[i]):
       notification_area.ClickItemR(i)
@@ -238,12 +235,9 @@ def navigate_to_explorers(Explorername):
 def verify_explorer_tab(TabName):
   tab_obj = eng_obj.mainscreenbutton.object
   colesable_items = tab_obj.FindAllChildren("ClrClassName", "CloseableTabItem", 50)
-  if not colesable_items:
-    Log.Message("No tabs found.")
-    return
   for item in colesable_items:
     if TabName in item.DataContext.TitleToolTip.OleValue   and item.IsActive :
-      Log.Message("Tab is sucesfully verified")
+      Log.Message(f"{TabName} Tab is sucesfully verified")
       break
   else:
     Log.Message(f"Tab '{TabName}' is not open")
@@ -492,6 +486,7 @@ def click_on_login():
 def enter_maintenance_mode(param):
   Sys.Keys(param)
   Log.Checkpoint(f'The keyboard action - {param}, has been performed.')
+  Applicationutility.take_screenshot()
   
 ###############################################################################
 # Function : enter_maintenance_password
