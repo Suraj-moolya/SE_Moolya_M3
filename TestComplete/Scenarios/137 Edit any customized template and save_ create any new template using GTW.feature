@@ -16,7 +16,7 @@ And I Click on State Selector in global template explorer
 And I Click on Approved combo item in global template explorer
 And I selected Save in save as windowo
 And I Close tab items EC main screen in engineering client as 'Sample'
-#And I Close tab items EC main screen in engineering client as 'Global'
+And I Close tab items EC main screen in engineering client as 'Global'
 
 @Edit_MotorGP_template_and_save_as_Sample_Test
 Examples:

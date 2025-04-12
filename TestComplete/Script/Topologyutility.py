@@ -29,9 +29,6 @@ msg_obj = MessageBox()
 def search_template_browser_EC(search_text): 
   temp_browser = msg_obj.exportpopupbutton.object 
   Uc_Browser = temp_browser.Find(('ClrClassName','SearchLabelText'), ('UcBrowser','Search Modbus TCP Device I/O Templates'), 10) 
-  if not Uc_Browser: 
-    Log.Message("Search browser not found.") 
-    return 
   Uc_Browser.Click(Uc_Browser.width / 2, 20) 
   Delay(2000) 
   Sys.Keys(search_text) 
@@ -270,24 +267,23 @@ def Expand_Properties_workstation(Text):
 def change_port_number_workstation_TE(param): 
   heading, activeport, portvalue = param.split("$$") 
   ports = topology_obj.propertywindowtextbox.object.FindAllChildren("ClrClassName", "GridViewRow", 100) 
-  if not ports: 
-    Log.Message("No ports found in the workstation.") 
-    return 
   for port in ports: 
-    if str(port.Item.Category) == heading: 
-      values = port.FindAllChildren("ClrClassName", "GridViewCell", 100) 
-      if not values: 
-        Log.Message("No port values found.") 
-        return 
-      for value in values: 
-        if activeport in value.WPFControlText: 
-          value.Click() 
-          Sys.Keys(portvalue) 
-          Sys.Keys("[Enter]") 
-          break 
+    if str(port.Item.Category) == heading:  
+      if port.Item.Value == activeport:
+        object = port.FindAllChildren("ClrClassName", "GridViewCell", 10)
+        for obj in object:
+          if obj.Value == activeport :
+            obj.Click()
+            Applicationutility.wait_in_seconds(1000, 'Wait')
+            Sys.Keys(portvalue)
+            Sys.Keys('[Enter]')
+  #          if obj.DataContext.Expression == portvalue
+          
+        
+#        Actionutility.modal_dialog_window_button('Yes')
       else: 
         Log.Message(f'{activeport} port not found in values.') 
-      break 
+        break
   else: 
     Log.Message(f'{heading} heading not found in ports.')
 

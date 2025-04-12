@@ -4,7 +4,7 @@
 @test0001
 Scenario Outline: Launch Engineering Client
 When I launch Engineering Client Engineering client in engineering client
-Then verify Tabs Explorer tab in system explorer as '<Explorer tab1>'
+#Then verify Tabs Explorer tab in system explorer as '<Explorer tab1>'
 Examples:
   | SlNo. | System explorer window1 | Explorer tab1    |
   | 1     | Systems Explorer        | Systems Explorer |

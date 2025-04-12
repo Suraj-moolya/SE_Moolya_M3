@@ -25,6 +25,18 @@ Examples:
   | SlNo. | context menu | options                      | identifier | button          |
   | 1     | Properties   | System Access Password$$True | Properties | System_3$$Close |
   
+@TC_EPE_SS_0014
+Scenario Outline: Enable System Access Password from Properties system2
+When I Right Click on nodes System Explorer Node in system explorer as 'System_2'
+And I Select context menu item EC project browser in project explorer as '<context menu>'
+When I change controller properties with drop down options as '<options>'
+When I Close the Tab by Clicking on Close as '<identifier>'
+And I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
+
+Examples:
+  | SlNo. | context menu | options                      | identifier | button          |
+  | 1     | Properties   | System Access Password$$True | Properties | System_3$$Close |
+  
   
 @TC_EPE_SS_0015
 Scenario Outline: Set System Access Password

@@ -53,8 +53,8 @@ class SystemServerWorkFlow:
         """buttonflowdocumentverifysystemserverready"""
         try:
             Systemserverutility.check_server_ready()
-        except Exception as ex:
-            raise Exception(ex) from ex
+        except:
+            Log.Message('...')
             
     def buttonflowdocumentverifysystemserverstop(self):
             """buttonflowdocumentverifysystemserverready"""

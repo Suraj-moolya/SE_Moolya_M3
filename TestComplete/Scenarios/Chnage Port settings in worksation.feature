@@ -12,3 +12,5 @@ Then Verify Action message in notification pannel project browser in project exp
 Examples:
   | SlNo. | property        | property2     | port_number             | project browser1                   |
   | 1     | ControlExpert_1 | Configuration | Configuration$$502$$503 | Update Control Service (Completed) |
+  
+  

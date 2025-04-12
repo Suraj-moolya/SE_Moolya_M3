@@ -12,3 +12,8 @@ Log/
 *.bak
 
 *.idea
+*.txt
+*.xml
+*.csv
+*.sbk
+*.tlb

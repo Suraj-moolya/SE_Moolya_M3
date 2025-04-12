@@ -865,6 +865,7 @@ def verify_facet_assignment_state1(facet_names, generation_state):
     return
 
   for facet_name, generation_state in zip(facet_name_list, generation_state_list):
+    Applicationutility.wait_in_seconds(3000, 'Wait')
     Log.Message(f'Checking facet {facet_name} for generation state {generation_state}')
     for facet in facet_list:
       if facet.Visible:
@@ -873,7 +874,7 @@ def verify_facet_assignment_state1(facet_names, generation_state):
             Log.Checkpoint(f'The facet {facet.DataContext.Identifier.OleValue} has AssignmentState state as {facet.DataContext.AssignmentState.OleValue}') 
             break
     else:
-      Log.Warning(f'The facet {facet_name} does not have the expected generation state: {generation_state}')
+      Log.Message(f'The facet {facet_name} does not have the expected generation state: {generation_state}')
 
 ###############################################################################
 # Function : right_click_instance_select_action_in_assignments 

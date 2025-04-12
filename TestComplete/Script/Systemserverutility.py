@@ -392,9 +392,13 @@ def check_server_ready():
       Log.Checkpoint(check_text)
       Applicationutility.take_screenshot()
       break
+    elif 'Processing command metadata overrides...' in check_text:
+      Log.Checkpoint(check_text)
+      Applicationutility.take_screenshot()
+      break
     else:
-      Applicationutility.wait_in_seconds(5000, 'Wait for server ready !')
-      
+      Applicationutility.wait_in_seconds(8000, 'Wait for server ready !')
+
 ###############################################################################
 # Function : check_server_stop
 # Description : Verifies if the server has stopped by checking the console messages.
