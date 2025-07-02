@@ -183,3 +183,8 @@ class RefineOffline(MapBase):
     def deviceddtpopupmoveallcebutton(self):
         """deviceddtpopupmoveallcebutton"""
         return self.get_element("DeviceDDTpopupmoveallCE_RefineOffline")
+        
+    @property
+    def UnlockSecuritybutton(self):
+        """UnlockSecuritybutton"""
+        return self.get_element("UnlockSecurity_RefineOffline")

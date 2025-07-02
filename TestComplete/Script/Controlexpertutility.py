@@ -38,12 +38,12 @@ def select_project_browser_item_CE(val):
     project_browser = refoff_obj.projectbrowserrotextbox.object
     count = project_browser.wItemCount
     for i in range(count):
-        if val in project_browser.wItem[i]:
-            project_browser.SelectItem(val)
-            Log.Message(val + ' is selected')
+        if val in str(project_browser.wItem[i]):
+            project_browser.SelectItem(project_browser.wItem[i])
+#            Log.Message(project_browser.wItem[i] + 'is selected')
             break
     else:
-        Log.Message(val + ' is not selected')
+        Log.Warning(val + ' is not selected')
 
 ###############################################################################
 # Function: doubleclick_project_browser_item_CE
@@ -56,7 +56,8 @@ def doubleclick_project_browser_item_CE(val):
     count = project_browser.wItems.Item[0].Items.Count
     for i in range(count + 1):
         if val in project_browser.wItem[i]:
-            project_browser.DblClickItem(val)
+            project_browser.DblClickItem(project_browser.wItem[i])
+#            Log.Message(project_browser.wItem[i] + 'is selected' )
             break
     else:
         Log.Warning(val + ' is not Click')
@@ -803,5 +804,7 @@ def select_item_mdi_window_CE(identifier):
             break
     else:
         Log.Message(identifier + " is not selected")
+
+        
 
 
