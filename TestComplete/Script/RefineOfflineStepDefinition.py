@@ -343,3 +343,8 @@ def step_impl():
     CommonUtil.write_text_file("\nWhen I selected Device DDT popup moveall CE in elemetary variables")
     obj.buttondeviceddtpopupmoveallceselected() 
   
+@when("I selected unlock security EIO in control expert")
+def step_impl():
+    """I selected unlock security EIO in control expert"""
+    CommonUtil.write_text_file("\nWhen I selected unlock security EIO in control expert")
+    obj.buttonselectunlocksecurityCE()

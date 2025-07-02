@@ -355,3 +355,7 @@ class RefineOfflineWorkFlow:
     def buttondeviceddtpopupmoveallceselected(self):
         """refineoffline_obj.deviceddtpopupmoveallcebutton"""
         RefineOfflineWorkFlow.refineoffline_obj.deviceddtpopupmoveallcebutton.click()
+        
+    def buttonselectunlocksecurityCE(self):
+        """refineoffline_obj.UnlockSecuritybutton"""
+        RefineOfflineWorkFlow.refineoffline_obj.UnlockSecuritybutton.click()
