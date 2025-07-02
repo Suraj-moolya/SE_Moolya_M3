@@ -23,3 +23,8 @@ Examples:
   | SlNo. | Supervision | sub_context_menu | context menu | Button2 | Import3  | project browser4                          | project browser8            | Button  | Button1    |
   | 1     | System_2    | Topology         | Import       | OK      | demo.sbk | MessageBox$$modaldialogwindow1textbox$$OK | Import Topology (Completed) | Resolve | Create All |
  
+@Import_Topology_System_3
+Examples:
+  | SlNo. | Supervision | sub_context_menu | context menu | Button2 | Import3  | project browser4                          | project browser8            | Button  | Button1    |
+  | 1     | System_3    | Topology         | Import       | OK      | demo.sbk | MessageBox$$modaldialogwindow1textbox$$OK | Import Topology (Completed) | Resolve | Create All |
+ 

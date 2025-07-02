@@ -491,6 +491,10 @@ Examples:
 Examples:
   | SlNo. | Systems Explorer | MainToolBar1                   | Explorer tab2 |
   | 1     | System_2         | Open Topology Explorer (Alt+T) | Topology      |
+@Navigate_TE_selecting_system3
+Examples:
+  | SlNo. | Systems Explorer | MainToolBar1                   | Explorer tab2 |
+  | 1     | System_3         | Open Topology Explorer (Alt+T) | Topology      |
   
   
 @TC_EPE_EC_0032

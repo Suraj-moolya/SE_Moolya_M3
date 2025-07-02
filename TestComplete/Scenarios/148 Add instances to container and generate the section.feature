@@ -99,3 +99,13 @@ Then I Verify the facet generation status of all facets in Assignments Dock
 Examples:
   | SlNo. |
   | 1     |
+  
+@TC_EPE_SWF_0000
+@test0025
+Scenario Outline: Generate from Containers pane and Click on Modal Dialogue Windowss
+When I RClick on FBDSection in Container Section and select menu item as '<containerinstance>'
+Then Verify Action message in notification pannel container dock in project explorer as '<container dock3>'
+@M580Standalone_generate_without_popop
+Examples:
+  | SlNo. | containerinstance         | container dock3 |
+  | 1     | M580_Standalone$$Generate | Generate        |
