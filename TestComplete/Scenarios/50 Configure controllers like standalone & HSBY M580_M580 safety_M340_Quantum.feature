@@ -451,7 +451,7 @@ And I close PLC Bus window in controller configuration window
 And I selected List of modified Yes button CE in dialog ce
 
 Examples:
-  | SlNo. |Project Browser path|
-  | 1     |Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME$$EIO|
+  | SlNo. | Project Browser path                                           |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME$$EIO |
   
 
