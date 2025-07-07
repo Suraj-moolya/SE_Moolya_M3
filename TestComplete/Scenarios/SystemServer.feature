@@ -138,6 +138,7 @@ Examples:
 Scenario Outline: CE tool slot management - Enter 4 Instance of CE and start the system server 
 When I entered Control Participant Max Instance in system server config wizard as '<Control Participant Max Instance3>'
 And I selected next in system server config wizard
+And I selected next in system server config wizard
 And I selected save and close in system server config wizard
 And I selected Action Menu in action
 And I selected Start server in action
@@ -154,6 +155,7 @@ Examples:
 @test0010
 Scenario Outline: CE tool slot management - Enter 20 Instance of CE and start the system server 
 When I entered Control Participant Max Instance in system server config wizard as '<Control Participant Max Instance3>'
+And I selected next in system server config wizard
 And I selected next in system server config wizard
 And I selected save and close in system server config wizard
 And I selected Action Menu in action
@@ -172,6 +174,7 @@ Examples:
 Scenario Outline: CE tool slot management - Enter 2 Instance of CE and start the system server 
 When I entered Control Participant Max Instance in system server config wizard as '<Control Participant Max Instance3>'
 And I selected next in system server config wizard
+And I selected next in system server config wizard
 And I selected save and close in system server config wizard
 And I selected Action Menu in action
 And I selected Start server in action
@@ -187,6 +190,7 @@ Examples:
 @test0012
 Scenario Outline: CE tool slot management - Enter 25 Instance of CE and start the system server 
 When I entered Control Participant Max Instance in system server config wizard as '<Control Participant Max Instance3>'
+And I selected next in system server config wizard
 And I selected next in system server config wizard
 And I selected save and close in system server config wizard
 And I selected Action Menu in action
