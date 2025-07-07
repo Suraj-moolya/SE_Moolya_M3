@@ -49,15 +49,17 @@ Examples:
 @TC_EPE_EC_000
 @test000
 Scenario Outline: Deploy Changes for Controller M580 Standalone
-When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone3'
+When I Right Click on nodes System Explorer Node in system explorer as '<Controller>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I click modal dialog window Instance editor save in application explorer as 'OK'
 When I selected Rename Pop up Ok in message box
 And I Click on OK button from Reconfirm Deploy Built Project Popup window
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser3>'
+
+@Deploy_Changes_for__M580_Standalone
 Examples:
-  | SlNo. | context menu                         | project browser3                                 |
-  | 1     | Deploy Changes / Undo Online Changes | Deploy Changes / Undo Online Changes (Completed) |
+  | SlNo. | context menu                         | project browser3                                 | Controller      |
+  | 1     | Deploy Changes / Undo Online Changes | Deploy Changes / Undo Online Changes (Completed) | M580_Standalone |
   
 @TC_EPE_EC_000
 @test000

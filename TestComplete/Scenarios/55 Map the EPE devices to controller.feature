@@ -45,7 +45,7 @@ When I click modal dialog window project browser in project explorer as '<Button
 And I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button | button |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | Button | button         |
   | 1     | ETesysTHW               | Physical Connections    | ETesysTHW$$SE_Network   | OK     | Devices$$Close |
 
   
@@ -80,7 +80,7 @@ And I edit IP Address Topology Explorer Tree in topology as '<Topology Explorer 
 When I Close the Tab by Clicking on Close as '<identifier>'
 And I Perform action on the Folder by Clicking on '<button>' in Topology Explorer
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | identifier         | button |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3 | identifier         | button         |
   | 1     | EIPGenericDeviceHW      | Communication           | IPAddress$$192.168.10.2 | EIPGenericDeviceHW | Devices$$Close |
 
 ## I have changed it according to execution plan please check ur orginal test case once  
@@ -119,8 +119,8 @@ And I modal dialog window select Item Topology Explorer Tree in topology as '<To
 And I modal dialog window select Item Topology Explorer Tree in topology as '<Topology Explorer Tree4>'
 When I click modal dialog window project browser in project explorer as '<Button>'
 Examples:
-  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3       | Topology Explorer Tree4       | Button |
-  | 1     | M580_Standalone3         | Physical Connections    | M580_Standalone3 0$$SE_Network | M580_Standalone3 2$$SE_Network | OK     |
+  | SlNo. | Topology Explorer Tree1 | Topology Explorer Tree2 | Topology Explorer Tree3        | Topology Explorer Tree4        | Button |
+  | 1     | M580_Standalone3        | Physical Connections    | M580_Standalone3 0$$SE_Network | M580_Standalone3 2$$SE_Network | OK     |
   
 
 
