@@ -114,6 +114,7 @@ def control_executeable_combo_box_PE(param):
           if combo_item in item.Items.Item[i].Identifier.OleValue:
             item.SelectedIndex = i
             Log.Message('The item ' + str(item.Items.Item[i].Identifier.OleValue) + ' is selected from the combo box.')
+            Applicationutility.take_screenshot()
             break
         else:
           Log.Message('No matching combo box item found.')

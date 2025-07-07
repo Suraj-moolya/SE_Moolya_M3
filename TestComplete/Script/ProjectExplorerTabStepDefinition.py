@@ -434,7 +434,8 @@ def step_impl(button):
 def step_impl(facet_name):
     """I verify '<facet_name>' disappered in assignments"""
     CommonUtil.write_text_file("\nThen I Verify  \""+facet_name+"\" disappered in assignments")
-    obj.verifyfacetbeforegenerate(facet_name)    
+    obj.verifyfacetbeforegenerate(facet_name) 
+    Applicationutility.take_screenshot()   
         
 @then(r"I verify Status updated in Assignment Section as '(.*)' '(.*)'")
 def step_impl(facet_name, status):

@@ -290,12 +290,12 @@ Then Verify Action message in notification pannel project browser in project exp
 @Create_Workstation_1
 Examples:
   | SlNo. | context menu        | project browser1   |
-  | 1     | Create Station Node | Create Workstation |
+  | 1     | Create Workstation | Create Workstation |
   
 @Create_Workstation_2
 Examples:
   | SlNo. | context menu        | project browser1   |
-  | 1     | Create Station Node | Create Workstation |
+  | 1     | Create Workstation | Create Workstation |
   
 @Create_Workstation_on_New_Build
 Examples:

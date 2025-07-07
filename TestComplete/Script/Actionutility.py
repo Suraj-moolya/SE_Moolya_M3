@@ -184,7 +184,7 @@ def modal_dialog_window_button(button_name):
         Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
         break
     else:
-      Log.Warning("Button name mentioned doesnt exists")
+      Log.Message("Button name mentioned doesnt exists")
   except:
     Log.Message('Expected Pop up not present')  
     

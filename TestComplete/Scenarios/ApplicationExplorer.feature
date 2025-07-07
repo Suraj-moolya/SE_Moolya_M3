@@ -330,6 +330,7 @@ Examples:
   | 3     | Analog             | AnalogInputGP$$1.0.138 |
   | 4     | MotorGP            | MotorGP$$1.0.123       |
   | 5     | ValveGP            | ValveGP$$1.0.100       |
+  | 6     | ValveGP            | ValveGP$$1.0.100       |
   
   
 

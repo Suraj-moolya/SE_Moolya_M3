@@ -28,4 +28,4 @@ And I Close modal dialog window
 
 Examples:
   | SlNo. | project browser1 | project browser2         | project browser3 |
-  | 1     | M580_Standalone             | Manage Data Backup Files | Workstation_1    |
+  | 1     | M580_Standalone  | Manage Data Backup Files | Workstation_1    |
