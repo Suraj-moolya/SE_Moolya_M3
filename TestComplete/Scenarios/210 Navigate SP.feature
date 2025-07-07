@@ -27,10 +27,11 @@ Examples:
 Scenario Outline: Create a Supervision Project 
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
-And I rename the ControlProject as '<controller_name>'
+Then Verify Action message in notification pannel container dock in project explorer as '<notification panel>'
+When I rename the ControlProject as '<controller_name>'
 Examples:
-  | SlNo. | project browser1 | context menu               | controller_name  |
-  | 1     | System_1         | Create Supervision Project | Supervision_Test |
+  | SlNo. | project browser1 | context menu               | controller_name  | notification panel                     |
+  | 1     | System_1         | Create Supervision Project | Supervision_Test | Create Supervision Project (Completed) |
   
 @TC_EPE_PE_CP_0002
 @test0001
