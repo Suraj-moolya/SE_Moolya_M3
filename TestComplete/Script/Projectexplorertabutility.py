@@ -1557,6 +1557,7 @@ def Click_On_EngineValue_notassigned(service):
       for j in service_list:
         if j.Text.OleValue == "Not Assigned":
           j.Click()
+          Applicationutility.wait_in_seconds(1000, 'Wait')
           break
 
 ###############################################################################
@@ -1573,13 +1574,19 @@ def map_workstation(param):
   Click_On_EngineValue_notassigned(service)
   Map = proj_obj.servicemapdropdownbox.object
   Map_List = Map.FindAllChildren('ClrClassName', 'TextBlock', 100)
-  for i in Map_List:
-    if i.Text == engine:
-      i.Click()
-      Log.Message(f'{i.Text} was clicked')
-      break
+  
+  if Map_List:
+    for i in Map_List:
+      if i.Text == engine:
+        i.Click()
+        Applicationutility.wait_in_seconds(1000, 'Wait')
+        Log.Message(f'{i.Text} was clicked')
+        break
+    else:
+      Log.Message(f'{i.Text} doesnt exists')
   else:
-    Log.Message(f'{i.Text} doesnt exists')
+    Log.Warning('No Service mapping drop down exists.')
+
 
 ###############################################################################
 # Function : double_click_container_dock_context_menu_item_PE

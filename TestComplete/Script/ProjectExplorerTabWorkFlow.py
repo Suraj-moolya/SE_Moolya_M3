@@ -701,11 +701,11 @@ class ProjectExplorerTabWorkFlow:
                     raise Exception(ex) from ex
                     
     def Map_Workstation_Supervision_project(self,Service_Engine):
-                """Navigatetosupervisioncontrolproject"""
-                try:
-                    Projectexplorertabutility.map_workstation(Service_Engine)
-                except Exception as ex:
-                    raise Exception(ex) from ex
+        """Navigatetosupervisioncontrolproject"""
+#                try:
+        Projectexplorertabutility.map_workstation(Service_Engine)
+#                except Exception as ex:
+#                    raise Exception(ex) from ex
                     
     def textboxprojectbrowserrclickcontrolprojectbrowser(self,identifier):
         """textboxprojectbrowserrclickcontrolprojectbrowser"""

@@ -64,12 +64,13 @@ Examples:
 @TC_EPE_PE_CP_00
 Scenario Outline: Map the workstation and verify nic cards available for mapping
 When I Map workstation available for respective service and engine for supervision project as '<Service_Engine>' 
+Then Verify Action message in notification pannel container dock in project explorer as '<notification panel>'
 
 Examples:
-  | SlNo. | Service_Engine            |
-  | 1     | Alarm_1_P$$Workstation_1  |
-  | 2     | IOServer_1$$Workstation_1 |
-  | 3     | Report_1_P$$Workstation_1 |
+  | SlNo. | Service_Engine            | notification panel                 |
+  | 1     | Alarm_1_P$$Workstation_1  | Map Service Executable (Completed) |
+  | 2     | IOServer_1$$Workstation_1 | Map Service Executable (Completed) |
+  | 3     | Report_1_P$$Workstation_1 | Map Service Executable (Completed) |
 
   
   
