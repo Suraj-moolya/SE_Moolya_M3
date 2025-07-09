@@ -12,6 +12,11 @@ from SystemExplorerScreen import SystemExplorerScreen
 from TopologyExplorerTab import TopologyExplorerTab
 from Topology import Topology
 
+import os
+import csv
+import xml.etree.ElementTree as ET
+import datetime
+
 Topology1 = Topology()
 EngineeringClient1 = EngineeringClient()    
 ApplicationExplorerTab1 = ApplicationExplorerTab()
@@ -29,6 +34,7 @@ msg_obj = MessageBox()
 win_obj = WindowsExplorer()
 server_obj = SystemServer()
 eng_obj = EngineeringClient()
+aet_obj = ApplicationExplorerTab()
 
 ###############################################################################
 #Author : Preetham S R
@@ -299,4 +305,57 @@ def modal_dialog_windo_selectItem(param):
   else:
     Log.Warning(f'{controller}, {val} : not found !')
       
-      
+###############################################################################
+# Function : Enter_filename_fileformat_Export_Window
+# Description: Enters the file name and location in the export window.
+# Parameter : file_name, file_format (str) - File format for the export.
+###############################################################################
+
+def Enter_filename_fileformat_Export_Window(file_details):
+  file_name, file_format = file_details.split('$$')
+  if not Project.Variables.VariableExists(file_name):
+        Project.Variables.AddVariable(file_name, "String")     
+  Project.Variables.VariableByName[file_name] = str(file_name + datetime.datetime.now().strftime("%Y%m%d%H%M%S"))
+  Log.Message(Project.Variables.VariableByName[file_name])
+  Applicationutility.wait_in_seconds(2000,"Wait")
+  Export_window = msg_obj.exportfilenametextbox.object
+  if Export_window.Exists:
+    filename_textbox = msg_obj.exportfilenametextbox.object
+    filename_textbox.Keys(Project.Variables.VariableByName[file_name]+file_format)
+  else:
+    Log.Warning("Export Windows doesnt exists") 
+  filelocation = msg_obj.exportfilelocationtextbox
+  tox = (filelocation.object.Height)/2
+  toy = 10
+  filelocation.click_at(tox,toy)
+  base_path = os.getcwd()
+  folder_name = "Test_Export_Files"
+  full_path = os.path.join(base_path, folder_name) 
+  Sys.Keys(full_path)
+  Applicationutility.take_screenshot('taking Screenshot')
+  Sys.Keys("[Enter]")    
+  
+###############################################################################
+# Function : Enter_fileName_fileformat_Import_Window
+# Description: Enters the system name and location in the import window.
+# Parameter : file_format (str) - File format for the import.
+###############################################################################
+
+def Enter_fileName_fileformat_Import_Window(file_details):
+  filename, fileformat = file_details.split('$$')
+  filelocation = aet_obj.addressbandtextbox
+  tox = (filelocation.object.Height)/2
+  toy = 5
+  filelocation.click_at(tox,toy)
+  base_path = os.getcwd()
+  folder_name = "Test_Export_Files"
+  full_path = os.path.join(base_path, folder_name)
+  os.chdir(full_path) 
+  Sys.Keys(os.getcwd())
+  Sys.Keys("[Enter]") 
+  filename_textbox = aet_obj.comboboxtextbox.object
+  filename_textbox.Click()
+  filename_textbox.Keys(Project.Variables.VariableByName[filename] + fileformat)
+  Applicationutility.take_screenshot('taking Screenshot')
+  Sys.Keys("[Enter]") 
+  
