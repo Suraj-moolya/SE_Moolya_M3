@@ -348,3 +348,9 @@ def step_impl():
     """I selected unlock security EIO in control expert"""
     CommonUtil.write_text_file("\nWhen I selected unlock security EIO in control expert")
     obj.buttonselectunlocksecurityCE()
+    
+@when("I select HTTPS EIO in control expert as {arg}")
+def step_impl(param):
+    """I select HTTPS EIO in control expert"""
+    CommonUtil.write_text_file("\nWhen I select HTTPS EIO in control expert")
+    obj.selecthttpsdropdownCE(param)

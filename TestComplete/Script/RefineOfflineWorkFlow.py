@@ -359,3 +359,8 @@ class RefineOfflineWorkFlow:
     def buttonselectunlocksecurityCE(self):
         """refineoffline_obj.UnlockSecuritybutton"""
         RefineOfflineWorkFlow.refineoffline_obj.UnlockSecuritybutton.click()
+        
+    def selecthttpsdropdownCE(self, param):
+        """refineoffline_obj.selecthttpsdropdownCE"""
+        RefineOfflineWorkFlow.refineoffline_obj.HTTPSbutton.select_item(param)
+        

@@ -453,5 +453,16 @@ And I selected List of modified Yes button CE in dialog ce
 Examples:
   | SlNo. | Project Browser path                                           |
   | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME$$EIO |
+ 
+   
+Scenario Outline: Disable HTTPS of controller in CE
+When I Navigate through project browser CE Project Browser RO in refine offline as '<Project Browser path>'
+And I select HTTPS EIO in control expert as '<Option>'
+And I close PLC Bus window in controller configuration window
+And I selected List of modified Yes button CE in dialog ce
+
+Examples:
+  | SlNo. | Project Browser path                                           | Option   |
+  | 1     | Configuration$$0 : PLC bus$$0 : BME XBP 0800$$0 (1) : BME$$EIO | Disabled |
   
 

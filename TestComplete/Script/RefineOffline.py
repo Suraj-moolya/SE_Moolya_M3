@@ -188,3 +188,12 @@ class RefineOffline(MapBase):
     def UnlockSecuritybutton(self):
         """UnlockSecuritybutton"""
         return self.get_element("UnlockSecurity_RefineOffline")
+        
+    @property
+    def HTTPSbutton(self):
+        """HTTPSbutton"""
+        return self.get_element("HTTPSinCE_RefineOffline")
+        
+        
+        
+        

@@ -433,6 +433,7 @@
              <UIControl Element="DeviceDDTCE_RefineOffline" Name="Window('Button', 'Device DDT', *)" Parent="EngineeringClient_" />
              <UIControl Element="DeviceDDTpopupmoveallCE_RefineOffline" Name="WPFObject('MoveAll')" Parent="EngineeringClient_" />
 			 <UIControl Element="UnlockSecurity_RefineOffline" Name="Window('Button', 'Unlock Security', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="HTTPSinCE_RefineOffline" Name="Window('ComboBox', '', 3)" Parent="EngineeringClient_" />
 		</Component>
         <Component name="Operation client">
              <UIControl Element="SourceobjectOC_Operationclient" Name="WPFObject('HwndSource" Parent="OperationClient_" />
