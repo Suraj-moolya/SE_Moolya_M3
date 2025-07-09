@@ -12,8 +12,8 @@ When I click modal dialog window project browser in project explorer as '<Button
 Then Verify generation status of facet from assignments PE assignmentsdock in project explorer as '<assignmentsdock4>'
 
 Examples:
-  | SlNo. | container dock1 | assignmentsdock2     | assignmentsdock3       | assignmentsdock4  |Button|
-  | 1     | System_1        | LockOn$$FBDSection_1 | FBDSection_1$$Generate | LockOn$$Generated |Yes|
+  | SlNo. | container dock1 | assignmentsdock2           | assignmentsdock3       | assignmentsdock4        | Button |
+  | 1     | System_1        | ValveGP_1_OP$$FBDSection_1 | FBDSection_1$$Generate | ValveGP_1_OP$$Generated | Yes    |
 
 
 
@@ -29,8 +29,8 @@ And I Wait for Execution assignmentsdock in project explorer
 Then Verify generation status of facet from assignments PE assignmentsdock in project explorer as '<assignmentsdock6>'
 
 Examples:
-  | SlNo. | container dock2 | assignmentsdock3     | assignmentsdock4 | assignmentsdock5       | assignmentsdock6  |
-  | 1     | System_1        | LockOn$$FBDSection_1 | LockOn$$Moved    | FBDSection_1$$Generate | LockOn$$Generated |
+  | SlNo. | container dock2 | assignmentsdock3      | assignmentsdock4 | assignmentsdock5       | assignmentsdock6   |
+  | 1     | System_1        | LockOn1$$FBDSection_1 | LockOn1$$Moved   | FBDSection_1$$Generate | LockOn1$$Generated |
 
 
 #Total No. of Test Cases : 2

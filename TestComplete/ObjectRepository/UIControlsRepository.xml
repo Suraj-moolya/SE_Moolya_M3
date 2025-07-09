@@ -305,6 +305,7 @@
         </Component>
         <Component name="Project Explorer Tab">
              <UIControl Element="projectbrowser_ProjectExplorerTab" Name="WPFObject('ProjectBrowserPaneGroup')" Parent="EngineeringClient_" />
+             <UIControl Element="SupervisionWorkSpace_ProjectExplorerTab" Name="WPFObject('SupervisionWorkSpace')" Parent="EngineeringClient_" />
              <UIControl Element="servicemapingeditor_ProjectExplorerTab" Name="WPFObject('ServiceMappingGrid')" Parent="EngineeringClient_" />
              <UIControl Element="instancedock_ProjectExplorerTab" Name="WPFObject('InstancePaneControl')" Visible = "True" Parent="EngineeringClient_" />
              <UIControl Element="containerdock_ProjectExplorerTab" Name="WPFObject('UcBrowser')" Visible = "True" Parent="EngineeringClient_" />

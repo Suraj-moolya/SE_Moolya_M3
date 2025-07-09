@@ -13,6 +13,11 @@ class ProjectExplorerTab(MapBase):
     def servicemapingeditortextbox(self):
         """servicemapingeditortextbox"""
         return self.get_element("servicemapingeditor_ProjectExplorerTab")
+        
+    @property
+    def supervisionworkspacetextbox(self):
+        """supervisionworkspacetextbox"""
+        return self.get_element("SupervisionWorkSpace_ProjectExplorerTab")
               
     @property
     def instancedocktextbox(self):

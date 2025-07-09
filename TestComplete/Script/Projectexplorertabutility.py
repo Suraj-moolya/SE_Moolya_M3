@@ -1548,14 +1548,17 @@ def Verify_CP_SP_Tab_PE():
 #   service (str) - The name of the service to locate the unassigned engine value.
 # Example : Click_On_EngineValue_notassigned("ServiceName")
 ###############################################################################
-def Click_On_EngineValue_notassigned(service):
-  Map = proj_obj.controlexecutablesproperty.object
+def Click_On_EngineValue_notassigned(service, state):
+#  service, state = param.split("$$")
+  Applicationutility.wait_in_seconds(1000, 'Wait')
+  Map = proj_obj.supervisionworkspacetextbox.object
+  supervision_grid = Map.FindChild('WPFControlName', 'ServiceMappingGrid', 1000)
   Map_List = Map.FindAllChildren('ClrClassName', 'GridViewRow', 100)
   for i in Map_List:
     if service in str(i.DataContext.Service):
       service_list = i.FindAllChildren('ClrClassName', 'TextBlock', 100)
       for j in service_list:
-        if j.Text.OleValue == "Not Assigned":
+        if j.Text.OleValue == state:
           j.Click()
           Applicationutility.wait_in_seconds(1000, 'Wait')
           break
@@ -1570,8 +1573,8 @@ def Click_On_EngineValue_notassigned(service):
 # Example : map_workstation("ServiceName$$EngineName")
 ###############################################################################
 def map_workstation(param):
-  service, engine = param.split("$$")
-  Click_On_EngineValue_notassigned(service)
+  service, state, engine = param.split("$$")
+  Click_On_EngineValue_notassigned(service, state)
   Map = proj_obj.servicemapdropdownbox.object
   Map_List = Map.FindAllChildren('ClrClassName', 'TextBlock', 100)
   

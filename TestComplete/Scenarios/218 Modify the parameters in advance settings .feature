@@ -10,7 +10,7 @@ And I selected Close Refine Offline in refine offline
 
 Examples:
   | SlNo. | Project Browser RO1                        | Project Browser RO2 |
-  | 1     | supervision project$$General$$Multiprocess | 5                   |
+  | 1     | supervision project$$General$$Multiprocess | 0                   |
 
 
 #Total No. of Test Cases : 1

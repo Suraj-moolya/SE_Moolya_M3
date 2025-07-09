@@ -235,21 +235,18 @@ def Delete_link_Refine_Offline(identifier):
 ###############################################################################
 def Consistency_Check_Select_All():
     headers = msg_obj.exportpopupbutton.object.FindAllChildren('ClrClassName', 'GridViewHeaderCell', 25)
-    if not headers:
-        Log.Warning("No headers found in the consistency check popup.")
-        return
     buttons_list = headers[0].FindAllChildren('ClrClassName', 'CheckBox', 1000)
-    if not buttons_list:
-        Log.Warning("No checkboxes found in the consistency check popup.")
-        return
-    for button in buttons_list:
+    if buttons_list:
+      for button in buttons_list:
         if "Check/Uncheck All" == button.ToolTip.Content.OleValue:
             button.IsChecked = True
             Log.Message('Select all button is Checked')       
             break
         else:
             Log.Message(str(button.WPFControlText) + " button is Enabled")
-
+    else:
+      Log.Warning("No consistency check popup.")
+        
 ###############################################################################
 # Function: Verify_modifications_available_in_Refine_Offline
 # Description: Verifies if a specific block is available in the Refine Offline window.
