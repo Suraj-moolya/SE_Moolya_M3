@@ -106,17 +106,36 @@ def verify_start_stop_disabled():
 # Parameter : None
 ###############################################################################
 def rclick_system_server_show_server_console(): 
-  win_obj.showhiddeniconbutton.object.Click()
-  Applicationutility.wait_in_seconds(2500, "Wait")
-  notification_area = win_obj.notificationareawindow.object
-  for i in range(notification_area.wButtonCount):
-    if 'EcoStruxure Process Expert - System Server' in str(notification_area.wButtonText[i]):
-      notification_area.ClickItemR(i)
-      break
-  else:
-    Log.Message("System Server icon not found in notification area.")
-    return
-  aqUtils.Delay(500)
+  if Sys.OSInfo.Name == 'Win10':
+    Log.Message(f'Operating System : {Sys.OSInfo.Name}')
+    win_obj.showhiddeniconbutton.object.Click()
+    Applicationutility.wait_in_seconds(2500, "Wait")
+    notification_area = win_obj.notificationareawindow.object
+    for i in range(notification_area.wButtonCount):
+      if 'EcoStruxure Process Expert - System Server' in str(notification_area.wButtonText[i]):
+        notification_area.ClickItemR(i)
+        break
+    else:
+      Log.Warning("System Server icon not found in notification area.")
+      return
+      
+  elif Sys.OSInfo.Name == 'Win11':
+    Log.Message(f'Operating System : {Sys.OSInfo.Name}')
+    Sys.Keys("[Hold][Win]b")
+    Sys.Keys("[Enter]")
+    Applicationutility.wait_in_seconds(2500, "Wait")
+    apps_tray_window = win_obj.notificationareawin11window.object
+    system_tray_items = apps_tray_window.FindAllChildren('AutomationId','NotifyItemIcon',100)
+    for item in system_tray_items:
+      if item.Visible:
+        if item.NativeUIAObject.Name == "EcoStruxure Process Expert - System Server":
+          item.ClickR()
+          Log.Message(f'Right Clicking on {item.NativeUIAObject.Name}')
+          break
+    else:
+      Log.Warning('System Server icon not found in notification area.')
+  
+  Applicationutility.wait_in_seconds(1000, 'Wait')
   context_menu = server_obj.contextmenubutton.object
   menu_item_count = context_menu.wItems.Count
   if menu_item_count == 0:
@@ -128,8 +147,8 @@ def rclick_system_server_show_server_console():
       break
   else:
     Log.Message("'Show Server Console' option not found in context menu.")
-  aqUtils.Delay(500)
-    
+  Applicationutility.wait_in_seconds(1000, 'Wait')
+
 ###############################################################################
 # Function : check_server_stopped
 # Description : Verifies if the server has stopped by checking the console messages.

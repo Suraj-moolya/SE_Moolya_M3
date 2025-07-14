@@ -23,6 +23,11 @@ Examples:
   | SlNo. | Templates browser1        | global template core5 | tab     | source | btn   | name        | version | desc               |
   | 1     | Motorgp$$MotorGP$$1.0.123 | Edit                  | Toolbox | Add    | Other | Sample_Test | 1.0.126 | Sample Description |
 
+@Edit_MotorGP_template_1.0.127_and_save_as_Sample_Test
+Examples:
+  | SlNo. | Templates browser1        | global template core5 | tab     | source | btn   | name        | version | desc               |
+  | 1     | Motorgp$$MotorGP$$1.0.127 | Edit                  | Toolbox | Add    | Other | Sample_Test | 1.0.126 | Sample Description |
+  
 @TC_EPE_GT_0005A
 Scenario Outline: Edit Sample Test customized template and save
 When I Search text and Right-Click GTE global template search in global template explorer as '<Templates browser1>'

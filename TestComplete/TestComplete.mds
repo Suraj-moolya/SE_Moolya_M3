@@ -17350,7 +17350,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="TC_EPE_AE_0018_2_1_1_1_2_2_4_2_1_1" key="{C850A54B-D423-4789-9C48-9430EEC31302}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Search Template in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="TC_EPE_AE_0018_2_1_1_1_2_2_4_2_1_1" key="{C850A54B-D423-4789-9C48-9430EEC31302}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Templates_for_builds_from_6335" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -17370,22 +17370,22 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem98_3_1_1" key="{FEEA9C32-B5E5-415C-8E90-58AD6A613EEE}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Rename instance - invalid 1234" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem98_3_1_1" key="{FEEA9C32-B5E5-415C-8E90-58AD6A613EEE}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Rename_Instance_to_Invalid_MotorGP1.0.127" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem99_2_1_1" key="{56B33936-02D6-4F50-BDB0-02369BE49284}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Delete_instance_1234_from_context_Menu" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem99_2_1_1" key="{56B33936-02D6-4F50-BDB0-02369BE49284}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Delete_instance_1234_from_context_Menu_Version_1.0.127" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem124_2_1_1" key="{7D6ECA91-C520-4938-9491-5E2A7F59B859}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Search MotorGP in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem124_2_1_1" key="{7D6ECA91-C520-4938-9491-5E2A7F59B859}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_MotorGP_1.0.127_to_AE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem124_2_1_1_1" key="{9255640A-CB23-4727-842A-9E4AEEE0C599}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Search MotorGP in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem124_2_1_1_1" key="{9255640A-CB23-4727-842A-9E4AEEE0C599}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_MotorGP_1.0.127_to_AE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -17405,7 +17405,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem11_2_1_1_2_1_1" key="{A6A273D7-3BBD-4C41-81E1-C6852064C238}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Inspect instance - Rclick on the inspect instance and verify the tab and click on ok" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem11_2_1_1_2_1_1" key="{A6A273D7-3BBD-4C41-81E1-C6852064C238}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Inspect_Instance_of_MotorGP1.0.127" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -17415,7 +17415,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem130_2_1_1" key="{F2EE16F0-D764-4A26-A147-EDFDBEF5093B}" group="False" parallel="False" enabled="True" load="False" testMoniker="ApplicationExplorer|Copy and paste the Instance - copy instance from context menu and paste" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem130_2_1_1" key="{F2EE16F0-D764-4A26-A147-EDFDBEF5093B}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Copy_Paste_Instance_Folder2_MotorGp-1.0.127" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -17670,7 +17670,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem141_1_1_2" key="{7A1709DD-6969-452E-99B2-BB94A40977B8}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@search_drag_drop_PWMOutputGP_1.0.74" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem141_1_1_2" key="{7A1709DD-6969-452E-99B2-BB94A40977B8}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@search_drag_drop_PWMOutputGP_1.0.76" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -18195,7 +18195,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem85_2_1_1_1" key="{3537945E-AAFE-465D-AC8B-BDDC3F6C27C8}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Edit_MotorGP_template_and_save_as_Sample_Test" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem85_2_1_1_1" key="{3537945E-AAFE-465D-AC8B-BDDC3F6C27C8}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Edit_MotorGP_template_1.0.127_and_save_as_Sample_Test" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -18262,7 +18262,17 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
+					<testItem name="ProjectTestItem209" key="{DB8CAA6B-05EB-4ED6-8E70-1C10DAEA221B}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@open_Configuration_window_of_Controller_M580_Standalone" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
 					<testItem name="ProjectTestItem207" key="{F1967222-9366-4FEA-BE81-9444FB217602}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Disable HTTPS of controller in CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem19_2_1_2_2_1_1_1_1_1" key="{EC738F4E-77A2-4C3A-94FA-2922122E49FF}" group="False" parallel="False" enabled="True" load="False" testMoniker="50 Configure controllers like standalone &amp; HSBY M580_M580 safety_M340_Quantum|Double click on PLC Bus" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -18273,6 +18283,11 @@
 						<children />
 					</testItem>
 					<testItem name="ProjectTestItem208" key="{5F2B02F2-4DA8-4DF9-8890-1CD2FB6A503C}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Open_configure_window_and_click_on_IPConfig__M580_standalone_H58_6040_3.20" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+						<testParameters />
+						<environments activeCloud="SWT" />
+						<children />
+					</testItem>
+					<testItem name="ProjectTestItem210" key="{FA82EAAC-E16B-4F45-B7E0-D8C17B3BA706}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Map_the_logical_network_-_edit_IP_Address__182.233.63.1_HSBY" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -18314,7 +18329,7 @@
 		</data>
 	</variables>
 	<settings key="{BD89207E-1EE8-4F9B-9DB6-9CEBB644634F}">
-		<settingsVersion value="15.75" />
+		<settingsVersion value="15.73" />
 		<setting name="AgOpenApp_ExtendedSilverlightObjectTree" type="1" value="False" />
 		<setting name="ApplicationHangingProcessFilterMode" type="6" rowIndex="4" colIndex="0">
 			<columns>
@@ -18595,7 +18610,7 @@
 			</columns>
 			<data />
 		</setting>
-		<setting name="OpenApps_UIA_ListOfAcceptedWindows" type="6" rowIndex="0" colIndex="0">
+		<setting name="OpenApps_UIA_ListOfAcceptedWindows" type="6" rowIndex="3" colIndex="0">
 			<columns>
 				<column type="1" enabled="True" />
 				<column type="5" enabled="True" />
@@ -18604,6 +18619,7 @@
 				<row val0="False" val1="*" />
 				<row val0="True" val1="DirectUIHWND" />
 				<row val0="True" val1="Windows.UI.Core.CoreWindow" />
+				<row val0="True" val1="Windows.UI.Composition.DesktopWindowContentBridge" />
 			</data>
 		</setting>
 		<setting name="OpenApps_UseNativeObjectNames" type="1" value="True" />

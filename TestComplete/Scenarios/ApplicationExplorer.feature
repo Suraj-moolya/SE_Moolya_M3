@@ -252,10 +252,14 @@ When I Select context menu item EC ContextMenu in application explorer as 'Copy'
 And I rclick application browser folder AE Folder_2 in application explorer as '<Folder_26>'
 And I Select context menu item EC ContextMenu in application explorer as '<ContextMenu7>'
 Then Verify template created Application browser template in application explorer as '<Application browser template8>'
-
+@Copy_Paste_Instance_Folder2_MotorGp-1.0.123
 Examples:
   | SlNo. | MotorGP template5  | Folder_26 | ContextMenu7 | Application browser template8 |
   | 1     | MotorGP_1$$1.0.123 | Folder_2  | Paste        | MotorGP_1_1                   |
+@Copy_Paste_Instance_Folder2_MotorGp-1.0.127
+Examples:
+  | SlNo. | MotorGP template5  | Folder_26 | ContextMenu7 | Application browser template8 |
+  | 1     | MotorGP_1$$1.0.127 | Folder_2  | Paste        | MotorGP_1_1                   |
 
   
 @TC_EPE_AE_0014
@@ -323,6 +327,7 @@ Scenario Outline: Search Template in Template browser and Drag and drop from tem
 When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
 And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
 Then Verify the template is present in Application browser as '<Templates browser1>'
+@Templates_for_builds_before_6334
 Examples:
   | SlNo. | Templates browser1 | Templates browser2     |
   | 1     | INTERLOCK8OFFGP    | INTERLOCK8OFFGP$$1.0.5 |
@@ -331,6 +336,16 @@ Examples:
   | 4     | MotorGP            | MotorGP$$1.0.123       |
   | 5     | ValveGP            | ValveGP$$1.0.100       |
   | 6     | ValveGP            | ValveGP$$1.0.100       |
+  
+@Templates_for_builds_from_6335
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2     |
+  | 1     | INTERLOCK8OFFGP    | INTERLOCK8OFFGP$$1.0.5 |
+  | 2     | Analog             | AnalogOutputGP$$1.0.94 |
+  | 3     | Analog             | AnalogInputGP$$1.0.141 |
+  | 4     | MotorGP            | MotorGP$$1.0.127       |
+  | 5     | ValveGP            | ValveGP$$1.0.106       |
+  | 6     | ValveGP            | ValveGP$$1.0.106       |
   
   
 
@@ -341,10 +356,15 @@ Scenario Outline: Search MotorGP in Template browser and Drag and drop from temp
 When I search text template browser AE Templates browser in application explorer as '<Templates browser1>'
 And I drag composite template drop application browser system1 AE Templates browser in application explorer as '<Templates browser2>'
 Then Verify the template is present in Application browser as '<Templates browser1>'
+@Add_MotorGP_1.0.123_to_AE
 Examples:
   | SlNo. | Templates browser1 | Templates browser2 |
   | 1     | MotorGP            | MotorGP$$1.0.123   |
-  
+@Add_MotorGP_1.0.127_to_AE  
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2 |
+  | 1     | MotorGP            | MotorGP$$1.0.127   |
+    
   
 @TC_EPE_AE_0018
 @test0018
@@ -370,6 +390,11 @@ Examples:
   | SlNo. | Templates browser1 | Templates browser2  |
   | 1     | PWMOutputGP        | PWMOutputGP$$1.0.74 |
   
+@search_drag_drop_PWMOutputGP_1.0.76
+Examples:
+  | SlNo. | Templates browser1 | Templates browser2  |
+  | 1     | PWMOutputGP        | PWMOutputGP$$1.0.76 |
+    
 
   
   
@@ -380,10 +405,16 @@ When I rclick application browser template AE Application browser in application
 And I Select context menu item EC Application browser in application explorer as '<Application browser5>' 
 Then verify inspect instance window open Inspect instance tree in inspect instance as '<Inspect instance tree6>'
 When I selected Inspect instance ok in inspect instance 
+@Inspect_Instance_of_MotorGP1.0.123
 Examples: 
   | SlNo. | Application browser4 | Application browser5 | Inspect instance tree6 |
   | 1     | MotorGP$$1.0.123     | Inspect Instance     | MotorGP_1              |
   
+@Inspect_Instance_of_MotorGP1.0.127  
+Examples: 
+  | SlNo. | Application browser4 | Application browser5 | Inspect instance tree6 |
+  | 1     | MotorGP$$1.0.127     | Inspect Instance     | MotorGP_1              |
+    
   
   
 @TC_EPE_AE_0020
@@ -407,11 +438,14 @@ And I Select context menu item EC Application browser in application explorer as
 And I Rename the Insatnce to the requirement '<Name1>'
 And I clicked Enter in keyboard shortcut
 Then verify the status of the instance
- 
+@Rename_Instance_to_Invalid_MotorGP1.0.123 
 Examples: 
   | SlNo. | Application browser4 | Application browser5 | Name1 |
   | 1     | MotorGP$$1.0.123     | Rename               | 1234  |
-  
+@Rename_Instance_to_Invalid_MotorGP1.0.127
+Examples: 
+  | SlNo. | Application browser4 | Application browser5 | Name1 |
+  | 1     | MotorGP$$1.0.127     | Rename               | 1234  |  
 
   
 @TC_EPE_AE_0022
@@ -631,6 +665,11 @@ Examples:
 Examples:
   | SlNo. | MotorGP template1 | ContextMenu2 | container dock3                               |
   | 1     | 1234$$1.0.123     | Delete       | Are you sure you want to delete this Instance |
+  
+@Delete_instance_1234_from_context_Menu_Version_1.0.127
+Examples:
+  | SlNo. | MotorGP template1 | ContextMenu2 | container dock3                               |
+  | 1     | 1234$$1.0.127     | Delete       | Are you sure you want to delete this Instance |
 
 
 

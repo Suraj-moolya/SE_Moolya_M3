@@ -1,4 +1,4 @@
-"""WindowsExplorer"""
+﻿"""WindowsExplorer"""
 from MapBase import MapBase
 
 class WindowsExplorer(MapBase):
@@ -34,3 +34,7 @@ class WindowsExplorer(MapBase):
         """detaillisttextbox"""
         return self.get_element("detaillist_WindowsExplorer")
               
+    @property
+    def notificationareawin11window(self):
+        """notificationareawindow"""
+        return self.get_element("notificationareawin11_WindowsExplorer")          

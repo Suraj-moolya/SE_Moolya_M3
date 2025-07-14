@@ -64,6 +64,8 @@
              <UIControl Element="Windows_WindowsExplorer" Parent="explorer_" />
              <UIControl Element="tabs_WindowsExplorer" Name="Window('SysTabControl32', '', 1)" Parent="Taskmgr_" />
              <UIControl Element="detaillist_WindowsExplorer" Name="List('Process details')" Parent="Taskmgr_" />
+			 <UIControl Element="notificationareawin11_WindowsExplorer" Name="Window('TopLevelWindowForOverflowXamlIsland', 'System tray overflow window.', 1)" Parent="explorer_" />
+
         </Component>
         <Component name="Engineering Client">
              <UIControl Element="OpenSystemExplorer_EngineeringClient" Name="WPFObject('ContentPresenter', '', 1)" Parent="EngineeringClient_" />
