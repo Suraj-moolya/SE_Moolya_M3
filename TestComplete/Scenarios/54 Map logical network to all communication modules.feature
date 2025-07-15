@@ -105,3 +105,13 @@ Examples:
   | SlNo. | MDI Window1                   | MDI Window2                  | MDI Window3                | MDI Window4                | MDI Window5              |
   | 1     | Main IP address$$182.233.63.1 | Subnetwork mask$$255.255.0.0 | IP address A$$182.233.63.3 | IP address B$$182.233.63.4 | Gateway address$$0.0.0.0 |
 
+
+@TC_EPE_TE_CS_0020c
+Scenario Outline: Open configure window and click on Service Port
+When I Click tabitem in EIO configaration window in control expert as '<identifiers>'
+And I select Automatic blocking of service port EIO in control expert
+
+Examples:
+  | SlNo. | identifiers |
+  | 1     | ServicePort |
+  

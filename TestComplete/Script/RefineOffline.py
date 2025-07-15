@@ -194,6 +194,10 @@ class RefineOffline(MapBase):
         """HTTPSbutton"""
         return self.get_element("HTTPSinCE_RefineOffline")
         
+    @property
+    def BlockserviceportEIOcheckbox(self):
+        """BlockserviceportEIOcheckbox"""
+        return self.get_element("BlockserviceportEIO_RefineOffline")
         
         
         

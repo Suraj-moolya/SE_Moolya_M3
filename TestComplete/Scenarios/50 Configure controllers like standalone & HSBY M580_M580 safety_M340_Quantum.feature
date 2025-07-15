@@ -126,6 +126,12 @@ Examples:
 Examples:
   | SlNo. | Folder Name | context menu      | controller | controller_name  | project browser1  | project browser2  |
   | 1     | Controllers | Create Controller | M580       | M580_Standalone3 | Create Controller | Update Controller |
+@Create_First_Controller_for_HSBY
+Examples:
+  | SlNo. | Folder Name | context menu      | controller | controller_name | project browser1  | project browser2  |
+  | 1     | Controllers | Create Controller | M580       | M580_HSBY_1     | Create Controller | Update Controller |
+    
+
 
   
 @TC_EPE_TE_CS_0003d
@@ -224,6 +230,10 @@ Examples:
 Examples:
   | SlNo. | Controller       | context menu | Notification          |
   | 1     | M580_Standalone3 | Configure    | Open Configure Editor |
+@open_Configuration_window_of_Controller_M580_HSBY_1
+Examples:
+  | SlNo. | Controller  | context menu | Notification          |
+  | 1     | M580_HSBY_1 | Configure    | Open Configure Editor |
   
 @TC_EPE_TE_CS_000
 @test000
@@ -268,6 +278,11 @@ Examples:
 Examples:
   | SlNo. | button                  | FolderName  |
   | 1     | M580_Standalone3$$Close | Controllers |
+  
+@Close_Controllers_in_Topology_Explorer__M580_HSBY_1
+Examples:
+  | SlNo. | button             | FolderName  |
+  | 1     | M580_HSBY_1$$Close | Controllers |
     
   
 @test0002b
@@ -289,12 +304,12 @@ And I enterkey Project Browser RO in refine offline
 Then Verify Action message in notification pannel project browser in project explorer as '<project browser1>'
 @Create_Workstation_1
 Examples:
-  | SlNo. | context menu        | project browser1   |
+  | SlNo. | context menu       | project browser1   |
   | 1     | Create Workstation | Create Workstation |
   
 @Create_Workstation_2
 Examples:
-  | SlNo. | context menu        | project browser1   |
+  | SlNo. | context menu       | project browser1   |
   | 1     | Create Workstation | Create Workstation |
   
 @Create_Workstation_on_New_Build
@@ -319,14 +334,20 @@ Examples:
 @TC_EPE_TE_CS_000
 @test000
 Scenario Outline: Change safety settings of controller to Disable
-When I Right Click on nodes System Explorer Node in system explorer as 'M580_Standalone'
+When I Right Click on nodes System Explorer Node in system explorer as '<Controller name>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 When I change controller properties with drop down options as '<options>'
 When I Select button in the modal dialoge window as '<Button name>'
 
+@Change_safety_settings_of_M580_standalone_controller_to_Disable
 Examples:
-  | SlNo. | context menu | options           | Button name |
-  | 1     | Properties   | Controller$$False | Yes         |
+  | SlNo. | context menu | options           | Button name | Controller name |
+  | 1     | Properties   | Controller$$False | Yes         | M580_Standalone |
+ 
+@Change_safety_settings_of_M580_HSBY_1_controller_to_Disable 
+Examples:
+  | SlNo. | context menu | options           | Button name | Controller name |
+  | 1     | Properties   | Controller$$False | Yes         | M580_HSBY_1     |
   
 @TC_EPE_TE_CS_000
 @test000
@@ -337,8 +358,8 @@ When I change controller properties with drop down options as '<options>'
 When I Select button in the modal dialoge window as '<Button name>'
 
 Examples:
-  | SlNo. | context menu | options           | Button name |
-  | 1     | Properties   | Controller$$False | Yes         |
+  | SlNo. | context menu | options           | Button name | Controller name |
+  | 1     | Properties   | Controller$$False | Yes         | M580_HSBY_1     |
   
 
   
@@ -365,12 +386,12 @@ Examples:
 
 @Change_CPU_Version_of_controller__BME_P58_4040S_03.20
 Examples:
-  | SlNo. | Cpu_version           |
+  | SlNo. | Cpu_version          |
   | 1     | BME P58 4040   03.20 |
   
 @Change_CPU_Version_of_controller__BME_H58_6040S_03.20
 Examples:
-  | SlNo. | Cpu_version           |
+  | SlNo. | Cpu_version          |
   | 1     | BME H58 6040   03.20 |
   
   

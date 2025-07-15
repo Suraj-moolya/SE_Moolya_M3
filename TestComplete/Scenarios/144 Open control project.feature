@@ -31,7 +31,7 @@ Examples:
   
 @TC_EPE_PE_CP_0003
 @test0003
-Scenario Outline: Create a Control Project for M580_Redundant
+Scenario Outline: Create a Control Project for M580_HSBY_1
 When I RClick control project browser project browser in project explorer as '<project browser1>'
 And I Select context menu item EC project browser in project explorer as '<context menu>'
 And I Select controller in context menu as '<controller>'
@@ -39,7 +39,7 @@ And I rename the ControlProject as '<controller_name>'
 Then I verifies that '<controller_name>' Created in Project Explorer
 Examples:
   | SlNo. | project browser1 | context menu           | controller | controller_name |
-  | 1     | System_1         | Create Control Project | M580       | M580_Redundant  |
+  | 1     | System_1         | Create Control Project | M580       | M580_HSBY_1     |
   
   
     

@@ -30,8 +30,8 @@ Examples:
   
 @Map_Workstation_1_in_M580_Standalone2
 Examples:
-  | SlNo. | project browser1  | project browser2 | project browser3    | project browser4                  |
-  | 1     | M580_Standalone2  | Executable       | ControlExecutable_1 | ControlExecutive_1$$Workstation_1 |
+  | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                  |
+  | 1     | M580_Standalone2 | Executable       | ControlExecutable_1 | ControlExecutive_1$$Workstation_1 |
   
 @Map_Workstation_2_in_ControlExecutable
 Examples:
@@ -42,6 +42,11 @@ Examples:
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                  |
   | 1     | M580_Standalone3 | Executable       | ControlExecutable_1 | ControlExecutive_1$$Workstation_2 |
+@Map_M580_HSBY_1_in_M580_HSBY_1_Control_Project
+Examples:
+  | SlNo. | project browser1 | project browser2 | project browser3    | project browser4                |
+  | 1     | M580_HSBY_1      | Executable       | ControlExecutable_1 | ControlExecutive_1$$M580_HSBY_1 |
+
 
 
 @TC_EPE_PE_CP_0004

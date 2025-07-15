@@ -363,4 +363,8 @@ class RefineOfflineWorkFlow:
     def selecthttpsdropdownCE(self, param):
         """refineoffline_obj.selecthttpsdropdownCE"""
         RefineOfflineWorkFlow.refineoffline_obj.HTTPSbutton.select_item(param)
-        
+  
+    def selectautomaticserviceportCE(self):
+        """refineoffline_obj.BlockserviceportEIOcheckbox"""
+        RefineOfflineWorkFlow.refineoffline_obj.BlockserviceportEIOcheckbox.check()
+              

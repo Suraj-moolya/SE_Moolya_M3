@@ -80,6 +80,11 @@ Examples:
 Examples:
   | SlNo. | param                 | Button |
   | 1     | GDGP$$M580_Standalone | OK     |
+@Assign_Instance_from_system_to_M580_HSBY_1_Containers_in_PE
+Examples:
+  | SlNo. | param                 | Button |
+  | 1     | System_1$$M580_HSBY_1 | OK     |
+  
 
 
 

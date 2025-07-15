@@ -354,3 +354,9 @@ def step_impl(param):
     """I select HTTPS EIO in control expert"""
     CommonUtil.write_text_file("\nWhen I select HTTPS EIO in control expert")
     obj.selecthttpsdropdownCE(param)
+    
+@when("I select Automatic blocking of service port EIO in control expert")
+def step_impl():
+    """I select Automatic blocking of service port EIO in control expert"""
+    CommonUtil.write_text_file("\nWhen I select Automatic blocking of service port EIO in control expert")
+    obj.selectautomaticserviceportCE()
