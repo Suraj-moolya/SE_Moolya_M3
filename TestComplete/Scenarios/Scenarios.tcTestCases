@@ -177,5 +177,7 @@
 		<Folder Name="Application Explorer PostGre SQL">
 			<Feature Path="90873 - Replace template in AE with PostGre SQL.feature" />
 		</Folder>
+		<Folder Name="Control Project PostGre SQL" />
+		<Folder Name="NewFolder1" />
 	</Folder>
 </Scenarios>
