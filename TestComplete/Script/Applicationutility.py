@@ -102,13 +102,16 @@ def modal_dialog_window_button(button_name):
   wait_in_seconds(1000, 'wait')
   buttons_list = msg_obj.modaldialogwindowtextbox.object.FindAllChildren('ClrClassName', 'Button', 1000)
   take_screenshot('Taking Screenshot of the Message Window.')
-  for button in buttons_list:
-    if button_name in str(button.WPFControlText) :
-      button.click()
-      Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
-      break
+  if buttons_list:
+    for button in buttons_list:
+      if button_name in str(button.WPFControlText) :
+        button.click()
+        Log.Checkpoint('Clicked ' + str(button.WPFControlText) + ' button.')
+        break
+    else:
+      Log.Warning("Button name mentioned doesnt exists")
   else:
-    Log.Warning("Button name mentioned doesnt exists")
+    Log.Warning('No Buttons found on Pop Up !')
       
     
 def launch_system_server_engineering_client():
@@ -163,7 +166,10 @@ def launch_system_server():
     
 def modal_dialog_window_close():
   wait_in_seconds(1000, 'wait')
-  msg_obj.modaldialogwindowtextbox.object.Close()
+  try:
+    msg_obj.modaldialogwindowtextbox.object.Close()
+  except:
+    Log.Warning('No Message window to close !')
   
 def modal_dialog_window_textbox(param):
   param = default_text, new_text

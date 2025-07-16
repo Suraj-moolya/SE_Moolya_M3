@@ -455,15 +455,18 @@ def Rename_error_pop_up_ok():
 def select_ContextMenu_Items_EC(menu_item):
   menu = eng_obj.rclickmenutextbox.object
   menu_items = menu.FindAllChildren("ClrClassName", "*MenuItem", 50)
-  for item in menu_items:
-    if item.Visible and item.Enabled:
-      if item.Header != None and str(item.Header.OleValue) == str(menu_item):
-        item.Click()
-        Log.Checkpoint('The Context Menu Item clicked is : ' + str(menu_item))
-        #Sys.Keys('[Tab]')
-        break
+  if menu_items:
+    for item in menu_items:
+      if item.Visible and item.Enabled:
+        if item.Header != None and str(item.Header.OleValue) == str(menu_item):
+          item.Click()
+          Log.Checkpoint('The Context Menu Item clicked is : ' + str(menu_item))
+          #Sys.Keys('[Tab]')
+          break
+    else:
+      Log.Warning(f'The Context menu item {menu_item} not found !')
   else:
-    Log.Warning(f'The Context menu item {menu_item} not found !')
+    Log.Warning('No Context Menu Found !')
   Applicationutility.wait_in_seconds(3000, 'wait')
   
 ###############################################################################
