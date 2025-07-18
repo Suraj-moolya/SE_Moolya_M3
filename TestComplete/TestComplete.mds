@@ -18345,6 +18345,11 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
+							<testItem name="ProjectTestItem220" key="{DFA77F23-71D2-4A5F-8DC1-7EE22B684B9A}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Right_Click_M580_Standalone3_Collapse_All" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
 							<testItem name="ProjectTestItem40_4_1_1_2_1_1_1_1" key="{894CF47C-9F75-4A40-A370-BD3A19227BCA}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Double_Click_Containers" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
@@ -18361,6 +18366,16 @@
 								<children />
 							</testItem>
 							<testItem name="ProjectTestItem1_24_6_1_1_1_2_1_1_2_1_1_1_1_1" key="{A1367003-ADE8-41A8-935A-AEF7FB4CA3BE}" group="False" parallel="False" enabled="True" load="False" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from control executeable r-click" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+							<testItem name="ProjectTestItem219" key="{1B87ECE7-527B-42E9-9DC4-9568A2C8ECDC}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@close_&apos;M580_HSBY_1&apos;_Assignment_Editor" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+								<testParameters />
+								<environments activeCloud="SWT" />
+								<children />
+							</testItem>
+							<testItem name="ProjectTestItem218" key="{C2B0BF5B-AB11-451E-8AB6-3A49C2D52312}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@close_M580_HSBY_1.ControlExecutable_1.Manage" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />

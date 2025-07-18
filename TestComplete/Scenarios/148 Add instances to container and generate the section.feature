@@ -72,10 +72,14 @@ Examples:
 Examples:
   | SlNo. | containerinstance | contextmenu_item |
   | 1     | M580_Standalone3  | Expand All       |
+@Right_Click_M580_Standalone3_Collapse_All
+Examples:
+  | SlNo. | containerinstance | contextmenu_item |
+  | 1     | M580_Standalone3  | Collapse All     |
 @Right_Click_System_Collapse_All
 Examples:
   | SlNo. | containerinstance | contextmenu_item |
-  | 1     | System_1   | Collapse All     |
+  | 1     | System_1          | Collapse All     |
 @TC_EPE_SWF_0000
 @test0025
 Scenario Outline: Generate from Containers pane and Click on Modal Dialogue Window
@@ -90,7 +94,7 @@ Examples:
   | 1     | System_1$$Generate | Yes    | Generate        |
 @M580Standalone_generate
 Examples:
-  | SlNo. | containerinstance        | Button | container dock3 |
+  | SlNo. | containerinstance         | Button | container dock3 |
   | 1     | M580_Standalone$$Generate | Yes    | Generate        |
 @TC_EPE_SWF_0000
 @test0000

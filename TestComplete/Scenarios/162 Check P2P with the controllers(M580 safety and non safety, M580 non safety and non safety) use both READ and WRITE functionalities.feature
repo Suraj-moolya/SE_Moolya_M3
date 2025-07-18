@@ -141,6 +141,16 @@ Examples:
   | Button | tabname                                     |
   | OK     | M580_Standalone2.ControlExecutable_1.Manage |
   
+@close_M580_HSBY_1.ControlExecutable_1.Manage
+Examples:
+  | Button | tabname                                |
+  | OK     | M580_HSBY_1.ControlExecutable_1.Manage |
+  
+@close_'M580_HSBY_1'_Assignment_Editor
+Examples:
+  | Button | tabname                         |
+  | OK     | 'M580_HSBY_1' Assignment Editor |
+  
 @close_'M580_Standalone2'_Assignment_Editor
 Examples:
   | Button | tabname                              |
@@ -158,30 +168,30 @@ Examples:
   
 @close_M580_Standalone
 Examples:
-  | Button | tabname                             |
+  | Button | tabname         |
   | OK     | M580_Standalone |
   
 @close_Project_explorer
 Examples:
-  | Button | tabname     |
-  | OK     |Project Explorer |
+  | Button | tabname          |
+  | OK     | Project Explorer |
   
 @close_Topology_explorer
 Examples:
-  | Button | tabname     |
-  | OK     |Topology Explorer |
+  | Button | tabname           |
+  | OK     | Topology Explorer |
 @close_Application_explorer
 Examples:
-  | Button | tabname     |
-  | OK     |Application Explorer |
+  | Button | tabname              |
+  | OK     | Application Explorer |
 @close_Global_Templates_explorer
 Examples:
-  | Button | tabname     |
-  | OK     |Global Templates Explorer |
+  | Button | tabname                   |
+  | OK     | Global Templates Explorer |
 @close_Content_Repository_explorer
 Examples:
-  | Button | tabname     |
-  | OK     |Content Repository|
+  | Button | tabname            |
+  | OK     | Content Repository |
 
 
   
