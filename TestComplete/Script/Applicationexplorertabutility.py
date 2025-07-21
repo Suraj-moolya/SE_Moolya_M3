@@ -277,6 +277,7 @@ def right_click_asset_workspace_folder_AE(identifier):
 # Description: Verifies the presence of a folder or template in the application browser.
 # Parameter : identifier (str) - Identifier of the folder or template to verify.
 ###############################################################################
+
 def verify_folder_and_template_application_browser(identifier):
   template_list = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
   if template_list:
@@ -1577,3 +1578,44 @@ def EmptyPages_ImportWindow_PE(file_format):
   filename_textbox.Click()
   filename_textbox.Keys(file_format)
 
+###############################################################################  
+# Function : verify_progress_indicator_AE
+# Description: Verifies the progress of instances in the application browser.
+# Parameter : identifier (str) - Identifier of the instance to verify the progress
+###############################################################################
+def verify_progress_indicator_AE(param):
+  lst = {
+    0: 'Instance still has default values/no links exist/no facet has been assigned',
+    25: 'No facet has been assigned',
+    50: "Facets have not been assigned to both types of projects/the status of some assigned facets is not 'Assigned'",
+    75: "Some facets are not assigned yet",
+    "locked": "The instance is being updated"
+  }
+ 
+  identifier, progress_value = param.split('$$')
+ 
+  # Convert progress_value to int if it's a digit
+  if progress_value.isdigit():
+    progress_value = int(progress_value)
+ 
+  template_list = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
+ 
+  if template_list:
+    for item in template_list:
+      if item.Visible:
+        if identifier in str(item.DataContext.Identifier.OleValue):
+          if item.DataContext.IsProgressStateVisible:
+            tooltip = item.DataContext.ProgressStateToolTip.OleValue
+            Log.Message(tooltip)
+            expected_tooltip = lst.get(progress_value)
+            if expected_tooltip and expected_tooltip in tooltip:
+              Log.Checkpoint("The instance progress is: " + str(item.DataContext.ProgressStateToolTip.OleValue))
+            else:
+              Log.Warning("Progress tooltip did not match the expected value.")
+            break
+          else:
+            Log.Warning(f"{item.DataContext.Identifier.OleValue}'s Progress State is not visible.")
+    else:
+      Log.Warning("Instance not found in the list.")
+  else:
+    Log.Warning("No templates found.")

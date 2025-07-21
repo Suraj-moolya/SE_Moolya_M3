@@ -707,3 +707,10 @@ def step_impl(templatesBrowser2):
     """I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'"""
     CommonUtil.write_text_file("\nWhen I drag Template from Template browser and drop to the Folders in Application browser with folder name as \""+templatesBrowser2+"\"")
     Applicationexplorertabutility.drag_composite_template_drop_app_browser_folder_AE(templatesBrowser2)
+    
+@then("Verify the progress status of instance in Application browser when opened as {arg}")   
+@then("Verify the instance is locked in Application browser when opened as {arg}")
+def step_impl(templatesBrowser2):
+  """Verify the instace is locked when opened as '<templatesBrowser2>'"""
+  CommonUtil.write_text_file("\nThen Verify the instance is locked when opened as \""+templatesBrowser2+"\"")
+  Applicationexplorertabutility.verify_progress_indicator_AE(templatesBrowser2)
