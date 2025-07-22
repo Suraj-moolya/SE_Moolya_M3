@@ -84,9 +84,10 @@ def get_current_datetime():
 
 def write_text_file(text):
     """get_application_data"""
-    append_mode = open(Project.Variables.textfile_path, "a")
-    append_mode.writelines(text)
-    append_mode.close()
+    pass
+#    append_mode = open(Project.Variables.textfile_path, "a")
+#    append_mode.writelines(text)
+#    append_mode.close()
 
 def get_application_data(xml_node):
     """get_application_data"""

@@ -68,25 +68,30 @@ import Engineeringclientutility
 #
 def on_log_message(sender, logparams):#pylint: disable = unused-argument
     """on_log_message"""
-    if "--" not in logparams.MessageText.upper() and "FILEPATH:" not in logparams.MessageText.upper():
-        CommonUtil.write_text_file("|| Log Message:"+logparams.MessageText)
-    elif "FILEPATH:" in logparams.MessageText.upper():
-        CommonUtil.write_text_file("|| Log Picture:"+logparams.MessageText)
+    pass
+#    if "--" not in logparams.MessageText.upper() and "FILEPATH:" not in logparams.MessageText.upper():
+#        CommonUtil.write_text_file("|| Log Message:"+logparams.MessageText)
+#    elif "FILEPATH:" in logparams.MessageText.upper():
+#        CommonUtil.write_text_file("|| Log Picture:"+logparams.MessageText)
 
 def on_log_error(sender, logparams):#pylint: disable = unused-argument
     """on_log_error"""
-    CommonUtil.write_text_file("|| Log Error:"+logparams.MessageText)
+    pass
+#    CommonUtil.write_text_file("|| Log Error:"+logparams.MessageText)
 
 def on_log_picture(sender, logparams, logfileparams):#pylint: disable = unused-argument
     """on_log_picture"""
-    if "Full Screenshot" in logparams.MessageText:
-        CommonUtil.write_text_file("|| Log Picture:"+logfileparams.DestFileName)
+    pass
+#    if "Full Screenshot" in logparams.MessageText:
+#        CommonUtil.write_text_file("|| Log Picture:"+logfileparams.DestFileName)
 
 def on_start_test(sender):#pylint: disable = unused-argument
     """on_start_test"""
-    CommonUtil.create_text_file()
+    pass
+#    CommonUtil.create_text_file()
 
 def on_log_checkpoint(sender, logparams):#pylint: disable = unused-argument
     """on_log_checkpoint"""
-    if "--" not in logparams.MessageText:
-        CommonUtil.write_text_file("|| Log Message:"+logparams.MessageText)
+    pass
+#    if "--" not in logparams.MessageText:
+#        CommonUtil.write_text_file("|| Log Message:"+logparams.MessageText)
