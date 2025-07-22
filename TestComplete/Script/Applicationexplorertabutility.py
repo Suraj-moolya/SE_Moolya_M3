@@ -212,6 +212,7 @@ def drag_composite_template_drop_app_browser_folder_AE(param):
     main_screen = eng_obj.mainscreenbutton
     main_screen.drag((fromx + 15), (fromy + 15), (fromx + tox), -(fromy - toy))
     Applicationutility.wait_in_seconds(1000, 'wait')
+    Sys.Keys('[Enter]')
     
 ###############################################################################
 # Function : right_click_application_browser_template_AE
@@ -1609,7 +1610,7 @@ def verify_progress_indicator_AE(param):
             Log.Message(tooltip)
             expected_tooltip = lst.get(progress_value)
             if expected_tooltip and expected_tooltip in tooltip:
-              Log.Checkpoint("The instance progress is: " + str(item.DataContext.ProgressStateToolTip.OleValue))
+              Log.Checkpoint(f"The instance progress when {str(progress_value)}% is: " + str(item.DataContext.ProgressStateToolTip.OleValue))
             else:
               Log.Warning("Progress tooltip did not match the expected value.")
             break
@@ -1619,3 +1620,26 @@ def verify_progress_indicator_AE(param):
       Log.Warning("Instance not found in the list.")
   else:
     Log.Warning("No templates found.")
+    
+def verify_progress_status_of_all_templates():
+  template_list = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
+  if template_list:
+    for item in template_list:
+      if item.Visible:
+        if item.DataContext.Identifier.OleValue:
+          if item.DataContext.IsProgressStateVisible:
+            tooltip = item.DataContext.ProgressStateToolTip.OleValue
+            Log.Message(tooltip)
+            expected_tooltip = lst.get(progress_value)
+            if expected_tooltip and expected_tooltip in tooltip:
+              Log.Checkpoint(f"The instance progress when {str(progress_value)}% is: " + str(item.DataContext.ProgressStateToolTip.OleValue))
+            else:
+              Log.Warning("Progress tooltip did not match the expected value.")
+            break
+          else:
+            Log.Warning(f"{item.DataContext.Identifier.OleValue}'s Progress State is not visible.")
+    else:
+      Log.Warning("Instance not found in the list.")
+  else:
+    Log.Warning("No templates found.")
+ 

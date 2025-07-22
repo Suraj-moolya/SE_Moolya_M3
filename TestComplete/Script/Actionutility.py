@@ -329,26 +329,26 @@ def Enter_filename_fileformat_Export_Window(file_details):
   toy = 10
   filelocation.click_at(tox,toy)
   base_path = os.getcwd()
-  folder_name = "Test_Export_Files"
+  folder_name = "Test_Import_Files"
   full_path = os.path.join(base_path, folder_name) 
   Sys.Keys(full_path)
   Applicationutility.take_screenshot('taking Screenshot')
   Sys.Keys("[Enter]")    
-  
+
 ###############################################################################
 # Function : Enter_fileName_fileformat_Import_Window
 # Description: Enters the system name and location in the import window.
 # Parameter : file_format (str) - File format for the import.
 ###############################################################################
-
+ 
 def Enter_fileName_fileformat_Import_Window(file_details):
   filename, fileformat = file_details.split('$$')
   filelocation = aet_obj.addressbandtextbox
-  tox = (filelocation.object.Height)/2
-  toy = 5
-  filelocation.click_at(tox,toy)
+  tox = ((filelocation.object.Height)/2) + 5
+  toy = 5+5
+  filelocation.click_at(toy,tox)
   base_path = os.getcwd()
-  folder_name = "Test_Export_Files"
+  folder_name = "Test_Import_Files"
   full_path = os.path.join(base_path, folder_name)
   os.chdir(full_path) 
   Sys.Keys(os.getcwd())
@@ -357,5 +357,6 @@ def Enter_fileName_fileformat_Import_Window(file_details):
   filename_textbox.Click()
   filename_textbox.Keys(Project.Variables.VariableByName[filename] + fileformat)
   Applicationutility.take_screenshot('taking Screenshot')
-  Sys.Keys("[Enter]") 
-  
+  Applicationutility.wait_in_seconds(1500,"Wait")
+  Sys.Keys("[Enter]")   
+

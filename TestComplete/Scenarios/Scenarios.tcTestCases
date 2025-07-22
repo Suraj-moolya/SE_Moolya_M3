@@ -177,7 +177,7 @@
 		<Folder Name="Application Explorer PostGre SQL">
 			<Feature Path="90873 - Replace template in AE with PostGre SQL.feature" />
 			<Feature Path="90874 - Progress Status when assigned facets of instance are in non-assigned state with PostGre SQL.feature" />
-			<Feature Path="90875 - Update template in AE with PostGre Sql.feature" />
+			<Feature Path="90875 - Progress status of instances when unassigned instance is imported with PostGre Sql.feature" />
 		</Folder>
 		<Folder Name="Control Project PostGre SQL">
 			<Feature Path="81081 - Consitency Check after facets are unlocked and unlinked.feature" />

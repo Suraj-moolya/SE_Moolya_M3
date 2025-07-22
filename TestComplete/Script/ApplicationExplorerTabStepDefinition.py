@@ -3,7 +3,7 @@ from ApplicationExplorerTabWorkFlow import ApplicationExplorerTabWorkFlow
 import CommonUtil
 import Applicationutility
 import Applicationexplorertabutility
-
+import Actionutility
 obj=ApplicationExplorerTabWorkFlow()
 
         
@@ -714,3 +714,13 @@ def step_impl(templatesBrowser2):
   """Verify the instace is locked when opened as '<templatesBrowser2>'"""
   CommonUtil.write_text_file("\nThen Verify the instance is locked when opened as \""+templatesBrowser2+"\"")
   Applicationexplorertabutility.verify_progress_indicator_AE(templatesBrowser2)
+  
+@when("Export the instance in Application browser when opened as {arg}")
+def step_impl(param):
+  """Export the instance in Application browser when opened as '<param>'"""
+  Actionutility.Enter_filename_fileformat_Export_Window(param)
+  
+@when("Import the instance in Application browser when opened as {arg}")
+def step_impl(param):
+  """Import the instance in Application browser when opened as '<param>'"""
+  Actionutility.Enter_fileName_fileformat_Import_Window(param)
