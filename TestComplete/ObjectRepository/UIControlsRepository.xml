@@ -446,46 +446,46 @@
              <UIControl Element="SysTreeView_AvevaScreen" Name="Window('SysTreeView32', 'Tree1', 1)" Parent="ComputerSetupEditor_" />
         </Component>
 		<Component name="Control Expert">
-               <UIControl Element="FullScreenCE_ControlExpert" Name=".MenuItem('Full Screen\tCtrl+F8')" Parent="ControlExpert_" />
-               <UIControl Element="CloseFullScreenCE_ControlExpert" Name="Panel('Close FullScreen')" Parent="ControlExpert_" />
-               <UIControl Element="PropertiesofdeviceOKCE_ControlExpert" Name="Button('OK')" Parent="ControlExpert_" />
-               <UIControl Element="PropertiesofdeviceCE_ControlExpert" Name="Dialog('Properties of device')" Parent="ControlExpert_" />
-               <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
+             <UIControl Element="FullScreenCE_ControlExpert" Name=".MenuItem('Full Screen\tCtrl+F8')" Parent="ControlExpert_" />
+             <UIControl Element="CloseFullScreenCE_ControlExpert" Name="Panel('Close FullScreen')" Parent="ControlExpert_" />
+             <UIControl Element="PropertiesofdeviceOKCE_ControlExpert" Name="Button('OK')" Parent="ControlExpert_" />
+             <UIControl Element="PropertiesofdeviceCE_ControlExpert" Name="Dialog('Properties of device')" Parent="ControlExpert_" />
+             <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
 		     <UIControl Element="newdevicece_ControlExpert" Name="MenuItem('New Device...')" Parent="ControlExpert_" />
-			<UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
-			<UIControl Element="ipconfigmdiwin_ControlExpert" Name="TextObject('IPConfig')" Parent="EngineeringClient_" />
-			<UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
-			<UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
-			<UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
-			<UIControl Element="ToolPopUP_ControlExpert" Name="Popup('*')" Parent="ControlExpert_" />
-			<UIControl Element="dropdownbutton_ControlExpert" Name="Window('ComboBox', '', 1)" Parent="ControlExpert_" />
-			<UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
-			<UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
-			<UIControl Element="DropDownTab_ControlExpert" Name="List('Slot B :')" Parent="ControlExpert_" />
-			<UIControl Element="Deviceoptions_ControlExpert" Name="Popup('Device menu')" Parent="ControlExpert_" />
-			<UIControl Element="Additionaloptions_ControlExpert" Name="Popup('Additional functions')" Parent="ControlExpert_" />
-			<UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
-            <UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
-            <UIControl Element="FullScreenCE_ControlExpert" Name=".MenuItem('Full Screen\tCtrl+F8')" Parent="ControlExpert_" />
-            <UIControl Element="CloseFullScreenCE_ControlExpert" Name="Panel('Close FullScreen')" Parent="ControlExpert_" />
-            <UIControl Element="PropertiesofdeviceOKCE_ControlExpert" Name="Button('OK')" Parent="ControlExpert_" />
-            <UIControl Element="PropertiesofdeviceCE_ControlExpert" Name="Dialog('Properties of device')" Parent="ControlExpert_" />
-            <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
-			<UIControl Element="newdevicece_ControlExpert" Name="MenuItem('New Device...')" Parent="ControlExpert_" />
-			<UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
-			<UIControl Element="ipconfigmdiwin_ControlExpert" Name="TextObject('IPConfig')" Parent="EngineeringClient_" />
-			<UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
-			<UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
-			<UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
-			<UIControl Element="ToolPopUP_ControlExpert" Name="Popup('*')" Parent="ControlExpert_" />
-			<UIControl Element="dropdownbutton_ControlExpert" Name="Window('ComboBox', '', 1)" Parent="ControlExpert_" />
-			<UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
-			<UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
-			<UIControl Element="DropDownTab_ControlExpert" Name="List('Slot B :')" Parent="ControlExpert_" />
-			<UIControl Element="Deviceoptions_ControlExpert" Name="Popup('Device menu')" Parent="ControlExpert_" />
-			<UIControl Element="Additionaloptions_ControlExpert" Name="Popup('Additional functions')" Parent="ControlExpert_" />
-			<UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
-			<UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
+			 <UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ipconfigmdiwin_ControlExpert" Name="TextObject('IPConfig')" Parent="EngineeringClient_" />
+			 <UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
+			 <UIControl Element="ToolPopUP_ControlExpert" Name="Popup('*')" Parent="ControlExpert_" />
+			 <UIControl Element="dropdownbutton_ControlExpert" Name="Window('ComboBox', '', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="DropDownTab_ControlExpert" Name="List('Slot B :')" Parent="ControlExpert_" />
+			 <UIControl Element="Deviceoptions_ControlExpert" Name="Popup('Device menu')" Parent="ControlExpert_" />
+			 <UIControl Element="Additionaloptions_ControlExpert" Name="Popup('Additional functions')" Parent="ControlExpert_" />
+			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
+             <UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
+             <UIControl Element="FullScreenCE_ControlExpert" Name=".MenuItem('Full Screen\tCtrl+F8')" Parent="ControlExpert_" />
+             <UIControl Element="CloseFullScreenCE_ControlExpert" Name="Panel('Close FullScreen')" Parent="ControlExpert_" />
+             <UIControl Element="PropertiesofdeviceOKCE_ControlExpert" Name="Button('OK')" Parent="ControlExpert_" />
+             <UIControl Element="PropertiesofdeviceCE_ControlExpert" Name="Dialog('Properties of device')" Parent="ControlExpert_" />
+             <UIControl Element="UnlockSafetyProtectionCE_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip.OleValue="Unlock Safety Protection" Parent="EngineeringClient_" />
+			 <UIControl Element="newdevicece_ControlExpert" Name="MenuItem('New Device...')" Parent="ControlExpert_" />
+			 <UIControl Element="YesCEbutton_ControlExpert" Name="Window('Button', '*Yes', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ipconfigmdiwin_ControlExpert" Name="TextObject('IPConfig')" Parent="EngineeringClient_" />
+			 <UIControl Element="Modaldialogwindow_ControlExpert" Name="Window('#32770', 'Control Expert', 1)" Visible="True" Parent="ControlExpert_" />
+			 <UIControl Element="ModaldialogwindowNewDevice_ControlExpert" Name="Window('#32770', '*', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="ModalDialogWindowoptions_ControlExpert" Name="Popup('Context')" Parent="ControlExpert_" />
+			 <UIControl Element="ToolPopUP_ControlExpert" Name="Popup('*')" Parent="ControlExpert_" />
+			 <UIControl Element="dropdownbutton_ControlExpert" Name="Window('ComboBox', '', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="dropdownLbutton_ControlExpert" Name="Window('ComboLBox', '', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="AddWindow_ControlExpert" Name="Window('#32770', 'Add', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="DropDownTab_ControlExpert" Name="List('Slot B :')" Parent="ControlExpert_" />
+			 <UIControl Element="Deviceoptions_ControlExpert" Name="Popup('Device menu')" Parent="ControlExpert_" />
+			 <UIControl Element="Additionaloptions_ControlExpert" Name="Popup('Additional functions')" Parent="ControlExpert_" />
+			 <UIControl Element="DevicePropertyWindow_ControlExpert" Name="Window('#32770', 'Properties of device', 1)" Parent="ControlExpert_" />
+			 <UIControl Element="BuildandDeployChanges_ControlExpert" Name="WPFObject('PartButton')" DataContext.ToolTip="Build and deploy the changes" Parent="EngineeringClient_" />
         </Component>
         <Component name="Dialog CE">
              <UIControl Element="DialogPanelCE_DialogCE" Name ="Panel('[0..0]')" Parent="ControlExpert_"/>
