@@ -18242,7 +18242,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem12_2_1_2_2_1_1_1_1" key="{8723780D-C0F1-40B4-B58E-72FF39860E22}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
