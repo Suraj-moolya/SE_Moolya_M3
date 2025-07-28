@@ -9073,7 +9073,11 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
+<<<<<<< Updated upstream
 					<testItem name="TC_EPE_AE_0018_2_1_1_1_2_2_4" key="{F2CCCF31-35D0-4FF5-85D5-A4F7BDC100C4}" group="False" parallel="False" enabled="True" testMoniker="ApplicationExplorer|Search Template in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+=======
+					<testItem name="TC_EPE_AE_0018_2_1_1_1_2_2_4" key="{F2CCCF31-35D0-4FF5-85D5-A4F7BDC100C4}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Templates_for_builds_from_6335" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+>>>>>>> Stashed changes
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -9123,7 +9127,11 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
+<<<<<<< Updated upstream
 					<testItem name="ProjectTestItem124" key="{BF8F8DFA-D05A-493F-93D4-C5E1CE7840EB}" group="False" parallel="False" enabled="True" testMoniker="ApplicationExplorer|Search MotorGP in Template browser and Drag and drop from template browser to application browser" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+=======
+					<testItem name="ProjectTestItem124" key="{BF8F8DFA-D05A-493F-93D4-C5E1CE7840EB}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@Add_MotorGP_1.0.127_to_AE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+>>>>>>> Stashed changes
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -9298,7 +9306,11 @@
 						<environments activeCloud="SWT" />
 						<children />
 					</testItem>
+<<<<<<< Updated upstream
 					<testItem name="ProjectTestItem141" key="{EF65FA38-3083-44CF-9757-E5DFCB257B80}" group="False" parallel="False" enabled="True" testMoniker="*|@search_drag_drop_PWMOutputGP_1.0.74" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+=======
+					<testItem name="ProjectTestItem141" key="{EF65FA38-3083-44CF-9757-E5DFCB257B80}" group="False" parallel="False" enabled="True" load="False" testMoniker="*|@search_drag_drop_PWMOutputGP_1.0.76" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+>>>>>>> Stashed changes
 						<testParameters />
 						<environments activeCloud="SWT" />
 						<children />
@@ -17205,7 +17217,11 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
+<<<<<<< Updated upstream
 							<testItem name="ProjectTestItem97_1_1_3_1" key="{FEE75073-0186-4CEB-A6B8-B166CA4E6CC6}" group="False" parallel="False" enabled="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+=======
+							<testItem name="ProjectTestItem97_1_1_3_1" key="{FEE75073-0186-4CEB-A6B8-B166CA4E6CC6}" group="False" parallel="False" enabled="False" load="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+>>>>>>> Stashed changes
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -18242,7 +18258,11 @@
 							</testItem>
 						</children>
 					</testItem>
+<<<<<<< Updated upstream
 					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+=======
+					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+>>>>>>> Stashed changes
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem12_2_1_2_2_1_1_1_1" key="{8723780D-C0F1-40B4-B58E-72FF39860E22}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
