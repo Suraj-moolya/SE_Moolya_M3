@@ -212,7 +212,21 @@ def drag_composite_template_drop_app_browser_folder_AE(param):
     main_screen = eng_obj.mainscreenbutton
     main_screen.drag((fromx + 15), (fromy + 15), (fromx + tox), -(fromy - toy))
     Applicationutility.wait_in_seconds(1000, 'wait')
-    Sys.Keys('[Enter]')
+
+###############################################################################
+# Function : run_drag_and_drop_multiple_times
+# Description: Multiple Drag-Drop on a template in the application browser.
+# Parameter : param (str, num) - Template identifier and version in the format 'identifier$$version', 'num'.
+###############################################################################      
+    
+def run_drag_and_drop_multiple_times(param, count):
+    count = int(count)
+    for i in range(count):
+        Log.Message(f"Iteration {i + 1} of {count} for param: {param}")
+        try:
+            drag_composite_template_drop_app_browser_folder_AE(param)
+        except Exception as e:
+            Log.Error(f"Error in iteration {i + 1}: {str(e)}")
     
 ###############################################################################
 # Function : right_click_application_browser_template_AE
@@ -1579,6 +1593,26 @@ def EmptyPages_ImportWindow_PE(file_format):
   filename_textbox.Click()
   filename_textbox.Keys(file_format)
 
+
+  
+###############################################################################
+# Function   : handle_import_conflicts
+# Parameters : target_instance (str) - MotorGP_1.
+# Description: Handles import conflict resolution by clicking "Update" for 
+#              a specific instance (e.g., 'MotorGP_1') and skipping all others..
+###############################################################################
+def handle_import_conflict(target_instance):
+  try:
+    buttons = aet_obj.importconflictdialogtextbox.object.FindAllChildren('ClrClassName', 'RadioButton', 1000)
+
+    [btn.Click() for btn in buttons if (
+      (getattr(getattr(getattr(btn, "DataContext", None), "OldInstanceIdentifier", None), "OleValue", None) == target_instance and "Update" in str(getattr(btn, "ToolTip", ""))) or
+      (getattr(getattr(getattr(btn, "DataContext", None), "OldInstanceIdentifier", None), "OleValue", None) != target_instance and "Skip" in str(getattr(btn, "ToolTip", "")))
+    )]
+
+  except Exception as e:
+    Log.Error(f"Import conflict handler failed: {e}")
+    
 ###############################################################################  
 # Function : verify_progress_indicator_AE
 # Description: Verifies the progress of instances in the application browser.
@@ -1590,6 +1624,7 @@ def verify_progress_indicator_AE(param):
     25: 'No facet has been assigned',
     50: "Facets have not been assigned to both types of projects/the status of some assigned facets is not 'Assigned'",
     75: "Some facets are not assigned yet",
+    100: "",
     "locked": "The instance is being updated"
   }
  
@@ -1606,40 +1641,219 @@ def verify_progress_indicator_AE(param):
       if item.Visible:
         if identifier in str(item.DataContext.Identifier.OleValue):
           if item.DataContext.IsProgressStateVisible:
-            tooltip = item.DataContext.ProgressStateToolTip.OleValue
+            tooltip = item.DataContext.ProgressStateToolTip.OleValue or ""
             Log.Message(tooltip)
             expected_tooltip = lst.get(progress_value)
-            if expected_tooltip and expected_tooltip in tooltip:
-              Log.Checkpoint(f"The instance progress when {str(progress_value)}% is: " + str(item.DataContext.ProgressStateToolTip.OleValue))
+            if expected_tooltip is not None and tooltip == expected_tooltip:
+              Log.Checkpoint(f"The instance progress when {str(progress_value)}% is: {tooltip}")
             else:
               Log.Warning("Progress tooltip did not match the expected value.")
             break
           else:
-            Log.Warning(f"{item.DataContext.Identifier.OleValue}'s Progress State is not visible.")
+            if progress_value == 100:
+              Log.Checkpoint(f"The instance '{identifier}' reached 100% progress — progress icon is expected to be hidden.")
+            else:
+              Log.Warning(f"{item.DataContext.Identifier.OleValue}'s Progress State is not visible unexpectedly.")
+            break
     else:
       Log.Warning("Instance not found in the list.")
   else:
     Log.Warning("No templates found.")
     
 def verify_progress_status_of_all_templates():
-  template_list = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
-  if template_list:
-    for item in template_list:
-      if item.Visible:
-        if item.DataContext.Identifier.OleValue:
-          if item.DataContext.IsProgressStateVisible:
-            tooltip = item.DataContext.ProgressStateToolTip.OleValue
-            Log.Message(tooltip)
-            expected_tooltip = lst.get(progress_value)
-            if expected_tooltip and expected_tooltip in tooltip:
-              Log.Checkpoint(f"The instance progress when {str(progress_value)}% is: " + str(item.DataContext.ProgressStateToolTip.OleValue))
-            else:
-              Log.Warning("Progress tooltip did not match the expected value.")
-            break
-          else:
-            Log.Warning(f"{item.DataContext.Identifier.OleValue}'s Progress State is not visible.")
-    else:
-      Log.Warning("Instance not found in the list.")
-  else:
-    Log.Warning("No templates found.")
+  tooltip_map = {
+    0: 'Instance still has default values/no links exist/no facet has been assigned',
+    25: 'No facet has been assigned',
+    50: "Facets have not been assigned to both types of projects/the status of some assigned facets is not 'Assigned'",
+    75: "Some facets are not assigned yet",
+    100: "", "locked": "The instance is being updated"
+  }
+  for item in aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000):
+    if not item.Visible: continue
+    dc = getattr(item, "DataContext", None)
+    if dc is None: continue
+    try:
+      identifier = getattr(dc.Identifier, "OleValue", "Unknown")
+      tooltip = getattr(getattr(dc, "ProgressStateToolTip", None), "OleValue", "")
+      progress = getattr(dc, "ProgressValue", None)
+      is_visible = str(getattr(dc, "IsProgressStateVisible", "")).lower() == "true"
+
+      if progress is None and tooltip:
+        progress = next((k for k, v in tooltip_map.items() if v and v in tooltip), None)
+      if not is_visible and not tooltip and progress is None:
+        progress = 100
+
+      msg = f"{identifier}'s progress is {progress}%"
+      expected = tooltip_map.get(progress, "")
+      if is_visible:
+        Log.Checkpoint(f"{msg} — Tooltip: {tooltip}") if expected in tooltip else \
+        Log.Warning(f"{msg} — Tooltip mismatch. Expected: '{expected}', Got: '{tooltip}'")
+      else:
+        Log.Checkpoint(f"{msg} — No icon or tooltip (as expected).") if progress == 100 else \
+        Log.Warning(f"{msg} — Progress icon not visible. Tooltip: {tooltip or 'N/A'}")
+    except Exception as e:
+      Log.Error(f"Error checking progress state for {identifier}: {e}")
+      
+      
+###############################################################################
+# Function   : switch_view_if_needed
+# Description: Switches the Application Explorer view between Grid and Tree,  
+#              based on the current tooltip and the desired view passed as a  
+#              parameter. Prevents unnecessary clicks by checking if the  
+#              current view already matches the target view.
+# Parameters : 
+#   desired_view - A string ("Grid" or "Tree") representing the target view. 
+#                  The function will click to switch views only if needed.
+###############################################################################      
+      
+def switch_view_if_needed(view):
+  if view in str(aet_obj.gridortreetextbox.object.ToolTip):
+    aet_obj.gridortreetextbox.object.click()
+    Log.Message(f"Switched to {view} view.")
+    return
+  Log.Message(f"Already in {view} view.")
  
+###############################################################################
+# Function   : verify_all_folders_expanded
+# Description: Verifies if all folders in the Application Browser are expanded.
+#              Logs a warning for each folder that is expandable but not expanded.
+#              If all folders are expanded, logs a success message.
+# Parameters : None
+###############################################################################  
+   
+def verify_all_folders_expanded():
+  instances = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
+  not_expanded = [i for i in instances if i.IsExpandable and not i.IsExpanded]
+  [Log.Message(f"Folder not expanded: {i.DataContext.Identifier}") for i in not_expanded]
+  if not not_expanded:
+    Log.Message("All folders are expanded")
+    
+###############################################################################
+# Function   : navigate_identifier_application_browser
+# Description: Navigates to a specific identifier in the Application Browser,
+#              selects it, and performs a directional key press (Left or Right).
+#              Used for expanding or collapsing nodes using keyboard navigation.
+# Parameters : 
+#   identifier - The unique name (string) of the instance or folder to focus on.
+#   direction  - The direction of keyboard action to perform ("left" or "right" or up, down).
+# Notes      :
+#   - Presses LEFT to collapse and RIGHT to expand the target node.
+#   - Skips hidden items and only interacts with visible ones.
+###############################################################################    
+    
+def navigate_identifier_application_browser(identifier, direction):
+  rows = aet_obj.applicationbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
+  if not rows: return Log.Warning("No identifiers found.")
+  direction = direction.lower()
+  key_map = {"left": "[Left]", "right": "[Right]", "up": "[Up]", "down": "[Down]"}
+  key = key_map.get(direction)
+  if not key: return Log.Warning(f"Invalid direction '{direction}'")
+  for r in rows:
+    if r.Visible and str(r.DataContext.Identifier.OleValue) == identifier:
+      r.Click()
+      if direction in ["up", "down"]:
+        for _ in range(len(rows)): r.Keys(key)
+        Log.Message(f"Scrolled {direction.upper()} to {'top' if direction == 'up' else 'bottom'} on '{identifier}'")
+      else:
+        r.Keys(key)
+        Log.Message(f"Pressed {direction.upper()} on '{identifier}'")
+      Applicationutility.wait_in_seconds(2000, 'wait')
+      break
+      
+###############################################################################
+# Function   : double_click_instance_in_instance_editor
+# Description: Searches for the given instance name in the Instance Editor.
+#              If found, performs a double-click on the corresponding row and
+#              logs whether it is expanded or not.
+#              Logs a warning if the instance is not found or an error occurs.
+# Parameters : name (str) – The name of the instance to double-click.
+###############################################################################
+      
+def double_click_instance_in_instance_editor(name):
+  for row in aet_obj.instanceeditorchecklisttextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000):
+    try:
+      if any(tb.WPFControlText == name for tb in row.FindAllChildren('ClrClassName', 'TextBlock', 100)):
+        row.DblClick(); Log.Message(f"{name} | IsExpanded: {row.IsExpanded}"); return
+    except Exception as e: Log.Warning(f"Row error: {e}")
+  Log.Warning(f"Instance '{name}' not found.")
+  
+###############################################################################
+# Function   : double_click_asset_workspace_folder
+# Description: Searches for the given identifier in the Asset Workspace TreeView.
+#              If a matching and visible folder is found, performs a double-click
+#              on the folder and logs the action.
+#              Waits for a second after the click to allow UI updates.
+# Parameters : identifier (str) – The identifier of the folder to double-click.
+###############################################################################
+  
+def double_click_asset_workspace_folder(identifier):
+  for row in aet_obj.assetworkspacetextbox.find_children_for_treeviewrow():
+    if row.Visible and identifier in str(row.Item.Identifier.OleValue):
+      row.DblClick()
+      Log.Message(f"Double-clicked on {row.Item.Identifier.OleValue}")
+      Applicationutility.wait_in_seconds(1000, 'wait')
+      return
+  Log.Warning("No matching folder found in asset workspace.")
+
+###############################################################################
+# Function   : key_action_asset_workspace_folder
+# Description: Navigates within the Asset Workspace TreeView using keyboard arrows.
+#              Finds the row matching the identifier, brings it into focus, and 
+#              presses the specified arrow key (left, right, up, down).
+#              If scrolling (up/down), key press is repeated for full scroll.
+#              Logs appropriate messages or warnings for invalid directions or 
+#              missing identifiers.
+# Parameters : identifier (str) – The identifier to locate in the TreeView.
+#              direction  (str) – The direction key to press (left/right/up/down).
+###############################################################################  
+    
+def key_action_asset_workspace_folder(identifier, direction):
+  rows = aet_obj.assetworkspacetextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
+  if not rows: return Log.Warning("No identifiers found.")
+  direction = direction.lower()
+  key_map = {"left": "[Left]", "right": "[Right]", "up": "[Up]", "down": "[Down]"}
+  key = key_map.get(direction)
+  if not key: return Log.Warning(f"Invalid direction '{direction}'")
+  for r in rows:
+    if r.Visible and str(r.DataContext.Identifier.OleValue) == identifier:
+      r.Click()
+      if direction in ["up", "down"]:
+        for _ in range(len(rows)): r.Keys(key)
+        Log.Message(f"Scrolled {direction.upper()} to {'top' if direction == 'up' else 'bottom'} on '{identifier}'")
+      else:
+        r.Keys(key)
+        Log.Message(f"Pressed {direction.upper()} on '{identifier}'")
+      Applicationutility.wait_in_seconds(2000, 'wait')
+      break
+      
+def double_click_templatebrowser_folder(identifier):
+  for row in aet_obj.templatesbrowsertextbox.find_children_for_treeviewrow():
+    try:
+      if row.Visible and identifier in str(row.Item.Identifier.OleValue):
+        row.DblClick(); Log.Message(f"{identifier} | IsExpanded: {row.IsExpanded}"); return
+    except Exception as e: Log.Warning(f"Row error: {e}")
+  Log.Warning("No matching folder found in asset workspace.")
+ 
+  
+   
+def key_action_template_browser_folder(identifier, direction):
+  rows = aet_obj.templatesbrowsertextbox.object.FindAllChildren('ClrClassName', 'TreeListViewRow', 1000)
+  if not rows: return Log.Warning("No identifiers found.")
+  direction = direction.lower()
+  key_map = {"left": "[Left]", "right": "[Right]", "up": "[Up]", "down": "[Down]"}
+  key = key_map.get(direction)
+  if not key: return Log.Warning(f"Invalid direction '{direction}'")
+  for r in rows:
+    if r.Visible and str(r.DataContext.Identifier.OleValue) == identifier:
+      r.Click()
+      if direction in ["up", "down"]:
+        for _ in range(len(rows)): r.Keys(key)
+        Log.Message(f"Scrolled {direction.upper()} to {'top' if direction == 'up' else 'bottom'} on '{identifier}'")
+      else:
+        r.Keys(key)
+        Log.Message(f"Pressed {direction.upper()} on '{identifier}'")
+      Applicationutility.wait_in_seconds(2000, 'wait')
+      break
+   
+def skdf():
+  key_action_template_browser_folder("General Purpose Library", "down")

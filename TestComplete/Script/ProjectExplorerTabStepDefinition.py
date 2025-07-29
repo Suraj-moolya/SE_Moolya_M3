@@ -28,6 +28,7 @@ def step_impl(controller):
     CommonUtil.write_text_file("\nWhen I Select controller in context menu as \""+controller+"\"")
     obj.textboxprojectbrowserselectcontextsubmenuitemec(controller)
     
+@when("I Rename the Folder as {arg}")
 @when("I rename the ControlProject as {arg}")
 def step_impl(controller_name):
     """I rename the ControlProject as '<controller_name>'"""

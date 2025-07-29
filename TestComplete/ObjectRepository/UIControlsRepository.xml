@@ -243,6 +243,8 @@
 			 <UIControl Element="StateSelectorapprovedinsaveas_GlobalTemplatesTab" Name="WPFObject('StateSelector')" Parent="EngineeringClient_" />		
 			 <UIControl Element="OldStateSelectorapprovedinsaveas_GlobalTemplatesTab" Name="WPFObject('OldStateSelector')" Parent="EngineeringClient_" />	
 			 <UIControl Element="approvedcomboitem_GlobalTemplatesTab" Name="WPFObject('ComboBoxItem', '', 1)" Parent="EngineeringClient_" />					 
+             <UIControl Element="FrameHostContainer_GlobalTemplatesTab" Name="WPFObject('WorkspaceControl')" Parent="EngineeringClient_" />	
+             <UIControl Element="GlobalTemplatesSelectVariables_GlobalTemplatesTab" Name="WPFObject('PartList')" Parent="EngineeringClient_" />			 
 	   </Component>
         <Component name="Application Explorer Tab">
              <UIControl Element="Templatesbrowser_ApplicationExplorerTab" Name="WPFObject('ApplicationPanesGroup')" Parent="EngineeringClient_" />
@@ -304,6 +306,7 @@
              <UIControl Element="Specifictemplate_ApplicationExplorerTab" Parent="EngineeringClient_" />
              <UIControl Element="Replacetemplate_ApplicationExplorerTab" Name=".WPFObject('ReplaceTemplateControl', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="Replacetemplatecombo_ApplicationExplorerTab" Name="WPFObject('EditableComboBox', '', 1)" Parent="EngineeringClient_Replacetemplate" />
+             <UIControl Element="GridVieworTreeView_ApplicationExplorerTab" Name="WPFObject('PART_ChangeView')" Parent="EngineeringClient_" />
         </Component>
         <Component name="Project Explorer Tab">
              <UIControl Element="projectbrowser_ProjectExplorerTab" Name="WPFObject('ProjectBrowserPaneGroup')" Parent="EngineeringClient_" />
@@ -377,6 +380,7 @@
              <UIControl Element="Export_MessageBox" Name="Window('#32770', 'Save',*)" Parent="EngineeringClient_" />
              <UIControl Element="Exportfilelocation_MessageBox" Name="Window('Address Band Root', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="Exportwpopup_MessageBox" Name="Window('#32770', 'Export', *)" Parent="EngineeringClient_" />
+			 <UIControl Element="Exportfilepopup_MessageBox" Name="Window('Button', '&amp;Yes', 1)" Parent="EngineeringClient_" />
              <UIControl Element="Deletepopup_MessageBox" Name="WPFObject('MessageWindow')" Parent="EngineeringClient_" />
              <UIControl Element="Exportpopup_MessageBox" Name="WPFObject('ModalDialogWindow', '', 1)" Parent="EngineeringClient_" />
              <UIControl Element="NotificationPannel_MessageBox" Name="WPFObject('NotificationPanel', '', 1)" Parent="EngineeringClient_" />

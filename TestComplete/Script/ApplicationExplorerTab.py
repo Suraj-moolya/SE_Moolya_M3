@@ -303,6 +303,11 @@ class ApplicationExplorerTab(MapBase):
     def replacetemplatecombotextbox(self):
         """replacetemplatecombotextbox"""
         return self.get_element("Replacetemplatecombo_ApplicationExplorerTab")
+              
+    @property
+    def gridortreetextbox(self):
+        """gridortreetextbox"""
+        return self.get_element("GridVieworTreeView_ApplicationExplorerTab")
         
     
               

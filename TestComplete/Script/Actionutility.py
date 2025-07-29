@@ -11,6 +11,8 @@ from ProjectExplorerTab import ProjectExplorerTab
 from SystemExplorerScreen import SystemExplorerScreen
 from TopologyExplorerTab import TopologyExplorerTab
 from Topology import Topology
+import Systemserverutility
+import Applicationexplorertabutility
 
 import os
 import csv
@@ -246,6 +248,32 @@ def close_tab_items_EC(identifier):
         break
   else:
      Log.Warning("Tab Item mentioned is not Valid")
+
+###############################################################################
+#Author : Gunachanthiran k
+#Function : Checking Instance Loding Timing is Within 2 seconds or Not.
+#Parameter : 
+###############################################################################     
+    
+def reload_application_explorer_and_measure_time():
+  try:
+    app_browser = aet_obj.applicationbrowsertextbox.object
+    if not app_browser.Exists:
+      Log.Error("Application browser not found.")
+      return
+
+    start = aqDateTime.Now()
+    for _ in range(20):
+      if app_browser.FindAllChildren("ClrClassName", "TreeListViewRow", 1000):
+        duration = aqDateTime.TimeInterval(start, aqDateTime.Now())
+        Log.Checkpoint(f"Tree loaded in {aqConvert.TimeIntervalToStr(duration)}")
+        return
+      aqUtils.Delay(100)
+
+    Log.Warning("Tree did not load within timeout.")
+  except Exception as e:
+    Log.Error(f"Error: {e}")
+
  
 ###############################################################################
 #Author : 
@@ -334,19 +362,18 @@ def Enter_filename_fileformat_Export_Window(file_details):
   Sys.Keys(full_path)
   Applicationutility.take_screenshot('taking Screenshot')
   Sys.Keys("[Enter]")    
-
 ###############################################################################
 # Function : Enter_fileName_fileformat_Import_Window
 # Description: Enters the system name and location in the import window.
 # Parameter : file_format (str) - File format for the import.
 ###############################################################################
- 
+
 def Enter_fileName_fileformat_Import_Window(file_details):
   filename, fileformat = file_details.split('$$')
   filelocation = aet_obj.addressbandtextbox
-  tox = ((filelocation.object.Height)/2) + 5
-  toy = 5+5
-  filelocation.click_at(toy,tox)
+  tox = (filelocation.object.Height)/2
+  toy = 5
+  filelocation.click_at(tox,toy)
   base_path = os.getcwd()
   folder_name = "Test_Import_Files"
   full_path = os.path.join(base_path, folder_name)
@@ -357,6 +384,117 @@ def Enter_fileName_fileformat_Import_Window(file_details):
   filename_textbox.Click()
   filename_textbox.Keys(Project.Variables.VariableByName[filename] + fileformat)
   Applicationutility.take_screenshot('taking Screenshot')
-  Applicationutility.wait_in_seconds(1500,"Wait")
-  Sys.Keys("[Enter]")   
+  Sys.Keys("[Enter]") 
 
+###############################################################################
+# Function   : Export_File
+# Description: Handles the export operation by assigning the export filename 
+#              to a TestComplete variable, setting the export location, and 
+#              confirming the file path without direct user interaction.
+# Parameters : 
+#   file_name   - The base name of the file to export (string)
+#   file_format - The file extension (e.g., ".txt", ".xml") (string)
+###############################################################################  
+
+def get_default_file_path():
+  path = os.path.join(os.getcwd(), "Test_Export_Files")
+  if not os.path.exists(path):
+    os.makedirs(path)
+  return path
+
+def Export_File(file_name, file_format):
+  full_name = file_name + file_format
+  if not Project.Variables.VariableExists(file_name):
+    Project.Variables.AddVariable(file_name, "String")
+  Project.Variables.VariableByName[file_name] = full_name
+
+  if msg_obj.exportfilenametextbox.object.Exists:
+    msg_obj.exportfilenametextbox.object.Keys(full_name)
+  else:
+    Log.Warning("Export Window does not exist")
+
+  path_box = msg_obj.exportfilelocationtextbox
+  path_box.click_at(path_box.object.Height / 2, 10)
+  Sys.Keys(get_default_file_path())
+  Sys.Keys("[Enter]")
+  Applicationexplorertabutility.Explorer_buttons_AE("Save")
+  Delay(1000)
+  Sys.Keys("[Enter]")
+  
+###############################################################################
+# Function   : Import_File
+# Description: Automates the file import process by navigating to the desired 
+#              file path and selecting the target file stored in a TestComplete 
+#              variable.
+# Parameters : 
+#   file_name - The name of the variable that holds the full file name
+###############################################################################
+
+def Import_File(file_name):
+  if Project.Variables.VariableExists(file_name):
+    file_name = Project.Variables.VariableByName[file_name]
+
+  folder = get_default_file_path()
+
+  loc_box = aet_obj.addressbandtextbox
+  loc_box.click_at(30, loc_box.object.Height / 2)
+  Sys.Keys(folder)
+  Sys.Keys("[Enter]")
+
+  name_box = aet_obj.comboboxtextbox.object
+  name_box.Click()
+  Sys.Keys(file_name)
+  Sys.Keys("[Enter]")
+  
+###############################################################################
+# Function   : changing_values_in_csv
+# Description: Toggles the boolean values (TRUE/FALSE) of multiple headings 
+#              in a CSV file for a specific instance name. The function reads 
+#              the CSV, finds the target instance, and flips the boolean values 
+#              for the specified headings.
+# Parameters : 
+#   file_name     - The CSV file name to be updated (stored under default path)
+#   instance_name - The target instance name whose values need to be toggled
+#   headings      - A string or list of headings to be toggled, separated by $$
+###############################################################################
+  
+def changing_values_in_csv(file_name, instance_name, headings):
+  if isinstance(headings, str):
+    headings = [h.strip() for h in headings.split("$$") if h.strip()]
+  file_path = os.path.join(get_default_file_path(), file_name)
+  with open(file_path, newline='', encoding='utf-8') as f:
+    rows = list(csv.reader(f))
+    header_row_index = instance_col_index = None
+    for i, row in enumerate(rows):
+      if "$InstanceName" in row:
+        header_row_index = i
+        instance_col_index = row.index("$InstanceName")
+        break
+    if header_row_index is None:
+      Log.Error("Header '$InstanceName' not found.")
+      return
+    heading_col_indices = {h: rows[header_row_index].index(h) for h in headings if h in rows[header_row_index]}
+    if not heading_col_indices:
+      Log.Error("No valid headings provided.")
+      return
+    updated = False
+    for row in rows[header_row_index + 1:]:
+      if len(row) > instance_col_index and row[instance_col_index].strip() == instance_name:
+        for h, idx in heading_col_indices.items():
+          if len(row) > idx:
+            curr = row[idx].strip().upper()
+            row[idx] = "FALSE" if curr == "TRUE" else "TRUE"
+            Log.Checkpoint(f"Updated '{h}' for '{instance_name}' from '{curr}' to '{row[idx]}'")
+          else:
+            Log.Warning(f"Column index {idx} out of range for heading '{h}'")
+        updated = True
+        break
+    if not updated:
+      Log.Warning(f"Instance '{instance_name}' not found.")
+      return
+  with open(file_path, 'w', newline='', encoding='utf-8') as f:
+    csv.writer(f).writerows(rows)
+  Log.Checkpoint("CSV file updated successfully.")
+  
+def sd():
+  changing_values_in_csv("System_1_Exporting_5Instance.csv", "MotorGP_3", "Control.Failures.Enabled$$Control.Interlocks.Enabled")

@@ -224,4 +224,12 @@ def step_impl():
     """I checked header cb in message box"""
     CommonUtil.write_text_file("\nWhen I checked header cb in message box")
     obj.checkboxheadercbchecked()
+    
+@when("I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '(.*)' with format '(.*)'")
+def step_impl(file_name, file_format):
+  """I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '<file_name>' with format '<file_format>'"""
+  CommonUtil.write_text_file(
+    f"\nWhen I Enter File Name and File Location in Export Window AE Export in ec windows explorer as '{file_name}' with format '{file_format}'"
+  )
+  obj.export_file_from_ae_explorer_window(file_name, file_format)
 

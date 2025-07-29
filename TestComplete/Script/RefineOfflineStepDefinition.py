@@ -44,7 +44,8 @@ def step_impl():
     """I Consistency Check Select All Consistency Check in refine offline"""
     CommonUtil.write_text_file("\nWhen I Consistency Check Select All Consistency Check in refine offline")
     obj.buttonconsistencycheckconsistencycheckselectall()
-  
+
+@when("I click on {arg} button in Instance Save As window")  
 @when("I Click on Consistency Check Dialog window button in refine offline as {arg}")  
 @when("I Click on export System1 Export Popup AE buttons Consistency Check in refine offline as {arg}")
 def step_impl(unlink):

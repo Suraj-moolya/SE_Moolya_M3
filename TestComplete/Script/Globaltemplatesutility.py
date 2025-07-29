@@ -409,3 +409,175 @@ def GlobalTemplates_Import(path, folder, file):
     filename_textbox = aet_obj.comboboxtextbox.object
     filename_textbox.Click()
     filename_textbox.Keys(file)
+    
+###############################################################################
+# Function   : right_click_on_device_control
+# Description: Performs a right-click on the identifier by matching a given
+#              Identifier and Version in the Device Control window.
+#
+# Parameter  :
+#   param (str) - A string containing the Identifier and Version separated by `$$`.
+#                 Format: "<Identifier>$$<Version>"
+#                 Example: "$DualOPValveGP$$1.0.89"
+###############################################################################
+
+def right_click_on_device_control(param):
+  try:
+    idf, ver = map(str.strip, param.split('$$'))
+    for row in gte_obj.globaltemplatecoretextbox.object.FindAllChildren("ClrClassName", "GridViewRow", 1000):
+      ctx = getattr(row, "DataContext", None)
+      if ctx is not None and str(getattr(ctx, "Identifier", "")).strip() == idf and str(getattr(ctx, "Version", "")).strip() == ver:
+        row.ClickR()
+        return
+    Log.Warning(f"No match for Identifier: {idf}, Version: {ver}")
+  except Exception as e:
+    Log.Error(f"Error: {e}")
+
+###############################################################################
+# Function   : right_click_on_Instance_Header
+# Description: Performs a right-click on the Instance Header within the 
+#              Composite Editor Workspace by matching the given instance name.
+#
+# Parameter  :
+#   instance (str) - The name or keyword of the instance to match in the header's 
+#                 DisplayType (e.g., 'MotorGP_UC').
+###############################################################################
+
+def right_click_onHeader_UC(instance):
+  try:
+    for header in gte_obj.compositeeditorworkspacebutton.object.FindAllChildren("ClrClassName", "GraphNodeHeader", 1000):
+      if instance in str(getattr(header.DataContext, "DisplayType", "")):
+        header.ClickR()
+        return
+    Log.Warning(f"No header found with DisplayType containing '{instance}'")
+  except Exception as e:
+    Log.Error(f"Error: {e}")
+    
+###############################################################################
+# Function   : click_button_in_composite_editor
+# Description: Clicks on the given button (e.g., 'Fit to content') located 
+#              inside the Composite Editor Workspace by matching its tooltip text.
+#
+# Parameter  :
+#   button (str) - The tooltip text of the button to click (e.g., "Fit to content").
+###############################################################################
+ 
+def click_button_in_composite_editor(button):
+  try:
+    class_names = ["ContentPresenter", "MenuItem"]
+    for class_name in class_names:
+      for btn in gte_obj.framehostcontainergte.object.FindAllChildren("ClrClassName", class_name, 1000):
+        tooltip = str(getattr(btn.DataContext, "ToolTip", ""))
+        if button.lower() in tooltip.lower():
+          btn.Click()
+          Log.Message(f"Clicked on '{tooltip}'in Composite Editor Workspace.")
+          return
+
+    Log.Warning(f"No button with tooltip containing '{button}' found in Composite Editor Workspace.")
+
+  except Exception as e:
+    Log.Error(f"Error : {e}")
+    
+###############################################################################
+# Function   : Expand_instance_in_gte
+# Description: Expands one or more given instances (e.g., 'MotorGP_ST') in the 
+#              Composite Editor Workspace by matching their names within the 
+#              TreeListView structure.
+#
+#              Supports both single instance (e.g., "MotorGP_ST") and multiple 
+#              instances separated by $$ (e.g., "MotorGP_ST$$ValveGP_ST").
+#
+# Parameter  :
+#   instances (str) - The name(s) of the instance(s) to expand.
+###############################################################################
+
+def Expand_instance_in_gte(instances):
+  for instance in instances.split("$$"):
+    for i in gte_obj.selectvariabletabgte.object.FindAllChildren("ClrClassName", "TreeListViewRow", 1000):
+      try:
+        name = getattr(i.DataContext, "Name", "")
+        if name == instance:
+          if getattr(i, "IsExpanded", None) is False:
+            i.IsExpanded = True
+            Log.Message(f"{name} expanded successfully.")
+          else:
+            Log.Message(f"{name} is already expanded or property not available.")
+          break
+      except Exception as e:
+        Log.Warning(f"Error: {e}")
+
+###############################################################################
+# Function   : check_checkbox_in_gte
+# Description: Checks the checkbox for one or more given instances in the 
+#              Composite Editor Workspace by matching their names within the 
+#              TreeListView structure.
+#
+#              Supports both single instance (e.g., "$HMIVariable") and multiple 
+#              instances separated by $$ (e.g., "$HMIVariable$$$STW.$InitValue").
+#
+# Parameter  :
+#   instances (str) - The name(s) of the instance(s) whose checkboxes 
+#                     should be selected.
+###############################################################################
+
+def check_checkbox_in_gte(instances):
+  for name in map(str.strip, instances.split("$$")):
+    for row in gte_obj.selectvariabletabgte.object.FindAllChildren("ClrClassName", "TreeListViewRow", 1000):
+      try:
+        context = row.DataContext
+        if getattr(context, "Name", "") == name:
+          if hasattr(context, "IsChecked"):
+            if not context.IsChecked:
+              context.IsChecked = True
+              Log.Message(f"Checkbox for '{name}' checked.")
+            else:
+              Log.Message(f"Checkbox for '{name}' is already checked.")
+          else:
+            Log.Warning(f"'IsChecked' not found for '{name}'.")
+          break
+      except Exception as e:
+        Log.Warning(f"Error: {e}")
+    else:
+      Log.Warning(f"No match found for '{name}'.")
+      
+###############################################################################
+# Function   : right_click_on_treeview_under_header
+# Description: Right-clicks a TreeView item matching `item_key` under a 
+#              header matching `header_key` in Composite Editor Workspace.
+#
+# Parameters :
+#   header_key (str) - Text to match in header identifiers.
+#   item_key   (str) - Text to match in item identifiers under the header.
+###############################################################################
+
+def right_click_on_treeview_under_header(header_key, item_key):
+  try:
+    for header in gte_obj.framehostcontainergte.object.FindAllChildren("ClrClassName", "GraphNodeHeader", 1000):
+      if header_key in str(getattr(header.DataContext, "Identifier", "")):
+        for item in gte_obj.framehostcontainergte.object.FindAllChildren("ClrClassName", "TreeViewItem", 1000):
+          if item_key in str(getattr(item.DataContext, "Identifier", "")):
+            item.ClickR()
+            Log.Message(f"Right-clicked on TreeViewItem '{item_key}' under header '{header_key}'")
+            return
+        Log.Warning(f"TreeViewItem '{item_key}' not found under header '{header_key}'")
+        return
+    Log.Warning(f"Header '{header_key}' not found")
+  except Exception as e:
+    Log.Error(f"Exception: {e}")
+
+###############################################################################
+# Function   : new_template_save_as_window_gte
+# Description: Approves the export pop-up by setting the state to 'Approved' 
+#              and setting description to 'Test'.
+###############################################################################
+
+def new_template_save_as_window_gte():
+  try:
+    for g in msg_obj.exportpopupbutton.object.FindAllChildren("ClrClassName", "Grid", 1000):
+      if (getattr(g, "DataContext", None) is not None):
+        d = g.DataContext; d.SelectedOption, d.Identifier, d.SelectedState = "Other", "Test", "Approved"
+        Log.Message("Grid updated"); break
+    for t in msg_obj.exportpopupbutton.object.FindAllChildren("ClrClassName", "TextBox", 1000):
+      t.click()
+      t.wText = "Test"; Log.Message("Description set to 'Test'"); break
+  except Exception as e: Log.Error(f"Error: {e}")

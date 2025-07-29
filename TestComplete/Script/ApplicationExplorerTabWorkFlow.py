@@ -590,3 +590,17 @@ class ApplicationExplorerTabWorkFlow:
                 Applicationexplorertabutility.EmptyPages_ImportWindow_PE(file_format)
             except Exception as ex:
                 raise Exception(ex) from ex
+            
+    def import_file_from_ae_explorer_window(self, file_name):
+        """Export file from AE Explorer Window"""
+        try:
+            Actionutility.Import_File(file_name)
+        except Exception as ex:
+            raise Exception(ex) from ex
+            
+    def handling_import_conlicts(self, instancename):
+        """Handling Conflicts in Import Window"""
+        try:
+            Applicationexplorertabutility.handle_import_conflict(instancename)
+        except Exception as ex:
+            raise Exception(ex) from ex

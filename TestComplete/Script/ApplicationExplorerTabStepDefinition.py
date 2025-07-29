@@ -724,3 +724,103 @@ def step_impl(param):
 def step_impl(param):
   """Import the instance in Application browser when opened as '<param>'"""
   Actionutility.Enter_fileName_fileformat_Import_Window(param)
+
+@when("I drag Template from Template browser and drop to the Folders in Application browser with folder name as {arg}")
+def step_impl(templatesBrowser2):
+    """I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'"""
+    CommonUtil.write_text_file("\nWhen I drag Template from Template browser and drop to the Folders in Application browser with folder name as \""+templatesBrowser2+"\"")
+    Applicationexplorertabutility.drag_composite_template_drop_app_browser_folder_AE(templatesBrowser2)
+    
+    
+@when("I drag Template from Template browser and drop to Application browser '(.*)' times with template as '(.*)'")
+def step_impl(count, param):
+    """I drag Template from Template browser and drop to Application browser '<count>' times with template as '<param>' """
+    count_int = int(count)
+    CommonUtil.write_text_file(f'\nWhen I drag Template from Template browser and drop to Application browser {count} times with template as {param}')
+    Applicationexplorertabutility.run_drag_and_drop_multiple_times(param, count_int)
+    
+    
+@then("I Verifies time taken to load the Application Tree Pane")
+def step_impl():
+    """I Verifies time taken to load the Application Tree Pane"""
+    CommonUtil.write_text_file(f'\nThen I Verifies time taken to load the Application Tree Pane')
+    Actionutility.reload_application_explorer_and_measure_time()
+    
+@when("I Enter File Name and File Format in Import Window EC Windows Explorer as {arg}")
+def step_impl(filename):
+    """I Enter File Name and File Format in Import Window EC Windows Explorer as '<filename>'"""
+    CommonUtil.write_text_file("\nWhen I Enter File Name and File Format in Import Window EC Windows Explorer as \""+filename+"\"")
+    obj.import_file_from_ae_explorer_window(filename)
+    
+@when("I Handle the import conflict by updating the instance {arg} and skipping the rest")
+def step_impl(instance_name):
+    """I Handle the import conflict by updating the instance '<instance_name>' and skipping the rest"""
+    CommonUtil.write_text_file(f'\nWhen I Handle the import conflict by updating the instance "{instance_name}" and skipping the rest')
+    obj.handling_import_conlicts(instance_name)
+    
+@then("Verify the progress status of instance in Application browser when opened as {arg}")   
+@then("Verify the instance is locked in Application browser when opened as {arg}")
+def step_impl(templatesBrowser2):
+  """Verify the instace is locked when opened as '<templatesBrowser2>'"""
+  CommonUtil.write_text_file("\nThen Verify the instance is locked when opened as \""+templatesBrowser2+"\"")
+  Applicationexplorertabutility.verify_progress_indicator_AE(templatesBrowser2)
+  
+@then("Verify the progress status and tooltip for all visible instances in the Application browser")
+def step_impl():
+  """Verify the progress status and tooltip for all visible instances in the Application browser"""
+  CommonUtil.write_text_file("\nThen Verify the progress status and tooltip for all visible instances in the Application browser")
+  Applicationexplorertabutility.verify_progress_status_of_all_templates()
+  
+@when("I Switch Application Explorer view to {arg}")
+def step_impl(view):
+    """I Switch Application Explorer view to '<view>'"""
+    CommonUtil.write_text_file("\nWhen I Switch Application Explorer view to {view}")
+    Applicationexplorertabutility.switch_view_if_needed(view)
+    
+@when("I Update values of '(.*)' for instance '(.*)' in exported file '(.*)'")
+def step_impl(headings, instance_name, file_name):
+    """I Update values of '<headings>' for instance '<instance_name>' in exported file '<file_name>'"""
+    CommonUtil.write_text_file(f"\nWhen I Update values of {headings} for instance {instance_name} in exported file {file_name}")
+    Actionutility.changing_values_in_csv(file_name, instance_name, headings)
+    
+@then("I verify all folders are expanded in the Application Browser")
+def step_impl():
+  """I verify all folders are expanded in the Application Browser"""
+  CommonUtil.write_text_file("\nThen I verify all folders are expanded in the Application Browser")
+  Applicationexplorertabutility.verify_all_folders_expanded()
+  
+@when("I press '(.*)' arrow key on identifier '(.*)' in the Application Browser")
+def step_impl(direction, identifier):
+    """I press '<direction>' arrow key on identifier '<identifier>' in the Application Browser"""
+    CommonUtil.write_text_file(f"\nWhen I press {direction} arrow key on identifier {identifier} in the Application Browser")
+    Applicationexplorertabutility.navigate_identifier_application_browser(identifier, direction)
+  
+@when("I double click on the instance {arg} in the Instance Editor")
+def step_impl(identifier):
+    """I double click on the instance '<identifier>' in the Instance Editor"""
+    CommonUtil.write_text_file(f"\nWhen I double click on the instance {identifier} in the Instance Editor")
+    Applicationexplorertabutility.double_click_instance_in_instance_editor(identifier)
+  
+@when("I double click on the {arg} folder in the Asset Workspace")
+def step_impl(identifier):
+    """I double click on the '<identifier>' folder in the Asset Workspace"""
+    CommonUtil.write_text_file(f"\nWhen I double click on the {identifier} folder in the Asset Workspace")
+    Applicationexplorertabutility.double_click_asset_workspace_folder(identifier)
+  
+@when("I press the '(.*)' arrow key on the '(.*)' folder in the Asset Workspace")
+def step_impl(direction, identifier):
+    """I press '<direction>' arrow key on the '<identifier>' in the Asset Workspace"""
+    CommonUtil.write_text_file(f"\nWhen I press {direction} arrow key on the {identifier} in the Asset Workspace")
+    Applicationexplorertabutility.key_action_asset_workspace_folder(identifier, direction)
+  
+@when("I double click on the {arg} folder in the Template browser")
+def step_impl(identifier):
+    """I double click on the '<identifier>' folder in the Template browser"""
+    CommonUtil.write_text_file(f"\nWhen I double click on the {identifier} folder in the Asset Workspace")
+    Applicationexplorertabutility.double_click_templatebrowser_folder(identifier)
+  
+@when("I press the '(.*)' arrow key on the '(.*)' folder in Template browser")
+def step_impl(direction, identifier):
+    """I press the '<direction>' arrow key on the '<identifier>' folder in Template browser"""
+    CommonUtil.write_text_file(f"\nWhen I press the {direction} arrow key on the {identifier}folder in Template browser")
+    Applicationexplorertabutility.key_action_template_browser_folder(identifier, direction)

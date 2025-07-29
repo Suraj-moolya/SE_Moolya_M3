@@ -285,3 +285,45 @@ def step_impl():
     """I Right Click on Approved combo item in global template explorer"""
     CommonUtil.write_text_file("\nWhen I Right Click on Approved combo item in global template explorer")
     obj.clickapprovedcomboitem()    
+    
+@when("I right click on the instance {arg} in device control window")
+def step_impl(param):
+  """I right click on the instance with identifier and version in the device control window"""
+  CommonUtil.write_text_file(f"\nWhen I right click on the instance '{param}' in device control window")
+  Globaltemplatesutility.right_click_on_device_control(param)
+  
+@when("I right click on the {arg} header with UC display type in composite editor workspace")
+def step_impl(arg):
+  """I right click on the '<arg>' header with UC display type in composite editor workspace"""
+  CommonUtil.write_text_file(f"\nWhen I right click on the '{arg}' header with UC display type in composite editor workspace")
+  Globaltemplatesutility.right_click_onHeader_UC(arg)
+  
+@when('I click the {arg} button in the Composite Editor Workspace')
+def step_impl(button):
+  """Clicks the specified button in the Composite Editor Workspace"""
+  CommonUtil.write_text_file(f"\nWhen I click the '{button}' button in the Composite Editor Workspace")
+  Globaltemplatesutility.click_button_in_composite_editor(button)
+  
+@when('I expand the instance {arg} in the Global Template')
+def step_impl(expandinstance):
+  """I expand the instance '<expandinstance>' in the Global Template"""
+  CommonUtil.write_text_file(f"\nWhen I expand the instance {expandinstance} in the Global Template")
+  Globaltemplatesutility.Expand_instance_in_gte(expandinstance)
+  
+@when('I click the checkbox for instance {arg} in the Global Template')
+def step_impl(checkboxname):
+  """I click the checkbox for instance '<checkboxname>' in the Global Template"""
+  CommonUtil.write_text_file(f"\nWhen I click the checkbox for instance {checkboxname} in the Global Template")
+  Globaltemplatesutility.check_checkbox_in_gte(checkboxname)
+  
+@when("I right click on the item '(.*)' under the header '(.*)'")
+def step_impl(item_key, header_key):
+  """I right click on the item '<item_key>' inside the header '<header_key>'"""
+  CommonUtil.write_text_file(f"\nWhen I right click on the item {item_key} inside the header {header_key}")
+  Globaltemplatesutility.right_click_on_treeview_under_header(header_key, item_key)
+  
+@when('I approve the new template by setting status to Approved and description to Test')
+def step_impl():
+  """I approve the new template by setting status to Approved and description to Test"""
+  CommonUtil.write_text_file(f"\nWhen I approve the new template by setting status to Approved and description to Test")
+  Globaltemplatesutility.new_template_save_as_window_gte()    
