@@ -38,6 +38,15 @@ Examples:
 Examples:
   | SlNo. | param                |
   | 1     | ValveGP_1_OPV$$7$$SE |
+@Create_consecutivevariable_by_clicking_on_ValveGP_2_OPV_and_create_variable_Moolya
+Examples:
+  | SlNo. | param                    |
+  | 1     | ValveGP_2_OPV$$7$$Moolya |
+@Create_consecutivevariable_by_clicking_on_ValveGP_2_OPV_and_create_variable_SE
+Examples:
+  | SlNo. | param                |
+  | 1     | ValveGP_2_OPV$$7$$SE |
+ 
   
 @TC_EPE_PE_CP_00
 @test00
@@ -82,6 +91,7 @@ Examples:
 Examples:
   | SlNo. | project browser1 | context menu        | Button |
   | 1     | M580_Standalone2 | Manage Peer to Peer | Next   |
+
   
 
 @TC_EPE_PE_CP_0039
@@ -92,11 +102,18 @@ And I selected Rename Pop up Ok in message box
 Examples:
   | SlNo. | server                         |
   | 1     | PES_CONST_TRUE$$PES_CONST_TRUE |
+
   
 @TC_EPE_PE_CP_0039a
 @test0039
 Scenario Outline: Drag remote variable to sorce variable from Moolya to SE
 When I Drag and drop from remote varaibles to source variables in P2P as '<server>'
+@Drag_and_Drop_Remote_to_Source_Moolya_SE_P2P
+Examples:
+  | SlNo. | server       |
+  | 1     | SE1$$Moolya1 |
+  | 2     | SE2$$Moolya2 |
+@@Drag_and_Drop_Remote_to_Source_Multiple_Instance_P2P
 Examples: 
   | SlNo. | server                                                   |
   | 2     | AnalogOutputGP_1_AOGP_AOSV$$AnalogOutputGP_1_AOGP_AOSV   |

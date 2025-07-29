@@ -1005,6 +1005,7 @@ def drag_and_drop_device_to_channel(server):
   device.Drag(from_x - device.ScreenLeft, from_y - device.ScreenTop, to_x - from_x, to_y - from_y)
   Log.Message(f"Dragging from ({from_x}, {from_y}) to ({to_x}, {to_y}) completed.")
 
+  
 ###############################################################################
 # Function : right_click_communication_channel
 # Description : Right-clicks on a communication channel.
@@ -1766,16 +1767,28 @@ def Click_Variable_Elementary_Initiate_animationtable_Tab(variable_name):
 ###############################################################################
 def Click_Variable_Elementary_Variable_Tab(variable_name):
   textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
-  Log.Message(len(textbox))
   for i in textbox:
-    Log.Message(i.Name)
     if variable_name in i.Name:
       i.Click()
-      Log.Message(f'{variable_name} in data editior was clicked')
+      Log.Checkpoint(f'{variable_name} in data editior was clicked')
       break
   else:
-    Log.Message(f'{variable_name} does not exists')
-
+    Log.Warning(f'{variable_name} does not exists')
+###############################################################################
+# Function : Verify_Variable_Elementary_Variable_Tab
+# Description : Locates and verifies a variable in the elementary variable tab.
+# Parameter : 
+#   variable_name (str) - The name of the variable to locate and click.
+# Example : Verify_Variable_Elementary_Variable_Tab("VariableName")
+###############################################################################
+def Verify_Variable_Elementary_Variable_Tab(variable_name):
+    textbox = topo_obj.prmgensettingsrefineonline.object.FindAllChildren('Name', 'TextObject(*)', 100)
+    for i in textbox:
+      if variable_name in i.Name:
+        Log.Checkpoint(f'{i.Name} in data editior was created')
+        break
+    else:
+      Log.Warning(f'{variable_name} does not exists')
 ###############################################################################
 # Function : Click_P2p_Create_consecutive_variables
 # Description : Creates consecutive variables in the P2P configuration.
@@ -1789,7 +1802,6 @@ def Click_Variable_Elementary_Variable_Tab(variable_name):
 def Click_P2p_Create_consecutive_variables(param):
   variable_name, HMi_Column_no, desired_variable_name_input = param.split("$$")
   variable_number = 1
-  
   for i in range(2):
     desired_variable_name = desired_variable_name_input + str(variable_number)
     Click_Variable_Elementary_Variable_Tab(variable_name)
@@ -1801,7 +1813,7 @@ def Click_P2p_Create_consecutive_variables(param):
     for i in range(int(HMi_Column_no)):
       Sys.Keys("[Right]")
     Sys.Keys("[Enter]")
-
+    Verify_Variable_Elementary_Variable_Tab(desired_variable_name)
 ###############################################################################
 # Function : change_datatype_dataeditor
 # Description : Changes the data type of a variable in the data editor.
