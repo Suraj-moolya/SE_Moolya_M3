@@ -2203,3 +2203,31 @@ def Click_on_RefineSystemModel_menubar(menu):
       menuitem.Click()
       Applicationutility.wait_in_seconds(1000, 'Wait')
       Log.Checkpoint(f"{menu} is clicked")
+
+      
+def drag_between_labels(label1, offset_x=30):
+    ref_obj.mdiwindowtextbox.object.Maximize()
+    elements = ref_obj.mdiwindowtextbox.object.FindAllChildren("Name", "TextObject*", 1000)
+    if not elements:
+        Log.Warning("No text objects found.")
+        return 
+    obj1 = next((e for e in elements if label1 in e.Text and e.Visible), None)
+    obj2 = next((e for e in elements if "T" in e.Text and e.Visible), None) 
+    if obj1 is None or obj2 is None:
+        Log.Warning(f"Could not find '{label1}' text objects.")
+        return 
+    mid_x = ((obj1.ScreenLeft + obj1.Width // 2) + (obj2.ScreenLeft + obj2.Width // 2)) // 2 + offset_x
+    mid_y = ((obj1.ScreenTop + obj1.Height // 2) + (obj2.ScreenTop + obj2.Height // 2)) // 2 
+    parent = obj1.Parent
+    start_x = mid_x - parent.ScreenLeft
+    start_y = mid_y - parent.ScreenTop
+    end_x = start_x + offset_x
+    Applicationutility.wait_in_seconds(1000, 'wait')
+    parent.Drag(110, 14, 172, 14)
+#    parent.Drag(start_x, start_y, end_x, start_y)
+    Log.Message(f"Dragged from ({start_x}, {start_y}) to ({end_x}, {start_y})")
+
+ 
+def lksdf():
+  drag_between_labels("Name")
+      

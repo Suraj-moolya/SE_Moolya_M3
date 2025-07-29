@@ -213,5 +213,12 @@ Examples:
 
   
   
-  
+@TC_EPE_PE_CP_0040
+@test0039
+Scenario Outline: Expand Data Editor Window and Create Variables
+When I Expand '<test>' Tab in Data Editor Window  
+
+Examples:
+  | Button | test |
+  | OK     | Name |
    

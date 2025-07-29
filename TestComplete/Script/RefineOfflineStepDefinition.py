@@ -3,6 +3,7 @@ from RefineOfflineWorkFlow import RefineOfflineWorkFlow
 import CommonUtil
 import Applicationutility
 import Engineeringclientutility
+import Projectexplorertabutility
 
 obj=RefineOfflineWorkFlow()
 
@@ -362,3 +363,9 @@ def step_impl():
     """I select Automatic blocking of service port EIO in control expert"""
     CommonUtil.write_text_file("\nWhen I select Automatic blocking of service port EIO in control expert")
     obj.selectautomaticserviceportCE()
+    
+@when("I Expand {arg} Tab in Data Editor Window")
+def step_impl(test):
+    """I Expand '<test>' Tab in Data Editor Window"""
+    CommonUtil.write_text_file(f"\nWhen I Expand {test} Tab in Data Editor Window")
+    Projectexplorertabutility.drag_between_labels(test)
