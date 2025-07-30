@@ -1640,7 +1640,7 @@ def verify_supervision_service_maping_PE():
 ###############################################################################
 def Change_Password_Protection_Controller(param):
   field_label, options = param.split("$$")
-  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 10)
+  controller_row = topo_obj.controllerpropertytab.object.FindAllChildren("ClrClassName", "Grid", 1000)
   for control in controller_row:
     Log.Message(getattr(getattr(control, "DataContext", None), "DisplayName", None))
     if getattr(getattr(control, "DataContext", None), "DisplayName", None) == field_label:
