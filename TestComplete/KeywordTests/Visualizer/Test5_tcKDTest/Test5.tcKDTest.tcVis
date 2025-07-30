@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
-	<data key="{79E2DFDB-9A5C-49C4-B874-F7CFBC36EEE2}">
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="0" kind="0" dateTime="45580.7330324074" objectName="Aliases.EngineeringClient.HwndSource_Main.Main.FrameHostControl.GridviewcellMotorgp" objectLeft="156" objectTop="271" objectRight="294" objectBottom="298" clickPointX="-1" clickPointY="-1" imageFileName="tcvi43602093201280.png" storageFileName="" needUpdate="False" rectColor="255" />
-		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="3" kind="0" dateTime="45580.7331018519" objectName="Aliases.EngineeringClient.HwndSource_PopupRoot.PopupRoot.ListView" objectLeft="0" objectTop="0" objectRight="251" objectBottom="407" clickPointX="-630" clickPointY="-358" imageFileName="tcvi43608375201282.png" storageFileName="" needUpdate="False" rectColor="255" />
-	</data>
-</Root>
