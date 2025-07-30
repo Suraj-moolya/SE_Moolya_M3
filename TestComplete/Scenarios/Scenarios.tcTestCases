@@ -178,10 +178,6 @@
 			<Feature Path="90873 - Replace template in AE with PostGre SQL.feature" />
 			<Feature Path="90874 - Progress Status when assigned facets of instance are in non-assigned state with PostGre SQL.feature" />
 			<Feature Path="90875 - Progress status of instances when unassigned instance is imported with PostGre Sql.feature" />
-			<Feature Path="90880 - To verify, the loading Create_Modify_Replace_Update_Delete 5k_10k_20k instances in different Systems with different template types. (Performance).feature" />
-			<Feature Path="90882 - To Test the Progress Status of Instances when assigned instance is imported with PostGre SQL.feature" />
-			<Feature Path="90883 - To Test the Progress Status if Instances Updated_Replaced with PostGre SQL..feature" />
-			<Feature Path="90978 - To Test Double click and Enter Key behavior for entities in Application Explorer.feature" />
 		</Folder>
 		<Folder Name="Control Project PostGre SQL">
 			<Feature Path="81081 - Consitency Check after facets are unlocked and unlinked.feature" />
