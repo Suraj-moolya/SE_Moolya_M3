@@ -724,13 +724,6 @@ def step_impl(param):
 def step_impl(param):
   """Import the instance in Application browser when opened as '<param>'"""
   Actionutility.Enter_fileName_fileformat_Import_Window(param)
-
-@when("I drag Template from Template browser and drop to the Folders in Application browser with folder name as {arg}")
-def step_impl(templatesBrowser2):
-    """I drag Template from Template browser and drop to the Folders in Application browser with folder name as '<Templates browser2>'"""
-    CommonUtil.write_text_file("\nWhen I drag Template from Template browser and drop to the Folders in Application browser with folder name as \""+templatesBrowser2+"\"")
-    Applicationexplorertabutility.drag_composite_template_drop_app_browser_folder_AE(templatesBrowser2)
-    
     
 @when("I drag Template from Template browser and drop to Application browser '(.*)' times with template as '(.*)'")
 def step_impl(count, param):
@@ -758,13 +751,6 @@ def step_impl(instance_name):
     CommonUtil.write_text_file(f'\nWhen I Handle the import conflict by updating the instance "{instance_name}" and skipping the rest')
     obj.handling_import_conlicts(instance_name)
     
-@then("Verify the progress status of instance in Application browser when opened as {arg}")   
-@then("Verify the instance is locked in Application browser when opened as {arg}")
-def step_impl(templatesBrowser2):
-  """Verify the instace is locked when opened as '<templatesBrowser2>'"""
-  CommonUtil.write_text_file("\nThen Verify the instance is locked when opened as \""+templatesBrowser2+"\"")
-  Applicationexplorertabutility.verify_progress_indicator_AE(templatesBrowser2)
-  
 @then("Verify the progress status and tooltip for all visible instances in the Application browser")
 def step_impl():
   """Verify the progress status and tooltip for all visible instances in the Application browser"""
