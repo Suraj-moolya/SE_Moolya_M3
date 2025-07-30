@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Base">
+			<child name="Hooks" key="{704C531C-C9D9-47B3-98E7-5CE14883411A}" path="Hooks.py" />
+			<child name="CommonUtil" key="{704C531C-C9D9-47B3-98E7-5CE14883459A}" path="CommonUtil.py" />
+			<child name="MapBase" key="{5605F8FD-886F-419D-991E-8BA735DC548E}" path="MapBase.py" />
+			<child name="ProcessIdentifier" key="{9AEFF1C2-4574-449D-B2D0-BA104B02FEB5}" path="ProcessIdentifier.py" />
+			<child name="UIElement" key="{9077EA1D-1638-49BF-8BAF-23377C5CE857}" path="UIElement.py" />
+			<child name="ControlRepository" key="{D02D52F9-DC23-479D-A136-094BF60BA3D9}" path="ControlRepository.py" />
+		</folder>
+		<folder name="Automation">
+			<folder name="Workflows">
+				<child name="CurrentScreenWorkFlow" key="{001ABD02-E100-4837-B290-55898E939DEF}" path="CurrentScreenWorkFlow.py" />
+				<child name="SystemServerWorkFlow" key="{001ABD02-E101-4837-B290-55898E939DEF}" path="SystemServerWorkFlow.py" />
+				<child name="WindowsExplorerWorkFlow" key="{001ABD02-E102-4837-B290-55898E939DEF}" path="WindowsExplorerWorkFlow.py" />
+				<child name="EngineeringClientWorkFlow" key="{001ABD02-E103-4837-B290-55898E939DEF}" path="EngineeringClientWorkFlow.py" />
+				<child name="ECWarningPopupWorkFlow" key="{001ABD02-E104-4837-B290-55898E939DEF}" path="ECWarningPopupWorkFlow.py" />
+				<child name="MessageBoxWorkFlow" key="{001ABD02-E105-4837-B290-55898E939DEF}" path="MessageBoxWorkFlow.py" />
+				<child name="SystemExplorerScreenWorkFlow" key="{001ABD02-E106-4837-B290-55898E939DEF}" path="SystemExplorerScreenWorkFlow.py" />
+				<child name="ApplicationExplorerTabWorkFlow" key="{001ABD02-E107-4837-B290-55898E939DEF}" path="ApplicationExplorerTabWorkFlow.py" />
+				<child name="GlobalTemplatesTabWorkFlow" key="{001ABD02-E108-4837-B290-55898E939DEF}" path="GlobalTemplatesTabWorkFlow.py" />
+				<child name="ProjectExplorerTabWorkFlow" key="{BE72DCD6-8FDD-4215-8625-F20FCB9B691D}" path="ProjectExplorerTabWorkFlow.py" />
+				<child name="OperationClientWorkFlow" key="{EE1EDF64-CDBF-42A6-B646-836644AEEDC9}" path="OperationClientWorkFlow.py" />
+				<child name="RefineOfflineWorkFlow" key="{CC88AE1E-A09A-42B8-BED1-FC22B3373CD1}" path="RefineOfflineWorkFlow.py" />
+				<child name="ControlExpertWorkFlow" key="{9E51EBD2-3AB8-4F24-BEE0-18F5A85EC5AE}" path="ControlExpertWorkFlow.py" />
+				<child name="DialogCEWorkFlow" key="{935B7F1D-AC4C-4CC6-BE9C-D9423E5FF7C8}" path="DialogCEWorkFlow.py" />
+				<child name="SupervisionProjectWorkFlow" key="{70EF14AC-D40C-4439-A462-EBC916491FFB}" path="SupervisionProjectWorkFlow.py" />
+				<child name="TopologyWorkFlow" key="{0D7594AD-8DEB-40A7-87E9-078907DE686E}" path="TopologyWorkFlow.py" />
+				<child name="GSDAdditionWorkFlow" key="{FC793AC0-71F4-4D5C-9A36-0A5F068240FD}" path="GSDAdditionWorkFlow.py" />
+			</folder>
+			<folder name="StepDefinitions">
+				<child name="CurrentScreenStepDefinition" key="{001ABD02-E109-4837-B290-55898E939DEF}" path="CurrentScreenStepDefinition.py" />
+				<child name="SystemServerStepDefinition" key="{001ABD02-E110-4837-B290-55898E939DEF}" path="SystemServerStepDefinition.py" />
+				<child name="WindowsExplorerStepDefinition" key="{001ABD02-E111-4837-B290-55898E939DEF}" path="WindowsExplorerStepDefinition.py" />
+				<child name="EngineeringClientStepDefinition" key="{001ABD02-E112-4837-B290-55898E939DEF}" path="EngineeringClientStepDefinition.py" />
+				<child name="ECWarningPopupStepDefinition" key="{001ABD02-E113-4837-B290-55898E939DEF}" path="ECWarningPopupStepDefinition.py" />
+				<child name="MessageBoxStepDefinition" key="{001ABD02-E114-4837-B290-55898E939DEF}" path="MessageBoxStepDefinition.py" />
+				<child name="SystemExplorerScreenStepDefinition" key="{001ABD02-E115-4837-B290-55898E939DEF}" path="SystemExplorerScreenStepDefinition.py" />
+				<child name="ApplicationExplorerTabStepDefinition" key="{001ABD02-E116-4837-B290-55898E939DEF}" path="ApplicationExplorerTabStepDefinition.py" />
+				<child name="GlobalTemplatesTabStepDefinition" key="{001ABD02-E117-4837-B290-55898E939DEF}" path="GlobalTemplatesTabStepDefinition.py" />
+				<child name="ProjectExplorerTabStepDefinition" key="{C6D86E65-CA75-4DEA-BD4C-72F8C604AEEA}" path="ProjectExplorerTabStepDefinition.py" />
+				<child name="RefineOfflineStepDefinition" key="{E5715D84-9654-4FE8-B4F7-1E55FBACA033}" path="RefineOfflineStepDefinition.py" />
+				<child name="OperationclientStepDefinition" key="{B7893BBA-95BE-4514-9080-17AB3E82FE55}" path="OperationclientStepDefinition.py" />
+				<child name="ControlExpertStepDefinition" key="{BC6A6288-D571-4361-966C-45368280CD66}" path="ControlExpertStepDefinition.py" />
+				<child name="DialogCEStepDefinition" key="{DA19AF80-1B07-40DF-9D64-38C9D4BA2AED}" path="DialogCEStepDefinition.py" />
+				<child name="SupervisionProjectStepDefinition" key="{78CA9E56-AB11-4F34-A0DA-EFDA0D461362}" path="SupervisionProjectStepDefinition.py" />
+				<child name="TopologyStepDefinition" key="{6C515026-B05C-4CF6-90B3-FAA3285FBD54}" path="TopologyStepDefinition.py" />
+				<child name="GSDAdditionStepDefinition" key="{7EB381B7-67DD-4D5E-B4F1-43DA624D9757}" path="GSDAdditionStepDefinition.py" />
+			</folder>
+			<folder name="WindowsDialogs">
+				<child name="SystemServer" key="{001ABD02-E118-4837-B290-55898E939DEF}" path="SystemServer.py" />
+				<child name="CurrentScreen" key="{001ABD02-E119-4837-B290-55898E939DEF}" path="CurrentScreen.py" />
+				<child name="WindowsExplorer" key="{001ABD02-E120-4837-B290-55898E939DEF}" path="WindowsExplorer.py" />
+				<child name="EngineeringClient" key="{001ABD02-E121-4837-B290-55898E939DEF}" path="EngineeringClient.py" />
+				<child name="SystemExplorerScreen" key="{001ABD02-E122-4837-B290-55898E939DEF}" path="SystemExplorerScreen.py" />
+				<child name="TopologyExplorerTab" key="{001ABD02-E123-4837-B290-55898E939DEF}" path="TopologyExplorerTab.py" />
+				<child name="GlobalTemplatesTab" key="{001ABD02-E124-4837-B290-55898E939DEF}" path="GlobalTemplatesTab.py" />
+				<child name="ApplicationExplorerTab" key="{001ABD02-E125-4837-B290-55898E939DEF}" path="ApplicationExplorerTab.py" />
+				<child name="ECWarningPopup" key="{001ABD02-E126-4837-B290-55898E939DEF}" path="ECWarningPopup.py" />
+				<child name="LicenseManagement" key="{001ABD02-E127-4837-B290-55898E939DEF}" path="LicenseManagement.py" />
+				<child name="MessageBox" key="{001ABD02-E128-4837-B290-55898E939DEF}" path="MessageBox.py" />
+				<child name="ProjectExplorerTab" key="{C9B5ED4C-69FD-4347-92FF-698EDBA29C9A}" path="ProjectExplorerTab.py" />
+				<child name="OperationClient" key="{053E4C8A-CB65-4635-8977-474A3D54A927}" path="OperationClient.py" />
+				<child name="RefineOffline" key="{5F58CF38-0AB2-4EEC-8C4F-F8C638B9DA60}" path="RefineOffline.py" />
+				<child name="AvevaScreen" key="{F7215BA1-8D32-4F65-A781-756E7594C84A}" path="AvevaScreen.py" />
+				<child name="ControlExpert" key="{B6525A57-DC2E-418C-87E2-D1D29FE9F54B}" path="ControlExpert.py" />
+				<child name="DialogCE" key="{C4F056D8-8313-45EC-82AF-1A460C9E0457}" path="DialogCE.py" />
+				<child name="SupervisionProject" key="{E08E20AB-2175-4591-9FD4-8E999C9C0052}" path="SupervisionProject.py" />
+				<child name="Topology" key="{DBEC4667-51D0-43C0-89BB-C23334F94A17}" path="Topology.py" />
+				<child name="GSDAddition" key="{80AA10EE-98BB-435C-A689-163CB2B9A7C7}" path="GSDAddition.py" />
+			</folder>
+			<folder name="Utilities">
+				<child name="Applicationutility" key="{001ABD02-E129-4837-B290-55898E939DEF}" path="Applicationutility.py" />
+				<child name="Globaltemplatesutility" key="{001ABD02-E131-4837-B290-55898E939DEF}" path="Globaltemplatesutility.py" />
+				<child name="Conditionsutility" key="{001ABD02-E132-4837-B290-55898E939DEF}" path="Conditionsutility.py" />
+				<child name="Applicationexplorertabutility" key="{001ABD02-E133-4837-B290-55898E939DEF}" path="Applicationexplorertabutility.py" />
+				<child name="Engineeringclientutility" key="{001ABD02-E134-4837-B290-55898E939DEF}" path="Engineeringclientutility.py" />
+				<child name="Actionutility" key="{001ABD02-E135-4837-B290-55898E939DEF}" path="Actionutility.py" />
+				<child name="Systemserverutility" key="{001ABD02-E136-4837-B290-55898E939DEF}" path="Systemserverutility.py" />
+				<child name="Projectexplorertabutility" key="{D521653F-84EB-40FD-AE38-5A375CE95B47}" path="Projectexplorertabutility.py" />
+				<child name="Teststepsutility" key="{08E7C912-58CE-469D-A30D-9AC6B6A51C90}" path="Teststepsutility.py" />
+				<child name="Topologyexplorerutility" key="{A68BBC9B-B2B4-4E2A-9D30-D1DE8ACC51CD}" path="Topologyexplorerutility.py" />
+				<child name="Controlexpertutility" key="{A3E073AE-3E58-4340-99C7-B951D449CCC9}" path="Controlexpertutility.py" />
+				<child name="Operationclientutility" key="{93A2AD89-4459-4CBD-AA57-ECAE52D23AFA}" path="Operationclientutility.py" />
+				<child name="Topologyutility" key="{D091D4AE-AB43-4735-A018-66156D78951F}" path="Topologyutility.py" />
+				<child name="GSDAdditionutility" key="{F2C1134C-1F44-4DC0-8AE7-A5717EA13C27}" path="GSDAdditionutility.py" />
+			</folder>
+		</folder>
+	</children>
+</Root>

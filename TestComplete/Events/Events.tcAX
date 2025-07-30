@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}" version="1400" key="{71C85905-D64A-4239-B0EA-CE2695F4577A}" typeId="{E7ABA87F-E873-4452-9921-6F4BAAEB2BCC}">
+	<config nodeName="Events" tlbHistory="&quot;TestComplete general events&quot;" />
+	<testData />
+	<data />
+	<children>
+		<child key="{8F03EDA3-141F-4DF6-A549-FA021F8AF6BF}">
+			<config nodeName="LogPicture" lastOpenedTLB="" generatedCLSID="{AA3C95B9-BBEB-4A42-A964-D5026885A280}" generatedTLBKey="{B81A5F43-7770-435D-8A3D-2A3F482BFB1A}" generatedEventsKey="{E5615A43-5812-409C-95A7-4043C6BE9F51}" generatedTLBDesc="TestComplete LogPicture Control - 3/14/2023 7:40:24 AM">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" infoID="1610743813" infoControlName="General Events" infoEventName="OnLogPicture" infoEventRealName="OnLogPicture" infoDescription="Occurs when an image is posted to the test log." />
+				<handlerInfo handlerName="on_log_picture" handlerMoniker="{704C531C-C9D9-47B3-98E7-5CE14883411A}on_log_picture" handlerEventName="OnLogPicture" handlerRealIID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" handlerRealDispID="1610743813" />
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{4F1E57E9-6214-4230-A79E-999B8B13C520}">
+			<config nodeName="LogMessage" lastOpenedTLB="" generatedCLSID="{F170ED31-4FAB-4923-A067-E5FAC5B9FBB5}" generatedTLBKey="{B51F8292-3F02-4A43-8D11-AE816BD69C0A}" generatedEventsKey="{EADE2199-DC2F-4778-AE24-B056B49553D8}" generatedTLBDesc="TestComplete LogEvent Control - 3/10/2023 5:52:55 AM">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" infoID="1610743809" infoControlName="General Events" infoEventName="OnLogMessage" infoEventRealName="OnLogMessage" infoDescription="Occurs when an informative message is posted to the test log." />
+				<handlerInfo handlerName="on_log_message" handlerMoniker="{704C531C-C9D9-47B3-98E7-5CE14883411A}on_log_message" handlerEventName="OnLogMessage" handlerRealIID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" handlerRealDispID="1610743809" />
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{2DAACB31-714A-4A71-B8DC-66552AFF033A}">
+			<config nodeName="OnStartTest" lastOpenedTLB="" generatedCLSID="{BA01F01A-B32B-405D-A096-FFB412D85067}" generatedTLBKey="{9B486DD1-FC78-450C-88A5-4CC5C7447E55}" generatedEventsKey="{95AD4011-F10A-42E8-904E-CFCFAA981639}" generatedTLBDesc="TestComplete EventControl2 Control - 3/15/2023 6:17:32 AM">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{F5856842-4323-49FD-B806-36E22179EF8A}" infoID="1610743808" infoControlName="Test Engine Events" infoEventName="OnStartTest" infoEventRealName="OnStartTest" infoDescription="Occurs when TestComplete starts running a test (whether it is run from the UI or command line, or as a project test item)." />
+				<handlerInfo handlerName="on_start_test" handlerMoniker="{704C531C-C9D9-47B3-98E7-5CE14883411A}on_start_test" handlerEventName="OnStartTest" handlerRealIID="{F5856842-4323-49FD-B806-36E22179EF8A}" handlerRealDispID="1610743808" />
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{FCB06852-7FDA-4DB9-AC68-326272917B94}">
+			<config nodeName="logError" lastOpenedTLB="" generatedCLSID="{61B44AB7-DB3F-408D-845C-6F52BB1A6893}" generatedTLBKey="{5AE2652F-EE8A-47F6-A002-2F851E9934A8}" generatedEventsKey="{F0418530-5A34-4D9F-8329-ECFEB0AADADF}" generatedTLBDesc="TestComplete EventControl1 Control - 3/14/2023 7:01:18 AM">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" infoID="1610743811" infoControlName="General Events" infoEventName="OnLogError" infoEventRealName="OnLogError" infoDescription="Occurs when an error message is posted to the test log." />
+				<handlerInfo handlerName="on_log_error" handlerMoniker="{704C531C-C9D9-47B3-98E7-5CE14883411A}on_log_error" handlerEventName="OnLogError" handlerRealIID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" handlerRealDispID="1610743811" />
+			</config>
+			<testData />
+			<data />
+		</child>
+		<child key="{E7733A3B-4EF6-46CC-B1DD-A724A5A44D2C}">
+			<config nodeName="LogCheckpoint" lastOpenedTLB="" generatedCLSID="{DF10B753-B3B4-4E61-BC56-83BA8301B071}" generatedTLBKey="{32EF183A-24FC-48F0-B282-2437C9E4D000}" generatedEventsKey="{AB211F40-77DA-4502-B260-47965CE25044}" generatedTLBDesc="TestComplete LogCheckpoint Control - 4/13/2023 11:51:31 PM">
+				<eventInfo infoTLBVer="version.dll" infoGUID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" infoID="1610743821" infoControlName="General Events" infoEventName="OnLogCheckpoint" infoEventRealName="OnLogCheckpoint" infoDescription="Occurs when a checkpoint is posted to the test log." />
+				<handlerInfo handlerName="on_log_checkpoint" handlerMoniker="{704C531C-C9D9-47B3-98E7-5CE14883411A}on_log_checkpoint" handlerEventName="OnLogCheckpoint" handlerRealIID="{4C03E9F2-BB22-4E21-B2E7-E51B754FCBBA}" handlerRealDispID="1610743821" />
+			</config>
+			<testData />
+			<data />
+		</child>
+	</children>
+</Root>
