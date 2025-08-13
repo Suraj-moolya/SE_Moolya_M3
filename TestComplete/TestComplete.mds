@@ -16535,7 +16535,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem97_1_1_3_1" key="{FEE75073-0186-4CEB-A6B8-B166CA4E6CC6}" group="False" parallel="False" enabled="True" load="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem97_1_1_3_1" key="{FEE75073-0186-4CEB-A6B8-B166CA4E6CC6}" group="False" parallel="False" enabled="False" load="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -16965,22 +16965,22 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem137_1_1_1" key="{9002274B-9C7C-4F2D-A05C-05F218B66837}" group="False" parallel="False" enabled="True" load="False" testMoniker="185 Refine offline check consistency|Open Refine Offline of M580 Control Project through context menu" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem137_1_1_1" key="{9002274B-9C7C-4F2D-A05C-05F218B66837}" group="False" parallel="False" enabled="False" load="False" testMoniker="185 Refine offline check consistency|Open Refine Offline of M580 Control Project through context menu" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem138_1_1_1" key="{57206599-23D9-42DF-82B7-20DB3518E2C8}" group="False" parallel="False" enabled="True" load="False" testMoniker="151 Unlink block, Save and check consistency|Open any section and unlink the block. Consistency Check button in refine offline" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem138_1_1_1" key="{57206599-23D9-42DF-82B7-20DB3518E2C8}" group="False" parallel="False" enabled="False" load="False" testMoniker="151 Unlink block, Save and check consistency|Open any section and unlink the block. Consistency Check button in refine offline" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem139_1_1_1" key="{D5AB1480-9BA1-41B1-96A4-50E036B80133}" group="False" parallel="False" enabled="True" load="False" testMoniker="151 Unlink block, Save and check consistency|Open any section and unlink the block. Click on select all and click on unlink button." count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem139_1_1_1" key="{D5AB1480-9BA1-41B1-96A4-50E036B80133}" group="False" parallel="False" enabled="False" load="False" testMoniker="151 Unlink block, Save and check consistency|Open any section and unlink the block. Click on select all and click on unlink button." count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem40_2_1_1_1_1_1_2_1_1_1" key="{1856AE8B-44E8-4080-A3E8-26CDD8F5CB1C}" group="False" parallel="False" enabled="True" load="False" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
+							<testItem name="ProjectTestItem40_2_1_1_1_1_1_2_1_1_1" key="{1856AE8B-44E8-4080-A3E8-26CDD8F5CB1C}" group="False" parallel="False" enabled="False" load="False" testMoniker="147 Open Refine of the project and do some modifications. Save and close|Close CE" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -17480,11 +17480,6 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem33_2_1_1_1_1_1_1" key="{9AD596A9-3333-4F94-83E6-FBDD3BF675D8}" group="False" parallel="False" enabled="True" load="False" testMoniker="224 Export the project. Do some modifications in SP. Build the executable|Export Supervision" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
-								<testParameters />
-								<environments activeCloud="SWT" />
-								<children />
-							</testItem>
 							<testItem name="ProjectTestItem22_2_1_1_1_1_1_1" key="{DF7C354F-9F82-4325-8DCE-23D9FB2DFBCB}" group="False" parallel="False" enabled="True" load="False" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from&#32;&#32;executeable r-click for supervision" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False" lnID="{00000000-0000-0000-0000-000000000000}">
 								<testParameters />
 								<environments activeCloud="SWT" />
@@ -17572,7 +17567,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="True" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem12_2_1_2_2_1_1_1_1" key="{8723780D-C0F1-40B4-B58E-72FF39860E22}" group="False" parallel="False" enabled="True" load="False" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
