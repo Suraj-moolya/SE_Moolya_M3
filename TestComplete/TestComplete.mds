@@ -16522,7 +16522,7 @@
 			<testItem name="Smoke Execution" key="{069E582A-9561-4EE5-9DB0-40B565EC290C}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 				<testParameters />
 				<children>
-					<testItem name="Launch SS, clear DB, SS Ready,Launch Engineering" key="{DEAD89AD-AEB5-4F15-996E-F700805D82A3}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Launch SS, clear DB, SS Ready,Launch Engineering" key="{DEAD89AD-AEB5-4F15-996E-F700805D82A3}" group="True" parallel="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children>
 							<testItem name="TC_EPE_SS_0001_3_1_1_1_1_1_1_1_1_1" key="{83EB0FD5-2722-4522-8E4A-C0A146B2880E}" group="False" parallel="False" enabled="True" testMoniker="SystemServer|System Server Launch" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
@@ -16535,8 +16535,12 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
+<<<<<<< Updated upstream
 							<testItem name="ProjectTestItem97_1_1_3_1" key="{FEE75073-0186-4CEB-A6B8-B166CA4E6CC6}" group="False" parallel="False" enabled="True" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 
+=======
+							<testItem name="ProjectTestItem97_1_1_3_1" key="{FEE75073-0186-4CEB-A6B8-B166CA4E6CC6}" group="False" parallel="False" enabled="False" testMoniker="AS9 Clearing Database|Clearing Database" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+>>>>>>> Stashed changes
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -16563,7 +16567,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Creation of folder,System" key="{E3F9F49B-FA5E-472B-90EA-2FE5BDFDC4EC}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Creation of folder,System" key="{E3F9F49B-FA5E-472B-90EA-2FE5BDFDC4EC}" group="True" parallel="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children>
 							<testItem name="Creation of System By Right clicking on System_1_2_1" key="{B9293172-F44C-4CC4-A0E2-985B2EABD26D}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -16628,7 +16632,7 @@
 							</testItem>
 						</children>
 					</testItem>
-					<testItem name="Navigate to Explorers_1" key="{AB852ABD-1723-4CA1-A581-50F859C2CAD4}" group="True" parallel="False" enabled="True" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+					<testItem name="Navigate to Explorers_1" key="{AB852ABD-1723-4CA1-A581-50F859C2CAD4}" group="True" parallel="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem122_1_1_2_1" key="{98C2C72E-F9B4-45E2-A5BB-3CE98850A97D}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigate to System Explorer ( SE )" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
@@ -17511,7 +17515,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem42_5_1_1_1_1" key="{CFE24604-E8D3-4858-B2F6-6601F52CFA56}" group="False" parallel="False" enabled="True" testMoniker="*|@Import_Topology_System_2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+							<testItem name="ProjectTestItem42_5_1_1_1_1" key="{CFE24604-E8D3-4858-B2F6-6601F52CFA56}" group="False" parallel="False" enabled="False" testMoniker="*|@Import_Topology_System_2" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -17568,7 +17572,11 @@
 							</testItem>
 						</children>
 					</testItem>
+<<<<<<< Updated upstream
 					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="False" load="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True" lnID="{00000000-0000-0000-0000-000000000000}">
+=======
+					<testItem name="M580_HSBY" key="{0CA0B496-CFC6-4C78-AC3D-1A661106CEB3}" group="True" parallel="False" enabled="False" testMoniker="" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
+>>>>>>> Stashed changes
 						<testParameters />
 						<children>
 							<testItem name="ProjectTestItem12_2_1_2_2_1_1_1_1" key="{8723780D-C0F1-40B4-B58E-72FF39860E22}" group="False" parallel="False" enabled="True" testMoniker="EnginneringClient|Navigation To Topology Explorer(TE) - Main Tool Bar" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="True">
@@ -17936,12 +17944,12 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem170_1_2" key="{493D086E-2B87-4E83-8756-36B27DAD45B6}" group="False" parallel="False" enabled="True" testMoniker="57 Configure STB Island and map it to control project|Configure STB Island" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+							<testItem name="ProjectTestItem170_1_2" key="{493D086E-2B87-4E83-8756-36B27DAD45B6}" group="False" parallel="False" enabled="False" testMoniker="57 Configure STB Island and map it to control project|Configure STB Island" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem171_1_2" key="{B1426D5B-45D9-4308-9AD3-709892DA58E6}" group="False" parallel="False" enabled="True" testMoniker="57 Configure STB Island and map it to control project|Map STB_Island to Physical Connections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+							<testItem name="ProjectTestItem171_1_2" key="{B1426D5B-45D9-4308-9AD3-709892DA58E6}" group="False" parallel="False" enabled="False" testMoniker="57 Configure STB Island and map it to control project|Map STB_Island to Physical Connections" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -18111,7 +18119,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem147_2_2" key="{51CB20EF-7378-4343-8A4C-9DA8A64B34DC}" group="False" parallel="False" enabled="True" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from control executeable r-click" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+							<testItem name="ProjectTestItem147_2_2" key="{51CB20EF-7378-4343-8A4C-9DA8A64B34DC}" group="False" parallel="False" enabled="False" testMoniker="146 Build_Build all the existing executable(if any errors found, clear and build)|Generate and Build from control executeable r-click" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
@@ -19106,7 +19114,7 @@
 								<environments activeCloud="SWT" />
 								<children />
 							</testItem>
-							<testItem name="ProjectTestItem85_2_2_2" key="{19B1C5FA-E4E9-49C0-8C88-368B7073D92F}" group="False" parallel="False" enabled="True" testMoniker="*|@Edit_MotorGP_template_and_save_as_Sample_Test" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
+							<testItem name="ProjectTestItem85_2_1_1_1_1" key="{1A1C26D1-EB29-4A8C-8B01-B8554E8F76FB}" group="False" parallel="False" enabled="True" testMoniker="*|@Edit_MotorGP_template_1.0.127_and_save_as_Sample_Test" count="1" timeout="0" stopOnError="3" stopOnException="2" description="" tmsData="" testCase="False">
 								<testParameters />
 								<environments activeCloud="SWT" />
 								<children />
