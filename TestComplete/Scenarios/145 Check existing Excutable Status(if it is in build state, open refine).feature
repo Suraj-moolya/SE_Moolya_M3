@@ -71,7 +71,7 @@ Then Verify build state of control executable PE project browser in project expl
 
 @verify_notbuilt_for_m580_standalone
 Examples:
-  | SlNo. | project browser1 | project browser2 | project browser3                                | content |
+  | SlNo. | project browser1 | project browser2 | project browser3                               | content |
   | 1     | M580_Standalone  | Executables      | M580_Standalone$$ControlExecutable_1$$NotBuilt | NA      |
 
 
@@ -86,7 +86,7 @@ Then Verify build state of control executable PE project browser in project expl
 @verify_built_for_m580_standalone
 Examples:
   | SlNo. | project browser1 | project browser2 | project browser3                            | content |
-  | 1     | M580_Standalone | Executables       | M580_Standalone$$ControlExecutable_1$$Built | NA      |
+  | 1     | M580_Standalone  | Executables      | M580_Standalone$$ControlExecutable_1$$Built | NA      |
 
 
 

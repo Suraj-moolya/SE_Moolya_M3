@@ -25,13 +25,13 @@ When I change controller properties with drop down options as '<options>'
 When I Select button in the modal dialoge window as '<Button name>'
 @Change_safety_settings_of_Workstation_1_to_Disable
 Examples:
-  | SlNo. | context menu | options                    | Button name | Workstation   |
-  | 1     | Properties   | Password Protection$$False | Yes         | Workstation_1 |
+  | SlNo. | context menu | options          | Button name | Workstation   |
+  | 1     | Properties   | Simulator$$False | Yes         | Workstation_1 |
   
 @Change_safety_settings_of_Workstation_2_to_Disable
 Examples:
-  | SlNo. | context menu | options                    | Button name | Workstation   |
-  | 1     | Properties   | Password Protection$$False | Yes         | Workstation_2 |
+  | SlNo. | context menu | options          | Button name | Workstation   |
+  | 1     | Properties   | Simulator$$False | Yes         | Workstation_2 |
   
   
 @test0002b
